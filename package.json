@@ -12,6 +12,7 @@
   },
   "keywords": [],
   "author": "Xaver Fleer",
+  "private": "true",
   "license": "",
   "bugs": {
     "url": "https://github.com/xaverfleer/sokoLandigPage/issues"
