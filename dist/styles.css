@@ -2,32 +2,32 @@
   font-family: "Nunito", sans-serif;
 }
 
-header {
-  height: 30px;
-  background-color: #a96e33;
-}
-
 .page {
   margin: 20px auto;
   max-width: 700px;
 }
 
+.header {
+  height: 90px;
+  background-color: #a96e33;
+  margin-bottom: 100px;
+}
+
+.header__logo {
+  position: absolute;
+  height: 124px;
+}
+
 .nav {
+  height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
   color: #ffffff;
 }
 
 .nav__entry {
-  margin-right: 10px;
-}
-
-.nav__entry:last-of-type {
-  margin-right: 0px;
-}
-
-.nav__logo {
-  height: 41px;
+  margin-right: 30px;
 }
 
 /* this rule is needed to override user agents stylesheets */
@@ -38,5 +38,10 @@ header {
 
 .footer {
   background-color: #a96e33;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 90px;
+  text-align: center;
+  font-size: 0.8rem;
   color: #ffffff;
 }
