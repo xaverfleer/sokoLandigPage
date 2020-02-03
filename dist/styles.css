@@ -4,7 +4,7 @@
 
 header {
   height: 30px;
-  background-color: #e5cdad;
+  background-color: #a96e33;
 }
 
 .page {
@@ -15,6 +15,7 @@ header {
 .nav {
   display: flex;
   justify-content: space-between;
+  color: #ffffff;
 }
 
 .nav__entry {
@@ -29,3 +30,13 @@ header {
   height: 41px;
 }
 
+/* this rule is needed to override user agents stylesheets */
+.nav *:any-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #a96e33;
+  color: #ffffff;
+}
