@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/xaverfleer/sokoLandigPage#readme",
   "devDependencies": {
-    "browserslist": "^4.8.2",
+    "browserslist": "^4.8.6",
     "express": "^4.17.1",
     "prettier": "^1.19.1"
   }
