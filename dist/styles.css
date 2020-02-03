@@ -89,3 +89,7 @@ h2 {
   font-size: 0.8rem;
   color: #ffffff;
 }
+
+footer *:any-link {
+  color: #e5cdad;
+}
