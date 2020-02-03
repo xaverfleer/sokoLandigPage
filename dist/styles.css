@@ -8,7 +8,8 @@ h2 {
 
 .page {
   margin: 20px auto;
-  max-width: 700px;
+  /* this should be full screen for phones (up to iPhoneX) [src](http://stephen.io/mediaqueries/#iPhone) */
+  max-width: 815px;
 }
 
 .section {
