@@ -12,8 +12,8 @@ h2 {
 }
 
 .section {
-  padding: 10px;
-  margin-top: 30px;
+  padding: 10px 2em;
+  margin-top: 3rem;
 }
 
 .section:nth-of-type(2n) {
@@ -66,6 +66,17 @@ h2 {
 
 .hero__subjektorientiert {
   margin: 0;
+}
+
+.content__week {
+  margin-top: 1em;
+  display: flex;
+  align-items: top;
+}
+
+.content__weektitle {
+  flex: 0 0 auto;
+  margin-right: 1em;
 }
 
 .footer {
