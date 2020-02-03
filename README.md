@@ -13,3 +13,8 @@ Issues are tracked on [Github](https://github.com/xaverfleer/sokoLandigPage/issu
 # Formatting
 
 We believe in using default settings where possible.
+
+# Important colors
+
+- #e5cdad, footer, sand in logo
+- #a96e33, trunk in logo
