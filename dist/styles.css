@@ -7,6 +7,10 @@
   max-width: 700px;
 }
 
+.section:nth-of-type(2n) {
+  background-color: #e5cdad5b;
+}
+
 .header {
   height: 90px;
   background-color: #a96e33;
