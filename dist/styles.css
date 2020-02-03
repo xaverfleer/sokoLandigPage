@@ -1,5 +1,6 @@
 header {
   height: 30px;
+  background-color: #e5cdad;
 }
 
 .page {
@@ -19,3 +20,8 @@ header {
 .nav__entry:last-of-type {
   margin-right: 0px;
 }
+
+.nav__logo {
+  height: 41px;
+}
+
