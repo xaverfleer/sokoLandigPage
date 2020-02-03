@@ -16,5 +16,5 @@ We believe in using default settings where possible.
 
 # Important colors
 
-- #e5cdad, footer, sand in logo
-- #a96e33, trunk in logo
+- #e5cdad, sand in logo
+- #a96e33, header, footer, trunk in logo
