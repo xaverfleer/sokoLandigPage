@@ -13,16 +13,20 @@ h2 {
 
 .section {
   padding: 10px;
+  margin-top: 30px;
 }
 
 .section:nth-of-type(2n) {
   background-color: #e5cdad5b;
 }
 
+.section__header {
+  text-align: center;
+}
+
 .header {
   height: 90px;
   background-color: #a96e33;
-  margin-bottom: 100px;
 }
 
 .header__logo {
@@ -61,12 +65,13 @@ h2 {
 }
 
 .hero__subjektorientiert {
-  margin-top: 0;
+  margin: 0;
 }
 
 .footer {
   background-color: #a96e33;
   box-sizing: border-box;
+  margin-top: 30px;
   padding: 10px;
   height: 90px;
   text-align: center;
