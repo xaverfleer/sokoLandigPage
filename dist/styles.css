@@ -1,4 +1,21 @@
+header {
+  height: 30px;
+}
+
 .page {
   margin: 20px auto;
   max-width: 700px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__entry {
+  margin-right: 10px;
+}
+
+.nav__entry:last-of-type {
+  margin-right: 0px;
 }
