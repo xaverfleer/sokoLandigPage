@@ -1,5 +1,6 @@
 * {
   font-family: "Nunito", sans-serif;
+  cursor: default;
 }
 
 h2 {
@@ -45,6 +46,7 @@ h2 {
 
 .nav__entry {
   margin-right: 30px;
+  cursor: pointer;
 }
 
 /* this rule is needed to override user agents stylesheets */
