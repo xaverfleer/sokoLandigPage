@@ -3,6 +3,11 @@
   cursor: default;
 }
 
+a,
+a * {
+  cursor: pointer;
+}
+
 h2 {
   margin-top: 0.4em;
 }
@@ -46,7 +51,6 @@ h2 {
 
 .nav__entry {
   margin-right: 30px;
-  cursor: pointer;
 }
 
 /* this rule is needed to override user agents stylesheets */
