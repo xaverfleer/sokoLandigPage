@@ -12,67 +12,8 @@ h2 {
   margin-top: 0.4em;
 }
 
-.page {
-  margin: 20px auto;
-  /* this should be full screen for phones (up to iPhoneX) [src](http://stephen.io/mediaqueries/#iPhone) */
-  max-width: 815px;
-}
-
-.section {
-  padding: 10px 2em;
-  margin-top: 3rem;
-}
-
-.section:nth-of-type(2n) {
-  background-color: #e5cdad5b;
-}
-
-.section__header {
-  text-align: center;
-}
-
-.header {
-  height: 90px;
-  background-color: #a96e33;
-}
-
-.header__logo {
-  position: absolute;
-  height: 124px;
-}
-
-.nav {
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  color: #ffffff;
-}
-
-.nav__entry {
-  margin-right: 30px;
-}
-
-/* this rule is needed to override user agents stylesheets */
-.nav *:any-link {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.hero__supertitle {
-  font-size: 1.4rem;
-  color: #a96e33;
-  margin-bottom: 0.1rem;
-}
-
-.hero__title {
-  margin-top: 0.1rem;
-  margin-bottom: 0.1rem;
-  font-size: 2em;
-}
-
-.hero__subjektorientiert {
-  margin: 0;
+html {
+  font-size: 62.5%;
 }
 
 .content__week {
@@ -97,6 +38,84 @@ h2 {
   color: #ffffff;
 }
 
-footer *:any-link {
+.footer *:any-link {
   color: #e5cdad;
+}
+
+.header {
+  display: none;
+  height: 90px;
+  background-color: #a96e33;
+}
+
+.header__logo {
+  position: absolute;
+  height: 124px;
+}
+
+.hero__supertitle {
+  font-size: 1.4rem;
+  color: #a96e33;
+  margin-bottom: 0.1rem;
+}
+
+.hero__title {
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  font-size: 3em;
+}
+
+.hero__subjektorientiert {
+  margin: 0;
+}
+
+.img-emotion {
+  width: 100%;
+}
+
+.nav {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #ffffff;
+}
+
+.nav__entry {
+  margin-right: 30px;
+}
+
+/* this rule is needed to override user agents stylesheets */
+.nav *:any-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.page {
+  /* margin: 1em; */
+  /* this should be full screen for phones (up to iPhoneX) [src](http://stephen.io/mediaqueries/#iPhone) */
+  /* margin: 20px auto;
+  max-width: 815px; */
+}
+
+.section {
+  padding: 10px 2em;
+  /* margin-top: 3rem; */
+  /* display: flex; */
+}
+
+.section:nth-of-type(2n) {
+  background-color: #e5cdad5b;
+}
+
+.section__subsection {
+  margin: 1em 0;
+}
+
+.section__header {
+  text-align: center;
+}
+
+.text {
+  font-size: 1.3rem;
 }
