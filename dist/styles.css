@@ -10,6 +10,11 @@ a * {
 
 h2 {
   margin-top: 0.4em;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
 }
 
 html {
@@ -34,7 +39,7 @@ html {
   padding: 10px;
   height: 90px;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #ffffff;
 }
 
@@ -53,6 +58,10 @@ html {
   height: 124px;
 }
 
+.hero__subjektorientiert {
+  margin: 0;
+}
+
 .hero__supertitle {
   font-size: 1.4rem;
   color: #a96e33;
@@ -63,10 +72,6 @@ html {
   margin-top: 0.1rem;
   margin-bottom: 0.1rem;
   font-size: 3em;
-}
-
-.hero__subjektorientiert {
-  margin: 0;
 }
 
 .img-emotion {
@@ -117,5 +122,40 @@ html {
 }
 
 .text {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 800px) {
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .footer {
+    font-size: 1.5rem;
+  }
+
+  .hero__subjektorientiert {
+    font-size: 2rem;
+  }
+
+  .hero__supertitle {
+    font-size: 2.8rem;
+    margin-bottom: 0.1rem;
+  }
+  .hero__title {
+    font-size: 5rem;
+  }
+
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .text {
+    font-size: 2rem;
+  }
 }
