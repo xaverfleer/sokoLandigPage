@@ -125,7 +125,7 @@
             </li>
           </ul>
         </div>
-        <a class="call-to-action">Anmelden</a>
+        <a class="call-to-action cta00">Anmelden</a>
       </section>
       <section>
         <div class="section__subsection">
@@ -146,7 +146,7 @@
             Inhalte und üben die Strategien der subjektorientierten Kommunikation.
           </p>
         </div>
-        <a class="call-to-action">Anmelden</a>
+        <a class="call-to-action cta00">Anmelden</a>
       </section>
       <section>
         <div class="section__subsection">
@@ -163,5 +163,12 @@
       <div class="footer__copyright">© 2020 Fleer & Fleer</div>
     </footer>
   </div>
-  <script>amplitude.getInstance().logEvent('Page loaded');</script>
+  <script>
+    amplitude.getInstance().logEvent('Page loaded');
+    document.querySelectorAll('.cta00').forEach(function (e) {
+      debugger;
+      e.addEventListener('click', function () {
+        amplitude.getInstance().logEvent('Anmelden clicked');
+      })
+    });</script>
 </body>
