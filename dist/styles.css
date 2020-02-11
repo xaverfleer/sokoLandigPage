@@ -10,31 +10,34 @@ a * {
 
 h2 {
   margin-top: 0.4em;
-  font-size: 2rem;
+  font-size: 2.7rem;
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 html {
   font-size: 62.5%;
 }
 
-.call-to-action {
+.button {
   background-color: #a96e33;
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   letter-spacing: 0.1em;
   font-weight: 700;
   text-transform: uppercase;
 
-  margin: 0 auto;
   width: 20rem;
   height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.call-to-action {
+  margin: 1em auto 0.5em;
 }
 
 .content__week {
@@ -74,11 +77,12 @@ html {
 }
 
 .hero__subjektorientiert {
+  font-size: 1.4rem;
   margin: 0;
 }
 
 .hero__supertitle {
-  font-size: 1.4rem;
+  font-size: 2rem;
   color: #a96e33;
   margin-bottom: 0.1rem;
 }
@@ -86,7 +90,11 @@ html {
 .hero__title {
   margin-top: 0.1rem;
   margin-bottom: 0.1rem;
-  font-size: 3em;
+  font-size: 3.8rem;
+}
+
+.hidden {
+  display: none;
 }
 
 .img-emotion {
@@ -109,6 +117,35 @@ html {
 .nav *:any-link {
   color: #ffffff;
   text-decoration: none;
+}
+
+.overlay {
+  position: fixed;
+  width: 80%;
+  margin-left: 10%;
+  top: 3rem;
+  box-shadow: 0 0 20px #000000;
+
+  background-color: #ffffff;
+}
+
+.overlay__close-button {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+
+.overlay__title {
+  padding: 1em;
+  background-color: #a96e33;
+  color: #ffffff;
+  height: 7rem;
+}
+
+.overlay__textbox {
+  height: 19em;
+  background-color: #ffffff;
+  padding: 1em;
 }
 
 .section {
@@ -139,23 +176,28 @@ html {
   }
 
   h3 {
+    font-size: 2.7rem;
+  }
+
+  .button {
     font-size: 2rem;
   }
 
   .footer {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .hero__subjektorientiert {
-    font-size: 2rem;
+    font-size: 2.7rem;
   }
 
   .hero__supertitle {
     font-size: 2.8rem;
     margin-bottom: 0.1rem;
   }
+
   .hero__title {
-    font-size: 5rem;
+    font-size: 5.3rem;
   }
 
   .page {

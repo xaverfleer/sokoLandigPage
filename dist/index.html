@@ -56,6 +56,7 @@
 
 <body>
   <div class="page">
+
     <header class="header">
       <a class="header__home" href="./">
         <img class="header__logo" src='./imgs/logo.png'>
@@ -65,6 +66,7 @@
       </nav>
     </header>
     <main>
+
       <section class="section hero">
         <div class="section__subsection">
           <p class="hero__supertitle">Kurs für werdende und junge Eltern sowie Angehörige</p>
@@ -126,7 +128,7 @@
             </li>
           </ul>
         </div>
-        <a class="call-to-action cta00">Anmelden</a>
+        <a class="call-to-action button cta00">Anmelden</a>
       </section>
       <section>
         <div class="section__subsection">
@@ -148,7 +150,7 @@
             Inhalte und üben die Strategien der subjektorientierten Kommunikation.
           </p>
         </div>
-        <a class="call-to-action cta00">Anmelden</a>
+        <a class="call-to-action button cta00">Anmelden</a>
       </section>
       <section>
         <div class="section__subsection">
@@ -167,11 +169,29 @@
       <div class="footer__copyright">© 2020 Fleer & Fleer</div>
     </footer>
   </div>
+  <div class="overlay hidden">
+    <div class="overlay__title text">Hoppla, du warst schneller als wir.</div>
+    <div class="overlay__textbox text">Diese Funktion existiert noch nicht.<br> Bitte kontaktiere uns mit deinen
+
+      Anregungen
+      unter
+      <br><a href="mailto:xaver.fleer+soko@gmail.com">xaver.fleer+soko@gmail.com</a>
+      oder
+      <a href="tel:+41774466505" rel="nofollow">+41 77 44 66 505</a>
+    </div>
+    <button id="overlay__close-button" class="overlay__close-button button">Schliessen</button>
+  </div>
   <script>
     amplitude.getInstance().logEvent('Page loaded');
+
+    var overlay = document.querySelector('.overlay');
+
     document.querySelectorAll('.cta00').forEach(function (e) {
       e.addEventListener('click', function () {
+        overlay.classList.remove('hidden');
         amplitude.getInstance().logEvent('Anmelden clicked');
       })
-    });</script>
+    });
+    document.getElementById('overlay__close-button').addEventListener('click', e => overlay.classList.add('hidden'));
+  </script>
 </body>
