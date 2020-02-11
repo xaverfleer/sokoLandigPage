@@ -136,16 +136,20 @@ html {
 }
 
 .overlay__title {
-  padding: 1em;
+  font-size: 2rem;
+  padding: 4rem;
   background-color: #a96e33;
   color: #ffffff;
-  height: 7rem;
+  height: 1rem;
+
+  display: flex;
+  align-items: center;
 }
 
 .overlay__textbox {
-  height: 19em;
+  height: 13em;
   background-color: #ffffff;
-  padding: 1em;
+  padding: 4rem;
 }
 
 .section {
@@ -198,6 +202,9 @@ html {
 
   .hero__title {
     font-size: 5.3rem;
+  }
+  .overlay__title {
+    font-size: 2.7rem;
   }
 
   .page {
