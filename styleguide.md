@@ -8,24 +8,32 @@
 
 # Font sizes
 
-| size | style      | where is it used           | Mobile/Desktop | Level |
-| ---- | ---------- | -------------------------- | -------------- | ----- |
-| 53px |            | .hero\_\_title             | -/D            | /     |
-| 38px |            | .hero\_\_title             | M/-            | 4/    |
-| 28px |            | h2                         | -/D            | 2/    |
-| 27px |            | hero\_\_supertitle         | -/D            | 2/    |
-| 27px |            | h2                         | M/-            | 3/    |
-| 27px |            | .hero\_\_subjektorientiert | -/D            | 2/    |
-| 27px |            | h3                         | -/D            | 2/    |
-| 20px |            | text                       | -/D            | 1     |
-| 20px |            | h3                         | M/-            | 2     |
-| 20px |            | hero\_\_supertitle         | M/-            | 2     |
-| 20px | brown-dark | button                     | -/D            | 1     |
-| 14px | uppercase  | button                     | M/D            | 1     |
-| 14px |            | footer                     | -/D            | 1     |
-| 14px | brown-dark | button                     | M/-            | 1     |
-| 14px |            | text                       | M/-            | 1     |
-| 10px |            | footer                     | M/-            | 0     |
+| Font level | Mobile Size | Desktop Size |
+| ---------- | ----------- | ------------ |
+| 4          | 38px        | 53px         |
+| 3          | 27px        | 38px         |
+| 2          | 20px        | 27px         |
+| 1          | 14px        | 20px         |
+| 0          | 10px        | 14px         |
+
+| Level | where is it used           |
+| ----- | -------------------------- |
+| 4     | .hero\_\_title             |
+| 4     | .hero\_\_title             |
+| 3     | h2                         |
+| 2     | h2                         |
+| 2     | hero\_\_supertitle         |
+| 2     | .hero\_\_subjektorientiert |
+| 2     | h3                         |
+| 2     | h3                         |
+| 2     | hero\_\_supertitle         |
+| 1     | text                       |
+| 1     | button                     |
+| 1     | button                     |
+| 1     | footer                     |
+| 1     | button                     |
+| 1     | text                       |
+| 0     | footer                     |
 
 Mobile: 1
 Desktop:
