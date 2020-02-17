@@ -40,6 +40,10 @@ html {
   margin: 1em auto 0.5em;
 }
 
+.content {
+  padding: 0 1.5em 0 1.5em;
+}
+
 .content__week {
   margin-top: 1em;
   display: flex;
@@ -176,7 +180,7 @@ html {
 
 @media screen and (min-width: 800px) {
   h2 {
-    font-size: 2.8rem;
+    font-size: 3.8rem;
   }
 
   h3 {
