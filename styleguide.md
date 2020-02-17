@@ -19,16 +19,13 @@
 | Level | where is it used           |
 | ----- | -------------------------- |
 | 4     | .hero\_\_title             |
-| 4     | .hero\_\_title             |
+| 4     | h1 (is .hero\_\_title)     |
 | 3     | h2                         |
-| 2     | h2                         |
+| 2     | h3                         |
 | 2     | hero\_\_supertitle         |
 | 2     | .hero\_\_subjektorientiert |
-| 2     | h3                         |
-| 2     | h3                         |
 | 2     | hero\_\_supertitle         |
 | 1     | text                       |
-| 1     | button                     |
 | 1     | button                     |
 | 1     | footer                     |
 | 1     | button                     |
