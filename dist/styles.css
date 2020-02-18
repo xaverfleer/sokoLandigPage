@@ -30,15 +30,13 @@ html {
   text-transform: uppercase;
   text-decoration: none;
   margin: 1em auto 0.5em;
+  border-radius: 5px;
 
-  width: 20rem;
-  height: 5rem;
+  width: 14em;
+  height: 3em;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.call-to-action {
 }
 
 .content {
@@ -109,8 +107,9 @@ html {
   display: none;
 }
 
-.img-emotion {
+.img .img {
   width: 100%;
+  border-radius: 5px;
 }
 
 .nav {
@@ -166,6 +165,7 @@ html {
 
 .section {
   padding: 4em 1em 1em;
+  border-radius: 5px;
 }
 
 .section:nth-of-type(2n) {
