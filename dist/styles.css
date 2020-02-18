@@ -72,13 +72,20 @@ html {
 
 .header {
   display: none;
-  height: 90px;
-  background-color: #a96e33;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background-color: #e5cdad;
+  font-size: 2rem;
+}
+
+.header__home {
+  margin-left: 7px;
+  height: 80%;
 }
 
 .header__logo {
-  position: absolute;
-  height: 124px;
+  height: 100%;
 }
 
 .hero__subjektorientiert {

@@ -2,7 +2,7 @@
 
 | Name           | hex-code  | where is it used  | Where is it from        |
 | -------------- | --------- | ----------------- | ----------------------- |
-| brown-light-00 | #e5cdad   |                   | sand in logo            |
+| brown-light-00 | #e5cdad   | header            | sand in logo            |
 | brown-light-01 | #e5cdad5b | every 2nd section | like sand, but brighter |
 | brown-dark     | #a96e33   | header, footer    | trunk in logo           |
 
@@ -22,6 +22,7 @@
 | 4     | h1 (is .hero\_\_title)     |
 | 3     | h2                         |
 | 2     | h3                         |
+| 2     | header                     |
 | 2     | hero\_\_supertitle         |
 | 2     | .hero\_\_subjektorientiert |
 | 2     | hero\_\_supertitle         |
