@@ -28,6 +28,8 @@ html {
   letter-spacing: 0.1em;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
+  margin: 1em auto 0.5em;
 
   width: 20rem;
   height: 5rem;
@@ -37,7 +39,6 @@ html {
 }
 
 .call-to-action {
-  margin: 1em auto 0.5em;
 }
 
 .content {
