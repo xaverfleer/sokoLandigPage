@@ -195,7 +195,6 @@
     });
     document.querySelectorAll('.cta01').forEach(function (e) {
       e.addEventListener('click', function () {
-        overlay.classList.remove('hidden');
         amplitude.getInstance().logEvent('Zu den Videos clicked');
       })
     });
