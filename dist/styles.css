@@ -177,6 +177,10 @@ html {
   font-size: 1.4rem;
 }
 
+.video-cover {
+  max-width: 100%;
+}
+
 @media screen and (min-width: 800px) {
   h2 {
     font-size: 3.8rem;
