@@ -5,6 +5,7 @@
 | brown-light-00 | #e5cdad   | header            | sand in logo            |
 | brown-light-01 | #e5cdad5b | every 2nd section | like sand, but brighter |
 | brown-dark     | #a96e33   | header, footer    | trunk in logo           |
+| brown-dark-01  | #895929   | button:hover      | darken brown dark       |
 
 # Font sizes
 

@@ -41,6 +41,11 @@ html {
   justify-content: center;
 }
 
+.button:hover {
+  font-weight: 1000;
+  background-color: #895929;
+}
+
 .content__blocks {
   padding: 0 1.5em 0 1.5em;
 }
