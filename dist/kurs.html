@@ -80,17 +80,19 @@
         <div class="section__subsection">
           <h2 class="section__header">Inputvideos Kurs 1: Grundlagen der subjektorientierten&nbsp;Kommunikation</h2>
           <h3>Ich wünsche dir...</h3>
-          <script src="https://fast.wistia.com/embed/medias/24qqh57pyn.jsonp" async></script>
-          <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-              <div class="wistia_embed wistia_async_24qqh57pyn videoFoam=true"
-                style="height:100%;position:relative;width:100%">
-                <div class="wistia_swatch"
-                  style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-                  <img src="https://fast.wistia.com/embed/medias/24qqh57pyn/swatch"
-                    style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true"
-                    onload="this.parentNode.style.opacity=1;" /></div>
+          <div class="video-wrapper" id="video-01-ich-wuensche">
+            <script src="https://fast.wistia.com/embed/medias/24qqh57pyn.jsonp" async></script>
+            <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+              <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                <div class="wistia_embed wistia_async_24qqh57pyn videoFoam=true"
+                  style="height:100%;position:relative;width:100%">
+                  <div class="wistia_swatch"
+                    style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+                    <img src="https://fast.wistia.com/embed/medias/24qqh57pyn/swatch"
+                      style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true"
+                      onload="this.parentNode.style.opacity=1;" /></div>
+                </div>
               </div>
             </div>
           </div>
@@ -186,6 +188,26 @@
         amplitude.getInstance().logEvent('Anmelden clicked');
       })
     });
+
+    // document.addEventListener('play', function (e) { debugger; });
+    var observerOptions = {
+      childList: true,
+      attributes: false,
+      subtree: true //Omit or set to false to observe only changes to the parent node.
+    }
+
+    var observer = new MutationObserver(captureVideoAdded);
+    var targetNode = document.getElementById('video-01-ich-wuensche');
+    observer.observe(targetNode, observerOptions);
+    function captureVideoAdded(mutations, obs) {
+      var elementIsAdded = mutations.filter(m => m.addedNodes.length > 0);
+      var videoNodes = mutations.reduce(function (acc, mutation) {
+        Array.prototype.slice.call(mutation.addedNodes)
+          .filter(node => node.nodeName === 'VIDEO')
+          .forEach(node => acc.push(node));
+        return acc;
+      }, []);
+    };
     document.getElementById('overlay__close-button').addEventListener('click', e => overlay.classList.add('hidden'));
   </script>
 </body>
