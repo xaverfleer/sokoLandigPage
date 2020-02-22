@@ -202,7 +202,7 @@
     }
 
     var observer = new MutationObserver(captureVideoAdded);
-    var targetNode = document.getElementById('video-01-ich-wuensche');
+    var targetNode = document.querySelector('main');
     observer.observe(targetNode, observerOptions);
     function captureVideoAdded(mutations, obs) {
       var elementIsAdded = mutations.filter(m => m.addedNodes.length > 0);
