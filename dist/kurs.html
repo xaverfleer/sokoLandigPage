@@ -193,7 +193,7 @@
     var observerOptions = {
       childList: true,
       attributes: false,
-      subtree: true //Omit or set to false to observe only changes to the parent node.
+      subtree: true
     }
 
     var observer = new MutationObserver(captureVideoAdded);
@@ -201,12 +201,24 @@
     observer.observe(targetNode, observerOptions);
     function captureVideoAdded(mutations, obs) {
       var elementIsAdded = mutations.filter(m => m.addedNodes.length > 0);
-      var videoNodes = mutations.reduce(function (acc, mutation) {
+      var addedVideos = mutations.reduce(function (acc, mutation) {
         Array.prototype.slice.call(mutation.addedNodes)
           .filter(node => node.nodeName === 'VIDEO')
           .forEach(node => acc.push(node));
         return acc;
       }, []);
+      addedVideos.forEach(function (video) {
+        var id = video.closest('.video-wrapper').id;
+        video.addEventListener('play', function (event) {
+          amplitude.getInstance().logEvent('Played ' + id);
+        });
+        video.addEventListener('ended', function (event) {
+          amplitude.getInstance().logEvent('Ended ' + id);
+        });
+        video.addEventListener('pause', function (event) {
+          amplitude.getInstance().logEvent('Paused ' + id);
+        });
+      })
     };
     document.getElementById('overlay__close-button').addEventListener('click', e => overlay.classList.add('hidden'));
   </script>
