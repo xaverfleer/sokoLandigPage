@@ -23,6 +23,10 @@ html {
   font-size: 62.5%;
 }
 
+ul {
+  list-style: none;
+}
+
 .button {
   background-color: #a96e33;
   color: #ffffff;
@@ -53,7 +57,6 @@ html {
 .content__week {
   margin-top: 1em;
   display: flex;
-  align-items: top;
 }
 
 .content__weektitle {
