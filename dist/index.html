@@ -133,42 +133,43 @@
           <a class="call-to-action button cta00">Anmelden</a>
         </div>
       </section>
-      <section class="section" id="subscribtion">
+      <section class="section section--subscription" id="subscription">
         <div class="section__subsection">
-          <form action="" method="get" class="form-example">
-            <div class="form-entry">
-              <label for="form__reservations">Anzahl Personen</label>
-              <input type="text" name="reservations" id="form__reservations" required>
+          <h2 class="section__header">Anmelden</h2>
+          <form action="" method="get" class="form">
+            <div class="form-entry form-entry--fullwidth form-entry--radio-container">
+              <input class="form-entry__radio-input" type="radio" name="reservations" id="form__reservations--1" value="1 Person" checked>
+              <label class="text form-entry__radio-label" for="form__reservations--1">1 Person</label>
+              <input class="form-entry__radio-input" type="radio" name="reservations" id="form__reservations--2" value="1 Person">
+              <label class="text form-entry__radio-label" for="form__reservations--2">Paar</label>
             </div>
-            <div class="form-entry">
-              <label for="form__name">Name</label>
-              <input type="text" name="name" id="form__name" required>
+            <div class="form-entry form-entry--halfwidth">
+              <label class="form-entry__label text" for="form__name">Name</label>
+              <input class="form-entry__input"type="text" name="name" id="form__name" required>
             </div>
-            <div class="form-entry">
-              <label for="form__address">Adresse</label>
-              <input type="text" name="address" id="form__address" required>
+            <div class="form-entry form-entry--halfwidth">
+              <label class="form-entry__label text" for="form__phone">Telefonnummer</label>
+              <input class="form-entry__input"type="text" name="phone" id="form__phone" required>
             </div>
-            <div class="form-entry">
-              <label for="form__phone">Telefonnummer</label>
-              <input type="text" name="phone" id="form__phone" required>
+            <div class="form-entry form-entry--halfwidth">
+              <label class="form-entry__label text" for="form__address">Adresse</label>
+              <input class="form-entry__input"type="text" name="address" id="form__address" required>
             </div>
-            <div class="form-entry">
-              <label for="email">E-Mail-Adresse </label>
-              <input type="email" name="email" id="form__email" required>
+            <div class="form-entry form-entry--halfwidth">
+              <label class="form-entry__label text" for="form__zip">PLZ / Ort</label>
+              <input class="form-entry__input"type="text" name="zip" id="form__zip" required>
             </div>
-            <div class="form-entry">
-              <label for="form__comment">Kommentar</label>
-              <input type="text" name="comment" id="form__comment" required>
+            <div class="form-entry form-entry--halfwidth">
+              <label class="form-entry__label text" for="email">E-Mail-Adresse </label>
+              <input class="form-entry__input"type="email" name="email" id="form__email" required>
             </div>
-            <div class="form-entry">
-              <input type="submit" value="Subscribe!">
+            <div class="form-entry form-entry--fullwidth">
+              <label class="form-entry__label text" for="form__comment">Kommentar</label>
+              <textarea type="textarea" name="comment" id="form__comment" rows="5"></textarea>
             </div>
+            <button class="button">Abschicken</button>
           </form>
-            <div class="form-entry">
-              <label for="form__reservations">Anzahl Personen</label>
-              <input type="text" name="reservations" id="form__reservations" required>
-            </div>
-        </div>
+       </div>
       </section>
     </main>
     <footer class="footer">
