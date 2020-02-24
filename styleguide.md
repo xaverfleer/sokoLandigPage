@@ -1,11 +1,11 @@
 # Important colors
 
-| Name           | hex-code  | where is it used  | Where is it from        |
-| -------------- | --------- | ----------------- | ----------------------- |
-| brown-light-00 | #e5cdad   | header            | sand in logo            |
-| brown-light-01 | #e5cdad5b | every 2nd section | like sand, but brighter |
-| brown-dark     | #a96e33   | header, footer    | trunk in logo           |
-| brown-dark-01  | #895929   | button:hover      | darken brown dark       |
+| Name           | hex-code  | where is it used          | Where is it from        |
+| -------------- | --------- | ------------------------- | ----------------------- |
+| brown-light-00 | #e5cdad   | header                    | sand in logo            |
+| brown-light-01 | #e5cdad5b | every 2nd section         | like sand, but brighter |
+| brown-dark     | #a96e33   | header, footer, reduction | trunk in logo           |
+| brown-dark-01  | #895929   | button:hover              | darken brown dark       |
 
 # Font sizes
 
@@ -27,6 +27,7 @@
 | 2     | hero\_\_supertitle         |
 | 2     | .hero\_\_subjektorientiert |
 | 2     | hero\_\_supertitle         |
+| 1     | reduction                  |
 | 1     | text                       |
 | 1     | button                     |
 | 1     | footer                     |

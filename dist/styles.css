@@ -173,6 +173,17 @@ ul {
   padding: 4rem;
 }
 
+.reduction {
+  font-size: 1.4em;
+  max-width: 10em;
+  color: #ffffff;
+  background-color: #a96e33;
+  padding: 1em;
+  margin: 2em auto;
+  transform: rotate(350deg);
+  border-radius: 0.5rem;
+}
+
 .section {
   padding: 4em 1em 1em;
   border-radius: 5px;
@@ -234,6 +245,10 @@ ul {
   .page {
     max-width: 900px;
     margin: 0 auto;
+  }
+
+  .reduction {
+    font-size: 2em;
   }
 
   .text {
