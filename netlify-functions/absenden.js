@@ -20,6 +20,8 @@ exports.handler = function(event, context, callback) {
     const body = JSON.parse(event.body);
     console.log(`body: ${body}`);
   } catch (e) {
+    console.log("error");
+    console.log("" + event.body);
     console.error(e);
   }
   console.log(`object? JSON.parse(event.body): ${JSON.parse(event.body)}`);
