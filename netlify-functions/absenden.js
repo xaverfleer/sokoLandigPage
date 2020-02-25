@@ -8,6 +8,8 @@
 //     "isBase64Encoded": "A boolean flag to indicate if the applicable request payload is Base64-encode"
 // }
 exports.handler = function(event, context, callback) {
+  console.log(`event.body.data: ${event.body.data}`);
+  console.log(`event.body.data.name: ${event.body.data.name}`);
   console.log(`JSON.stringify(event.body): ${JSON.stringify(event.body)}`);
   console.log(`event.body: ${event.body}`);
   console.log(`event: ${event}`);
