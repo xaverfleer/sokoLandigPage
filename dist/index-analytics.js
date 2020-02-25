@@ -22,7 +22,10 @@ document.querySelectorAll(".cta02").forEach(function(e) {
     if (e.target.hasAttribute("name")) {
       formData.append("form-name", e.target.getAttribute("name"));
     }
-    submitForm(formData);
+    var sampleObject = { foo: "bar" };
+    var sampleJson = JSON.stringify(sampleObject);
+    var sampleEncoded = encodeURIComponent(sampleJson);
+    submitForm(sampleEncoded);
     amplitude.getInstance().logEvent("Absenden submitted");
   });
 });
