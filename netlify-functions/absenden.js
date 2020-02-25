@@ -10,13 +10,20 @@
 exports.handler = function(event, context, callback) {
   console.log("starting");
   var body;
+  var decoded;
   try {
     console.log(`event.body: ${event.body}`);
   } catch (e) {
     console.log("could not log event.body");
   }
   try {
-    body = JSON.parse(event.body);
+    decoded = decodeURIComponent(event.body);
+    console.log(`decodeURIcomponent(event.body): ${decoded}`);
+  } catch (e) {
+    console.log("could not log decodeURIcomponent(event.body)");
+  }
+  try {
+    body = JSON.parse(decodeURICompoevent);
     console.log(body);
   } catch (e) {
     console.log(`could not log body`);
