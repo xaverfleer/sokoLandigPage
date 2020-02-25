@@ -9,8 +9,19 @@
 // }
 exports.handler = function(event, context, callback) {
   console.log("starting");
-  const body = JSON.parse(event.body);
-  const formPayload = body.payload.data;
+  var body;
+  try {
+    console.log(`event.body: ${event.body}`);
+  } catch (e) {
+    console.log("could not log event.body");
+  }
+  try {
+    body = JSON.parse(event.body);
+    console.log(body);
+  } catch (e) {
+    console.log(`could not log body`);
+  }
+  // const formPayload = body.payload.data;
 
   if (formPayload) {
     console.log(`formPayload: ${JSON.stringify(formPayload)}`);
