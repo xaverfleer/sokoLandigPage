@@ -8,13 +8,20 @@
 //     "isBase64Encoded": "A boolean flag to indicate if the applicable request payload is Base64-encode"
 // }
 exports.handler = function(event, context, callback) {
+  consoe.log("starting");
   // event.body.data is undefined
   // console.log(`string? typeof event.body: ${typeof event.body}`); // check
   // console.log(`object? JSON: ${JSON}`); // check
-  console.log(`function? JSON.parse: ${JSON.parse}`); // check
-  console.log(
-    `object? JSON.parse('{"as":"as"}'): ${JSON.parse('{"as":"as"}')}`
-  );
+  // console.log(`function? JSON.parse: ${JSON.parse}`); // check
+  // console.log(
+  //   `object? JSON.parse('{"as":"as"}'): ${JSON.parse('{"as":"as"}')}`
+  // ); // check
+  try {
+    const body = JSON.parse(event.body);
+    console.log(`body: ${body}`);
+  } catch (e) {
+    console.error(e);
+  }
   console.log(`object? JSON.parse(event.body): ${JSON.parse(event.body)}`);
   console.log(
     `object? typeof JSON.parse(event.body): ${typeof JSON.parse(event.body)}`
