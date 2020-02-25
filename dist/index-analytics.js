@@ -16,14 +16,10 @@ document.querySelectorAll(".cta01").forEach(function(e) {
 document.querySelectorAll(".cta02").forEach(function(e) {
   e.addEventListener("submit", function(e) {
     e.preventDefault();
-    var fields = [].slice.call(e.target.elements);
-    var data = fields.slice(2).reduce(function(acc, elem) {
-      acc[elem.name] = elem.value;
-      return acc;
-    }, {});
-    data.reservations = fields[1].checked ? 2 : 1;
-    submitForm(data);
-    amplitude.getInstance().logEvent("Absenden submitted", data);
+    // Use the FormData object to collect form elements given it's easy (e.g. automatically excludes `submit`) and Netlify only accepts URL-encoded key/value pairs.
+    const formData = new FormData(e.target);
+    submitForm(formData);
+    amplitude.getInstance().logEvent("Absenden submitted");
   });
 });
 

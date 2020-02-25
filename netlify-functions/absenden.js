@@ -9,48 +9,21 @@
 // }
 exports.handler = function(event, context, callback) {
   console.log("starting");
-  // event.body.data is undefined
-  // console.log(`string? typeof event.body: ${typeof event.body}`); // check
-  // console.log(`object? JSON: ${JSON}`); // check
-  // console.log(`function? JSON.parse: ${JSON.parse}`); // check
-  // console.log(
-  //   `object? JSON.parse('{"as":"as"}'): ${JSON.parse('{"as":"as"}')}`
-  // ); // check
-  try {
-    const body = JSON.parse(event.body);
-    console.log(`body: ${body}`);
-  } catch (e) {
-    console.log("error");
-    console.log("" + event.body);
-    console.error(e);
+  const body = JSON.parse(event.body);
+  const formPayload = body.payload.data;
+
+  if (formPayload) {
+    console.log(`formPayload: ${JSON.stringify(formPayload)}`);
+    console.log(event.body);
   }
-  console.log(`object? JSON.parse(event.body): ${JSON.parse(event.body)}`);
-  console.log(
-    `object? typeof JSON.parse(event.body): ${typeof JSON.parse(event.body)}`
-  );
-  console.log(`undefined? event.body.name: ${event.body.name}`);
-  console.log(`object? JSON.parse(event.body): ${JSON.parse(event.body)}`);
-  console.log(
-    `object? JSON.parse(event.body).payload: ${JSON.parse(event.body).payload}`
-  );
-  console.log(
-    `string? JSON.parse(event.body).payload.name: ${
-      JSON.parse(event.body).payload.name
-    }`
-  );
-  // console.log(`error? event.body.payload: ${event.body.payload.name}`);
-  console.log(`object? event.body.payload.data: ${event.body.payload.data}`);
-  console.log(
-    `string? event.body.payload.data.name: ${event.body.payload.data.name}`
-  );
-  console.log(`JSON.stringify(event.body): ${JSON.stringify(event.body)}`);
+
   const sgMail = require("@sendgrid/mail");
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   const msg = {
     to: "xaver.fleer+test@gmail.com",
     from: "noreply@so-kommunizieren.com",
     subject: "Subscription for 2020-04-02",
-    text: "wip"
+    text: event.body
   };
   console.log("success");
   // sgMail.send(msg);
