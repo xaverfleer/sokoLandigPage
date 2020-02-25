@@ -8,11 +8,15 @@
 //     "isBase64Encoded": "A boolean flag to indicate if the applicable request payload is Base64-encode"
 // }
 exports.handler = function(event, context, callback) {
-  console.log(`event.body.data: ${event.body.data}`);
-  console.log(`event.body.data.name: ${event.body.data.name}`);
+  // event.body.data is undefined
+  console.log(`undefined? event.body.name: ${event.body.name}`);
+  console.log(`object? event.body.payload: ${event.body.payload}`);
+  console.log(`undefined? event.body.payload: ${event.body.payload.name}`);
+  console.log(`object? event.body.payload.data: ${event.body.payload.data}`);
+  console.log(
+    `string? event.body.payload.data.name: ${event.body.payload.data.name}`
+  );
   console.log(`JSON.stringify(event.body): ${JSON.stringify(event.body)}`);
-  console.log(`event.body: ${event.body}`);
-  console.log(`event: ${event}`);
   const sgMail = require("@sendgrid/mail");
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   const msg = {
