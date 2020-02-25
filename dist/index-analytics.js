@@ -18,6 +18,10 @@ document.querySelectorAll(".cta02").forEach(function(e) {
     e.preventDefault();
     // Use the FormData object to collect form elements given it's easy (e.g. automatically excludes `submit`) and Netlify only accepts URL-encoded key/value pairs.
     const formData = new FormData(e.target);
+    // For Netlify Forms, to avoid getting a 404 back upon submission, the form data must contain `form-name: '<name>'` (could also be included as hidden field in the form markup).
+    if (e.target.hasAttribute("name")) {
+      formData.append("form-name", e.target.getAttribute("name"));
+    }
     submitForm(formData);
     amplitude.getInstance().logEvent("Absenden submitted");
   });
