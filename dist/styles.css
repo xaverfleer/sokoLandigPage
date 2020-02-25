@@ -240,7 +240,7 @@ form {
 }
 
 .section--subscription {
-  display: none;
+  /* display: none; */
 }
 
 .section__subsection {

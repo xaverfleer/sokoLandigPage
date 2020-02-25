@@ -8,18 +8,19 @@
 //     "isBase64Encoded": "A boolean flag to indicate if the applicable request payload is Base64-encode"
 // }
 exports.handler = function(event, context, callback) {
-  console.log("absenden.js called");
+  console.log(`JSON.stringify(event.body): ${JSON.stringify(event.body)}`);
+  console.log(`event.body: ${event.body}`);
+  console.log(`event: ${event}`);
   const sgMail = require("@sendgrid/mail");
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   const msg = {
     to: "xaver.fleer+test@gmail.com",
     from: "noreply@so-kommunizieren.com",
     subject: "Subscription for 2020-04-02",
-    text: "wip",
-    html: "<strong>and easy to do anywhere, even with Node.js</strong>"
+    text: "wip"
   };
   console.log("success");
-  sgMail.send(msg);
+  // sgMail.send(msg);
   callback(null, {
     statusCode: 200,
     body: "Somebody subscribed for 2020-04-02."
