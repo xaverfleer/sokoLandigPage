@@ -22,6 +22,7 @@ document.querySelectorAll(".cta02").forEach(function(e) {
       return acc;
     }, {});
     data.reservations = fields[1].checked ? 2 : 1;
+    submitForm(data);
     amplitude.getInstance().logEvent("Absenden submitted", data);
   });
 });
@@ -29,3 +30,9 @@ document.querySelectorAll(".cta02").forEach(function(e) {
 document
   .getElementById("overlay__close-button")
   .addEventListener("click", e => overlay.classList.add("hidden"));
+
+function submitForm(data) {
+  const xhr = new XMLHttpRequest();
+  xhr.open("POST", ".netlify/functions/absenden");
+  xhr.send(data);
+}
