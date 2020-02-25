@@ -11,29 +11,29 @@ exports.handler = function(event, context, callback) {
   console.log("starting");
   var body;
   var decoded;
-  try {
-    console.log(`event.body: ${event.body}`);
-  } catch (e) {
-    console.log("could not log event.body");
-  }
-  try {
-    decoded = decodeURIComponent(event.body);
-    console.log(`decodeURIcomponent(event.body): ${decoded}`);
-  } catch (e) {
-    console.log("could not log decodeURIcomponent(event.body)");
-  }
-  try {
-    body = JSON.parse(decodeURICompoevent);
-    console.log(body);
-  } catch (e) {
-    console.log(`could not log body`);
-  }
+  // try {
+  //   console.log(`event.body: ${event.body}`);
+  // } catch (e) {
+  //   console.log("could not log event.body");
+  // }
+  // try {
+  decoded = decodeURIComponent(event.body);
+  console.log(`decoded: ${decoded}`);
+  // } catch (e) {
+  // console.log("could not log decodeURIcomponent(event.body)");
+  // }
+  // try {
+  //   body = JSON.parse(decoded);
+  //   console.log(body);
+  // } catch (e) {
+  //   console.log(`could not log body`);
+  // }
   // const formPayload = body.payload.data;
 
-  if (formPayload) {
-    console.log(`formPayload: ${JSON.stringify(formPayload)}`);
-    console.log(event.body);
-  }
+  // if () {
+  //   console.log(`formPayload: ${JSON.stringify(formPayload)}`);
+  //   console.log(event.body);
+  // }
 
   const sgMail = require("@sendgrid/mail");
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
@@ -41,7 +41,7 @@ exports.handler = function(event, context, callback) {
     to: "xaver.fleer+test@gmail.com",
     from: "noreply@so-kommunizieren.com",
     subject: "Subscription for 2020-04-02",
-    text: event.body
+    text: decoded
   };
   console.log("success");
   // sgMail.send(msg);
