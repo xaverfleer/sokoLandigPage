@@ -18,9 +18,7 @@ document.querySelectorAll(".cta02").forEach(function(e) {
     e.preventDefault();
 
     var data = getData(e.target.elements);
-    var stringified = JSON.stringify(data);
-    var encoded = encodeURIComponent(stringified);
-    submitForm(encoded);
+    submitForm(data);
     amplitude.getInstance().logEvent("Absenden submitted");
   });
 });
@@ -38,11 +36,14 @@ function submitForm(data) {
 function getData(elements) {
   var fields = [].slice.call(elements);
 
-  var data = fields.slice(2).reduce(function(acc, elem) {
+  var raw = fields.slice(2).reduce(function(acc, elem) {
     acc[elem.name] = elem.value;
     return acc;
   }, {});
-  data.reservations = fields[1].checked ? 2 : 1;
+  raw.reservations = fields[1].checked ? 2 : 1;
 
-  return data;
+  var stringified = JSON.stringify(raw);
+  var encoded = encodeURIComponent(stringified);
+
+  return encoded;
 }

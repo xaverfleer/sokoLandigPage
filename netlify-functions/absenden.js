@@ -9,31 +9,9 @@
 // }
 exports.handler = function(event, context, callback) {
   console.log("starting");
-  var body;
-  var decoded;
-  // try {
-  //   console.log(`event.body: ${event.body}`);
-  // } catch (e) {
-  //   console.log("could not log event.body");
-  // }
-  // try {
-  decoded = decodeURIComponent(event.body);
-  console.log(`decoded: ${decoded}`);
-  // } catch (e) {
-  // console.log("could not log decodeURIcomponent(event.body)");
-  // }
-  // try {
-  //   body = JSON.parse(decoded);
-  //   console.log(body);
-  // } catch (e) {
-  //   console.log(`could not log body`);
-  // }
-  // const formPayload = body.payload.data;
 
-  // if () {
-  //   console.log(`formPayload: ${JSON.stringify(formPayload)}`);
-  //   console.log(event.body);
-  // }
+  var decoded = decodeURIComponent(event.body);
+  console.log(`decoded: ${decoded}`);
 
   const sgMail = require("@sendgrid/mail");
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
@@ -44,7 +22,7 @@ exports.handler = function(event, context, callback) {
     text: decoded
   };
   console.log("success");
-  // sgMail.send(msg);
+  sgMail.send(msg);
   callback(null, {
     statusCode: 200,
     body: "Somebody subscribed for 2020-04-02."
