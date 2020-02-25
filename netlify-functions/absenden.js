@@ -9,9 +9,21 @@
 // }
 exports.handler = function(event, context, callback) {
   // event.body.data is undefined
+  console.log(`string? typeof event.body: ${typeof event.body}`);
+  console.log(
+    `object? typeof JSON.parse(event.body): ${typeof JSON.parse(event.body)}`
+  );
   console.log(`undefined? event.body.name: ${event.body.name}`);
-  console.log(`object? event.body.payload: ${event.body.payload}`);
-  console.log(`undefined? event.body.payload: ${event.body.payload.name}`);
+  console.log(`object? JSON.parse(event.body): ${JSON.parse(event.body)}`);
+  console.log(
+    `object? JSON.parse(event.body).payload: ${JSON.parse(event.body).payload}`
+  );
+  console.log(
+    `string? JSON.parse(event.body).payload.name: ${
+      JSON.parse(event.body).payload.name
+    }`
+  );
+  // console.log(`error? event.body.payload: ${event.body.payload.name}`);
   console.log(`object? event.body.payload.data: ${event.body.payload.data}`);
   console.log(
     `string? event.body.payload.data.name: ${event.body.payload.data.name}`
