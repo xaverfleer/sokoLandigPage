@@ -9,7 +9,11 @@
 // }
 exports.handler = function(event, context, callback) {
   // event.body.data is undefined
-  console.log(`string? typeof event.body: ${typeof event.body}`);
+  console.log(`string? typeof event.body: ${typeof event.body}`); //check
+  console.log(`object? JSON: ${JSON}`);
+  console.log(`object? JSON.parse: ${JSON.parse}`);
+  console.log(`object? JSON: ${JSON}`);
+  console.log(`object? JSON.parse(event.body): ${JSON.parse(event.body)}`);
   console.log(
     `object? typeof JSON.parse(event.body): ${typeof JSON.parse(event.body)}`
   );
