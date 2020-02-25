@@ -16,12 +16,8 @@ document.querySelectorAll(".cta01").forEach(function(e) {
 document.querySelectorAll(".cta02").forEach(function(e) {
   e.addEventListener("submit", function(e) {
     e.preventDefault();
-    var fields = [].slice.call(e.target.elements);
-    var data = fields.slice(2).reduce(function(acc, elem) {
-      acc[elem.name] = elem.value;
-      return acc;
-    }, {});
-    data.reservations = fields[1].checked ? 2 : 1;
+
+    var data = getData(e.target.elements);
     var stringified = JSON.stringify(data);
     var encoded = encodeURIComponent(stringified);
     submitForm(encoded);
@@ -37,4 +33,16 @@ function submitForm(data) {
   const xhr = new XMLHttpRequest();
   xhr.open("POST", ".netlify/functions/absenden");
   xhr.send(data);
+}
+
+function getData(elements) {
+  var fields = [].slice.call(elements);
+
+  var data = fields.slice(2).reduce(function(acc, elem) {
+    acc[elem.name] = elem.value;
+    return acc;
+  }, {});
+  data.reservations = fields[1].checked ? 2 : 1;
+
+  return data;
 }
