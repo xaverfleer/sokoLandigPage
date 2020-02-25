@@ -16,16 +16,15 @@ document.querySelectorAll(".cta01").forEach(function(e) {
 document.querySelectorAll(".cta02").forEach(function(e) {
   e.addEventListener("submit", function(e) {
     e.preventDefault();
-    // Use the FormData object to collect form elements given it's easy (e.g. automatically excludes `submit`) and Netlify only accepts URL-encoded key/value pairs.
-    const formData = new FormData(e.target);
-    // For Netlify Forms, to avoid getting a 404 back upon submission, the form data must contain `form-name: '<name>'` (could also be included as hidden field in the form markup).
-    if (e.target.hasAttribute("name")) {
-      formData.append("form-name", e.target.getAttribute("name"));
-    }
-    var sampleObject = { foo: "bar" };
-    var sampleJson = JSON.stringify(sampleObject);
-    var sampleEncoded = encodeURIComponent(sampleJson);
-    submitForm(sampleEncoded);
+    var fields = [].slice.call(e.target.elements);
+    var data = fields.slice(2).reduce(function(acc, elem) {
+      acc[elem.name] = elem.value;
+      return acc;
+    }, {});
+    data.reservations = fields[1].checked ? 2 : 1;
+    var stringified = JSON.stringify(data);
+    var encoded = encodeURIComponent(stringified);
+    submitForm(encoded);
     amplitude.getInstance().logEvent("Absenden submitted");
   });
 });
