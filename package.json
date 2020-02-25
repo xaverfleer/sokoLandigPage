@@ -4,6 +4,7 @@
   "description": "This is the landing page for SOKo - Subject Oriented Communications.",
   "main": "index.js",
   "scripts": {
+    "build": "npx netlify functions:build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,7 +13,7 @@
   },
   "keywords": [],
   "author": "Xaver Fleer",
-  "private": "true",
+  "private": true,
   "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/xaverfleer/sokoLandigPage/issues"
