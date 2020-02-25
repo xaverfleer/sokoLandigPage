@@ -8,9 +8,7 @@
 //     "isBase64Encoded": "A boolean flag to indicate if the applicable request payload is Base64-encode"
 // }
 exports.handler = function(event, context, callback) {
-  console.log("a[build]
-
-  functions = "./functions"bsenden.js called");
+  console.log("absenden.js called");
   callback(null, {
     statusCode: 200,
     body: "Somebody subscribed for 2020-04-02."
