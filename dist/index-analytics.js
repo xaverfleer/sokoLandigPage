@@ -13,11 +13,11 @@ document.querySelectorAll(".cta01").forEach(function(e) {
     amplitude.getInstance().logEvent("Zu den Videos clicked");
   });
 });
-document.querySelectorAll(".cta02").forEach(function(e) {
-  e.addEventListener("submit", function(e) {
-    e.preventDefault();
+document.querySelectorAll(".cta02").forEach(function(element) {
+  element.addEventListener("submit", function(event) {
+    event.preventDefault();
 
-    var data = getData(e.target.elements);
+    var data = getData(event.target.elements);
     submitForm(data);
     amplitude.getInstance().logEvent("Absenden submitted");
   });
