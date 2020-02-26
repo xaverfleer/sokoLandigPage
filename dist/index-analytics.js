@@ -19,6 +19,8 @@ document.querySelectorAll(".cta02").forEach(function(element) {
 
     var data = getData(event.target.elements);
     submitForm(data);
+    element.reset();
+
     amplitude.getInstance().logEvent("Absenden submitted");
   });
 });
