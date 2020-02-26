@@ -4,7 +4,6 @@ var overlay = document.querySelector(".overlay");
 
 document.querySelectorAll(".cta00").forEach(function(e) {
   e.addEventListener("click", function() {
-    overlay.classList.remove("hidden");
     amplitude.getInstance().logEvent("Anmelden clicked");
   });
 });
