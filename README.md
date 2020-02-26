@@ -13,3 +13,15 @@ Issues are tracked on [Github](https://github.com/xaverfleer/sokoLandigPage/issu
 # Formatting
 
 We believe in using default settings where possible.
+
+# Amplitude events
+
+| CSS class | Amplitude name        | What is tracked                 |
+| --------- | --------------------- | ------------------------------- |
+| cta00     | Anmelden clicked      | Anmelden button is clicked      |
+| cta01     | Zu den Videos clicked | Zu den Videos button is clicked |
+| cta02     | Absenden submitted    | Course subscription is sent     |
+| cta03     | Zur Startseite        | Zur Startseite                  |
+|           | Page loaded           | Page load of index.html         |
+|           | Kurs page loaded      | Page load of kurs.html          |
+|           | Submitted page loaded | Page load of submitted.html     |
