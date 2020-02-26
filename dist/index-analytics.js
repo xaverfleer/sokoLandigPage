@@ -33,6 +33,19 @@ function submitForm(data) {
   const xhr = new XMLHttpRequest();
   xhr.open("POST", ".netlify/functions/absenden");
   xhr.send(data);
+
+  xhr.addEventListener("load", function() {
+    window.location.href = "/submitted.html";
+  });
+
+  xhr.addEventListener("error", xhrEventError => {
+    window.alert(
+      `Senden fehlgeschlagen, bitte erneut versuchen.\n\nBei wiederholtem Fehlschlagen, kontaktiere uns bitte mit folgenden Details: xhrEventError ${JSON.stringify(
+        xhrEventError
+      )}`
+    );
+    window.location.href = "/submission-error.html";
+  });
 }
 
 function getData(elements) {
