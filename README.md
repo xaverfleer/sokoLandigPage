@@ -2,6 +2,12 @@
 
 This is the landing page for SOKo - Subject Oriented Communications.
 
+# How to start developing
+
+- Make sure, you have npm installed
+- Run `$ npm install`
+- Run `$ npx netlify dev`
+
 # Browser support
 
 We follow default configuration of [Browserslist](https://www.npmjs.com/package/browserslist). Run `> npx browserslist` to see the list of supported browsers.
