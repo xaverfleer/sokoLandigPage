@@ -16,7 +16,7 @@ exports.handler = function(event, context, callback) {
   const sgMail = require("@sendgrid/mail");
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   const msg = {
-    to: "xaver.fleer+test@gmail.com",
+    to: "xaver.fleer+sokokurs@gmail.com",
     from: "noreply@so-kommunizieren.com",
     subject: "Subscription for 2020-04-02",
     text: decoded
