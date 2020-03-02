@@ -28,7 +28,7 @@ ul {
 }
 
 .button {
-  background-color: #9a6e42;
+  background-color: #966b40;
   color: #ffffff;
   font-size: 1.4rem;
   letter-spacing: 0.1em;
@@ -65,7 +65,7 @@ ul {
 }
 
 .footer {
-  background-color: #9a6e42;
+  background-color: #966b40;
   box-sizing: border-box;
   padding: 10px;
   height: 90px;
@@ -149,7 +149,7 @@ form {
 
 .hero__supertitle {
   font-size: 2rem;
-  color: #9a6e42;
+  color: #966b40;
   margin-bottom: 0.1rem;
 }
 
@@ -205,7 +205,7 @@ form {
 .overlay__title {
   font-size: 2rem;
   padding: 4rem;
-  background-color: #9a6e42;
+  background-color: #966b40;
   color: #ffffff;
   height: 1rem;
 
@@ -223,7 +223,7 @@ form {
   font-size: 1.4em;
   max-width: 10em;
   color: #ffffff;
-  background-color: #9a6e42;
+  background-color: #966b40;
   padding: 1em;
   margin: 2em auto;
   transform: rotate(350deg);
