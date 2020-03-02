@@ -31,3 +31,10 @@ We believe in using default settings where possible.
 |           | Page loaded           | Page load of index.html         |
 |           | Kurs page loaded      | Page load of kurs.html          |
 |           | Submitted page loaded | Page load of submitted.html     |
+
+# Sitemap
+
+A sitemap helps search engine crawlers finding all websites.
+Reference: https://www.sitemaps.org/protocol.html
+Our sitemap: /dist/sitemap.xml
+When to update: When non-minor changes are made
