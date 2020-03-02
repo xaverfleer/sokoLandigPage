@@ -20,4 +20,24 @@
 		<lastmod>2020-03-02</lastmod>
     <priority>0.5</priority>
 	</url>
+	<url>
+		<loc>https://so-kommunizieren.com/submitted</loc>
+		<lastmod>2020-03-02</lastmod>
+    <priority>0</priority>
+	</url>
+	<url>
+		<loc>https://www.so-kommunizieren.com/submitted</loc>
+		<lastmod>2020-03-02</lastmod>
+    <priority>0</priority>
+	</url>
+	<url>
+		<loc>https://so-kommunizieren.com/submission-error</loc>
+		<lastmod>2020-03-02</lastmod>
+    <priority>0</priority>
+	</url>
+	<url>
+		<loc>https://www.so-kommunizieren.com/submission-error</loc>
+		<lastmod>2020-03-02</lastmod>
+    <priority>0</priority>
+	</url>
 </urlset>
