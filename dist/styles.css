@@ -259,6 +259,21 @@ form {
   max-width: 100%;
 }
 
+.vimeo-video__container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.vimeo-video__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 @media screen and (min-width: 800px) {
   h2 {
     font-size: 3.8rem;
