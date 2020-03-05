@@ -239,6 +239,10 @@ form {
   background-color: #e5cdad5b;
 }
 
+.section--about-us {
+  display: none;
+}
+
 .section__subsection {
   margin: 1em 0;
 }
