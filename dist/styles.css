@@ -17,6 +17,7 @@ h2 {
 
 h3 {
   font-size: 2rem;
+  text-align: center;
 }
 
 html {
@@ -237,10 +238,6 @@ form {
 
 .section:nth-of-type(2n) {
   background-color: #e5cdad5b;
-}
-
-.section--about-us {
-  display: none;
 }
 
 .section__subsection {
