@@ -309,13 +309,16 @@ form {
 }
 
 .section {
-  display: none;
   padding: 4em 0em 1em;
   border-radius: 5px;
 }
 
 .section:nth-of-type(2n):not(.section--single) {
   background-color: #e5cdad5b;
+}
+
+.section--single {
+  display: none;
 }
 
 .section__subsection {
