@@ -37,3 +37,10 @@
 
 Mobile: 1
 Desktop:
+
+# Lines
+
+| Line width | Where applied            |
+| ---------- | ------------------------ |
+| 1px        | Around important buttons |
+| 2px        | Below Header             |
