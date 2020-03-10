@@ -44,3 +44,19 @@ document
 document
   .getElementById("login")
   .addEventListener("click", event => overlay.classList.remove("hidden"));
+
+sections = document.querySelectorAll(".section");
+paginator__overlay = document.querySelector(".paginator__overlay");
+
+document.querySelector("body").addEventListener("click", function(event) {
+  sections.forEach(section => section.classList.remove("section--blurred"));
+  paginator__overlay.classList.add("paginator__overlay--hidden");
+});
+
+document
+  .querySelector(".paginator__icon")
+  .addEventListener("click", function(event) {
+    event.stopPropagation();
+    paginator__overlay.classList.remove("paginator__overlay--hidden");
+    sections.forEach(section => section.classList.add("section--blurred"));
+  });

@@ -172,11 +172,6 @@ form {
   border-radius: 5px;
 }
 
-.icon {
-  width: 24px;
-  height: 24px;
-}
-
 .nav {
   height: 100%;
   display: flex;
@@ -233,9 +228,39 @@ form {
 }
 
 .paginator {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 500;
+  width: 100%;
+}
+
+.paginator__entry {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.paginator__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.paginator__overlay {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  box-shadow: 0 0 15px #000000;
+  background-color: #ffffff;
+  padding: 5px;
+}
+
+.paginator__overlay--hidden {
+  display: none;
+}
+
+.paginator__text {
+  font-size: 2rem;
 }
 
 .reduction {
@@ -256,6 +281,10 @@ form {
 
 .section:nth-of-type(2n) {
   background-color: #e5cdad5b;
+}
+
+.section--blurred {
+  filter: blur(5px);
 }
 
 .section__subsection {

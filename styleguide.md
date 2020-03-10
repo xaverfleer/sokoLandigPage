@@ -1,11 +1,11 @@
 # Important colors
 
-| Name           | hex-code  | where is it used          | Where is it from                                      |
-| -------------- | --------- | ------------------------- | ----------------------------------------------------- |
-| brown-light-00 | #e5cdad   | header                    | sand in logo                                          |
-| brown-light-01 | #e5cdad5b | every 2nd section         | like sand, but brighter                               |
-| brown-dark     | #966b40   | header, footer, reduction | trunk in logo - slightly darkened for better contrast |
-| brown-dark-01  | #895929   | button:hover              | darken brown dark                                     |
+| Name           | hex-code  | where is it used          | Where is it from                                                         |
+| -------------- | --------- | ------------------------- | ------------------------------------------------------------------------ |
+| brown-light-00 | #e5cdad   | header                    | sand in logo                                                             |
+| brown-light-01 | #e5cdad5b | every 2nd section         | like sand, but brighter                                                  |
+| brown-dark     | #966b40   | header, footer, reduction | trunk in logo - slightly darkened for better contrast, paginator entries |
+| brown-dark-01  | #895929   | button:hover              | darken brown dark                                                        |
 
 # Font sizes
 
@@ -44,3 +44,7 @@ Desktop:
 | ---------- | ------------------------ |
 | 1px        | Around important buttons |
 | 2px        | Below Header             |
+
+# z-index
+
+Overlays are at z-index 100
