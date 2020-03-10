@@ -47,4 +47,7 @@ Desktop:
 
 # z-index
 
-Overlays are at z-index 100
+| z-index | What    |
+| ------- | ------- |
+| 90      | Scrim   |
+| 100     | Overlay |

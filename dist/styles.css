@@ -232,7 +232,6 @@ form {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 500;
   width: 100%;
 }
 
@@ -253,6 +252,7 @@ form {
   box-shadow: 0 0 15px #000000;
   background-color: #ffffff;
   padding: 5px;
+  z-index: 100;
 }
 
 .paginator__overlay--hidden {
@@ -274,6 +274,20 @@ form {
   border-radius: 0.5rem;
 }
 
+.scrim {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #cccccc77;
+  top: 0;
+  left: 0;
+  z-index: 90;
+}
+
+.scrim--hidden {
+  display: none;
+}
+
 .section {
   padding: 4em 0em 1em;
   border-radius: 5px;
@@ -281,10 +295,6 @@ form {
 
 .section:nth-of-type(2n) {
   background-color: #e5cdad5b;
-}
-
-.section--blurred {
-  filter: blur(5px);
 }
 
 .section__subsection {

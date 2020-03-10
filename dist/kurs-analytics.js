@@ -49,8 +49,8 @@ sections = document.querySelectorAll(".section");
 paginator__overlay = document.querySelector(".paginator__overlay");
 
 document.querySelector("body").addEventListener("click", function(event) {
-  sections.forEach(section => section.classList.remove("section--blurred"));
   paginator__overlay.classList.add("paginator__overlay--hidden");
+  document.querySelector(".scrim").classList.add("scrim--hidden");
 });
 
 document
@@ -58,5 +58,5 @@ document
   .addEventListener("click", function(event) {
     event.stopPropagation();
     paginator__overlay.classList.remove("paginator__overlay--hidden");
-    sections.forEach(section => section.classList.add("section--blurred"));
+    document.querySelector(".scrim").classList.remove("scrim--hidden");
   });
