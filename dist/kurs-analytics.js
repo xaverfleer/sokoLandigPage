@@ -60,3 +60,12 @@ document
     paginator__overlay.classList.remove("paginator__overlay--hidden");
     document.querySelector(".scrim").classList.remove("scrim--hidden");
   });
+
+document.querySelectorAll(".paginator__entry").forEach(function(entry) {
+  entry.addEventListener("click", function(event) {
+    var activeBlock = event.target.getAttribute("data-block");
+    document
+      .querySelector("main")
+      .setAttribute("data-active-block", activeBlock);
+  });
+});

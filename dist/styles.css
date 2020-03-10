@@ -27,6 +27,14 @@ main {
   padding: 10px;
 }
 
+main[data-active-block="01"] .section--kurs01,
+main[data-active-block="02"] .section--kurs02,
+main[data-active-block="03"] .section--kurs03,
+main[data-active-block="04"] .section--kurs04,
+main[data-active-block="05"] .section--kurs05 {
+  display: block;
+}
+
 ul {
   list-style: none;
 }
@@ -289,6 +297,7 @@ form {
 }
 
 .section {
+  display: none;
   padding: 4em 0em 1em;
   border-radius: 5px;
 }
