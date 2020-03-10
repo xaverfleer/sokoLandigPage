@@ -137,11 +137,11 @@ form {
 }
 
 .header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 70px;
-  border-bottom: 2px solid #966b40;
   font-size: 1.4rem;
 }
 
@@ -152,6 +152,16 @@ form {
 
 .header__logo {
   height: 100%;
+}
+
+.header__sand {
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+  height: 15px;
+  width: 80%;
+  background: linear-gradient(to right, #e5cdad, #ffffff00);
+  z-index: -1;
 }
 
 .hero__subjektorientiert {
@@ -190,6 +200,7 @@ form {
 
 .nav__entry {
   padding: 10px;
+  margin-top: 12px;
 }
 
 .nav__entry--primary {
