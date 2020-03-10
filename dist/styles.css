@@ -244,8 +244,20 @@ form {
 }
 
 .paginator__entry {
-  margin: 5px;
+  padding: 5px 10px;
   cursor: pointer;
+}
+
+.paginator__entry:first-of-type {
+  padding-top: 10px;
+}
+
+.paginator__entry:last-of-type {
+  padding-bottom: 10px;
+}
+
+.paginator__entry:hover {
+  background-color: #e5cdad5b;
 }
 
 .paginator__icon {
@@ -259,7 +271,6 @@ form {
   right: 0;
   box-shadow: 0 0 15px #000000;
   background-color: #ffffff;
-  padding: 5px;
   z-index: 100;
 }
 
