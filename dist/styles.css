@@ -23,6 +23,10 @@ html {
   font-size: 62.5%;
 }
 
+main {
+  padding: 10px;
+}
+
 ul {
   list-style: none;
 }
@@ -168,6 +172,11 @@ form {
   border-radius: 5px;
 }
 
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
 .nav {
   height: 100%;
   display: flex;
@@ -223,6 +232,12 @@ form {
   padding: 4rem;
 }
 
+.paginator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .reduction {
   font-size: 1.4em;
   max-width: 10em;
@@ -235,7 +250,7 @@ form {
 }
 
 .section {
-  padding: 4em 1em 1em;
+  padding: 4em 0em 1em;
   border-radius: 5px;
 }
 
