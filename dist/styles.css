@@ -7,7 +7,6 @@ a,
 a * {
   cursor: pointer;
   text-decoration: none;
-  font-weight: 800;
 }
 
 h2 {
@@ -131,7 +130,7 @@ form {
   justify-content: space-between;
   height: 70px;
   border-bottom: 2px solid #966b40;
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 .header__home {
@@ -292,6 +291,10 @@ form {
 
   .footer {
     font-size: 1.4rem;
+  }
+
+  .header {
+    font-size: 2rem;
   }
 
   .hero__subjektorientiert {
