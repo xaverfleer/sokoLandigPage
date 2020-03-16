@@ -1,5 +1,5 @@
 * {
-  font-family: "Nunito", sans-serif;
+  font-family: source-sans-pro, sans-serif;
   cursor: default;
 }
 
@@ -7,6 +7,13 @@ a,
 a * {
   cursor: pointer;
   text-decoration: none;
+}
+
+h1,
+h1 *,
+h2,
+h3 {
+  font-family: source-serif-pro, serif;
 }
 
 h2 {
