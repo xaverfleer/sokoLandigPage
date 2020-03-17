@@ -51,7 +51,6 @@ ul {
   color: #ffffff;
   font-size: 1.4rem;
   letter-spacing: 0.1em;
-  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   margin: 1em auto 0.5em;
@@ -65,7 +64,6 @@ ul {
 }
 
 .button:hover {
-  font-weight: 1000;
   background-color: #895929;
 }
 
