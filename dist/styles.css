@@ -81,6 +81,10 @@ ul {
   margin-right: 1em;
 }
 
+.date {
+  color: #999999;
+}
+
 .footer {
   background-color: #966b40;
   box-sizing: border-box;
