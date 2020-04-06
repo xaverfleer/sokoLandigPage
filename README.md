@@ -38,3 +38,18 @@ A sitemap helps search engine crawlers finding all websites.
 Reference: https://www.sitemaps.org/protocol.html
 Our sitemap: /dist/sitemap.xml
 When to update: When non-minor changes are made
+
+# Branch naming
+
+Git branch names have the format `<type>/<name>`. Possible values for `<type>` are listed in the following table.
+
+| branch type | meaning                 |
+| ----------- | ----------------------- |
+| bugfix      | A bugfix                |
+| chore       | A chore/task to be done |
+
+`<name>` is lower-kebab-cased.
+
+_Example:_ `bugfix/fix-typo`
+
+Exceptions: `master` branch is called `master`.
