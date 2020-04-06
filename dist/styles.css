@@ -339,6 +339,13 @@ form {
   background-color: #e5cdad5b;
 }
 
+.section--group,
+.section--organisation,
+.section--about-us,
+.section--subscription {
+  display: none;
+}
+
 .section--single {
   display: none;
 }
