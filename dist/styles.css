@@ -355,6 +355,31 @@ form {
   font-size: 1.4rem;
 }
 
+.value-proposition {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.value-proposition--entry {
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 1em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value-proposition--icon {
+  width: 50%;
+}
+
+.value-proposition--description {
+  text-align: center;
+}
+
 .video-cover {
   max-width: 100%;
 }
@@ -377,6 +402,12 @@ form {
 @media screen and (min-width: 450px) {
   .nav__entry {
     margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .value-proposition {
+    flex-direction: row;
   }
 }
 
