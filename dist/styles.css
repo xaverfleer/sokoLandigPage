@@ -408,6 +408,7 @@ form {
 @media screen and (min-width: 600px) {
   .value-proposition {
     flex-direction: row;
+    align-items: flex-start;
   }
 }
 
