@@ -357,27 +357,33 @@ form {
 
 .value-proposition {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.value-proposition--entry {
+.value-proposition__entry {
+  min-width: 18em;
+  max-width: 30em;
   flex-basis: 0;
   flex-grow: 1;
   padding: 1em;
+  margin-bottom: 2em;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.value-proposition--icon {
+.value-proposition__icon {
   width: 50%;
 }
 
-.value-proposition--description {
+.value-proposition__description {
   text-align: center;
+}
+
+.value-proposition__titie {
+  margin-block-end: 0;
 }
 
 .video-cover {
@@ -402,13 +408,6 @@ form {
 @media screen and (min-width: 450px) {
   .nav__entry {
     margin-right: 10px;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .value-proposition {
-    flex-direction: row;
-    align-items: flex-start;
   }
 }
 
@@ -460,5 +459,9 @@ form {
 
   .text {
     font-size: 2rem;
+  }
+
+  .value-proposition__entry {
+    min-width: 30%;
   }
 }
