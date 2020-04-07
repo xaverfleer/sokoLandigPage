@@ -29,8 +29,9 @@
         <a class="nav__entry" href="#contents">Inhalte</a>
         <a class="nav__entry" href="#offer">Angebot</a>
         <a class="nav__entry" href="#about-us">Über uns</a>
-        <secondary-nav-entry></secondary-nav-entry>
-        <a class="nav__entry nav__entry--primary" href="./kurs.html" id="primary-nav-entry" target="_blank">{{ text }}</a>
+        <secondary-nav-entry v-for='navEntry in navEntries' v-bind:entry='navEntry'></secondary-nav-entry>
+        <a class="nav__entry nav__entry--primary" href="./kurs.html" id="primary-nav-entry"
+          target="_blank">{{ text }}</a>
       </nav>
     </header>
     <main>

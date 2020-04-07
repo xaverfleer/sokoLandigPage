@@ -1,5 +1,7 @@
 Vue.component("secondary-nav-entry", {
-  template: '<a class="nav__entry" href="blah">blih</a>',
+  props: ["entry"],
+  template:
+    '<a class="nav__entry" href="{{ entry.href }}">{{ entry.href }} {{ entry.text }}</a>',
 });
 
 var app = new Vue({
@@ -13,9 +15,9 @@ new Vue({
   el: "#nav",
   data: {
     navEntries: [
-      { text: "Inhalte" },
-      { text: "Angebot" },
-      { text: "Über uns" },
+      { href: "#contents", text: "Inhalte" },
+      { href: "#offer", text: "Angebot" },
+      { href: "#about-us", text: "Über uns" },
     ],
   },
 });
