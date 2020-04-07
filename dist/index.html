@@ -11,6 +11,10 @@
   <meta charset="utf-8">
   <meta name="google-site-verification" content="21ovtDZF6FXeZlkMfWnPWAjtK_km4OwN5yRwcJRA0O4" />
   <link rel="stylesheet" href='./styles.css'>
+  <!-- production version, optimized for size and speed -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="/amplitudeSnippet.js"></script>
 </head>
 
@@ -21,11 +25,12 @@
         <img alt="Growing tree" class="header__logo" src="./imgs/logo.png" title="Zur Startseite">
       </a>
       <div class="header__sand"></div>
-      <nav class="nav">
+      <nav class="nav" id="nav">
         <a class="nav__entry" href="#contents">Inhalte</a>
         <a class="nav__entry" href="#offer">Angebot</a>
         <a class="nav__entry" href="#about-us">Über uns</a>
-        <a class="nav__entry nav__entry--primary" href="./kurs.html"  target="_blank">Zum Kurs</a>
+        <secondary-nav-entry></secondary-nav-entry>
+        <a class="nav__entry nav__entry--primary" href="./kurs.html" id="primary-nav-entry" target="_blank">{{ text }}</a>
       </nav>
     </header>
     <main>
@@ -241,6 +246,7 @@
     <button id="overlay__close-button" class="overlay__close-button button">Schliessen</button>
   </div>
   <script src="/index-analytics.js"></script>
+  <script src="/index-vue.js"></script>
 </body>
 
 </html>
