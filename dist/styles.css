@@ -69,18 +69,29 @@ ul {
   background-color: #895929;
 }
 
-.content__blocks {
-  padding: 0 1.5em 0 1.5em;
-}
-
-.content__week {
-  margin-top: 1em;
+.contents-list {
   display: flex;
+  flex-direction: column;
 }
 
-.content__weektitle {
-  flex: 0 0 auto;
-  margin-right: 1em;
+.contents-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1em;
+}
+
+.contents-list__item:before {
+  flex: 0 0 32px;
+  height: 32px;
+  content: " ";
+  background-image: url(imgs/check-24px.svg);
+  background-repeat: no-repeat;
+  margin: 0 1em 0 2em;
+}
+
+.contents-list__text {
+  margin-right: 3em;
 }
 
 .date {
