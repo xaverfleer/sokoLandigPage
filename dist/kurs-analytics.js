@@ -46,11 +46,11 @@ function bindVideoEventHandlers(mutations) {
 
 document
   .getElementById("overlay__close-button")
-  .addEventListener("click", e => overlay.classList.add("hidden"));
+  .addEventListener("click", (e) => overlay.classList.add("hidden"));
 
 document
   .getElementById("login")
-  .addEventListener("click", event => overlay.classList.remove("hidden"));
+  .addEventListener("click", (event) => overlay.classList.remove("hidden"));
 
 sections = document.querySelectorAll(".section");
 paginator__overlay = document.querySelector(".paginator__overlay");
