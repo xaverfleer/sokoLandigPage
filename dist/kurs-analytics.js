@@ -18,8 +18,8 @@ function bindVideoEventHandlers(mutations) {
   var addedVideos = mutations.reduce(function(acc, mutation) {
     Array.prototype.slice
       .call(mutation.addedNodes)
-      .filter(node => node.nodeName === "VIDEO")
-      .forEach(node => acc.push(node));
+      .filter((node) => node.nodeName === "VIDEO")
+      .forEach((node) => acc.push(node));
     return acc;
   }, []);
 

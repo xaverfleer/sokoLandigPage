@@ -26,7 +26,7 @@ document.querySelectorAll(".cta02").forEach(function(element) {
 
 document
   .getElementById("overlay__close-button")
-  .addEventListener("click", e => overlay.classList.add("hidden"));
+  .addEventListener("click", (e) => overlay.classList.add("hidden"));
 
 function submitForm(data) {
   const xhr = new XMLHttpRequest();
@@ -37,7 +37,7 @@ function submitForm(data) {
     window.location.href = "/submitted.html";
   });
 
-  xhr.addEventListener("error", xhrEventError => {
+  xhr.addEventListener("error", (xhrEventError) => {
     window.alert(
       `Senden fehlgeschlagen, bitte erneut versuchen.\n\nBei wiederholtem Fehlschlagen, kontaktiere uns bitte mit folgenden Details: xhrEventError ${JSON.stringify(
         xhrEventError
