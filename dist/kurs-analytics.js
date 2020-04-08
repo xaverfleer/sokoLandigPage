@@ -1,6 +1,13 @@
 amplitude.getInstance().logEvent("Kurs page loaded");
 
 var overlay = document.querySelector(".overlay");
+var notReadies = document.querySelectorAll(".notReady");
+
+notReadies.forEach((elem) => elem.addEventListener("click", showOverlay));
+
+function showOverlay() {
+  overlay.classList.remove("hidden");
+}
 
 document.querySelectorAll(".cta00").forEach(function(e) {
   e.addEventListener("click", function() {
