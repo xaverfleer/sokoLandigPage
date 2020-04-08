@@ -359,10 +359,6 @@ form {
   margin: 2em 1em;
 }
 
-.section__header {
-  text-align: center;
-}
-
 .value-proposition {
   display: flex;
   flex-wrap: wrap;
