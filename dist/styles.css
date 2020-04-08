@@ -11,6 +11,10 @@ a * {
   text-decoration: none;
 }
 
+body {
+  font-size: 1.4rem;
+}
+
 h1,
 h1 *,
 h2,
@@ -35,7 +39,6 @@ html {
 
 main {
   padding: 10px 0;
-  font-size: 1.4rem;
 }
 
 main[data-active-block="01"] .section--kurs01,
@@ -417,16 +420,16 @@ form {
 }
 
 @media screen and (min-width: 800px) {
+  body {
+    font-size: 2rem;
+  }
+
   h2 {
     font-size: 3.8rem;
   }
 
   h3 {
     font-size: 2.7rem;
-  }
-
-  main {
-    font-size: 2rem;
   }
 
   .button {
