@@ -46,10 +46,6 @@ main[data-active-block="05"] .section--kurs05 {
   display: block;
 }
 
-ul {
-  list-style: none;
-}
-
 .button {
   background-color: #966b40;
   color: #ffffff;
