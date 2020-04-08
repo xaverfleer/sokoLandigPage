@@ -230,6 +230,10 @@ form {
   display: none;
 }
 
+.hidden-by-default {
+  display: none;
+}
+
 .img {
   width: 100%;
   border-radius: 5px;
@@ -371,10 +375,6 @@ form {
 
 .section:nth-of-type(2n) {
   background-color: #e5cdad5b;
-}
-
-.section--hidden-by-default {
-  display: none;
 }
 
 .section__subsection {
