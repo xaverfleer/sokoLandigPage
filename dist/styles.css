@@ -49,6 +49,54 @@ main[data-active-block="05"] .section--kurs05 {
   display: block;
 }
 
+.booking-offers {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-offer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000000;
+  margin: 0.5em;
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+
+.booking-offer__detail {
+  border-top: 1px solid #d9d9d9;
+}
+
+.booking-offer__entry {
+  padding: 0.5em;
+}
+
+.booking-offer__prize {
+  font-size: 2em;
+}
+
+.booking-offer__title {
+  height: 3em;
+  border-radius: 5px 5px 0 0;
+
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.booking-offer__title--2ndary {
+  background-color: #e5cdad;
+}
+
+.booking-offer__title--primary {
+  background-color: #966b40;
+  color: #ffffff;
+}
+
 .button {
   font-size: 1.4rem;
   letter-spacing: 0.1em;
@@ -490,6 +538,24 @@ form {
   .nav__entry {
     margin: 0 10px;
     display: block;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .booking-offer__main {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .booking-offer--primary {
+    transform: translateY(-15px);
+  }
+
+  .booking-offers {
+    flex-direction: row;
   }
 }
 
