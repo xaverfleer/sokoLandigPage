@@ -20,6 +20,10 @@ h1 *,
 h2,
 h3 {
   font-family: source-serif-pro, serif;
+}
+
+h2,
+h3 {
   text-align: center;
 }
 
