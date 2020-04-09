@@ -243,6 +243,7 @@ form {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
 .form-entry__radio-label {
   margin: 0 2rem 0 0;
 }
@@ -349,6 +350,7 @@ form {
   border: 1px solid #966b40;
   border-radius: 5px;
 }
+
 /* this rule is needed to override user agents stylesheets */
 .nav *:any-link {
   color: #966b40;
