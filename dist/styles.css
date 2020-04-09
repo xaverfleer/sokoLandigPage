@@ -50,24 +50,42 @@ main[data-active-block="05"] .section--kurs05 {
 }
 
 .button {
-  background-color: #966b40;
-  color: #ffffff;
   font-size: 1.4rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
   margin: 1em auto 0.5em;
   border-radius: 5px;
+  border: 2px solid #4ba747;
+  max-width: 12em;
 
-  width: 14em;
-  height: 3em;
+  padding: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .button:hover {
-  background-color: #895929;
+  border-color: #408f3d;
+}
+
+.button--2ndary {
+  color: #4ba747;
+  font-weight: 800;
+}
+
+.button--2ndary:hover {
+  color: #408f3d;
+}
+
+.button--primary {
+  background-color: #4ba747;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.button--primary:hover {
+  background-color: #408f3d;
 }
 
 .contents-list {

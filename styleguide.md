@@ -7,7 +7,7 @@
 | brown-dark     | #966b40   | header, footer, reduction | trunk in logo - slightly darkened for contrast |
 | brown-dark-01  | #895929   | button:hover              | darken brown dark                              |
 | green          | #4ba747   |                           |                                                |
-| green-01       | #306b2e   | button--2ndary:hover      | darkened green                                 |
+| green-01       | #408f3d   | button--2ndary:hover      | darkened green                                 |
 
 # Font sizes
 
