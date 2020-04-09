@@ -484,7 +484,7 @@ form {
 }
 
 .value-proposition__entry {
-  min-width: 18em;
+  min-width: 12em;
   max-width: 30em;
   flex-basis: 0;
   flex-grow: 1;
@@ -622,6 +622,6 @@ form {
   }
 
   .value-proposition__entry {
-    min-width: 30%;
+    min-width: 26%;
   }
 }
