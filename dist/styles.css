@@ -361,6 +361,7 @@ form {
   margin-left: 10%;
   top: 3rem;
   box-shadow: 0 0 20px #000000;
+  border-radius: 5px;
 
   background-color: #ffffff;
 }
@@ -377,6 +378,7 @@ form {
   background-color: #966b40;
   color: #ffffff;
   height: 1rem;
+  border-radius: 5px 5px 0 0;
 
   display: flex;
   align-items: center;
@@ -386,6 +388,7 @@ form {
   height: 13em;
   background-color: #ffffff;
   padding: 4rem;
+  border-radius: 0 0 5px 5px;
 }
 
 .paginator {
