@@ -23,6 +23,7 @@
     "browserslist": "^4.11.1",
     "express": "^4.17.1",
     "netlify-cli": "^2.40.0",
+    "netlify-lambda": "^1.6.3",
     "prettier": "^1.19.1"
   },
   "dependencies": {
