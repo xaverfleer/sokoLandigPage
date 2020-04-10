@@ -21,10 +21,21 @@ exports.handler = function(event, context, callback) {
     subject: "Subscription for 2020-04-02",
     text: decoded
   };
-  console.log("success");
-  sgMail.send(msg);
-  callback(null, {
-    statusCode: 200,
-    body: "Somebody subscribed for 2020-04-02."
-  });
+  console.log("sending email");
+  sgMail
+    .send(msg)
+    .then(function() {
+      callback(null, {
+        statusCode: 200,
+        body: "Somebody subscribed."
+      });
+      console.log("success");
+    })
+    .catch(function(e) {
+      callback(e, {
+        statusCode: 500,
+        body: `failed: + ${e}`
+      });
+      console.log("failure");
+    });
 };
