@@ -141,19 +141,13 @@ main[data-active-block="05"] .section--kurs05 {
   background-color: #408f3d;
 }
 
-.contents-list {
-  display: flex;
-  flex-direction: column;
-}
-
 .contents-list__item {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   margin-bottom: 1em;
 }
 
-.contents-list__item:before {
+.contents-list__item::before {
   flex: 0 0 32px;
   height: 32px;
   content: " ";
