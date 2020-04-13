@@ -446,6 +446,25 @@ form {
   font-size: 2rem;
 }
 
+.progress-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.progress-list__item::before {
+  flex: 0 0 32px;
+  height: 32px;
+  content: " ";
+  background-image: url(imgs/autorenew-24px.svg);
+  background-repeat: no-repeat;
+  margin: 0 1em 0 2em;
+}
+
+.progress-list__item--done::before {
+  background-image: url(imgs/check-24px.svg);
+}
+
 .reduction {
   font-size: 1.4em;
   max-width: 10em;
@@ -553,15 +572,11 @@ form {
 
 @media screen and (min-width: 600px) {
   .booking-offer__main {
-    flex: 1 0 0;
+    flex: 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .booking-offer--primary {
-    transform: translateY(-15px);
   }
 
   .booking-offers {
