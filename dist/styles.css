@@ -188,11 +188,7 @@ form {
 }
 
 .header__content {
-  flex-basis: 60px;
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  flex: 1 0 60px;
   background-color: #e5cdad;
 }
 
@@ -247,16 +243,15 @@ form {
 }
 
 .nav {
-  height: 100%;
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-end;
-  align-items: center;
   color: #966b40;
+  align-items: flex-end;
+  padding: 1em;
 }
 
 .nav::after {
-  margin: 15px;
   width: 32px;
   height: 32px;
   content: " ";
@@ -264,6 +259,11 @@ form {
   cursor: pointer;
 }
 
+.nav.nav--active::after {
+  background-image: url(imgs/close-24px--brown.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .nav--active .nav__entry {
   display: block;
 }
@@ -271,6 +271,10 @@ form {
 .nav__entry {
   display: none;
   margin: 5px;
+}
+
+.nav__entry--2ndary {
+  margin-right: 16px;
 }
 
 .nav__entry--primary {
@@ -456,6 +460,7 @@ form {
 @media screen and (min-width: 450px) {
   .nav {
     flex-direction: row;
+    align-items: center;
   }
 
   .nav::after {
