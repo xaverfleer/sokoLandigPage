@@ -3,7 +3,9 @@ amplitude.getInstance().logEvent("Kurs page loaded");
 var overlay = document.querySelector(".overlay");
 var notReadies = document.querySelectorAll(".notReady");
 
-notReadies.forEach((elem) => elem.addEventListener("click", showOverlay));
+notReadies.forEach(function(elem) {
+  elem.addEventListener("click", showOverlay);
+});
 
 function showOverlay() {
   overlay.classList.remove("hidden");
@@ -25,8 +27,12 @@ function bindVideoEventHandlers(mutations) {
   var addedVideos = mutations.reduce(function(acc, mutation) {
     Array.prototype.slice
       .call(mutation.addedNodes)
-      .filter((node) => node.nodeName === "VIDEO")
-      .forEach((node) => acc.push(node));
+      .filter(function(node) {
+        return node.nodeName === "VIDEO";
+      })
+      .forEach(function(node) {
+        acc.push(node);
+      });
     return acc;
   }, []);
 
@@ -46,11 +52,13 @@ function bindVideoEventHandlers(mutations) {
 
 document
   .getElementById("overlay__close-button")
-  .addEventListener("click", (e) => overlay.classList.add("hidden"));
+  .addEventListener("click", function(e) {
+    overlay.classList.add("hidden");
+  });
 
-document
-  .getElementById("login")
-  .addEventListener("click", (event) => overlay.classList.remove("hidden"));
+document.getElementById("login").addEventListener("click", function(event) {
+  overlay.classList.remove("hidden");
+});
 
 sections = document.querySelectorAll(".section");
 paginator__overlay = document.querySelector(".paginator__overlay");
