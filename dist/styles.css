@@ -249,12 +249,27 @@ form {
 .nav {
   height: 100%;
   display: flex;
+  flex-direction: column-reverse;
   justify-content: flex-end;
   align-items: center;
   color: #966b40;
 }
 
+.nav::after {
+  margin: 15px;
+  width: 32px;
+  height: 32px;
+  content: " ";
+  background-image: url(imgs/menu-bars--brown.svg);
+  cursor: pointer;
+}
+
+.nav--active .nav__entry {
+  display: block;
+}
+
 .nav__entry {
+  display: none;
   margin: 5px;
 }
 
@@ -439,8 +454,17 @@ form {
 }
 
 @media screen and (min-width: 450px) {
+  .nav {
+    flex-direction: row;
+  }
+
+  .nav::after {
+    display: none;
+  }
+
   .nav__entry {
     margin-right: 10px;
+    display: block;
   }
 }
 

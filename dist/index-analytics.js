@@ -63,3 +63,11 @@ function getData(elements) {
 
   return encoded;
 }
+
+var nav = document.querySelector(".nav");
+nav.addEventListener("click", function() {
+  var classList = nav.classList;
+  [].slice.call(classList).indexOf("nav--active") > -1
+    ? classList.remove("nav--active")
+    : classList.add("nav--active");
+});
