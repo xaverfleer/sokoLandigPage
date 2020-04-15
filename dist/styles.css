@@ -188,8 +188,8 @@ form {
 }
 
 .header__content {
+  flex-basis: 56px;
   position: relative;
-  flex: 1 0 60px;
   background-color: #e5cdad;
 }
 
@@ -249,7 +249,7 @@ form {
   justify-content: flex-end;
   color: #966b40;
   align-items: flex-end;
-  padding: 1em;
+  padding: 12px;
 }
 
 .nav::after {
@@ -462,6 +462,7 @@ form {
   .nav {
     flex-direction: row;
     align-items: center;
+    padding: 12px;
   }
 
   .nav::after {
@@ -469,7 +470,7 @@ form {
   }
 
   .nav__entry {
-    margin-right: 10px;
+    margin: 0 10px;
     display: block;
   }
 }
@@ -511,6 +512,15 @@ form {
   .hero__title {
     font-size: 5.3rem;
   }
+
+  .nav {
+    padding: 9px 12px;
+  }
+
+  .nav__entry {
+    margin: 0 12px;
+  }
+
   .overlay__title {
     font-size: 2.7rem;
   }
