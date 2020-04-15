@@ -188,6 +188,7 @@ form {
 }
 
 .header__content {
+  position: relative;
   flex: 1 0 60px;
   background-color: #e5cdad;
 }
@@ -209,7 +210,7 @@ form {
   height: 204px;
   position: absolute;
   left: 0;
-  bottom: 0;
+  top: -144px;
 }
 
 .hero__subjektorientiert {
