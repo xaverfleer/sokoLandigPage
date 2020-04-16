@@ -2,7 +2,7 @@ amplitude.getInstance().logEvent("Booking page loaded");
 
 var overlay = document.querySelector(".overlay");
 
-document.querySelectorAll(".cta02").forEach(function(element) {
+document.querySelectorAll(".form").forEach(function(element) {
   element.addEventListener("submit", function(event) {
     event.preventDefault();
 

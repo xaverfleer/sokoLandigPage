@@ -2,11 +2,6 @@ amplitude.getInstance().logEvent("Page loaded");
 
 var overlay = document.querySelector(".overlay");
 
-document.querySelectorAll(".cta04").forEach(function(e) {
-  e.addEventListener("click", function() {
-    amplitude.getInstance().logEvent("Kurs starten");
-  });
-});
 document.querySelectorAll(".cta05").forEach(function(e) {
   e.addEventListener("click", function() {
     amplitude.getInstance().logEvent("Jetzt buchen");
