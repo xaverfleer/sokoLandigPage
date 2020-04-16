@@ -262,6 +262,10 @@ form {
   margin: 0 2rem 0 0;
 }
 
+.form-entry__radio-label--disabled {
+  color: #aaaaaa;
+}
+
 .header {
   position: relative;
   display: flex;
