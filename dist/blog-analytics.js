@@ -8,6 +8,9 @@ document
     overlay.classList.add("hidden");
   });
 
-document.getElementById("login").addEventListener("click", function() {
-  overlay.classList.remove("hidden");
+var headerContent = document.querySelector(".header__content");
+window.addEventListener("scroll", function(event) {
+  window.pageYOffset > 360
+    ? headerContent.classList.add("header__content--fixed")
+    : headerContent.classList.remove("header__content--fixed");
 });
