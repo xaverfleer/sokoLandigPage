@@ -1,13 +1,13 @@
 # Important colors
 
-| Name           | hex-code  | where is it used          | Where is it from                               |
-| -------------- | --------- | ------------------------- | ---------------------------------------------- |
-| brown-light-00 | #e5cdad   | header                    | sand in logo                                   |
-| brown-light-01 | #e5cdad5b | every 2nd section         | like sand, but brighter                        |
-| brown-dark     | #966b40   | header, footer, reduction | trunk in logo - slightly darkened for contrast |
-| brown-dark-01  | #895929   | button:hover              | darken brown dark                              |
-| green          | #4ba747   |                           |                                                |
-| green-01       | #408f3d   | button--2ndary:hover      | darkened green                                 |
+| Name           | hex-code | where is it used          | Where is it from                               |
+| -------------- | -------- | ------------------------- | ---------------------------------------------- |
+| brown-light-00 | #e5cdad  | header                    | sand in logo                                   |
+| brown-light-01 | #f6ede2  | every 2nd section         | like sand, but brighter                        |
+| brown-dark     | #966b40  | header, footer, reduction | trunk in logo - slightly darkened for contrast |
+| brown-dark-01  | #895929  | button:hover              | darken brown dark                              |
+| green          | #4ba747  |                           |                                                |
+| green-01       | #408f3d  | button--2ndary:hover      | darkened green                                 |
 
 # Font sizes
 
