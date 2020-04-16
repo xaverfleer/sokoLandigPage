@@ -186,6 +186,13 @@ main[data-active-block="05"] .section--kurs05 {
   margin-right: 1em;
 }
 
+.early-bird__icon {
+  position: absolute;
+  height: 64px;
+  top: -48px;
+  left: 5%;
+}
+
 .footer {
   background-color: #966b40;
   box-sizing: border-box;
@@ -493,8 +500,19 @@ form {
   background-color: #e5cdad5b;
 }
 
+.section__subsection--highlight {
+  padding: 1em;
+  background-color: #e5cdad;
+  border-radius: 5px;
+  transform: rotate(-2deg);
+}
+
 .section__subsection {
   margin: 2em 1em;
+}
+
+.ul--3-dots {
+  list-style-type: "… ";
 }
 
 .value-proposition {
