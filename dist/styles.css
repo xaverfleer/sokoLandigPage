@@ -565,7 +565,7 @@ form {
   width: 100%;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 550px) {
   .nav {
     flex-direction: row;
     align-items: center;
