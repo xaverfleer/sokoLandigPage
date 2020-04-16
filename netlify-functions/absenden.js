@@ -18,7 +18,7 @@ exports.handler = function(event, context, callback) {
   const msg = {
     to: "xaver.fleer+sokokurs@gmail.com",
     from: "noreply@so-kommunizieren.com",
-    subject: "Subscription for 2020-04-02",
+    subject: "Subscription for Early-Bird course",
     text: decoded
   };
   console.log("sending email");
