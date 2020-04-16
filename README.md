@@ -28,6 +28,8 @@ We believe in using default settings where possible.
 | cta01     | Zu den Videos clicked | Zu den Videos button is clicked |
 | cta02     | Absenden submitted    | Course subscription is sent     |
 | cta03     | Zur Startseite        | Zur Startseite                  |
+| cta04     | Kurs starten          | Kurs starten                    |
+| cta05     | Jetzt buchen          | Jetzt buchen                    |
 |           | Page loaded           | Page load of index.html         |
 |           | Kurs page loaded      | Page load of kurs.html          |
 |           | Submitted page loaded | Page load of submitted.html     |
