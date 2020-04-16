@@ -107,9 +107,7 @@ main[data-active-block="05"] .section--kurs05 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
-  margin: 1em auto 0.5em;
   border-radius: 5px;
-  border: 2px solid #4ba747;
   max-width: 12em;
 
   padding: 1em;
@@ -186,6 +184,11 @@ main[data-active-block="05"] .section--kurs05 {
   margin-right: 1em;
 }
 
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
 .early-bird__icon {
   position: absolute;
   height: 64px;
@@ -211,6 +214,11 @@ form {
   display: flex;
   flex-wrap: wrap;
   margin: 0 1em 1em 0;
+}
+
+.form__buttons {
+  flex-grow: 1;
+  margin: 1em 0 0 1em;
 }
 
 .form-entry {
