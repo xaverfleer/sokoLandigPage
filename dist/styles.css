@@ -274,6 +274,14 @@ form {
   background-color: #e5cdad;
 }
 
+.header__content--fixed {
+  position: fixed;
+  top: 0;
+  left: 8px;
+  right: 8px;
+  z-index: 80;
+}
+
 .header__emotion {
   flex-basis: 350px;
   background-image: url(./imgs/mother-father-and-baby-child-on-a-white-bed-mini-cropped.jpg);
@@ -627,6 +635,11 @@ form {
 
   .header {
     font-size: 2rem;
+  }
+
+  .header__content--fixed {
+    max-width: 900px;
+    margin: 0 auto;
   }
 
   .hero__subjektorientiert {

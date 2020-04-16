@@ -49,7 +49,8 @@ Desktop:
 
 # z-index
 
-| z-index | What    |
-| ------- | ------- |
-| 90      | Scrim   |
-| 100     | Overlay |
+| z-index | What          |
+| ------- | ------------- |
+| 80      | sticky header |
+| 90      | Scrim         |
+| 100     | Overlay       |
