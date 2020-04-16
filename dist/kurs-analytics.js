@@ -63,10 +63,6 @@ document
     overlay.classList.add("hidden");
   });
 
-document.getElementById("login").addEventListener("click", function(event) {
-  overlay.classList.remove("hidden");
-});
-
 sections = document.querySelectorAll(".section");
 paginator__overlay = document.querySelector(".paginator__overlay");
 
