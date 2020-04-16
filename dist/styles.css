@@ -226,7 +226,7 @@ form {
 
 .form-entry--halfwidth {
   flex-basis: 40%;
-  min-width: 20em;
+  min-width: 15em;
 }
 
 .form-entry__input {
