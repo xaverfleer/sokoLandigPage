@@ -44,7 +44,7 @@ function getData(elements) {
     acc[elem.name] = elem.value;
     return acc;
   }, {});
-  raw.reservations = fields[1].checked ? 2 : 1;
+  raw.product = fields[1].checked ? "standard" : "early-bird";
 
   var stringified = JSON.stringify(raw);
   var encoded = encodeURIComponent(stringified);
