@@ -11,9 +11,16 @@ function showOverlay() {
   overlay.classList.remove("hidden");
 }
 
-document.querySelectorAll(".cta00").forEach(function(e) {
+document.querySelectorAll(".cta05").forEach(function(e) {
   e.addEventListener("click", function() {
-    amplitude.getInstance().logEvent("Anmelden clicked");
+    amplitude.getInstance().logEvent("Jetzt buchen");
+  });
+});
+
+document.querySelectorAll(".cta06").forEach(function(e) {
+  e.addEventListener("click", function() {
+    setActiveBlock("02");
+    amplitude.getInstance().logEvent("Kursblock 2");
   });
 });
 
@@ -79,11 +86,13 @@ document
 document.querySelectorAll(".paginator__entry").forEach(function(entry) {
   entry.addEventListener("click", function(event) {
     var activeBlock = event.target.getAttribute("data-block");
-    document
-      .querySelector("main")
-      .setAttribute("data-active-block", activeBlock);
+    setActiveBlock(activeBlock);
   });
 });
+
+function setActiveBlock(activeBlock) {
+  document.querySelector("main").setAttribute("data-active-block", activeBlock);
+}
 
 var nav = document.querySelector(".nav");
 nav.addEventListener("click", function() {
