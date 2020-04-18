@@ -206,7 +206,7 @@ main[data-active-block="05"] .section--kurs05 {
   color: #ffffff;
 }
 
-.footer *:any-link {
+.footer a {
   color: #ffffff;
 }
 
@@ -378,7 +378,7 @@ form {
 }
 
 /* this rule is needed to override user agents stylesheets */
-.nav *:any-link {
+.nav a {
   color: #966b40;
   text-decoration: none;
 }
