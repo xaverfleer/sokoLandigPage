@@ -50,6 +50,7 @@ Git branch names have the format `<type>/<name>`. Possible values for `<type>` a
 | ----------- | ----------------------- |
 | bugfix      | A bugfix                |
 | chore       | A chore/task to be done |
+| feature     | A new feature           |
 
 `<name>` is lower-kebab-cased.
 
