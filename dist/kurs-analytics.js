@@ -24,6 +24,34 @@ document.querySelectorAll(".cta06").forEach(function(e) {
   });
 });
 
+document.querySelectorAll(".cta07").forEach(function(e) {
+  e.addEventListener("click", function() {
+    setActiveBlock("01");
+    amplitude.getInstance().logEvent("Kursblock 1");
+  });
+});
+
+document.querySelectorAll(".cta08").forEach(function(e) {
+  e.addEventListener("click", function() {
+    setActiveBlock("03");
+    amplitude.getInstance().logEvent("Kursblock 3");
+  });
+});
+
+document.querySelectorAll(".cta09").forEach(function(e) {
+  e.addEventListener("click", function() {
+    setActiveBlock("04");
+    amplitude.getInstance().logEvent("Kursblock 4");
+  });
+});
+
+document.querySelectorAll(".cta10").forEach(function(e) {
+  e.addEventListener("click", function() {
+    setActiveBlock("05");
+    amplitude.getInstance().logEvent("Kursblock 5");
+  });
+});
+
 var observerOptions = { childList: true, attributes: false, subtree: true };
 
 var observer = new MutationObserver(bindVideoEventHandlers);

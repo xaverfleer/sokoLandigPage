@@ -31,6 +31,10 @@ We believe in using default settings where possible.
 | cta04     | Kurs starten          | Kurs starten                    |
 | cta05     | Jetzt buchen          | Jetzt buchen                    |
 | cta06     | Kursblock 2           | Kursblock 2                     |
+| cta07     | Kursblock 1           | Kursblock 1                     |
+| cta08     | Kursblock 3           | Kursblock 3                     |
+| cta09     | Kursblock 4           | Kursblock 4                     |
+| cta10     | Kursblock 5           | Kursblock 5                     |
 |           | Page loaded           | Page load of index.html         |
 |           | Kurs page loaded      | Page load of kurs.html          |
 |           | Submitted page loaded | Page load of submitted.html     |
