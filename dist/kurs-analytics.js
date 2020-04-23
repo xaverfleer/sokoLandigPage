@@ -28,7 +28,7 @@ lessons = [
 lessons.forEach(function(lesson) {
   document.querySelectorAll(lesson.selector).forEach(function(e) {
     e.addEventListener("click", function() {
-      setActiveBlock(lesson.block);
+      updateActiveBlock(lesson.block);
       amplitude.getInstance().logEvent(lesson.logEvent);
     });
   });
@@ -92,12 +92,15 @@ document
 document.querySelectorAll(".paginator__entry").forEach(function(entry) {
   entry.addEventListener("click", function(event) {
     var activeBlock = event.target.getAttribute("data-block");
-    setActiveBlock(activeBlock);
+    updateActiveBlock(activeBlock);
   });
 });
 
-function setActiveBlock(activeBlock) {
-  document.querySelector("main").setAttribute("data-active-block", activeBlock);
+function updateActiveBlock(activeBlock) {
+  setState(function(oldState) {
+    oldState.activeBlock = activeBlock;
+    return oldState;
+  });
 }
 
 var nav = document.querySelector(".nav");
@@ -114,3 +117,56 @@ window.addEventListener("scroll", function(event) {
     ? header.classList.add("header--fixed")
     : header.classList.remove("header--fixed");
 });
+
+function getState() {
+  var defaultState = {
+    activeBlock: "01",
+  };
+
+  var lsState = localStorage.getItem("soko");
+  return (validateState(lsState) && JSON.parse(lsState)) || defaultState;
+}
+
+function validateState(stringState) {
+  var state;
+  try {
+    state = JSON.parse(stringState);
+  } catch (e) {
+    return false;
+  }
+  var checks = [
+    function(s) {
+      return s && typeof s === "object";
+    },
+    function(s) {
+      return typeof s.activeBlock === "string";
+    },
+    function(s) {
+      return ["01", "02", "03", "04", "05"].indexOf(state.activeBlock) > -1;
+    },
+  ];
+
+  var isValid = checks.reduce(function(acc, check) {
+    return acc && check(state);
+  }, true);
+
+  return isValid;
+}
+
+function setState(change) {
+  var oldState = getState();
+  var newState = change(oldState);
+  if (validateState(JSON.stringify(newState))) {
+    localStorage.setItem("soko", JSON.stringify(newState));
+    updatePage();
+  }
+}
+
+function updatePage() {
+  var state = getState();
+  document
+    .querySelector("main")
+    .setAttribute("data-active-block", state.activeBlock);
+}
+
+updatePage();
