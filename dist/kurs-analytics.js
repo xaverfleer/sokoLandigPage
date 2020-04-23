@@ -17,38 +17,20 @@ document.querySelectorAll(".cta05").forEach(function(e) {
   });
 });
 
-document.querySelectorAll(".cta06").forEach(function(e) {
-  e.addEventListener("click", function() {
-    setActiveBlock("02");
-    amplitude.getInstance().logEvent("Kursblock 2");
-  });
-});
+lessons = [
+  { block: "01", cta: "cta07", logEvent: "Kursblock 1", selector: ".cta07" },
+  { block: "02", cta: "cta06", logEvent: "Kursblock 2", selector: ".cta06" },
+  { block: "03", cta: "cta08", logEvent: "Kursblock 3", selector: ".cta08" },
+  { block: "04", cta: "cta09", logEvent: "Kursblock 4", selector: ".cta09" },
+  { block: "05", cta: "cta10", logEvent: "Kursblock 5", selector: ".cta10" },
+];
 
-document.querySelectorAll(".cta07").forEach(function(e) {
-  e.addEventListener("click", function() {
-    setActiveBlock("01");
-    amplitude.getInstance().logEvent("Kursblock 1");
-  });
-});
-
-document.querySelectorAll(".cta08").forEach(function(e) {
-  e.addEventListener("click", function() {
-    setActiveBlock("03");
-    amplitude.getInstance().logEvent("Kursblock 3");
-  });
-});
-
-document.querySelectorAll(".cta09").forEach(function(e) {
-  e.addEventListener("click", function() {
-    setActiveBlock("04");
-    amplitude.getInstance().logEvent("Kursblock 4");
-  });
-});
-
-document.querySelectorAll(".cta10").forEach(function(e) {
-  e.addEventListener("click", function() {
-    setActiveBlock("05");
-    amplitude.getInstance().logEvent("Kursblock 5");
+lessons.forEach(function(lesson) {
+  document.querySelectorAll(lesson.selector).forEach(function(e) {
+    e.addEventListener("click", function() {
+      setActiveBlock(lesson.block);
+      amplitude.getInstance().logEvent(lesson.logEvent);
+    });
   });
 });
 
