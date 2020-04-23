@@ -601,7 +601,6 @@ form {
   .nav {
     flex-direction: row;
     align-items: center;
-    padding: 12px;
   }
 
   .nav::after {
