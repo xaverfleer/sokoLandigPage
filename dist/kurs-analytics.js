@@ -76,26 +76,6 @@ document
 sections = document.querySelectorAll(".section");
 paginator__overlay = document.querySelector(".paginator__overlay");
 
-document.querySelector("body").addEventListener("click", function(event) {
-  paginator__overlay.classList.add("paginator__overlay--hidden");
-  document.querySelector(".scrim").classList.add("scrim--hidden");
-});
-
-document
-  .querySelector(".paginator__icon")
-  .addEventListener("click", function(event) {
-    event.stopPropagation();
-    paginator__overlay.classList.remove("paginator__overlay--hidden");
-    document.querySelector(".scrim").classList.remove("scrim--hidden");
-  });
-
-document.querySelectorAll(".paginator__entry").forEach(function(entry) {
-  entry.addEventListener("click", function(event) {
-    var activeBlock = event.target.getAttribute("data-block");
-    updateActiveBlock(activeBlock);
-  });
-});
-
 function updateActiveBlock(activeBlock) {
   setState(function(oldState) {
     oldState.activeBlock = activeBlock;
@@ -165,7 +145,7 @@ function setState(change) {
 function updatePage() {
   var state = getState();
   document
-    .querySelector("main")
+    .querySelector(".page")
     .setAttribute("data-active-block", state.activeBlock);
 }
 

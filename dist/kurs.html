@@ -15,41 +15,25 @@
 </head>
 
 <body>
-  <div class="page">
+  <div class="page" data-active-block="01">
     <header class="header" id="header">
       <div class="header__emotion"></div>
       <div class="header__content">
         <a class="header__home" href="./index.html">
           <img alt="Growing tree" class="header__logo" src="./imgs/logo.png" title="Zur Startseite">
         </a>
-        <nav class="nav">
-          <a class="nav__entry nav__entry--2ndary" href="./index.html">Zur Startseite</a>
-          <a class="nav__entry nav__entry--2ndary" href="#contact">Kontakt</a>
+        <nav class="nav nav--kurs">
           <a class="nav__entry nav__entry--primary cta05" href="index.html#prizing" title="Jetzt buchen">Jetzt
             buchen</a>
+          <a class="nav__entry nav__entry--2ndary" href="./index.html">Zur Startseite</a>
+          <a class="cta07 nav__entry nav__entry--2ndary">Kursblock&nbsp;1: Grundlagen</a>
+          <a class="cta06 nav__entry nav__entry--2ndary">Kursblock&nbsp;2-5: Mitgliederbereich</a>
         </nav>
       </div>
     </header>
-    <main data-active-block="01">
-      <div class="paginator">
-        <img class="paginator__icon" src="./imgs/menu-bars.svg">
-        <h1 class="paginator__text hidden-by-default section--kurs01">Kursblock&nbsp;1: Grundlagen</h1>
-        <h1 class="paginator__text hidden-by-default section--kurs02">Kursblock&nbsp;2: Mit dem Baby interagieren...
-        </h1>
-        <h1 class="paginator__text hidden-by-default section--kurs03">Kursblock&nbsp;3: Das Baby verstehen</h1>
-        <h1 class="paginator__text hidden-by-default section--kurs04">Kursblock&nbsp;4: Auf mich selbst achten</h1>
-        <h1 class="paginator__text hidden-by-default section--kurs05">Kursblock&nbsp;5: Zurückhaltung üben</h1>
-        <div class="paginator__overlay paginator__overlay--hidden">
-          <div class="paginator__text paginator__entry" data-block="01">Kursblock&nbsp;1: Grundlagen</div>
-          <div class="paginator__text paginator__entry" data-block="02">Kursblock&nbsp;2: Mit dem Baby interagieren...
-          </div>
-          <div class="paginator__text paginator__entry" data-block="03">Kursblock&nbsp;3: Das Baby verstehen</div>
-          <div class="paginator__text paginator__entry" data-block="04">Kursblock&nbsp;4: Auf mich selbst achten</div>
-          <div class="paginator__text paginator__entry" data-block="05">Kursblock&nbsp;5: Zurückhaltung üben</div>
-        </div>
-      </div>
-      <div class="scrim scrim--hidden"></div>
+    <main>
       <section class="section hidden-by-default section--kurs01">
+        <h1 class="hidden-by-default section--kurs01">Kursblock&nbsp;1: Grundlagen</h1>
         <div class="section__subsection">
           <h2>Einstiegsübung – Ich wünsche dir...</h2>
           <div class="vimeo-video__container">
@@ -171,7 +155,7 @@
         </div>
       </section>
       <section class="section hidden-by-default section--kurs02">
-        <h2>Mit dem Baby interagieren...</h2>
+        <h1 class="hidden-by-default section--kurs02">Kursblock&nbsp;2: Mit dem Baby interagieren...</h1>
         <div class="section__subsection">
           <p>Bitte melde dich an, um alle Inhalte dieses Kurses zu sehen.</p>
         </div>
@@ -180,7 +164,7 @@
         </div>
       </section>
       <section class="section hidden-by-default section--kurs03">
-        <h2>Das Baby verstehen</h2>
+        <h1 class="hidden-by-default section--kurs03">Kursblock&nbsp;3: Das Baby verstehen</h1>
         <div class="section__subsection">
           <p>Bitte melde dich an, um alle Inhalte dieses Kurses zu sehen.</p>
           <div class="buttons">
@@ -189,7 +173,7 @@
         </div>
       </section>
       <section class="section hidden-by-default section--kurs04">
-        <h2>Auf mich selbst achten</h2>
+        <h1 class="hidden-by-default section--kurs04">Kursblock&nbsp;4: Auf mich selbst achten</h1>
         <div class="section__subsection">
           <p>Bitte melde dich an, um alle Inhalte dieses Kurses zu sehen.</p>
           <div class="buttons">
@@ -198,7 +182,7 @@
         </div>
       </section>
       <section class="section hidden-by-default section--kurs05">
-        <h2>Zurückhaltung üben</h2>
+        <h1 class="hidden-by-default section--kurs05">Kursblock&nbsp;5: Zurückhaltung üben</h1>
         <div class="section__subsection">
           <p>Bitte melde dich an, um alle Inhalte dieses Kurses zu sehen.</p>
           <div class="buttons">

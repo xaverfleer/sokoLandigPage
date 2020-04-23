@@ -52,5 +52,4 @@ Desktop:
 | z-index | What          |
 | ------- | ------------- |
 | 80      | sticky header |
-| 90      | Scrim         |
 | 100     | Overlay       |

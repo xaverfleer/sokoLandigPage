@@ -22,6 +22,10 @@ h3 {
   font-family: source-serif-pro, serif;
 }
 
+h1 {
+  font-size: 3.8rem;
+}
+
 h2,
 h3 {
   text-align: center;
@@ -45,11 +49,11 @@ main {
   padding: 10px 0;
 }
 
-main[data-active-block="01"] .section--kurs01,
-main[data-active-block="02"] .section--kurs02,
-main[data-active-block="03"] .section--kurs03,
-main[data-active-block="04"] .section--kurs04,
-main[data-active-block="05"] .section--kurs05 {
+.page[data-active-block="01"] .section--kurs01,
+.page[data-active-block="02"] .section--kurs02,
+.page[data-active-block="03"] .section--kurs03,
+.page[data-active-block="04"] .section--kurs04,
+.page[data-active-block="05"] .section--kurs05 {
   display: block;
 }
 
@@ -342,13 +346,13 @@ form {
 
 .nav {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: flex-end;
   color: #966b40;
   align-items: flex-end;
   padding: 12px;
   box-sizing: border-box;
-  height: 56px;
+  min-height: 56px;
 }
 
 .nav::after {
@@ -425,56 +429,6 @@ form {
   border-radius: 0 0 5px 5px;
 }
 
-.paginator {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-}
-
-.paginator__entry {
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-.paginator__entry:first-of-type {
-  padding-top: 10px;
-}
-
-.paginator__entry:last-of-type {
-  padding-bottom: 10px;
-}
-
-.paginator__entry:hover {
-  background-color: #f6ede2;
-}
-
-.paginator__icon {
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  margin: 0 1em;
-}
-
-.paginator__overlay {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  border-radius: 5px;
-  box-shadow: 0 0 15px #000000;
-  background-color: #ffffff;
-  z-index: 100;
-}
-
-.paginator__overlay--hidden {
-  display: none;
-}
-
-.paginator__text {
-  font-size: 2rem;
-}
-
 .progress-list__item {
   display: flex;
   align-items: center;
@@ -503,20 +457,6 @@ form {
   margin: 2em auto;
   transform: rotate(350deg);
   border-radius: 0.5rem;
-}
-
-.scrim {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background-color: #cccccc77;
-  top: 0;
-  left: 0;
-  z-index: 90;
-}
-
-.scrim--hidden {
-  display: none;
 }
 
 .section {
@@ -598,16 +538,16 @@ form {
 }
 
 @media screen and (min-width: 550px) {
-  .nav {
+  .nav:not(.nav--kurs) {
     flex-direction: row;
     align-items: center;
   }
 
-  .nav::after {
+  .nav:not(.nav--kurs)::after {
     display: none;
   }
 
-  .nav__entry {
+  .nav:not(.nav--kurs) .nav__entry {
     margin: 0 10px;
     display: block;
   }
@@ -630,6 +570,10 @@ form {
 @media screen and (min-width: 800px) {
   body {
     font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 5.3rem;
   }
 
   h2 {
@@ -674,7 +618,7 @@ form {
     padding: 9px 12px;
   }
 
-  .nav__entry {
+  .nav:not(.nav--kurs).nav__entry {
     margin: 0 12px;
   }
 
