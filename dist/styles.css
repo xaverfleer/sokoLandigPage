@@ -272,18 +272,22 @@ form {
   flex-direction: column;
 }
 
-.header__content {
-  flex-basis: 56px;
-  position: relative;
-  background-color: #e5cdad;
+.header--fixed {
+  margin-bottom: 56px;
 }
 
-.header__content--fixed {
+.header--fixed .header__content {
   position: fixed;
   top: 0;
   left: 8px;
   right: 8px;
   z-index: 80;
+}
+
+.header__content {
+  flex-basis: 56px;
+  position: relative;
+  background-color: #e5cdad;
 }
 
 .header__emotion {
@@ -647,7 +651,7 @@ form {
     font-size: 2rem;
   }
 
-  .header__content--fixed {
+  .header--fixed .header__content {
     max-width: 900px;
     margin: 0 auto;
   }

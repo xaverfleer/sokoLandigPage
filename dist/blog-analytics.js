@@ -8,9 +8,9 @@ document
     overlay.classList.add("hidden");
   });
 
-var headerContent = document.querySelector(".header__content");
+var header = document.querySelector(".header");
 window.addEventListener("scroll", function(event) {
   window.pageYOffset > 360
-    ? headerContent.classList.add("header__content--fixed")
-    : headerContent.classList.remove("header__content--fixed");
+    ? header.classList.add("header--fixed")
+    : header.classList.remove("header--fixed");
 });
