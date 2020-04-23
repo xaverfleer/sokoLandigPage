@@ -347,6 +347,8 @@ form {
   color: #966b40;
   align-items: flex-end;
   padding: 12px;
+  box-sizing: border-box;
+  height: 56px;
 }
 
 .nav::after {
