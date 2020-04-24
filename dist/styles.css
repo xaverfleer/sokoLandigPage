@@ -536,6 +536,7 @@ form {
 }
 
 .vimeo-video__iframe {
+  border: 1px solid #e5cdad;
   border-radius: 5px;
   position: absolute;
   top: 0;
