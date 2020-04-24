@@ -1,4 +1,8 @@
-amplitude.getInstance().logEvent("Kurs page loaded");
+if (window.location.href.indexOf("early-bird") > -1) {
+  amplitude.getInstance().logEvent("Early-Bird page loaded");
+} else {
+  amplitude.getInstance().logEvent("Kurs page loaded");
+}
 
 var overlay = document.querySelector(".overlay");
 var notReadies = document.querySelectorAll(".notReady");
