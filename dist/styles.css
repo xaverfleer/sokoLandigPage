@@ -49,14 +49,6 @@ main {
   padding: 10px 0;
 }
 
-.page[data-active-block="01"] .section--kurs01,
-.page[data-active-block="02"] .section--kurs02,
-.page[data-active-block="03"] .section--kurs03,
-.page[data-active-block="04"] .section--kurs04,
-.page[data-active-block="05"] .section--kurs05 {
-  display: block;
-}
-
 .booking-offers {
   display: flex;
   flex-direction: column;
@@ -427,6 +419,14 @@ form {
   background-color: #ffffff;
   padding: 4rem;
   border-radius: 0 0 5px 5px;
+}
+
+.page[data-active-block="01"] .section--kurs01,
+.page[data-active-block="02"] .section--kurs02,
+.page[data-active-block="03"] .section--kurs03,
+.page[data-active-block="04"] .section--kurs04,
+.page[data-active-block="05"] .section--kurs05 {
+  display: block;
 }
 
 .progress-list__item {
