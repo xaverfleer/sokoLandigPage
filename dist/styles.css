@@ -146,13 +146,13 @@ main {
   background-color: #408f3d;
 }
 
-.contents-list__item {
+.checklist__item {
   display: flex;
   align-items: center;
   margin-bottom: 1em;
 }
 
-.contents-list__item::before {
+.checklist__item::before {
   flex: 0 0 32px;
   height: 32px;
   content: " ";
@@ -161,7 +161,7 @@ main {
   margin: 0 1em 0 2em;
 }
 
-.contents-list__text {
+.checklist__text {
   margin-right: 3em;
 }
 
