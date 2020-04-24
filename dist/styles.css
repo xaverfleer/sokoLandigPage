@@ -49,6 +49,11 @@ main {
   padding: 10px 0;
 }
 
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
 .booking-offers {
   display: flex;
   flex-direction: column;
@@ -178,11 +183,6 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 1em;
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
 }
 
 .early-bird__icon {
