@@ -29,7 +29,8 @@
     "netlify-cli": "^2.40.0",
     "netlify-lambda": "^1.6.3",
     "prettier": "^1.19.1",
-    "webpack": "^4.43.0"
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
   },
   "dependencies": {
     "@sendgrid/mail": "^6.5.5"
