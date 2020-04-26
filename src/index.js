@@ -1,1 +1,1 @@
-import "./styles-webpack.css";
+import "./styles.css";
