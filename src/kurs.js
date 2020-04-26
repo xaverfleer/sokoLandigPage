@@ -1,3 +1,5 @@
+import "./styles.css";
+
 if (window.location.href.indexOf("early-bird") > -1) {
   amplitude.getInstance().logEvent("Early-Bird page loaded");
 } else {
@@ -21,7 +23,7 @@ document.querySelectorAll(".cta05").forEach(function(e) {
   });
 });
 
-lessons = [
+var lessons = [
   { block: "01", cta: "cta07", logEvent: "Kursblock 1", selector: ".cta07" },
   { block: "02", cta: "cta06", logEvent: "Kursblock 2", selector: ".cta06" },
   { block: "03", cta: "cta08", logEvent: "Kursblock 3", selector: ".cta08" },
@@ -77,8 +79,8 @@ document
     overlay.classList.add("hidden");
   });
 
-sections = document.querySelectorAll(".section");
-paginator__overlay = document.querySelector(".paginator__overlay");
+var sections = document.querySelectorAll(".section");
+var paginator__overlay = document.querySelector(".paginator__overlay");
 
 function updateActiveBlock(activeBlock) {
   setState(function(oldState) {
