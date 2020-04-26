@@ -4,6 +4,7 @@
   "description": "This is the landing page for SOKo - Subject Oriented Communications.",
   "main": "index.js",
   "scripts": {
+    "build-cpy": "copyfiles src/assets/* src/assets/imgs/* dist/ -u 2",
     "build-webpack": "webpack --config webpack.config.js",
     "build": "npx netlify functions:build",
     "start:lambda": "netlify-lambda serve netlify-functions -c webpack.server.js",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "@vue/cli": "^4.3.1",
     "browserslist": "^4.11.1",
+    "copyfiles": "^2.2.0",
     "css-loader": "^3.5.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
