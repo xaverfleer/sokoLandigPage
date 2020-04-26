@@ -4,3 +4,4 @@ sendgrid.env
 dist/netlify-functions
 # Do not remove ".env". The file contains personal information.
 .env
+dist
