@@ -528,6 +528,10 @@ form {
   max-width: 100%;
 }
 
+.video-name {
+  font-size: 14px;
+}
+
 .vimeo-video__container {
   width: calc(100%-5px);
   height: 0;
@@ -649,5 +653,9 @@ form {
 
   .value-proposition__entry {
     min-width: 26%;
+  }
+
+  .video-name {
+    font-size: 20px;
   }
 }
