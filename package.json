@@ -4,7 +4,9 @@
   "description": "This is the landing page for SOKo - Subject Oriented Communications.",
   "main": "index.js",
   "scripts": {
-    "build": "npx netlify functions:build",
+    "build": "npm run build-functions && npm run build-copy",
+    "build-functions": "npx netlify functions:build",
+    "build-copy": "copyfiles src/assets/* src/assets/documents/* src/assets/imgs/* dist/ -u 2",
     "start:lambda": "netlify-lambda serve netlify-functions -c webpack.server.js",
     "build:lambda": "netlify-lambda build netlify-functions",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,6 +25,7 @@
   "homepage": "https://github.com/xaverfleer/sokoLandigPage#readme",
   "devDependencies": {
     "browserslist": "^4.11.1",
+    "copyfiles": "^2.2.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "netlify-cli": "^2.40.0",
