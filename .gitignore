@@ -1,6 +1,6 @@
 node_modules
 sendgrid.env
 .netlify
-dist/netlify-functions
+dist
 # Do not remove ".env". The file contains personal information.
 .env
