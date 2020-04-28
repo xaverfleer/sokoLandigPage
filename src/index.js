@@ -1,10 +1,8 @@
-/* global amplitude */
+/* global amplitude, document, window */
 
-"use strict";
-
-var header = document.querySelector(".header");
-var nav = document.querySelector(".nav");
-var overlay = document.querySelector(".overlay");
+const header = document.querySelector(".header");
+const nav = document.querySelector(".nav");
+const overlay = document.querySelector(".overlay");
 
 amplitude.getInstance().logEvent("Page loaded");
 
@@ -21,7 +19,7 @@ document
   });
 
 nav.addEventListener("click", function toggleNavActive() {
-  var classList = nav.classList;
+  const { classList } = nav;
   if ([].slice.call(classList).indexOf("nav--active") > -1)
     classList.remove("nav--active");
   else classList.add("nav--active");

@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/xaverfleer/sokoLandigPage#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.9.5",
+    "babel-loader": "^8.1.0",
     "browserslist": "^4.11.1",
     "copyfiles": "^2.2.0",
     "css-loader": "^3.5.3",
@@ -32,6 +34,7 @@
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.20.2",
     "express": "^4.17.1",
     "file-loader": "^6.0.0",
     "netlify-cli": "^2.40.0",
