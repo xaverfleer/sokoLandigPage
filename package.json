@@ -4,9 +4,10 @@
   "description": "This is the landing page for SOKo - Subject Oriented Communications.",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build:copy && npm run build:lambda",
+    "build": "npm run build:copy && npm run build:webpack && npm run build:lambda",
     "build:copy": "copyfiles src/assets/* src/assets/documents/* src/assets/imgs/* dist/ -u 2",
     "build:lambda": "netlify-lambda build netlify-functions",
+    "build:webpack": "webpack --config webpack.config.js",
     "start:lambda": "netlify-lambda serve netlify-functions -c webpack.server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -29,7 +30,9 @@
     "express": "^4.17.1",
     "netlify-cli": "^2.40.0",
     "netlify-lambda": "^1.6.3",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
   },
   "dependencies": {
     "@sendgrid/mail": "^6.5.5"
