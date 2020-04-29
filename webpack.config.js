@@ -3,6 +3,7 @@ const path = require("path");
 module.exports = {
   entry: {
     index: "./src/index.js",
+    kurs: "./src/kurs.js",
   },
   mode: "development",
   output: {
