@@ -1,6 +1,6 @@
 /* global amplitude, document, localStorage, MutationObserver,  window */
 import Vue from "vue/dist/vue.esm";
-import Sample from "./components/Sample.vue";
+import Document from "./components/Document.vue";
 
 if (window.location.href.indexOf("early-bird") > -1) {
   amplitude.getInstance().logEvent("Early-Bird page loaded");
@@ -159,7 +159,7 @@ updatePage();
 
 // eslint-disable-next-line no-new
 new Vue({
-  template: `<Sample/>`,
+  template: `<Document/>`,
   el: "#app",
-  components: { Sample },
+  components: { Document },
 });

@@ -1,7 +1,11 @@
 <template>
-  <div>
-    a
-    <div class="example">{{ msg }}</div>
+  <div class="document">
+    <a
+      class="document__link"
+      href="/documents/so1-Uebungsdossier.pdf"
+      target="_blank"
+      >Übungsdossier – Kursblock 1</a
+    >
   </div>
 </template>
 
