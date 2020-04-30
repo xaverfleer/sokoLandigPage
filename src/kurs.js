@@ -1,6 +1,5 @@
 /* global amplitude, document, localStorage, MutationObserver,  window */
-import Vue from "vue/dist/vue.esm";
-import Document from "./components/Document.vue";
+import "./app";
 
 if (window.location.href.indexOf("early-bird") > -1) {
   amplitude.getInstance().logEvent("Early-Bird page loaded");
@@ -156,10 +155,3 @@ window.addEventListener("scroll", () => {
 });
 
 updatePage();
-
-// eslint-disable-next-line no-new
-new Vue({
-  template: `<Document/>`,
-  el: "#app",
-  components: { Document },
-});
