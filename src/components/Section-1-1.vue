@@ -36,7 +36,7 @@
         </div>
       </div>
     </div>
-    <Document :document="document" />
+    <Document :document="documents['so1-Zusammenfassung']" />
   </div>
 </template>
 
@@ -46,15 +46,8 @@ import SectionTitle from "./SectionTitle.vue";
 import Video from "./Video.vue";
 
 export default {
-  data: () => {
-    return {
-      document: {
-        href: "/documents/so1-Zusammenfassung.pdf",
-        text: "Zusammenfassung – Kursblock 1",
-      },
-    };
-  },
-  components: { Document, SectionTitle, Video },
+  props: ["documents"],
+  components: { Document },
 };
 </script>
 

@@ -9,7 +9,7 @@ new Vue({
   <section class="section">
   </section>
   <section class="section">
-  <Section-1-1/>
+  <Section-1-1 :documents="documents"/>
   </section>
   <section class="section">
     <Section-1-2/>
@@ -179,5 +179,13 @@ new Vue({
   </section>
 </div>`,
   el: "#app",
+  data: {
+    documents: {
+      "so1-Zusammenfassung": {
+        href: "/documents/so1-Zusammenfassung.pdf",
+        text: "Zusammenfassung – Kursblock 1",
+      },
+    },
+  },
   components: { Section11, Section12 },
 });
