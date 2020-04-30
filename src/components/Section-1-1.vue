@@ -16,7 +16,7 @@ import Video from "./Video.vue";
 
 export default {
   props: ["documents"],
-  components: { Document },
+  components: { Checklist, Document },
 };
 </script>
 
