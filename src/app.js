@@ -1,9 +1,9 @@
 import Vue from "vue/dist/vue.esm";
-import Document from "./components/Document.vue";
+import Section from "./components/Section.vue";
 
 // eslint-disable-next-line no-new
 new Vue({
-  template: `<Document/>`,
+  template: `<Section/>`,
   el: "#app",
-  components: { Document },
+  components: { Section },
 });
