@@ -3,6 +3,14 @@
     <SectionTitle />
     <Video />
     <Document :document="document" />
+    <div class="document">
+      <a
+        class="document__link"
+        href="/documents/so1-Uebungsdossier.docx"
+        target="_blank"
+        >Übungsdossier (Word) – Kursblock 1</a
+      >
+    </div>
   </div>
 </template>
 
@@ -16,7 +24,7 @@ export default {
     return {
       document: {
         href: "/documents/so1-Uebungsdossier.pdf",
-        text: "Übungsdossier – Kursblock 1",
+        text: "Übungsdossier (PDF) – Kursblock 1",
       },
     };
   },
