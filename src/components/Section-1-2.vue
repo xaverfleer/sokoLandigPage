@@ -2,15 +2,8 @@
   <div id="app" class="section__subsection">
     <SectionTitle />
     <Video />
-    <Document :document="document" />
-    <div class="document">
-      <a
-        class="document__link"
-        href="/documents/so1-Uebungsdossier.docx"
-        target="_blank"
-        >Übungsdossier (Word) – Kursblock 1</a
-      >
-    </div>
+    <Document :document="documents['so1-UebungsdossierPdf']" />
+    <Document :document="documents['so1-UebungsdossierDocx']" />
   </div>
 </template>
 
@@ -20,14 +13,7 @@ import SectionTitle from "./SectionTitle.vue";
 import Video from "./Video.vue";
 
 export default {
-  data: () => {
-    return {
-      document: {
-        href: "/documents/so1-Uebungsdossier.pdf",
-        text: "Übungsdossier (PDF) – Kursblock 1",
-      },
-    };
-  },
+  props: ["documents"],
   components: { Document, SectionTitle, Video },
 };
 </script>

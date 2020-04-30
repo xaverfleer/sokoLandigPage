@@ -9,10 +9,10 @@ new Vue({
   <section class="section">
   </section>
   <section class="section">
-  <Section-1-1 :documents="documents"/>
+    <Section-1-1 :documents="documents"/>
   </section>
   <section class="section">
-    <Section-1-2/>
+    <Section-1-2 :documents="documents"/>
   </section>
   <section class="section">
     <div class="section__subsection">
@@ -184,6 +184,14 @@ new Vue({
       "so1-Zusammenfassung": {
         href: "/documents/so1-Zusammenfassung.pdf",
         text: "Zusammenfassung – Kursblock 1",
+      },
+      "so1-UebungsdossierDocx": {
+        href: "/documents/so1-Uebungsdossier.docx",
+        text: "Übungsdossier (Word) – Kursblock 1",
+      },
+      "so1-UebungsdossierPdf": {
+        href: "/documents/so1-Uebungsdossier.pdf",
+        text: "Übungsdossier (PDF) – Kursblock 1",
       },
     },
   },
