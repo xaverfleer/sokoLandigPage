@@ -59,7 +59,7 @@ new Vue({
     </section>
   </div>
   <div class="hidden-by-default section--kurs04">
-    <section class="section" class="section">
+    <section class="section">
       <div class="section__subsection">
         <div class="block__supertitle">Kursblock&nbsp;4</div>
         <h1 class="block__title">Auf mich selbst achten...</h1>
@@ -71,7 +71,7 @@ new Vue({
     </section>
   </div>
   <div class="hidden-by-default section--kurs05">
-    <section class="section" class="section">
+    <section class="section">
       <div class="section__subsection">
         <div class="block__supertitle">Kursblock&nbsp;5</div>
         <h1 class="block__title">Zurückhaltung üben...</h1>
