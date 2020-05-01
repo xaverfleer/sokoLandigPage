@@ -141,6 +141,9 @@ new Vue({
     block01: {
       supertitle: "Kursblock 1",
       title: "Innere Stärke und Gleichwürdigkeit",
+      checklist: {
+        pretext: "In diesem Kursblock…",
+      },
     },
     documents: {
       "so1-Zusammenfassung": {

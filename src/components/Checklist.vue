@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>In diesem Kursblock…</p>
+    <p>{{ checklist.pretext }}</p>
     <div class="checklist">
       <div class="checklist__item">
         <div class="checklist__text">
@@ -37,6 +37,10 @@
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  props: ["checklist"],
+};
+</script>
 
 <style scoped></style>
