@@ -7,7 +7,7 @@ import Section13 from "./components/Section-1-3.vue";
 new Vue({
   template: `
   <div class="hidden-by-default section--kurs01">
-  <Section-1-1 :documents="documents"/>
+  <Section-1-1 :documents="documents" :block01="block01"/>
   <Section-1-2 :documents="documents"/>
   <Section-1-3 :documents="documents"/>
   <section class="section">
@@ -138,6 +138,10 @@ new Vue({
 </div>`,
   el: "#app",
   data: {
+    block01: {
+      supertitle: "Kursblock 1",
+      title: "Innere Stärke und Gleichwürdigkeit",
+    },
     documents: {
       "so1-Zusammenfassung": {
         href: "/documents/so1-Zusammenfassung.pdf",
