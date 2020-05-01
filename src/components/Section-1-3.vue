@@ -1,6 +1,7 @@
 <template>
   <section class="section">
     <div class="section__subsection">
+      <h2>Innere Stärke <span class="video-name">(Video&nbsp;1.2)</span></h2>
       <div class="vimeo-video__container">
         <iframe
           class="vimeo-video__iframe"
