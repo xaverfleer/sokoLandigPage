@@ -7,8 +7,6 @@ new Vue({
   template: `
   <div class="hidden-by-default section--kurs01">
   <section class="section">
-  </section>
-  <section class="section">
     <Section-1-1 :documents="documents"/>
   </section>
   <section class="section">
