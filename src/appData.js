@@ -1,9 +1,9 @@
 const appData = {
   block01: {
-    supertitle: "Kursblock 1",
-    title: "Innere Stärke und Gleichwürdigkeit",
+    supertitle: "Kursblock 1",
+    title: "Innere Stärke und Gleichwürdigkeit",
     checklist: {
-      pretext: "In diesem Kursblock…",
+      pretext: "In diesem Kursblock…",
       entries: [
         {
           id: 0,
@@ -36,15 +36,15 @@ const appData = {
   documents: {
     "so1-Zusammenfassung": {
       href: "/documents/so1-Zusammenfassung.pdf",
-      text: "Zusammenfassung – Kursblock 1",
+      text: "Zusammenfassung – Kursblock 1",
     },
     "so1-UebungsdossierDocx": {
       href: "/documents/so1-Uebungsdossier.docx",
-      text: "Übungsdossier (Word) – Kursblock 1",
+      text: "Übungsdossier (Word) – Kursblock 1",
     },
     "so1-UebungsdossierPdf": {
       href: "/documents/so1-Uebungsdossier.pdf",
-      text: "Übungsdossier (PDF) – Kursblock 1",
+      text: "Übungsdossier (PDF) – Kursblock 1",
     },
   },
 };
