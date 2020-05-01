@@ -1,28 +1,40 @@
 import Vue from "vue/dist/vue.esm";
 import appData from "./appData";
-import Block1 from "./components/Block-1.vue";
-import Block2 from "./components/Block-2.vue";
-import Block3 from "./components/Block-3.vue";
-import Block4 from "./components/Block-4.vue";
-import Block5 from "./components/Block-5.vue";
+import Main from "./components/Main.vue";
 
 // eslint-disable-next-line no-new
 new Vue({
   template: `
-  <main>
-    <Block1 :appData="appData"/>
-    <Block2 :appData="appData"/>
-    <Block3 :appData="appData"/>
-    <Block4 :appData="appData"/>
-    <Block5 :appData="appData"/>
-  </main>`,
+  <div class="page" data-active-block="01">
+  <header class="header" id="header">
+  <div class="header__emotion"></div>
+  <div class="header__content">
+    <a class="header__home" href="./index.html">
+      <img alt="Growing tree" class="header__logo" src="./imgs/logo.png" title="Zur Startseite">
+    </a>
+    <nav class="nav nav--kurs">
+      <a class="nav__entry nav__entry--primary cta05" href="index.html#prizing" title="Jetzt buchen">Jetzt
+        buchen</a>
+      <a class="cta07 nav__entry nav__entry--2ndary">Kursblock&nbsp;1: Innere Stärke und Gleichwürdigkeit</a>
+      <a class="cta06 nav__entry nav__entry--2ndary">Kursblock&nbsp;2: Mit dem Baby interagieren...</a>
+      <a class="cta08 nav__entry nav__entry--2ndary">Kursblock&nbsp;3: Das Baby verstehen...</a>
+      <a class="cta09 nav__entry nav__entry--2ndary">Kursblock&nbsp;4: Auf mich selbst achten...</a>
+      <a class="cta10 nav__entry nav__entry--2ndary">Kursblock&nbsp;5: Zurückhaltung üben...</a>
+    </nav>
+  </div>
+</header>
+  <Main :appData="appData" />
+  <footer class="footer">
+  <div id="contact" class="footer__contact">Kontaktiere uns unter <a href="mailto:kurs@so-kommunizieren.ch"
+      rel="nofollow">kurs@so-kommunizieren.ch</a>
+    oder
+    <a href="tel:+41774466505" rel="nofollow">+41 77 44 66 505</a>
+  </div>
+  <div class="footer__copyright">© 2020 Fleer & Fleer</div>
+</footer>
+</div>
+  `,
   el: "#app",
   data: { appData },
-  components: {
-    Block1,
-    Block2,
-    Block3,
-    Block4,
-    Block5,
-  },
+  components: { Main },
 });
