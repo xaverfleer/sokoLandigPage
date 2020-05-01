@@ -6,12 +6,8 @@ import Section12 from "./components/Section-1-2.vue";
 new Vue({
   template: `
   <div class="hidden-by-default section--kurs01">
-  <section class="section">
-    <Section-1-1 :documents="documents"/>
-  </section>
-  <section class="section">
-    <Section-1-2 :documents="documents"/>
-  </section>
+  <Section-1-1 :documents="documents"/>
+  <Section-1-2 :documents="documents"/>
   <section class="section">
     <div class="section__subsection">
       <h2>Innere Stärke <span class="video-name">(Video&nbsp;1.2)</span></h2>

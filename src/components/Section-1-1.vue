@@ -1,11 +1,13 @@
 <template>
-  <div class="section__subsection">
-    <div class="block__supertitle">Kursblock&nbsp;1</div>
-    <h1 class="block__title">Innere Stärke und Gleichwürdigkeit</h1>
-    <p>In diesem Kursblock…</p>
-    <Checklist />
-    <Document :document="documents['so1-Zusammenfassung']" />
-  </div>
+  <section class="section">
+    <div class="section__subsection">
+      <div class="block__supertitle">Kursblock&nbsp;1</div>
+      <h1 class="block__title">Innere Stärke und Gleichwürdigkeit</h1>
+      <p>In diesem Kursblock…</p>
+      <Checklist />
+      <Document :document="documents['so1-Zusammenfassung']" />
+    </div>
+  </section>
 </template>
 
 <script>

@@ -1,10 +1,12 @@
 <template>
-  <div id="app" class="section__subsection">
-    <SectionTitle />
-    <Video />
-    <Document :document="documents['so1-UebungsdossierPdf']" />
-    <Document :document="documents['so1-UebungsdossierDocx']" />
-  </div>
+  <section class="section">
+    <div class="section__subsection">
+      <SectionTitle />
+      <Video />
+      <Document :document="documents['so1-UebungsdossierPdf']" />
+      <Document :document="documents['so1-UebungsdossierDocx']" />
+    </div>
+  </section>
 </template>
 
 <script>
