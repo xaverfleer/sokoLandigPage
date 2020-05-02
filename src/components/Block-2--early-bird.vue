@@ -40,6 +40,14 @@
             </div>
           </div>
         </div>
+        <div class="document">
+          <a
+            class="document__link"
+            href="/documents/so2-Zusammenfassung.pdf"
+            target="_blank"
+            >Zusammenfassung – Kursblock 2</a
+          >
+        </div>
       </div>
     </section>
     <section class="section hidden-by-default section--kurs02">
