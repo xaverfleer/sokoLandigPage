@@ -41,6 +41,12 @@ const appData = {
       activateBlock: "02",
       isPrimary: true,
     },
+    cta05Secondary: {
+      text: "Jetzt buchen",
+      target: "index#prizing",
+      logEvent: "Jetzt buchen",
+      isPrimary: false,
+    },
   },
   documents: {
     "so1-Zusammenfassung": {

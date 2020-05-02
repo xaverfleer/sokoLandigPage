@@ -30,13 +30,10 @@
         :info="appData.buttons.cta06Primary"
         v-if="appData.state.path === 'kurs'"
       />
-      <a
-        class="button button--2ndary cta05"
-        href="index.html#prizing"
-        title="Jetzt buchen"
+      <Button
+        :info="appData.buttons.cta05Secondary"
         v-if="appData.state.path === 'kurs'"
-        >Jetzt buchen</a
-      >
+      />
       <a
         class="call-to-action button button--2ndary cta06"
         href="#header"
