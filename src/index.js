@@ -2,7 +2,6 @@
 
 const header = document.querySelector(".header");
 const nav = document.querySelector(".nav");
-const overlay = document.querySelector(".overlay");
 
 amplitude.getInstance().logEvent("Page loaded");
 
@@ -11,12 +10,6 @@ document.querySelectorAll(".cta05").forEach(function bindHandler(e) {
     amplitude.getInstance().logEvent("Jetzt buchen");
   });
 });
-
-document
-  .getElementById("overlay__close-button")
-  .addEventListener("click", function hideOverlay() {
-    overlay.classList.add("hidden");
-  });
 
 nav.addEventListener("click", function toggleNavActive() {
   const { classList } = nav;

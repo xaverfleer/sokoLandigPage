@@ -1,7 +1,5 @@
 amplitude.getInstance().logEvent("Booking page loaded");
 
-var overlay = document.querySelector(".overlay");
-
 document.querySelectorAll(".form").forEach(function(element) {
   element.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -13,10 +11,6 @@ document.querySelectorAll(".form").forEach(function(element) {
     amplitude.getInstance().logEvent("Absenden submitted");
   });
 });
-
-document
-  .getElementById("overlay__close-button")
-  .addEventListener("click", (e) => overlay.classList.add("hidden"));
 
 function submitForm(data) {
   const xhr = new XMLHttpRequest();

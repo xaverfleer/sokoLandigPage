@@ -391,42 +391,6 @@ form {
   text-decoration: none;
 }
 
-.overlay {
-  position: fixed;
-  width: 80%;
-  margin-left: 10%;
-  top: 3rem;
-  box-shadow: 0 0 20px #000000;
-  border-radius: 5px;
-
-  background-color: #ffffff;
-}
-
-.overlay__close-button {
-  position: absolute;
-  bottom: 1em;
-  right: 1em;
-}
-
-.overlay__title {
-  font-size: 2rem;
-  padding: 4rem;
-  background-color: #966b40;
-  color: #ffffff;
-  height: 1rem;
-  border-radius: 5px 5px 0 0;
-
-  display: flex;
-  align-items: center;
-}
-
-.overlay__textbox {
-  height: 13em;
-  background-color: #ffffff;
-  padding: 4rem;
-  border-radius: 0 0 5px 5px;
-}
-
 .page[data-active-block="01"] .section--kurs01,
 .page[data-active-block="02"] .section--kurs02,
 .page[data-active-block="03"] .section--kurs03,
@@ -636,10 +600,6 @@ form {
 
   .nav:not(.nav--kurs).nav__entry {
     margin: 0 12px;
-  }
-
-  .overlay__title {
-    font-size: 2.7rem;
   }
 
   .page {

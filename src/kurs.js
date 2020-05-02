@@ -7,17 +7,6 @@ if (window.location.href.indexOf("early-bird") > -1) {
   amplitude.getInstance().logEvent("Kurs page loaded");
 }
 
-const overlay = document.querySelector(".overlay");
-const notReadies = document.querySelectorAll(".notReady");
-
-function showOverlay() {
-  overlay.classList.remove("hidden");
-}
-
-notReadies.forEach((elem) => {
-  elem.addEventListener("click", showOverlay);
-});
-
 document.querySelectorAll(".cta05").forEach((e) => {
   e.addEventListener("click", () => {
     amplitude.getInstance().logEvent("Jetzt buchen");
@@ -133,12 +122,6 @@ const observerOptions = { childList: true, attributes: false, subtree: true };
 const observer = new MutationObserver(bindVideoEventHandlers);
 const targetNode = document.querySelector("main");
 observer.observe(targetNode, observerOptions);
-
-document
-  .getElementById("overlay__close-button")
-  .addEventListener("click", () => {
-    overlay.classList.add("hidden");
-  });
 
 const nav = document.querySelector(".nav");
 nav.addEventListener("click", () => {
