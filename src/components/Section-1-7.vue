@@ -34,13 +34,10 @@
         :info="appData.buttons.cta05Secondary"
         v-if="appData.state.path === 'kurs'"
       />
-      <a
-        class="call-to-action button button--2ndary cta06"
-        href="#header"
-        title="Kursblock 2"
+      <Button
+        :info="appData.buttons.cta06Secondary"
         v-if="appData.state.path === 'early-bird'"
-        >Kursblock 2</a
-      >
+      />
     </div>
   </section>
 </template>
