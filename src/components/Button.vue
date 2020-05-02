@@ -1,18 +1,28 @@
 <template>
-  <a class="button button--primary cta06" href="#header" @click="clickHandler"
-    >Kursblock 2</a
-  >
+  <a :class="classes" :href="info.target" @click="clickHandler">{{
+    info.text
+  }}</a>
 </template>
 
 <script>
 import { updateActiveBlock } from "../stateManagement";
 export default {
+  computed: {
+    classes() {
+      return {
+        button: true,
+        "button--primary": this.info.isPrimary,
+        "button--2ndary": !this.info.isPrimary,
+      };
+    },
+  },
   methods: {
     clickHandler() {
       updateActiveBlock("02");
       amplitude.getInstance().logEvent("Kursblock 2");
     },
   },
+  props: ["info"],
 };
 </script>
 

@@ -26,7 +26,10 @@
       >
     </div>
     <div class="buttons">
-      <Button v-if="appData.state.path === 'kurs'" />
+      <Button
+        :info="appData.buttons.cta06Primary"
+        v-if="appData.state.path === 'kurs'"
+      />
       <a
         class="button button--2ndary cta05"
         href="index.html#prizing"

@@ -33,6 +33,14 @@ const appData = {
       ],
     },
   },
+  buttons: {
+    cta06Primary: {
+      text: "Kursblock 2",
+      target: "#header",
+      logEvent: "Kursblock 2",
+      isPrimary: true,
+    },
+  },
   documents: {
     "so1-Zusammenfassung": {
       href: "/documents/so1-Zusammenfassung.pdf",
