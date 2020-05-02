@@ -26,13 +26,7 @@
       >
     </div>
     <div class="buttons">
-      <a
-        class="button button--primary cta06"
-        href="#header"
-        title="Kursblock 2"
-        v-if="appData.state.path === 'kurs'"
-        >Kursblock 2</a
-      >
+      <Button v-if="appData.state.path === 'kurs'" />
       <a
         class="button button--2ndary cta05"
         href="index.html#prizing"
@@ -52,8 +46,10 @@
 </template>
 
 <script>
+import Button from "./Button.vue";
 export default {
   props: ["appData"],
+  components: { Button },
 };
 </script>
 
