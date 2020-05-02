@@ -18,8 +18,8 @@ export default {
   },
   methods: {
     clickHandler() {
-      updateActiveBlock("02");
-      amplitude.getInstance().logEvent("Kursblock 2");
+      this.info.activateBlock && updateActiveBlock(this.info.activateBlock);
+      amplitude.getInstance().logEvent(this.info.logEvent);
     },
   },
   props: ["info"],

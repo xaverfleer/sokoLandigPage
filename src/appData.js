@@ -38,6 +38,7 @@ const appData = {
       text: "Kursblock 2",
       target: "#header",
       logEvent: "Kursblock 2",
+      activateBlock: "02",
       isPrimary: true,
     },
   },
