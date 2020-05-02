@@ -47,6 +47,9 @@ const appData = {
       text: "Übungsdossier (PDF) – Kursblock 1",
     },
   },
+  state: {
+    path: "",
+  },
 };
 
 export default appData;

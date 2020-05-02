@@ -5,8 +5,7 @@ import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
 
-// eslint-disable-next-line no-new
-new Vue({
+const vm = new Vue({
   template: `
     <div class="page" data-active-block="01">
       <Header />
@@ -21,8 +20,10 @@ new Vue({
 
 if (window.location.href.indexOf("early-bird") > -1) {
   amplitude.getInstance().logEvent("Early-Bird page loaded");
+  vm.appData.state.path = "early-bird";
 } else {
   amplitude.getInstance().logEvent("Kurs page loaded");
+  vm.appData.state.path = "kurs";
 }
 
 document.querySelectorAll(".cta05").forEach((e) => {
