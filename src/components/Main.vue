@@ -22,10 +22,10 @@ import Block2 from "./Block-2.vue";
 import Block3 from "./Block-3.vue";
 import Block4 from "./Block-4.vue";
 import Block5 from "./Block-5.vue";
-import Block2EarlyBird from "./Block-2--Early-Bird.vue";
-import Block3EarlyBird from "./Block-3--Early-Bird.vue";
-import Block4EarlyBird from "./Block-4--Early-Bird.vue";
-import Block5EarlyBird from "./Block-5--Early-Bird.vue";
+import Block2EarlyBird from "./Block-2-early-bird.vue";
+import Block3EarlyBird from "./Block-3-early-bird.vue";
+import Block4EarlyBird from "./Block-4-early-bird.vue";
+import Block5EarlyBird from "./Block-5-early-bird.vue";
 
 export default {
   props: ["appData"],
