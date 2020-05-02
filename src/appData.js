@@ -74,6 +74,20 @@ const appData = {
       activateBlock: "03",
       isPrimary: false,
     },
+    cta09Secondary: {
+      text: "Kursblock 4",
+      target: "#header",
+      logEvent: "Kursblock 4",
+      activateBlock: "04",
+      isPrimary: false,
+    },
+    cta10Secondary: {
+      text: "Kursblock 5",
+      target: "#header",
+      logEvent: "Kursblock 5",
+      activateBlock: "05",
+      isPrimary: false,
+    },
   },
   documents: {
     "so1-Zusammenfassung": {
