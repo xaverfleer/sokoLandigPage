@@ -6,7 +6,7 @@
     <Section-1-4 />
     <Section-1-5 />
     <Section-1-6 />
-    <Section-1-7 />
+    <Section-1-7 :appData="appData" />
   </div>
 </template>
 

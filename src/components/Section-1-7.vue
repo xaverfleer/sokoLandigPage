@@ -26,19 +26,35 @@
       >
     </div>
     <div class="buttons">
-      <a class="button button--primary cta06" href="#header" title="Kursblock 2"
+      <a
+        class="button button--primary cta06"
+        href="#header"
+        title="Kursblock 2"
+        v-if="appData.state.path === 'kurs'"
         >Kursblock 2</a
       >
       <a
         class="button button--2ndary cta05"
         href="index.html#prizing"
         title="Jetzt buchen"
+        v-if="appData.state.path === 'kurs'"
         >Jetzt buchen</a
+      >
+      <a
+        class="call-to-action button button--2ndary cta06"
+        href="#header"
+        title="Kursblock 2"
+        v-if="appData.state.path === 'early-bird'"
+        >Kursblock 2</a
       >
     </div>
   </section>
 </template>
 
-<script></script>
+<script>
+export default {
+  props: ["appData"],
+};
+</script>
 
 <style scoped></style>
