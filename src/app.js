@@ -4,7 +4,7 @@ import appData from "./appData";
 import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
-import { updatePage } from "./stateManagement";
+import { updateActiveBlock, updatePage } from "./stateManagement";
 
 const vm = new Vue({
   template: `
@@ -81,3 +81,17 @@ window.addEventListener("scroll", () => {
 });
 
 updatePage();
+
+const lessons = [
+  { block: "01", cta: "cta07", logEvent: "Kursblock 1", selector: ".cta07" },
+  { block: "02", cta: "cta06", logEvent: "Kursblock 2", selector: ".cta06" },
+  { block: "03", cta: "cta08", logEvent: "Kursblock 3", selector: ".cta08" },
+  { block: "04", cta: "cta09", logEvent: "Kursblock 4", selector: ".cta09" },
+  { block: "05", cta: "cta10", logEvent: "Kursblock 5", selector: ".cta10" },
+];
+
+lessons.forEach((l) =>
+  document.querySelectorAll(l.selector).forEach((elem) => {
+    elem.addEventListener("click", () => updateActiveBlock(l.block));
+  })
+);
