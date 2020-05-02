@@ -47,17 +47,21 @@
         <p>Bitte melde dich an, um alle Inhalte dieses Kurses zu sehen.</p>
       </div>
       <div class="buttons">
-        <a
-          class="button button--primary cta05"
-          href="index.html#prizing"
-          title="Jetzt buchen"
-          >Jetzt buchen</a
-        >
+        <Button
+          :info="appData.buttons.cta05Primary"
+          v-if="appData.state.path === 'kurs'"
+        />
       </div>
     </section>
   </div>
 </template>
 
-<script></script>
+<script>
+import Button from "./Button.vue";
+export default {
+  props: ["appData"],
+  components: { Button },
+};
+</script>
 
 <style scoped></style>

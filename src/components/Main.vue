@@ -1,7 +1,7 @@
 <template>
   <main>
     <Block1 :appData="appData" />
-    <Block2 />
+    <Block2 :appData="appData" />
     <Block3 />
     <Block4 />
     <Block5 />
