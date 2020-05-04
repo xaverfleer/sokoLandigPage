@@ -6,7 +6,6 @@ module.exports = {
     index: "./src/index.js",
     kurs: "./src/kurs.js",
   },
-  mode: "production",
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
