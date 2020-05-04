@@ -7,9 +7,9 @@
     "build": "npm run build:copy && npm run build:webpack && npm run build:lambda",
     "build:copy": "copyfiles src/assets/* src/assets/documents/* src/assets/imgs/* dist/ -u 2",
     "build:lambda": "netlify-lambda build netlify-functions",
-    "build:webpack": "webpack --config webpack.production.js",
+    "build:webpack": "webpack --config webpack.prod.js",
     "start:lambda": "netlify-lambda serve netlify-functions -c webpack.server.js",
-    "start:webpack": "webpack-dev-server --open --config webpack.development.js",
+    "start:webpack": "webpack-dev-server --open --config webpack.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -41,6 +41,7 @@
     "netlify-lambda": "^1.6.3",
     "prettier": "^1.19.1",
     "style-loader": "^1.2.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "vue-loader": "^15.9.1",
     "vue-template-compiler": "^2.6.11",
     "webpack": "^4.43.0",
