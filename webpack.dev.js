@@ -6,6 +6,12 @@ const devConfig = {
   devtool: "eval-cheap-source-map",
   devServer: {
     contentBase: path.join(__dirname, "./dist/"),
+    proxy: {
+      "/kurs": {
+        target: "http://localhost:8080/kurs.html",
+        pathRewrite: { "^/kurs$": "" },
+      },
+    },
   },
   mode: "development",
 };
