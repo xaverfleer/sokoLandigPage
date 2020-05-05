@@ -1,12 +1,13 @@
 /* eslint-disable import/no-extraneous-dependencies */
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 const commonConfig = require("./webpack.common");
 
 const devConfig = {
   ...commonConfig,
   mode: "production",
   optimization: {
-    minimizer: [new UglifyJsPlugin()],
+    minimize: true,
+    minimizer: [new TerserPlugin()],
   },
 };
 
