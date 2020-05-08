@@ -3,17 +3,11 @@ require("dotenv").config();
 const faunadb = require("faunadb");
 
 const q = faunadb.query;
-
 const client = new faunadb.Client({ secret: process.env.FAUNADB_SECRET });
-const collection = q.Collection("users");
 
-const newDoc = {
-  data: {
-    email: "blah@blah.blah",
-    pw: "blahdiblah",
-  },
-};
-const createdRecord = q.Create(collection, newDoc);
+const createdRecord = q.Create(q.Collection("users"), {
+  data: { email: "blah@blah.blah", pw: "blahdiblah" },
+});
 
 client
   .query(createdRecord)
