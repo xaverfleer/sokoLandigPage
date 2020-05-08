@@ -21,11 +21,14 @@ function createDefaultUser() {
     });
 }
 
-client
-  .query(q.Get(q.Match(q.Index("email"), "muster@gmail.com")))
-  .then((response) => {
-    console.log(`success ${response}`);
-  })
-  .catch((error) => {
-    console.log(`error: ${error}`);
-  });
+// eslint-disable-next-line no-unused-vars
+function getSampleUser() {
+  client
+    .query(q.Get(q.Match(q.Index("email"), "muster@gmail.com")))
+    .then((response) => {
+      console.log(`success ${response}`);
+    })
+    .catch((error) => {
+      console.log(`error: ${error}`);
+    });
+}
