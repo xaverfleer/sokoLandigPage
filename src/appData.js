@@ -154,6 +154,10 @@ const appData = {
       href: "/documents/so1-Uebungsdossier.pdf",
       text: "Übungsdossier (PDF) – Kursblock 1",
     },
+    "so1-Strategie01": {
+      href: "/documents/so1-Strategiekarte-Essenz-Strategie.pdf",
+      text: "Strategiekarte: Die Essenz-Strategie – Kursblock 1",
+    },
   },
   state: {
     path: "",

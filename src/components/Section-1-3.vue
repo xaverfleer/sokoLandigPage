@@ -5,14 +5,7 @@
       <Video :video="section.video" />
       <h3>{{ section.subtitle }}</h3>
       <Checklist :checklist="section.checklist" />
-      <div class="document">
-        <a
-          class="document__link"
-          href="/documents/so1-Strategiekarte-Essenz-Strategie.pdf"
-          target="_blank"
-          >Strategiekarte: Die Essenz-Strategie – Kursblock 1</a
-        >
-      </div>
+      <Document :document="documents['so1-Strategie01']" />
     </div>
   </section>
 </template>

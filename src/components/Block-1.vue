@@ -5,7 +5,10 @@
       :documents="appData.documents"
       :section="appData.block01.sections.section12"
     />
-    <Section-1-3 :section="appData.block01.sections.section13" />
+    <Section-1-3
+      :documents="appData.documents"
+      :section="appData.block01.sections.section13"
+    />
     <Section-1-4 />
     <Section-1-5 />
     <Section-1-6 />
