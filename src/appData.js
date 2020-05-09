@@ -52,6 +52,7 @@ const appData = {
         video: {
           ref: "https://player.vimeo.com/video/412779252",
         },
+        subtitle: "Das wichtigste in Kürze:",
       },
     },
   },

@@ -3,7 +3,7 @@
     <div class="section__subsection">
       <SectionTitle :content="section.title" />
       <Video :video="section.video" />
-      <h3>Das wichtigste in Kürze:</h3>
+      <h3>{{ section.subtitle }}</h3>
       <div class="checklist">
         <div class="checklist__item">
           <div class="checklist__text">
