@@ -15,7 +15,7 @@
       :documents="appData.documents"
       :section="appData.block01.sections.section14"
     />
-    <Section-1-5 />
+    <Section-1-5 :section="appData.block01.sections.section15" />
     <Section-1-6 />
     <Section-1-7 :appData="appData" />
   </div>

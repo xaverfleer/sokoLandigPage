@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <div class="section__subsection">
-      <h2>Lina weint <span class="video-name">(Video&nbsp;1.4)</span></h2>
+      <SectionTitle :content="section.title" />
       <div class="video-wrapper" id="video-01d-lina-weint">
         <script
           src="https://fast.wistia.com/embed/medias/o4lx2aspii.jsonp"
@@ -45,6 +45,13 @@
   </section>
 </template>
 
-<script></script>
+<script>
+import SectionTitle from "./SectionTitle.vue";
+
+export default {
+  props: ["section"],
+  components: { SectionTitle },
+};
+</script>
 
 <style scoped></style>

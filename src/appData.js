@@ -73,7 +73,7 @@ const appData = {
           main: "Gleichwürdigkeit",
           videoName: "(Video 1.3)",
         },
-        subtitle: `Das wichtigste in Kürze:`,
+        subtitle: "Das wichtigste in Kürze:",
         checklist: {
           entries: [
             {
@@ -93,6 +93,12 @@ const appData = {
               text: `Gleichwürdigkeit ist nicht das gleiche wie Gleichgültigkeit, Gleichheit oder Gleichberechtigung.`,
             },
           ],
+        },
+      },
+      section15: {
+        title: {
+          main: "Lina weint",
+          videoName: "(Video 1.4)",
         },
       },
     },
