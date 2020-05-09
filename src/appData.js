@@ -35,6 +35,12 @@ const appData = {
           ],
         },
       },
+      section12: {
+        title: {
+          main: "Einstiegsübung – Ich wünsche dir...",
+          videoName: "(Video 1.1)",
+        },
+      },
     },
   },
   buttons: {

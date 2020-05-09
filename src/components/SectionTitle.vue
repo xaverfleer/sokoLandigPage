@@ -1,12 +1,14 @@
 <template>
   <h2>
-    Einstiegsübung – Ich wünsche dir...
-    <span class="video-name">(Video&nbsp;1.1)</span>
+    {{ sectionTitle.main }}
+    <span class="video-name">{{ sectionTitle.videoName }}</span>
   </h2>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["sectionTitle"],
+};
 </script>
 
 <style scoped></style>
