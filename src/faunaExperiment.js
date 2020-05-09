@@ -67,5 +67,23 @@ function clearSessions(userEmail) {
     .catch(helpers.handleError);
 }
 
-// createSession("max@muster.com");
-clearSessions("max@muster.com");
+// eslint-disable-next-line no-unused-vars
+function updateSessionTimestamp(email) {
+  const changes = {
+    data: { timestamp: helpers.createTimestamp() },
+  };
+  client
+    .query(
+      q.Foreach(
+        q.Paginate(q.Match(q.Index("sessionByEmail"), email)),
+        q.Lambda((ref) => q.Update(ref, changes))
+      )
+    )
+    .then(helpers.handleSuccess)
+    .catch(helpers.handleError);
+}
+
+const email = "ignore@me.com";
+// createSession(email);
+// clearSessions(email);
+updateSessionTimestamp(email);
