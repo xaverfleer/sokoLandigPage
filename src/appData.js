@@ -53,6 +53,35 @@ const appData = {
           ref: "https://player.vimeo.com/video/412779252",
         },
         subtitle: "Das wichtigste in Kürze:",
+        checklist: {
+          entries: [
+            {
+              id: 0,
+              // eslint-disable-next-line no-irregular-whitespace
+              text: `Damit Kinder zu selbständigen Erwachsenen heranwachsen, die ein gesundes, glückliches und erfüllendes Leben führen können, brauchen sie genügend innere Stärke.`,
+            },
+            {
+              id: 1,
+              // eslint-disable-next-line no-irregular-whitespace
+              text: `Wichtige Wurzeln der inneren Stärke sind ein differenziertes Selbstbewusstsein (ich kenne mich), ein positiver und möglichst bedingungsloser Selbstwert (ich bin gut, so wie ich bin) sowie ein gesundes Selbstvertrauen (ich vertraue in meine Fähigkeiten).`,
+            },
+            {
+              id: 2,
+              // eslint-disable-next-line no-irregular-whitespace
+              text: `Die Art und Weise, wie wir mit Kindern kommunizieren, kann sie innerlich stärken – oder auch nicht.`,
+            },
+            {
+              id: 3,
+              // eslint-disable-next-line no-irregular-whitespace
+              text: `Kommunikationsstrategien können uns helfen, das Kind innerlich zu stärken.`,
+            },
+            {
+              id: 4,
+              // eslint-disable-next-line no-irregular-whitespace
+              text: `Hinter den Kommunikationsstrategien der subjektorientierten Kommunikation steht die Grundhaltung, unser Kind als gleichwürdiges Subjekt wahrzunehmen und zu behandeln.`,
+            },
+          ],
+        },
       },
     },
   },

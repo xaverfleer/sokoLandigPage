@@ -4,42 +4,7 @@
       <SectionTitle :content="section.title" />
       <Video :video="section.video" />
       <h3>{{ section.subtitle }}</h3>
-      <div class="checklist">
-        <div class="checklist__item">
-          <div class="checklist__text">
-            Damit Kinder zu selbständigen Erwachsenen heranwachsen, die ein
-            gesundes, glückliches und erfüllendes Leben führen können, brauchen
-            sie genügend innere Stärke.
-          </div>
-        </div>
-        <div class="checklist__item">
-          <div class="checklist__text">
-            Wichtige Wurzeln der inneren Stärke sind ein differenziertes
-            Selbstbewusstsein (ich kenne mich), ein positiver und möglichst
-            bedingungsloser Selbstwert (ich bin gut, so wie ich bin) sowie ein
-            gesundes Selbstvertrauen (ich vertraue in meine Fähigkeiten).
-          </div>
-        </div>
-        <div class="checklist__item">
-          <div class="checklist__text">
-            Die Art und Weise, wie wir mit Kindern kommunizieren, kann sie
-            innerlich stärken – oder auch nicht.
-          </div>
-        </div>
-        <div class="checklist__item">
-          <div class="checklist__text">
-            Kommunikationsstrategien können uns helfen, das Kind innerlich zu
-            stärken.
-          </div>
-        </div>
-        <div class="checklist__item">
-          <div class="checklist__text">
-            Hinter den Kommunikationsstrategien der
-            <em>subjektorientierten</em> Kommunikation steht die Grundhaltung,
-            unser Kind als gleichwürdiges Subjekt wahrzunehmen und zu behandeln.
-          </div>
-        </div>
-      </div>
+      <Checklist :checklist="section.checklist" />
       <div class="document">
         <a
           class="document__link"
@@ -53,13 +18,14 @@
 </template>
 
 <script>
+import Checklist from "./Checklist.vue";
 import Document from "./Document.vue";
 import SectionTitle from "./SectionTitle.vue";
 import Video from "./Video.vue";
 
 export default {
   props: ["documents", "section"],
-  components: { Document, SectionTitle, Video },
+  components: { Checklist, Document, SectionTitle, Video },
 };
 </script>
 
