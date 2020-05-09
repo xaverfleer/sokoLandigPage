@@ -40,17 +40,11 @@ const appData = {
           main: "Einstiegsübung – Ich wünsche dir...",
           videoName: "(Video 1.1)",
         },
-        video: {
-          ref: "https://player.vimeo.com/video/395825527",
-        },
       },
       section13: {
         title: {
           main: "Innere Stärke",
           videoName: "(Video 1.2)",
-        },
-        video: {
-          ref: "https://player.vimeo.com/video/412779252",
         },
         subtitle: "Das wichtigste in Kürze:",
         checklist: {
@@ -158,6 +152,10 @@ const appData = {
       href: "/documents/so1-Strategiekarte-Essenz-Strategie.pdf",
       text: "Strategiekarte: Die Essenz-Strategie – Kursblock 1",
     },
+  },
+  videos: {
+    so1Einstieg: { ref: "https://player.vimeo.com/video/395825527" },
+    so1InnereStarke: { ref: "https://player.vimeo.com/video/412779252" },
   },
   state: {
     path: "",

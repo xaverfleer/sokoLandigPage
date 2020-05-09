@@ -4,10 +4,12 @@
     <Section-1-2
       :documents="appData.documents"
       :section="appData.block01.sections.section12"
+      :videos="appData.videos"
     />
     <Section-1-3
       :documents="appData.documents"
       :section="appData.block01.sections.section13"
+      :videos="appData.videos"
     />
     <Section-1-4 />
     <Section-1-5 />

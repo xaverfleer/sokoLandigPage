@@ -2,7 +2,7 @@
   <section class="section">
     <div class="section__subsection">
       <SectionTitle :content="section.title" />
-      <Video :video="section.video" />
+      <Video :video="videos.so1InnereStarke" />
       <h3>{{ section.subtitle }}</h3>
       <Checklist :checklist="section.checklist" />
       <Document :document="documents['so1-Strategie01']" />
@@ -17,7 +17,7 @@ import SectionTitle from "./SectionTitle.vue";
 import Video from "./Video.vue";
 
 export default {
-  props: ["documents", "section"],
+  props: ["documents", "section", "videos"],
   components: { Checklist, Document, SectionTitle, Video },
 };
 </script>
