@@ -44,6 +44,12 @@ const appData = {
           ref: "https://player.vimeo.com/video/395825527",
         },
       },
+      section13: {
+        title: {
+          main: "Innere Stärke",
+          videoName: "(Video 1.2)",
+        },
+      },
     },
   },
   buttons: {

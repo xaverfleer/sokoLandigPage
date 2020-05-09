@@ -3,9 +3,9 @@
     <Section-1-1 :documents="appData.documents" :block01="appData.block01" />
     <Section-1-2
       :documents="appData.documents"
-      :section12="appData.block01.sections.section12"
+      :section="appData.block01.sections.section12"
     />
-    <Section-1-3 />
+    <Section-1-3 :section="appData.block01.sections.section13" />
     <Section-1-4 />
     <Section-1-5 />
     <Section-1-6 />

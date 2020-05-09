@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <div class="section__subsection">
-      <h2>Innere Stärke <span class="video-name">(Video&nbsp;1.2)</span></h2>
+      <SectionTitle :content="section.title" />
       <div class="vimeo-video__container">
         <iframe
           class="vimeo-video__iframe"
@@ -60,6 +60,15 @@
   </section>
 </template>
 
-<script></script>
+<script>
+import Document from "./Document.vue";
+import SectionTitle from "./SectionTitle.vue";
+import Video from "./Video.vue";
+
+export default {
+  props: ["documents", "section"],
+  components: { Document, SectionTitle, Video },
+};
+</script>
 
 <style scoped></style>

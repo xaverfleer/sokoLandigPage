@@ -1,13 +1,13 @@
 <template>
   <h2>
-    {{ sectionTitle.main }}
-    <span class="video-name">{{ sectionTitle.videoName }}</span>
+    {{ content.main }}
+    <span class="video-name">{{ content.videoName }}</span>
   </h2>
 </template>
 
 <script>
 export default {
-  props: ["sectionTitle"],
+  props: ["content"],
 };
 </script>
 

@@ -1,8 +1,8 @@
 <template>
   <section class="section">
     <div class="section__subsection">
-      <SectionTitle :sectionTitle="section12.title" />
-      <Video :video="section12.video" />
+      <SectionTitle :content="section.title" />
+      <Video :video="section.video" />
       <Document :document="documents['so1-UebungsdossierPdf']" />
       <Document :document="documents['so1-UebungsdossierDocx']" />
     </div>
@@ -15,7 +15,7 @@ import SectionTitle from "./SectionTitle.vue";
 import Video from "./Video.vue";
 
 export default {
-  props: ["documents", "section12"],
+  props: ["documents", "section"],
   components: { Document, SectionTitle, Video },
 };
 </script>
