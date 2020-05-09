@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 const appData = {
   block01: {
     supertitle: "Kursblock 1",
@@ -9,27 +10,22 @@ const appData = {
           entries: [
             {
               id: 0,
-              // eslint-disable-next-line no-irregular-whitespace
               text: `…verbindest du dich mit deinem Baby, in dem du dir überlegst, was du ihm von Herzen für sein Leben wünschst (Video 1.1)`,
             },
             {
               id: 1,
-              // eslint-disable-next-line no-irregular-whitespace
               text: `…erfährst du, was dein Baby braucht, um innerlich stark zu werden (Video 2.2)`,
             },
             {
               id: 2,
-              // eslint-disable-next-line no-irregular-whitespace
               text: `…erklären wir, was es bedeutet, das Baby als gleichwürdiges Subjekt zu sehen (Video 2.3)`,
             },
             {
               id: 3,
-              // eslint-disable-next-line no-irregular-whitespace
               text: `…zeigen wir anhand eines Praxisbeispiels auf, was subjektorientierte Kommunikation in der Praxis heissen kann (Video 2.4)`,
             },
             {
               id: 4,
-              // eslint-disable-next-line no-irregular-whitespace
               text: `…lernst du anhand konkreter Sätzen den Unterschied zwischen einer gleichwürdigen und einer herablassenden Sprache kennen (Video 2.5)`,
             },
           ],
@@ -51,27 +47,22 @@ const appData = {
           entries: [
             {
               id: 0,
-              // eslint-disable-next-line no-irregular-whitespace
               text: `Damit Kinder zu selbständigen Erwachsenen heranwachsen, die ein gesundes, glückliches und erfüllendes Leben führen können, brauchen sie genügend innere Stärke.`,
             },
             {
               id: 1,
-              // eslint-disable-next-line no-irregular-whitespace
               text: `Wichtige Wurzeln der inneren Stärke sind ein differenziertes Selbstbewusstsein (ich kenne mich), ein positiver und möglichst bedingungsloser Selbstwert (ich bin gut, so wie ich bin) sowie ein gesundes Selbstvertrauen (ich vertraue in meine Fähigkeiten).`,
             },
             {
               id: 2,
-              // eslint-disable-next-line no-irregular-whitespace
               text: `Die Art und Weise, wie wir mit Kindern kommunizieren, kann sie innerlich stärken – oder auch nicht.`,
             },
             {
               id: 3,
-              // eslint-disable-next-line no-irregular-whitespace
               text: `Kommunikationsstrategien können uns helfen, das Kind innerlich zu stärken.`,
             },
             {
               id: 4,
-              // eslint-disable-next-line no-irregular-whitespace
               text: `Hinter den Kommunikationsstrategien der subjektorientierten Kommunikation steht die Grundhaltung, unser Kind als gleichwürdiges Subjekt wahrzunehmen und zu behandeln.`,
             },
           ],
