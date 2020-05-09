@@ -37,3 +37,21 @@ function getSampleUser() {
       console.log(`error: ${error}`);
     });
 }
+
+// eslint-disable-next-line no-unused-vars
+function createSession(userEmail) {
+  const sessionId = crypto.randomBytes(16).toString("base64");
+  const timestamp = new Date().toISOString();
+  const payload = { userEmail, sessionId, timestamp };
+
+  client
+    .query(q.Create(q.Collection("sessions"), { data: payload }))
+    .then((response) => {
+      console.log(`success ${response}`);
+    })
+    .catch((error) => {
+      console.log(`error: ${error}`);
+    });
+}
+
+createSession("max@muster.com");
