@@ -40,10 +40,10 @@ function getSampleUser() {
 }
 
 // eslint-disable-next-line no-unused-vars
-function createSession(userEmail) {
+function createSession(email) {
   const sessionId = crypto.randomBytes(16).toString("base64");
   const timestamp = new Date().toISOString();
-  const payload = { userEmail, sessionId, timestamp };
+  const payload = { email, sessionId, timestamp };
 
   client
     .query(q.Create(q.Collection("sessions"), { data: payload }))
