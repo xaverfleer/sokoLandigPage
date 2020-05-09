@@ -50,6 +50,19 @@ function createSession(email) {
     .then(helpers.handleSuccess)
     .catch(helpers.handleError);
 }
+
+// eslint-disable-next-line no-unused-vars
+function clearSessions(userEmail) {
+  client
+    .query(
+      q.Foreach(
+        q.Paginate(q.Match(q.Index("sessionByEmail"), userEmail)),
+        q.Lambda((ref) => q.Delete(ref))
+      )
+    )
+    .then(helpers.handleSuccess)
+    .catch(helpers.handleError);
 }
 
-createSession("max@muster.com");
+// createSession("max@muster.com");
+clearSessions("max@muster.com");
