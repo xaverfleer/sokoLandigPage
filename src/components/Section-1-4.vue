@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <div class="section__subsection">
-      <h2>Gleichwürdigkeit <span class="video-name">(Video&nbsp;1.3)</span></h2>
+      <SectionTitle :content="section.title" />
       <div class="video-wrapper" id="video-01c-gleichwuerdigkeit">
         <script
           src="https://fast.wistia.com/embed/medias/va2sztbhjy.jsonp"
@@ -41,42 +41,21 @@
           </div>
         </div>
       </div>
-    </div>
-    <h3>Das wichtigste in Kürze:</h3>
-    <div class="checklist">
-      <div class="checklist__item">
-        <div class="checklist__text">
-          Hinter den Strategien der <em>subjektorientierten</em> Kommunikation
-          steht die Grundhaltung, dass wir unser Baby von Anfang an als
-          gleichwürdiges Subjekt wahrnehmen und behandeln.
-        </div>
-      </div>
-      <div class="checklist__item">
-        <div class="checklist__text">
-          Unser Baby ist kein Objekt, das wir nach unseren Vorstellungen formen
-          und steuern können. Es ist ein Subjekt mit eigenen Gedanken, Gefühlen
-          und Bedürfnissen. Salopp gesagt: Es ist eine fühlende Person und kein
-          Roboter.
-        </div>
-      </div>
-      <div class="checklist__item">
-        <div class="checklist__text">
-          Unser Baby ist gleichwürdig. Das heisst, dass seine Innenwelt
-          (Gedanken, Gefühle, Bedürfnisse, Wünsche etc.) gleich wichtig ist, wie
-          unsere eigene Innenwelt. Wir müssen sie in unseren Handlungen zu
-          verstehen versuchen und mitberücksichtigen.
-        </div>
-      </div>
-      <div class="checklist__item">
-        <div class="checklist__text">
-          Gleichwürdigkeit ist nicht das gleiche wie Gleichgültigkeit,
-          Gleichheit oder Gleichberechtigung.
-        </div>
-      </div>
+      <h3>{{ section.subtitle }}</h3>
+      <Checklist :checklist="section.checklist" />
     </div>
   </section>
 </template>
 
-<script></script>
+<script>
+import Checklist from "./Checklist.vue";
+import Document from "./Document.vue";
+import SectionTitle from "./SectionTitle.vue";
+
+export default {
+  props: ["documents", "section"],
+  components: { Checklist, Document, SectionTitle },
+};
+</script>
 
 <style scoped></style>

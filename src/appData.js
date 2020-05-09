@@ -68,6 +68,33 @@ const appData = {
           ],
         },
       },
+      section14: {
+        title: {
+          main: "Gleichwürdigkeit",
+          videoName: "(Video 1.3)",
+        },
+        subtitle: `Das wichtigste in Kürze:`,
+        checklist: {
+          entries: [
+            {
+              id: 0,
+              text: `Hinter den Strategien der subjektorientierten Kommunikation steht die Grundhaltung, dass wir unser Baby von Anfang an als gleichwürdiges Subjekt wahrnehmen und behandeln.`,
+            },
+            {
+              id: 1,
+              text: `Unser Baby ist kein Objekt, das wir nach unseren Vorstellungen formen und steuern können. Es ist ein Subjekt mit eigenen Gedanken, Gefühlen und Bedürfnissen. Salopp gesagt: Es ist eine fühlende Person und kein Roboter.`,
+            },
+            {
+              id: 2,
+              text: `Unser Baby ist gleichwürdig. Das heisst, dass seine Innenwelt (Gedanken, Gefühle, Bedürfnisse, Wünsche etc.) gleich wichtig ist, wie unsere eigene Innenwelt. Wir müssen sie in unseren Handlungen zu verstehen versuchen und mitberücksichtigen.`,
+            },
+            {
+              id: 3,
+              text: `Gleichwürdigkeit ist nicht das gleiche wie Gleichgültigkeit, Gleichheit oder Gleichberechtigung.`,
+            },
+          ],
+        },
+      },
     },
   },
   buttons: {
