@@ -2,7 +2,7 @@
   <div class="vimeo-video__container">
     <iframe
       class="vimeo-video__iframe"
-      src="https://player.vimeo.com/video/395825527"
+      :src="video.ref"
       frameborder="0"
       allow="autoplay; fullscreen"
       allowfullscreen
@@ -11,7 +11,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["video"],
+};
 </script>
 
 <style scoped></style>

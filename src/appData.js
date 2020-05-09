@@ -40,6 +40,9 @@ const appData = {
           main: "Einstiegsübung – Ich wünsche dir...",
           videoName: "(Video 1.1)",
         },
+        video: {
+          ref: "https://player.vimeo.com/video/395825527",
+        },
       },
     },
   },

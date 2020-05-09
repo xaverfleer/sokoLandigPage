@@ -2,7 +2,7 @@
   <section class="section">
     <div class="section__subsection">
       <SectionTitle :sectionTitle="section12.title" />
-      <Video />
+      <Video :video="section12.video" />
       <Document :document="documents['so1-UebungsdossierPdf']" />
       <Document :document="documents['so1-UebungsdossierDocx']" />
     </div>
