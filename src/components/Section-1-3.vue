@@ -2,15 +2,7 @@
   <section class="section">
     <div class="section__subsection">
       <SectionTitle :content="section.title" />
-      <div class="vimeo-video__container">
-        <iframe
-          class="vimeo-video__iframe"
-          src="https://player.vimeo.com/video/412779252"
-          frameborder="0"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-        ></iframe>
-      </div>
+      <Video :video="section.video" />
       <h3>Das wichtigste in Kürze:</h3>
       <div class="checklist">
         <div class="checklist__item">
