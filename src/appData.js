@@ -140,6 +140,7 @@ const appData = {
           ],
         },
       },
+      section17: { title: { main: "Dokumente" } },
     },
   },
   buttons: {
@@ -214,6 +215,18 @@ const appData = {
     "so1-Strategie01": {
       href: "/documents/so1-Strategiekarte-Essenz-Strategie.pdf",
       text: "Strategiekarte: Die Essenz-Strategie – Kursblock 1",
+    },
+    "so1-Vertiefung": {
+      href: "/documents/so1-Vertiefung.pdf",
+      text: "Vertiefung: Sichere Bindung – Kursblocks 1",
+    },
+    "so1-Erinnerung": {
+      href: "/documents/so1-Erinnerungskarte.pdf",
+      text: "Erinnerungskarte: Innere Stärke – Kursblocks 1",
+    },
+    "so1-Literatur": {
+      href: "/documents/so1-Literaturliste.pdf",
+      text: "Literaturliste: Bücher die weiterhelfen",
     },
   },
   videos: {

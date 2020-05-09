@@ -20,7 +20,11 @@
       :section="appData.block01.sections.section16"
       :videos="appData.videos"
     />
-    <Section-1-7 :appData="appData" />
+    <Section-1-7
+      :appData="appData"
+      :documents="appData.documents"
+      :section="appData.block01.sections.section17"
+    />
   </div>
 </template>
 
