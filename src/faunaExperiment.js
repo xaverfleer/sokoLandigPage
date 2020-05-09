@@ -7,6 +7,9 @@ const q = faunadb.query;
 const client = new faunadb.Client({ secret: process.env.FAUNADB_SECRET });
 
 const helpers = {
+  createTimestamp() {
+    return new Date().toISOString();
+  },
   handleSuccess(response) {
     console.log(`success ${response}`);
   },
@@ -42,7 +45,7 @@ function getSampleUser() {
 // eslint-disable-next-line no-unused-vars
 function createSession(email) {
   const sessionId = crypto.randomBytes(16).toString("base64");
-  const timestamp = new Date().toISOString();
+  const timestamp = helpers.createTimestamp();
   const payload = { email, sessionId, timestamp };
 
   client
