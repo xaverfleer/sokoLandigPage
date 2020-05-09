@@ -101,6 +101,45 @@ const appData = {
           videoName: "(Video 1.4)",
         },
       },
+      section16: {
+        title: {
+          main: "Herablassende vs. gleichwürdige Sprache",
+          videoName: "(Video 1.5)",
+        },
+        subtitle: "Das wichtigste in Kürze:",
+        checklist: {
+          entries: [
+            {
+              id: 0,
+              text: `Subjektorientiert zu kommunizieren bedeutet, eine gleichwürdige Beziehung zum Baby aufzubauen und dies über eine gleichwürdige Sprache auszudrücken.`,
+            },
+            {
+              id: 1,
+              text: `Eine gleichwürdige Sprache findet auf Augenhöhe statt, sie ist nicht herablassend.              `,
+            },
+            {
+              id: 2,
+              text: `Wir haben vermutlich alle schon einmal herablassende Sätze gegenüber Kindern gehört oder selbst benutzt. Einige Beispiele findest du in diesem Video.`,
+            },
+            {
+              id: 3,
+              text: `Wir müssen von uns selbst nicht Perfektion erwarten und auch nicht anstreben, immer genau das richtig zu sagen. Dadurch würden wir dem Baby vermitteln, dass es uns mehr um Selbstoptimierung geht anstatt um seine Bedürfnisse.`,
+            },
+            {
+              id: 4,
+              text: `Es ist kein Drama, wenn uns manchmal herablassende Sätze herausrutschen. Wenn wir grundsätzlich eine gleichwürdige Beziehung leben, hält diese Beziehung auch einige herablassende Aussagen aus.`,
+            },
+            {
+              id: 5,
+              text: `Falls wir uns bei einer herablassenden Aussage ertappen und diese korrigieren wollen, können wir einfach eine gleichwürdigere Alternative direkt hinterherliefern.`,
+            },
+            {
+              id: 6,
+              text: `Wir können uns auch nachträglich entschuldigen, wenn wir das für angemessen halten.`,
+            },
+          ],
+        },
+      },
     },
   },
   buttons: {
@@ -180,6 +219,7 @@ const appData = {
   videos: {
     so1Einstieg: { ref: "https://player.vimeo.com/video/395825527" },
     so1InnereStarke: { ref: "https://player.vimeo.com/video/412779252" },
+    so1Herablassend: { ref: "https://player.vimeo.com/video/411396939" },
   },
   state: {
     path: "",
