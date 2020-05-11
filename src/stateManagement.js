@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 /* global document, localStorage */
 function validateState(stringState) {
   let state;
@@ -29,7 +28,7 @@ function getState() {
   return (validateState(lsState) && JSON.parse(lsState)) || defaultState;
 }
 
-export function updatePage() {
+function updatePage() {
   const state = getState();
   document
     .querySelector(".page")
@@ -46,10 +45,12 @@ function setState(change) {
   }
 }
 
-export function updateActiveBlock(activeBlock) {
+function updateActiveBlock(activeBlock) {
   setState((oldState) => {
     const newState = oldState;
     newState.activeBlock = activeBlock;
     return newState;
   });
 }
+
+export default { updateActiveBlock, updatePage };

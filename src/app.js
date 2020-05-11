@@ -4,7 +4,7 @@ import appData from "./appData";
 import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
-import { updateActiveBlock, updatePage } from "./stateManagement";
+import stateM8t from "./stateManagement";
 
 const vm = new Vue({
   template: `
@@ -80,7 +80,7 @@ window.addEventListener("scroll", () => {
   else header.classList.remove("header--fixed");
 });
 
-updatePage();
+stateM8t.updatePage();
 
 const lessons = [
   { block: "01", cta: "cta07", logEvent: "Kursblock 1", selector: ".cta07" },
@@ -92,6 +92,6 @@ const lessons = [
 
 lessons.forEach((l) =>
   document.querySelectorAll(l.selector).forEach((elem) => {
-    elem.addEventListener("click", () => updateActiveBlock(l.block));
+    elem.addEventListener("click", () => stateM8t.updateActiveBlock(l.block));
   })
 );
