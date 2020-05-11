@@ -15,7 +15,7 @@ const vm = new Vue({
     </div>
   `,
   el: "#app",
-  data: { appData },
+  data: { appData, state: stateM8t.getState() },
   components: { Header, Main, Footer },
 });
 
@@ -92,6 +92,9 @@ const lessons = [
 
 lessons.forEach((l) =>
   document.querySelectorAll(l.selector).forEach((elem) => {
-    elem.addEventListener("click", () => stateM8t.updateActiveBlock(l.block));
+    elem.addEventListener("click", () => {
+      stateM8t.updateActiveBlock(l.block);
+      vm.state = stateM8t.getState();
+    });
   })
 );

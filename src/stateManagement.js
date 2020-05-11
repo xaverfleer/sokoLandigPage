@@ -53,4 +53,4 @@ function updateActiveBlock(activeBlock) {
   });
 }
 
-export default { updateActiveBlock, updatePage };
+export default { getState, updateActiveBlock, updatePage };
