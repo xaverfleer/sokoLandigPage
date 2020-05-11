@@ -1,5 +1,5 @@
 <template>
-  <div class="hidden-by-default section--kurs01">
+  <div>
     <Section-1-1 :documents="appData.documents" :block01="appData.block01" />
     <Section-1-2
       :documents="appData.documents"
@@ -23,6 +23,7 @@
     <Section-1-7
       :appData="appData"
       :documents="appData.documents"
+      :updateActiveBlock="updateActiveBlock"
       :section="appData.block01.sections.section17"
     />
   </div>
@@ -38,7 +39,7 @@ import Section16 from "./Section-1-6.vue";
 import Section17 from "./Section-1-7.vue";
 
 export default {
-  props: ["appData"],
+  props: ["appData", "updateActiveBlock"],
   components: {
     Section11,
     Section12,

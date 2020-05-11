@@ -333,10 +333,6 @@ form {
   display: none;
 }
 
-.hidden-by-default {
-  display: none;
-}
-
 .img {
   width: 100%;
   border-radius: 5px;
@@ -389,14 +385,6 @@ form {
 .nav a {
   color: #966b40;
   text-decoration: none;
-}
-
-.page[data-active-block="01"] .section--kurs01,
-.page[data-active-block="02"] .section--kurs02,
-.page[data-active-block="03"] .section--kurs03,
-.page[data-active-block="04"] .section--kurs04,
-.page[data-active-block="05"] .section--kurs05 {
-  display: block;
 }
 
 .progress-list__item {

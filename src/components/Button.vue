@@ -18,11 +18,13 @@ export default {
   },
   methods: {
     clickHandler() {
-      this.info.activateBlock && updateActiveBlock(this.info.activateBlock);
+      this.info.activateBlock &&
+        typeof this.updateActiveBlock === "function" &&
+        this.updateActiveBlock(this.info.activateBlock);
       amplitude.getInstance().logEvent(this.info.logEvent);
     },
   },
-  props: ["info"],
+  props: ["info", "updateActiveBlock"],
 };
 </script>
 

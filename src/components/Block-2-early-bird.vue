@@ -1,5 +1,5 @@
 <template>
-  <div class="hidden-by-default section--kurs02">
+  <div>
     <section class="section">
       <div class="section__subsection">
         <div class="block__supertitle">Kursblock&nbsp;2</div>
@@ -50,7 +50,7 @@
         </div>
       </div>
     </section>
-    <section class="section hidden-by-default section--kurs02">
+    <section class="section">
       <div class="section__subsection">
         <h2>Einstiegsübung <span class="video-name">(Video&nbsp;2.1)</span></h2>
         <div class="vimeo-video__container">
@@ -106,7 +106,7 @@
         </div>
       </div>
     </section>
-    <section class="section hidden-by-default section--kurs02">
+    <section class="section">
       <div class="section__subsection">
         <h2>
           Mit dem Baby sprechen <span class="video-name">(Video&nbsp;2.2)</span>
@@ -168,7 +168,7 @@
         </div>
       </div>
     </section>
-    <section class="section hidden-by-default section--kurs02">
+    <section class="section">
       <div class="section__subsection">
         <h2>
           ...wenn wir etwas am Baby tun
@@ -255,7 +255,7 @@
         </div>
       </div>
     </section>
-    <section class="section hidden-by-default section--kurs02">
+    <section class="section">
       <div class="section__subsection">
         <h2>
           ...wenn wir etwas neben dem Baby tun
@@ -312,7 +312,7 @@
         </div>
       </div>
     </section>
-    <section class="section hidden-by-default section--kurs02">
+    <section class="section">
       <div class="section__subsection">
         <h2>
           ...wenn wir das Baby verlassen
@@ -396,20 +396,25 @@
         </div>
       </div>
     </section>
-    <section class="section hidden-by-default section--kurs02">
+    <section class="section">
       <div class="buttons">
-        <Button :info="appData.buttons.cta07Secondary" />
-        <Button :info="appData.buttons.cta08Secondary" />
+        <Button
+          :info="appData.buttons.cta07Secondary"
+          :updateActiveBlock="updateActiveBlock"
+        />
+        <Button
+          :info="appData.buttons.cta08Secondary"
+          :updateActiveBlock="updateActiveBlock"
+        />
       </div>
     </section>
-    <section class="section hidden-by-default"></section>
   </div>
 </template>
 
 <script>
 import Button from "./Button.vue";
 export default {
-  props: ["appData"],
+  props: ["appData", "updateActiveBlock"],
   components: { Button },
 };
 </script>

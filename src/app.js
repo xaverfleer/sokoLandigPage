@@ -10,21 +10,29 @@ const vm = new Vue({
   template: `
     <div class="page" data-active-block="01">
       <Header />
-      <Main :appData="appData" />
+      <Main :appData="appData" :state="state" :updateActiveBlock="updateActiveBlock" />
       <Footer />
     </div>
   `,
   el: "#app",
-  data: { appData, state: stateM8t.getState() },
+  // eslint-disable-next-line no-use-before-define
+  data: { appData, state: stateM8t.getState(), updateActiveBlock },
   components: { Header, Main, Footer },
 });
+
+function updateActiveBlock(block) {
+  stateM8t.updateActiveBlock(block);
+  vm.state = stateM8t.getState();
+}
 
 if (window.location.href.indexOf("early-bird") > -1) {
   amplitude.getInstance().logEvent("Early-Bird page loaded");
   vm.appData.state.path = "early-bird";
+  // todo fix
 } else {
   amplitude.getInstance().logEvent("Kurs page loaded");
   vm.appData.state.path = "kurs";
+  // todo fix
 }
 
 document.querySelectorAll(".cta05").forEach((e) => {
@@ -92,9 +100,6 @@ const lessons = [
 
 lessons.forEach((l) =>
   document.querySelectorAll(l.selector).forEach((elem) => {
-    elem.addEventListener("click", () => {
-      stateM8t.updateActiveBlock(l.block);
-      vm.state = stateM8t.getState();
-    });
+    elem.addEventListener("click", () => updateActiveBlock(l.block));
   })
 );

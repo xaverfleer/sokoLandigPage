@@ -1,5 +1,5 @@
 <template>
-  <div class="hidden-by-default section--kurs03">
+  <div>
     <section class="section">
       <div class="section__subsection">
         <div class="block__supertitle">Kursblock&nbsp;3</div>

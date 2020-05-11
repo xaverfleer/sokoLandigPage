@@ -1,5 +1,5 @@
 <template>
-  <div class="hidden-by-default section--kurs03">
+  <div>
     <section class="section ">
       <div class="section__subsection">
         <div class="block__supertitle">Kursblock&nbsp;3</div>
@@ -7,8 +7,14 @@
         <p>Noch keine Inhalte verfügbar.</p>
       </div>
       <div class="buttons">
-        <Button :info="appData.buttons.cta06Secondary" />
-        <Button :info="appData.buttons.cta09Secondary" />
+        <Button
+          :info="appData.buttons.cta06Secondary"
+          :updateActiveBlock="updateActiveBlock"
+        />
+        <Button
+          :info="appData.buttons.cta09Secondary"
+          :updateActiveBlock="updateActiveBlock"
+        />
       </div>
     </section>
   </div>
@@ -17,7 +23,7 @@
 <script>
 import Button from "./Button.vue";
 export default {
-  props: ["appData"],
+  props: ["appData", "updateActiveBlock"],
   components: { Button },
 };
 </script>
