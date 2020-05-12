@@ -1,13 +1,13 @@
 <template>
   <main>
     <Block1 v-if="activeBlock === '01'" :appData="appData" />
-    <template v-if="appData.state.path === 'kurs'">
+    <template v-if="$root.isKurs">
       <Block2 v-if="activeBlock === '02'" :appData="appData" />
       <Block3 v-if="activeBlock === '03'" />
       <Block4 v-if="activeBlock === '04'" />
       <Block5 v-if="activeBlock === '05'" />
     </template>
-    <template v-if="appData.state.path === 'early-bird'">
+    <template v-if="$root.isEarlyBird">
       <Block2EarlyBird v-if="activeBlock === '02'" :appData="appData" />
       <Block3EarlyBird v-if="activeBlock === '03'" :appData="appData" />
       <Block4EarlyBird v-if="activeBlock === '04'" :appData="appData" />

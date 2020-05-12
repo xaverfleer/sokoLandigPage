@@ -17,6 +17,14 @@ const vm = new Vue({
   el: "#app",
   data: { appData, state: stateM8t.getState() },
   components: { Header, Main, Footer },
+  computed: {
+    isEarlyBird() {
+      return this.state.path === "early-bird";
+    },
+    isKurs() {
+      return this.state.path === "kurs";
+    },
+  },
   methods: {
     updateActiveBlock(block) {
       stateM8t.updateActiveBlock(block);
@@ -27,12 +35,10 @@ const vm = new Vue({
 
 if (window.location.href.indexOf("early-bird") > -1) {
   amplitude.getInstance().logEvent("Early-Bird page loaded");
-  vm.appData.state.path = "early-bird";
-  // todo fix
+  stateM8t.updatePath("early-bird");
 } else {
   amplitude.getInstance().logEvent("Kurs page loaded");
-  vm.appData.state.path = "kurs";
-  // todo fix
+  stateM8t.updatePath("kurs");
 }
 
 document.querySelectorAll(".cta05").forEach((e) => {

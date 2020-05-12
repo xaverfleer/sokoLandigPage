@@ -53,4 +53,12 @@ function updateActiveBlock(activeBlock) {
   });
 }
 
-export default { getState, updateActiveBlock, updatePage };
+function updatePath(path) {
+  setState((oldState) => {
+    const newState = oldState;
+    newState.path = path;
+    return newState;
+  });
+}
+
+export default { getState, updateActiveBlock, updatePage, updatePath };
