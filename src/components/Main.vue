@@ -1,17 +1,17 @@
 <template>
   <main>
-    <Block1 v-if="activeBlock === '01'" :appData="appData" />
+    <Block1 v-if="$root.activeBlock === '01'" :appData="appData" />
     <template v-if="$root.isKurs">
-      <Block2 v-if="activeBlock === '02'" :appData="appData" />
-      <Block3 v-if="activeBlock === '03'" />
-      <Block4 v-if="activeBlock === '04'" />
-      <Block5 v-if="activeBlock === '05'" />
+      <Block2 v-if="$root.activeBlock === '02'" :appData="appData" />
+      <Block3 v-if="$root.activeBlock === '03'" />
+      <Block4 v-if="$root.activeBlock === '04'" />
+      <Block5 v-if="$root.activeBlock === '05'" />
     </template>
     <template v-if="$root.isEarlyBird">
-      <Block2EarlyBird v-if="activeBlock === '02'" :appData="appData" />
-      <Block3EarlyBird v-if="activeBlock === '03'" :appData="appData" />
-      <Block4EarlyBird v-if="activeBlock === '04'" :appData="appData" />
-      <Block5EarlyBird v-if="activeBlock === '05'" :appData="appData" />
+      <Block2EarlyBird v-if="$root.activeBlock === '02'" :appData="appData" />
+      <Block3EarlyBird v-if="$root.activeBlock === '03'" :appData="appData" />
+      <Block4EarlyBird v-if="$root.activeBlock === '04'" :appData="appData" />
+      <Block5EarlyBird v-if="$root.activeBlock === '05'" :appData="appData" />
     </template>
   </main>
 </template>
@@ -39,11 +39,6 @@ export default {
     Block3EarlyBird,
     Block4EarlyBird,
     Block5EarlyBird,
-  },
-  computed: {
-    activeBlock() {
-      return this.$root.state.activeBlock;
-    },
   },
 };
 </script>

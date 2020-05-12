@@ -18,6 +18,9 @@ const vm = new Vue({
   data: { appData, state: {} },
   components: { Header, Main, Footer },
   computed: {
+    activeBlock() {
+      return this.state.activeBlock;
+    },
     isEarlyBird() {
       return this.state.path === "early-bird";
     },
