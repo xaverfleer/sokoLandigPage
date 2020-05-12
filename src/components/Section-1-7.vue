@@ -8,7 +8,6 @@
       <div class="buttons">
         <Button
           :info="appData.buttons.cta06Primary"
-          :updateActiveBlock="updateActiveBlock"
           v-if="appData.state.path === 'kurs'"
         />
         <Button
@@ -17,7 +16,6 @@
         />
         <Button
           :info="appData.buttons.cta06Secondary"
-          :updateActiveBlock="updateActiveBlock"
           v-if="appData.state.path === 'early-bird'"
         />
       </div>
@@ -31,7 +29,7 @@ import Document from "./Document.vue";
 import SectionTitle from "./SectionTitle.vue";
 
 export default {
-  props: ["appData", "documents", "section", "updateActiveBlock"],
+  props: ["appData", "documents", "section"],
   components: { Button, Document, SectionTitle },
 };
 </script>

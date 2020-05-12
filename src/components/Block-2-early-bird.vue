@@ -398,14 +398,8 @@
     </section>
     <section class="section">
       <div class="buttons">
-        <Button
-          :info="appData.buttons.cta07Secondary"
-          :updateActiveBlock="updateActiveBlock"
-        />
-        <Button
-          :info="appData.buttons.cta08Secondary"
-          :updateActiveBlock="updateActiveBlock"
-        />
+        <Button :info="appData.buttons.cta07Secondary" />
+        <Button :info="appData.buttons.cta08Secondary" />
       </div>
     </section>
   </div>
@@ -414,7 +408,7 @@
 <script>
 import Button from "./Button.vue";
 export default {
-  props: ["appData", "updateActiveBlock"],
+  props: ["appData"],
   components: { Button },
 };
 </script>

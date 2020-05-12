@@ -7,14 +7,8 @@
         <p>Noch keine Inhalte verfügbar.</p>
       </div>
       <div class="buttons">
-        <Button
-          :info="appData.buttons.cta06Secondary"
-          :updateActiveBlock="updateActiveBlock"
-        />
-        <Button
-          :info="appData.buttons.cta09Secondary"
-          :updateActiveBlock="updateActiveBlock"
-        />
+        <Button :info="appData.buttons.cta06Secondary" />
+        <Button :info="appData.buttons.cta09Secondary" />
       </div>
     </section>
   </div>
@@ -23,7 +17,7 @@
 <script>
 import Button from "./Button.vue";
 export default {
-  props: ["appData", "updateActiveBlock"],
+  props: ["appData"],
   components: { Button },
 };
 </script>

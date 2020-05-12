@@ -5,7 +5,6 @@
 </template>
 
 <script>
-import { updateActiveBlock } from "../stateManagement";
 export default {
   computed: {
     classes() {
@@ -19,12 +18,11 @@ export default {
   methods: {
     clickHandler() {
       this.info.activateBlock &&
-        typeof this.updateActiveBlock === "function" &&
-        this.updateActiveBlock(this.info.activateBlock);
+        this.$root.updateActiveBlock(this.info.activateBlock);
       amplitude.getInstance().logEvent(this.info.logEvent);
     },
   },
-  props: ["info", "updateActiveBlock"],
+  props: ["info"],
 };
 </script>
 

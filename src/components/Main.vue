@@ -1,10 +1,6 @@
 <template>
   <main>
-    <Block1
-      v-if="state.activeBlock === '01'"
-      :appData="appData"
-      :updateActiveBlock="updateActiveBlock"
-    />
+    <Block1 v-if="state.activeBlock === '01'" :appData="appData" />
     <template v-if="appData.state.path === 'kurs'">
       <Block2 v-if="state.activeBlock === '02'" :appData="appData" />
       <Block3 v-if="state.activeBlock === '03'" />
@@ -12,26 +8,10 @@
       <Block5 v-if="state.activeBlock === '05'" />
     </template>
     <template v-if="appData.state.path === 'early-bird'">
-      <Block2EarlyBird
-        v-if="state.activeBlock === '02'"
-        :appData="appData"
-        :updateActiveBlock="updateActiveBlock"
-      />
-      <Block3EarlyBird
-        v-if="state.activeBlock === '03'"
-        :appData="appData"
-        :updateActiveBlock="updateActiveBlock"
-      />
-      <Block4EarlyBird
-        v-if="state.activeBlock === '04'"
-        :appData="appData"
-        :updateActiveBlock="updateActiveBlock"
-      />
-      <Block5EarlyBird
-        v-if="state.activeBlock === '05'"
-        :appData="appData"
-        :updateActiveBlock="updateActiveBlock"
-      />
+      <Block2EarlyBird v-if="state.activeBlock === '02'" :appData="appData" />
+      <Block3EarlyBird v-if="state.activeBlock === '03'" :appData="appData" />
+      <Block4EarlyBird v-if="state.activeBlock === '04'" :appData="appData" />
+      <Block5EarlyBird v-if="state.activeBlock === '05'" :appData="appData" />
     </template>
   </main>
 </template>
@@ -48,7 +28,7 @@ import Block4EarlyBird from "./Block-4-early-bird.vue";
 import Block5EarlyBird from "./Block-5-early-bird.vue";
 
 export default {
-  props: ["appData", "state", "updateActiveBlock"],
+  props: ["appData", "state"],
   components: {
     Block1,
     Block2,
