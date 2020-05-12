@@ -8,7 +8,7 @@ import stateM8t from "./stateManagement";
 
 const vm = new Vue({
   template: `
-    <div class="page" data-active-block="01">
+    <div class="page">
       <Header />
       <Main :appData="appData" />
       <Footer />
