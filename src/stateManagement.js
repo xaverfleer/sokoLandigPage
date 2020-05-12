@@ -31,11 +31,11 @@ function getState() {
 const subscriptions = [];
 
 function callSubscriptions(state) {
-  subscriptions.forEach((s) => s && typeof s === "function" && s(state));
+  subscriptions.forEach((s) => s(state));
 }
 
 function subscribe(subscriber) {
-  subscriptions.push(subscriber);
+  if (typeof subscriber === "function") subscriptions.push(subscriber);
   return getState();
 }
 
