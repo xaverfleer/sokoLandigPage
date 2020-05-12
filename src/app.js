@@ -10,7 +10,7 @@ const vm = new Vue({
   template: `
     <div class="page" data-active-block="01">
       <Header />
-      <Main :appData="appData" :state="state"/>
+      <Main :appData="appData"/>
       <Footer />
     </div>
   `,
