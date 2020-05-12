@@ -15,7 +15,7 @@ const vm = new Vue({
     </div>
   `,
   el: "#app",
-  data: { appData, state: stateM8t.getState() },
+  data: { appData, state: {} },
   components: { Header, Main, Footer },
   computed: {
     isEarlyBird() {
@@ -32,7 +32,7 @@ const vm = new Vue({
   },
 });
 
-stateM8t.subscribe(function updateVmState(state) {
+vm.state = stateM8t.subscribe(function updateVmState(state) {
   vm.state = state;
 });
 

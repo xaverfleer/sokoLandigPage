@@ -1,14 +1,4 @@
-/* global document, localStorage */
-const subscriptions = [];
-
-function callSubscriptions(state) {
-  subscriptions.forEach((s) => s && typeof s === "function" && s(state));
-}
-
-function subscribe(subscriber) {
-  subscriptions.push(subscriber);
-}
-
+/* global localStorage */
 function validateState(stringState) {
   let state;
   try {
@@ -38,11 +28,15 @@ function getState() {
   return (validateState(lsState) && JSON.parse(lsState)) || defaultState;
 }
 
-function updatePage() {
-  const state = getState();
-  document
-    .querySelector(".page")
-    .setAttribute("data-active-block", state.activeBlock);
+const subscriptions = [];
+
+function callSubscriptions(state) {
+  subscriptions.forEach((s) => s && typeof s === "function" && s(state));
+}
+
+function subscribe(subscriber) {
+  subscriptions.push(subscriber);
+  return getState();
 }
 
 function setState(change) {
@@ -71,4 +65,4 @@ function updatePath(path) {
   });
 }
 
-export default { updateActiveBlock, updatePage, updatePath, subscribe };
+export default { updateActiveBlock, updatePath, subscribe };
