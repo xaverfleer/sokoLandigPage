@@ -31,7 +31,7 @@ function getState() {
 const subscriptions = [];
 
 function callSubscriptions(state) {
-  subscriptions.forEach((s) => s(state));
+  subscriptions.forEach((subscriber) => subscriber(state));
 }
 
 function subscribe(subscriber) {
