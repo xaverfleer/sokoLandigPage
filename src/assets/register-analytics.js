@@ -33,11 +33,10 @@ function submitForm(data) {
 function getData(elements) {
   var fields = [].slice.call(elements);
 
-  var raw = fields.slice(2).reduce(function(acc, elem) {
+  var raw = fields.reduce(function(acc, elem) {
     acc[elem.name] = elem.value;
     return acc;
   }, {});
-  raw.product = fields[1].checked ? "standard" : "early-bird";
 
   var stringified = JSON.stringify(raw);
   var encoded = encodeURIComponent(stringified);
