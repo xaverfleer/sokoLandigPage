@@ -234,9 +234,6 @@ const appData = {
     so1InnereStarke: { ref: "https://player.vimeo.com/video/412779252" },
     so1Herablassend: { ref: "https://player.vimeo.com/video/411396939" },
   },
-  state: {
-    path: "",
-  },
 };
 
 export default appData;

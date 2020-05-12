@@ -28,9 +28,12 @@ const vm = new Vue({
   methods: {
     updateActiveBlock(block) {
       stateM8t.updateActiveBlock(block);
-      this.state = stateM8t.getState();
     },
   },
+});
+
+stateM8t.subscribe(function updateVmState(state) {
+  vm.state = state;
 });
 
 if (window.location.href.indexOf("early-bird") > -1) {
@@ -93,8 +96,6 @@ window.addEventListener("scroll", () => {
   if (window.pageYOffset > 360) header.classList.add("header--fixed");
   else header.classList.remove("header--fixed");
 });
-
-stateM8t.updatePage();
 
 const lessons = [
   { block: "01", cta: "cta07", logEvent: "Kursblock 1", selector: ".cta07" },

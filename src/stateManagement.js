@@ -1,4 +1,14 @@
 /* global document, localStorage */
+const subscriptions = [];
+
+function callSubscriptions(state) {
+  subscriptions.forEach((s) => s && typeof s === "function" && s(state));
+}
+
+function subscribe(subscriber) {
+  subscriptions.push(subscriber);
+}
+
 function validateState(stringState) {
   let state;
   try {
@@ -41,7 +51,7 @@ function setState(change) {
   const newState = change(oldState);
   if (validateState(JSON.stringify(newState))) {
     localStorage.setItem("soko", JSON.stringify(newState));
-    updatePage();
+    callSubscriptions(newState);
   }
 }
 
@@ -61,4 +71,4 @@ function updatePath(path) {
   });
 }
 
-export default { getState, updateActiveBlock, updatePage, updatePath };
+export default { updateActiveBlock, updatePage, updatePath, subscribe };
