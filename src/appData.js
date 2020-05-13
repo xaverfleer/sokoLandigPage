@@ -143,6 +143,44 @@ const appData = {
       section17: { title: { main: "Dokumente" } },
     },
   },
+  block03: {
+    supertitle: "Kursblock 3",
+    title: "Das Baby verstehen...",
+    sections: {
+      section31: {
+        checklist: {
+          pretext: "In diesem Kursblock…",
+          entries: [
+            {
+              id: 0,
+              text:
+                "…verbindest du dich mit deinem Baby, indem du dir überlegst, welche Reaktion du dir von einer Freundin wünschst, wenn es dir nicht gut geht (Video 3.1)",
+            },
+            {
+              id: 1,
+              text:
+                "…erfährst du welche Bedürfnisse Babys grundsätzlich haben und wie du darauf eingehen kannst (Video 3.2)",
+            },
+            {
+              id: 2,
+              text:
+                "…zeigen wir, wie wir die Bedürfnisse unseres Babys aufgrund seiner leisen Signale erkennen können (Video43.3)",
+            },
+            {
+              id: 3,
+              text:
+                "…lernst du, warum Babys weinen und wie du feinfühlig und angemessen auf das Baby reagieren kannst, wenn das Baby weint (Video43.4)",
+            },
+            {
+              id: 4,
+              text:
+                "…erfährst du, wie verschiedene Temperamente sowie kognitive Entwicklungssprünge mitbeeinflussen, wie anspruchsvoll unser Baby ist (Video 3.5)",
+            },
+          ],
+        },
+      },
+    },
+  },
   buttons: {
     cta06Primary: {
       text: "Kursblock 2",
@@ -233,6 +271,10 @@ const appData = {
     so1Einstieg: { ref: "https://player.vimeo.com/video/395825527" },
     so1InnereStarke: { ref: "https://player.vimeo.com/video/412779252" },
     so1Herablassend: { ref: "https://player.vimeo.com/video/411396939" },
+    so3Einstieg: { ref: "https://player.vimeo.com/video/418114230" },
+    so3Beduerfnisse: { ref: "https://player.vimeo.com/video/418114362" },
+    so3BabyKommuniziert: { ref: "https://player.vimeo.com/video/418114671" },
+    so3BabyWeint: { ref: "https://player.vimeo.com/video/418115074" },
   },
 };
 

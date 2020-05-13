@@ -1,11 +1,7 @@
 <template>
   <div>
+    <Section-3-1 :block="$root.appData.block03" />
     <section class="section ">
-      <div class="section__subsection">
-        <div class="block__supertitle">Kursblock&nbsp;3</div>
-        <h1 class="block__title">Das Baby verstehen...</h1>
-        <p>Noch keine Inhalte verfügbar.</p>
-      </div>
       <div class="buttons">
         <Button :info="appData.buttons.cta06Secondary" />
         <Button :info="appData.buttons.cta09Secondary" />
@@ -16,9 +12,10 @@
 
 <script>
 import Button from "./Button.vue";
+import Section31 from "./Section-3-1.vue";
 export default {
   props: ["appData"],
-  components: { Button },
+  components: { Button, Section31 },
 };
 </script>
 
