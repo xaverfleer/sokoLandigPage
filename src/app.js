@@ -21,6 +21,12 @@ const vm = new Vue({
     activeBlock() {
       return this.state.activeBlock;
     },
+    buttons() {
+      return this.appData.buttons;
+    },
+    docs() {
+      return this.appData.documents;
+    },
     isEarlyBird() {
       return this.state.path === "early-bird";
     },

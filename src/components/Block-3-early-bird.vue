@@ -3,8 +3,8 @@
     <Section-3-1 :block="block" />
     <section class="section ">
       <div class="buttons">
-        <Button :info="appData.buttons.cta06Secondary" />
-        <Button :info="appData.buttons.cta09Secondary" />
+        <Button :info="$root.buttons.cta06Secondary" />
+        <Button :info="$root.buttons.cta09Secondary" />
       </div>
     </section>
   </div>
