@@ -278,6 +278,14 @@ const appData = {
       href: "/documents/so3-Zusammenfassung.pdf",
       text: "Zusammenfassung – Kursblock 3",
     },
+    "so3-UebungsdossierDocx": {
+      href: "/documents/so3-Uebungsdossier.docx",
+      text: "Übungsdossier (Word) – Kursblock 3",
+    },
+    "so3-UebungsdossierPdf": {
+      href: "/documents/so3-Uebungsdossier.pdf",
+      text: "Übungsdossier (PDF) – Kursblock 3",
+    },
 
   },
   videos: {
