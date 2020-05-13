@@ -266,6 +266,19 @@ const appData = {
       href: "/documents/so1-Literaturliste.pdf",
       text: "Literaturliste: Bücher, die weiterhelfen",
     },
+    "so3-Zusammenfassung": {
+      href: "/documents/so3-Zusammenfassung.pdf",
+      text: "Zusammenfassung – Kursblock 3",
+    },
+    "so2-UebungsdossierDocx": {
+      href: "/documents/so2-Uebungsdossier.docx",
+      text: "Übungsdossier (Word) – Kursblock 2",
+    },
+    "so2-UebungsdossierPdf": {
+      href: "/documents/so2-Uebungsdossier.pdf",
+      text: "Übungsdossier (PDF) – Kursblock 2",
+    },
+
   },
   videos: {
     so1Einstieg: { ref: "https://player.vimeo.com/video/395825527" },
