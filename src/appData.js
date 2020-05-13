@@ -292,6 +292,10 @@ const appData = {
       href: "/documents/so3-Uebungsdossier.pdf",
       text: "Übungsdossier (PDF) – Kursblock 3",
     },
+    "so3-Vertiefung01": {
+      href: "/documents/so3-Vertiefung-co-sleeping.pdf",
+      text: "Vertiefung: Sicherheitsregeln Co‑Sleeping – Kursblocks 3",
+    },
 
   },
   videos: {

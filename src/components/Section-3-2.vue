@@ -3,8 +3,7 @@
     <div class="section__subsection">
       <SectionTitle :content="section.title" />
       <VideoVue :video="$root.videos.so3Einstieg" />
-      <Document :document="$root.docs['so3-UebungsdossierPdf']" />
-      <Document :document="$root.docs['so3-UebungsdossierDocx']" />
+      <Document :document="$root.docs['so3-Vertiefung01']" />
     </div>
   </section>
 </template>
