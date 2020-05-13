@@ -1,17 +1,17 @@
 <template>
   <main>
-    <Block1 v-if="$root.activeBlock === '01'" :appData="appData" />
+    <Block1 v-if="$root.activeBlock === '01'" :block="appData.block01" />
     <template v-if="$root.isKurs">
-      <Block2 v-if="$root.activeBlock === '02'" :appData="appData" />
+      <Block2 v-if="$root.activeBlock === '02'" />
       <Block3 v-if="$root.activeBlock === '03'" />
       <Block4 v-if="$root.activeBlock === '04'" />
       <Block5 v-if="$root.activeBlock === '05'" />
     </template>
     <template v-if="$root.isEarlyBird">
-      <Block2EarlyBird v-if="$root.activeBlock === '02'" :appData="appData" />
+      <Block2EarlyBird v-if="$root.activeBlock === '02'" />
       <Block3EarlyBird v-if="$root.activeBlock === '03'" :block="block03" />
-      <Block4EarlyBird v-if="$root.activeBlock === '04'" :appData="appData" />
-      <Block5EarlyBird v-if="$root.activeBlock === '05'" :appData="appData" />
+      <Block4EarlyBird v-if="$root.activeBlock === '04'" />
+      <Block5EarlyBird v-if="$root.activeBlock === '05'" />
     </template>
   </main>
 </template>

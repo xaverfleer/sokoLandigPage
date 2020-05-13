@@ -7,8 +7,8 @@
         <p>Noch keine Inhalte verfügbar.</p>
       </div>
       <div class="buttons">
-        <Button :info="appData.buttons.cta08Secondary" />
-        <Button :info="appData.buttons.cta10Secondary" />
+        <Button :info="$root.buttons.cta08Secondary" />
+        <Button :info="$root.buttons.cta10Secondary" />
       </div>
     </section>
   </div>
@@ -17,7 +17,6 @@
 <script>
 import Button from "./Button.vue";
 export default {
-  props: ["appData"],
   components: { Button },
 };
 </script>

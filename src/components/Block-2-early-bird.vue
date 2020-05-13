@@ -48,8 +48,8 @@
             >Zusammenfassung – Kursblock 2</a
           >
         </div>
-        <Document :document="docs['so2-UebungsdossierPdf']" />
-        <Document :document="docs['so2-UebungsdossierDocx']" />
+        <Document :document="$root.docs['so2-UebungsdossierPdf']" />
+        <Document :document="$root.docs['so2-UebungsdossierDocx']" />
       </div>
     </section>
     <section class="section">
@@ -384,8 +384,8 @@
     </section>
     <section class="section">
       <div class="buttons">
-        <Button :info="appData.buttons.cta07Secondary" />
-        <Button :info="appData.buttons.cta08Secondary" />
+        <Button :info="$root.buttons.cta07Secondary" />
+        <Button :info="$root.buttons.cta08Secondary" />
       </div>
     </section>
   </div>
@@ -395,13 +395,7 @@
 import Button from "./Button.vue";
 import Document from "./Document.vue";
 export default {
-  props: ["appData"],
   components: { Button, Document },
-  computed: {
-    docs() {
-      return this.$root.appData.documents;
-    },
-  },
 };
 </script>
 

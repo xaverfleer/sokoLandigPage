@@ -1,30 +1,12 @@
 <template>
   <div>
-    <Section-1-1 :documents="appData.documents" :block01="appData.block01" />
-    <Section-1-2
-      :documents="appData.documents"
-      :section="appData.block01.sections.section12"
-      :videos="appData.videos"
-    />
-    <Section-1-3
-      :documents="appData.documents"
-      :section="appData.block01.sections.section13"
-      :videos="appData.videos"
-    />
-    <Section-1-4
-      :documents="appData.documents"
-      :section="appData.block01.sections.section14"
-    />
-    <Section-1-5 :section="appData.block01.sections.section15" />
-    <Section-1-6
-      :section="appData.block01.sections.section16"
-      :videos="appData.videos"
-    />
-    <Section-1-7
-      :appData="appData"
-      :documents="appData.documents"
-      :section="appData.block01.sections.section17"
-    />
+    <Section-1-1 :block01="block" />
+    <Section-1-2 :section="block.sections.section12" />
+    <Section-1-3 :section="block.sections.section13" />
+    <Section-1-4 :section="block.sections.section14" />
+    <Section-1-5 :section="block.sections.section15" />
+    <Section-1-6 :section="block.sections.section16" />
+    <Section-1-7 :section="block.sections.section17" />
   </div>
 </template>
 
@@ -38,7 +20,7 @@ import Section16 from "./Section-1-6.vue";
 import Section17 from "./Section-1-7.vue";
 
 export default {
-  props: ["appData"],
+  props: ["block"],
   components: {
     Section11,
     Section12,

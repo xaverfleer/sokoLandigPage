@@ -33,6 +33,9 @@ const vm = new Vue({
     isKurs() {
       return this.state.path === "kurs";
     },
+    videos() {
+      return this.appData.videos;
+    },
   },
   methods: {
     updateActiveBlock(block) {

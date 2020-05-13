@@ -2,10 +2,10 @@
   <section class="section">
     <div class="section__subsection">
       <SectionTitle :content="section.title" />
-      <Video :video="videos.so1InnereStarke" />
+      <VideoVue :video="$root.videos.so1InnereStarke" />
       <h3>{{ section.subtitle }}</h3>
       <Checklist :checklist="section.checklist" />
-      <Document :document="documents['so1-Strategie01']" />
+      <Document :document="$root.docs['so1-Strategie01']" />
     </div>
   </section>
 </template>
@@ -14,11 +14,11 @@
 import Checklist from "./Checklist.vue";
 import Document from "./Document.vue";
 import SectionTitle from "./SectionTitle.vue";
-import Video from "./Video.vue";
+import VideoVue from "./VideoVue.vue";
 
 export default {
-  props: ["documents", "section", "videos"],
-  components: { Checklist, Document, SectionTitle, Video },
+  props: ["section"],
+  components: { Checklist, Document, SectionTitle, VideoVue },
 };
 </script>
 

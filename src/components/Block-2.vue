@@ -47,7 +47,7 @@
         <p>Bitte melde dich an, um alle Inhalte dieses Kurses zu sehen.</p>
       </div>
       <div class="buttons">
-        <Button :info="appData.buttons.cta05Primary" />
+        <Button :info="$root.buttons.cta05Primary" />
       </div>
     </section>
   </div>
@@ -56,7 +56,6 @@
 <script>
 import Button from "./Button.vue";
 export default {
-  props: ["appData"],
   components: { Button },
 };
 </script>

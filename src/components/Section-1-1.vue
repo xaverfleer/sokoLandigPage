@@ -4,7 +4,7 @@
       <div class="block__supertitle">{{ block01.supertitle }}</div>
       <h1 class="block__title">{{ block01.title }}</h1>
       <Checklist :checklist="block01.sections.section11.checklist" />
-      <Document :document="documents['so1-Zusammenfassung']" />
+      <Document :document="$root.docs['so1-Zusammenfassung']" />
     </div>
   </section>
 </template>
@@ -12,11 +12,9 @@
 <script>
 import Checklist from "./Checklist.vue";
 import Document from "./Document.vue";
-import SectionTitle from "./SectionTitle.vue";
-import Video from "./Video.vue";
 
 export default {
-  props: ["documents", "block01"],
+  props: ["block01"],
   components: { Checklist, Document },
 };
 </script>
