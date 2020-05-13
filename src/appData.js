@@ -179,6 +179,12 @@ const appData = {
           ],
         },
       },
+      section32: {
+        title: {
+          main: "Einstiegsübung – Was brauche ich?",
+          videoName: "(Video 3.1)",
+        },
+      },
     },
   },
   buttons: {
