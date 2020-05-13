@@ -264,7 +264,7 @@ const appData = {
     },
     "so1-Literatur": {
       href: "/documents/so1-Literaturliste.pdf",
-      text: "Literaturliste: Bücher die weiterhelfen",
+      text: "Literaturliste: Bücher, die weiterhelfen",
     },
   },
   videos: {
