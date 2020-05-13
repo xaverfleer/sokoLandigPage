@@ -48,6 +48,8 @@
             >Zusammenfassung – Kursblock 2</a
           >
         </div>
+        <Document :document="docs['so2-UebungsdossierPdf']" />
+        <Document :document="docs['so2-UebungsdossierDocx']" />
       </div>
     </section>
     <section class="section">
@@ -79,22 +81,6 @@
             target="_blank"
             >Einstiegsübung 2 – Kursblock 2</a
           >
-        </div>
-        <div class="document">
-          <a
-            class="document__link"
-            href="/documents/so2-Uebungsdossier.pdf"
-            target="_blank"
-            >Übungsdossier (PDF) – Kursblock 2
-          </a>
-        </div>
-        <div class="document">
-          <a
-            class="document__link"
-            href="/documents/so2-Uebungsdossier.docx"
-            target="_blank"
-            >Übungsdossier (Word) – Kursblock 2
-          </a>
         </div>
         <div class="document">
           <a
@@ -407,9 +393,15 @@
 
 <script>
 import Button from "./Button.vue";
+import Document from "./Document.vue";
 export default {
   props: ["appData"],
-  components: { Button },
+  components: { Button, Document },
+  computed: {
+    docs() {
+      return this.$root.appData.documents;
+    },
+  },
 };
 </script>
 
