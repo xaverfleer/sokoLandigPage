@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Section-3-1 :block="$root.appData.block03" />
+    <Section-3-1 :block="block" />
     <section class="section ">
       <div class="buttons">
         <Button :info="appData.buttons.cta06Secondary" />
@@ -14,7 +14,7 @@
 import Button from "./Button.vue";
 import Section31 from "./Section-3-1.vue";
 export default {
-  props: ["appData"],
+  props: ["block"],
   components: { Button, Section31 },
 };
 </script>
