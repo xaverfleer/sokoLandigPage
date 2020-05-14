@@ -208,6 +208,41 @@ const appData = {
           ],
         },
       },
+      section34: {
+        title: {
+          main: "...wenn das Baby mit leisen Signalen kommuniziert",
+          videoName: "(Video 3.3)",
+        },
+        subtitle: "Das wichtigste in Kürze:",
+        checklist: {
+          entries: [
+            {
+              id: 0,
+              text: `Babys kommunizieren von Anfang an nicht nur durch weinen, sondern auch durch leise Signale mit uns. Wenn wir auf die leisen Signale angemessen reagieren, benutzt das Baby sie mit der Zeit immer differenzierter.`,
+            },
+            {
+              id: 1,
+              text: `Um die leisen Signale zu verstehen, müssen wir sie aktiv entschlüsseln: Wir müssen sie bewusst wahrnehmen, vermuten was sie bedeuten könnten, unsere Vermutung durch eine Reaktion testen und dann wieder beobachten, ob wir richtig lagen oder ob wir eine neue Vermutung brauchen. (→Strategiekarte)`,
+            },
+            {
+              id: 2,
+              text: `Beim Entschlüsseln der Signale kann es uns helfen, über die Körpersprache des Babys zu verstehen, in welchem wachen Bewusstseinszustand es gerade ist. Man kann den ruhigen, den aktiven und den schläfrigen Wachzustand unterscheiden.`,
+            },
+            {
+              id: 3,
+              text: `Beim Entschlüsseln kann es auch helfen, häufige konkrete Signale zu kennen: Beispiele sind, dass viele Babys an ihrer Hand lutschen, wenn sie Hunger haben, an ihrem Kopf oder in den Augen reiben, wenn sie müde sind oder den Kopf wegdrehen und ins Leere starren wenn sie überreizt sind.`,
+            },
+            {
+              id: 4,
+              text: `Es ist für die gesunde Entwicklung des Babys zwar elementar, dass wir rasch, liebevoll und angemessen auf die Bedürfnisse des Babys eingehen. Doch wir müssen nicht zu jedem Wunsch ja sagen: Bedürfnisse und Wünsche sind nicht das gleiche.`,
+            },
+            {
+              id: 5,
+              text: `Wenn wir auf ein Bedürfnis reagieren, können wir dem Baby auch immer die Möglichkeit geben, das, was es bereits selbst tun kann, um sein Bedürfnis zu befriedigen, auch selbst beizutragen. Das ist nährend für das Autonomiebedürfnis.`,
+            },
+          ],
+        },
+      },
     },
   },
   buttons: {
@@ -319,18 +354,17 @@ const appData = {
       href: "/documents/so3-Vertiefung-co-sleeping.pdf",
       text: "Vertiefung: Sicherheitsregeln Co‑Sleeping – Kursblocks 3",
     },
-
-    // "so3-Strategie01": {
-    //   href: "/documents/so3-Strategiekarte-Aktives-Lesen.pdf",
-    //   text: "blah",
-    // },
+    "so3-Strategie01": {
+      href: "/documents/so3-Strategiekarte-Aktives-Lesen.pdf",
+      text: "Strategiekarte: Aktives Lesen – Kursblock 3",
+    },
     // "so3-Strategie02": {
     //   href: "/documents/so3-Strategiekarte-WARUM-Prozess.pdf",
-    //   text: "blah",
+    // text: "Strategiekarte: Der WARUM-Prozess – Kursblock 3",
     // },
     // "so3-Vertiefung02": {
     //   href: "/documents/so3-Vertiefung-Entwicklungssprünge.pdf",
-    //   text: "blah",
+    // text: "Vertiefung: Übersicht Vertiefungssprünge – Kursblocks 3",
     // },
   },
   videos: {
