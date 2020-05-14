@@ -7,18 +7,16 @@
         <p>Noch keine Inhalte verfügbar.</p>
       </div>
       <div class="buttons">
-        <Button :info="$root.buttons.cta08Secondary" />
-        <Button :info="$root.buttons.cta10Secondary" />
+        <ButtonVue :info="$root.buttons.cta08Secondary" />
+        <ButtonVue :info="$root.buttons.cta10Secondary" />
       </div>
     </section>
   </div>
 </template>
 
 <script>
-import Button from "./Button.vue";
-export default {
-  components: { Button },
-};
+import ButtonVue from "./ButtonVue.vue";
+export default { components: { ButtonVue } };
 </script>
 
 <style scoped></style>

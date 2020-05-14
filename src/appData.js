@@ -274,6 +274,47 @@ const appData = {
           ],
         },
       },
+      section36: {
+        title: {
+          main: "...wenn das Baby «schwierig» ist",
+          videoName: "(Video 3.5)",
+        },
+        subtitle: "Das wichtigste in Kürze:",
+        checklist: {
+          entries: [
+            {
+              id: 0,
+              text: `Wenn wir Babys als «schwierig» wahrnehmen, kann das an ihrem Temperament liegen. Etwa 10–20% der Babys kommen mit einem «hoch reaktiven» Temperament zur Welt. Hoch reaktive Babys nehmen ihre Umwelt sehr aktiv wahr und sind dadurch schnell überreizt und häufig unzufrieden.`,
+            },
+            {
+              id: 1,
+              text: `Ob wir unser Baby als «schwierig» empfinden, hängt natürlich auch davon ab, welche Vorstellungen wir von einem normalen Baby haben.`,
+            },
+            {
+              id: 2,
+              text: `Wenn wir ein Baby plötzlich als «schwieriger» wahrnehmen als sonst, kann es sein, dass es gerade einen Entwicklungssprung durchmacht.`,
+            },
+            {
+              id: 3,
+              text: `Bis zu seinem 20. Lebensmonat macht ein Baby zehn kognitive Entwicklungssprünge durch und zwar ungefähr in den Wochen 5, 8, 12, 19, 26, 37, 46, 55, 64 und 74.
+            `,
+            },
+            {
+              id: 4,
+              text: `In den Tagen und Wochen vor diesen Entwicklungssprüngen ist das Baby meist anhänglicher, weinerlicher, fordernder, empfindlicher und insgesamt «anstrengender».`,
+            },
+            {
+              id: 5,
+              text: `Der Grund dafür ist, dass bei jedem Entwicklungssprung das bisherige Weltbild des Babys auf den Kopf gestellt wird, weil es dank Reifungsprozessen in seinem Gehirn neue Dinge wahrnehmen und verstehen kann. Es ist verunsichert und muss sich in der Welt neu orientierten. Bindungs- und Nähebedürfnisse sind stark ausgeprägt.
+            `,
+            },
+            {
+              id: 6,
+              text: `Ist ein Sprung geschafft, ist ein Baby oft selbständiger und friedlicher als vorher. Es hat neue Fähigkeiten erworben und interessiert sich nun für neue Objekte oder Tätigkeiten. Autonomie- und Erkundungsbedürfnisse stehen nun wieder mehr im Fokus.`,
+            },
+          ],
+        },
+      },
     },
   },
   buttons: {
@@ -393,10 +434,10 @@ const appData = {
       href: "/documents/so3-Strategiekarte-WARUM-Prozess.pdf",
       text: "Strategiekarte: Der WARUM-Prozess – Kursblock 3",
     },
-    // "so3-Vertiefung02": {
-    //   href: "/documents/so3-Vertiefung-Entwicklungssprünge.pdf",
-    // text: "Vertiefung: Übersicht Vertiefungssprünge – Kursblocks 3",
-    // },
+    "so3-Vertiefung02": {
+      href: "/documents/so3-Vertiefung-Entwicklungssprünge.pdf",
+      text: "Vertiefung: Übersicht Vertiefungssprünge – Kursblocks 3",
+    },
   },
   videos: {
     so1Einstieg: { ref: "https://player.vimeo.com/video/395825527" },

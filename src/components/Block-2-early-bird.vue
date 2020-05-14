@@ -384,18 +384,18 @@
     </section>
     <section class="section">
       <div class="buttons">
-        <Button :info="$root.buttons.cta07Secondary" />
-        <Button :info="$root.buttons.cta08Secondary" />
+        <ButtonVue :info="$root.buttons.cta07Secondary" />
+        <ButtonVue :info="$root.buttons.cta08Secondary" />
       </div>
     </section>
   </div>
 </template>
 
 <script>
-import Button from "./Button.vue";
+import ButtonVue from "./ButtonVue.vue";
 import Document from "./Document.vue";
 export default {
-  components: { Button, Document },
+  components: { ButtonVue, Document },
 };
 </script>
 

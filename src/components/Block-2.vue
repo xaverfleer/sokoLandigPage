@@ -47,17 +47,15 @@
         <p>Bitte melde dich an, um alle Inhalte dieses Kurses zu sehen.</p>
       </div>
       <div class="buttons">
-        <Button :info="$root.buttons.cta05Primary" />
+        <ButtonVue :info="$root.buttons.cta05Primary" />
       </div>
     </section>
   </div>
 </template>
 
 <script>
-import Button from "./Button.vue";
-export default {
-  components: { Button },
-};
+import ButtonVue from "./ButtonVue.vue";
+export default { components: { ButtonVue } };
 </script>
 
 <style scoped></style>
