@@ -185,6 +185,29 @@ const appData = {
           videoName: "(Video 3.1)",
         },
       },
+      section33: {
+        title: {
+          main: "Die Bedürfnisse des Babys sind wichtig",
+          videoName: "(Video 3.2)",
+        },
+        subtitle: "Das wichtigste in Kürze:",
+        checklist: {
+          entries: [
+            {
+              id: 0,
+              text: `Die Bedürfnisse von Babys lassen sich grob in drei Kategorien zuteilen (a) physiologische Bedürfnisse: z.B. Nahrung, Wärme, Schlaf, Gesundheit, Schmerzfreiheit, (b) Bindungs- und Nähebedürfnisse: z.B. Körpernähe, Interaktion, Schutz vor zu vielen Reizen und (c) Autonomie- und Erkundungsbedürfnisse: z.B. freies Spielen, Stillen nach Bedarf`,
+            },
+            {
+              id: 1,
+              text: `Babys können ihr Autonomie- und Erkundungsbedürfnis nur dann voll ausleben, wenn ihre Bindungs- und Nähebedürfnisse befriedigt sind. Erst so fühlen sie sich sicher genug, um mit einem guten Gefühl immer mutiger und selbständiger zu werden.`,
+            },
+            {
+              id: 2,
+              text: `Gute Möglichkeiten, die Bindungs- und Nähebedürfnisse des Babys zu stillen, sind z.B., rasch auf die physiologischen Bedürfnisse des Babys zu reagieren, das Baby nahe bei sich schlafen zu lassen, z.B. im Familienbett oder im Beistellbett (siehe dazu unser PDF «Sicherheitsregeln für Co-Sleeping»), das Baby häufig in einem Tragetuch oder in einer Traghilfe zu tragen und immer mal wieder in spielerische und kommunikative Interaktionen mit dem Baby zu treten.`,
+            },
+          ],
+        },
+      },
     },
   },
   buttons: {
@@ -297,6 +320,18 @@ const appData = {
       text: "Vertiefung: Sicherheitsregeln Co‑Sleeping – Kursblocks 3",
     },
 
+    // "so3-Strategie01": {
+    //   href: "/documents/so3-Strategiekarte-Aktives-Lesen.pdf",
+    //   text: "blah",
+    // },
+    // "so3-Strategie02": {
+    //   href: "/documents/so3-Strategiekarte-WARUM-Prozess.pdf",
+    //   text: "blah",
+    // },
+    // "so3-Vertiefung02": {
+    //   href: "/documents/so3-Vertiefung-Entwicklungssprünge.pdf",
+    //   text: "blah",
+    // },
   },
   videos: {
     so1Einstieg: { ref: "https://player.vimeo.com/video/395825527" },
