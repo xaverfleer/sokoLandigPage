@@ -372,33 +372,35 @@ const appData = {
     },
   },
   documents: {
-    "so1-Zusammenfassung": {
-      href: "/documents/so1-Zusammenfassung.pdf",
-      text: "Zusammenfassung – Kursblock 1",
-    },
-    "so1-UebungsdossierDocx": {
-      href: "/documents/so1-Uebungsdossier.docx",
-      text: "Übungsdossier (Word) – Kursblock 1",
-    },
-    "so1-UebungsdossierPdf": {
-      href: "/documents/so1-Uebungsdossier.pdf",
-      text: "Übungsdossier (PDF) – Kursblock 1",
-    },
-    "so1-Strategie01": {
-      href: "/documents/so1-Strategiekarte-Essenz-Strategie.pdf",
-      text: "Strategiekarte: Die Essenz-Strategie – Kursblock 1",
-    },
-    "so1-Vertiefung": {
-      href: "/documents/so1-Vertiefung.pdf",
-      text: "Vertiefung: Sichere Bindung – Kursblocks 1",
-    },
-    "so1-Erinnerung": {
-      href: "/documents/so1-Erinnerungskarte.pdf",
-      text: "Erinnerungskarte: Innere Stärke – Kursblocks 1",
-    },
-    "so1-Literatur": {
-      href: "/documents/so1-Literaturliste.pdf",
-      text: "Literaturliste: Bücher, die weiterhelfen",
+    so1: {
+      Zusammenfassung: {
+        href: "/documents/so1-Zusammenfassung.pdf",
+        text: "Zusammenfassung – Kursblock 1",
+      },
+      UebungsdossierDocx: {
+        href: "/documents/so1-Uebungsdossier.docx",
+        text: "Übungsdossier (Word) – Kursblock 1",
+      },
+      UebungsdossierPdf: {
+        href: "/documents/so1-Uebungsdossier.pdf",
+        text: "Übungsdossier (PDF) – Kursblock 1",
+      },
+      Strategie01: {
+        href: "/documents/so1-Strategiekarte-Essenz-Strategie.pdf",
+        text: "Strategiekarte: Die Essenz-Strategie – Kursblock 1",
+      },
+      Vertiefung: {
+        href: "/documents/so1-Vertiefung.pdf",
+        text: "Vertiefung: Sichere Bindung – Kursblocks 1",
+      },
+      Erinnerung: {
+        href: "/documents/so1-Erinnerungskarte.pdf",
+        text: "Erinnerungskarte: Innere Stärke – Kursblocks 1",
+      },
+      Literatur: {
+        href: "/documents/so1-Literaturliste.pdf",
+        text: "Literaturliste: Bücher, die weiterhelfen",
+      },
     },
     "so2-Zusammenfassung": {
       href: "/documents/so2-Zusammenfassung.pdf",

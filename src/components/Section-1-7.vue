@@ -2,9 +2,9 @@
   <section class="section">
     <div class="section__subsection">
       <SectionTitle :content="section.title" />
-      <Document :document="$root.docs['so1-Vertiefung']" />
-      <Document :document="$root.docs['so1-Erinnerung']" />
-      <Document :document="$root.docs['so1-Literatur']" />
+      <Document :document="$root.docs.so1.Vertiefung" />
+      <Document :document="$root.docs.so1.Erinnerung" />
+      <Document :document="$root.docs.so1.Literatur" />
       <div class="buttons">
         <ButtonVue :info="$root.buttons.cta06Primary" v-if="$root.isKurs" />
         <ButtonVue :info="$root.buttons.cta05Secondary" v-if="$root.isKurs" />
