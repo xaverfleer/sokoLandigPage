@@ -159,22 +159,22 @@ const appData = {
             {
               id: 1,
               text:
-                "…erfährst du welche Bedürfnisse Babys grundsätzlich haben und wie du darauf eingehen kannst (Video 3.2)",
+                "…erfährst du welche Bedürfnisse Babys grundsätzlich haben und wie du darauf eingehen kannst (Video 3.2)",
             },
             {
               id: 2,
               text:
-                "…zeigen wir, wie wir die Bedürfnisse unseres Babys aufgrund seiner leisen Signale erkennen können (Video 3.3)",
+                "…zeigen wir, wie wir die Bedürfnisse unseres Babys aufgrund seiner leisen Signale erkennen können (Video 3.3)",
             },
             {
               id: 3,
               text:
-                "…lernst du, warum Babys weinen und wie du feinfühlig und angemessen auf das Baby reagieren kannst, wenn das Baby weint (Video 3.4)",
+                "…lernst du, warum Babys weinen und wie du feinfühlig und angemessen auf das Baby reagieren kannst, wenn das Baby weint (Video 3.4)",
             },
             {
               id: 4,
               text:
-                "…erfährst du, wie verschiedene Temperamente sowie kognitive Entwicklungssprünge mitbeeinflussen, wie anspruchsvoll unser Baby ist (Video 3.5)",
+                "…erfährst du, wie verschiedene Temperamente sowie kognitive Entwicklungssprünge mitbeeinflussen, wie anspruchsvoll unser Baby ist (Video 3.5)",
             },
           ],
         },
@@ -195,22 +195,22 @@ const appData = {
           entries: [
             {
               id: 0,
-              text: `Die Bedürfnisse von Babys lassen sich grob in drei Kategorien zuteilen (a) physiologische Bedürfnisse: z.B. Nahrung, Wärme, Schlaf, Gesundheit, Schmerzfreiheit, (b) Bindungs- und Nähebedürfnisse: z.B. Körpernähe, Interaktion, Schutz vor zu vielen Reizen und (c) Autonomie- und Erkundungsbedürfnisse: z.B. freies Spielen, Stillen nach Bedarf`,
+              text: `Die Bedürfnisse von Babys lassen sich grob in drei Kategorien zuteilen (a) physiologische Bedürfnisse: z.B. Nahrung, Wärme, Schlaf, Gesundheit, Schmerzfreiheit, (b) Bindungs- und Nähebedürfnisse: z.B. Körpernähe, Interaktion, Schutz vor zu vielen Reizen und (c) Autonomie- und Erkundungsbedürfnisse: z.B. freies Spielen, Stillen nach Bedarf`,
             },
             {
               id: 1,
-              text: `Babys können ihr Autonomie- und Erkundungsbedürfnis nur dann voll ausleben, wenn ihre Bindungs- und Nähebedürfnisse befriedigt sind. Erst so fühlen sie sich sicher genug, um mit einem guten Gefühl immer mutiger und selbständiger zu werden.`,
+              text: `Babys können ihr Autonomie- und Erkundungsbedürfnis nur dann voll ausleben, wenn ihre Bindungs- und Nähebedürfnisse befriedigt sind. Erst so fühlen sie sich sicher genug, um mit einem guten Gefühl immer mutiger und selbständiger zu werden.`,
             },
             {
               id: 2,
-              text: `Gute Möglichkeiten, die Bindungs- und Nähebedürfnisse des Babys zu stillen, sind z.B., rasch auf die physiologischen Bedürfnisse des Babys zu reagieren, das Baby nahe bei sich schlafen zu lassen, z.B. im Familienbett oder im Beistellbett (siehe dazu unser PDF «Sicherheitsregeln für Co-Sleeping»), das Baby häufig in einem Tragetuch oder in einer Traghilfe zu tragen und immer mal wieder in spielerische und kommunikative Interaktionen mit dem Baby zu treten.`,
+              text: `Gute Möglichkeiten, die Bindungs- und Nähebedürfnisse des Babys zu stillen, sind z.B., rasch auf die physiologischen Bedürfnisse des Babys zu reagieren, das Baby nahe bei sich schlafen zu lassen, z.B. im Familienbett oder im Beistellbett (siehe dazu unser PDF «Sicherheitsregeln für Co‑Sleeping»), das Baby häufig in einem Tragetuch oder in einer Traghilfe zu tragen und immer mal wieder in spielerische und kommunikative Interaktionen mit dem Baby zu treten.`,
             },
           ],
         },
       },
       section34: {
         title: {
-          main: "...wenn das Baby mit leisen Signalen kommuniziert",
+          main: "...wenn das Baby mit leisen Signalen kommuniziert",
           videoName: "(Video 3.3)",
         },
         subtitle: "Das wichtigste in Kürze:",
@@ -245,7 +245,7 @@ const appData = {
       },
       section35: {
         title: {
-          main: "...wenn das Baby weint",
+          main: "...wenn das Baby weint",
           videoName: "(Video 3.4)",
         },
         subtitle: "Das wichtigste in Kürze:",
@@ -257,19 +257,19 @@ const appData = {
             },
             {
               id: 1,
-              text: `Die Gründe, warum Babys weinen, können wir grob in drei Kategorien einteilen: 1. Ankündigung eines Bedürfnisses: Nahrung, Schlaf, Schmerzlinderung, Schutz vor Reizen etc. 2. Stressabbau durch das Weinen: Kein unmittelbares Bedürfnis ausser Nähe und Präsenz 3. Reaktion auf Stress und Unruhe der Bezugsperson (Resonanzweinen)`,
+              text: `Die Gründe, warum Babys weinen, können wir grob in drei Kategorien einteilen: 1. Ankündigung eines Bedürfnisses: Nahrung, Schlaf, Schmerzlinderung, Schutz vor Reizen etc. 2. Stressabbau durch das Weinen: Kein unmittelbares Bedürfnis ausser Nähe und Präsenz 3. Reaktion auf Stress und Unruhe der Bezugsperson (Resonanzweinen)`,
             },
             {
               id: 2,
-              text: `Das Weinen von Babys kann bei uns Stress verursachen. Damit wir auf das Weinen nicht hektisch mit einer Stressreaktion reagieren, haben wir den WARUM-Prozess entwickelt.`,
+              text: `Das Weinen von Babys kann bei uns Stress verursachen. Damit wir auf das Weinen nicht hektisch mit einer Stressreaktion reagieren, haben wir den WARUM-Prozess entwickelt.`,
             },
             {
               id: 3,
-              text: `Bei diesem Prozess geht es nicht darum, das Baby möglichst schnell ruhig zu stellen, sondern herauszufinden, warum das Baby weint und ruhig und angemessen darauf zu reagieren. Der Prozess besteht aus 4 Schritten: (→Strategiekarte). 1. WAHRNEHMEN: «ich höre, dass du weinst»; durchatmen, sich auf das Weinen einstellen. 2. AKZEPTIEREN: «es ist in Ordnung, dass du weinst»; sich einfühlen und mit dem Baby verbinden. 3. REAGIEREN: «ich will wissen, wie ich dir helfen kann»; aktives Entschlüsseln des Weinens. 4. UMSORGEN: «ich gebe dir, was du brauchst»; Bedürfnis befriedigen, Zuneigung schenken.`,
+              text: `Bei diesem Prozess geht es nicht darum, das Baby möglichst schnell ruhig zu stellen, sondern herauszufinden, warum das Baby weint und ruhig und angemessen darauf zu reagieren. Der Prozess besteht aus 4 Schritten: (→Strategiekarte). 1. WAHRNEHMEN: «ich höre, dass du weinst»; durchatmen, sich auf das Weinen einstellen. 2. AKZEPTIEREN: «es ist in Ordnung, dass du weinst»; sich einfühlen und mit dem Baby verbinden. 3. REAGIEREN: «ich will wissen, wie ich dir helfen kann»; aktives Entschlüsseln des Weinens. 4. UMSORGEN: «ich gebe dir, was du brauchst»; Bedürfnis befriedigen, Zuneigung schenken.`,
             },
             {
               id: 4,
-              text: `Wir sollten vorsichtig sein mit schnellen Beruhigungsmethoden wie Schnuller, Stillen, obwohl das Baby keinen Hunger hat, Ablenkung durch Entertainment, wildes Herumhüpfen oder ähnliches. Damit teilen wir nämlich dem Baby mit, dass sein Weinen nicht sein darf. `,
+              text: `Wir sollten vorsichtig sein mit schnellen Beruhigungsmethoden wie Schnuller, Stillen, obwohl das Baby keinen Hunger hat, Ablenkung durch Entertainment, wildes Herumhüpfen oder ähnliches. Damit teilen wir nämlich dem Baby mit, dass sein Weinen nicht sein darf. `,
             },
           ],
         },
@@ -296,8 +296,7 @@ const appData = {
             },
             {
               id: 3,
-              text: `Bis zu seinem 20. Lebensmonat macht ein Baby zehn kognitive Entwicklungssprünge durch und zwar ungefähr in den Wochen 5, 8, 12, 19, 26, 37, 46, 55, 64 und 74.
-            `,
+              text: `Bis zu seinem 20. Lebensmonat macht ein Baby zehn kognitive Entwicklungssprünge durch und zwar ungefähr in den Wochen 5, 8, 12, 19, 26, 37, 46, 55, 64 und 74.`,
             },
             {
               id: 4,
@@ -305,8 +304,7 @@ const appData = {
             },
             {
               id: 5,
-              text: `Der Grund dafür ist, dass bei jedem Entwicklungssprung das bisherige Weltbild des Babys auf den Kopf gestellt wird, weil es dank Reifungsprozessen in seinem Gehirn neue Dinge wahrnehmen und verstehen kann. Es ist verunsichert und muss sich in der Welt neu orientierten. Bindungs- und Nähebedürfnisse sind stark ausgeprägt.
-            `,
+              text: `Der Grund dafür ist, dass bei jedem Entwicklungssprung das bisherige Weltbild des Babys auf den Kopf gestellt wird, weil es dank Reifungsprozessen in seinem Gehirn neue Dinge wahrnehmen und verstehen kann. Es ist verunsichert und muss sich in der Welt neu orientierten. Bindungs- und Nähebedürfnisse sind stark ausgeprägt.`,
             },
             {
               id: 6,
