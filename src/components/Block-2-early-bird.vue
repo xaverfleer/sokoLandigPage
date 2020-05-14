@@ -55,17 +55,7 @@
     <section class="section">
       <div class="section__subsection">
         <h2>Einstiegsübung <span class="video-name">(Video&nbsp;2.1)</span></h2>
-        <div class="vimeo-video__container">
-          <iframe
-            class="vimeo-video__iframe"
-            src="https://player.vimeo.com/video/410677081"
-            width="640"
-            height="360"
-            frameborder="0"
-            allow="autoplay; fullscreen"
-            allowfullscreen
-          ></iframe>
-        </div>
+        <VideoVue :video="$root.videos.so2Einstieg" />
         <div class="document">
           <a
             class="document__link"
@@ -97,17 +87,7 @@
         <h2>
           Mit dem Baby sprechen <span class="video-name">(Video&nbsp;2.2)</span>
         </h2>
-        <div class="vimeo-video__container">
-          <iframe
-            class="vimeo-video__iframe"
-            src="https://player.vimeo.com/video/410677189"
-            width="640"
-            height="360"
-            frameborder="0"
-            allow="autoplay; fullscreen"
-            allowfullscreen
-          ></iframe>
-        </div>
+        <VideoVue :video="$root.videos.so2Sprechen" />
         <h3>Das wichtigste in Kürze:</h3>
         <div class="checklist">
           <div class="checklist__item">
@@ -160,17 +140,7 @@
           ...wenn wir etwas am Baby tun
           <span class="video-name">(Video&nbsp;2.3)</span>
         </h2>
-        <div class="vimeo-video__container">
-          <iframe
-            class="vimeo-video__iframe"
-            src="https://player.vimeo.com/video/410677404"
-            width="640"
-            height="360"
-            frameborder="0"
-            allow="autoplay; fullscreen"
-            allowfullscreen
-          ></iframe>
-        </div>
+        <VideoVue :video="$root.videos.so2AmBabyTun" />
         <h3>Das wichtigste in Kürze:</h3>
         <div class="checklist">
           <div class="checklist__item">
@@ -247,17 +217,7 @@
           ...wenn wir etwas neben dem Baby tun
           <span class="video-name">(Video&nbsp;2.4)</span>
         </h2>
-        <div class="vimeo-video__container">
-          <iframe
-            class="vimeo-video__iframe"
-            src="https://player.vimeo.com/video/410677798"
-            width="640"
-            height="360"
-            frameborder="0"
-            allow="autoplay; fullscreen"
-            allowfullscreen
-          ></iframe>
-        </div>
+        <VideoVue :video="$root.videos.so2NebenBabyTun" />
         <h3>Das wichtigste in Kürze:</h3>
         <div class="checklist">
           <div class="checklist__item">
@@ -304,17 +264,7 @@
           ...wenn wir das Baby verlassen
           <span class="video-name">(Video&nbsp;2.5)</span>
         </h2>
-        <div class="vimeo-video__container">
-          <iframe
-            class="vimeo-video__iframe"
-            src="https://player.vimeo.com/video/410678171"
-            width="640"
-            height="360"
-            frameborder="0"
-            allow="autoplay; fullscreen"
-            allowfullscreen
-          ></iframe>
-        </div>
+        <VideoVue :video="$root.videos.so2Verlassen" />
         <h3>Das wichtigste in Kürze:</h3>
         <div class="checklist">
           <div class="checklist__item">
@@ -394,8 +344,9 @@
 <script>
 import ButtonVue from "./ButtonVue.vue";
 import Document from "./Document.vue";
+import VideoVue from "./VideoVue.vue";
 export default {
-  components: { ButtonVue, Document },
+  components: { ButtonVue, Document, VideoVue },
 };
 </script>
 
