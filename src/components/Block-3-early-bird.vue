@@ -6,6 +6,12 @@
     <Section-3-4 :section="block.sections.section34" />
     <Section-3-5 :section="block.sections.section35" />
     <Section-3-6 :section="block.sections.section36" />
+    <section class="section">
+      <div class="buttons">
+        <ButtonVue :info="$root.buttons.cta06Secondary" />
+        <ButtonVue :info="$root.buttons.cta09Secondary" />
+      </div>
+    </section>
   </div>
 </template>
 
