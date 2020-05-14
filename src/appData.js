@@ -243,6 +243,37 @@ const appData = {
           ],
         },
       },
+      section35: {
+        title: {
+          main: "...wenn das Baby weint",
+          videoName: "(Video 3.4)",
+        },
+        subtitle: "Das wichtigste in Kürze:",
+        checklist: {
+          entries: [
+            {
+              id: 0,
+              text: `Babys weinen nie ohne Grund und ganz sicher nie, um uns zu manipulieren, zu provozieren, zu testen oder zu erpressen. Dazu sind sie rein kognitiv noch gar nicht in der Lage.`,
+            },
+            {
+              id: 1,
+              text: `Die Gründe, warum Babys weinen, können wir grob in drei Kategorien einteilen: 1. Ankündigung eines Bedürfnisses: Nahrung, Schlaf, Schmerzlinderung, Schutz vor Reizen etc. 2. Stressabbau durch das Weinen: Kein unmittelbares Bedürfnis ausser Nähe und Präsenz 3. Reaktion auf Stress und Unruhe der Bezugsperson (Resonanzweinen)`,
+            },
+            {
+              id: 2,
+              text: `Das Weinen von Babys kann bei uns Stress verursachen. Damit wir auf das Weinen nicht hektisch mit einer Stressreaktion reagieren, haben wir den WARUM-Prozess entwickelt.`,
+            },
+            {
+              id: 3,
+              text: `Bei diesem Prozess geht es nicht darum, das Baby möglichst schnell ruhig zu stellen, sondern herauszufinden, warum das Baby weint und ruhig und angemessen darauf zu reagieren. Der Prozess besteht aus 4 Schritten: (→Strategiekarte). 1. WAHRNEHMEN: «ich höre, dass du weinst»; durchatmen, sich auf das Weinen einstellen. 2. AKZEPTIEREN: «es ist in Ordnung, dass du weinst»; sich einfühlen und mit dem Baby verbinden. 3. REAGIEREN: «ich will wissen, wie ich dir helfen kann»; aktives Entschlüsseln des Weinens. 4. UMSORGEN: «ich gebe dir, was du brauchst»; Bedürfnis befriedigen, Zuneigung schenken.`,
+            },
+            {
+              id: 4,
+              text: `Wir sollten vorsichtig sein mit schnellen Beruhigungsmethoden wie Schnuller, Stillen, obwohl das Baby keinen Hunger hat, Ablenkung durch Entertainment, wildes Herumhüpfen oder ähnliches. Damit teilen wir nämlich dem Baby mit, dass sein Weinen nicht sein darf. `,
+            },
+          ],
+        },
+      },
     },
   },
   buttons: {
@@ -358,10 +389,10 @@ const appData = {
       href: "/documents/so3-Strategiekarte-Aktives-Lesen.pdf",
       text: "Strategiekarte: Aktives Lesen – Kursblock 3",
     },
-    // "so3-Strategie02": {
-    //   href: "/documents/so3-Strategiekarte-WARUM-Prozess.pdf",
-    // text: "Strategiekarte: Der WARUM-Prozess – Kursblock 3",
-    // },
+    "so3-Strategie02": {
+      href: "/documents/so3-Strategiekarte-WARUM-Prozess.pdf",
+      text: "Strategiekarte: Der WARUM-Prozess – Kursblock 3",
+    },
     // "so3-Vertiefung02": {
     //   href: "/documents/so3-Vertiefung-Entwicklungssprünge.pdf",
     // text: "Vertiefung: Übersicht Vertiefungssprünge – Kursblocks 3",
