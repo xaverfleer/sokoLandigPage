@@ -400,6 +400,22 @@ const appData = {
       href: "/documents/so1-Literaturliste.pdf",
       text: "Literaturliste: Bücher, die weiterhelfen",
     },
+    "so2-Zusammenfassung": {
+      href: "/documents/so2-Zusammenfassung.pdf",
+      text: "Zusammenfassung – Kursblock 2",
+    },
+    "so2-Einstiegsuebung01": {
+      href: "/documents/so2-Einstiegsuebung1.pdf",
+      text: "Einstiegsübung 1 – Kursblock 2",
+    },
+    "so2-Einstiegsuebung02": {
+      href: "/documents/so2-Einstiegsuebung2.pdf",
+      text: "Einstiegsübung 2 – Kursblock 2",
+    },
+    "so2-Vertiefung01": {
+      href: "/documents/so2-Vertiefung-Baby-led-weaning.pdf",
+      text: "Vertiefung: Baby led weaning – Kursblocks 2",
+    },
     "so2-UebungsdossierDocx": {
       href: "/documents/so2-Uebungsdossier.docx",
       text: "Übungsdossier (Word) – Kursblock 2",

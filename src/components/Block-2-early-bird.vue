@@ -40,14 +40,7 @@
             </div>
           </div>
         </div>
-        <div class="document">
-          <a
-            class="document__link"
-            href="/documents/so2-Zusammenfassung.pdf"
-            target="_blank"
-            >Zusammenfassung – Kursblock 2</a
-          >
-        </div>
+        <Document :document="$root.docs['so2-Zusammenfassung']" />
         <Document :document="$root.docs['so2-UebungsdossierPdf']" />
         <Document :document="$root.docs['so2-UebungsdossierDocx']" />
       </div>
@@ -56,30 +49,9 @@
       <div class="section__subsection">
         <h2>Einstiegsübung <span class="video-name">(Video&nbsp;2.1)</span></h2>
         <VideoVue :video="$root.videos.so2Einstieg" />
-        <div class="document">
-          <a
-            class="document__link"
-            href="/documents/so2-Einstiegsuebung1.pdf"
-            target="_blank"
-            >Einstiegsübung 1 – Kursblock 2</a
-          >
-        </div>
-        <div class="document">
-          <a
-            class="document__link"
-            href="/documents/so2-Einstiegsuebung2.pdf"
-            target="_blank"
-            >Einstiegsübung 2 – Kursblock 2</a
-          >
-        </div>
-        <div class="document">
-          <a
-            class="document__link"
-            href="/documents/so2-Vertiefung-Baby-led-weaning.pdf"
-            target="_blank"
-            >Vertiefung: Baby led weaning – Kursblock 2</a
-          >
-        </div>
+        <Document :document="$root.docs['so2-Einstiegsuebung01']" />
+        <Document :document="$root.docs['so2-Einstiegsuebung02']" />
+        <Document :document="$root.docs['so2-Vertiefung01']" />
       </div>
     </section>
     <section class="section">
