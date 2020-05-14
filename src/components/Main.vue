@@ -8,7 +8,7 @@
       <Block5 v-if="$root.activeBlock === '05'" />
     </template>
     <template v-if="$root.isEarlyBird">
-      <Block2EarlyBird v-if="$root.activeBlock === '02'" />
+      <Block2EarlyBird v-if="$root.activeBlock === '02'" :block="block02" />
       <Block3EarlyBird v-if="$root.activeBlock === '03'" :block="block03" />
       <Block4EarlyBird v-if="$root.activeBlock === '04'" />
       <Block5EarlyBird v-if="$root.activeBlock === '05'" />
@@ -41,6 +41,9 @@ export default {
     Block5EarlyBird,
   },
   computed: {
+    block02() {
+      return this.appData.block02;
+    },
     block03() {
       return this.appData.block03;
     },

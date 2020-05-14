@@ -143,6 +143,16 @@ const appData = {
       section17: { title: { main: "Dokumente" } },
     },
   },
+  block02: {
+    sections: {
+      section27: {
+        title: {
+          main: "Do's and Don'ts?",
+          videoName: "(Video 2.6)",
+        },
+      },
+    },
+  },
   block03: {
     supertitle: "Kursblock 3",
     title: "Das Baby verstehen...",
@@ -464,6 +474,7 @@ const appData = {
     so2AmBabyTun: { ref: "https://player.vimeo.com/video/410677404" },
     so2NebenBabyTun: { ref: "https://player.vimeo.com/video/410677798" },
     so2Verlassen: { ref: "https://player.vimeo.com/video/410678171" },
+    so2DosAndDonts: { ref: "https://player.vimeo.com/video/418650809" },
     so3Einstieg: { ref: "https://player.vimeo.com/video/418114230" },
     so3Beduerfnisse: { ref: "https://player.vimeo.com/video/418114362" },
     so3BabyKommuniziert: { ref: "https://player.vimeo.com/video/418114671" },

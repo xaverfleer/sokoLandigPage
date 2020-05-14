@@ -304,21 +304,17 @@
         </div>
       </div>
     </section>
-    <section class="section">
-      <div class="buttons">
-        <ButtonVue :info="$root.buttons.cta07Secondary" />
-        <ButtonVue :info="$root.buttons.cta08Secondary" />
-      </div>
-    </section>
+    <section27 :section="block.sections.section27" />
   </div>
 </template>
 
 <script>
-import ButtonVue from "./ButtonVue.vue";
 import Document from "./Document.vue";
+import Section27 from "./Section-2-7.vue";
 import VideoVue from "./VideoVue.vue";
 export default {
-  components: { ButtonVue, Document, VideoVue },
+  components: { Document, Section27, VideoVue },
+  props: ["block"],
 };
 </script>
 
