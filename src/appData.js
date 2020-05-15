@@ -14,19 +14,19 @@ const appData = {
             },
             {
               id: 1,
-              text: `…erfährst du, was dein Baby braucht, um innerlich stark zu werden (Video 2.2)`,
+              text: `…erfährst du, was dein Baby braucht, um innerlich stark zu werden (Video 1.2)`,
             },
             {
               id: 2,
-              text: `…erklären wir, was es bedeutet, das Baby als gleichwürdiges Subjekt zu sehen (Video 2.3)`,
+              text: `…erklären wir, was es bedeutet, das Baby als gleichwürdiges Subjekt zu sehen (Video 1.3)`,
             },
             {
               id: 3,
-              text: `…zeigen wir anhand eines Praxisbeispiels auf, was subjektorientierte Kommunikation in der Praxis heissen kann (Video 2.4)`,
+              text: `…zeigen wir anhand eines Praxisbeispiels auf, was subjektorientierte Kommunikation in der Praxis heissen kann (Video 1.4)`,
             },
             {
               id: 4,
-              text: `…lernst du anhand konkreter Sätzen den Unterschied zwischen einer gleichwürdigen und einer herablassenden Sprache kennen (Video 2.5)`,
+              text: `…lernst du anhand konkreter Sätzen den Unterschied zwischen einer gleichwürdigen und einer herablassenden Sprache kennen (Video 1.5)`,
             },
           ],
         },
