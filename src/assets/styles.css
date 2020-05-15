@@ -369,6 +369,7 @@ form {
 .nav__entry {
   display: none;
   margin: 5px;
+  text-align: right;
 }
 
 .nav__entry--2ndary {
