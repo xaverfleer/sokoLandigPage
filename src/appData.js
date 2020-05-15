@@ -147,7 +147,7 @@ const appData = {
     sections: {
       section27: {
         title: {
-          main: "Do's and Don'ts?",
+          main: "Dos and Don'ts?",
           videoName: "(Video 2.6)",
         },
       },
