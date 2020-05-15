@@ -5,7 +5,7 @@
       <VideoVue :video="$root.videos.so3BabyWeint" />
       <h3>{{ section.subtitle }}</h3>
       <Checklist :checklist="section.checklist" />
-      <Document :document="$root.docs['so3-Vertiefung02']" />
+      <Document :document="$root.docs.so3.Vertiefung02" />
     </div>
   </section>
 </template>

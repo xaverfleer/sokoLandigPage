@@ -412,57 +412,61 @@ const appData = {
         text: "Literaturliste: Bücher, die weiterhelfen",
       },
     },
-    "so2-Zusammenfassung": {
-      href: "/documents/so2-Zusammenfassung.pdf",
-      text: "Zusammenfassung – Kursblock 2",
+    so2: {
+      Zusammenfassung: {
+        href: "/documents/so2-Zusammenfassung.pdf",
+        text: "Zusammenfassung – Kursblock 2",
+      },
+      Einstiegsuebung01: {
+        href: "/documents/so2-Einstiegsuebung1.pdf",
+        text: "Einstiegsübung 1 – Kursblock 2",
+      },
+      Einstiegsuebung02: {
+        href: "/documents/so2-Einstiegsuebung2.pdf",
+        text: "Einstiegsübung 2 – Kursblock 2",
+      },
+      Vertiefung01: {
+        href: "/documents/so2-Vertiefung-Baby-led-weaning.pdf",
+        text: "Vertiefung: Baby led weaning – Kursblocks 2",
+      },
+      UebungsdossierDocx: {
+        href: "/documents/so2-Uebungsdossier.docx",
+        text: "Übungsdossier (Word) – Kursblock 2",
+      },
+      UebungsdossierPdf: {
+        href: "/documents/so2-Uebungsdossier.pdf",
+        text: "Übungsdossier (PDF) – Kursblock 2",
+      },
     },
-    "so2-Einstiegsuebung01": {
-      href: "/documents/so2-Einstiegsuebung1.pdf",
-      text: "Einstiegsübung 1 – Kursblock 2",
-    },
-    "so2-Einstiegsuebung02": {
-      href: "/documents/so2-Einstiegsuebung2.pdf",
-      text: "Einstiegsübung 2 – Kursblock 2",
-    },
-    "so2-Vertiefung01": {
-      href: "/documents/so2-Vertiefung-Baby-led-weaning.pdf",
-      text: "Vertiefung: Baby led weaning – Kursblocks 2",
-    },
-    "so2-UebungsdossierDocx": {
-      href: "/documents/so2-Uebungsdossier.docx",
-      text: "Übungsdossier (Word) – Kursblock 2",
-    },
-    "so2-UebungsdossierPdf": {
-      href: "/documents/so2-Uebungsdossier.pdf",
-      text: "Übungsdossier (PDF) – Kursblock 2",
-    },
-    "so3-Zusammenfassung": {
-      href: "/documents/so3-Zusammenfassung.pdf",
-      text: "Zusammenfassung – Kursblock 3",
-    },
-    "so3-UebungsdossierDocx": {
-      href: "/documents/so3-Uebungsdossier.docx",
-      text: "Übungsdossier (Word) – Kursblock 3",
-    },
-    "so3-UebungsdossierPdf": {
-      href: "/documents/so3-Uebungsdossier.pdf",
-      text: "Übungsdossier (PDF) – Kursblock 3",
-    },
-    "so3-Vertiefung01": {
-      href: "/documents/so3-Vertiefung-co-sleeping.pdf",
-      text: "Vertiefung: Sicherheitsregeln Co‑Sleeping – Kursblocks 3",
-    },
-    "so3-Strategie01": {
-      href: "/documents/so3-Strategiekarte-Aktives-Lesen.pdf",
-      text: "Strategiekarte: Aktives Lesen – Kursblock 3",
-    },
-    "so3-Strategie02": {
-      href: "/documents/so3-Strategiekarte-WARUM-Prozess.pdf",
-      text: "Strategiekarte: Der WARUM-Prozess – Kursblock 3",
-    },
-    "so3-Vertiefung02": {
-      href: "/documents/so3-Vertiefung-Entwicklungssprünge.pdf",
-      text: "Vertiefung: Übersicht Vertiefungssprünge – Kursblocks 3",
+    so3: {
+      Zusammenfassung: {
+        href: "/documents/so3-Zusammenfassung.pdf",
+        text: "Zusammenfassung – Kursblock 3",
+      },
+      UebungsdossierDocx: {
+        href: "/documents/so3-Uebungsdossier.docx",
+        text: "Übungsdossier (Word) – Kursblock 3",
+      },
+      UebungsdossierPdf: {
+        href: "/documents/so3-Uebungsdossier.pdf",
+        text: "Übungsdossier (PDF) – Kursblock 3",
+      },
+      Vertiefung01: {
+        href: "/documents/so3-Vertiefung-co-sleeping.pdf",
+        text: "Vertiefung: Sicherheitsregeln Co‑Sleeping – Kursblocks 3",
+      },
+      Strategie01: {
+        href: "/documents/so3-Strategiekarte-Aktives-Lesen.pdf",
+        text: "Strategiekarte: Aktives Lesen – Kursblock 3",
+      },
+      Strategie02: {
+        href: "/documents/so3-Strategiekarte-WARUM-Prozess.pdf",
+        text: "Strategiekarte: Der WARUM-Prozess – Kursblock 3",
+      },
+      Vertiefung02: {
+        href: "/documents/so3-Vertiefung-Entwicklungssprünge.pdf",
+        text: "Vertiefung: Übersicht Vertiefungssprünge – Kursblocks 3",
+      },
     },
   },
   videos: {
