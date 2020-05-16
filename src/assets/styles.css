@@ -213,7 +213,7 @@ main {
   color: #ffffff;
 }
 
-form {
+.form {
   display: flex;
   flex-wrap: wrap;
   margin: 0 1em 1em 0;
