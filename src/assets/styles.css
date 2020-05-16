@@ -219,8 +219,11 @@ form {
 }
 
 .form__buttons {
+  flex-basis: 100%;
   flex-grow: 1;
-  margin: 1em 0 0 1em;
+  justify-content: flex-end;
+  margin: 2em 0 0 1em;
+}
 }
 
 .form-entry {

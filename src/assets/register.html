@@ -34,13 +34,17 @@
         <div class="section__subsection">
           <h2 class="section__header">Registrieren</h2>
           <form action="." method="POST" class="form" data-netlify="true">
-            <div class="form-entry form-entry--halfwidth">
+            <div class="form-entry form-entry--fullwidth">
               <label class="form-entry__label text" for="form__email">E-Mail-Adresse*</label>
               <input class="form-entry__input text" type="email" name="email" id="form__email" required="">
             </div>
-            <div class="form-entry form-entry--halfwidth">
-              <label class="form-entry__label text" for="form__password">Passwort</label>
+            <div class="form-entry form-entry--halfwidth form-entry--password">
+              <label class="form-entry__label text" for="form__password">Passwort*</label>
               <input class="form-entry__input text" type="password" name="password" id="form__password" required="">
+            </div>
+            <div class="form-entry form-entry--halfwidth form-entry--password">
+              <label class="form-entry__label text" for="form__confirm">Bestätigen*</label>
+              <input class="form-entry__input text" type="password" name="confirm" id="form__confirm" required="">
             </div>
             <div class="buttons form__buttons">
               <button class="button button--primary">Absenden</button>
