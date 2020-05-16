@@ -110,6 +110,7 @@ main {
 }
 
 .button {
+  border: none;
   font-size: 1.4rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -121,10 +122,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.button:hover {
-  border-color: #408f3d;
 }
 
 .button--2ndary {
@@ -224,6 +221,9 @@ form {
   justify-content: flex-end;
   margin: 2em 0 0 1em;
 }
+
+.form-buttons--dual {
+  justify-content: space-between;
 }
 
 .form-entry {
@@ -240,6 +240,10 @@ form {
 .form-entry--halfwidth {
   flex-basis: 40%;
   min-width: 15em;
+}
+
+.form-entry--password {
+  min-width: 10em;
 }
 
 .form-entry__input {
