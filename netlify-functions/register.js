@@ -10,7 +10,6 @@
 // }
 const faunadb = require("faunadb");
 const crypto = require("crypto");
-require("dotenv").config();
 
 const helpers = {
   handleSuccess(response) {
