@@ -25,6 +25,7 @@ exports.handler = function absenden(event, context, callback) {
     text: decoded,
   };
   console.log("sending email");
+
   sgMail
     .send(msg)
     .then(function handleSuccess() {
