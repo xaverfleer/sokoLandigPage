@@ -60,6 +60,10 @@ main {
   justify-content: center;
 }
 
+.button.button--left {
+  padding-left: 0;
+}
+
 .booking-offers {
   display: flex;
   flex-direction: column;
@@ -213,6 +217,10 @@ form {
   display: flex;
   flex-wrap: wrap;
   margin: 0 1em 1em 0;
+}
+
+.form--narrow {
+  max-width: 500px;
 }
 
 .form__buttons {
