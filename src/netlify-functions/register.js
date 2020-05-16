@@ -48,7 +48,7 @@ const helpers = {
   },
 };
 
-exports.handler = function register(event, context, callback) {
+exports.handler = function register(event, context, callback = () => {}) {
   console.log("Start registering");
 
   const decoded = decodeURIComponent(event.body);
