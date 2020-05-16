@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     index: "./src/index.js",
     kurs: "./src/kurs.js",
+    register: "./src/register.js",
   },
   output: {
     filename: "[name].bundle.js",
