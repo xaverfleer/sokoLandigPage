@@ -1,6 +1,6 @@
 /* global amplitude, document, XMLHttpRequest, window  */
 
-amplitude.getInstance().logEvent("Booking page loaded");
+amplitude.getInstance().logEvent("Register page loaded");
 
 function getData(elements) {
   const fields = [].slice.call(elements);
