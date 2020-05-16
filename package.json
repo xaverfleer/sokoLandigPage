@@ -4,13 +4,13 @@
   "description": "This is the landing page for SOKo - Subject Oriented Communications.",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build:copy && npm run build:webpack && npm run build:lambda",
+    "build": "npm run build:copy && npm run build:client && npm run build:lambda",
     "build:copy": "copyfiles src/assets/* src/assets/documents/* src/assets/imgs/* dist/ -u 2",
-    "build:lambda": "netlify-lambda build netlify-functions",
-    "build:webpack": "webpack --config webpack.prod.js",
+    "build:lambda": "netlify-lambda build src/netlify-functions",
+    "build:client": "webpack --config webpack.prod.js",
     "start:lambda": "netlify-lambda serve src/netlify-functions -c webpack.server.js",
-    "start:webpack": "webpack-dev-server --open --config webpack.dev.js",
-    "test": "node netlify-functions/registerTest.js"
+    "start:client": "webpack-dev-server --open --config webpack.dev.js",
+    "test": "node src/netlify-functions/registerTest.js"
   },
   "repository": {
     "type": "git",
