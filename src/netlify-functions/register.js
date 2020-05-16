@@ -11,6 +11,9 @@
 const faunadb = require("faunadb");
 const crypto = require("crypto");
 
+// this i a workaround for issue https://github.com/netlify/netlify-lambda/issues/201
+require("encoding");
+
 const helpers = {
   handleSuccess(response) {
     console.log(`success: ${response}`);
