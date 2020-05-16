@@ -38,21 +38,36 @@ const helpers = {
     const payload = this.composeUser(email, password);
     console.log(`user payload: ${JSON.stringify(payload)}`);
 
-    client
-      .query(q.Create(q.Collection("users"), { data: payload }))
-      .then(helpers.handleSuccess)
-      .catch(helpers.handleError);
+    const promise = client.query(
+      q.Create(q.Collection("users"), { data: payload })
+    );
+    return promise;
   },
 };
 
-exports.handler = function register(event) {
+exports.handler = function register(event, context, callback) {
   console.log("Start registering");
 
   const decoded = decodeURIComponent(event.body);
   const parsed = JSON.parse(decoded);
 
   console.log(`Register user with email email: ${parsed.email}`);
-  helpers.createUser(parsed.email, parsed.password);
+  helpers
+    .createUser(parsed.email, parsed.password)
+    .then(function handleSuccess() {
+      callback(null, {
+        statusCode: 200,
+        body: "User is registered.",
+      });
+      console.log("success");
+    })
+    .catch(function handleError(e) {
+      callback(e, {
+        statusCode: 500,
+        body: `Failed with error: + ${e}`,
+      });
+      console.log("failure");
+    });
 };
 
 exports.__testonly__ = { helpers };
