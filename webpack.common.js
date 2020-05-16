@@ -5,6 +5,7 @@ const VueLoaderPlugin = require("vue-loader/lib/plugin");
 module.exports = {
   entry: {
     index: "./src/index.js",
+    login: "./src/login.js",
     kurs: "./src/kurs.js",
     register: "./src/register.js",
   },
