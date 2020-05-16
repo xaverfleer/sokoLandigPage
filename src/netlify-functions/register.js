@@ -62,14 +62,12 @@ exports.handler = function register(event, context, callback = () => {}) {
         statusCode: 200,
         body: "User is registered.",
       });
-      console.log("success");
     })
     .catch(function handleError(e) {
       callback(e, {
         statusCode: 500,
         body: `Failed with error: + ${e}`,
       });
-      console.log("failure");
     });
 };
 
