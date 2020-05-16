@@ -10,7 +10,7 @@
     "build:client": "webpack --config webpack.prod.js",
     "start:lambda": "netlify-lambda serve src/netlify-functions -c webpack.server.js",
     "start:client": "webpack-dev-server --open --config webpack.dev.js",
-    "test": "node src/netlify-functions/registerTest.js"
+    "test": "tape 'src/**/*Test.js'"
   },
   "repository": {
     "type": "git",
