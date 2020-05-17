@@ -18,6 +18,32 @@ const helpers = {
 
     return parsed.email;
   },
+
+const db = {
+  fetchUser(email) {
+    const q = faunadb.query;
+    const client = new faunadb.Client({ secret: process.env.FAUNADB_SECRET });
+
+    const userPromise = client.query(
+      q.Get(q.Match(q.Index("userByEmail"), email))
+    );
+    return userPromise;
+  },
+};
+
+exports.handler = function register(event, context, callback) {
+  console.log("Start login process");
+
+  const email = helpers.eventToEmail(event);
+  console.log(`Requesting user with email: ${email}`);
+  db.fetchUser(email)
+    .then((fetched) => {
+      const user = fetched.data;
+      console.log(`Retrieved user: ${JSON.stringify(user)}`);
+    })
+    .catch((e) => {
+      console.log(`Error: ${e}`);
+    });
 };
 
 exports.__testonly__ = { helpers };
