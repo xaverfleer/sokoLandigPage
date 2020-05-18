@@ -28,11 +28,7 @@ function submitForm(data) {
 
   xhr.addEventListener("error", (xhrEventError) => {
     // eslint-disable-next-line no-alert
-    window.alert(
-      `Anmelden fehlgeschlagen, bitte erneut versuchen.\n\nBei wiederholtem Fehlschlagen, kontaktiere uns bitte mit folgenden Details: xhrEventError ${JSON.stringify(
-        xhrEventError
-      )}`
-    );
+    window.alert(`Anmelden fehlgeschlagen: ${JSON.stringify(xhrEventError)}`);
   });
 }
 
