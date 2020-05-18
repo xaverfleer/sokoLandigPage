@@ -18,7 +18,7 @@ function getData(elements) {
 
 function submitForm(data) {
   const xhr = new XMLHttpRequest();
-  xhr.open("POST", ".netlify/functions/login");
+  xhr.open("PUT", ".netlify/functions/login");
   xhr.send(data);
 
   xhr.addEventListener("load", () => {
