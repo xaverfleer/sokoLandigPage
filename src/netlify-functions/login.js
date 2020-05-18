@@ -60,9 +60,27 @@ exports.handler = function register(event, context, callback) {
         : Promise.reject(new Error("Invalid password"));
     })
     .then(db.createSession)
+    .then((response) => {
+      console.log(`Successfully logged in.`);
+
+      return Promise.resolve({
+        body: {
+          message: `User is successfully logged in`,
+          sessionId: response.data.sessionId,
+        },
+      });
     })
-    .catch((e) => {
-      console.log(`Error: ${e}`);
+    .then(function handleSuccess(data) {
+      callback(null, {
+        statusCode: 200,
+        body: data.body,
+      });
+    })
+    .catch(function handleError(e) {
+      callback(e, {
+        statusCode: 500,
+        body: `Failed with error: + ${e}`,
+      });
     });
 };
 
