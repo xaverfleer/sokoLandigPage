@@ -62,6 +62,7 @@ exports.handler = function register(event, context, callback) {
   const respond = responseHandlers(callback);
   console.log("Start login process");
   const { email, password } = helpers.parseEventBody(event.body);
+
   console.log(`Requesting user with email: ${email}`);
   db.fetchUser(email)
     .then((fetched) => {
