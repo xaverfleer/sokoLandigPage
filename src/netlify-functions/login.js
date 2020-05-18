@@ -21,7 +21,6 @@ const db = {
   fetchUser(email) {
     const q = faunadb.query;
     const client = new faunadb.Client({ secret: process.env.FAUNADB_SECRET });
-
     const userPromise = client.query(
       q.Get(q.Match(q.Index("userByEmail"), email))
     );
