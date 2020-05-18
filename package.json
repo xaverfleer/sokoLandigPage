@@ -6,10 +6,10 @@
   "scripts": {
     "build": "npm run build:copy && npm run build:client && npm run build:lambda",
     "build:copy": "copyfiles src/assets/* src/assets/documents/* src/assets/imgs/* dist/ -u 2",
-    "build:lambda": "netlify-lambda build src/netlify-functions",
     "build:client": "webpack --config webpack.prod.js",
-    "start:lambda": "netlify-lambda serve src/netlify-functions -c webpack.server.js",
+    "build:lambda": "netlify-lambda build src/netlify-functions",
     "start:client": "webpack-dev-server --open --config webpack.dev.js",
+    "start:lambda": "netlify-lambda serve src/netlify-functions -c webpack.server.js",
     "test": "tape 'src/**/*Test.js'"
   },
   "repository": {
