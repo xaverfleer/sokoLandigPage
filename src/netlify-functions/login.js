@@ -49,7 +49,6 @@ exports.handler = function register(event, context, callback) {
     .then((fetched) => {
       const dbUser = fetched.data;
       console.log(`Retrieved user with email: ${dbUser.email}`);
-
       const correct = helpers.verifyPassword(
         password,
         dbUser.salt,
