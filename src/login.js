@@ -1,4 +1,4 @@
-/* global amplitude, document, XMLHttpRequest, window  */
+/* global amplitude, document, localStorage, XMLHttpRequest, window  */
 
 amplitude.getInstance().logEvent("Login page loaded");
 
@@ -22,7 +22,8 @@ function submitForm(data) {
   xhr.send(data);
 
   xhr.addEventListener("load", () => {
-    window.location = "/kurs.html";
+    const { sessionId } = JSON.parse(decodeURIComponent(xhr.responseText));
+    localStorage.setItem("soko-non-vue", JSON.stringify({ sessionId }));
   });
 
   xhr.addEventListener("error", (xhrEventError) => {

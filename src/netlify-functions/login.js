@@ -51,7 +51,7 @@ function responseHandlers(callback) {
     success(data) {
       callback(null, {
         statusCode: 200,
-        body: data.body,
+        body: encodeURIComponent(JSON.stringify(data)),
       });
     },
   };
@@ -87,12 +87,7 @@ exports.handler = function register(event, context, callback) {
     .then((response) => {
       console.log(`Successfully logged in.`);
 
-      return Promise.resolve({
-        body: {
-          message: `User is successfully logged in`,
-          sessionId: response.data.sessionId,
-        },
-      });
+      return Promise.resolve({ sessionId: response.data.sessionId });
     })
     .then(respond.success)
     .catch(respond.failed);
