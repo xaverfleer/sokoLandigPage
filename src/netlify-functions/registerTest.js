@@ -17,9 +17,10 @@ test("helpers.composeUser", (assert) => {
   });
 
   test("Returned object contaoins email, hash and salt", (a) => {
-    a.strictEqual(target(...sampleInputs).email, "dummy@company.com");
-    a.strictEqual(typeof target(...sampleInputs).hash, "string");
-    a.strictEqual(typeof target(...sampleInputs).salt, "string");
+    const returned = target(...sampleInputs);
+    a.strictEqual(returned.email, "dummy@company.com");
+    a.strictEqual(typeof returned.hash, "string");
+    a.strictEqual(typeof returned.salt, "string");
     a.end();
   });
   assert.end();

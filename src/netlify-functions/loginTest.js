@@ -3,13 +3,13 @@ const test = require("tape");
 const login = require("./login.js");
 
 test("helpers.eventToEmail", (assert) => {
-  const target = login.__testonly__.helpers.eventToEmail;
+  const target = login.__testonly__.helpers.parseEventBody;
 
   test("returns the email for a sample input", (a) => {
-    const sampleInput = {
-      body: "%7b%22email%22%3a%22hallo%40velo%2ecom%22%7d",
-    };
-    a.strictEqual(target(sampleInput), "hallo@velo.com");
+    const sampleInput = encodeURIComponent(
+      JSON.stringify({ email: "hallo@velo.com", password: "123unsafe" })
+    );
+    a.strictEqual(target(sampleInput).email, "hallo@velo.com");
     a.end();
   });
 
