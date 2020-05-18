@@ -40,8 +40,26 @@ const db = {
   },
 };
 
+function responseHandlers(callback) {
+  return {
+    failed(e) {
+      callback(e, {
+        statusCode: 500,
+        body: `Failed with error: + ${e.message}`,
+      });
+    },
+    success(data) {
+      callback(null, {
+        statusCode: 200,
+        body: data.body,
+      });
+    },
+  };
+}
+
 // Event format [src](https://docs.netlify.com/functions/build-with-javascript/#format)
 exports.handler = function register(event, context, callback) {
+  const respond = responseHandlers(callback);
   console.log("Start login process");
   const { email, password } = helpers.parseEventBody(event.body);
   console.log(`Requesting user with email: ${email}`);
@@ -70,18 +88,8 @@ exports.handler = function register(event, context, callback) {
         },
       });
     })
-    .then(function handleSuccess(data) {
-      callback(null, {
-        statusCode: 200,
-        body: data.body,
-      });
-    })
-    .catch(function handleError(e) {
-      callback(e, {
-        statusCode: 500,
-        body: `Failed with error: + ${e}`,
-      });
-    });
+    .then(respond.success)
+    .catch(respond.failed);
 };
 
 exports.__testonly__ = { helpers };
