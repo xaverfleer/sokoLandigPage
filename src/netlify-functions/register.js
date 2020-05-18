@@ -39,7 +39,6 @@ const helpers = {
     const client = new faunadb.Client({ secret: process.env.FAUNADB_SECRET });
 
     const payload = this.composeUser(email, password);
-
     const promise = client.query(
       q.Create(q.Collection("users"), { data: payload })
     );
