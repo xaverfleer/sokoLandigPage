@@ -3,7 +3,6 @@
     <div class="section__subsection">
       <SectionTitle :content="section.title" />
       <Document :document="$root.docs.so1.Vertiefung" />
-      <Document :document="$root.docs.so1.Erinnerung" />
       <Document :document="$root.docs.so1.Literatur" />
       <div class="buttons">
         <ButtonVue :info="$root.buttons.cta06Primary" v-if="$root.isKurs" />

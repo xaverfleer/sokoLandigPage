@@ -43,6 +43,7 @@
       </div>
       <h3>{{ section.subtitle }}</h3>
       <Checklist :checklist="section.checklist" />
+      <Document :document="$root.docs.so1.Erinnerung" />
     </div>
   </section>
 </template>
