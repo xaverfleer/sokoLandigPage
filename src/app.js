@@ -38,9 +38,6 @@ const vm = new Vue({
   data: { appData, state: {} },
   components: { Header, Footer },
   computed: {
-    activeBlock() {
-      return this.state.activeBlock;
-    },
     buttons() {
       return this.appData.buttons;
     },
@@ -55,11 +52,6 @@ const vm = new Vue({
     },
     videos() {
       return this.appData.videos;
-    },
-  },
-  methods: {
-    updateActiveBlock(block) {
-      stateM8t.updateActiveBlock(block);
     },
   },
   router,

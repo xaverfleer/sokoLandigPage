@@ -6,11 +6,7 @@ function validateState(stringState) {
   } catch (e) {
     return false;
   }
-  const checks = [
-    (s) => typeof s === "object",
-    (s) => s && typeof s.activeBlock === "string",
-    (s) => ["01", "02", "03", "04", "05"].indexOf(s.activeBlock) > -1,
-  ];
+  const checks = [(s) => typeof s === "object"];
 
   const isValid = checks.reduce((acc, check) => {
     return acc && check(state);
@@ -20,9 +16,7 @@ function validateState(stringState) {
 }
 
 function getState() {
-  const defaultState = {
-    activeBlock: "01",
-  };
+  const defaultState = {};
 
   const lsState = localStorage.getItem("soko");
   return (validateState(lsState) && JSON.parse(lsState)) || defaultState;
@@ -49,14 +43,6 @@ function setState(change) {
   }
 }
 
-function updateActiveBlock(activeBlock) {
-  setState((oldState) => {
-    const newState = oldState;
-    newState.activeBlock = activeBlock;
-    return newState;
-  });
-}
-
 function updatePath(path) {
   setState((oldState) => {
     const newState = oldState;
@@ -65,4 +51,4 @@ function updatePath(path) {
   });
 }
 
-export default { updateActiveBlock, updatePath, subscribe };
+export default { updatePath, subscribe };
