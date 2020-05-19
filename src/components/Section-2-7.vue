@@ -6,21 +6,21 @@
     </div>
     <div class="section__subsection">
       <div class="buttons">
-        <ButtonVue :info="$root.buttons.cta07Secondary" />
-        <ButtonVue :info="$root.buttons.cta08Secondary" />
+        <RouteVue :info="$root.appData.routes.block01" />
+        <RouteVue :info="$root.appData.routes.block03" />
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import ButtonVue from "./ButtonVue.vue";
+import RouteVue from "./RouteVue.vue";
 import SectionTitle from "./SectionTitle.vue";
 import VideoVue from "./VideoVue.vue";
 
 export default {
   props: ["section"],
-  components: { ButtonVue, SectionTitle, VideoVue },
+  components: { RouteVue, SectionTitle, VideoVue },
 };
 </script>
 

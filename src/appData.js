@@ -326,20 +326,6 @@ const appData = {
     },
   },
   buttons: {
-    cta06Primary: {
-      text: "Kursblock 2",
-      target: "#header",
-      logEvent: "Kursblock 2",
-      activateBlock: "02",
-      isPrimary: true,
-    },
-    cta06Secondary: {
-      text: "Kursblock 2",
-      target: "#header",
-      logEvent: "Kursblock 2",
-      activateBlock: "02",
-      isPrimary: false,
-    },
     cta05Primary: {
       text: "Jetzt buchen",
       target: "index#prizing",
@@ -352,34 +338,13 @@ const appData = {
       logEvent: "Jetzt buchen",
       isPrimary: false,
     },
-    cta07Secondary: {
-      text: "Kursblock 1",
-      target: "#header",
-      logEvent: "Kursblock 1",
-      activateBlock: "01",
-      isPrimary: false,
-    },
-    cta08Secondary: {
-      text: "Kursblock 3",
-      target: "#header",
-      logEvent: "Kursblock 3",
-      activateBlock: "03",
-      isPrimary: false,
-    },
-    cta09Secondary: {
-      text: "Kursblock 4",
-      target: "#header",
-      logEvent: "Kursblock 4",
-      activateBlock: "04",
-      isPrimary: false,
-    },
-    cta10Secondary: {
-      text: "Kursblock 5",
-      target: "#header",
-      logEvent: "Kursblock 5",
-      activateBlock: "05",
-      isPrimary: false,
-    },
+  },
+  routes: {
+    block01: { text: "Kursblock 1", to: "kursblock-1" },
+    block02: { text: "Kursblock 2", to: "kursblock-2" },
+    block03: { text: "Kursblock 3", to: "kursblock-3" },
+    block04: { text: "Kursblock 4", to: "kursblock-4" },
+    block05: { text: "Kursblock 5", to: "kursblock-5" },
   },
   documents: {
     so1: {

@@ -1,16 +1,36 @@
-/* global amplitude, document, MutationObserver,  window */
+/* global amplitude, document,  window */
 import Vue from "vue/dist/vue.esm";
+import VueRouter from "vue-router/dist/vue-router.esm";
 import appData from "./appData";
 import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
 import stateM8t from "./stateManagement";
+import Block1 from "./components/Block-1.vue";
+import Block2 from "./components/Block-2.vue";
+import Block3 from "./components/Block-3.vue";
+import Block4 from "./components/Block-4.vue";
+import Block5 from "./components/Block-5.vue";
+
+Vue.use(VueRouter);
+
+const routes = [
+  { path: "/kursblock-1", component: Block1 },
+  { path: "/kursblock-2", component: Block2 },
+  { path: "/kursblock-3", component: Block3 },
+  { path: "/kursblock-4", component: Block4 },
+  { path: "/kursblock-5", component: Block5 },
+];
+
+const router = new VueRouter({ routes });
 
 const vm = new Vue({
   template: `
     <div class="page">
       <Header />
-      <Main :appData="appData" />
+      <main>
+        <router-view></router-view>
+      </main>
       <Footer />
     </div>
   `,
@@ -42,6 +62,7 @@ const vm = new Vue({
       stateM8t.updateActiveBlock(block);
     },
   },
+  router,
 });
 
 vm.state = stateM8t.subscribe(function updateVmState(state) {
@@ -62,39 +83,6 @@ document.querySelectorAll(".cta05").forEach((e) => {
   });
 });
 
-function bindVideoEventHandlers(mutations) {
-  const addedVideos = mutations.reduce((acc, mutation) => {
-    Array.prototype.slice
-      .call(mutation.addedNodes)
-      .filter((node) => {
-        return node.nodeName === "VIDEO";
-      })
-      .forEach((node) => {
-        acc.push(node);
-      });
-    return acc;
-  }, []);
-
-  addedVideos.forEach((video) => {
-    const { id } = video.closest(".video-wrapper");
-    video.addEventListener("play", () => {
-      amplitude.getInstance().logEvent(`Played ${id}`);
-    });
-    video.addEventListener("ended", () => {
-      amplitude.getInstance().logEvent(`Ended ${id}`);
-    });
-    video.addEventListener("pause", () => {
-      amplitude.getInstance().logEvent(`Paused ${id}`);
-    });
-  });
-}
-
-const observerOptions = { childList: true, attributes: false, subtree: true };
-
-const observer = new MutationObserver(bindVideoEventHandlers);
-const targetNode = document.querySelector("main");
-observer.observe(targetNode, observerOptions);
-
 const nav = document.querySelector(".nav");
 nav.addEventListener("click", () => {
   const { classList } = nav;
@@ -108,17 +96,3 @@ window.addEventListener("scroll", () => {
   if (window.pageYOffset > 360) header.classList.add("header--fixed");
   else header.classList.remove("header--fixed");
 });
-
-const lessons = [
-  { block: "01", cta: "cta07", logEvent: "Kursblock 1", selector: ".cta07" },
-  { block: "02", cta: "cta06", logEvent: "Kursblock 2", selector: ".cta06" },
-  { block: "03", cta: "cta08", logEvent: "Kursblock 3", selector: ".cta08" },
-  { block: "04", cta: "cta09", logEvent: "Kursblock 4", selector: ".cta09" },
-  { block: "05", cta: "cta10", logEvent: "Kursblock 5", selector: ".cta10" },
-];
-
-lessons.forEach((l) =>
-  document.querySelectorAll(l.selector).forEach((elem) => {
-    elem.addEventListener("click", () => vm.updateActiveBlock(l.block));
-  })
-);

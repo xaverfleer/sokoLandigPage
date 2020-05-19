@@ -8,15 +8,15 @@
     <Section-3-6 :section="block.sections.section36" />
     <section class="section">
       <div class="buttons">
-        <ButtonVue :info="$root.buttons.cta06Secondary" />
-        <ButtonVue :info="$root.buttons.cta09Secondary" />
+        <RouteVue :info="$root.appData.routes.block02" />
+        <RouteVue :info="$root.appData.routes.block04" />
       </div>
     </section>
   </div>
 </template>
 
 <script>
-import ButtonVue from "./ButtonVue.vue";
+import RouteVue from "./RouteVue.vue";
 import Section31 from "./Section-3-1.vue";
 import Section32 from "./Section-3-2.vue";
 import Section33 from "./Section-3-3.vue";
@@ -25,15 +25,19 @@ import Section35 from "./Section-3-5.vue";
 import Section36 from "./Section-3-6.vue";
 
 export default {
-  props: ["block"],
   components: {
-    ButtonVue,
+    RouteVue,
     Section31,
     Section32,
     Section33,
     Section34,
     Section35,
     Section36,
+  },
+  computed: {
+    block: function getBlock03() {
+      return this.$root.appData.block03;
+    },
   },
 };
 </script>

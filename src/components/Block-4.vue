@@ -1,23 +1,14 @@
 <template>
   <div>
-    <section class="section">
-      <div class="section__subsection">
-        <div class="block__supertitle">Kursblock&nbsp;4</div>
-        <h1 class="block__title">Auf mich selbst achten...</h1>
-        <p>Bitte melde dich an, um alle Inhalte dieses Kurses zu sehen.</p>
-        <div class="buttons">
-          <a
-            class="button button--primary cta05"
-            href="index.html#prizing"
-            title="Jetzt buchen"
-            >Jetzt buchen</a
-          >
-        </div>
-      </div>
-    </section>
+    <Block4EarlyBird v-if="$root.isEarlyBird" />
+    <Block4Free v-else />
   </div>
 </template>
 
-<script></script>
+<script>
+import Block4Free from "./Block-4-free.vue";
+import Block4EarlyBird from "./Block-4-early-bird.vue";
+export default { components: { Block4Free, Block4EarlyBird } };
+</script>
 
 <style scoped></style>

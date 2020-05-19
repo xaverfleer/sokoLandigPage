@@ -7,16 +7,16 @@
         <p>Noch keine Inhalte verfügbar.</p>
       </div>
       <div class="buttons">
-        <ButtonVue :info="$root.buttons.cta08Secondary" />
-        <ButtonVue :info="$root.buttons.cta10Secondary" />
+        <RouteVue :info="$root.appData.routes.block03" />
+        <RouteVue :info="$root.appData.routes.block05" />
       </div>
     </section>
   </div>
 </template>
 
 <script>
-import ButtonVue from "./ButtonVue.vue";
-export default { components: { ButtonVue } };
+import RouteVue from "./RouteVue.vue";
+export default { components: { RouteVue } };
 </script>
 
 <style scoped></style>

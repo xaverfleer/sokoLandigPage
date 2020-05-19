@@ -314,7 +314,11 @@ import Section27 from "./Section-2-7.vue";
 import VideoVue from "./VideoVue.vue";
 export default {
   components: { Document, Section27, VideoVue },
-  props: ["block"],
+  computed: {
+    block: function getBlock() {
+      return this.$root.appData.block02;
+    },
+  },
 };
 </script>
 

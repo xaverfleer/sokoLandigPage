@@ -17,20 +17,20 @@
           title="Jetzt buchen"
           >Jetzt buchen</a
         >
-        <a class="cta07 nav__entry nav__entry--2ndary"
-          >Kursblock&nbsp;1: Innere Stärke und Gleichwürdigkeit</a
+        <router-link to="/kursblock-1" class="nav__entry nav__entry--2ndary"
+          >Kursblock&nbsp;1: Innere Stärke und Gleichwürdigkeit</router-link
         >
-        <a class="cta06 nav__entry nav__entry--2ndary"
-          >Kursblock&nbsp;2: Mit dem Baby interagieren...</a
+        <router-link to="/kursblock-2" class="nav__entry nav__entry--2ndary"
+          >Kursblock&nbsp;2: Mit dem Baby interagieren...</router-link
         >
-        <a class="cta08 nav__entry nav__entry--2ndary"
-          >Kursblock&nbsp;3: Das Baby verstehen...</a
+        <router-link to="/kursblock-3" class="nav__entry nav__entry--2ndary"
+          >Kursblock&nbsp;3: Das Baby verstehen...</router-link
         >
-        <a class="cta09 nav__entry nav__entry--2ndary"
-          >Kursblock&nbsp;4: Auf mich selbst achten...</a
+        <router-link to="/kursblock-4" class="nav__entry nav__entry--2ndary"
+          >Kursblock&nbsp;4: Auf mich selbst achten...</router-link
         >
-        <a class="cta10 nav__entry nav__entry--2ndary"
-          >Kursblock&nbsp;5: Zurückhaltung üben...</a
+        <router-link to="/kursblock-5" class="nav__entry nav__entry--2ndary"
+          >Kursblock&nbsp;5: Zurückhaltung üben...</router-link
         >
       </nav>
     </div>

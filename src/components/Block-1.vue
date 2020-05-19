@@ -20,7 +20,6 @@ import Section16 from "./Section-1-6.vue";
 import Section17 from "./Section-1-7.vue";
 
 export default {
-  props: ["block"],
   components: {
     Section11,
     Section12,
@@ -29,6 +28,11 @@ export default {
     Section15,
     Section16,
     Section17,
+  },
+  computed: {
+    block: function getBlock() {
+      return this.$root.appData.block01;
+    },
   },
 };
 </script>
