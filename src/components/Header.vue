@@ -18,28 +18,33 @@
           >Jetzt buchen</a
         >
         <router-link
-          to="early-bird/kursblock-1"
+          @click.native="scrollToTop"
           class="nav__entry nav__entry--2ndary"
+          to="/kursblock-1"
           >Kursblock&nbsp;1: Innere Stärke und Gleichwürdigkeit</router-link
         >
         <router-link
-          to="/early-bird/kursblock-2"
+          @click.native="scrollToTop"
           class="nav__entry nav__entry--2ndary"
+          to="/kursblock-2"
           >Kursblock&nbsp;2: Mit dem Baby interagieren...</router-link
         >
         <router-link
-          to="/early-bird/kursblock-3"
+          @click.native="scrollToTop"
           class="nav__entry nav__entry--2ndary"
+          to="/kursblock-3"
           >Kursblock&nbsp;3: Das Baby verstehen...</router-link
         >
         <router-link
-          to="/early-bird/kursblock-4"
+          @click.native="scrollToTop"
           class="nav__entry nav__entry--2ndary"
+          to="/kursblock-4"
           >Kursblock&nbsp;4: Auf mich selbst achten...</router-link
         >
         <router-link
-          to="/early-bird/kursblock-5"
+          @click.native="scrollToTop"
           class="nav__entry nav__entry--2ndary"
+          to="/kursblock-5"
           >Kursblock&nbsp;5: Zurückhaltung üben...</router-link
         >
       </nav>
@@ -56,6 +61,9 @@ export default {
       logoUrl: "../imgs/logo.png",
       img: logo,
     };
+  },
+  methods: {
+    scrollToTop: () => window.scroll(0, 0),
   },
 };
 </script>

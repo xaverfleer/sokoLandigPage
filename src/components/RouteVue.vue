@@ -1,12 +1,11 @@
 <template>
-  <router-link :class="classes" :to="info.to" href="#header">{{
+  <router-link :class="classes" @click.native="scrollToTop" :to="info.to">{{
     info.text
   }}</router-link>
 </template>
 
 <script>
 export default {
-  props: ["info", "options"],
   computed: {
     classes() {
       return {
@@ -18,6 +17,10 @@ export default {
     isPrimary() {
       return this.options && this.options.isPrimary;
     },
+  },
+  props: ["info", "options"],
+  methods: {
+    scrollToTop: () => window.scroll(0, 0),
   },
 };
 </script>
