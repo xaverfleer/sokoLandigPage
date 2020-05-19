@@ -3,7 +3,6 @@ import Vue from "vue/dist/vue.esm";
 import VueRouter from "vue-router/dist/vue-router.esm";
 import appData from "./appData";
 import Header from "./components/Header.vue";
-import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
 import stateM8t from "./stateManagement";
 import Block1 from "./components/Block-1.vue";
@@ -37,7 +36,7 @@ const vm = new Vue({
   `,
   el: "#app",
   data: { appData, state: {} },
-  components: { Header, Main, Footer },
+  components: { Header, Footer },
   computed: {
     activeBlock() {
       return this.state.activeBlock;
