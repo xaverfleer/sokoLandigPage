@@ -36,7 +36,7 @@ export default {
   },
   computed: {
     block: function getBlock03() {
-      return this.$root.appData.block03;
+      return this.$root.appData.course.block03;
     },
   },
 };

@@ -316,7 +316,7 @@ export default {
   components: { Document, Section27, VideoVue },
   computed: {
     block: function getBlock() {
-      return this.$root.appData.block02;
+      return this.$root.appData.course.block02;
     },
   },
 };
