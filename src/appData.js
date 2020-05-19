@@ -2,10 +2,13 @@
 const appData = {
   course: {
     block01: {
-      supertitle: "Kursblock 1",
-      title: "Innere Stärke und Gleichwürdigkeit",
       sections: {
         section11: {
+          id: 0,
+          blocktitle: {
+            supertitle: "Kursblock 1",
+            main: "Innere Stärke und Gleichwürdigkeit",
+          },
           checklist: {
             pretext: "In diesem Kursblock…",
             entries: [
@@ -31,18 +34,38 @@ const appData = {
               },
             ],
           },
+          documents: [
+            {
+              href: "/documents/so1-Zusammenfassung.pdf",
+              text: "Zusammenfassung – Kursblock 1",
+            },
+          ],
         },
         section12: {
+          id: 1,
           title: {
             main: "Einstiegsübung – Ich wünsche dir...",
             videoName: "(Video 1.1)",
           },
+          video: { ref: "https://player.vimeo.com/video/395825527" },
+          documents: [
+            {
+              href: "/documents/so1-Uebungsdossier.docx",
+              text: "Übungsdossier (Word) – Kursblock 1",
+            },
+            {
+              href: "/documents/so1-Uebungsdossier.pdf",
+              text: "Übungsdossier (PDF) – Kursblock 1",
+            },
+          ],
         },
         section13: {
+          id: 2,
           title: {
             main: "Innere Stärke",
             videoName: "(Video 1.2)",
           },
+          video: { ref: "https://player.vimeo.com/video/412779252" },
           subtitle: "Das wichtigste in Kürze:",
           checklist: {
             entries: [
@@ -68,12 +91,20 @@ const appData = {
               },
             ],
           },
+          documents: [
+            {
+              href: "/documents/so1-Strategiekarte-Essenz-Strategie.pdf",
+              text: "Strategiekarte: Die Essenz-Strategie – Kursblock 1",
+            },
+          ],
         },
         section14: {
+          id: 3,
           title: {
             main: "Gleichwürdigkeit",
             videoName: "(Video 1.3)",
           },
+          video: { ref: "https://player.vimeo.com/video/420457933" },
           subtitle: "Das wichtigste in Kürze:",
           checklist: {
             entries: [
@@ -95,18 +126,28 @@ const appData = {
               },
             ],
           },
+          documents: [
+            {
+              href: "/documents/so1-Erinnerungskarte.pdf",
+              text: "Erinnerungskarte: Innere Stärke – Kursblocks 1",
+            },
+          ],
         },
         section15: {
+          id: 4,
           title: {
             main: "Lina weint",
             videoName: "(Video 1.4)",
           },
+          video: { ref: "https://player.vimeo.com/video/420459304" },
         },
         section16: {
+          id: 5,
           title: {
             main: "Herablassende vs. gleichwürdige Sprache",
             videoName: "(Video 1.5)",
           },
+          video: { ref: "https://player.vimeo.com/video/411396939" },
           subtitle: "Das wichtigste in Kürze:",
           checklist: {
             entries: [
@@ -141,7 +182,20 @@ const appData = {
             ],
           },
         },
-        section17: { title: { main: "Dokumente" } },
+        section17: {
+          id: 6,
+          title: { main: "Dokumente" },
+          documents: [
+            {
+              href: "/documents/so1-Vertiefung.pdf",
+              text: "Vertiefung: Sichere Bindung – Kursblocks 1",
+            },
+            {
+              href: "/documents/so1-Literaturliste.pdf",
+              text: "Literaturliste: Bücher, die weiterhelfen",
+            },
+          ],
+        },
       },
     },
     block02: {
@@ -369,36 +423,6 @@ const appData = {
     },
   },
   documents: {
-    so1: {
-      Zusammenfassung: {
-        href: "/documents/so1-Zusammenfassung.pdf",
-        text: "Zusammenfassung – Kursblock 1",
-      },
-      UebungsdossierDocx: {
-        href: "/documents/so1-Uebungsdossier.docx",
-        text: "Übungsdossier (Word) – Kursblock 1",
-      },
-      UebungsdossierPdf: {
-        href: "/documents/so1-Uebungsdossier.pdf",
-        text: "Übungsdossier (PDF) – Kursblock 1",
-      },
-      Strategie01: {
-        href: "/documents/so1-Strategiekarte-Essenz-Strategie.pdf",
-        text: "Strategiekarte: Die Essenz-Strategie – Kursblock 1",
-      },
-      Vertiefung: {
-        href: "/documents/so1-Vertiefung.pdf",
-        text: "Vertiefung: Sichere Bindung – Kursblocks 1",
-      },
-      Erinnerung: {
-        href: "/documents/so1-Erinnerungskarte.pdf",
-        text: "Erinnerungskarte: Innere Stärke – Kursblocks 1",
-      },
-      Literatur: {
-        href: "/documents/so1-Literaturliste.pdf",
-        text: "Literaturliste: Bücher, die weiterhelfen",
-      },
-    },
     so2: {
       Zusammenfassung: {
         href: "/documents/so2-Zusammenfassung.pdf",
@@ -457,9 +481,6 @@ const appData = {
     },
   },
   videos: {
-    so1Einstieg: { ref: "https://player.vimeo.com/video/395825527" },
-    so1InnereStarke: { ref: "https://player.vimeo.com/video/412779252" },
-    so1Herablassend: { ref: "https://player.vimeo.com/video/411396939" },
     so2Einstieg: { ref: "https://player.vimeo.com/video/410677081" },
     so2Sprechen: { ref: "https://player.vimeo.com/video/410677189" },
     so2AmBabyTun: { ref: "https://player.vimeo.com/video/410677404" },
