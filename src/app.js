@@ -20,7 +20,7 @@ const routes = [
   { path: "/kursblock-3", component: Block3 },
   { path: "/kursblock-4", component: Block4 },
   { path: "/kursblock-5", component: Block5 },
-  { path: "*", component: Block1 },
+  { path: "*", redirect: "/kursblock-1" },
 ];
 
 const router = new VueRouter({ routes });
