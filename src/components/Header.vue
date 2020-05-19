@@ -17,19 +17,29 @@
           title="Jetzt buchen"
           >Jetzt buchen</a
         >
-        <router-link to="/kursblock-1" class="nav__entry nav__entry--2ndary"
+        <router-link
+          to="early-bird/kursblock-1"
+          class="nav__entry nav__entry--2ndary"
           >Kursblock&nbsp;1: Innere Stärke und Gleichwürdigkeit</router-link
         >
-        <router-link to="/kursblock-2" class="nav__entry nav__entry--2ndary"
+        <router-link
+          to="/early-bird/kursblock-2"
+          class="nav__entry nav__entry--2ndary"
           >Kursblock&nbsp;2: Mit dem Baby interagieren...</router-link
         >
-        <router-link to="/kursblock-3" class="nav__entry nav__entry--2ndary"
+        <router-link
+          to="/early-bird/kursblock-3"
+          class="nav__entry nav__entry--2ndary"
           >Kursblock&nbsp;3: Das Baby verstehen...</router-link
         >
-        <router-link to="/kursblock-4" class="nav__entry nav__entry--2ndary"
+        <router-link
+          to="/early-bird/kursblock-4"
+          class="nav__entry nav__entry--2ndary"
           >Kursblock&nbsp;4: Auf mich selbst achten...</router-link
         >
-        <router-link to="/kursblock-5" class="nav__entry nav__entry--2ndary"
+        <router-link
+          to="/early-bird/kursblock-5"
+          class="nav__entry nav__entry--2ndary"
           >Kursblock&nbsp;5: Zurückhaltung üben...</router-link
         >
       </nav>
