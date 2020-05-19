@@ -340,11 +340,31 @@ const appData = {
     },
   },
   routes: {
-    block01: { text: "Kursblock 1", to: "kursblock-1" },
-    block02: { text: "Kursblock 2", to: "kursblock-2" },
-    block03: { text: "Kursblock 3", to: "kursblock-3" },
-    block04: { text: "Kursblock 4", to: "kursblock-4" },
-    block05: { text: "Kursblock 5", to: "kursblock-5" },
+    block01: {
+      text: "Kursblock 1",
+      teaser: "Innere Stärke und Gleichwürdigkeit",
+      to: "kursblock-1",
+    },
+    block02: {
+      text: "Kursblock 2",
+      to: "kursblock-2",
+      teaser: "Mit dem Baby interagieren...",
+    },
+    block03: {
+      text: "Kursblock 3",
+      to: "kursblock-3",
+      teaser: "Das Baby verstehen...",
+    },
+    block04: {
+      text: "Kursblock 4",
+      to: "kursblock-4",
+      teaser: "Auf mich selbst achten...",
+    },
+    block05: {
+      text: "Kursblock 5",
+      teaser: "Zurückhaltung üben...",
+      to: "kursblock-5",
+    },
   },
   documents: {
     so1: {

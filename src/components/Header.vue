@@ -11,51 +11,22 @@
         />
       </a>
       <nav class="nav nav--kurs">
-        <a
-          class="nav__entry nav__entry--primary cta05"
-          href="index.html#prizing"
-          title="Jetzt buchen"
-          >Jetzt buchen</a
-        >
-        <router-link
-          @click.native="scrollToTop"
-          class="nav__entry nav__entry--2ndary"
-          to="/kursblock-1"
-          >Kursblock&nbsp;1: Innere Stärke und Gleichwürdigkeit</router-link
-        >
-        <router-link
-          @click.native="scrollToTop"
-          class="nav__entry nav__entry--2ndary"
-          to="/kursblock-2"
-          >Kursblock&nbsp;2: Mit dem Baby interagieren...</router-link
-        >
-        <router-link
-          @click.native="scrollToTop"
-          class="nav__entry nav__entry--2ndary"
-          to="/kursblock-3"
-          >Kursblock&nbsp;3: Das Baby verstehen...</router-link
-        >
-        <router-link
-          @click.native="scrollToTop"
-          class="nav__entry nav__entry--2ndary"
-          to="/kursblock-4"
-          >Kursblock&nbsp;4: Auf mich selbst achten...</router-link
-        >
-        <router-link
-          @click.native="scrollToTop"
-          class="nav__entry nav__entry--2ndary"
-          to="/kursblock-5"
-          >Kursblock&nbsp;5: Zurückhaltung üben...</router-link
-        >
+        <NavEntry :route="$root.appData.routes.block01" />
+        <NavEntry :route="$root.appData.routes.block02" />
+        <NavEntry :route="$root.appData.routes.block03" />
+        <NavEntry :route="$root.appData.routes.block04" />
+        <NavEntry :route="$root.appData.routes.block05" />
       </nav>
     </div>
   </header>
 </template>
 
 <script>
+import NavEntry from "./NavEntry.vue";
 import logo from "../imgs/logo.png";
 
 export default {
+  components: { NavEntry },
   data: function() {
     return {
       logoUrl: "../imgs/logo.png",
