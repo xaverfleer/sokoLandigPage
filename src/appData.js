@@ -442,10 +442,13 @@ const appData = {
       },
     },
     block03: {
-      supertitle: "Kursblock 3",
-      title: "Das Baby verstehen...",
       sections: {
         section31: {
+          id: 0,
+          blocktitle: {
+            supertitle: "Kursblock 3",
+            main: "Das Baby verstehen...",
+          },
           checklist: {
             pretext: "In diesem Kursblock…",
             entries: [
@@ -476,14 +479,30 @@ const appData = {
               },
             ],
           },
+          documents: [
+            {
+              href: "/documents/so3-Zusammenfassung.pdf",
+              text: "Zusammenfassung – Kursblock 3",
+            },
+            {
+              href: "/documents/so3-Uebungsdossier.pdf",
+              text: "Übungsdossier (PDF) – Kursblock 3",
+            },
+            {
+              href: "/documents/so3-Uebungsdossier.docx",
+              text: "Übungsdossier (Word) – Kursblock 3",
+            },
+          ],
         },
         section32: {
+          id: 1,
           title: {
             main: "Einstiegsübung – Was brauche ich?",
             videoName: "(Video 3.1)",
           },
         },
         section33: {
+          id: 2,
           title: {
             main: "Die Bedürfnisse des Babys sind wichtig",
             videoName: "(Video 3.2)",
@@ -507,6 +526,7 @@ const appData = {
           },
         },
         section34: {
+          id: 3,
           title: {
             main: "...wenn das Baby mit leisen Signalen kommuniziert",
             videoName: "(Video 3.3)",
@@ -542,6 +562,7 @@ const appData = {
           },
         },
         section35: {
+          id: 4,
           title: {
             main: "...wenn das Baby weint",
             videoName: "(Video 3.4)",
@@ -573,6 +594,7 @@ const appData = {
           },
         },
         section36: {
+          id: 5,
           title: {
             main: "...wenn das Baby «schwierig» ist",
             videoName: "(Video 3.5)",
@@ -657,18 +679,6 @@ const appData = {
   },
   documents: {
     so3: {
-      Zusammenfassung: {
-        href: "/documents/so3-Zusammenfassung.pdf",
-        text: "Zusammenfassung – Kursblock 3",
-      },
-      UebungsdossierDocx: {
-        href: "/documents/so3-Uebungsdossier.docx",
-        text: "Übungsdossier (Word) – Kursblock 3",
-      },
-      UebungsdossierPdf: {
-        href: "/documents/so3-Uebungsdossier.pdf",
-        text: "Übungsdossier (PDF) – Kursblock 3",
-      },
       Vertiefung01: {
         href: "/documents/so3-Vertiefung-co-sleeping.pdf",
         text: "Vertiefung: Sicherheitsregeln Co‑Sleeping – Kursblocks 3",

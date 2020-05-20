@@ -1,6 +1,11 @@
 <template>
   <div>
-    <Section-3-1 :block="block" />
+    <Section
+      v-for="section in $root.appData.course.block03.sections"
+      :section="section"
+      :key="section.id"
+      v-if="section.id < 1"
+    />
     <Section-3-2 :section="block.sections.section32" />
     <Section-3-3 :section="block.sections.section33" />
     <Section-3-4 :section="block.sections.section34" />
@@ -17,7 +22,7 @@
 
 <script>
 import RouteVue from "./RouteVue.vue";
-import Section31 from "./Section-3-1.vue";
+import Section from "./Section.vue";
 import Section32 from "./Section-3-2.vue";
 import Section33 from "./Section-3-3.vue";
 import Section34 from "./Section-3-4.vue";
@@ -27,7 +32,7 @@ import Section36 from "./Section-3-6.vue";
 export default {
   components: {
     RouteVue,
-    Section31,
+    Section,
     Section32,
     Section33,
     Section34,
