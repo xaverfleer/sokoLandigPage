@@ -381,6 +381,56 @@ const appData = {
             },
           ],
         },
+        section26: {
+          id: 5,
+          title: {
+            main: "...wenn wir das Baby verlassen",
+            videoName: "(Video 2.5)",
+          },
+          video: { ref: "https://player.vimeo.com/video/410678171" },
+          subtitle: "Das wichtigste in Kürze:",
+          checklist: {
+            entries: [
+              {
+                id: 0,
+                text: `Trennungen sind für Babys oft sehr schlimm und lösen enormen Stress aus.`,
+              },
+              {
+                id: 1,
+                text: `Die Trennungsangst ist tief in seinen Genen verankert: Für ein Baby in einem Jäger- und Sammlerclan war jedes Alleinsein lebensbedrohlich.
+                `,
+              },
+              {
+                id: 2,
+                text: `Trennungsangst kann man nicht abtrainieren, indem man das Baby allein weinen lässt: Babys, die oft allein gelassen werden, weinen zwar irgendwann nicht mehr, empfinden den Stress aber genauso weiter. Sie haben nur gelernt, dass niemand reagiert, wenn sie weinen.`,
+              },
+              {
+                id: 3,
+                text: `Die Trennungsangst nimmt ab dem 6. Monat entwicklungsbedingt oft zu.`,
+              },
+              {
+                id: 4,
+                text: `Nur durch ein grosses Vertrauen in die Verfügbarkeit seiner Bezugsperson (sichere Bindung), kann das Baby mit der Zeit mit einem guten Gefühl mutiger und selbständiger werden und die Trennungsangst überwinden.`,
+              },
+              {
+                id: 5,
+                text: `Ein immer gleich ablaufendes Muster bei einer Trennung kann dem Baby Verlässlichkeit und Sicherheit geben. Dazu können wir zum Beispiel Kontakt aufnehmen, die Trennung ankünden und uns nach der Trennung wieder zurückmelden. (→ Strategiekarte)`,
+              },
+              {
+                id: 6,
+                text: `Wenn wir das Baby einer anderen Bezugsperson zur Betreuung abgeben, sollten wir eine gewisse Zeit zur Eingewöhnung einplanen, damit das Baby Vertrauen aufbauen kann.`,
+              },
+            ],
+          },
+          documents: [
+            {
+              href:
+                "/documents/so2-Strategiekarte-Wenn-wir-das-Baby-verlassen.pdf",
+              text:
+                "Strategiekarte: ...wenn wir das Baby verlassen – Kursblock 2",
+            },
+          ],
+        },
         section27: {
           id: 6,
           title: {
