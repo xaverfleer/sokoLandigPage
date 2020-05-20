@@ -1,50 +1,11 @@
 <template>
   <div>
-    <section class="section">
-      <div class="section__subsection">
-        <div class="block__supertitle">Kursblock&nbsp;2</div>
-        <h1 class="block__title">Mit dem Baby interagieren...</h1>
-        <p>In diesem Kursblock…</p>
-        <div class="checklist">
-          <div class="checklist__item">
-            <div class="checklist__text">
-              …verbindest du dich mit deinem Baby, in dem du in drei
-              Einstiegsübungen seine Perspektive einnimmst&nbsp;(Video&nbsp;2.1)
-            </div>
-          </div>
-          <div class="checklist__item">
-            <div class="checklist__text">
-              …lernst du die Objekt- die Geräusch- und die Gebärdensprache als
-              Ergänzung zur gesprochenen Sprache kennen&nbsp;(Video&nbsp;2.2)
-            </div>
-          </div>
-          <div class="checklist__item">
-            <div class="checklist__text">
-              …erfährst du, wie du subjektorientiert mit dem Baby interagieren
-              kannst, wenn du etwas an deinem Baby tust, z.B.
-              wickeln&nbsp;(Video&nbsp;2.3)
-            </div>
-          </div>
-          <div class="checklist__item">
-            <div class="checklist__text">
-              …zeigen wir dir, wie du subjektorientiert mit dem Baby
-              interagieren kannst, wenn du etwas neben deinem Baby
-              tust&nbsp;(Video&nbsp;2.4)
-            </div>
-          </div>
-          <div class="checklist__item">
-            <div class="checklist__text">
-              …zeigen wir auf, wie du subjektorientiert mit dem Baby
-              interagieren kannst, wenn du das Baby
-              verlässt&nbsp;(Video&nbsp;2.5)
-            </div>
-          </div>
-        </div>
-        <Document :document="$root.docs.so2.Zusammenfassung" />
-        <Document :document="$root.docs.so2.UebungsdossierPdf" />
-        <Document :document="$root.docs.so2.UebungsdossierDocx" />
-      </div>
-    </section>
+    <Section
+      v-for="section in $root.appData.course.block02.sections"
+      :section="section"
+      :key="section.id"
+      v-if="section.id < 6"
+    />
     <section class="section">
       <div class="section__subsection">
         <h2>Einstiegsübung <span class="video-name">(Video&nbsp;2.1)</span></h2>
@@ -310,10 +271,11 @@
 
 <script>
 import Document from "./Document.vue";
+import Section from "./Section.vue";
 import Section27 from "./Section-2-7.vue";
 import VideoVue from "./VideoVue.vue";
 export default {
-  components: { Document, Section27, VideoVue },
+  components: { Document, Section, Section27, VideoVue },
   computed: {
     block: function getBlock() {
       return this.$root.appData.course.block02;

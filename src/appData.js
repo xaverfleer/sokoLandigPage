@@ -200,7 +200,54 @@ const appData = {
     },
     block02: {
       sections: {
+        section21: {
+          id: 0,
+          blocktitle: {
+            supertitle: "Kursblock 2",
+            main: "Mit dem Baby interagieren...",
+          },
+          checklist: {
+            pretext: "In diesem Kursblock…",
+            entries: [
+              {
+                id: 0,
+                text: `...verbindest du dich mit deinem Baby, in dem du in drei Einstiegsübungen seine Perspektive einnimmst (Video 2.1)`,
+              },
+              {
+                id: 1,
+                text: `...lernst du die Objekt- die Geräusch- und die Gebärdensprache als Ergänzung zur gesprochenen Sprache kennen (Video 2.2)`,
+              },
+              {
+                id: 2,
+                text: `...erfährst du, wie du subjektorientiert mit dem Baby interagieren kannst, wenn du etwas an deinem Baby tust, z.B. wickeln (Video 2.3)`,
+              },
+              {
+                id: 3,
+                text: `...zeigen wir dir, wie du subjektorientiert mit dem Baby interagieren kannst, wenn du etwas neben deinem Baby tust (Video 2.4)`,
+              },
+              {
+                id: 4,
+                text: `...zeigen wir auf, wie du subjektorientiert mit dem Baby interagieren kannst, wenn du das Baby verlässt (Video 2.5)`,
+              },
+            ],
+          },
+          documents: [
+            {
+              href: "/documents/so2-Zusammenfassung.pdf",
+              text: "Zusammenfassung – Kursblock 2",
+            },
+            {
+              href: "/documents/so2-Uebungsdossier.pdf",
+              text: "Übungsdossier (PDF) – Kursblock 2",
+            },
+            {
+              href: "/documents/so2-Uebungsdossier.docx",
+              text: "Übungsdossier (Word) – Kursblock 2",
+            },
+          ],
+        },
         section27: {
+          id: 6,
           title: {
             main: "Dos and Don'ts?",
             videoName: "(Video 2.6)",
@@ -424,10 +471,6 @@ const appData = {
   },
   documents: {
     so2: {
-      Zusammenfassung: {
-        href: "/documents/so2-Zusammenfassung.pdf",
-        text: "Zusammenfassung – Kursblock 2",
-      },
       Einstiegsuebung01: {
         href: "/documents/so2-Einstiegsuebung1.pdf",
         text: "Einstiegsübung 1 – Kursblock 2",
@@ -439,14 +482,6 @@ const appData = {
       Vertiefung01: {
         href: "/documents/so2-Vertiefung-Baby-led-weaning.pdf",
         text: "Vertiefung: Baby led weaning – Kursblocks 2",
-      },
-      UebungsdossierDocx: {
-        href: "/documents/so2-Uebungsdossier.docx",
-        text: "Übungsdossier (Word) – Kursblock 2",
-      },
-      UebungsdossierPdf: {
-        href: "/documents/so2-Uebungsdossier.pdf",
-        text: "Übungsdossier (PDF) – Kursblock 2",
       },
     },
     so3: {
