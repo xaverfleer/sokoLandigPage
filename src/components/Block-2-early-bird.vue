@@ -8,15 +8,6 @@
     />
     <section class="section">
       <div class="section__subsection">
-        <h2>Einstiegsübung <span class="video-name">(Video&nbsp;2.1)</span></h2>
-        <VideoVue :video="$root.videos.so2Einstieg" />
-        <Document :document="$root.docs.so2.Einstiegsuebung01" />
-        <Document :document="$root.docs.so2.Einstiegsuebung02" />
-        <Document :document="$root.docs.so2.Vertiefung01" />
-      </div>
-    </section>
-    <section class="section">
-      <div class="section__subsection">
         <h2>
           Mit dem Baby sprechen <span class="video-name">(Video&nbsp;2.2)</span>
         </h2>

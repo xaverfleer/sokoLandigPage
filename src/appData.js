@@ -246,6 +246,25 @@ const appData = {
             },
           ],
         },
+        section22: {
+          id: 1,
+          title: { main: "Einstiegsübung", videoName: "(Video 2.1)" },
+          video: { ref: "https://player.vimeo.com/video/410677081" },
+          documents: [
+            {
+              href: "/documents/so2-Einstiegsuebung1.pdf",
+              text: "Einstiegsübung 1 – Kursblock 2",
+            },
+            {
+              href: "/documents/so2-Einstiegsuebung2.pdf",
+              text: "Einstiegsübung 2 – Kursblock 2",
+            },
+            {
+              href: "/documents/so2-Vertiefung-Baby-led-weaning.pdf",
+              text: "Vertiefung: Baby led weaning – Kursblocks 2",
+            },
+          ],
+        },
         section27: {
           id: 6,
           title: {
@@ -470,20 +489,6 @@ const appData = {
     },
   },
   documents: {
-    so2: {
-      Einstiegsuebung01: {
-        href: "/documents/so2-Einstiegsuebung1.pdf",
-        text: "Einstiegsübung 1 – Kursblock 2",
-      },
-      Einstiegsuebung02: {
-        href: "/documents/so2-Einstiegsuebung2.pdf",
-        text: "Einstiegsübung 2 – Kursblock 2",
-      },
-      Vertiefung01: {
-        href: "/documents/so2-Vertiefung-Baby-led-weaning.pdf",
-        text: "Vertiefung: Baby led weaning – Kursblocks 2",
-      },
-    },
     so3: {
       Zusammenfassung: {
         href: "/documents/so3-Zusammenfassung.pdf",
