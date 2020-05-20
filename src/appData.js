@@ -688,8 +688,6 @@ const appData = {
     },
   },
   videos: {
-    so2Verlassen: { ref: "https://player.vimeo.com/video/410678171" },
-    so2DosAndDonts: { ref: "https://player.vimeo.com/video/418650809" },
     so3Einstieg: { ref: "https://player.vimeo.com/video/418114230" },
     so3Beduerfnisse: { ref: "https://player.vimeo.com/video/418114362" },
     so3BabyKommuniziert: { ref: "https://player.vimeo.com/video/418114671" },
