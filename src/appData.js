@@ -500,6 +500,7 @@ const appData = {
             main: "Einstiegsübung – Was brauche ich?",
             videoName: "(Video 3.1)",
           },
+          video: { ref: "https://player.vimeo.com/video/418114230" },
         },
         section33: {
           id: 2,
@@ -698,7 +699,6 @@ const appData = {
     },
   },
   videos: {
-    so3Einstieg: { ref: "https://player.vimeo.com/video/418114230" },
     so3Beduerfnisse: { ref: "https://player.vimeo.com/video/418114362" },
     so3BabyKommuniziert: { ref: "https://player.vimeo.com/video/418114671" },
     so3BabyWeint: { ref: "https://player.vimeo.com/video/418115074" },
