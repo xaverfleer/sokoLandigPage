@@ -508,6 +508,7 @@ const appData = {
             main: "Die Bedürfnisse des Babys sind wichtig",
             videoName: "(Video 3.2)",
           },
+          video: { ref: "https://player.vimeo.com/video/418114362" },
           subtitle: "Das wichtigste in Kürze:",
           checklist: {
             entries: [
@@ -525,6 +526,12 @@ const appData = {
               },
             ],
           },
+          documents: [
+            {
+              href: "/documents/so3-Vertiefung-co-sleeping.pdf",
+              text: "Vertiefung: Sicherheitsregeln Co‑Sleeping – Kursblocks 3",
+            },
+          ],
         },
         section34: {
           id: 3,
@@ -532,6 +539,7 @@ const appData = {
             main: "...wenn das Baby mit leisen Signalen kommuniziert",
             videoName: "(Video 3.3)",
           },
+          video: { ref: "https://player.vimeo.com/video/418114671" },
           subtitle: "Das wichtigste in Kürze:",
           checklist: {
             entries: [
@@ -561,6 +569,12 @@ const appData = {
               },
             ],
           },
+          documents: [
+            {
+              href: "/documents/so3-Strategiekarte-Aktives-Lesen.pdf",
+              text: "Strategiekarte: Aktives Lesen – Kursblock 3",
+            },
+          ],
         },
         section35: {
           id: 4,
@@ -568,6 +582,7 @@ const appData = {
             main: "...wenn das Baby weint",
             videoName: "(Video 3.4)",
           },
+          video: { ref: "https://player.vimeo.com/video/418115074" },
           subtitle: "Das wichtigste in Kürze:",
           checklist: {
             entries: [
@@ -593,6 +608,12 @@ const appData = {
               },
             ],
           },
+          documents: [
+            {
+              href: "/documents/so3-Strategiekarte-WARUM-Prozess.pdf",
+              text: "Strategiekarte: Der WARUM-Prozess – Kursblock 3",
+            },
+          ],
         },
         section36: {
           id: 5,
@@ -600,6 +621,7 @@ const appData = {
             main: "...wenn das Baby «schwierig» ist",
             videoName: "(Video 3.5)",
           },
+          video: { ref: "https://player.vimeo.com/video/418115509" },
           subtitle: "Das wichtigste in Kürze:",
           checklist: {
             entries: [
@@ -633,6 +655,12 @@ const appData = {
               },
             ],
           },
+          documents: [
+            {
+              href: "/documents/so3-Vertiefung-Entwicklungssprünge.pdf",
+              text: "Vertiefung: Übersicht Entwicklungssprünge – Kursblocks 3",
+            },
+          ],
         },
       },
     },
@@ -677,31 +705,6 @@ const appData = {
       teaser: "Zurückhaltung üben...",
       to: "kursblock-5",
     },
-  },
-  documents: {
-    so3: {
-      Vertiefung01: {
-        href: "/documents/so3-Vertiefung-co-sleeping.pdf",
-        text: "Vertiefung: Sicherheitsregeln Co‑Sleeping – Kursblocks 3",
-      },
-      Strategie01: {
-        href: "/documents/so3-Strategiekarte-Aktives-Lesen.pdf",
-        text: "Strategiekarte: Aktives Lesen – Kursblock 3",
-      },
-      Strategie02: {
-        href: "/documents/so3-Strategiekarte-WARUM-Prozess.pdf",
-        text: "Strategiekarte: Der WARUM-Prozess – Kursblock 3",
-      },
-      Vertiefung02: {
-        href: "/documents/so3-Vertiefung-Entwicklungssprünge.pdf",
-        text: "Vertiefung: Übersicht Vertiefungssprünge – Kursblocks 3",
-      },
-    },
-  },
-  videos: {
-    so3Beduerfnisse: { ref: "https://player.vimeo.com/video/418114362" },
-    so3BabyKommuniziert: { ref: "https://player.vimeo.com/video/418114671" },
-    so3BabyWeint: { ref: "https://player.vimeo.com/video/418115074" },
   },
 };
 
