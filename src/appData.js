@@ -348,6 +348,39 @@ const appData = {
             },
           ],
         },
+        section25: {
+          id: 4,
+          title: {
+            main: "...wenn wir etwas neben dem Baby tun",
+            videoName: "(Video 2.4)",
+          },
+          video: { ref: "https://player.vimeo.com/video/410677798" },
+          subtitle: "Das wichtigste in Kürze:",
+          checklist: {
+            entries: [
+              {
+                id: 0,
+                text: `Wenn sich das Baby für unsere alltäglichen Handlungen (kochen, putzen, aufräumen) interessiert, können wir es in die Handlung miteinbeziehen, indem wir: unser Handeln kommentieren, ihm die Objekte, mit denen wir handeln, zu erforschen geben oder ihm die Möglichkeit geben, die Tätigkeit selbst zu erforschen. (→ Strategiekarte)`,
+              },
+              {
+                id: 1,
+                text: `Wenn wir das Baby mithelfen lassen, sollten wir uns mit Belehrungen zurückhalten. Durch Belehrungen kann das Baby das Interesse verlieren und sich als inkompetent wahrnehmen.`,
+              },
+              {
+                id: 2,
+                text: `Wenn wir das Baby mithelfen lassen, sollten wir uns auch mit Belohnungen (etwa Lob) zurückhalten. Durch eine Belohnung riskieren wir, dass das Baby nur noch hilft, wenn es eine Belohnung erwarten kann und dass es sich nur dann wertvoll fühlt, wenn es hilfsbereit ist.`,
+              },
+            ],
+          },
+          documents: [
+            {
+              href:
+                "/documents/so2-Strategiekarte-Wenn-wir-etwas-neben-dem-Baby-tun.pdf",
+              text:
+                "Strategiekarte: ...wenn wir etwas neben dem Baby tun – Kursblock 2",
+            },
+          ],
+        },
         section27: {
           id: 6,
           title: {
@@ -604,8 +637,6 @@ const appData = {
     },
   },
   videos: {
-    so2AmBabyTun: { ref: "https://player.vimeo.com/video/410677404" },
-    so2NebenBabyTun: { ref: "https://player.vimeo.com/video/410677798" },
     so2Verlassen: { ref: "https://player.vimeo.com/video/410678171" },
     so2DosAndDonts: { ref: "https://player.vimeo.com/video/418650809" },
     so3Einstieg: { ref: "https://player.vimeo.com/video/418114230" },

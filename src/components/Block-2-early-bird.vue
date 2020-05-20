@@ -9,53 +9,6 @@
     <section class="section">
       <div class="section__subsection">
         <h2>
-          ...wenn wir etwas neben dem Baby tun
-          <span class="video-name">(Video&nbsp;2.4)</span>
-        </h2>
-        <VideoVue :video="$root.videos.so2NebenBabyTun" />
-        <h3>Das wichtigste in Kürze:</h3>
-        <div class="checklist">
-          <div class="checklist__item">
-            <div class="checklist__text">
-              Wenn sich das Baby für unsere alltäglichen Handlungen (kochen,
-              putzen, aufräumen) interessiert, können wir es in die Handlung
-              miteinbeziehen, indem wir: unser Handeln kommentieren, ihm die
-              Objekte, mit denen wir handeln, zu erforschen geben oder ihm die
-              Möglichkeit geben, die Tätigkeit selbst zu erforschen.
-              (&rarr;&nbsp;Strategiekarte)
-            </div>
-          </div>
-          <div class="checklist__item">
-            <div class="checklist__text">
-              Wenn wir das Baby mithelfen lassen, sollten wir uns
-              <em>mit Belehrungen zurückhalten.</em> Durch Belehrungen kann das
-              Baby das Interesse verlieren und sich als inkompetent wahrnehmen.
-            </div>
-          </div>
-          <div class="checklist__item">
-            <div class="checklist__text">
-              Wenn wir das Baby mithelfen lassen, sollten wir uns auch
-              <em>mit Belohnungen (etwa Lob) zurückhalten.</em> Durch eine
-              Belohnung riskieren wir, dass das Baby nur noch hilft, wenn es
-              eine Belohnung erwarten kann und dass es sich nur dann wertvoll
-              fühlt, wenn es hilfsbereit ist.
-            </div>
-          </div>
-        </div>
-        <div class="document">
-          <a
-            class="document__link"
-            href="/documents/so2-Strategiekarte-Wenn-wir-etwas-neben-dem-Baby-tun.pdf"
-            target="_blank"
-            >Strategiekarte: ...wenn wir etwas neben dem Baby tun – Kursblock
-            2</a
-          >
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="section__subsection">
-        <h2>
           ...wenn wir das Baby verlassen
           <span class="video-name">(Video&nbsp;2.5)</span>
         </h2>
