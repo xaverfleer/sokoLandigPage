@@ -265,6 +265,38 @@ const appData = {
             },
           ],
         },
+        section23: {
+          id: 2,
+          title: { main: "Mit dem Baby sprechen", videoName: "(Video 2.2)" },
+          video: { ref: "https://player.vimeo.com/video/410677189" },
+          subtitle: "Das wichtigste in Kürze:",
+          checklist: {
+            entries: [
+              {
+                id: 0,
+                text: `Babys erlernen Sprache wenn wir mit ihnen sprechen. Zuerst bauen sie ein passives Wissen und Verstehen auf. Sie versehen immer deutlich mehr als dass sie selbst mitteilen können.`,
+              },
+              {
+                id: 1,
+                text: `Die babyangepasste Sprechweise (hohe Stimme, Wiederholungen, starke Betonungen etc.) bindet die Aufmerksamkeit des Babys und kann beim frühen Spracherwerb hilfreich sein. Wir müssen sie also nicht unterdrücken, sie verschwindet von selbst, wenn das Baby älter wird.`,
+              },
+              {
+                id: 2,
+                text: `Eine babyangepasste Sprache (Verwendung von Wörtern und Grammatik, die es in der echten Sprache nicht gibt, z.B. «Mama muss Pipi», statt «Ich muss mal pinkeln gehen»), ist unnötig und nicht förderlich für den Spracherwerb.`,
+              },
+              {
+                id: 3,
+                text: `Ergänzend zur gesprochenen Sprache können wir die Objektsprache, die Geräuschsprache und die Gebärdensprache nutzen. Diese Ergänzungen helfen dem Baby, aus dem Fluss an Silben in einem Satz einzelne Schlüsselwörter zu isolieren.`,
+              },
+            ],
+          },
+          documents: [
+            {
+              href: "/documents/so2-Vertiefung-Gebaerdensprache.pdf",
+              text: "Vertiefung: Gebärdensprache – Kursblock 2",
+            },
+          ],
+        },
         section27: {
           id: 6,
           title: {
@@ -521,8 +553,6 @@ const appData = {
     },
   },
   videos: {
-    so2Einstieg: { ref: "https://player.vimeo.com/video/410677081" },
-    so2Sprechen: { ref: "https://player.vimeo.com/video/410677189" },
     so2AmBabyTun: { ref: "https://player.vimeo.com/video/410677404" },
     so2NebenBabyTun: { ref: "https://player.vimeo.com/video/410677798" },
     so2Verlassen: { ref: "https://player.vimeo.com/video/410678171" },

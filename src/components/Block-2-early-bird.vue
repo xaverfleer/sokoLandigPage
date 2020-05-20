@@ -9,58 +9,6 @@
     <section class="section">
       <div class="section__subsection">
         <h2>
-          Mit dem Baby sprechen <span class="video-name">(Video&nbsp;2.2)</span>
-        </h2>
-        <VideoVue :video="$root.videos.so2Sprechen" />
-        <h3>Das wichtigste in Kürze:</h3>
-        <div class="checklist">
-          <div class="checklist__item">
-            <div class="checklist__text">
-              Babys erlernen Sprache wenn wir mit ihnen sprechen. Zuerst bauen
-              sie ein passives Wissen und Verstehen auf. Sie versehen immer
-              deutlich mehr als dass sie selbst mitteilen können.
-            </div>
-          </div>
-          <div class="checklist__item">
-            <div class="checklist__text">
-              Die <em>babyangepasste Sprechweise</em> (hohe Stimme,
-              Wiederholungen, starke Betonungen etc.) bindet die Aufmerksamkeit
-              des Babys und kann beim frühen Spracherwerb hilfreich sein. Wir
-              müssen sie also nicht unterdrücken, sie verschwindet von selbst,
-              wenn das Baby älter wird.
-            </div>
-          </div>
-          <div class="checklist__item">
-            <div class="checklist__text">
-              Eine <em>babyangepasste Sprache</em> (Verwendung von Wörtern und
-              Grammatik, die es in der echten Sprache nicht gibt, z.B. «Mama
-              muss Pipi», statt «Ich muss mal pinkeln gehen»), ist unnötig und
-              nicht förderlich für den Spracherwerb.
-            </div>
-          </div>
-          <div class="checklist__item">
-            <div class="checklist__text">
-              Ergänzend zur gesprochenen Sprache können wir die
-              <em>Objektsprache,</em> die <em>Geräuschsprache</em> und die
-              <em>Gebärdensprache</em> nutzen. Diese Ergänzungen helfen dem
-              Baby, aus dem Fluss an Silben in einem Satz einzelne
-              Schlüsselwörter zu isolieren.
-            </div>
-          </div>
-        </div>
-        <div class="document">
-          <a
-            class="document__link"
-            href="/documents/so2-Vertiefung-Gebaerdensprache.pdf"
-            target="_blank"
-            >Vertiefung: Gebärdensprache – Kursblock 2:
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="section__subsection">
-        <h2>
           ...wenn wir etwas am Baby tun
           <span class="video-name">(Video&nbsp;2.3)</span>
         </h2>
