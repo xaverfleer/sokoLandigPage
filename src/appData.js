@@ -297,6 +297,57 @@ const appData = {
             },
           ],
         },
+        section24: {
+          id: 3,
+          title: {
+            main: "...wenn wir etwas am Baby tun",
+            videoName: "(Video 2.3)",
+          },
+          video: { ref: "https://player.vimeo.com/video/410677404" },
+          subtitle: "Das wichtigste in Kürze:",
+          checklist: {
+            entries: [
+              {
+                id: 0,
+                text: `Wenn wir Situationen wie wickeln oder anziehen als eine schöne Zeit der Zweisamkeit und Interaktion ansehen, können sie zu wertvollen Alltagsmomenten werden.`,
+              },
+              {
+                id: 1,
+                text: `Wenn wir etwas am Baby tun (z.B. wickeln, baden, in den Autositz einbinden), ist es wichtig, das Baby nicht wie ein Objekt (etwa eine Puppe) zu behandeln, sondern mit ihm als Subjekt in eine Interaktion zu treten.`,
+              },
+              {
+                id: 2,
+                text: `In dem wir vor unserer Handlung Kontakt herstellen, unsere Vorhaben ankünden und während dem Vorhaben die Handlung kommentieren, treten wir in eine Interaktion mit dem Baby. Wenn wir seine Reaktionen abwarten, können wir ihm die Möglichkeit geben, mitzuarbeiten. (→ Strategiekarte)`,
+              },
+              {
+                id: 3,
+                text: `Wenn das Baby sich wehrt und nicht kooperiert, können wir uns fragen, wie die Sicht des Babys aussieht und ob das Baby möglicherweise schon zu viel kooperiert hat. (→ Strategiekarte)`,
+              },
+              {
+                id: 4,
+                text: `Wenn sich das Baby wehrt, können wir versuchen, das Vorhaben spielerischer umzusetzen, nach Alternativen zu suchen oder wenn es nicht anders geht, das Baby abzulenken oder, wenn nichts anderes hilft, dich mit so wenig Kraft wie nötig durchzusetzen.`,
+              },
+              {
+                id: 5,
+                text: `Spielerische Aktivitäten (z.B. nichtdirektive kindzentrierte Spiele oder Machtumkehrspiele) in entspannten Situationen helfen, das Autonomiebedürfnis des Babys zu nähren, damit es in Situationen, in denen wir etwas an ihm tun, weniger danach streben muss.`,
+              },
+            ],
+          },
+          documents: [
+            {
+              href:
+                "/documents/so2-Strategiekarte-Wenn-wir-etwas-am-Baby-tun.pdf",
+              text:
+                "Strategiekarte: ...wenn wir etwas am Baby tun – Kursblock 2",
+            },
+            {
+              href:
+                "/documents/so2-Strategiekarte-Wenn-das-Baby-nicht-kooperiert.pdf",
+              text:
+                "Strategiekarte: ...wenn das Baby nicht kooperiert – Kursblock 2",
+            },
+          ],
+        },
         section27: {
           id: 6,
           title: {
