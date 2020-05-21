@@ -22,17 +22,11 @@ const vm = new Vue({
     buttons() {
       return this.appData.buttons;
     },
-    docs() {
-      return this.appData.documents;
-    },
     isEarlyBird() {
       return this.state.path === "early-bird";
     },
     isKurs() {
       return this.state.path === "kurs";
-    },
-    videos() {
-      return this.appData.videos;
     },
   },
   router,
