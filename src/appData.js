@@ -657,7 +657,7 @@ const appData = {
           },
           documents: [
             {
-              href: "/documents/so3-Vertiefung-Entwicklungssprünge.pdf",
+              href: "/documents/so3-Vertiefung-Entwicklungsspruenge.pdf",
               text: "Vertiefung: Übersicht Entwicklungssprünge – Kursblocks 3",
             },
           ],
