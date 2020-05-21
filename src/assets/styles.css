@@ -365,7 +365,7 @@ main {
   min-height: 56px;
 }
 
-.nav::after {
+.nav::before {
   width: 32px;
   height: 32px;
   content: " ";
@@ -373,7 +373,7 @@ main {
   cursor: pointer;
 }
 
-.nav.nav--active::after {
+.nav.nav--active::before {
   background-image: url(imgs/close-24px--brown.svg);
   background-repeat: no-repeat;
   background-size: cover;
