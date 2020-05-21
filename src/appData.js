@@ -683,27 +683,27 @@ const appData = {
     block01: {
       text: "Kursblock 1",
       teaser: "Innere Stärke und Gleichwürdigkeit",
-      to: "kursblock-1",
+      to: "/course/block-1",
     },
     block02: {
       text: "Kursblock 2",
-      to: "kursblock-2",
       teaser: "Mit dem Baby interagieren...",
+      to: "/course/block-2",
     },
     block03: {
       text: "Kursblock 3",
-      to: "kursblock-3",
       teaser: "Das Baby verstehen...",
+      to: "/course/block-3",
     },
     block04: {
       text: "Kursblock 4",
-      to: "kursblock-4",
       teaser: "Auf mich selbst achten...",
+      to: "/course/block-4",
     },
     block05: {
       text: "Kursblock 5",
       teaser: "Zurückhaltung üben...",
-      to: "kursblock-5",
+      to: "/course/block-5",
     },
   },
 };

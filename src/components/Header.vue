@@ -10,7 +10,7 @@
           title="Zur Startseite"
         />
       </a>
-      <nav class="nav nav--kurs">
+      <nav :class="navClasses" @click="toggleNav">
         <NavEntry :route="$root.appData.routes.block01" />
         <NavEntry :route="$root.appData.routes.block02" />
         <NavEntry :route="$root.appData.routes.block03" />
@@ -27,14 +27,23 @@ import logo from "../imgs/logo.png";
 
 export default {
   components: { NavEntry },
+  computed: {
+    navClasses() {
+      return ["nav", "nav--kurs", this.isNavActive ? "nav--active" : ""];
+    },
+  },
   data: function() {
     return {
       logoUrl: "../imgs/logo.png",
       img: logo,
+      isNavActive: false,
     };
   },
   methods: {
     scrollToTop: () => window.scroll(0, 0),
+    toggleNav() {
+      this.isNavActive = !this.isNavActive;
+    },
   },
 };
 </script>
