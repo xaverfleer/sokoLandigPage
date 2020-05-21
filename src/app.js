@@ -2,41 +2,22 @@
 import Vue from "vue/dist/vue.esm";
 import VueRouter from "vue-router/dist/vue-router.esm";
 import appData from "./appData";
-import Header from "./components/Header.vue";
-import Footer from "./components/Footer.vue";
 import stateM8t from "./stateManagement";
-import Block1 from "./components/Block-1.vue";
-import Block2 from "./components/Block-2.vue";
-import Block3 from "./components/Block-3.vue";
-import Block4 from "./components/Block-4.vue";
-import Block5 from "./components/Block-5.vue";
+import Course from "./components/Course.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
-  { path: "/kursblock-1", component: Block1 },
-  { path: "/kursblock-2", component: Block2 },
-  { path: "/kursblock-3", component: Block3 },
-  { path: "/kursblock-4", component: Block4 },
-  { path: "/kursblock-5", component: Block5 },
-  { path: "*", redirect: "/kursblock-1" },
+  { path: "/course/:block", component: Course },
+  { path: "", redirect: "course/block-1" },
 ];
 
 const router = new VueRouter({ routes });
 
 const vm = new Vue({
-  template: `
-    <div class="page">
-      <Header />
-      <main>
-        <router-view></router-view>
-      </main>
-      <Footer />
-    </div>
-  `,
+  template: `<router-view></router-view>`,
   el: "#app",
   data: { appData, state: {} },
-  components: { Header, Footer },
   computed: {
     buttons() {
       return this.appData.buttons;
@@ -75,16 +56,8 @@ document.querySelectorAll(".cta05").forEach((e) => {
   });
 });
 
-const nav = document.querySelector(".nav");
-nav.addEventListener("click", () => {
-  const { classList } = nav;
-  if ([].slice.call(classList).indexOf("nav--active") > -1)
-    classList.remove("nav--active");
-  else classList.add("nav--active");
-});
-
-const header = document.querySelector(".header");
 window.addEventListener("scroll", () => {
+  const header = document.querySelector(".header");
   if (window.pageYOffset > 360) header.classList.add("header--fixed");
   else header.classList.remove("header--fixed");
 });
