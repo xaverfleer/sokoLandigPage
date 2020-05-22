@@ -14,7 +14,7 @@
       <Document
         v-for="document in section.documents"
         :document="document"
-        :key="document.id"
+        :key="document.href"
       />
     </div>
   </section>
