@@ -11,11 +11,7 @@
         />
       </a>
       <nav :class="navClasses" @click="toggleNav">
-        <NavEntry :route="$root.appData.routes.block01" />
-        <NavEntry :route="$root.appData.routes.block02" />
-        <NavEntry :route="$root.appData.routes.block03" />
-        <NavEntry :route="$root.appData.routes.block04" />
-        <NavEntry :route="$root.appData.routes.block05" />
+        <NavEntry v-for="route in routes" :key="route.to" :route="route" />
       </nav>
     </div>
   </header>
@@ -45,6 +41,7 @@ export default {
       this.isNavActive = !this.isNavActive;
     },
   },
+  props: ["routes"],
 };
 </script>
 

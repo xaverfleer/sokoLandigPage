@@ -1,7 +1,7 @@
 /* global amplitude, document,  window */
 import Vue from "vue/dist/vue.esm";
 import VueRouter from "vue-router/dist/vue-router.esm";
-import appData from "./appData";
+import appData from "./data/appData";
 import stateM8t from "./stateManagement";
 import Course from "./components/Course.vue";
 

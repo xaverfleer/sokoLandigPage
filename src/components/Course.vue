@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <Header />
+    <Header :routes="course.routes" />
     <main>
       <Block1 v-if="$route.params.block === 'block-1'" />
       <Block2 v-if="$route.params.block === 'block-2'" />
@@ -30,6 +30,11 @@ export default {
     Block5,
     Footer,
     Header,
+  },
+  computed: {
+    course() {
+      return this.$root.appData.course;
+    },
   },
 };
 </script>
