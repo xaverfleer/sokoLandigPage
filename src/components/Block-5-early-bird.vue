@@ -7,7 +7,7 @@
         <p>Noch keine Inhalte verfügbar.</p>
       </div>
       <div class="buttons">
-        <RouteVue :info="$root.appData.routes.block04" />
+        <RouteVue :info="course.routes.block04" />
       </div>
     </section>
   </div>
@@ -15,7 +15,10 @@
 
 <script>
 import RouteVue from "./RouteVue.vue";
-export default { components: { RouteVue } };
+export default {
+  components: { RouteVue },
+  props: ["course"],
+};
 </script>
 
 <style scoped></style>

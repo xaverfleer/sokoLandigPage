@@ -7,8 +7,8 @@
         <p>Noch keine Inhalte verfügbar.</p>
       </div>
       <div class="buttons">
-        <RouteVue :info="$root.appData.routes.block03" />
-        <RouteVue :info="$root.appData.routes.block05" />
+        <RouteVue :info="course.routes.block03" />
+        <RouteVue :info="course.routes.block05" />
       </div>
     </section>
   </div>
@@ -16,7 +16,10 @@
 
 <script>
 import RouteVue from "./RouteVue.vue";
-export default { components: { RouteVue } };
+export default {
+  components: { RouteVue },
+  props: ["course"],
+};
 </script>
 
 <style scoped></style>

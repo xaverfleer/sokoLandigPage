@@ -666,13 +666,13 @@ const appData = {
         },
       },
     },
-    routes: [
-      routes.block01,
-      routes.block02,
-      routes.block03,
-      routes.block04,
-      routes.block05,
-    ],
+    routes: {
+      block01: routes.block01,
+      block02: routes.block02,
+      block03: routes.block03,
+      block04: routes.block04,
+      block05: routes.block05,
+    },
   },
   buttons: {
     cta05Primary: {

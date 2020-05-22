@@ -6,8 +6,8 @@
       :key="section.id"
     />
     <div class="buttons">
-      <RouteVue :info="$root.appData.routes.block02" />
-      <RouteVue :info="$root.appData.routes.block04" />
+      <RouteVue :info="course.routes.block02" />
+      <RouteVue :info="course.routes.block04" />
     </div>
   </div>
 </template>
@@ -18,6 +18,7 @@ import Section from "./Section.vue";
 
 export default {
   components: { RouteVue, Section },
+  props: ["course"],
 };
 </script>
 
