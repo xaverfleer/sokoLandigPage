@@ -6,8 +6,8 @@
       :key="section.id"
     />
     <div class="buttons">
-      <RouteVue :info="$root.appData.routes.block01" />
-      <RouteVue :info="$root.appData.routes.block03" />
+      <RouteVue :info="course.routes.block01" />
+      <RouteVue :info="course.routes.block03" />
     </div>
   </div>
 </template>
@@ -23,6 +23,7 @@ export default {
       return this.$root.appData.course.block02;
     },
   },
+  props: ["course"],
 };
 </script>
 

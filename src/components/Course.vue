@@ -2,11 +2,11 @@
   <div class="page">
     <Header :routes="course.routes" />
     <main>
-      <Block1 v-if="$route.params.block === 'block-1'" />
-      <Block2 v-if="$route.params.block === 'block-2'" />
-      <Block3 v-if="$route.params.block === 'block-3'" />
-      <Block4 v-if="$route.params.block === 'block-4'" />
-      <Block5 v-if="$route.params.block === 'block-5'" />
+      <Block1 :course="course" v-if="$route.params.block === 'block-1'" />
+      <Block2 :course="course" v-if="$route.params.block === 'block-2'" />
+      <Block3 :course="course" v-if="$route.params.block === 'block-3'" />
+      <Block4 :course="course" v-if="$route.params.block === 'block-4'" />
+      <Block5 :course="course" v-if="$route.params.block === 'block-5'" />
     </main>
     <Footer />
   </div>
