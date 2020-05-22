@@ -9,7 +9,12 @@ Vue.use(VueRouter);
 
 const routes = [
   { path: "/course/:block", component: Course },
-  { path: "", redirect: "course/block-1" },
+  { path: "/kursblock-1", redirect: "course/block-1" },
+  { path: "/kursblock-2", redirect: "course/block-2" },
+  { path: "/kursblock-3", redirect: "course/block-3" },
+  { path: "/kursblock-4", redirect: "course/block-4" },
+  { path: "/kursblock-5", redirect: "course/block-5" },
+  { path: "*", redirect: "course/block-1" },
 ];
 
 const router = new VueRouter({ routes });
