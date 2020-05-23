@@ -22,13 +22,13 @@ const helpers = {
     console.log("starting `createUser`");
     const salt = crypto.randomBytes(16).toString("base64");
     const confirmationCode = crypto.randomBytes(16).toString("base64");
-    const isConfirmd = false;
+    const isConfirmed = false;
     const hash = crypto
       .createHash("md5")
       .update(password + salt)
       .digest("hex");
 
-    return { email, hash, salt, confirmationCode, isConfirmd };
+    return { email, hash, salt, confirmationCode, isConfirmed };
   },
 
   createUser(email, password) {
@@ -42,12 +42,12 @@ const helpers = {
     return promise;
   },
 
-  composeEmail(email, hash) {
+  composeEmail(email, cofirmationCode) {
     const message = {
       to: email,
       from: "kurs@so-kommunizieren.ch",
       subject: "Bestätige deine E-Mail-Adresse",
-      text: `Vielen Dank für deine Anmeldung auf so-kommunizieren.ch.\n\nKlicke auf den Link um dein Konto zu bestätigen: https://so-kommunizieren.ch/kurs.html#/confirmEmail/${hash}\n\nFalls du kein Konto erstellen wolltest, kannst du diese E-Mail ignorieren.`,
+      text: `Vielen Dank für deine Anmeldung auf so-kommunizieren.ch.\n\nKlicke auf den Link um dein Konto zu bestätigen: https://so-kommunizieren.ch/.netlify/functions/confirmEmail?confirmationCode=${cofirmationCode}\n\nFalls du kein Konto erstellen wolltest, kannst du diese E-Mail ignorieren.`,
     };
     return Promise.resolve({ message });
   },
