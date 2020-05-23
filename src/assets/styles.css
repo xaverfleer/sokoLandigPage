@@ -222,6 +222,7 @@ main {
 
 .form--narrow {
   max-width: 500px;
+  margin: 0 auto;
 }
 
 .form__buttons {
