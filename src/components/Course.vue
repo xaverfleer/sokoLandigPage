@@ -36,6 +36,12 @@ export default {
       return this.$root.appData.course;
     },
   },
+  created() {
+    const title = this.$root.isEarlyBird
+      ? "Early-Bird | so* kommunizieren"
+      : "Kurs | so* kommunizieren";
+    document.title = title;
+  },
 };
 </script>
 
