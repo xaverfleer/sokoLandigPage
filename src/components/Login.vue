@@ -29,9 +29,10 @@ export default {
       return this.$root.appData.login;
     },
   },
+  created() {
+    document.title = `Anmelden | so* kommunizieren`;
+  },
 };
-
-document.title = `Login | so* kommunizieren`;
 </script>
 
 <style scoped></style>
