@@ -1,19 +1,9 @@
 <template>
-  <div>
-    <a
-      v-if="route.href"
-      @click.native="scrollToTop"
-      :class="classes"
-      :href="route.href"
-      >{{ text }}</a
-    >
-    <router-link
-      v-else
-      @click.native="scrollToTop"
-      :class="classes"
-      :to="route.to"
-      >{{ text }}</router-link
-    >
+  <div :class="classes">
+    <a v-if="route.href" :href="route.href">{{ text }}</a>
+    <router-link v-else :to="route.to" @click.native="scrollToTop">{{
+      text
+    }}</router-link>
   </div>
 </template>
 
