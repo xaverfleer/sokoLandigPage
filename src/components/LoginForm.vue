@@ -78,14 +78,16 @@ function submitForm(data) {
   xhr.addEventListener("load", () => {
     debugger;
     switch (xhr.status) {
+      case "200":
+        const { sessionId } = JSON.parse(decodeURIComponent(xhr.responseText));
+        localStorage.setItem("soko-non-vue", JSON.stringify({ sessionId }));
+        break;
       case "504":
+      default:
         window.alert(
           `Anmelden fehlgeschlagen./n/nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch`
         );
         break;
-      default:
-        const { sessionId } = JSON.parse(decodeURIComponent(xhr.responseText));
-        localStorage.setItem("soko-non-vue", JSON.stringify({ sessionId }));
     }
   });
 
