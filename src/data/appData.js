@@ -674,6 +674,12 @@ const appData = {
       block05: routes.block05,
     },
   },
+  login: {
+    routes: {
+      landingPage: routes.landingPage,
+      kurs: { ...routes.kurs, isPrimary: true },
+    },
+  },
   buttons: {
     cta05Primary: {
       text: "Jetzt buchen",

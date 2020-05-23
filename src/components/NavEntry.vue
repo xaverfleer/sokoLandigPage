@@ -1,7 +1,20 @@
 <template>
-  <router-link @click.native="scrollToTop" :class="classes" :to="route.to">{{
-    `${route.text}: ${route.teaser}`
-  }}</router-link>
+  <div>
+    <a
+      v-if="route.href"
+      @click.native="scrollToTop"
+      :class="classes"
+      :href="route.href"
+      >{{ text }}</a
+    >
+    <router-link
+      v-else
+      @click.native="scrollToTop"
+      :class="classes"
+      :to="route.to"
+      >{{ text }}</router-link
+    >
+  </div>
 </template>
 
 <script>

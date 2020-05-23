@@ -24,4 +24,12 @@ export default {
     teaser: "Zurückhaltung üben...",
     to: "/course/block-5",
   },
+  landingPage: {
+    text: "Zur Startseite",
+    href: "/index.html",
+  },
+  kurs: {
+    text: "Zum Kurs",
+    to: "/course/block-1",
+  },
 };
