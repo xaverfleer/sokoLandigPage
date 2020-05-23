@@ -4,11 +4,13 @@ import VueRouter from "vue-router/dist/vue-router.esm";
 import appData from "./data/appData";
 import stateM8t from "./stateManagement";
 import Course from "./components/Course.vue";
+import Login from "./components/Login.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   { path: "/course/:block", component: Course },
+  { path: "/login", component: Login },
   { path: "/kursblock-1", redirect: "course/block-1" },
   { path: "/kursblock-2", redirect: "course/block-2" },
   { path: "/kursblock-3", redirect: "course/block-3" },
