@@ -18,14 +18,6 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 require("encoding");
 
 const helpers = {
-  handleSuccess(response) {
-    console.log(`success: ${response}`);
-  },
-
-  handleError(error) {
-    console.log(`error: ${error}`);
-  },
-
   composeUser(email, password) {
     console.log("starting `createUser`");
     const salt = crypto.randomBytes(16).toString("base64");
