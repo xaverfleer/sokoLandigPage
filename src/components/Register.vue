@@ -29,9 +29,10 @@ export default {
       return this.$root.appData.register;
     },
   },
+  created() {
+    document.title = `Konto erstellen | so* kommunizieren`;
+  },
 };
-
-document.title = `Registrieren | so* kommunizieren`;
 </script>
 
 <style scoped></style>
