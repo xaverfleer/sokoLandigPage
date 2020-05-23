@@ -8,17 +8,13 @@
 export default {
   computed: {
     classes() {
-      return {
-        button: true,
-        "button--primary": this.isPrimary,
-        "button--2ndary": !this.isPrimary,
-      };
-    },
-    isPrimary() {
-      return this.options && this.options.isPrimary;
+      return [
+        "button",
+        this.info.isPrimary ? "button--primary" : "button--2ndary",
+      ];
     },
   },
-  props: ["info", "options"],
+  props: ["info"],
   methods: {
     scrollToTop: () => window.scroll(0, 0),
   },

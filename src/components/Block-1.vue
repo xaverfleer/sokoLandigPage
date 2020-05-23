@@ -7,8 +7,7 @@
     />
     <div class="buttons">
       <RouteVue
-        :info="course.routes.block02"
-        :options="{ isPrimary: true }"
+        :info="{ ...course.routes.block02, isPrimary: true }"
         v-if="$root.isKurs"
       />
       <ButtonVue :info="$root.buttons.cta05Secondary" v-if="$root.isKurs" />

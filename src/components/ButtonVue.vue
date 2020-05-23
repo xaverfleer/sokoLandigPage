@@ -6,11 +6,10 @@
 export default {
   computed: {
     classes() {
-      return {
-        button: true,
-        "button--primary": this.info.isPrimary,
-        "button--2ndary": !this.info.isPrimary,
-      };
+      return [
+        "button",
+        this.info.isPrimary ? "button--primary" : "button--2ndary",
+      ];
     },
   },
   props: ["info"],
