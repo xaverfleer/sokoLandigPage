@@ -10,6 +10,9 @@
 // }
 const faunadb = require("faunadb");
 const crypto = require("crypto");
+const sgMail = require("@sendgrid/mail");
+
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 // this i a workaround for issue https://github.com/netlify/netlify-lambda/issues/201
 require("encoding");
@@ -26,12 +29,14 @@ const helpers = {
   composeUser(email, password) {
     console.log("starting `createUser`");
     const salt = crypto.randomBytes(16).toString("base64");
+    const confirmationCode = crypto.randomBytes(16).toString("base64");
+    const isConfirmd = false;
     const hash = crypto
       .createHash("md5")
       .update(password + salt)
       .digest("hex");
 
-    return { email, hash, salt };
+    return { email, hash, salt, confirmationCode, isConfirmd };
   },
 
   createUser(email, password) {
@@ -44,6 +49,16 @@ const helpers = {
     );
     return promise;
   },
+
+  composeEmail(email, hash) {
+    const message = {
+      to: email,
+      from: "kurs@so-kommunizieren.ch",
+      subject: "Bestätige deine E-Mail-Adresse",
+      text: `Vielen Dank für deine Anmeldung auf so-kommunizieren.ch.\n\nKlicke auf den Link um dein Konto zu bestätigen: https://so-kommunizieren.ch/kurs.html#/confirmEmail/${hash}\n\nFalls du kein Konto erstellen wolltest, kannst du diese E-Mail ignorieren.`,
+    };
+    return Promise.resolve({ message });
+  },
 };
 
 exports.handler = function register(event, context, callback = () => {}) {
@@ -55,6 +70,24 @@ exports.handler = function register(event, context, callback = () => {}) {
   console.log(`Register user with email email: ${parsed.email}`);
   helpers
     .createUser(parsed.email, parsed.password)
+    .catch(() => Promise.reject(new Error("Could not register user")))
+    .then((response) => {
+      return helpers.composeEmail(
+        response.data.email,
+        response.data.confirmationCode
+      );
+    })
+    .catch((e) =>
+      Promise.reject(new Error(e.message || "Could not compose user"))
+    )
+    .then(({ message }) => {
+      return sgMail.send(message);
+    })
+    .catch((e) =>
+      Promise.reject(
+        new Error(e.message || "Could not send confirmation email")
+      )
+    )
     .then(function handleSuccess() {
       callback(null, {
         statusCode: 200,
