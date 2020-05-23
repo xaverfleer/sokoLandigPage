@@ -546,6 +546,7 @@ main {
 
   .booking-offers {
     flex-direction: row;
+    justify-content: center;
   }
 }
 
