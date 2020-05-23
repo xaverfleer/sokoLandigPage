@@ -525,7 +525,7 @@ main {
     align-items: center;
   }
 
-  .nav:not(.nav--kurs)::after {
+  .nav:not(.nav--kurs)::before {
     display: none;
   }
 
