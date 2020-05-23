@@ -32,4 +32,12 @@ export default {
     text: "Zum Kurs",
     to: "/course/block-1",
   },
+  login: {
+    text: "Direkt anmelden",
+    to: "/login",
+  },
+  register: {
+    text: "Konto erstellen",
+    to: "/register",
+  },
 };
