@@ -1,11 +1,9 @@
 <template>
   <form class="form" id="register-form">
     <div class="form-entry form-entry--fullwidth">
-      <label class="form-entry__label text" for="form__email"
-        >E-Mail-Adresse*</label
-      >
+      <label class="form-entry__label" for="form__email">E-Mail-Adresse*</label>
       <input
-        class="form-entry__input text"
+        class="form-entry__input"
         type="email"
         name="email"
         id="form__email"
@@ -13,11 +11,9 @@
       />
     </div>
     <div class="form-entry form-entry--halfwidth form-entry--password">
-      <label class="form-entry__label text" for="form__password"
-        >Passwort*</label
-      >
+      <label class="form-entry__label" for="form__password">Passwort*</label>
       <input
-        class="form-entry__input text"
+        class="form-entry__input"
         type="password"
         name="password"
         id="form__password"
@@ -25,11 +21,9 @@
       />
     </div>
     <div class="form-entry form-entry--halfwidth form-entry--password">
-      <label class="form-entry__label text" for="form__confirm"
-        >Bestätigen*</label
-      >
+      <label class="form-entry__label" for="form__confirm">Bestätigen*</label>
       <input
-        class="form-entry__input text"
+        class="form-entry__input"
         type="password"
         name="confirm"
         id="form__confirm"
