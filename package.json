@@ -56,6 +56,6 @@
     "encoding": "^0.1.12",
     "faunadb": "^2.14.1",
     "vue": "^2.6.11",
-    "vue-router": "^3.1.6"
+    "vue-router": "^3.2.0"
   }
 }
