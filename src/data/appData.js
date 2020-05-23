@@ -694,6 +694,7 @@ const appData = {
       isPrimary: false,
     },
   },
+  routes,
 };
 
 export default appData;
