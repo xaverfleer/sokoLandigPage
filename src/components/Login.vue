@@ -3,10 +3,8 @@
     <Header :routes="loginData.routes" />
     <main>
       <section class="section section--subscription" id="subscription">
-        <div class="section__subsection">
-          <h2 class="section__header">Anmelden</h2>
-          <LoginForm />
-        </div>
+        <h2 class="section__header">Anmelden</h2>
+        <LoginForm />
       </section>
     </main>
     <Footer />
