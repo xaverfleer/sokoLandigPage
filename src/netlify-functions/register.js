@@ -47,7 +47,9 @@ const helpers = {
       to: email,
       from: "kurs@so-kommunizieren.ch",
       subject: "Bestätige deine E-Mail-Adresse",
-      text: `Vielen Dank für deine Anmeldung auf so-kommunizieren.ch.\n\nKlicke auf den Link um dein Konto zu bestätigen: https://so-kommunizieren.ch/.netlify/functions/confirmEmail?confirmationCode=${cofirmationCode}\n\nFalls du kein Konto erstellen wolltest, kannst du diese E-Mail ignorieren.`,
+      text: `Vielen Dank für deine Anmeldung auf so-kommunizieren.ch.\n\nKlicke auf den Link um dein Konto zu bestätigen: https://so-kommunizieren.ch/.netlify/functions/confirmEmail?confirmationCode=${encodeURIComponent(
+        cofirmationCode
+      )}\n\nFalls du kein Konto erstellen wolltest, kannst du diese E-Mail ignorieren.`,
     };
     return Promise.resolve({ message });
   },
@@ -59,7 +61,7 @@ exports.handler = function register(event, context, callback = () => {}) {
   const decoded = decodeURIComponent(event.body);
   const parsed = JSON.parse(decoded);
 
-  console.log(`Register user with email email: ${parsed.email}`);
+  console.log(`Register user with email: ${parsed.email}`);
   helpers
     .createUser(parsed.email, parsed.password)
     .catch(() => Promise.reject(new Error("Could not register user")))
