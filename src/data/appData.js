@@ -41,6 +41,14 @@ const appData = {
               href: "/documents/so1-Zusammenfassung.pdf",
               text: "Zusammenfassung – Kursblock 1",
             },
+            {
+              href: "/documents/so1-Uebungsdossier.pdf",
+              text: "Übungsdossier (PDF) – Kursblock 1",
+            },
+            {
+              href: "/documents/so1-Uebungsdossier.docx",
+              text: "Übungsdossier (Word) – Kursblock 1",
+            },
           ],
         },
         section12: {
@@ -50,16 +58,6 @@ const appData = {
             videoName: "(Video 1.1)",
           },
           video: { ref: "https://player.vimeo.com/video/395825527" },
-          documents: [
-            {
-              href: "/documents/so1-Uebungsdossier.docx",
-              text: "Übungsdossier (Word) – Kursblock 1",
-            },
-            {
-              href: "/documents/so1-Uebungsdossier.pdf",
-              text: "Übungsdossier (PDF) – Kursblock 1",
-            },
-          ],
         },
         section13: {
           id: 2,
