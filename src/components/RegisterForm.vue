@@ -3,6 +3,7 @@
     <div class="form-entry form-entry--fullwidth">
       <label class="form-entry__label" for="form__email">E-Mail-Adresse*</label>
       <input
+        :disabled="isDisabled"
         class="form-entry__input"
         type="email"
         name="email"
@@ -13,6 +14,7 @@
     <div class="form-entry form-entry--halfwidth form-entry--password">
       <label class="form-entry__label" for="form__password">Passwort*</label>
       <input
+        :disabled="isDisabled"
         class="form-entry__input"
         type="password"
         name="password"
@@ -23,6 +25,7 @@
     <div class="form-entry form-entry--halfwidth form-entry--password">
       <label class="form-entry__label" for="form__confirm">Bestätigen*</label>
       <input
+        :disabled="isDisabled"
         class="form-entry__input"
         type="password"
         name="confirm"
@@ -44,6 +47,9 @@ import RouteVue from "./RouteVue.vue";
 
 export default {
   components: { RouteVue },
+  data: () => {
+    return { isDisabled: false };
+  },
   methods: {
     handleSubmit(event) {
       const form = this.getForm();
@@ -51,7 +57,7 @@ export default {
       if (form.checkValidity()) {
         const data = getData(form.elements);
         submitForm(data);
-        form.reset();
+        this.isDisabled = true;
       }
     },
     getForm() {
