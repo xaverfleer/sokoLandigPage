@@ -3,10 +3,8 @@
     <Header :routes="registerData.routes" />
     <main>
       <section class="section section--subscription" id="subscription">
-        <div class="section__subsection">
-          <h2 class="section__header">Konto erstellen</h2>
-          <RegisterForm />
-        </div>
+        <h2 class="section__header">Konto erstellen</h2>
+        <RegisterForm />
       </section>
     </main>
     <Footer />
