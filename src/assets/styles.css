@@ -34,7 +34,7 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  text-align: center;
+  margin-top: 1em;
 }
 
 html {
@@ -42,7 +42,7 @@ html {
 }
 
 main {
-  padding: 10px 0;
+  margin: 1em 0;
 }
 
 .block__supertitle {
@@ -59,6 +59,7 @@ main {
   display: flex;
   justify-content: center;
   margin: 1em;
+  text-align: center;
 }
 
 .button.button--left {
@@ -436,7 +437,7 @@ main {
 }
 
 .section {
-  padding: 4em 1em 1em;
+  padding: 2em 1em 1em;
   border-radius: 5px;
 }
 
@@ -453,10 +454,7 @@ main {
   background-color: #f6ede2;
   border-radius: 5px;
   transform: rotate(-2deg);
-}
-
-.section__subsection {
-  margin: 2em 1em;
+  margin: 3em 1em;
 }
 
 .ul--3-dots {
