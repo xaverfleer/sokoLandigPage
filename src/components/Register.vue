@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <Header :routes="registerData.routes" />
+    <Header :routes="$root.appData.standardNavRoutes" />
     <main>
       <section class="section section--subscription" id="subscription">
         <h2 class="section__header">Konto erstellen</h2>
@@ -21,11 +21,6 @@ export default {
     Footer,
     Header,
     RegisterForm,
-  },
-  computed: {
-    registerData() {
-      return this.$root.appData.register;
-    },
   },
   created() {
     document.title = `Konto erstellen | so* kommunizieren`;

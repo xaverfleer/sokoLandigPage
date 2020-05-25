@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <Header :routes="loginData.routes" />
+    <Header :routes="$root.appData.standardNavRoutes" />
     <main>
       <section class="section section--subscription" id="subscription">
         <h2 class="section__header">Anmelden</h2>
@@ -21,11 +21,6 @@ export default {
     Footer,
     Header,
     LoginForm,
-  },
-  computed: {
-    loginData() {
-      return this.$root.appData.login;
-    },
   },
   created() {
     document.title = `Anmelden | so* kommunizieren`;

@@ -672,18 +672,6 @@ const appData = {
       block05: routes.block05,
     },
   },
-  login: {
-    routes: {
-      landingPage: routes.landingPage,
-      kurs: { ...routes.kurs, isPrimary: true },
-    },
-  },
-  register: {
-    routes: {
-      landingPage: routes.landingPage,
-      kurs: { ...routes.kurs, isPrimary: true },
-    },
-  },
   buttons: {
     cta05Primary: {
       text: "Jetzt buchen",
@@ -697,6 +685,10 @@ const appData = {
       logEvent: "Jetzt buchen",
       isPrimary: false,
     },
+  },
+  standardNavRoutes: {
+    landingPage: routes.landingPage,
+    kurs: { ...routes.kurs, isPrimary: true },
   },
   routes,
 };
