@@ -1,5 +1,5 @@
 const faunadb = require("faunadb");
-const { log } = require("./private/logging");
+const logging = require("./private/logging");
 
 const db = {
   fetchUser(confirmationCode) {
@@ -20,14 +20,14 @@ const db = {
 function responseHandlers(callback) {
   return {
     failed(e) {
-      log("End confirm email wit failure");
+      logging.log("End confirm email wit failure");
       callback(e, {
         statusCode: 500,
         body: `Failed with error: + ${e.message}`,
       });
     },
     success() {
-      log("End confirm email successfully");
+      logging.log("End confirm email successfully");
       callback(null, {
         statusCode: 200,
         body: "ok",
@@ -36,33 +36,26 @@ function responseHandlers(callback) {
   };
 }
 
-const helpers = {
-  logAndReject(error) {
-    log(`Error: ${error}`);
-    return Promise.reject(new Error("Failed"));
-  },
-};
-
 exports.handler = function register(event, context, callback) {
-  log("Start confirm email");
+  logging.log("Start confirm email");
 
   const respond = responseHandlers(callback);
   const { confirmationCode } = event.queryStringParameters;
   const decoded = decodeURIComponent(confirmationCode);
 
-  log(`Requesting user with confirmationCode: ${decoded}`);
+  logging.log(`Requesting user with confirmationCode: ${decoded}`);
   db.fetchUser(decoded)
-    .catch(helpers.logAndReject)
+    .catch(logging.logAndReject)
     .then((fetched) => {
       const dbUser = fetched.data;
-      log(`Retrieved user with email: ${dbUser.email}`);
+      logging.log(`Retrieved user with email: ${dbUser.email}`);
 
       const paramObject = {
         data: { confirmationCode: null, isConfirmed: true },
       };
       return db.updateUser(fetched.ref, paramObject);
     })
-    .catch(helpers.logAndReject)
+    .catch(logging.logAndReject)
     .then(respond.success)
     .catch((e) => respond.failed(e));
 };

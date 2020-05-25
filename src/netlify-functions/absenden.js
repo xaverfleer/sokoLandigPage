@@ -9,13 +9,13 @@
 // }
 
 const sgMail = require("@sendgrid/mail");
-const { log } = require("./private/logging");
+const logging = require("./private/logging");
 
 exports.handler = function absenden(event, context, callback) {
-  log("starting");
+  logging.log("starting");
 
   const decoded = decodeURIComponent(event.body);
-  log(`decoded: ${decoded}`);
+  logging.log(`decoded: ${decoded}`);
 
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   const msg = {
@@ -24,7 +24,7 @@ exports.handler = function absenden(event, context, callback) {
     subject: "Subscription for Early-Bird course",
     text: decoded,
   };
-  log("sending email");
+  logging.log("sending email");
 
   sgMail
     .send(msg)
@@ -33,13 +33,13 @@ exports.handler = function absenden(event, context, callback) {
         statusCode: 200,
         body: "Somebody subscribed.",
       });
-      log("success");
+      logging.log("success");
     })
     .catch(function handleError(e) {
       callback(e, {
         statusCode: 500,
         body: `failed: + ${e}`,
       });
-      log("failure");
+      logging.log("failure");
     });
 };

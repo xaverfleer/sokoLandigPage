@@ -10,7 +10,7 @@
 const faunadb = require("faunadb");
 const crypto = require("crypto");
 const sgMail = require("@sendgrid/mail");
-const { log } = require("./private/logging");
+const logging = require("./private/logging");
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
@@ -19,7 +19,7 @@ require("encoding");
 
 const helpers = {
   composeUser(email, password) {
-    log("starting `createUser`");
+    logging.log("starting `createUser`");
     const salt = crypto.randomBytes(16).toString("base64");
     const confirmationCode = crypto.randomBytes(16).toString("base64");
     const isConfirmed = false;
@@ -56,12 +56,12 @@ const helpers = {
 };
 
 exports.handler = function register(event, context, callback = () => {}) {
-  log("Start registering");
+  logging.log("Start registering");
 
   const decoded = decodeURIComponent(event.body);
   const parsed = JSON.parse(decoded);
 
-  log(`Register user with email: ${parsed.email}`);
+  logging.log(`Register user with email: ${parsed.email}`);
   helpers
     .createUser(parsed.email, parsed.password)
     .catch(() => Promise.reject(new Error("Could not register user")))

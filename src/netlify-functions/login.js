@@ -1,6 +1,6 @@
 const faunadb = require("faunadb");
 const crypto = require("crypto");
-const { log } = require("./private/logging");
+const logging = require("./private/logging");
 
 const helpers = {
   parseEventBody(body) {
@@ -60,21 +60,21 @@ function responseHandlers(callback) {
 // Event format [src](https://docs.netlify.com/functions/build-with-javascript/#format)
 exports.handler = function register(event, context, callback) {
   const respond = responseHandlers(callback);
-  log("Start login process");
+  logging.log("Start login process");
   const { email, password } = helpers.parseEventBody(event.body);
 
-  log(`Requesting user with email: ${email}`);
+  logging.log(`Requesting user with email: ${email}`);
   db.fetchUser(email)
     .catch(() => Promise.reject(new Error("Unauthorized")))
     .then((fetched) => {
       const dbUser = fetched.data;
-      log(`Retrieved user with email: ${dbUser.email}`);
+      logging.log(`Retrieved user with email: ${dbUser.email}`);
       const correct = helpers.verifyPassword(
         password,
         dbUser.salt,
         dbUser.hash
       );
-      log(`Password is ${correct ? "correct" : "invalid"}`);
+      logging.log(`Password is ${correct ? "correct" : "invalid"}`);
       return correct
         ? Promise.resolve(dbUser.email)
         : Promise.reject(new Error("Unauthorized"));
@@ -85,7 +85,7 @@ exports.handler = function register(event, context, callback) {
       Promise.reject(new Error(e.message || "Could not create session"))
     )
     .then((response) => {
-      log(`Successfully logged in.`);
+      logging.log(`Successfully logged in.`);
 
       return Promise.resolve({ sessionId: response.data.sessionId });
     })
