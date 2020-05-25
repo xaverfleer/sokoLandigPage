@@ -1,5 +1,6 @@
 const faunadb = require("faunadb");
 const logging = require("./private/logging");
+const responseHandlers = require("./private/responseHandlers");
 
 const db = {
   fetchUser(confirmationCode) {
@@ -16,25 +17,6 @@ const db = {
     return client.query(q.Update(ref, paramObject));
   },
 };
-
-function responseHandlers(callback) {
-  return {
-    failed(e) {
-      logging.log("End confirm email wit failure");
-      callback(e, {
-        statusCode: 500,
-        body: `Failed with error: + ${e.message}`,
-      });
-    },
-    success() {
-      logging.log("End confirm email successfully");
-      callback(null, {
-        statusCode: 200,
-        body: "ok",
-      });
-    },
-  };
-}
 
 exports.handler = function register(event, context, callback) {
   logging.log("Start confirm email");
@@ -57,5 +39,6 @@ exports.handler = function register(event, context, callback) {
     })
     .catch(logging.logAndReject)
     .then(respond.success)
-    .catch((e) => respond.failed(e));
+    .catch(logging.logAndReject)
+    .catch(respond.failed);
 };

@@ -10,10 +10,12 @@
 
 const sgMail = require("@sendgrid/mail");
 const logging = require("./private/logging");
+const responseHandlers = require("./private/responseHandlers");
 
 exports.handler = function absenden(event, context, callback) {
   logging.log("starting");
 
+  const respond = responseHandlers(callback);
   const decoded = decodeURIComponent(event.body);
   logging.log(`decoded: ${decoded}`);
 
@@ -28,19 +30,8 @@ exports.handler = function absenden(event, context, callback) {
 
   sgMail
     .send(msg)
-    .then(function handleSuccess() {
-      callback(null, {
-        statusCode: 200,
-        body: "Somebody subscribed.",
-      });
-      logging.log("success");
-    })
     .catch(logging.logAndReject)
-    .catch(function handleError(e) {
-      callback(e, {
-        statusCode: 500,
-        body: `failed: + ${e}`,
-      });
-      logging.log("failure");
-    });
+    .then(respond.success)
+    .catch(logging.logAndReject)
+    .catch(respond.failed);
 };

@@ -1,6 +1,7 @@
 const faunadb = require("faunadb");
 const crypto = require("crypto");
 const logging = require("./private/logging");
+const responseHandlers = require("./private/responseHandlers");
 
 const helpers = {
   parseEventBody(body) {
@@ -39,23 +40,6 @@ const db = {
     return promise;
   },
 };
-
-function responseHandlers(callback) {
-  return {
-    failed(e) {
-      callback(e, {
-        statusCode: 500,
-        body: `Failed with error: + ${e.message}`,
-      });
-    },
-    success(data) {
-      callback(null, {
-        statusCode: 200,
-        body: encodeURIComponent(JSON.stringify(data)),
-      });
-    },
-  };
-}
 
 // Event format [src](https://docs.netlify.com/functions/build-with-javascript/#format)
 exports.handler = function register(event, context, callback) {

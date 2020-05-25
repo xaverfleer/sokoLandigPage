@@ -11,6 +11,7 @@ const faunadb = require("faunadb");
 const crypto = require("crypto");
 const sgMail = require("@sendgrid/mail");
 const logging = require("./private/logging");
+const responseHandlers = require("./private/responseHandlers");
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
@@ -58,6 +59,7 @@ const helpers = {
 exports.handler = function register(event, context, callback = () => {}) {
   logging.log("Start registering");
 
+  const respond = responseHandlers(callback);
   const decoded = decodeURIComponent(event.body);
   const parsed = JSON.parse(decoded);
 
@@ -76,19 +78,9 @@ exports.handler = function register(event, context, callback = () => {}) {
       return sgMail.send(message);
     })
     .catch(logging.logAndReject)
-    .then(function handleSuccess() {
-      callback(null, {
-        statusCode: 200,
-        body: "User is registered.",
-      });
-    })
+    .then(respond.success)
     .catch(logging.logAndReject)
-    .catch(function handleError(e) {
-      callback(e, {
-        statusCode: 500,
-        body: `Failed with error: + ${e}`,
-      });
-    });
+    .catch(respond.failed);
 };
 
 exports.__testonly__ = { helpers };
