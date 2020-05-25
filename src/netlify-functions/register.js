@@ -47,9 +47,9 @@ const helpers = {
       to: email,
       from: "kurs@so-kommunizieren.ch",
       subject: "Bestätige deine E-Mail-Adresse",
-      text: `Vielen Dank für deine Anmeldung auf so-kommunizieren.ch.\n\nKlicke auf den Link um dein Konto zu bestätigen: https://so-kommunizieren.ch/.netlify/functions/confirmEmail?confirmationCode=${encodeURIComponent(
+      text: `Vielen Dank für deine Anmeldung auf so-kommunizieren.ch.\n\nKlicke auf den Link um dein Konto zu bestätigen: https://so-kommunizieren.ch/kurs?confirmationCode=${encodeURIComponent(
         cofirmationCode
-      )}\n\nFalls du kein Konto erstellen wolltest, kannst du diese E-Mail ignorieren.`,
+      )}#/confirm-email/\n\nFalls du kein Konto erstellen wolltest, kannst du diese E-Mail ignorieren.`,
     };
     return Promise.resolve({ message });
   },
