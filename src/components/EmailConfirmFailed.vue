@@ -18,7 +18,7 @@
             >Zum Kurs</router-link
           >
           oder
-          <a href="/index.html">zur Startseite</a>
+          <a href="/index.html">zur Startseite.</a>
         </p>
       </section>
     </main>
