@@ -65,7 +65,7 @@ exports.handler = function register(event, context, callback) {
 
   logging.log(`Requesting user with email: ${email}`);
   db.fetchUser(email)
-    .catch(() => Promise.reject(new Error("Unauthorized")))
+    .catch(logging.logAndReject)
     .then((fetched) => {
       const dbUser = fetched.data;
       logging.log(`Retrieved user with email: ${dbUser.email}`);
@@ -79,17 +79,15 @@ exports.handler = function register(event, context, callback) {
         ? Promise.resolve(dbUser.email)
         : Promise.reject(new Error("Unauthorized"));
     })
-    .catch((e = {}) => Promise.reject(new Error(e.message || "Unauthorized")))
+    .catch(logging.logAndReject)
     .then(db.createSession)
-    .catch((e = {}) =>
-      Promise.reject(new Error(e.message || "Could not create session"))
-    )
+    .catch(logging.logAndReject)
     .then((response) => {
       logging.log(`Successfully logged in.`);
-
       return Promise.resolve({ sessionId: response.data.sessionId });
     })
     .then(respond.success)
+    .catch(logging.logAndReject)
     .catch(respond.failed);
 };
 

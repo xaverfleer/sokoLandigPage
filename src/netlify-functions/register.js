@@ -64,30 +64,25 @@ exports.handler = function register(event, context, callback = () => {}) {
   logging.log(`Register user with email: ${parsed.email}`);
   helpers
     .createUser(parsed.email, parsed.password)
-    .catch(() => Promise.reject(new Error("Could not register user")))
+    .catch(logging.logAndReject)
     .then((response) => {
       return helpers.composeEmail(
         response.data.email,
         response.data.confirmationCode
       );
     })
-    .catch((e) =>
-      Promise.reject(new Error(e.message || "Could not compose user"))
-    )
+    .catch(logging.logAndReject)
     .then(({ message }) => {
       return sgMail.send(message);
     })
-    .catch((e) =>
-      Promise.reject(
-        new Error(e.message || "Could not send confirmation email")
-      )
-    )
+    .catch(logging.logAndReject)
     .then(function handleSuccess() {
       callback(null, {
         statusCode: 200,
         body: "User is registered.",
       });
     })
+    .catch(logging.logAndReject)
     .catch(function handleError(e) {
       callback(e, {
         statusCode: 500,

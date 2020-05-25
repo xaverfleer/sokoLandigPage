@@ -35,6 +35,7 @@ exports.handler = function absenden(event, context, callback) {
       });
       logging.log("success");
     })
+    .catch(logging.logAndReject)
     .catch(function handleError(e) {
       callback(e, {
         statusCode: 500,
