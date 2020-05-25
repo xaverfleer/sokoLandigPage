@@ -9,11 +9,9 @@
 // }
 const faunadb = require("faunadb");
 const crypto = require("crypto");
-const sgMail = require("@sendgrid/mail");
 const logging = require("./private/logging");
+const mailing = require("./private/mailing");
 const responseHandlers = require("./private/responseHandlers");
-
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 // this i a workaround for issue https://github.com/netlify/netlify-lambda/issues/201
 require("encoding");
@@ -46,7 +44,6 @@ const helpers = {
   composeEmail(email, cofirmationCode) {
     const message = {
       to: email,
-      from: "kurs@so-kommunizieren.ch",
       subject: "Bestätige deine E-Mail-Adresse",
       text: `Vielen Dank für deine Anmeldung auf so-kommunizieren.ch.\n\nKlicke auf den Link um dein Konto zu bestätigen: https://so-kommunizieren.ch/kurs?confirmationCode=${encodeURIComponent(
         cofirmationCode
@@ -75,7 +72,7 @@ exports.handler = function register(event, context, callback = () => {}) {
     })
     .catch(logging.logAndReject)
     .then(({ message }) => {
-      return sgMail.send(message);
+      return mailing.sendEmail(message);
     })
     .catch(logging.logAndReject)
     .then(respond.success)
