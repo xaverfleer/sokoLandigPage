@@ -1,5 +1,5 @@
-/* eslint-disable no-console */
 const faunadb = require("faunadb");
+const { log } = require("./private/logging");
 
 const db = {
   fetchUser(confirmationCode) {
@@ -20,14 +20,14 @@ const db = {
 function responseHandlers(callback) {
   return {
     failed(e) {
-      console.log("End confirm email wit failure");
+      log("End confirm email wit failure");
       callback(e, {
         statusCode: 500,
         body: `Failed with error: + ${e.message}`,
       });
     },
     success() {
-      console.log("End confirm email successfully");
+      log("End confirm email successfully");
       callback(null, {
         statusCode: 200,
         body: "ok",
@@ -38,24 +38,24 @@ function responseHandlers(callback) {
 
 const helpers = {
   logAndReject(error) {
-    console.log(`Error: ${error}`);
+    log(`Error: ${error}`);
     return Promise.reject(new Error("Failed"));
   },
 };
 
 exports.handler = function register(event, context, callback) {
-  console.log("Start confirm email");
+  log("Start confirm email");
 
   const respond = responseHandlers(callback);
   const { confirmationCode } = event.queryStringParameters;
   const decoded = decodeURIComponent(confirmationCode);
 
-  console.log(`Requesting user with confirmationCode: ${decoded}`);
+  log(`Requesting user with confirmationCode: ${decoded}`);
   db.fetchUser(decoded)
     .catch(helpers.logAndReject)
     .then((fetched) => {
       const dbUser = fetched.data;
-      console.log(`Retrieved user with email: ${dbUser.email}`);
+      log(`Retrieved user with email: ${dbUser.email}`);
 
       const paramObject = {
         data: { confirmationCode: null, isConfirmed: true },

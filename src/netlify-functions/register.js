@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 // Event format [src](https://docs.netlify.com/functions/build-with-javascript/#format)
 // {
 //     "path": "Path parameter",
@@ -11,6 +10,7 @@
 const faunadb = require("faunadb");
 const crypto = require("crypto");
 const sgMail = require("@sendgrid/mail");
+const { log } = require("./private/logging");
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
@@ -19,7 +19,7 @@ require("encoding");
 
 const helpers = {
   composeUser(email, password) {
-    console.log("starting `createUser`");
+    log("starting `createUser`");
     const salt = crypto.randomBytes(16).toString("base64");
     const confirmationCode = crypto.randomBytes(16).toString("base64");
     const isConfirmed = false;
@@ -56,12 +56,12 @@ const helpers = {
 };
 
 exports.handler = function register(event, context, callback = () => {}) {
-  console.log("Start registering");
+  log("Start registering");
 
   const decoded = decodeURIComponent(event.body);
   const parsed = JSON.parse(decoded);
 
-  console.log(`Register user with email: ${parsed.email}`);
+  log(`Register user with email: ${parsed.email}`);
   helpers
     .createUser(parsed.email, parsed.password)
     .catch(() => Promise.reject(new Error("Could not register user")))
