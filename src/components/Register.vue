@@ -3,7 +3,7 @@
     <Header :routes="$root.appData.standardNavRoutes" />
     <main>
       <section class="section">
-        <h2 class="section__header">Konto erstellen</h2>
+        <h2>Konto erstellen</h2>
         <RegisterForm />
       </section>
     </main>
