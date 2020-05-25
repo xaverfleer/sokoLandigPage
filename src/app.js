@@ -3,7 +3,10 @@ import Vue from "vue/dist/vue.esm";
 import VueRouter from "vue-router/dist/vue-router.esm";
 import appData from "./data/appData";
 import stateM8t from "./stateManagement";
+import ConfirmEmail from "./components/ConfirmEmail.vue";
 import Course from "./components/Course.vue";
+import EmailConfirmed from "./components/EmailConfirmed.vue";
+import EmailConfirmFailed from "./components/EmailConfirmFailed.vue";
 import Login from "./components/Login.vue";
 import Register from "./components/Register.vue";
 
@@ -11,6 +14,9 @@ Vue.use(VueRouter);
 
 const routes = [
   { path: "/course/:block", component: Course },
+  { path: "/confirm-email", component: ConfirmEmail },
+  { path: "/email-confirm-failed", component: EmailConfirmFailed },
+  { path: "/email-confirmed", component: EmailConfirmed },
   { path: "/login", component: Login },
   { path: "/register", component: Register },
   { path: "/kursblock-1", redirect: "course/block-1" },
