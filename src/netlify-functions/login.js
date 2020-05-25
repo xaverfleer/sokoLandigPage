@@ -43,8 +43,9 @@ const db = {
 
 // Event format [src](https://docs.netlify.com/functions/build-with-javascript/#format)
 exports.handler = function register(event, context, callback) {
+  logging.logStart("Start login");
+
   const respond = responseHandlers(callback);
-  logging.log("Start login process");
   const { email, password } = helpers.parseEventBody(event.body);
 
   logging.log(`Requesting user with email: ${email}`);

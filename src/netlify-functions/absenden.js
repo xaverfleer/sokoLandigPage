@@ -13,7 +13,7 @@ const logging = require("./private/logging");
 const responseHandlers = require("./private/responseHandlers");
 
 exports.handler = function absenden(event, context, callback) {
-  logging.log("starting");
+  logging.logStart("Start absenden");
 
   const respond = responseHandlers(callback);
   const decoded = decodeURIComponent(event.body);

@@ -19,7 +19,7 @@ const db = {
 };
 
 exports.handler = function register(event, context, callback) {
-  logging.log("Start confirm email");
+  logging.logStart("Start confirmEmail");
 
   const respond = responseHandlers(callback);
   const { confirmationCode } = event.queryStringParameters;

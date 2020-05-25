@@ -8,4 +8,8 @@ module.exports = {
     console.log(`Error: ${error && error.message}`);
     return Promise.reject(new Error("Failed"));
   },
+
+  logStart(message) {
+    this.log(`\n\n${message}`);
+  },
 };
