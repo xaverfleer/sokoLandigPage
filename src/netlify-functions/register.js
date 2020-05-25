@@ -55,8 +55,8 @@ const helpers = {
 
 exports.handler = function register(event, context, callback = () => {}) {
   logging.logStart("Start register");
-
   const respond = responseHandlers(callback);
+
   const decoded = decodeURIComponent(event.body);
   const parsed = JSON.parse(decoded);
 

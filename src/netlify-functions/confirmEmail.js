@@ -20,8 +20,8 @@ const db = {
 
 exports.handler = function register(event, context, callback) {
   logging.logStart("Start confirmEmail");
-
   const respond = responseHandlers(callback);
+
   const { confirmationCode } = event.queryStringParameters;
   const decoded = decodeURIComponent(confirmationCode);
 

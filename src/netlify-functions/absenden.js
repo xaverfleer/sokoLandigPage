@@ -14,8 +14,8 @@ const responseHandlers = require("./private/responseHandlers");
 
 exports.handler = function absenden(event, context, callback) {
   logging.logStart("Start absenden");
-
   const respond = responseHandlers(callback);
+
   const decoded = decodeURIComponent(event.body);
   logging.log(`decoded: ${decoded}`);
 
