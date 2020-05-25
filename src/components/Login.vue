@@ -2,7 +2,7 @@
   <div class="page">
     <Header :routes="$root.appData.standardNavRoutes" />
     <main>
-      <section class="section section--subscription" id="subscription">
+      <section class="section">
         <h2 class="section__header">Anmelden</h2>
         <LoginForm />
       </section>
