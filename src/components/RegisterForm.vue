@@ -46,9 +46,7 @@ import helpers from "../helpers";
 
 export default {
   components: { RouteVue },
-  data: () => {
-    return { isDisabled: false };
-  },
+  data: () => ({ isDisabled: false }),
   methods: {
     handleSubmit(event) {
       const form = event.target;
