@@ -16,13 +16,12 @@ exports.handler = function absenden(event, context, callback) {
   logging.logStart("Start absenden");
   const respond = responding.responseHandlers(callback);
 
-  const decoded = decodeURIComponent(event.body);
-  logging.log(`decoded: ${decoded}`);
+  logging.log(`event.body: ${event.body}`);
 
   const msg = {
     to: "xaver.fleer+sokokurs@gmail.com",
     subject: "Subscription for Early-Bird course",
-    text: decoded,
+    text: event.body,
   };
   logging.log("sending email");
 

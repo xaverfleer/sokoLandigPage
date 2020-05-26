@@ -41,9 +41,8 @@ function getData(elements) {
   raw.product = fields[1].checked ? "standard" : "early-bird";
 
   var stringified = JSON.stringify(raw);
-  var encoded = encodeURIComponent(stringified);
 
-  return encoded;
+  return stringified;
 }
 
 var nav = document.querySelector(".nav");
