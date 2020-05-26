@@ -50,16 +50,13 @@ export default {
   },
   methods: {
     handleSubmit(event) {
-      const form = this.getForm();
+      const form = event.target;
 
       if (form.checkValidity()) {
         const data = this.getData(form.elements);
         this.submitForm(data);
         this.isDisabled = true;
       }
-    },
-    getForm() {
-      return document.getElementById("register-form");
     },
     getData(elements) {
       const fields = Array.prototype.slice
