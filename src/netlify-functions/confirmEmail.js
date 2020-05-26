@@ -1,22 +1,6 @@
-const faunadb = require("faunadb");
+const db = require("./private/db");
 const logging = require("./private/logging");
 const responding = require("./private/responding");
-
-const db = {
-  fetchUser(confirmationCode) {
-    const q = faunadb.query;
-    const client = new faunadb.Client({ secret: process.env.FAUNADB_SECRET });
-    const userPromise = client.query(
-      q.Get(q.Match(q.Index("userByConfirmationCode"), confirmationCode))
-    );
-    return userPromise;
-  },
-  updateUser(ref, paramObject) {
-    const q = faunadb.query;
-    const client = new faunadb.Client({ secret: process.env.FAUNADB_SECRET });
-    return client.query(q.Update(ref, paramObject));
-  },
-};
 
 exports.handler = function register(event, context, callback) {
   logging.logStart("Start confirmEmail");
@@ -26,7 +10,7 @@ exports.handler = function register(event, context, callback) {
   const decoded = decodeURIComponent(confirmationCode);
 
   logging.log(`Requesting user with confirmationCode: ${decoded}`);
-  db.fetchUser(decoded)
+  db.userByConfirmationCode(decoded)
     .catch(logging.logAndReject)
     .then((fetched) => {
       const dbUser = fetched.data;
@@ -35,7 +19,7 @@ exports.handler = function register(event, context, callback) {
       const paramObject = {
         data: { confirmationCode: null, isConfirmed: true },
       };
-      return db.updateUser(fetched.ref, paramObject);
+      return db.updateDocument(fetchedUser.ref, paramObject);
     })
     .catch(logging.logAndReject)
     .then(respond.success)
