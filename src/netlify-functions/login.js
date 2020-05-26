@@ -1,5 +1,5 @@
-const faunadb = require("faunadb");
 const crypto = require("crypto");
+const db = require("./private/db");
 const logging = require("./private/logging");
 const responding = require("./private/responding");
 
@@ -16,29 +16,7 @@ const helpers = {
       .digest("hex");
     return hash === dbHash;
   },
-};
-
-const db = {
-  fetchUser(email) {
-    const q = faunadb.query;
-    const client = new faunadb.Client({ secret: process.env.FAUNADB_SECRET });
-    const userPromise = client.query(
-      q.Get(q.Match(q.Index("userByEmail"), email))
-    );
-    return userPromise;
-  },
-  createSession(email) {
-    const q = faunadb.query;
-    const client = new faunadb.Client({ secret: process.env.FAUNADB_SECRET });
-    const payload = {
-      sessionId: crypto.randomBytes(16).toString("base64"),
-      email,
-    };
-    const promise = client.query(
-      q.Create(q.Collection("sessions"), { data: payload })
-    );
-    return promise;
-  },
+  createSessionId: () => crypto.randomBytes(16).toString("base64"),
 };
 
 // Event format [src](https://docs.netlify.com/functions/build-with-javascript/#format)
@@ -49,7 +27,7 @@ exports.handler = function register(event, context, callback) {
   const { email, password } = helpers.parseEventBody(event.body);
 
   logging.log(`Requesting user with email: ${email}`);
-  db.fetchUser(email)
+  db.userByEmail(email)
     .catch(logging.logAndReject)
     .then((fetched) => {
       const dbUser = fetched.data;
@@ -61,7 +39,9 @@ exports.handler = function register(event, context, callback) {
       );
       logging.log(`Password is ${correct ? "correct" : "invalid"}`);
       return correct
-        ? Promise.resolve(dbUser.email)
+        ? Promise.resolve({
+            data: { email: dbUser.email, sessionId: helpers.createSessionId() },
+          })
         : Promise.reject(new Error("Unauthorized"));
     })
     .catch(logging.logAndReject)

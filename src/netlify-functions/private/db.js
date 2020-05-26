@@ -10,6 +10,10 @@ module.exports = {
     const client = getClient();
     return client.query(q.Create(q.Collection("users"), paramObject));
   },
+  createSession(paramObject) {
+    const client = getClient();
+    return client.query(q.Create(q.Collection("sessions"), paramObject));
+  },
   doesUserExist(email) {
     return this.userByEmail(email)
       .then(() => true)
