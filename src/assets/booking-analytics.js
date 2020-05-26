@@ -34,13 +34,14 @@ function submitForm(data) {
 function getData(elements) {
   var fields = [].slice.call(elements);
 
-  var raw = fields.slice(2).reduce(function(acc, elem) {
-    acc[elem.name] = elem.value;
-    return acc;
-  }, {});
-  raw.product = fields[1].checked ? "standard" : "early-bird";
+  const data = fields
+    .filter((elem) => elem.nodeName === "INPUT" || elem.nodeName === "TEXTAREA")
+    .filter((elem) => elem.type !== "radio" || elem.checked === true)
+    .reduce((acc, elem) => {
+      return { ...acc, [elem.name]: elem.value };
+    }, {});
 
-  var stringified = JSON.stringify(raw);
+  var stringified = JSON.stringify(data);
 
   return stringified;
 }
