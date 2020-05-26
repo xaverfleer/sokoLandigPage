@@ -12,9 +12,8 @@ exports.handler = function register(event, context, callback) {
   logging.log(`Requesting user with confirmationCode: ${decoded}`);
   db.userByConfirmationCode(decoded)
     .catch(logging.logAndReject)
-    .then((fetched) => {
-      const dbUser = fetched.data;
-      logging.log(`Retrieved user with email: ${dbUser.email}`);
+    .then((fetchedUser) => {
+      logging.log(`Retrieved user with email: ${fetchedUser.data.email}`);
 
       const paramObject = {
         data: { confirmationCode: null, isConfirmed: true },
