@@ -19,6 +19,11 @@ module.exports = {
       .then(() => true)
       .catch(() => false);
   },
+  doesSessionExist(email) {
+    return this.sessionByEmail(email)
+      .then(() => true)
+      .catch(() => false);
+  },
   userByConfirmationCode(confirmationCode) {
     const client = getClient();
     return client.query(
@@ -36,5 +41,9 @@ module.exports = {
 
     const client = getClient();
     return client.query(q.Update(ref, paramObjWithTimestamp));
+  },
+  sessionByEmail(email) {
+    const client = getClient();
+    return client.query(q.Get(q.Match(q.Index("sessionByEmail"), email)));
   },
 };
