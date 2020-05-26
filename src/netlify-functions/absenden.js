@@ -10,11 +10,11 @@
 
 const logging = require("./private/logging");
 const mailing = require("./private/mailing");
-const responseHandlers = require("./private/responseHandlers");
+const responding = require("./private/responding");
 
 exports.handler = function absenden(event, context, callback) {
   logging.logStart("Start absenden");
-  const respond = responseHandlers(callback);
+  const respond = responding.responseHandlers(callback);
 
   const decoded = decodeURIComponent(event.body);
   logging.log(`decoded: ${decoded}`);

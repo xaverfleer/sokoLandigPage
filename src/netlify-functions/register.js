@@ -11,7 +11,7 @@ const faunadb = require("faunadb");
 const crypto = require("crypto");
 const logging = require("./private/logging");
 const mailing = require("./private/mailing");
-const responseHandlers = require("./private/responseHandlers");
+const responding = require("./private/responding");
 
 // this i a workaround for issue https://github.com/netlify/netlify-lambda/issues/201
 require("encoding");
@@ -55,7 +55,7 @@ const helpers = {
 
 exports.handler = function register(event, context, callback = () => {}) {
   logging.logStart("Start register");
-  const respond = responseHandlers(callback);
+  const respond = responding.responseHandlers(callback);
 
   const decoded = decodeURIComponent(event.body);
   const parsed = JSON.parse(decoded);

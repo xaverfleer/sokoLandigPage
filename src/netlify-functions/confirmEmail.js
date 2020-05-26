@@ -1,6 +1,6 @@
 const faunadb = require("faunadb");
 const logging = require("./private/logging");
-const responseHandlers = require("./private/responseHandlers");
+const responding = require("./private/responding");
 
 const db = {
   fetchUser(confirmationCode) {
@@ -20,7 +20,7 @@ const db = {
 
 exports.handler = function register(event, context, callback) {
   logging.logStart("Start confirmEmail");
-  const respond = responseHandlers(callback);
+  const respond = responding.responseHandlers(callback);
 
   const { confirmationCode } = event.queryStringParameters;
   const decoded = decodeURIComponent(confirmationCode);

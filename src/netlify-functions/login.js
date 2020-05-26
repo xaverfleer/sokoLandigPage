@@ -1,7 +1,7 @@
 const faunadb = require("faunadb");
 const crypto = require("crypto");
 const logging = require("./private/logging");
-const responseHandlers = require("./private/responseHandlers");
+const responding = require("./private/responding");
 
 const helpers = {
   parseEventBody(body) {
@@ -44,7 +44,7 @@ const db = {
 // Event format [src](https://docs.netlify.com/functions/build-with-javascript/#format)
 exports.handler = function register(event, context, callback) {
   logging.logStart("Start login");
-  const respond = responseHandlers(callback);
+  const respond = responding.responseHandlers(callback);
 
   const { email, password } = helpers.parseEventBody(event.body);
 
