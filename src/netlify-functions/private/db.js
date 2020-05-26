@@ -30,7 +30,11 @@ module.exports = {
     return client.query(q.Get(q.Match(q.Index("userByEmail"), email)));
   },
   updateDocument(ref, paramObject) {
+    const paramObjWithTimestamp = paramObject || {};
+    paramObjWithTimestamp.data = paramObjWithTimestamp.data || {};
+    paramObjWithTimestamp.data.timestamp = new Date().toISOString();
+
     const client = getClient();
-    return client.query(q.Update(ref, paramObject));
+    return client.query(q.Update(ref, paramObjWithTimestamp));
   },
 };
