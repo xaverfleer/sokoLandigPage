@@ -4,10 +4,10 @@
     <main>
       <section class="section">
         <h2>Konto ist erfolgreich erstellt</h2>
-        <p>Vielen Dank für die Anmeldung.</p>
+        <p>Vielen Dank.</p>
         <p>
-          Wir haben dir per E-Mail einen Link gesendet. Bitte Bestätige deine
-          E-Mail-Adresse mit diesem Link.
+          Wir haben dir per E-Mail einen Link gesendet. Bitte bestätige deine
+          E-Mail-Adresse mit dem gesendeten Link.
         </p>
         <p>
           <router-link :to="$root.appData.routes.block01.to"
