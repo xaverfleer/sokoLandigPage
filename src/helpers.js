@@ -1,4 +1,4 @@
-export function formToFormData(form) {
+export function formToData(form) {
   const elems = form.elements;
   const fields = [].slice.call(elems);
 
@@ -14,4 +14,4 @@ export function formToFormData(form) {
   return data;
 }
 
-export default { formToFormData };
+export default { formToData };
