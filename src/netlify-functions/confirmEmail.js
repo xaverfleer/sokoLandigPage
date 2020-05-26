@@ -21,6 +21,7 @@ exports.handler = function register(event, context, callback) {
       return db.updateDocument(fetchedUser.ref, paramObject);
     })
     .catch(logging.logAndReject)
+    .then(() => "success")
     .then(respond.success)
     .catch(logging.logAndReject)
     .catch(respond.failed);

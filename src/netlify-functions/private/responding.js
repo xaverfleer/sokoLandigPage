@@ -7,10 +7,10 @@ module.exports = {
           body: `Failed with error: + ${e.message}`,
         });
       },
-      success() {
+      success(payload) {
         callback(null, {
           statusCode: 200,
-          body: "ok",
+          body: payload,
         });
       },
     };

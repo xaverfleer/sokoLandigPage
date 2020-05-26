@@ -76,6 +76,7 @@ exports.handler = function register(event, context, callback = () => {}) {
       return mailing.sendEmail(message);
     })
     .catch(logging.logAndReject)
+    .then(() => "success")
     .then(respond.success)
     .catch(logging.logAndReject)
     .catch(respond.failed);

@@ -69,7 +69,9 @@ exports.handler = function register(event, context, callback) {
     .catch(logging.logAndReject)
     .then((response) => {
       logging.log(`Successfully logged in.`);
-      return Promise.resolve({ sessionId: response.data.sessionId });
+      return Promise.resolve(
+        JSON.stringify({ sessionId: response.data.sessionId })
+      );
     })
     .then(respond.success)
     .catch(logging.logAndReject)
