@@ -38,6 +38,7 @@
 <script>
 import RouteVue from "./RouteVue.vue";
 import helpers from "../helpers";
+import stateManagement from "../stateManagement";
 
 export default {
   components: { RouteVue },
@@ -65,7 +66,7 @@ export default {
             const { sessionId } = JSON.parse(
               decodeURIComponent(xhr.responseText)
             );
-            localStorage.setItem("soko-non-vue", JSON.stringify({ sessionId }));
+            stateManagement.updateSession(sessionId);
             break;
           case 504:
           default:
