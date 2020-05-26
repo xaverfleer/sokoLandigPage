@@ -18,7 +18,6 @@ require("encoding");
 
 const helpers = {
   composeUser(email, password) {
-    logging.log("starting `createUser`");
     const salt = crypto.randomBytes(16).toString("base64");
     const confirmationCode = crypto.randomBytes(16).toString("base64");
     const isConfirmed = false;
