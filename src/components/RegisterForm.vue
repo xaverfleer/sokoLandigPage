@@ -1,5 +1,5 @@
 <template>
-  <form class="form" id="register-form">
+  <form v-on:submit.prevent="handleSubmit" class="form" id="register-form">
     <div class="form-entry form-entry--fullwidth">
       <label class="form-entry__label" for="form__email">E-Mail-Adresse*</label>
       <input
@@ -35,9 +35,7 @@
     </div>
     <div class="buttons form__buttons form-buttons--dual">
       <RouteVue :info="$root.appData.routes.login" />
-      <button @click="handleSubmit" class="button button--primary">
-        Weiter
-      </button>
+      <button class="button button--primary">Weiter</button>
     </div>
   </form>
 </template>
