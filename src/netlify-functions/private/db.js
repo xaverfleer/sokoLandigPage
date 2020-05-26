@@ -10,11 +10,20 @@ module.exports = {
     const client = getClient();
     return client.query(q.Create(q.Collection("users"), paramObject));
   },
+  doesUserExist(email) {
+    return this.userByEmail(email)
+      .then(() => true)
+      .catch(() => false);
+  },
   userByConfirmationCode(confirmationCode) {
     const client = getClient();
     return client.query(
       q.Get(q.Match(q.Index("userByConfirmationCode"), confirmationCode))
     );
+  },
+  userByEmail(email) {
+    const client = getClient();
+    return client.query(q.Get(q.Match(q.Index("userByEmail"), email)));
   },
   updateDocument(ref, paramObject) {
     const client = getClient();

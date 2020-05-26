@@ -49,7 +49,17 @@ exports.handler = function register(event, context, callback = () => {}) {
 
   logging.log(`Register user with email: ${parsed.email}`);
   const newUserParams = helpers.composeUser(parsed.email, parsed.password);
-  db.createUser(newUserParams)
+
+  logging.log(`Check if user exists. User email: ${parsed.email}`);
+  db.doesUserExist(parsed.email)
+    .then((doesUserExist) => {
+      logging.log(`User${doesUserExist ? " DOES" : " does NOT"} exist.`);
+      return doesUserExist
+        ? Promise.reject(new Error("User already exists"))
+        : Promise.resolve(newUserParams);
+    })
+    .catch(logging.logAndReject)
+    .then((newUserParams) => db.createUser())
     .catch(logging.logAndReject)
     .then((response) => {
       return helpers.composeEmail(
