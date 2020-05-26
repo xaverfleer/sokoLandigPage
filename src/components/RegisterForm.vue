@@ -1,5 +1,5 @@
 <template>
-  <form v-on:submit.prevent="handleSubmit" class="form" id="register-form">
+  <form @submit.prevent="handleSubmit" class="form" id="register-form">
     <div class="form-entry form-entry--fullwidth">
       <label class="form-entry__label" for="form__email">E-Mail-Adresse*</label>
       <input
