@@ -72,7 +72,6 @@ function submitForm(data) {
   xhr.send(data);
 
   xhr.addEventListener("load", () => {
-    debugger;
     switch (xhr.status) {
       case "200":
         const { sessionId } = JSON.parse(decodeURIComponent(xhr.responseText));
