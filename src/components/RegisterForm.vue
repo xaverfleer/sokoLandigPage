@@ -42,6 +42,7 @@
 
 <script>
 import RouteVue from "./RouteVue.vue";
+import helpers from "../helpers";
 
 export default {
   components: { RouteVue },
@@ -53,20 +54,13 @@ export default {
       const form = event.target;
 
       if (form.checkValidity()) {
-        const data = this.getData(form.elements);
+        const data = this.getData(form);
         this.submitForm(data);
         this.isDisabled = true;
       }
     },
-    getData(elements) {
-      const fields = Array.prototype.slice
-        .call(elements)
-        .filter((elem) => elem.nodeName === "INPUT");
-
-      const raw = fields.reduce(function addField(acc, elem) {
-        acc[elem.name] = elem.value;
-        return acc;
-      }, {});
+    getData(form) {
+      const raw = helpers.formToFormData(form);
 
       const stringified = JSON.stringify(raw);
       const encoded = encodeURIComponent(stringified);
