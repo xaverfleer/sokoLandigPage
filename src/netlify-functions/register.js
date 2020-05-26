@@ -57,8 +57,7 @@ exports.handler = function register(event, context, callback = () => {}) {
   logging.logStart("Start register");
   const respond = responding.responseHandlers(callback);
 
-  const decoded = decodeURIComponent(event.body);
-  const parsed = JSON.parse(decoded);
+  const parsed = JSON.parse(event.body);
 
   logging.log(`Register user with email: ${parsed.email}`);
   helpers

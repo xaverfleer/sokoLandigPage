@@ -54,24 +54,15 @@ export default {
       const form = event.target;
 
       if (form.checkValidity()) {
-        const data = this.getData(form);
-        this.submitForm(data);
+        const payload = JSON.stringify(helpers.formToData(form));
+        this.submitForm(payload);
         this.isDisabled = true;
       }
     },
-    getData(form) {
-      const raw = helpers.formToFormData(form);
-
-      const stringified = JSON.stringify(raw);
-      const encoded = encodeURIComponent(stringified);
-
-      return encoded;
-    },
-
-    submitForm(data) {
+    submitForm(body) {
       const xhr = new XMLHttpRequest();
       xhr.open("POST", ".netlify/functions/register");
-      xhr.send(data);
+      xhr.send(body);
 
       xhr.addEventListener("load", () => {
         switch (xhr.status) {
