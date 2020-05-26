@@ -53,57 +53,55 @@ export default {
       const form = this.getForm();
 
       if (form.checkValidity()) {
-        const data = getData(form.elements);
-        submitForm(data);
+        const data = this.getData(form.elements);
+        this.submitForm(data);
         this.isDisabled = true;
       }
     },
     getForm() {
       return document.getElementById("register-form");
     },
+    getData(elements) {
+      const fields = Array.prototype.slice
+        .call(elements)
+        .filter((elem) => elem.nodeName === "INPUT");
+
+      const raw = fields.reduce(function addField(acc, elem) {
+        acc[elem.name] = elem.value;
+        return acc;
+      }, {});
+
+      const stringified = JSON.stringify(raw);
+      const encoded = encodeURIComponent(stringified);
+
+      return encoded;
+    },
+
+    submitForm(data) {
+      const xhr = new XMLHttpRequest();
+      xhr.open("POST", ".netlify/functions/register");
+      xhr.send(data);
+
+      xhr.addEventListener("load", () => {
+        switch (xhr.status) {
+          case "504":
+            window.alert(
+              `Registrieren fehlgeschlagen./n/nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch`
+            );
+            break;
+          default:
+        }
+      });
+      xhr.addEventListener("error", (xhrEventError) => {
+        window.alert(
+          `Registrierung fehlgeschlagen, bitte erneut versuchen.\n\nBei wiederholtem Fehlschlagen, kontaktiere uns bitte mit folgenden Details: xhrEventError ${JSON.stringify(
+            xhrEventError
+          )}`
+        );
+      });
+    },
   },
 };
-
-function getData(elements) {
-  const fields = Array.prototype.slice
-    .call(elements)
-    .filter((elem) => elem.nodeName === "INPUT");
-
-  const raw = fields.reduce(function addField(acc, elem) {
-    acc[elem.name] = elem.value;
-    return acc;
-  }, {});
-
-  const stringified = JSON.stringify(raw);
-  const encoded = encodeURIComponent(stringified);
-
-  return encoded;
-}
-
-function submitForm(data) {
-  const xhr = new XMLHttpRequest();
-  xhr.open("POST", ".netlify/functions/register");
-  xhr.send(data);
-
-  xhr.addEventListener("load", () => {
-    switch (xhr.status) {
-      case "504":
-        window.alert(
-          `Registrieren fehlgeschlagen./n/nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch`
-        );
-        break;
-      default:
-        window.location = "/registered.html";
-    }
-  });
-  xhr.addEventListener("error", (xhrEventError) => {
-    window.alert(
-      `Registrierung fehlgeschlagen, bitte erneut versuchen.\n\nBei wiederholtem Fehlschlagen, kontaktiere uns bitte mit folgenden Details: xhrEventError ${JSON.stringify(
-        xhrEventError
-      )}`
-    );
-  });
-}
 </script>
 
 <style scoped></style>
