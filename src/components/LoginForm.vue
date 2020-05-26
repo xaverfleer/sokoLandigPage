@@ -1,5 +1,9 @@
 <template>
-  <form class="form form--narrow" id="login-form">
+  <form
+    @submit.prevent="handleSubmit"
+    class="form form--narrow"
+    id="login-form"
+  >
     <div class="form-entry form-entry--fullwidth">
       <label class="form-entry__label" for="form__email">E-Mail-Adresse*</label>
       <input
@@ -24,7 +28,7 @@
     </div>
     <div class="buttons form__buttons form-buttons--dual">
       <RouteVue :info="$root.appData.routes.register" />
-      <button @click="handleSubmit" class="button button--primary">
+      <button class="button button--primary">
         Anmelden
       </button>
     </div>
@@ -33,6 +37,7 @@
 
 <script>
 import RouteVue from "./RouteVue.vue";
+import helpers from "../helpers";
 
 export default {
   components: { RouteVue },
@@ -41,64 +46,46 @@ export default {
   },
   methods: {
     handleSubmit(event) {
-      const form = this.getForm();
+      const form = event.target;
 
       if (form.checkValidity()) {
-        const data = getData(form.elements);
-        submitForm(data);
-        form.reset();
+        const payload = JSON.stringify(helpers.formToData(form));
+        this.submitForm(payload);
+        this.isDisabled = true;
       }
     },
-    getForm() {
-      return document.getElementById("login-form");
+    submitForm(data) {
+      const xhr = new XMLHttpRequest();
+      xhr.open("PUT", ".netlify/functions/login");
+      xhr.send(data);
+
+      xhr.addEventListener("load", () => {
+        switch (xhr.status) {
+          case 200:
+            const { sessionId } = JSON.parse(
+              decodeURIComponent(xhr.responseText)
+            );
+            localStorage.setItem("soko-non-vue", JSON.stringify({ sessionId }));
+            break;
+          case 504:
+          default:
+            window.alert(
+              `Anmelden fehlgeschlagen./n/nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch`
+            );
+            break;
+        }
+      });
+
+      xhr.addEventListener("error", (xhrEventError) => {
+        window.alert(
+          `Anmelden fehlgeschlagen:/n/nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch mit dem dem folgenden Text: xhrEventError ${JSON.stringify(
+            xhrEventError
+          )}`
+        );
+      });
     },
   },
 };
-
-function getData(elements) {
-  const fields = Array.prototype.slice
-    .call(elements)
-    .filter((elem) => elem.nodeName === "INPUT");
-
-  const raw = fields.reduce(function addField(acc, elem) {
-    acc[elem.name] = elem.value;
-    return acc;
-  }, {});
-
-  const stringified = JSON.stringify(raw);
-  const encoded = encodeURIComponent(stringified);
-
-  return encoded;
-}
-
-function submitForm(data) {
-  const xhr = new XMLHttpRequest();
-  xhr.open("PUT", ".netlify/functions/login");
-  xhr.send(data);
-
-  xhr.addEventListener("load", () => {
-    switch (xhr.status) {
-      case "200":
-        const { sessionId } = JSON.parse(decodeURIComponent(xhr.responseText));
-        localStorage.setItem("soko-non-vue", JSON.stringify({ sessionId }));
-        break;
-      case "504":
-      default:
-        window.alert(
-          `Anmelden fehlgeschlagen./n/nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch`
-        );
-        break;
-    }
-  });
-
-  xhr.addEventListener("error", (xhrEventError) => {
-    window.alert(
-      `Anmelden fehlgeschlagen:/n/nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch mit dem dem folgenden Text: xhrEventError ${JSON.stringify(
-        xhrEventError
-      )}`
-    );
-  });
-}
 </script>
 
 <style scoped></style>
