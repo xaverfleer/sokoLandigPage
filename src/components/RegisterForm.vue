@@ -66,13 +66,16 @@ export default {
 
       xhr.addEventListener("load", () => {
         switch (xhr.status) {
-          case "504":
+          case 200:
+            this.$router.push("/registered");
+            break;
+          case 500:
+          case 504:
+          default:
             window.alert(
               `Registrieren fehlgeschlagen./n/nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch`
             );
             break;
-          default:
-            this.$router.push("/registered");
         }
       });
       xhr.addEventListener("error", (xhrEventError) => {
