@@ -90,6 +90,7 @@ export default {
             );
             break;
           default:
+            this.$router.push("/registered");
         }
       });
       xhr.addEventListener("error", (xhrEventError) => {

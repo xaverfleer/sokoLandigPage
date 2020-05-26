@@ -9,6 +9,7 @@ import EmailConfirmed from "./components/EmailConfirmed.vue";
 import EmailConfirmFailed from "./components/EmailConfirmFailed.vue";
 import Login from "./components/Login.vue";
 import Register from "./components/Register.vue";
+import Registered from "./components/Registered.vue";
 
 Vue.use(VueRouter);
 
@@ -19,6 +20,7 @@ const routes = [
   { path: "/email-confirmed", component: EmailConfirmed },
   { path: "/login", component: Login },
   { path: "/register", component: Register },
+  { path: "/registered", component: Registered },
   { path: "/kursblock-1", redirect: "course/block-1" },
   { path: "/kursblock-2", redirect: "course/block-2" },
   { path: "/kursblock-3", redirect: "course/block-3" },
