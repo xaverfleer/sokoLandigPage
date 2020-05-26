@@ -6,6 +6,10 @@ function getClient() {
 }
 
 module.exports = {
+  createUser(paramObject) {
+    const client = getClient();
+    return client.query(q.Create(q.Collection("users"), paramObject));
+  },
   userByConfirmationCode(confirmationCode) {
     const client = getClient();
     return client.query(

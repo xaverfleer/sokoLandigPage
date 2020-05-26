@@ -7,8 +7,8 @@
 //     "body": "A JSON string of the request payload."
 //     "isBase64Encoded": "A boolean flag to indicate if the applicable request payload is Base64-encode"
 // }
-const faunadb = require("faunadb");
 const crypto = require("crypto");
+const db = require("./private/db");
 const logging = require("./private/logging");
 const mailing = require("./private/mailing");
 const responding = require("./private/responding");
@@ -27,18 +27,7 @@ const helpers = {
       .update(password + salt)
       .digest("hex");
 
-    return { email, hash, salt, confirmationCode, isConfirmed };
-  },
-
-  createUser(email, password) {
-    const q = faunadb.query;
-    const client = new faunadb.Client({ secret: process.env.FAUNADB_SECRET });
-
-    const payload = this.composeUser(email, password);
-    const promise = client.query(
-      q.Create(q.Collection("users"), { data: payload })
-    );
-    return promise;
+    return { data: { email, hash, salt, confirmationCode, isConfirmed } };
   },
 
   composeEmail(email, cofirmationCode) {
@@ -60,8 +49,8 @@ exports.handler = function register(event, context, callback = () => {}) {
   const parsed = JSON.parse(event.body);
 
   logging.log(`Register user with email: ${parsed.email}`);
-  helpers
-    .createUser(parsed.email, parsed.password)
+  const newUserParams = helpers.composeUser(parsed.email, parsed.password);
+  db.createUser(newUserParams)
     .catch(logging.logAndReject)
     .then((response) => {
       return helpers.composeEmail(
