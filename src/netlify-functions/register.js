@@ -47,7 +47,6 @@ exports.handler = function register(event, context, callback = () => {}) {
 
   const parsed = JSON.parse(event.body);
 
-  logging.log(`Register user with email: ${parsed.email}`);
   const newUserParams = helpers.composeUser(parsed.email, parsed.password);
 
   logging.log(`Check if user exists. User email: ${parsed.email}`);
@@ -59,9 +58,13 @@ exports.handler = function register(event, context, callback = () => {}) {
         : Promise.resolve(newUserParams);
     })
     .catch(logging.logAndReject)
-    .then((newUserParams) => db.createUser())
+    .then((userParams) => {
+      logging.log(`Create user with email ${userParams.data.email}.`);
+      return db.createUser(userParams);
+    })
     .catch(logging.logAndReject)
     .then((response) => {
+      logging.log(`Created︎ user.\nCompose email.`);
       return helpers.composeEmail(
         response.data.email,
         response.data.confirmationCode
@@ -69,6 +72,7 @@ exports.handler = function register(event, context, callback = () => {}) {
     })
     .catch(logging.logAndReject)
     .then(({ message }) => {
+      logging.log(`Send email.`);
       return mailing.sendEmail(message);
     })
     .catch(logging.logAndReject)
