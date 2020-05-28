@@ -7,7 +7,7 @@
 //     "body": "A JSON string of the request payload."
 //     "isBase64Encoded": "A boolean flag to indicate if the applicable request payload is Base64-encode"
 // }
-const crypto = require("crypto");
+const crypting = require("./private/crypting");
 const db = require("./private/db");
 const logging = require("./private/logging");
 const mailing = require("./private/mailing");
@@ -18,13 +18,10 @@ require("encoding");
 
 const helpers = {
   composeUser(email, password) {
-    const salt = crypto.randomBytes(16).toString("base64");
-    const confirmationCode = crypto.randomBytes(16).toString("base64");
+    const salt = crypting.randomString();
+    const confirmationCode = crypting.randomString();
+    const hash = crypting.hash(password + salt);
     const isConfirmed = false;
-    const hash = crypto
-      .createHash("md5")
-      .update(password + salt)
-      .digest("hex");
 
     return { data: { email, hash, salt, confirmationCode, isConfirmed } };
   },
