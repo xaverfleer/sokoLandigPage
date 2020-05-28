@@ -686,6 +686,14 @@ const appData = {
       isPrimary: false,
     },
   },
+  formEntries: {
+    email: {
+      inputId: "form__email",
+      label: "E-Mail-Adresse*",
+      name: "email",
+      type: "email",
+    },
+  },
   standardNavRoutes: {
     landingPage: routes.landingPage,
     kurs: { ...routes.kurs, isPrimary: true },

@@ -4,17 +4,9 @@
     class="form form--narrow"
     id="login-form"
   >
-    <div class="form-entry form-entry--fullwidth">
-      <label class="form-entry__label" for="form__email">E-Mail-Adresse*</label>
-      <input
-        :disabled="isDisabled"
-        class="form-entry__input"
-        type="email"
-        name="email"
-        id="form__email"
-        required=""
-      />
-    </div>
+    <FormEntry
+      :options="{ ...$root.appData.formEntries.email, fullWidth: true }"
+    />
     <div class="form-entry form-entry--fullwidth form-entry--password">
       <label class="form-entry__label" for="form__password">Passwort*</label>
       <input
@@ -36,12 +28,13 @@
 </template>
 
 <script>
+import FormEntry from "./FormEntry.vue";
 import RouteVue from "./RouteVue.vue";
 import helpers from "../helpers";
 import stateManagement from "../stateManagement";
 
 export default {
-  components: { RouteVue },
+  components: { RouteVue, FormEntry },
   data: () => ({ isDisabled: false }),
   methods: {
     handleSubmit(event) {
