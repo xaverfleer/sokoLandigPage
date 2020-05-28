@@ -1,38 +1,16 @@
 <template>
   <form @submit.prevent="handleSubmit" class="form" id="register-form">
-    <div class="form-entry form-entry--fullwidth">
-      <label class="form-entry__label" for="form__email">E-Mail-Adresse*</label>
-      <input
-        :disabled="isDisabled"
-        class="form-entry__input"
-        type="email"
-        name="email"
-        id="form__email"
-        required=""
-      />
-    </div>
-    <div class="form-entry form-entry--halfwidth form-entry--password">
-      <label class="form-entry__label" for="form__password">Passwort*</label>
-      <input
-        :disabled="isDisabled"
-        class="form-entry__input"
-        type="password"
-        name="password"
-        id="form__password"
-        required=""
-      />
-    </div>
-    <div class="form-entry form-entry--halfwidth form-entry--password">
-      <label class="form-entry__label" for="form__confirm">Bestätigen*</label>
-      <input
-        :disabled="isDisabled"
-        class="form-entry__input"
-        type="password"
-        name="confirm"
-        id="form__confirm"
-        required=""
-      />
-    </div>
+    <FormEntry
+      :options="{ ...$root.appData.formEntries.email, fullWidth: true }"
+    />
+    <FormEntry :options="{ ...$root.appData.formEntries.password }" />
+    <FormEntry
+      :options="{
+        ...$root.appData.formEntries.password,
+        name: 'confirm',
+        inputId: 'form__confirm',
+      }"
+    />
     <div class="buttons form__buttons form-buttons--dual">
       <RouteVue :info="$root.appData.routes.login" />
       <button class="button button--primary">Weiter</button>
