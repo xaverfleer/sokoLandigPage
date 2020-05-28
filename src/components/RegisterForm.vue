@@ -41,11 +41,12 @@
 </template>
 
 <script>
+import FormEntry from "./FormEntry.vue";
 import RouteVue from "./RouteVue.vue";
 import helpers from "../helpers";
 
 export default {
-  components: { RouteVue },
+  components: { FormEntry, RouteVue },
   data: () => ({ isDisabled: false }),
   methods: {
     handleSubmit(event) {
