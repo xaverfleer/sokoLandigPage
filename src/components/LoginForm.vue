@@ -71,6 +71,7 @@ export default {
             window.alert(
               `Anmelden fehlgeschlagen./n/nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch`
             );
+            this.isDisabled = false;
             break;
         }
       });
@@ -81,6 +82,7 @@ export default {
             xhrEventError
           )}`
         );
+        this.isDisabled = false;
       });
     },
   },
