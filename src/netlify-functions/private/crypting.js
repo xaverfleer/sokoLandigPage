@@ -1,12 +1,12 @@
 const crypto = require("crypto");
 
 const fns = {
-  hash (input) {
+  hash(input) {
     return crypto
       .createHash("md5")
       .update(input)
-      .digest("hex"),
-  }
+      .digest("hex");
+  },
   randomString() {
     return crypto.randomBytes(16).toString("base64");
   },
