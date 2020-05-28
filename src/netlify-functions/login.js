@@ -1,4 +1,4 @@
-const crypto = require("crypto");
+const crypting = require("./private/crypting");
 const db = require("./private/db");
 const logging = require("./private/logging");
 const responding = require("./private/responding");
@@ -9,14 +9,6 @@ const helpers = {
     const parsed = JSON.parse(decoded);
     return parsed;
   },
-  verifyPassword(password, dbSalt, dbHash) {
-    const hash = crypto
-      .createHash("md5")
-      .update(password + dbSalt)
-      .digest("hex");
-    return hash === dbHash;
-  },
-  createSessionId: () => crypto.randomBytes(16).toString("base64"),
 };
 
 // Event format [src](https://docs.netlify.com/functions/build-with-javascript/#format)
@@ -31,7 +23,7 @@ exports.handler = function register(event, context, callback) {
     .then((fetched) => {
       const dbUser = fetched.data;
       logging.log(`Retrieved user with email: ${dbUser.email}`);
-      const correct = helpers.verifyPassword(
+      const correct = crypting.verifyPassword(
         password,
         dbUser.salt,
         dbUser.hash
@@ -47,7 +39,7 @@ exports.handler = function register(event, context, callback) {
             .sessionByEmail(email)
             .then((fetched) => db.updateDocument(fetched.ref, {}))
         : db.createSession({
-            data: { email, sessionId: helpers.createSessionId() },
+            data: { email, sessionId: crypting.randomString() },
           });
     })
     .then((response) => {
