@@ -26,9 +26,3 @@ test("helpers.composeUser", (assert) => {
   assert.end();
 });
 
-const raw = { email: "hallo@velo.com", password: "notSafe" };
-const stringified = JSON.stringify(raw);
-const encoded = encodeURIComponent(stringified);
-const input = { body: encoded };
-
-register.handler(input);
