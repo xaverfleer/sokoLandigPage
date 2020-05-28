@@ -6,47 +6,51 @@ function getClient() {
 }
 
 const fns = {
-  createUser(paramObject) {
-    const client = getClient();
-    return client.query(q.Create(q.Collection("users"), paramObject));
-  },
-  createSession(paramObject) {
-    const client = getClient();
-    return client.query(q.Create(q.Collection("sessions"), paramObject));
-  },
-  doesUserExist(email) {
-    return fns
-      .userByEmail(email)
-      .then(() => true)
-      .catch(() => false);
-  },
-  doesSessionExist(email) {
-    return fns
-      .sessionByEmail(email)
-      .then(() => true)
-      .catch(() => false);
-  },
-  userByConfirmationCode(confirmationCode) {
-    const client = getClient();
-    return client.query(
-      q.Get(q.Match(q.Index("userByConfirmationCode"), confirmationCode))
-    );
-  },
-  userByEmail(email) {
-    const client = getClient();
-    return client.query(q.Get(q.Match(q.Index("userByEmail"), email)));
-  },
-  updateDocument(ref, paramObject) {
-    const paramObjWithTimestamp = paramObject || {};
-    paramObjWithTimestamp.data = paramObjWithTimestamp.data || {};
-    paramObjWithTimestamp.data.timestamp = new Date().toISOString();
+  do: {
+    createUser(paramObject) {
+      const client = getClient();
+      return client.query(q.Create(q.Collection("users"), paramObject));
+    },
+    createSession(paramObject) {
+      const client = getClient();
+      return client.query(q.Create(q.Collection("sessions"), paramObject));
+    },
+    updateDocument(ref, paramObject) {
+      const paramObjWithTimestamp = paramObject || {};
+      paramObjWithTimestamp.data = paramObjWithTimestamp.data || {};
+      paramObjWithTimestamp.data.timestamp = new Date().toISOString();
 
-    const client = getClient();
-    return client.query(q.Update(ref, paramObjWithTimestamp));
+      const client = getClient();
+      return client.query(q.Update(ref, paramObjWithTimestamp));
+    },
   },
-  sessionByEmail(email) {
-    const client = getClient();
-    return client.query(q.Get(q.Match(q.Index("sessionByEmail"), email)));
+  get: {
+    doesUserExist(email) {
+      return fns.get
+        .userByEmail(email)
+        .then(() => true)
+        .catch(() => false);
+    },
+    doesSessionExist(email) {
+      return fns.get
+        .sessionByEmail(email)
+        .then(() => true)
+        .catch(() => false);
+    },
+    userByConfirmationCode(confirmationCode) {
+      const client = getClient();
+      return client.query(
+        q.Get(q.Match(q.Index("userByConfirmationCode"), confirmationCode))
+      );
+    },
+    userByEmail(email) {
+      const client = getClient();
+      return client.query(q.Get(q.Match(q.Index("userByEmail"), email)));
+    },
+    sessionByEmail(email) {
+      const client = getClient();
+      return client.query(q.Get(q.Match(q.Index("sessionByEmail"), email)));
+    },
   },
 };
 

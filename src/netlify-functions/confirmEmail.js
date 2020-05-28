@@ -10,14 +10,15 @@ exports.handler = function register(event, context, callback) {
   const decoded = decodeURIComponent(confirmationCode);
 
   logging.log(`Requesting user with confirmationCode: ${decoded}`);
-  db.userByConfirmationCode(decoded)
+  db.get
+    .userByConfirmationCode(decoded)
     .then((fetchedUser) => {
       logging.log(`Retrieved user with email: ${fetchedUser.data.email}`);
 
       const paramObject = {
         data: { confirmationCode: null, isConfirmed: true },
       };
-      return db.updateDocument(fetchedUser.ref, paramObject);
+      return db.do.updateDocument(fetchedUser.ref, paramObject);
     })
     .then(() => "success")
     .catch(logging.logAndReject)

@@ -19,7 +19,8 @@ exports.handler = function register(event, context, callback) {
   const { email, password } = helpers.parseEventBody(event.body);
 
   logging.log(`Requesting user with email: ${email}`);
-  db.userByEmail(email)
+  db.get
+    .userByEmail(email)
     .then((fetched) => {
       const dbUser = fetched.data;
       logging.log(`Retrieved user with email: ${dbUser.email}`);
@@ -31,14 +32,14 @@ exports.handler = function register(event, context, callback) {
       logging.log(`Password is ${correct ? "correct" : "invalid"}`);
       return correct ? dbUser.email : Promise.reject();
     })
-    .then(db.doesSessionExist)
+    .then(db.get.doesSessionExist)
     .then((doesSessionExist) => {
       logging.log(`Session${doesSessionExist ? " DOES" : " does NOT"} exist`);
       return doesSessionExist
         ? db
             .sessionByEmail(email)
-            .then((fetched) => db.updateDocument(fetched.ref, {}))
-        : db.createSession({
+            .then((fetched) => db.do.updateDocument(fetched.ref, {}))
+        : db.do.createSession({
             data: { email, sessionId: crypting.randomString() },
           });
     })

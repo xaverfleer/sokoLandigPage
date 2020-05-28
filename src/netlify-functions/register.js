@@ -47,7 +47,8 @@ exports.handler = function register(event, context, callback = () => {}) {
   const newUserParams = helpers.composeUser(parsed.email, parsed.password);
 
   logging.log(`Check if user exists. User email: ${parsed.email}`);
-  db.doesUserExist(parsed.email)
+  db.get
+    .doesUserExist(parsed.email)
     .then((doesUserExist) => {
       logging.log(`User${doesUserExist ? " DOES" : " does NOT"} exist.`);
       return doesUserExist
@@ -56,7 +57,7 @@ exports.handler = function register(event, context, callback = () => {}) {
     })
     .then((userParams) => {
       logging.log(`Create user with email ${userParams.data.email}.`);
-      return db.createUser(userParams);
+      return db.do.createUser(userParams);
     })
     .then((response) => {
       logging.log(`Created︎ user.\nCompose email.`);
