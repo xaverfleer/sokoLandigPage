@@ -38,14 +38,21 @@ exports.handler = function register(event, context, callback) {
         dbUser.hash
       );
       logging.log(`Password is ${correct ? "correct" : "invalid"}`);
-      return correct
-        ? Promise.resolve({
-            data: { email: dbUser.email, sessionId: helpers.createSessionId() },
-          })
-        : Promise.reject(new Error("Unauthorized"));
+      return correct ? dbUser.email : Promise.reject();
     })
     .catch(logging.logAndReject)
-    .then(db.createSession)
+    .then(db.doesSessionExist)
+    .catch(logging.logAndReject)
+    .then((doesSessionExist) => {
+      logging.log(`Session${doesSessionExist ? " DOES" : " does NOT"} exist`);
+      return doesSessionExist
+        ? db
+            .sessionByEmail(email)
+            .then((fetched) => db.updateDocument(fetched.ref, {}))
+        : db.createSession({
+            data: { email, sessionId: helpers.createSessionId() },
+          });
+    })
     .catch(logging.logAndReject)
     .then((response) => {
       logging.log(`Successfully logged in.`);
