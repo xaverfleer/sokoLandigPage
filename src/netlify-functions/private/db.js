@@ -5,7 +5,7 @@ function getClient() {
   return new faunadb.Client({ secret: process.env.FAUNADB_SECRET });
 }
 
-module.exports = {
+const fns = {
   createUser(paramObject) {
     const client = getClient();
     return client.query(q.Create(q.Collection("users"), paramObject));
@@ -47,3 +47,5 @@ module.exports = {
     return client.query(q.Get(q.Match(q.Index("sessionByEmail"), email)));
   },
 };
+
+module.exports = fns;
