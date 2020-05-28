@@ -27,9 +27,7 @@ exports.handler = function absenden(event, context, callback) {
 
   mailing
     .sendEmail(msg)
-    .catch(logging.logAndReject)
     .then(() => "success")
-    .then(respond.success)
     .catch(logging.logAndReject)
-    .catch(respond.failed);
+    .then(respond.success, respond.failed);
 };

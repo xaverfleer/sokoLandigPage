@@ -57,12 +57,10 @@ exports.handler = function register(event, context, callback = () => {}) {
         ? Promise.reject(new Error("User already exists"))
         : Promise.resolve(newUserParams);
     })
-    .catch(logging.logAndReject)
     .then((userParams) => {
       logging.log(`Create user with email ${userParams.data.email}.`);
       return db.createUser(userParams);
     })
-    .catch(logging.logAndReject)
     .then((response) => {
       logging.log(`Created︎ user.\nCompose email.`);
       return helpers.composeEmail(
@@ -70,16 +68,13 @@ exports.handler = function register(event, context, callback = () => {}) {
         response.data.confirmationCode
       );
     })
-    .catch(logging.logAndReject)
     .then(({ message }) => {
       logging.log(`Send email.`);
       return mailing.sendEmail(message);
     })
-    .catch(logging.logAndReject)
     .then(() => "success")
-    .then(respond.success)
     .catch(logging.logAndReject)
-    .catch(respond.failed);
+    .then(respond.success, respond.failed);
 };
 
 exports.__testonly__ = { helpers };

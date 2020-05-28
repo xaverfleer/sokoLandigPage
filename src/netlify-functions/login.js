@@ -28,7 +28,6 @@ exports.handler = function register(event, context, callback) {
 
   logging.log(`Requesting user with email: ${email}`);
   db.userByEmail(email)
-    .catch(logging.logAndReject)
     .then((fetched) => {
       const dbUser = fetched.data;
       logging.log(`Retrieved user with email: ${dbUser.email}`);
@@ -40,9 +39,7 @@ exports.handler = function register(event, context, callback) {
       logging.log(`Password is ${correct ? "correct" : "invalid"}`);
       return correct ? dbUser.email : Promise.reject();
     })
-    .catch(logging.logAndReject)
     .then(db.doesSessionExist)
-    .catch(logging.logAndReject)
     .then((doesSessionExist) => {
       logging.log(`Session${doesSessionExist ? " DOES" : " does NOT"} exist`);
       return doesSessionExist
@@ -53,16 +50,14 @@ exports.handler = function register(event, context, callback) {
             data: { email, sessionId: helpers.createSessionId() },
           });
     })
-    .catch(logging.logAndReject)
     .then((response) => {
       logging.log(`Successfully logged in.`);
       return Promise.resolve(
         JSON.stringify({ sessionId: response.data.sessionId })
       );
     })
-    .then(respond.success)
     .catch(logging.logAndReject)
-    .catch(respond.failed);
+    .then(respond.success, respond.failed);
 };
 
 exports.__testonly__ = { helpers };

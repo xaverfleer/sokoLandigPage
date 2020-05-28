@@ -11,7 +11,6 @@ exports.handler = function register(event, context, callback) {
 
   logging.log(`Requesting user with confirmationCode: ${decoded}`);
   db.userByConfirmationCode(decoded)
-    .catch(logging.logAndReject)
     .then((fetchedUser) => {
       logging.log(`Retrieved user with email: ${fetchedUser.data.email}`);
 
@@ -20,9 +19,7 @@ exports.handler = function register(event, context, callback) {
       };
       return db.updateDocument(fetchedUser.ref, paramObject);
     })
-    .catch(logging.logAndReject)
     .then(() => "success")
-    .then(respond.success)
     .catch(logging.logAndReject)
-    .catch(respond.failed);
+    .then(respond.success, respond.failed);
 };
