@@ -14,6 +14,14 @@ test("crypting", (assert) => {
       a.strictEqual(target(input).length > 10, true);
       a.end();
     });
+    test("Returns the same result for same input", (a) => {
+      a.strictEqual(target(input), target(input));
+      a.end();
+    });
+    test("Returns a distinct result for a distinct input", (a) => {
+      a.notStrictEqual(target("a"), target("b"));
+      a.end();
+    });
     assert2.end();
   });
   test("randomString", (assert2) => {
