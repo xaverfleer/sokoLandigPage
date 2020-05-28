@@ -15,7 +15,8 @@ const fns = {
     return client.query(q.Create(q.Collection("sessions"), paramObject));
   },
   doesUserExist(email) {
-    return this.userByEmail(email)
+    return fns
+      .userByEmail(email)
       .then(() => true)
       .catch(() => false);
   },
