@@ -20,7 +20,8 @@ const fns = {
       .catch(() => false);
   },
   doesSessionExist(email) {
-    return this.sessionByEmail(email)
+    return fns
+      .sessionByEmail(email)
       .then(() => true)
       .catch(() => false);
   },
