@@ -20,6 +20,7 @@ export default {
       return [
         "form-entry",
         "form-entry--" + (this.options.fullWidth ? "fullwidth" : "halfwidth"),
+        this.options.type === "password" ? "form-entry--password" : "",
       ];
     },
   },

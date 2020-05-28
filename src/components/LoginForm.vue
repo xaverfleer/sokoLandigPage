@@ -7,17 +7,9 @@
     <FormEntry
       :options="{ ...$root.appData.formEntries.email, fullWidth: true }"
     />
-    <div class="form-entry form-entry--fullwidth form-entry--password">
-      <label class="form-entry__label" for="form__password">Passwort*</label>
-      <input
-        :disabled="isDisabled"
-        class="form-entry__input"
-        type="password"
-        name="password"
-        id="form__password"
-        required=""
-      />
-    </div>
+    <FormEntry
+      :options="{ ...$root.appData.formEntries.password, fullWidth: true }"
+    />
     <div class="buttons form__buttons form-buttons--dual">
       <RouteVue :info="$root.appData.routes.register" />
       <button class="button button--primary">

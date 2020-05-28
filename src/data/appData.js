@@ -693,6 +693,12 @@ const appData = {
       name: "email",
       type: "email",
     },
+    password: {
+      inputId: "form__password",
+      label: "Passwort*",
+      name: "password",
+      type: "password",
+    },
   },
   standardNavRoutes: {
     landingPage: routes.landingPage,
