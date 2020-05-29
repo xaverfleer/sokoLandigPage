@@ -72,7 +72,7 @@ export default {
   },
   data: () => ({
     textAreaText:
-      "Soweit bin ich im Kurs: \n\n\nThemen, die bei mir aktuell sind: \n\n\nFeedback/Wünsche: ",
+      "Soweit bin ich im Kurs:\n\n\nThemen, die bei mir aktuell sind:\n\n\nFeedback/Wünsche:\n",
   }),
   methods: {
     handleSubmit(data) {

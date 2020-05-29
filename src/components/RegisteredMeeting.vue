@@ -3,10 +3,10 @@
     <Header :routes="$root.appData.standardNavRoutes" />
     <main>
       <section class="section">
-        <h2>Konto ist erfolgreich erstellt</h2>
+        <h2>Anmeldung erfolgreich</h2>
         <p>Vielen Dank.</p>
         <p>
-          Wir freuen uns auf das Meeting am Freitag. Falls du kurzfristig
+          Wir freuen uns auf das Online-Meeting am Freitag. Falls du kurzfristig
           verhindert bist, gib uns doch bitte per E-Mail oder Whatsapp bescheid.
         </p>
         <p>
