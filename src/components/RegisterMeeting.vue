@@ -5,7 +5,7 @@
       <section class="section">
         <h2>Zum Online-Meeting anmelden</h2>
         <h3 id="meetingDate">Datum: {{ nextMeeting }}</h3>
-        <form>
+          <FormEntry :options="$root.appData.formEntries.name" />
           <FormEntry :options="$root.appData.formEntries.email" />
           <div class="form-entry form-entry--fullwidth">
             <label class="form-entry__label" for="form__comment"

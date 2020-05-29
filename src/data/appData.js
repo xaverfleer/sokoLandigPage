@@ -693,6 +693,12 @@ const appData = {
       name: "email",
       type: "email",
     },
+    name: {
+      inputId: "form__name",
+      label: "Name*",
+      name: "name",
+      type: "text",
+    },
     password: {
       inputId: "form__password",
       label: "Passwort*",
