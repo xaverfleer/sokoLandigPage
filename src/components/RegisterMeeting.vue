@@ -74,6 +74,34 @@ export default {
     textAreaText:
       "Soweit bin ich im Kurs: \n\n\nThemen, die bei mir aktuell sind: \n\n\nFeedback/Wünsche: ",
   }),
+  methods: {
+    handleSubmit(data) {
+      const form = event.target;
+
+      const payload = JSON.stringify(helpers.formToData(form));
+      this.submitForm(payload);
+      this.isDisabled = true;
+    },
+    submitForm(data) {
+      const xhr = new XMLHttpRequest();
+      xhr.open("POST", ".netlify/functions/absenden");
+      xhr.send(data);
+
+      xhr.addEventListener("load", function() {
+        this.$router.push("/registered-meeting");
+        this.isDisabled = false;
+      });
+
+      xhr.addEventListener("error", (xhrEventError) => {
+        window.alert(
+          `Senden fehlgeschlagen, bitte erneut versuchen.\n\nBei wiederholtem Fehlschlagen, kontaktiere uns bitte mit folgenden Details: xhrEventError ${JSON.stringify(
+            xhrEventError
+          )}`
+        );
+        this.isDisabled = false;
+      });
+    },
+  },
 };
 </script>
 
