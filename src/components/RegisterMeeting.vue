@@ -5,6 +5,7 @@
       <section class="section">
         <h2>Zum Online-Meeting anmelden</h2>
         <h3 id="meetingDate">Datum: {{ nextMeeting }}</h3>
+        <form @submit.prevent="handleSubmit">
           <FormEntry :options="$root.appData.formEntries.name" />
           <FormEntry :options="$root.appData.formEntries.email" />
           <div class="form-entry form-entry--fullwidth">
@@ -33,6 +34,7 @@
 import Footer from "./Footer.vue";
 import FormEntry from "./FormEntry.vue";
 import Header from "./Header.vue";
+import helpers from "../helpers";
 
 export default {
   components: {
@@ -87,7 +89,7 @@ export default {
       xhr.open("POST", ".netlify/functions/absenden");
       xhr.send(data);
 
-      xhr.addEventListener("load", function() {
+      xhr.addEventListener("load", () => {
         this.$router.push("/registered-meeting");
         this.isDisabled = false;
       });
