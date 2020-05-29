@@ -6,7 +6,11 @@
         <h2>Zum Online-Meeting anmelden</h2>
         <h3 id="meetingDate">Datum: {{ nextMeeting }}</h3>
         <form>
-          <FormEntry :options="{}" />
+          <FormEntry :options="$root.appData.formEntries.email" />
+          <FormEntry :options="$root.appData.formEntries.password" />
+          <div class="buttons form__buttons">
+            <button class="button button--primary">Anmelden</button>
+          </div>
         </form>
       </section>
     </main>
