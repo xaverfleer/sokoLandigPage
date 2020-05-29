@@ -7,7 +7,18 @@
         <h3 id="meetingDate">Datum: {{ nextMeeting }}</h3>
         <form>
           <FormEntry :options="$root.appData.formEntries.email" />
-          <FormEntry :options="$root.appData.formEntries.password" />
+          <div class="form-entry form-entry--fullwidth">
+            <label class="form-entry__label" for="form__comment"
+              >Kommentar</label
+            >
+            <textarea
+              class="form-entry__input"
+              name="comment"
+              id="form__comment"
+              rows="10"
+              v-model="textAreaText"
+            ></textarea>
+          </div>
           <div class="buttons form__buttons">
             <button class="button button--primary">Anmelden</button>
           </div>
@@ -59,6 +70,10 @@ export default {
   created() {
     document.title = `Anmeldung Online-Meeting | so* kommunizieren`;
   },
+  data: () => ({
+    textAreaText:
+      "Soweit bin ich im Kurs: \n\n\nThemen, die bei mir aktuell sind: \n\n\nFeedback/Wünsche: ",
+  }),
 };
 </script>
 
