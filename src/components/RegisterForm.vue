@@ -8,6 +8,7 @@
       :options="{
         ...$root.appData.formEntries.password,
         name: 'confirm',
+        label: 'Bestätigen*',
         inputId: 'form__confirm',
       }"
     />
