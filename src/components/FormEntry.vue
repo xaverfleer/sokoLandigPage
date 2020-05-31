@@ -1,8 +1,9 @@
 <template>
   <div :class="formEntryClasses">
-    <label class="form-entry__label" :for="options.inputId">{{
-      options.label
-    }}</label>
+    <label class="form-entry__label" :for="options.inputId">
+      <abbr class="form-entry__required" title="Pflichtfeld">* </abbr
+      >{{ options.label }}</label
+    >
     <input
       class="form-entry__input"
       :type="options.type"

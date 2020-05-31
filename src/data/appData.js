@@ -689,25 +689,25 @@ const appData = {
   formEntries: {
     confirm: {
       inputId: "form__confirm",
-      label: "Bestätigen*",
+      label: "Bestätigen",
       name: "confirm",
       type: "password",
     },
     email: {
       inputId: "form__email",
-      label: "E-Mail-Adresse*",
+      label: "E-Mail-Adresse",
       name: "email",
       type: "email",
     },
     name: {
       inputId: "form__name",
-      label: "Name*",
+      label: "Name",
       name: "name",
       type: "text",
     },
     password: {
       inputId: "form__password",
-      label: "Passwort*",
+      label: "Passwort",
       name: "password",
       type: "password",
     },
