@@ -51,5 +51,3 @@
 import ButtonVue from "./ButtonVue.vue";
 export default { components: { ButtonVue } };
 </script>
-
-<style scoped></style>

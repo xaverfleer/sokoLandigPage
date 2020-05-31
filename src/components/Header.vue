@@ -44,5 +44,3 @@ export default {
   props: ["routes"],
 };
 </script>
-
-<style scoped></style>

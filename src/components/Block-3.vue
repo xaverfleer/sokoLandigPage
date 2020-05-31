@@ -13,5 +13,3 @@ export default {
   props: ["course"],
 };
 </script>
-
-<style scoped></style>
