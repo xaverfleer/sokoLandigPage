@@ -86,7 +86,7 @@ export default {
     },
     submitForm(data) {
       const xhr = new XMLHttpRequest();
-      xhr.open("POST", ".netlify/functions/absenden");
+      xhr.open("POST", ".netlify/functions/registerMeeting");
       xhr.send(data);
 
       xhr.addEventListener("load", () => {
