@@ -1,57 +1,55 @@
 /* global amplitude, document,  window */
 import Vue from "vue/dist/vue.esm";
 import VueRouter from "vue-router/dist/vue-router.esm";
-import appData from "./appData";
-import Header from "./components/Header.vue";
-import Footer from "./components/Footer.vue";
+import appData from "./data/appData";
 import stateM8t from "./stateManagement";
-import Block1 from "./components/Block-1.vue";
-import Block2 from "./components/Block-2.vue";
-import Block3 from "./components/Block-3.vue";
-import Block4 from "./components/Block-4.vue";
-import Block5 from "./components/Block-5.vue";
+import Account from "./components/Account.vue";
+import ConfirmEmail from "./components/ConfirmEmail.vue";
+import Course from "./components/Course.vue";
+import EmailConfirmed from "./components/EmailConfirmed.vue";
+import EmailConfirmFailed from "./components/EmailConfirmFailed.vue";
+import Login from "./components/Login.vue";
+import Register from "./components/Register.vue";
+import RegisterMeeting from "./components/RegisterMeeting.vue";
+import Registered from "./components/Registered.vue";
+import RegisteredMeeting from "./components/RegisteredMeeting.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
-  { path: "/kursblock-1", component: Block1 },
-  { path: "/kursblock-2", component: Block2 },
-  { path: "/kursblock-3", component: Block3 },
-  { path: "/kursblock-4", component: Block4 },
-  { path: "/kursblock-5", component: Block5 },
-  { path: "*", redirect: "/kursblock-1" },
+  { path: "/account", component: Account },
+  { path: "/course/:block", component: Course },
+  { path: "/confirm-email", component: ConfirmEmail },
+  { path: "/email-confirm-failed", component: EmailConfirmFailed },
+  { path: "/email-confirmed", component: EmailConfirmed },
+  { path: "/login", component: Login },
+  { path: "/register", component: Register },
+  { path: "/register-meeting", component: RegisterMeeting },
+  { path: "/registered", component: Registered },
+  { path: "/registered-meeting", component: RegisteredMeeting },
+  { path: "/kursblock-1", redirect: "course/block-1" },
+  { path: "/kursblock-2", redirect: "course/block-2" },
+  { path: "/kursblock-3", redirect: "course/block-3" },
+  { path: "/kursblock-4", redirect: "course/block-4" },
+  { path: "/kursblock-5", redirect: "course/block-5" },
+  { path: "*", redirect: "course/block-1" },
 ];
 
 const router = new VueRouter({ routes });
 
 const vm = new Vue({
-  template: `
-    <div class="page">
-      <Header />
-      <main>
-        <router-view></router-view>
-      </main>
-      <Footer />
-    </div>
-  `,
+  template: `<router-view></router-view>`,
   el: "#app",
   data: { appData, state: {} },
-  components: { Header, Footer },
   computed: {
     buttons() {
       return this.appData.buttons;
-    },
-    docs() {
-      return this.appData.documents;
     },
     isEarlyBird() {
       return this.state.path === "early-bird";
     },
     isKurs() {
       return this.state.path === "kurs";
-    },
-    videos() {
-      return this.appData.videos;
     },
   },
   router,
@@ -75,16 +73,8 @@ document.querySelectorAll(".cta05").forEach((e) => {
   });
 });
 
-const nav = document.querySelector(".nav");
-nav.addEventListener("click", () => {
-  const { classList } = nav;
-  if ([].slice.call(classList).indexOf("nav--active") > -1)
-    classList.remove("nav--active");
-  else classList.add("nav--active");
-});
-
-const header = document.querySelector(".header");
 window.addEventListener("scroll", () => {
+  const header = document.querySelector(".header");
   if (window.pageYOffset > 360) header.classList.add("header--fixed");
   else header.classList.remove("header--fixed");
 });

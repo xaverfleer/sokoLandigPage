@@ -1,26 +1,30 @@
 <template>
-  <router-link @click.native="scrollToTop" :class="classes" :to="route.to">{{
-    `${route.text}: ${route.teaser}`
-  }}</router-link>
+  <div :class="classes">
+    <a v-if="route.href" :href="route.href">{{ text }}</a>
+    <router-link v-else :to="route.to" @click.native="scrollToTop">{{
+      text
+    }}</router-link>
+  </div>
 </template>
 
 <script>
 export default {
   computed: {
     classes() {
-      return {
-        nav__entry: true,
-        "nav__entry--2ndary": !this.isPrimary,
-        "nav__entry--primary": this.isPrimary,
-      };
+      return [
+        "nav__entry",
+        this.route.isPrimary ? "nav__entry--primary" : "nav__entry--2ndary",
+      ];
     },
-    isPrimary() {
-      return this.options && this.options.isPrimary;
+    text() {
+      return this.route.teaser
+        ? `${this.route.text}: ${this.route.teaser}`
+        : this.route.text;
     },
   },
   methods: {
     scrollToTop: () => window.scroll(0, 0),
   },
-  props: ["route", "options"],
+  props: ["route"],
 };
 </script>

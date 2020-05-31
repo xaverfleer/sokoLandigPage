@@ -7,12 +7,11 @@
     />
     <div class="buttons">
       <RouteVue
-        :info="$root.appData.routes.block02"
-        :options="{ isPrimary: true }"
+        :info="{ ...course.routes.block02, isPrimary: true }"
         v-if="$root.isKurs"
       />
       <ButtonVue :info="$root.buttons.cta05Secondary" v-if="$root.isKurs" />
-      <RouteVue :info="$root.appData.routes.block02" v-if="$root.isEarlyBird" />
+      <RouteVue :info="course.routes.block02" v-if="$root.isEarlyBird" />
     </div>
   </div>
 </template>
@@ -22,7 +21,10 @@ import ButtonVue from "./ButtonVue.vue";
 import RouteVue from "./RouteVue.vue";
 import Section from "./Section.vue";
 
-export default { components: { ButtonVue, RouteVue, Section } };
+export default {
+  components: { ButtonVue, RouteVue, Section },
+  props: ["course"],
+};
 </script>
 
 <style scoped></style>

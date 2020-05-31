@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 // Event format [src](https://docs.netlify.com/functions/build-with-javascript/#format)
 // {
 //     "path": "Path parameter",
@@ -8,65 +7,72 @@
 //     "body": "A JSON string of the request payload."
 //     "isBase64Encoded": "A boolean flag to indicate if the applicable request payload is Base64-encode"
 // }
-const faunadb = require("faunadb");
-const crypto = require("crypto");
+const crypting = require("./private/crypting");
+const db = require("./private/db");
+const logging = require("./private/logging");
+const mailing = require("./private/mailing");
+const responding = require("./private/responding");
 
 // this i a workaround for issue https://github.com/netlify/netlify-lambda/issues/201
 require("encoding");
 
 const helpers = {
-  handleSuccess(response) {
-    console.log(`success: ${response}`);
-  },
-
-  handleError(error) {
-    console.log(`error: ${error}`);
-  },
-
   composeUser(email, password) {
-    console.log("starting `createUser`");
-    const salt = crypto.randomBytes(16).toString("base64");
-    const hash = crypto
-      .createHash("md5")
-      .update(password + salt)
-      .digest("hex");
+    const salt = crypting.randomString();
+    const confirmationCode = crypting.randomString();
+    const hash = crypting.hash(password + salt);
+    const isConfirmed = false;
 
-    return { email, hash, salt };
+    return { data: { email, hash, salt, confirmationCode, isConfirmed } };
   },
 
-  createUser(email, password) {
-    const q = faunadb.query;
-    const client = new faunadb.Client({ secret: process.env.FAUNADB_SECRET });
-
-    const payload = this.composeUser(email, password);
-    const promise = client.query(
-      q.Create(q.Collection("users"), { data: payload })
-    );
-    return promise;
+  composeEmail(email, cofirmationCode) {
+    const message = {
+      to: email,
+      subject: "Bestätige deine E-Mail-Adresse",
+      text: `Vielen Dank für deine Anmeldung auf so-kommunizieren.ch.\n\nKlicke auf den Link um dein Konto zu bestätigen: https://so-kommunizieren.ch/kurs?confirmationCode=${encodeURIComponent(
+        cofirmationCode
+      )}#/confirm-email/\n\nFalls du kein Konto erstellen wolltest, kannst du diese E-Mail ignorieren.`,
+    };
+    return Promise.resolve({ message });
   },
 };
 
 exports.handler = function register(event, context, callback = () => {}) {
-  console.log("Start registering");
+  logging.logStart("Start register");
+  const respond = responding.responseHandlers(callback);
 
-  const decoded = decodeURIComponent(event.body);
-  const parsed = JSON.parse(decoded);
+  const parsed = JSON.parse(event.body);
 
-  console.log(`Register user with email email: ${parsed.email}`);
-  helpers
-    .createUser(parsed.email, parsed.password)
-    .then(function handleSuccess() {
-      callback(null, {
-        statusCode: 200,
-        body: "User is registered.",
-      });
+  const newUserParams = helpers.composeUser(parsed.email, parsed.password);
+
+  logging.log(`Check if user exists. User email: ${parsed.email}`);
+  db.get
+    .doesUserExist(parsed.email)
+    .then((doesUserExist) => {
+      logging.log(`User${doesUserExist ? " DOES" : " does NOT"} exist.`);
+      return doesUserExist
+        ? Promise.reject(new Error("User already exists"))
+        : Promise.resolve(newUserParams);
     })
-    .catch(function handleError(e) {
-      callback(e, {
-        statusCode: 500,
-        body: `Failed with error: + ${e}`,
-      });
-    });
+    .then((userParams) => {
+      logging.log(`Create user with email ${userParams.data.email}.`);
+      return db.do.createUser(userParams);
+    })
+    .then((response) => {
+      logging.log(`Created︎ user.\nCompose email.`);
+      return helpers.composeEmail(
+        response.data.email,
+        response.data.confirmationCode
+      );
+    })
+    .then(({ message }) => {
+      logging.log(`Send email.`);
+      return mailing.sendEmail(message);
+    })
+    .then(() => "success")
+    .catch(logging.logAndReject)
+    .then(respond.success, respond.failed);
 };
 
 exports.__testonly__ = { helpers };

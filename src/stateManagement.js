@@ -44,11 +44,11 @@ function setState(change) {
 }
 
 function updatePath(path) {
-  setState((oldState) => {
-    const newState = oldState;
-    newState.path = path;
-    return newState;
-  });
+  setState((oldState) => ({ ...oldState, path }));
 }
 
-export default { updatePath, subscribe };
+function updateSession(sessionId) {
+  setState((oldState) => ({ ...oldState, sessionId }));
+}
+
+export default { updatePath, updateSession, subscribe };

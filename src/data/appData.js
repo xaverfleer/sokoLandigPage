@@ -1,4 +1,6 @@
 /* eslint-disable no-irregular-whitespace */
+import routes from "./routes";
+
 const appData = {
   course: {
     block01: {
@@ -39,6 +41,14 @@ const appData = {
               href: "/documents/so1-Zusammenfassung.pdf",
               text: "Zusammenfassung – Kursblock 1",
             },
+            {
+              href: "/documents/so1-Uebungsdossier.pdf",
+              text: "Übungsdossier (PDF) – Kursblock 1",
+            },
+            {
+              href: "/documents/so1-Uebungsdossier.docx",
+              text: "Übungsdossier (Word) – Kursblock 1",
+            },
           ],
         },
         section12: {
@@ -48,16 +58,6 @@ const appData = {
             videoName: "(Video 1.1)",
           },
           video: { ref: "https://player.vimeo.com/video/395825527" },
-          documents: [
-            {
-              href: "/documents/so1-Uebungsdossier.docx",
-              text: "Übungsdossier (Word) – Kursblock 1",
-            },
-            {
-              href: "/documents/so1-Uebungsdossier.pdf",
-              text: "Übungsdossier (PDF) – Kursblock 1",
-            },
-          ],
         },
         section13: {
           id: 2,
@@ -664,6 +664,13 @@ const appData = {
         },
       },
     },
+    routes: {
+      block01: routes.block01,
+      block02: routes.block02,
+      block03: routes.block03,
+      block04: routes.block04,
+      block05: routes.block05,
+    },
   },
   buttons: {
     cta05Primary: {
@@ -679,33 +686,31 @@ const appData = {
       isPrimary: false,
     },
   },
-  routes: {
-    block01: {
-      text: "Kursblock 1",
-      teaser: "Innere Stärke und Gleichwürdigkeit",
-      to: "kursblock-1",
+  formEntries: {
+    email: {
+      inputId: "form__email",
+      label: "E-Mail-Adresse*",
+      name: "email",
+      type: "email",
     },
-    block02: {
-      text: "Kursblock 2",
-      to: "kursblock-2",
-      teaser: "Mit dem Baby interagieren...",
+    name: {
+      inputId: "form__name",
+      label: "Name*",
+      name: "name",
+      type: "text",
     },
-    block03: {
-      text: "Kursblock 3",
-      to: "kursblock-3",
-      teaser: "Das Baby verstehen...",
-    },
-    block04: {
-      text: "Kursblock 4",
-      to: "kursblock-4",
-      teaser: "Auf mich selbst achten...",
-    },
-    block05: {
-      text: "Kursblock 5",
-      teaser: "Zurückhaltung üben...",
-      to: "kursblock-5",
+    password: {
+      inputId: "form__password",
+      label: "Passwort*",
+      name: "password",
+      type: "password",
     },
   },
+  standardNavRoutes: {
+    landingPage: routes.landingPage,
+    kurs: { ...routes.kurs, isPrimary: true },
+  },
+  routes,
 };
 
 export default appData;

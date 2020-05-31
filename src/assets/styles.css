@@ -34,7 +34,7 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  text-align: center;
+  margin-top: 1em;
 }
 
 html {
@@ -42,7 +42,7 @@ html {
 }
 
 main {
-  padding: 10px 0;
+  margin: 1em 0 3em;
 }
 
 .block__supertitle {
@@ -59,6 +59,7 @@ main {
   display: flex;
   justify-content: center;
   margin: 1em;
+  text-align: center;
 }
 
 .button.button--left {
@@ -222,6 +223,7 @@ main {
 
 .form--narrow {
   max-width: 500px;
+  margin: 0 auto;
 }
 
 .form__buttons {
@@ -365,7 +367,7 @@ main {
   min-height: 56px;
 }
 
-.nav::after {
+.nav::before {
   width: 32px;
   height: 32px;
   content: " ";
@@ -373,7 +375,7 @@ main {
   cursor: pointer;
 }
 
-.nav.nav--active::after {
+.nav.nav--active::before {
   background-image: url(imgs/close-24px--brown.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -435,7 +437,7 @@ main {
 }
 
 .section {
-  padding: 4em 1em 1em;
+  padding: 2em 1em 1em;
   border-radius: 5px;
 }
 
@@ -452,10 +454,7 @@ main {
   background-color: #f6ede2;
   border-radius: 5px;
   transform: rotate(-2deg);
-}
-
-.section__subsection {
-  margin: 2em 1em;
+  margin: 3em 1em;
 }
 
 .ul--3-dots {
@@ -524,7 +523,7 @@ main {
     align-items: center;
   }
 
-  .nav:not(.nav--kurs)::after {
+  .nav:not(.nav--kurs)::before {
     display: none;
   }
 
@@ -545,6 +544,7 @@ main {
 
   .booking-offers {
     flex-direction: row;
+    justify-content: center;
   }
 }
 
