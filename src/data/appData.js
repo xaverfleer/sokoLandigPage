@@ -687,6 +687,12 @@ const appData = {
     },
   },
   formEntries: {
+    confirm: {
+      inputId: "form__confirm",
+      label: "Bestätigen*",
+      name: "confirm",
+      type: "password",
+    },
     email: {
       inputId: "form__email",
       label: "E-Mail-Adresse*",
