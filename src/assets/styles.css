@@ -45,6 +45,12 @@ main {
   margin: 1em 0 3em;
 }
 
+input,
+select,
+textarea {
+  font-size: inherit;
+}
+
 .block__supertitle {
   font-size: 2rem;
   color: #966b40;
