@@ -15,5 +15,3 @@ export default {
   props: ["video"],
 };
 </script>
-
-<style scoped></style>
