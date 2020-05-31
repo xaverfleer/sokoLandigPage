@@ -292,6 +292,10 @@ textarea {
   color: #aaaaaa;
 }
 
+.form-entry__required {
+  text-decoration: none;
+}
+
 .header {
   position: relative;
   display: flex;
