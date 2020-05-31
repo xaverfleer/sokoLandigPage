@@ -8,6 +8,7 @@
 | brown-dark-01  | #895929  | button:hover              | darken brown dark                              |
 | green          | #4ba747  |                           |                                                |
 | green-01       | #408f3d  | button--2ndary:hover      | darkened green                                 |
+| red            | c23934 " | input help                | Salesforce Lightning Design System             |
 
 # Font sizes
 
@@ -36,6 +37,7 @@
 | 1     | button                     |
 | 1     | text                       |
 | 0     | footer                     |
+| 0     | help text                  |
 
 Mobile: 1
 Desktop:
