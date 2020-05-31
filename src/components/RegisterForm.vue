@@ -3,7 +3,7 @@
     <FormEntry
       :options="{ ...$root.appData.formEntries.email, fullWidth: true }"
     />
-    <FormEntry :options="{ ...$root.appData.formEntries.password }" />
+    <FormEntry :options="$root.appData.formEntries.password" />
     <FormEntry :options="$root.appData.formEntries.confirm" />
     <div class="buttons form__buttons form-buttons--dual">
       <RouteVue :info="$root.appData.routes.login" />
