@@ -6,6 +6,7 @@
       :options="field"
     />
     <div class="buttons form__buttons">
+      <!-- todo: inject this -->
       <button class="button button--primary">Konto löschen</button>
     </div>
   </form>
@@ -23,15 +24,52 @@ export default {
         {}
       );
     },
+    stringifiedData() {
+      return JSON.stringify(this.compactData);
+    },
   },
   methods: {
     handleSubmit(event) {
       this.updateHelp(this.formData.fields);
       if (this.isInputValid(this.formData.fields)) {
+        this.submitForm();
       }
+    },
+    handleFailure() {
+      window.alert(
+        `${this.formData.goal ||
+          "Aktion"} fehlgeschlagen.\nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch.`
+      );
+    },
+    handleSuccess() {
+      if (this.formData.successRoute)
+        this.$router.push(this.formData.successRoute);
     },
     isInputValid(fields) {
       return fields.reduce((acc, field) => acc && field.help === "", true);
+    },
+    submitForm() {
+      const xhr = new XMLHttpRequest();
+      xhr.open(
+        "POST",
+        `.netlify/functions/${this.formData.submitLambdaFunction}`
+      );
+      xhr.send(this.stringifiedData);
+      xhr.addEventListener("load", () => {
+        switch (xhr.status) {
+          case 200:
+            this.handleSuccess();
+            break;
+          case 500:
+          case 504:
+          default:
+            this.handleFailure();
+            break;
+        }
+      });
+      xhr.addEventListener("error", (xhrEventError) => {
+        this.handleFailure();
+      });
     },
     updateHelp(formFields) {
       formFields.forEach((field) => {
