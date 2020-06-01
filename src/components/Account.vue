@@ -5,16 +5,7 @@
       <section class="section">
         <h2>Konto verwalten</h2>
         <h3>Konto löschen</h3>
-        <form @submit.prevent="handleDeleteAccount" class="form">
-          <FormEntry
-            v-for="entry in deleteAccountForm.fields"
-            :key="entry.name"
-            :options="entry"
-          />
-          <div class="buttons form__buttons">
-            <button class="button button--primary">Konto löschen</button>
-          </div>
-        </form>
+        <FormVue :formData="deleteAccountForm" />
       </section>
     </main>
     <Footer />
@@ -23,21 +14,13 @@
 
 <script>
 import Footer from "./Footer.vue";
-import FormEntry from "./FormEntry.vue";
+import FormVue from "./FormVue.vue";
 import Header from "./Header.vue";
 
 export default {
-  components: { Footer, FormEntry, Header },
+  components: { Footer, FormVue, Header },
   created() {
     document.title = `Konto | so* kommunizieren`;
-  },
-  computed: {
-    deleteAccountFormData() {
-      return this.deleteAccountForm.fields.reduce(
-        (acc, field) => ({ ...acc, [field.name]: field.value }),
-        {}
-      );
-    },
   },
   data() {
     return {
@@ -58,30 +41,6 @@ export default {
         ],
       },
     };
-  },
-  methods: {
-    handleDeleteAccount(event) {
-      this.updateHelp(this.deleteAccountForm.fields);
-      if (this.isInputValid(this.deleteAccountForm.fields)) {
-        // delete the account
-      }
-    },
-    isInputValid(fields) {
-      return fields.reduce((acc, field) => acc && field.help === "", true);
-    },
-    updateHelp(formFields) {
-      formFields.forEach((field) => {
-        const help = field.checks
-          ? field.checks
-              .filter(
-                (check) => !check.test(field.value, this.deleteAccountFormData)
-              )
-              .reduce((acc, check) => acc.push(check.message) && acc, [])
-              .join(" ")
-          : "";
-        field.help = help;
-      });
-    },
   },
 };
 </script>
