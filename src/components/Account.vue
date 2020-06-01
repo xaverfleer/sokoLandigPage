@@ -39,6 +39,9 @@ export default {
             ],
           },
         ],
+        goal: "Konto löschen",
+        submitLambdaFunction: "deleteAccount",
+        successRoute: "/account-deleted",
       },
     };
   },
