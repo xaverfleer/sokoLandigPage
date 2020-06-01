@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const test = require("tape");
-const register = require("./register.js");
+const register = require("../register.js");
 
 test("helpers.composeUser", (assert) => {
   const target = register.__testonly__.helpers.composeUser;
