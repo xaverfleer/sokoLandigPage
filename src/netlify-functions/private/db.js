@@ -15,6 +15,10 @@ const fns = {
       const client = getClient();
       return client.query(q.Create(q.Collection("sessions"), paramObject));
     },
+    deleteDocument(ref) {
+      const client = getClient();
+      return client.query(q.Delete(ref));
+    },
     updateDocument(ref, paramObject) {
       const paramObjWithTimestamp = paramObject || {};
       paramObjWithTimestamp.data = paramObjWithTimestamp.data || {};
