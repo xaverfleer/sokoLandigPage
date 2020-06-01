@@ -9,8 +9,10 @@
       :type="options.type"
       :name="options.name"
       :id="options.inputId"
+      v-model="options.value"
       required
     />
+    <div class="form-entry__help">{{ options.help }}</div>
   </div>
 </template>
 
