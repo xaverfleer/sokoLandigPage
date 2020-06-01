@@ -4,6 +4,7 @@ import VueRouter from "vue-router/dist/vue-router.esm";
 import appData from "./data/appData";
 import stateM8t from "./stateManagement";
 import Account from "./components/Account.vue";
+import AccountDeleted from "./components/AccountDeleted.vue";
 import ConfirmEmail from "./components/ConfirmEmail.vue";
 import Course from "./components/Course.vue";
 import EmailConfirmed from "./components/EmailConfirmed.vue";
@@ -18,6 +19,7 @@ Vue.use(VueRouter);
 
 const routes = [
   { path: "/account", component: Account },
+  { path: "/account-deleted", component: AccountDeleted },
   { path: "/course/:block", component: Course },
   { path: "/confirm-email", component: ConfirmEmail },
   { path: "/email-confirm-failed", component: EmailConfirmFailed },
