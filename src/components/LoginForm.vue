@@ -54,7 +54,7 @@ export default {
           case 504:
           default:
             window.alert(
-              `Anmelden fehlgeschlagen./n/nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch`
+              `Anmelden fehlgeschlagen.\nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch`
             );
             this.isDisabled = false;
             break;
@@ -63,7 +63,7 @@ export default {
 
       xhr.addEventListener("error", (xhrEventError) => {
         window.alert(
-          `Anmelden fehlgeschlagen:/n/nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch mit dem dem folgenden Text: xhrEventError ${JSON.stringify(
+          `Anmelden fehlgeschlagen:\nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch mit dem dem folgenden Text: xhrEventError ${JSON.stringify(
             xhrEventError
           )}`
         );

@@ -44,7 +44,7 @@ export default {
           case 504:
           default:
             window.alert(
-              `Registrieren fehlgeschlagen./n/nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch`
+              `Registrieren fehlgeschlagen.\nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch`
             );
             break;
         }
