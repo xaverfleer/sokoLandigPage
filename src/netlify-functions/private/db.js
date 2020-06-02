@@ -55,6 +55,12 @@ const fns = {
       const client = getClient();
       return client.query(q.Get(q.Match(q.Index("sessionByEmail"), email)));
     },
+    sessionBySessionId(sessionId) {
+      const client = getClient();
+      return client.query(
+        q.Get(q.Match(q.Index("sessionBySessionId"), sessionId))
+      );
+    },
   },
 };
 

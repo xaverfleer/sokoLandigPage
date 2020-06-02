@@ -30,7 +30,6 @@ export default {
     return {
       deleteAccountForm: {
         fields: [
-          { ...this.$root.appData.formEntries.email, fullWidth: true },
           { ...this.$root.appData.formEntries.password },
           { ...this.$root.appData.formEntries.confirm },
         ],

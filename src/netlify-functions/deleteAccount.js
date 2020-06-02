@@ -19,11 +19,15 @@ exports.handler = function register(event, context, callback = () => {}) {
   logging.logStart("Start delete account");
   const respond = responding.responseHandlers(callback);
 
-  const { email, password } = JSON.parse(event.body);
+  const { sessionId, password } = JSON.parse(event.body);
 
-  logging.log(`Requesting user with email: ${email}`);
+  logging.log(`Request session with sessionId.`);
   db.get
-    .userByEmail(email)
+    .sessionBySessionId(sessionId)
+    .then((fetched) => {
+      logging.log(`Request user with email: ${fetched.data.email}`);
+      return db.get.userByEmail(fetched.data.email);
+    })
     .then((fetched) => {
       const dbUser = fetched.data;
       logging.log(`Retrieved user with email: ${dbUser.email}`);
