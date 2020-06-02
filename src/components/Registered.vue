@@ -29,7 +29,7 @@ import Header from "./Header.vue";
 export default {
   components: { Footer, Header },
   created() {
-    document.title = `Konto bestätiet | so* kommunizieren`;
+    document.title = `Konto bestätigt | so* kommunizieren`;
   },
 };
 </script>

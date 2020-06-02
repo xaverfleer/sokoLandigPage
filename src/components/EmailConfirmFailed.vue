@@ -33,7 +33,7 @@ import Header from "./Header.vue";
 export default {
   components: { Footer, Header },
   created() {
-    document.title = `Konto nicht bestätiet | so* kommunizieren`;
+    document.title = `Konto nicht bestätigt | so* kommunizieren`;
   },
 };
 </script>
