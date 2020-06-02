@@ -15,12 +15,14 @@ import Register from "./components/Register.vue";
 import RegisterMeeting from "./components/RegisterMeeting.vue";
 import Registered from "./components/Registered.vue";
 import RegisteredMeeting from "./components/RegisteredMeeting.vue";
+import ChangedPassword from "./components/ChangedPassword.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   { path: "/account", component: Account },
   { path: "/account-deleted", component: AccountDeleted },
+  { path: "/changed-password", component: ChangedPassword },
   { path: "/course/:block", component: Course },
   { path: "/confirm-email", component: ConfirmEmail },
   { path: "/email-confirm-failed", component: EmailConfirmFailed },

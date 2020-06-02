@@ -28,6 +28,10 @@ export default {
     teaser: "Zurückhaltung üben...",
     to: "/course/block-5",
   },
+  changedPassword: {
+    text: "Passwort geändert",
+    to: "/changed-password",
+  },
   landingPage: {
     text: "Zur Startseite",
     href: "/index.html",

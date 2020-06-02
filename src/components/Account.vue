@@ -4,6 +4,10 @@
     <main>
       <section class="section">
         <h2>Konto verwalten</h2>
+        <h3>Passwort ändern</h3>
+        <FormVue :formData="changePasswordForm" />
+      </section>
+      <section class="section">
         <h3>Konto löschen</h3>
         <p class="center">
           Achtung, dieser Schritt kann nicht rückgängig gemacht werden!
@@ -16,6 +20,7 @@
 </template>
 
 <script>
+import routes from "../data/routes";
 import stateManagement from "../stateManagement";
 import Footer from "./Footer.vue";
 import FormVue from "./FormVue.vue";
@@ -28,6 +33,28 @@ export default {
   },
   data() {
     return {
+      changePasswordForm: {
+        fields: [
+          {
+            inputId: "form__old-password",
+            label: "Altes Passwort",
+            name: "oldPassword",
+            type: "password",
+            fullWidth: true,
+          },
+          {
+            ...this.$root.appData.formEntries.password,
+            label: "Neues Passwort",
+          },
+          {
+            ...this.$root.appData.formEntries.confirm,
+            label: "Neues Passwort bestätigen",
+          },
+        ],
+        goal: "Passwort ändern",
+        submitLambdaFunction: "changePassword",
+        successRoute: this.$root.appData.routes.changedPassword.to,
+      },
       deleteAccountForm: {
         fields: [
           { ...this.$root.appData.formEntries.password },
