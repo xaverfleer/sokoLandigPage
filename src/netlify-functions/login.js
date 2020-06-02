@@ -36,7 +36,7 @@ exports.handler = function register(event, context, callback) {
     .then((doesSessionExist) => {
       logging.log(`Session${doesSessionExist ? " DOES" : " does NOT"} exist`);
       return doesSessionExist
-        ? db
+        ? db.get
             .sessionByEmail(email)
             .then((fetched) => db.do.updateDocument(fetched.ref, {}))
         : db.do.createSession({
