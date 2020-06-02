@@ -1,4 +1,8 @@
 export default {
+  account: {
+    text: "Zum Konto",
+    to: "/account",
+  },
   block01: {
     text: "Kursblock 1",
     teaser: "Innere Stärke und Gleichwürdigkeit",
