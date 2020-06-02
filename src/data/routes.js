@@ -36,6 +36,10 @@ export default {
     text: "Zum Kurs",
     to: "/course/block-1",
   },
+  loggedIn: {
+    text: "Angemeldet",
+    to: "/logged-in",
+  },
   login: {
     text: "Direkt anmelden",
     to: "/login",

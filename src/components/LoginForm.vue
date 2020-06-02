@@ -50,6 +50,7 @@ export default {
               decodeURIComponent(xhr.responseText)
             );
             stateManagement.updateSession({ sessionId, ts });
+            this.$router.push(this.$root.appData.routes.loggedIn.to);
             break;
           case 504:
           default:

@@ -9,6 +9,7 @@ import ConfirmEmail from "./components/ConfirmEmail.vue";
 import Course from "./components/Course.vue";
 import EmailConfirmed from "./components/EmailConfirmed.vue";
 import EmailConfirmFailed from "./components/EmailConfirmFailed.vue";
+import LoggedIn from "./components/LoggedIn.vue";
 import Login from "./components/Login.vue";
 import Register from "./components/Register.vue";
 import RegisterMeeting from "./components/RegisterMeeting.vue";
@@ -24,6 +25,7 @@ const routes = [
   { path: "/confirm-email", component: ConfirmEmail },
   { path: "/email-confirm-failed", component: EmailConfirmFailed },
   { path: "/email-confirmed", component: EmailConfirmed },
+  { path: "/logged-in", component: LoggedIn },
   { path: "/login", component: Login },
   { path: "/register", component: Register },
   { path: "/register-meeting", component: RegisterMeeting },
