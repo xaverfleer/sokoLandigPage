@@ -263,10 +263,6 @@ textarea {
   min-width: 15em;
 }
 
-.form-entry--password {
-  min-width: 10em;
-}
-
 .form-entry__help {
   margin: 0.3em 0 0 0.3em;
   color: #c23934;
