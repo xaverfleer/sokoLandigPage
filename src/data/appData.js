@@ -692,6 +692,13 @@ const appData = {
       label: "Bestätigen",
       name: "confirm",
       type: "password",
+      help: "",
+      checks: [
+        {
+          test: (val, allEntries) => val === allEntries.password,
+          message: "Die Passwörter stimmen nicht überein.",
+        },
+      ],
     },
     email: {
       inputId: "form__email",

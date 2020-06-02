@@ -31,16 +31,7 @@ export default {
         fields: [
           { ...this.$root.appData.formEntries.email, fullWidth: true },
           { ...this.$root.appData.formEntries.password },
-          {
-            ...this.$root.appData.formEntries.confirm,
-            help: "",
-            checks: [
-              {
-                test: (val, allEntries) => val === allEntries.password,
-                message: "Die Passwörter stimmen nicht überein.",
-              },
-            ],
-          },
+          { ...this.$root.appData.formEntries.confirm },
         ],
         goal: "Konto löschen",
         submitLambdaFunction: "deleteAccount",
