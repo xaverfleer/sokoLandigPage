@@ -46,10 +46,10 @@ export default {
       xhr.addEventListener("load", () => {
         switch (xhr.status) {
           case 200:
-            const { sessionId } = JSON.parse(
+            const { sessionId, ts } = JSON.parse(
               decodeURIComponent(xhr.responseText)
             );
-            stateManagement.updateSession(sessionId);
+            stateManagement.updateSession({ sessionId, ts });
             break;
           case 504:
           default:
