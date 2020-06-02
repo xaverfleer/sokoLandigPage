@@ -44,6 +44,14 @@ export default {
           },
           {
             ...this.$root.appData.formEntries.password,
+            checks: [
+              {
+                test: (val, entries) => val !== entries.oldPassword,
+                message:
+                  "Das neue Passwort muss sich vom alten Passwort unterscheiden.",
+              },
+            ],
+            help: "",
             label: "Neues Passwort",
           },
           {
