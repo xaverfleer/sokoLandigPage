@@ -699,24 +699,28 @@ const appData = {
           message: "Die Passwörter stimmen nicht überein.",
         },
       ],
+      value: "",
     },
     email: {
       inputId: "form__email",
       label: "E-Mail-Adresse",
       name: "email",
       type: "email",
+      value: "",
     },
     name: {
       inputId: "form__name",
       label: "Name",
       name: "name",
       type: "text",
+      value: "",
     },
     password: {
       inputId: "form__password",
       label: "Passwort",
       name: "password",
       type: "password",
+      value: "",
     },
   },
   standardNavRoutes: {
