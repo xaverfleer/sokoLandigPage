@@ -5,6 +5,9 @@
       <section class="section">
         <h2>Konto verwalten</h2>
         <h3>Konto löschen</h3>
+        <p class="center">
+          Achtung, dieser Schritt kann nicht rückgängig gemacht werden!
+        </p>
         <FormVue :formData="deleteAccountForm" />
       </section>
     </main>

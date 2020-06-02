@@ -155,6 +155,10 @@ textarea {
   background-color: #408f3d;
 }
 
+.center {
+  text-align: center;
+}
+
 .checklist__item {
   display: flex;
   align-items: center;
