@@ -47,8 +47,8 @@ function updatePath(path) {
   setState((oldState) => ({ ...oldState, path }));
 }
 
-function updateSession(sessionId) {
-  setState((oldState) => ({ ...oldState, sessionId }));
+function updateSession(session) {
+  setState((oldState) => ({ ...oldState, session }));
 }
 
 export default { updatePath, updateSession, subscribe };

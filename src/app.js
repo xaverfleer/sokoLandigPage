@@ -53,6 +53,13 @@ const vm = new Vue({
     isKurs() {
       return this.state.path === "kurs";
     },
+    isLoggedIn() {
+      const hasSession = typeof this.state.session === "object";
+      const activeUntil =
+        hasSession && this.state.session.ts + 30 * 24 * 60 * 60 * 1000;
+      const hasActiveSession = hasSession && Date.now() < activeUntil;
+      return hasActiveSession;
+    },
   },
   router,
 });
