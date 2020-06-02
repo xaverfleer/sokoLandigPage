@@ -6,8 +6,9 @@
       :options="field"
     />
     <div class="buttons form__buttons">
-      <!-- todo: inject this -->
-      <button class="button button--primary">Konto löschen</button>
+      <button class="button button--primary">
+        {{ formData.goal }}
+      </button>
     </div>
   </form>
 </template>
