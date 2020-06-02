@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import stateManagement from "../stateManagement";
 import Footer from "./Footer.vue";
 import FormVue from "./FormVue.vue";
 import Header from "./Header.vue";
@@ -34,6 +35,9 @@ export default {
           { ...this.$root.appData.formEntries.confirm },
         ],
         goal: "Konto löschen",
+        postSubmit() {
+          stateManagement.updateSession(null);
+        },
         submitLambdaFunction: "deleteAccount",
         successRoute: "/account-deleted",
       },

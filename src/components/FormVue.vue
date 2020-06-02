@@ -43,6 +43,7 @@ export default {
       );
     },
     handleSuccess() {
+      if (this.formData.postSubmit) this.formData.postSubmit();
       if (this.formData.successRoute)
         this.$router.push(this.formData.successRoute);
     },
