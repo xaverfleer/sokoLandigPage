@@ -232,8 +232,7 @@ textarea {
 }
 
 .form--narrow {
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 550px;
 }
 
 .form__buttons {
@@ -533,6 +532,10 @@ textarea {
 }
 
 @media screen and (min-width: 550px) {
+  .form--narrow {
+    margin: 0 auto;
+  }
+
   .nav:not(.nav--kurs) {
     flex-direction: row;
     align-items: center;
