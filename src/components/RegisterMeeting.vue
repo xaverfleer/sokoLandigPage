@@ -90,7 +90,7 @@ export default {
       xhr.send(data);
 
       xhr.addEventListener("load", () => {
-        this.$router.push("/registered-meeting");
+        this.$router.push(this.$root.appData.routes.registeredMeeting.to);
         this.isDisabled = false;
       });
 

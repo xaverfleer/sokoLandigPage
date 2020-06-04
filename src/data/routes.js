@@ -32,6 +32,14 @@ export default {
     text: "Passwort geändert",
     to: "/changed-password",
   },
+  emailConfirmed: {
+    text: "E-Mail bestätigt",
+    to: "/email-confirmed",
+  },
+  emailConfirmFailed: {
+    text: "E-Mail Bestätigung fehlgeschlagen",
+    to: "/email-confirm-failed",
+  },
   landingPage: {
     text: "Zur Startseite",
     href: "/index.html",
@@ -51,5 +59,13 @@ export default {
   register: {
     text: "Konto erstellen",
     to: "/register",
+  },
+  registered: {
+    text: "Konto erstellt",
+    to: "/registered",
+  },
+  registeredMeeting: {
+    text: "Anmeldung erfolgreich",
+    to: "/registered-meeting",
   },
 };

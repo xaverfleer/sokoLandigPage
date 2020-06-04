@@ -26,12 +26,12 @@ export default {
 
     xhr.addEventListener("load", () => {
       location = location.href.split(location.search).join("");
-      this.$router.push("/email-confirmed");
+      this.$router.push(this.$root.appData.routes.emailConfirmed.to);
     });
 
     xhr.addEventListener("error", (xhrEventError) => {
       location = location.href.split(location.search).join("");
-      this.$router.push("/email-confirm-failed");
+      this.$router.push(this.$root.appData.routes.emailConfirmFailed.to);
     });
   },
 };

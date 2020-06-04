@@ -38,7 +38,7 @@ export default {
       xhr.addEventListener("load", () => {
         switch (xhr.status) {
           case 200:
-            this.$router.push("/registered");
+            this.$router.push(this.$root.appData.routes.registered.to);
             break;
           case 500:
           case 504:
