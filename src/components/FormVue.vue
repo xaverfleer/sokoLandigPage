@@ -5,7 +5,11 @@
       :key="field.name"
       :options="field"
     />
-    <div class="buttons form__buttons">
+    <div :class="buttonsClasses">
+      <RouteVue
+        v-if="formData.secondaryButton"
+        :info="formData.secondaryButton.route"
+      />
       <button class="button button--primary">
         {{ formData.goal }}
       </button>
