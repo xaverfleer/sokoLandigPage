@@ -35,9 +35,7 @@ export default {
         ],
         goal: "Anmelden",
         postSubmit: (xhr) => {
-          const { sessionId, ts } = JSON.parse(
-            decodeURIComponent(xhr.responseText)
-          );
+          const { sessionId, ts } = JSON.parse(xhr.responseText);
           stateManagement.updateSession({ sessionId, ts });
         },
         secondaryButton: { route: this.$root.appData.routes.register },
