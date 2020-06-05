@@ -19,10 +19,17 @@
 
 <script>
 import FormEntry from "./FormEntry.vue";
+import RouteVue from "./RouteVue.vue";
 
 export default {
-  components: { FormEntry },
+  components: { FormEntry, RouteVue },
   computed: {
+    buttonsClasses() {
+      return [
+        "buttons form__buttons",
+        this.formData.secondaryButton && "form-buttons--dual",
+      ];
+    },
     compactData() {
       return this.formData.fields.reduce(
         (acc, field) => ({ ...acc, [field.name]: field.value }),
