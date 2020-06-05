@@ -17,6 +17,9 @@ const vm = new Vue({
     buttons() {
       return this.appData.buttons;
     },
+    sessionId() {
+      return this.state && this.state.session && this.state.session.sessionId;
+    },
     isEarlyBird() {
       return this.state.path === "early-bird";
     },
