@@ -33,7 +33,7 @@ export default {
     compactData() {
       return this.formData.fields.reduce(
         (acc, field) => ({ ...acc, [field.name]: field.value }),
-        { sessionId: this.$root.state.session.sessionId }
+        { sessionId: this.$root.sessionId }
       );
     },
     stringifiedData() {
