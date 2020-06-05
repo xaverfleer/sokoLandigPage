@@ -53,8 +53,8 @@ export default {
           "Aktion"} fehlgeschlagen.\nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch.`
       );
     },
-    handleSuccess() {
-      if (this.formData.postSubmit) this.formData.postSubmit();
+    handleSuccess(xhr) {
+      if (this.formData.postSubmit) this.formData.postSubmit(xhr);
       if (this.formData.successRoute)
         this.$router.push(this.formData.successRoute);
     },
@@ -71,7 +71,7 @@ export default {
       xhr.addEventListener("load", () => {
         switch (xhr.status) {
           case 200:
-            this.handleSuccess();
+            this.handleSuccess(xhr);
             break;
           case 500:
           case 504:
