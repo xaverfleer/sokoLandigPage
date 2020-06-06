@@ -687,6 +687,14 @@ const appData = {
     },
   },
   formEntries: {
+    comment: {
+      inputId: "form__comment",
+      isTextArea: true,
+      label: "Kommentar",
+      name: "comment",
+      value:
+        "Soweit bin ich im Kurs:\n\n\nThemen, die bei mir aktuell sind:\n\n\nFeedback/Wünsche:\n",
+    },
     confirm: {
       inputId: "form__confirm",
       label: "Bestätigen",
