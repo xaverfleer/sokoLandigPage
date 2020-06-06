@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <Header :routes="$root.appData.standardNavRoutes" />
+    <Header :routes="$root.appData.account.routes" />
     <main>
       <section class="section">
         <h2>Konto verwalten</h2>
