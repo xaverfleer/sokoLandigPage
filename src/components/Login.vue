@@ -24,6 +24,8 @@ export default {
     FormVue,
   },
   created() {
+    if (this.$root.isLoggedIn)
+      this.$router.push(this.$root.appData.routes.account.to);
     document.title = `Anmelden | so* kommunizieren`;
   },
   data() {

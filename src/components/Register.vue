@@ -23,6 +23,8 @@ export default {
     Header,
   },
   created() {
+    if (this.$root.isLoggedIn)
+      this.$router.push(this.$root.appData.routes.account.to);
     document.title = `Konto erstellen | so* kommunizieren`;
   },
   data() {
