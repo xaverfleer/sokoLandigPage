@@ -5,25 +5,7 @@
       <section class="section">
         <h2>Zum Online-Meeting anmelden</h2>
         <h3 id="meetingDate">Datum: {{ nextMeeting }}</h3>
-        <form @submit.prevent="handleSubmit">
-          <FormEntry :options="$root.appData.formEntries.name" />
-          <FormEntry :options="$root.appData.formEntries.email" />
-          <div class="form-entry form-entry--fullwidth">
-            <label class="form-entry__label" for="form__comment"
-              >Kommentar</label
-            >
-            <textarea
-              class="form-entry__input"
-              name="comment"
-              id="form__comment"
-              rows="10"
-              v-model="textAreaText"
-            ></textarea>
-          </div>
-          <div class="buttons form__buttons">
-            <button class="button button--primary">Anmelden</button>
-          </div>
-        </form>
+        <FormVue :formData="registerMeetingForm" />
       </section>
     </main>
     <Footer />
@@ -32,14 +14,13 @@
 
 <script>
 import Footer from "./Footer.vue";
-import FormEntry from "./FormEntry.vue";
+import FormVue from "./FormVue.vue";
 import Header from "./Header.vue";
-import helpers from "../helpers";
 
 export default {
   components: {
     Footer,
-    FormEntry,
+    FormVue,
     Header,
   },
   computed: {
@@ -72,37 +53,21 @@ export default {
   created() {
     document.title = `Anmeldung Online-Meeting | so* kommunizieren`;
   },
-  data: () => ({
-    textAreaText:
-      "Soweit bin ich im Kurs:\n\n\nThemen, die bei mir aktuell sind:\n\n\nFeedback/Wünsche:\n",
-  }),
-  methods: {
-    handleSubmit(data) {
-      const form = event.target;
-
-      const payload = JSON.stringify(helpers.formToData(form));
-      this.submitForm(payload);
-      this.isDisabled = true;
-    },
-    submitForm(data) {
-      const xhr = new XMLHttpRequest();
-      xhr.open("POST", ".netlify/functions/registerMeeting");
-      xhr.send(data);
-
-      xhr.addEventListener("load", () => {
-        this.$router.push(this.$root.appData.routes.registeredMeeting.to);
-        this.isDisabled = false;
-      });
-
-      xhr.addEventListener("error", (xhrEventError) => {
-        window.alert(
-          `Senden fehlgeschlagen, bitte erneut versuchen.\n\nBei wiederholtem Fehlschlagen, kontaktiere uns bitte mit folgenden Details: xhrEventError ${JSON.stringify(
-            xhrEventError
-          )}`
-        );
-        this.isDisabled = false;
-      });
-    },
+  data() {
+    return {
+      textAreaText:
+        "Soweit bin ich im Kurs:\n\n\nThemen, die bei mir aktuell sind:\n\n\nFeedback/Wünsche:\n",
+      registerMeetingForm: {
+        fields: [
+          { ...this.$root.appData.formEntries.name },
+          { ...this.$root.appData.formEntries.email },
+          { ...this.$root.appData.formEntries.comment },
+        ],
+        goal: "Anmelden",
+        submitLambdaFunction: "registerMeeting",
+        successRoute: this.$root.appData.routes.registeredMeeting.to,
+      },
+    };
   },
 };
 </script>
