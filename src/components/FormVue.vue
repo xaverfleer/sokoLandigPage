@@ -11,7 +11,7 @@
         :info="formData.secondaryButton.route"
       />
       <button class="button button--primary">
-        {{ formData.goal }}
+        {{ formData.buttonText || formData.goal }}
       </button>
     </div>
   </form>
