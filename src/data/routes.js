@@ -52,9 +52,17 @@ export default {
     text: "Angemeldet",
     to: "/logged-in",
   },
+  loggedOut: {
+    text: "Abgemeldet",
+    to: "/logged-out",
+  },
   login: {
     text: "Direkt anmelden",
     to: "/login",
+  },
+  logout: {
+    text: "Abmelden",
+    to: "/logout",
   },
   register: {
     text: "Konto erstellen",

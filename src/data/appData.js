@@ -735,6 +735,18 @@ const appData = {
     landingPage: routes.landingPage,
     kurs: { ...routes.kurs, isPrimary: true },
   },
+  standardNavRoutesLoggedIn: {
+    kurs: { ...routes.kurs, isPrimary: true },
+    landingPage: routes.landingPage,
+    account: routes.account,
+    logout: routes.logout,
+  },
+  standardNavRoutesLoggedOut: {
+    kurs: { ...routes.kurs, isPrimary: true },
+    landingPage: routes.landingPage,
+    login: routes.login,
+    register: routes.register,
+  },
   routes,
 };
 

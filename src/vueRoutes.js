@@ -5,7 +5,9 @@ import Course from "./components/Course.vue";
 import EmailConfirmed from "./components/EmailConfirmed.vue";
 import EmailConfirmFailed from "./components/EmailConfirmFailed.vue";
 import LoggedIn from "./components/LoggedIn.vue";
+import LoggedOut from "./components/LoggedOut.vue";
 import Login from "./components/Login.vue";
+import Logout from "./components/Logout.vue";
 import Register from "./components/Register.vue";
 import RegisterMeeting from "./components/RegisterMeeting.vue";
 import Registered from "./components/Registered.vue";
@@ -21,7 +23,9 @@ export default [
   { path: "/email-confirm-failed", component: EmailConfirmFailed },
   { path: "/email-confirmed", component: EmailConfirmed },
   { path: "/logged-in", component: LoggedIn },
+  { path: "/logged-out", component: LoggedOut },
   { path: "/login", component: Login },
+  { path: "/logout", component: Logout },
   { path: "/register", component: Register },
   { path: "/register-meeting", component: RegisterMeeting },
   { path: "/registered", component: Registered },
