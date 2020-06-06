@@ -738,10 +738,6 @@ const appData = {
       value: "",
     },
   },
-  standardNavRoutes: {
-    landingPage: routes.landingPage,
-    kurs: { ...routes.kurs, isPrimary: true },
-  },
   standardNavRoutesLoggedIn: {
     kurs: { ...routes.kurs, isPrimary: true },
     landingPage: routes.landingPage,

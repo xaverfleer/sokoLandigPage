@@ -1,6 +1,12 @@
 <template>
   <div class="page">
-    <Header :routes="$root.appData.standardNavRoutes" />
+    <Header
+      :routes="
+        $root.isLoggedIn
+          ? $root.appData.standardNavRoutesLoggedIn
+          : $root.appData.standardNavRoutesLoggedOut
+      "
+    />
     <main>
       <section class="section">
         <h2>Konto wird bestätigt</h2>
