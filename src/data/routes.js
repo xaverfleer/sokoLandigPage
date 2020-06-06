@@ -57,7 +57,7 @@ export default {
     to: "/logged-out",
   },
   login: {
-    text: "Direkt anmelden",
+    text: "Anmelden",
     to: "/login",
   },
   logout: {
