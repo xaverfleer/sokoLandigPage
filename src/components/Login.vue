@@ -38,8 +38,8 @@ export default {
     return {
       loginForm: {
         fields: [
-          this.$root.appData.formEntries.email,
-          this.$root.appData.formEntries.password,
+          { ...this.$root.appData.formEntries.email },
+          { ...this.$root.appData.formEntries.password },
         ],
         goal: "Anmelden",
         postSubmit: (xhr) => {
