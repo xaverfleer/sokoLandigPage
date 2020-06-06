@@ -1,5 +1,6 @@
 import Account from "./components/Account.vue";
 import AccountDeleted from "./components/AccountDeleted.vue";
+import ChangedPassword from "./components/ChangedPassword.vue";
 import ConfirmEmail from "./components/ConfirmEmail.vue";
 import Course from "./components/Course.vue";
 import EmailConfirmed from "./components/EmailConfirmed.vue";
@@ -12,7 +13,6 @@ import Register from "./components/Register.vue";
 import RegisterMeeting from "./components/RegisterMeeting.vue";
 import Registered from "./components/Registered.vue";
 import RegisteredMeeting from "./components/RegisteredMeeting.vue";
-import ChangedPassword from "./components/ChangedPassword.vue";
 
 export default [
   { path: "/account", component: Account },
