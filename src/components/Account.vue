@@ -29,6 +29,8 @@ import Header from "./Header.vue";
 export default {
   components: { Footer, FormVue, Header },
   created() {
+    if (!this.$root.isLoggedIn)
+      this.$router.push(this.$root.appData.routes.register.to);
     document.title = `Konto | so* kommunizieren`;
   },
   data() {
