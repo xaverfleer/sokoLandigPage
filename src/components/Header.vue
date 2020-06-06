@@ -28,7 +28,7 @@ export default {
       return ["nav", "nav--kurs", this.isNavActive ? "nav--active" : ""];
     },
   },
-  data: function() {
+  data() {
     return {
       logoUrl: "../imgs/logo.png",
       img: logo,
