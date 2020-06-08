@@ -40,7 +40,6 @@ export default {
         .split("&")
         .map((entry) => entry.split("=").map((str) => decodeURIComponent(str)))
         .reduce((acc, curr) => ({ ...acc, [curr[0]]: curr[1] }), {});
-      window.location.search = "";
 
       return { ...formData, ...searchData };
     },
