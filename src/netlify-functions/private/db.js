@@ -7,19 +7,18 @@ function getClient() {
 
 const fns = {
   do: {
-    createPasswordResetSession(paramObject) {
+    createDocument(collection, paramObject) {
       const client = getClient();
-      return client.query(
-        q.Create(q.Collection("passwordResetSession"), paramObject)
-      );
+      return client.query(q.Create(q.Collection(collection), paramObject));
+    },
+    createPasswordResetSession(paramObject) {
+      return fns.do.createDocument("passwordResetSession", paramObject);
     },
     createUser(paramObject) {
-      const client = getClient();
-      return client.query(q.Create(q.Collection("users"), paramObject));
+      return fns.do.createDocument("users", paramObject);
     },
     createSession(paramObject) {
-      const client = getClient();
-      return client.query(q.Create(q.Collection("sessions"), paramObject));
+      return fns.do.createDocument("sessions", paramObject);
     },
     deleteDocument(ref) {
       const client = getClient();
