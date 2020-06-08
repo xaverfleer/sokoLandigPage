@@ -45,7 +45,8 @@ export default {
     },
     uniqueIdFields() {
       return this.formData.fields.map((field) => {
-        return { ...field, inputId: this.formData.name + field.inputId };
+        field.inputId = this.formData.name + field.inputId;
+        return field;
       });
     },
     stringifiedData() {
