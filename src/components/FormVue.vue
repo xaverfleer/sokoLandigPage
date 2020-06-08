@@ -1,7 +1,7 @@
 <template>
   <form @submit.prevent="handleSubmit" class="form">
     <FormEntry
-      v-for="field in formData.fields"
+      v-for="field in uniqueIdFields"
       :key="field.name"
       :options="field"
     />
@@ -42,6 +42,11 @@ export default {
         .reduce((acc, curr) => ({ ...acc, [curr[0]]: curr[1] }), {});
 
       return { ...formData, ...searchData };
+    },
+    uniqueIdFields() {
+      return this.formData.fields.map((field) => {
+        return { ...field, inputId: this.formData.name + field.inputId };
+      });
     },
     stringifiedData() {
       return JSON.stringify(this.compactData);

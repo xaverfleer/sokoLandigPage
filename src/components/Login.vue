@@ -36,6 +36,7 @@ export default {
           { ...this.$root.appData.formEntries.password },
         ],
         goal: "Anmelden",
+        name: "login",
         postSubmit: (xhr) => {
           const { sessionId, ts } = JSON.parse(xhr.responseText);
           stateManagement.updateSession({ sessionId, ts });

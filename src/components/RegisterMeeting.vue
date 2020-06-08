@@ -64,6 +64,7 @@ export default {
           { ...this.$root.appData.formEntries.comment },
         ],
         goal: "Anmelden",
+        name: "registerMeeting",
         submitLambdaFunction: "registerMeeting",
         successRoute: this.$root.appData.routes.registeredMeeting.to,
       },

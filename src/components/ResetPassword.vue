@@ -32,6 +32,7 @@ export default {
       resetPasswordForm: {
         fields: [{ ...this.$root.appData.formEntries.email }],
         goal: "Zurücksetzen",
+        name: "resetPassword",
         submitLambdaFunction: "resetPassword",
         successRoute: this.$root.appData.routes.passwordLinkSent.to,
       },

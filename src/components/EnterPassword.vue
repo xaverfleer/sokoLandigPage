@@ -36,6 +36,7 @@ export default {
           { ...this.$root.appData.formEntries.confirm },
         ],
         goal: "Passwort ändern",
+        name: "enterPassword",
         submitLambdaFunction: "resetChangePassword",
         successRoute: this.$root.appData.routes.changedPassword.to,
       },

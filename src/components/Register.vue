@@ -37,6 +37,7 @@ export default {
           { ...this.$root.appData.formEntries.confirm },
         ],
         goal: "Konto erstellen",
+        name: "register",
         secondaryButton: { route: this.$root.appData.routes.login },
         submitLambdaFunction: "register",
         successRoute: this.$root.appData.routes.registered.to,
