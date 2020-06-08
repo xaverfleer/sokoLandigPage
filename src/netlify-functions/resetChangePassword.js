@@ -30,7 +30,8 @@ exports.handler = function register(event, context, callback = () => {}) {
       const newHash = crypting.hash(password + fetchedUser.data.salt);
 
       logging.log(`Update user hash`);
-      db.do.updateDocument(fetchedUser.ref, { hash: newHash });
+      db.do.updateDocument(fetchedUser.ref, { data: { hash: newHash } });
+      return "success";
     })
     .catch(logging.logAndReject)
     .then(respond.success, respond.failed);
