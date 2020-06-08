@@ -7,6 +7,12 @@ function getClient() {
 
 const fns = {
   do: {
+    createPasswordResetSession(paramObject) {
+      const client = getClient();
+      return client.query(
+        q.Create(q.Collection("passwordResetSession"), paramObject)
+      );
+    },
     createUser(paramObject) {
       const client = getClient();
       return client.query(q.Create(q.Collection("users"), paramObject));
@@ -59,6 +65,12 @@ const fns = {
       const client = getClient();
       return client.query(
         q.Get(q.Match(q.Index("sessionBySessionId"), sessionId))
+      );
+    },
+    passwordResetSessionById(id) {
+      const client = getClient();
+      return client.query(
+        q.Get(q.Match(q.Index("passwordResetSessionById"), id))
       );
     },
   },
