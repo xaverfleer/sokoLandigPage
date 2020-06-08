@@ -10,10 +10,12 @@ import LoggedIn from "./components/LoggedIn.vue";
 import LoggedOut from "./components/LoggedOut.vue";
 import Login from "./components/Login.vue";
 import Logout from "./components/Logout.vue";
+import PasswordLinkSent from "./components/PasswordLinkSent.vue";
 import Register from "./components/Register.vue";
 import RegisterMeeting from "./components/RegisterMeeting.vue";
 import Registered from "./components/Registered.vue";
 import RegisteredMeeting from "./components/RegisteredMeeting.vue";
+import ResetPassword from "./components/ResetPassword.vue";
 
 export default [
   { path: "/account", component: Account },
@@ -28,10 +30,12 @@ export default [
   { path: "/logged-out", component: LoggedOut },
   { path: "/login", component: Login },
   { path: "/logout", component: Logout },
+  { path: "/password-link-sent", component: PasswordLinkSent },
   { path: "/register", component: Register },
   { path: "/register-meeting", component: RegisterMeeting },
   { path: "/registered", component: Registered },
   { path: "/registered-meeting", component: RegisteredMeeting },
+  { path: "/reset-password", component: ResetPassword },
   { path: "/kursblock-1", redirect: "course/block-1" },
   { path: "/kursblock-2", redirect: "course/block-2" },
   { path: "/kursblock-3", redirect: "course/block-3" },

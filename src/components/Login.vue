@@ -46,7 +46,7 @@ export default {
           const { sessionId, ts } = JSON.parse(xhr.responseText);
           stateManagement.updateSession({ sessionId, ts });
         },
-        secondaryButton: { route: this.$root.appData.routes.register },
+        secondaryButton: { route: this.$root.appData.routes.resetPassword },
         submitLambdaFunction: "login",
         successRoute: this.$root.appData.routes.loggedIn.to,
       },

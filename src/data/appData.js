@@ -747,8 +747,8 @@ const appData = {
   standardNavRoutesLoggedOut: {
     kurs: { ...routes.kurs, isPrimary: true },
     landingPage: routes.landingPage,
-    login: routes.login,
     register: routes.register,
+    login: routes.login,
   },
   routes,
 };

@@ -31,10 +31,18 @@ export default {
       ];
     },
     compactData() {
-      return this.formData.fields.reduce(
+      const formData = this.formData.fields.reduce(
         (acc, field) => ({ ...acc, [field.name]: field.value }),
         { sessionId: this.$root.sessionId }
       );
+      const searchData = window.location.search
+        .substring(1)
+        .split("&")
+        .map((entry) => entry.split("=").map((str) => decodeURIComponent(str)))
+        .reduce((acc, curr) => ({ ...acc, [curr[0]]: curr[1] }), {});
+      window.location.search = "";
+
+      return { ...formData, ...searchData };
     },
     stringifiedData() {
       return JSON.stringify(this.compactData);

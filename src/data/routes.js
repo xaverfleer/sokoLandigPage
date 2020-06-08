@@ -64,6 +64,10 @@ export default {
     text: "Abmelden",
     to: "/logout",
   },
+  passwordLinkSent: {
+    text: "Password Link versendet",
+    to: "/password-link-sent",
+  },
   register: {
     text: "Konto erstellen",
     to: "/register",
@@ -75,5 +79,9 @@ export default {
   registeredMeeting: {
     text: "Anmeldung erfolgreich",
     to: "/registered-meeting",
+  },
+  resetPassword: {
+    text: "Passwort vergessen?",
+    to: "/reset-password",
   },
 };
