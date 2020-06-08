@@ -5,6 +5,7 @@ import ConfirmEmail from "./components/ConfirmEmail.vue";
 import Course from "./components/Course.vue";
 import EmailConfirmed from "./components/EmailConfirmed.vue";
 import EmailConfirmFailed from "./components/EmailConfirmFailed.vue";
+import EnterPassword from "./components/EnterPassword.vue";
 import LoggedIn from "./components/LoggedIn.vue";
 import LoggedOut from "./components/LoggedOut.vue";
 import Login from "./components/Login.vue";
@@ -22,6 +23,7 @@ export default [
   { path: "/confirm-email", component: ConfirmEmail },
   { path: "/email-confirm-failed", component: EmailConfirmFailed },
   { path: "/email-confirmed", component: EmailConfirmed },
+  { path: "/enter-password", component: EnterPassword },
   { path: "/logged-in", component: LoggedIn },
   { path: "/logged-out", component: LoggedOut },
   { path: "/login", component: Login },
