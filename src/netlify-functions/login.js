@@ -46,7 +46,11 @@ exports.handler = function register(event, context, callback) {
     .then((response) => {
       logging.log(`Successfully logged in.`);
       return Promise.resolve(
-        JSON.stringify({ sessionId: response.data.sessionId, ts: response.ts })
+        JSON.stringify({
+          email: response.data.email,
+          sessionId: response.data.sessionId,
+          ts: response.ts,
+        })
       );
     })
     .catch(logging.logAndReject)

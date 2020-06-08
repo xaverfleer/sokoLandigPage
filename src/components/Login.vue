@@ -38,8 +38,8 @@ export default {
         goal: "Anmelden",
         name: "login",
         postSubmit: (xhr) => {
-          const { sessionId, ts } = JSON.parse(xhr.responseText);
-          stateManagement.updateSession({ sessionId, ts });
+          const { email, sessionId, ts } = JSON.parse(xhr.responseText);
+          stateManagement.updateSession({ email, sessionId, ts });
         },
         secondaryButton: { route: this.$root.appData.routes.resetPassword },
         submitLambdaFunction: "login",

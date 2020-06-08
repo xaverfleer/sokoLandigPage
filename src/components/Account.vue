@@ -3,7 +3,13 @@
     <Header :routes="$root.appData.account.routes" />
     <main>
       <section class="section">
-        <h2>Konto verwalten</h2>
+        <h2>Konto verwalten ({{ shortenedEmail }})</h2>
+        <p>
+          Du bist angemeldet als
+          {{ $root.isLoggedIn ? $root.state.session.email : "" }}. Falls diese
+          Adresse nicht dir gehört, melde dich bitte
+          <a href="#/logout">hier</a> ab.
+        </p>
         <h3>Passwort ändern</h3>
         <FormVue :formData="changePasswordForm" />
       </section>
@@ -28,6 +34,13 @@ import Header from "./Header.vue";
 
 export default {
   components: { Footer, FormVue, Header },
+  computed: {
+    shortenedEmail() {
+      const email =
+        (this.$root.isLoggedIn && this.$root.state.session.email) || "";
+      return `${email.substring(0, 3)}...${email.substring(email.length - 3)}`;
+    },
+  },
   created() {
     if (!this.$root.isLoggedIn)
       this.$router.push(this.$root.appData.routes.register.to);
