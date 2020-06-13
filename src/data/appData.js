@@ -679,6 +679,10 @@ const appData = {
             supertitle: "Kursblock 4 (in Produktion)",
             main: "Auf mich selbst achten...",
           },
+          title: {
+            main: "Mein guter Ferund",
+            videoName: "(Video 4.1)",
+          },
           video: { ref: "https://player.vimeo.com/video/428741631" },
         },
         section42: {
@@ -784,24 +788,10 @@ const appData = {
         section44: {
           id: 3,
           title: {
-            main: "...indem wir unseren Selbstwert stärken – Teil 1",
-            videoName: "(Video 4.4)",
+            main: "...indem wir unseren Selbstwert stärken",
+            videoName: "(Video 4.4a)",
           },
           video: { ref: "https://player.vimeo.com/video/428741959" },
-          documents: [
-            {
-              href: "/documents/so4-Vertiefung-Beduerfniswortschatz.pdf",
-              text: "Vertiefung: Bedürfniswortschatz erweitern – Kursblock 4",
-            },
-          ],
-        },
-        section45: {
-          id: 4,
-          title: {
-            main: "...indem wir unseren Selbstwert stärken – Teil 2",
-            videoName: "(Video 4.4)",
-          },
-          video: { ref: "https://player.vimeo.com/video/428742084" },
           checklist: {
             pretext: "Das wichtigste in Kürze:",
             entries: [
@@ -829,6 +819,50 @@ const appData = {
                 id: 4,
                 text:
                   "Aus der Haltung der Selbstakzeptanz können wir uns liebevoll beim Baby entschuldigen und ihm mitteilen, dass wir es immer noch lieben. Wir sollten dabei aber darauf verzichten, uns abzuwerten oder uns zu rechtfertigen.",
+              },
+            ],
+          },
+          documents: [
+            {
+              href: "/documents/so4-Vertiefung-Beduerfniswortschatz.pdf",
+              text: "Vertiefung: Bedürfniswortschatz erweitern – Kursblock 4",
+            },
+          ],
+        },
+        section45: {
+          id: 4,
+          title: {
+            main: "...indem wir unsere Grenzen schützen",
+            videoName: "(Video 4.4b)",
+          },
+          video: { ref: "https://player.vimeo.com/video/428742084" },
+          checklist: {
+            pretext: "Das wichtigste in Kürze:",
+            entries: [
+              {
+                id: 0,
+                text:
+                  "Manchmal geht unserer Stressreaktion eine Phase voraus, in der wir zugelassen haben, dass unser Baby (oder jemand anderes) unsere persönlichen Grenzen überschreitet.",
+              },
+              {
+                id: 1,
+                text:
+                  "Wir können Stressreaktion daher auch vorbeugen, indem wir lernen, unsere Grenzüberschreibungen frühzeitig wahrzunehmen und wenn es möglich und sinnvoll ist, sie liebevoll zu verteidigen: Ein Nein zu einem Verhalten oder zu einem Wunsch des Babys als Ja zu unseren eigenen Bedürfnissen und Werten.",
+              },
+              {
+                id: 2,
+                text:
+                  "Unser Nein ist dann besonders verständlich, wenn wir es positiv formulieren (sagen was zu tun ist, anstatt sagen, was verboten ist), wenn wir ich-Botschaften senden (anstatt du- oder man-Botschaften) und wenn wir konkret sind. (→ Strategiekarte)",
+              },
+              {
+                id: 3,
+                text:
+                  "Das Nein-Sagen ist eher ein Prozess als ein einmaliges Ereignis. Zum Prozess gehört, dass wir dem Baby Zeit lassen, um unser Nein zu versehen und dass wir den Frust des Babys, der mit einem Nein einhergehen kann, aushalten und liebevoll begleiten können.",
+              },
+              {
+                id: 4,
+                text:
+                  "Wenn wir unsere Grenze aufgezeigt haben, können wir den Blick auf das Baby richten und uns fragen, was eigentlich hinter dem Verhalten steckt, das wir nicht tolerieren können.",
               },
             ],
           },
