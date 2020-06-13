@@ -671,6 +671,180 @@ const appData = {
         },
       },
     },
+    block04: {
+      sections: {
+        section41: {
+          id: 0,
+          blocktitle: {
+            supertitle: "Kursblock 4 (in Produktion)",
+            main: "Auf mich selbst achten...",
+          },
+          video: { ref: "https://player.vimeo.com/video/428741631" },
+        },
+        section42: {
+          id: 1,
+          title: {
+            main: "Du bist wichtig!",
+            videoName: "(Video 4.2)",
+          },
+          video: { ref: "https://player.vimeo.com/video/428741670" },
+          checklist: {
+            pretext: "Das wichtigste in Kürze:",
+            entries: [
+              {
+                id: 0,
+                text:
+                  "Unser Baby ist genetisch ein Steinzeitbaby, das darauf programmiert ist, ständig die Nähe zu einer erwachsenen Person zu suchen.",
+              },
+              {
+                id: 1,
+                text:
+                  "Die Idee, dass man ein so abhängiges Steinzeitbaby als Paar – und die meiste Zeit davon als Einzelperson betreut – ist sehr neu: Eltern waren die grösste Zeit der Menschheitsgeschichte in grössere Gruppen eingebunden.",
+              },
+              {
+                id: 2,
+                text:
+                  "Unser Gehirn ist nicht dazu gemacht, mit der Menge an Stress umzugehen, die ein modernes Leben mit einem Baby potenziell mit sich bringt. ",
+              },
+              {
+                id: 3,
+                text:
+                  "Wenn wir sowieso schon im Dauerstress sind (zu wenig Schlaf, zu viel Arbeit, zu viel Zeitdruck, zu wenig Vernetzung...), erscheinen uns Kleinigkeiten als riesige Bedrohung («Das schaff ich nicht auch noch!»).",
+              },
+              {
+                id: 4,
+                text:
+                  "Fühlt sich unser Gehirn zu stark bedroht, setzt es eine Stressreaktion in Gang: Wir reagieren automatisch, ohne klar zu denken mit einer Kampfreaktion (z.B. herumschreien), einer Fluchtreaktion oder wir fallen in Schockstarre und sind unfähig überhaupt noch zu handeln.",
+              },
+              {
+                id: 5,
+                text:
+                  "Damit wir nicht ständig im Stressmodus sind und uns liebevoll und feinfühlig um unser Baby kümmern können, ist es zentral, uns auch um uns selbst zu kümmern.",
+              },
+              {
+                id: 6,
+                text:
+                  "Auch wir können uns innerlich stärken, indem wir unser Selbstbewusstsein, unseren Selbstwert und unser Selbstvertrauen nähren.",
+              },
+            ],
+          },
+        },
+        section43: {
+          id: 2,
+          title: {
+            main: "...indem wir unser Selbstbewusstsein stärken",
+            videoName: "(Video 4.3)",
+          },
+          video: { ref: "https://player.vimeo.com/video/428741838" },
+          checklist: {
+            pretext: "Das wichtigste in Kürze:",
+            entries: [
+              {
+                id: 0,
+                text:
+                  "Wenn wir ein differenziertes Selbstbewusstsein haben, kennen wir uns selbst gut und wir können unsere Gefühle, Bedürfnisse und Grenzen bewusst wahrnehmen.",
+              },
+              {
+                id: 1,
+                text:
+                  "Unser Selbstbewusstsein können wir in ruhigen Momenten nähren, z.B. indem wir unsere Vergangenheit analysieren, indem wir Achtsamkeitspausen einlegen, um unsere Selbstwahrnehmung zu trainieren, oder indem wir ein Familienleitbild für die Zukunft erstellen.",
+              },
+              {
+                id: 2,
+                text:
+                  "Wenn wir in einer stressigen Situation in Alarmbereitschaft geraten, können wir unsere Selbstwahrnehmung z.B. mit der 5-E-Strategie stärken (erkennen, einordnen, empfinden, erforschen, entspannen).",
+              },
+              {
+                id: 3,
+                text:
+                  "In stressigen Situationen hilft uns eine bewusste Selbstwahrnehmung, mit uns in Kontakt zu bleiben, anstatt die Kontrolle zu verlieren und in eine automatische Stressreaktion zu kippen.",
+              },
+              {
+                id: 4,
+                text:
+                  "Wenn wir doch einmal in eine Stressreaktion geraten, können wir das nachträglich als Chance nutzen, unser Selbstbewusstsein zu differenzieren, indem wir unsere Reaktion reflektieren.",
+              },
+            ],
+          },
+          documents: [
+            {
+              href: "/documents/so4-Vertiefung-Gefuehlswortschatz.pdf",
+              text: "Vertiefung: Gefühlswortschatz erweitern – Kursblock 4",
+            },
+            {
+              href: "/documents/so4-Vertiefung-Stressreaktionen.pdf",
+              text: "Vertiefung: Stressreaktionen reflektieren – Kursblock 4",
+            },
+            {
+              href: "/documents/so4-Vertiefung-Familienleitbild.pdf",
+              text: "Vertiefung: Werte für das Familienleitbild – Kursblock 4",
+            },
+          ],
+        },
+        section44: {
+          id: 3,
+          title: {
+            main: "...indem wir unseren Selbstwert stärken – Teil 1",
+            videoName: "(Video 4.4)",
+          },
+          video: { ref: "https://player.vimeo.com/video/428741959" },
+          documents: [
+            {
+              href: "/documents/so4-Vertiefung-Beduerfniswortschatz.pdf",
+              text: "Vertiefung: Bedürfniswortschatz erweitern – Kursblock 4",
+            },
+          ],
+        },
+        section45: {
+          id: 4,
+          title: {
+            main: "...indem wir unseren Selbstwert stärken – Teil 2",
+            videoName: "(Video 4.4)",
+          },
+          video: { ref: "https://player.vimeo.com/video/428742084" },
+          checklist: {
+            pretext: "Das wichtigste in Kürze:",
+            entries: [
+              {
+                id: 0,
+                text:
+                  "Wenn wir einen starken Selbstwert haben, wertschätzen wir uns selbst als Person. Wir sind es uns wert, gut auf uns selbst zu achten, sodass wir im Alltag genügend Ressourcen für unsere Aufgaben haben.",
+              },
+              {
+                id: 1,
+                text:
+                  "In ruhigen Momenten können wir unseren Selbstwert stärken, in dem wir uns bedingungslos immer wieder Dinge gönnen, die uns guttun und unsere Ressourcen aufladen. Die Übung «Energiebilanz» und «Sonnenbad» können uns dabei helfen.",
+              },
+              {
+                id: 2,
+                text:
+                  "In stressigen Momenten ist es für unseren Selbstwert zentral, dass wir unsere Grenzen möglichst schützen können. Im nächsten Video gehen wir auf das Thema Nein sagen noch vertiefter ein.",
+              },
+              {
+                id: 3,
+                text:
+                  "Nach einer Stressreaktion können wir Selbstkritik und Selbstvorwürfe ersetzen durch Selbstakzeptanz und Selbstumsorgung. Indem wir uns überlegen, was uns gut tut und wie wir uns wieder entspannen können, sorgen wir nicht nur für mehr Wohlbefinden in diesem Moment, wir beugen auch künftige Stressreaktionen vor.",
+              },
+              {
+                id: 4,
+                text:
+                  "Aus der Haltung der Selbstakzeptanz können wir uns liebevoll beim Baby entschuldigen und ihm mitteilen, dass wir es immer noch lieben. Wir sollten dabei aber darauf verzichten, uns abzuwerten oder uns zu rechtfertigen.",
+              },
+            ],
+          },
+          documents: [
+            {
+              href: "/documents/so4-Vertiefung-Inkonsequenz.pdf",
+              text: "Vertiefung: Prinzip der Inkonsequenz – Kursblock 4",
+            },
+          ],
+        },
+        section46: {
+          id: 5,
+          title: { main: "Weitere Inhalte sind in Produktion" },
+        },
+      },
+    },
     routes: {
       block01: routes.block01,
       block02: routes.block02,
