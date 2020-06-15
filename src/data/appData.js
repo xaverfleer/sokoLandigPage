@@ -772,6 +772,12 @@ const appData = {
           },
           documents: [
             {
+              href:
+                "/documents/so4-Strategiekarte-Eigenes-Selbstbewusstsein-stärken.pdf",
+              text:
+                "Strategiekarte: Eigenes Selbstbewusstsein stärken – Kursblock 4",
+            },
+            {
               href: "/documents/so4-Vertiefung-Gefuehlswortschatz.pdf",
               text: "Vertiefung: Gefühlswortschatz erweitern – Kursblock 4",
             },
@@ -824,6 +830,11 @@ const appData = {
           },
           documents: [
             {
+              href:
+                "/documents/so4-Strategiekarte-Eigenen-Selbstwert-stärken.pdf",
+              text: "Strategiekarte: Eigenen Selbstwert stärken – Kursblock 4",
+            },
+            {
               href: "/documents/so4-Vertiefung-Beduerfniswortschatz.pdf",
               text: "Vertiefung: Bedürfniswortschatz erweitern – Kursblock 4",
             },
@@ -867,6 +878,10 @@ const appData = {
             ],
           },
           documents: [
+            {
+              href: "/documents/so4-Strategiekarte-Nein-sagen.pdf",
+              text: "Strategiekarte: Nein sagen – Kursblock 4",
+            },
             {
               href: "/documents/so4-Vertiefung-Inkonsequenz.pdf",
               text: "Vertiefung: Prinzip der Inkonsequenz – Kursblock 4",
