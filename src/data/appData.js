@@ -680,7 +680,7 @@ const appData = {
             main: "Auf mich selbst achten...",
           },
           title: {
-            main: "Mein guter Ferund",
+            main: "Mein guter Freund",
             videoName: "(Video 4.1)",
           },
           video: { ref: "https://player.vimeo.com/video/428741631" },
