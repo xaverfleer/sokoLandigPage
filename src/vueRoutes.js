@@ -12,6 +12,7 @@ import Login from "./components/Login.vue";
 import Logout from "./components/Logout.vue";
 import PasswordLinkSent from "./components/PasswordLinkSent.vue";
 import PageNotFound from "./components/PageNotFound.vue";
+import PrivacyPolicy from "./components/PrivacyPolicy.vue";
 import Register from "./components/Register.vue";
 import RegisterMeeting from "./components/RegisterMeeting.vue";
 import Registered from "./components/Registered.vue";
@@ -33,6 +34,7 @@ export default [
   { path: "/logout", component: Logout },
   { path: "/password-link-sent", component: PasswordLinkSent },
   { path: "/page-not-found", component: PageNotFound },
+  { path: "/privacy-policy", component: PrivacyPolicy },
   { path: "/register", component: Register },
   { path: "/register-meeting", component: RegisterMeeting },
   { path: "/registered", component: Registered },
