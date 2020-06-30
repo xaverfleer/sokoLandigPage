@@ -773,7 +773,7 @@ const appData = {
           documents: [
             {
               href:
-                "/documents/so4-Strategiekarte-Eigenes-Selbstbewusstsein-stärken.pdf",
+                "/documents/so4-Strategiekarte-Eigenes-Selbstbewusstsein-staerken.pdf",
               text:
                 "Strategiekarte: Eigenes Selbstbewusstsein stärken – Kursblock 4",
             },
