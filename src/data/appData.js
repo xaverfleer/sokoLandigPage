@@ -831,7 +831,7 @@ const appData = {
           documents: [
             {
               href:
-                "/documents/so4-Strategiekarte-Eigenen-Selbstwert-stärken.pdf",
+                "/documents/so4-Strategiekarte-Eigenen-Selbstwert-staerken.pdf",
               text: "Strategiekarte: Eigenen Selbstwert stärken – Kursblock 4",
             },
             {
