@@ -29,5 +29,3 @@ export default {
   components: { Checklist, Document, SectionTitle, VideoVue },
 };
 </script>
-
-<style scoped></style>

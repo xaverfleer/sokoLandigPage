@@ -1,10 +1,10 @@
 <template>
   <div class="page">
-    <Header :routes="$root.appData.standardNavRoutes" />
+    <Header />
     <main>
       <section class="section">
         <h2>Anmelden</h2>
-        <LoginForm />
+        <FormVue :formData="loginForm" />
       </section>
     </main>
     <Footer />
@@ -12,20 +12,40 @@
 </template>
 
 <script>
+import stateManagement from "../stateManagement";
 import Footer from "./Footer.vue";
 import Header from "./Header.vue";
-import LoginForm from "./LoginForm.vue";
+import FormVue from "./FormVue.vue";
 
 export default {
   components: {
     Footer,
     Header,
-    LoginForm,
+    FormVue,
   },
   created() {
+    if (this.$root.isLoggedIn)
+      this.$router.push(this.$root.appData.routes.account.to);
     document.title = `Anmelden | so* kommunizieren`;
+  },
+  data() {
+    return {
+      loginForm: {
+        fields: [
+          { ...this.$root.appData.formEntries.email },
+          { ...this.$root.appData.formEntries.password },
+        ],
+        goal: "Anmelden",
+        name: "login",
+        postSubmit: (xhr) => {
+          const { email, sessionId, ts } = JSON.parse(xhr.responseText);
+          stateManagement.updateSession({ email, sessionId, ts });
+        },
+        secondaryButton: { route: this.$root.appData.routes.resetPassword },
+        submitLambdaFunction: "login",
+        successRoute: this.$root.appData.routes.loggedIn.to,
+      },
+    };
   },
 };
 </script>
-
-<style scoped></style>

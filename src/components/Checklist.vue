@@ -19,5 +19,3 @@ export default {
   components: { ChecklistEntry },
 };
 </script>
-
-<style scoped></style>

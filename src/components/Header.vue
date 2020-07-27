@@ -11,7 +11,11 @@
         />
       </a>
       <nav :class="navClasses" @click="toggleNav">
-        <NavEntry v-for="route in routes" :key="route.to" :route="route" />
+        <NavEntry
+          v-for="route in routes || defaultRoutes"
+          :key="route.to"
+          :route="route"
+        />
       </nav>
     </div>
   </header>
@@ -27,8 +31,13 @@ export default {
     navClasses() {
       return ["nav", "nav--kurs", this.isNavActive ? "nav--active" : ""];
     },
+    defaultRoutes() {
+      return this.$root.isLoggedIn
+        ? this.$root.appData.standardNavRoutesLoggedIn
+        : this.$root.appData.standardNavRoutesLoggedOut;
+    },
   },
-  data: function() {
+  data() {
     return {
       logoUrl: "../imgs/logo.png",
       img: logo,
@@ -44,5 +53,3 @@ export default {
   props: ["routes"],
 };
 </script>
-
-<style scoped></style>

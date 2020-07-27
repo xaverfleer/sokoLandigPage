@@ -1,4 +1,8 @@
 export default {
+  account: {
+    text: "Zum Konto",
+    to: "/account",
+  },
   block01: {
     text: "Kursblock 1",
     teaser: "Innere Stärke und Gleichwürdigkeit",
@@ -24,6 +28,18 @@ export default {
     teaser: "Zurückhaltung üben...",
     to: "/course/block-5",
   },
+  changedPassword: {
+    text: "Passwort geändert",
+    to: "/changed-password",
+  },
+  emailConfirmed: {
+    text: "E-Mail bestätigt",
+    to: "/email-confirmed",
+  },
+  emailConfirmFailed: {
+    text: "E-Mail Bestätigung fehlgeschlagen",
+    to: "/email-confirm-failed",
+  },
   landingPage: {
     text: "Zur Startseite",
     href: "/index.html",
@@ -32,12 +48,40 @@ export default {
     text: "Zum Kurs",
     to: "/course/block-1",
   },
+  loggedIn: {
+    text: "Angemeldet",
+    to: "/logged-in",
+  },
+  loggedOut: {
+    text: "Abgemeldet",
+    to: "/logged-out",
+  },
   login: {
-    text: "Direkt anmelden",
+    text: "Anmelden",
     to: "/login",
+  },
+  logout: {
+    text: "Abmelden",
+    to: "/logout",
+  },
+  passwordLinkSent: {
+    text: "Password Link versendet",
+    to: "/password-link-sent",
   },
   register: {
     text: "Konto erstellen",
     to: "/register",
+  },
+  registered: {
+    text: "Konto erstellt",
+    to: "/registered",
+  },
+  registeredMeeting: {
+    text: "Anmeldung erfolgreich",
+    to: "/registered-meeting",
+  },
+  resetPassword: {
+    text: "Passwort vergessen?",
+    to: "/reset-password",
   },
 };

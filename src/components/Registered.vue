@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <Header :routes="$root.appData.standardNavRoutes" />
+    <Header />
     <main>
       <section class="section">
         <h2>Konto ist erfolgreich erstellt</h2>
@@ -29,9 +29,7 @@ import Header from "./Header.vue";
 export default {
   components: { Footer, Header },
   created() {
-    document.title = `Konto bestätiet | so* kommunizieren`;
+    document.title = `Konto bestätigt | so* kommunizieren`;
   },
 };
 </script>
-
-<style scoped></style>

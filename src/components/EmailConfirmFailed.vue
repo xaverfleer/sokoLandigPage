@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <Header :routes="$root.appData.standardNavRoutes" />
+    <Header />
     <main>
       <section class="section">
         <h2>Konto ist nicht bestätigt</h2>
@@ -33,9 +33,7 @@ import Header from "./Header.vue";
 export default {
   components: { Footer, Header },
   created() {
-    document.title = `Konto nicht bestätiet | so* kommunizieren`;
+    document.title = `Konto nicht bestätigt | so* kommunizieren`;
   },
 };
 </script>
-
-<style scoped></style>

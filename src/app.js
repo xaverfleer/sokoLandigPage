@@ -3,37 +3,9 @@ import Vue from "vue/dist/vue.esm";
 import VueRouter from "vue-router/dist/vue-router.esm";
 import appData from "./data/appData";
 import stateM8t from "./stateManagement";
-import Account from "./components/Account.vue";
-import ConfirmEmail from "./components/ConfirmEmail.vue";
-import Course from "./components/Course.vue";
-import EmailConfirmed from "./components/EmailConfirmed.vue";
-import EmailConfirmFailed from "./components/EmailConfirmFailed.vue";
-import Login from "./components/Login.vue";
-import Register from "./components/Register.vue";
-import RegisterMeeting from "./components/RegisterMeeting.vue";
-import Registered from "./components/Registered.vue";
-import RegisteredMeeting from "./components/RegisteredMeeting.vue";
+import routes from "./vueRoutes";
 
 Vue.use(VueRouter);
-
-const routes = [
-  { path: "/account", component: Account },
-  { path: "/course/:block", component: Course },
-  { path: "/confirm-email", component: ConfirmEmail },
-  { path: "/email-confirm-failed", component: EmailConfirmFailed },
-  { path: "/email-confirmed", component: EmailConfirmed },
-  { path: "/login", component: Login },
-  { path: "/register", component: Register },
-  { path: "/register-meeting", component: RegisterMeeting },
-  { path: "/registered", component: Registered },
-  { path: "/registered-meeting", component: RegisteredMeeting },
-  { path: "/kursblock-1", redirect: "course/block-1" },
-  { path: "/kursblock-2", redirect: "course/block-2" },
-  { path: "/kursblock-3", redirect: "course/block-3" },
-  { path: "/kursblock-4", redirect: "course/block-4" },
-  { path: "/kursblock-5", redirect: "course/block-5" },
-  { path: "*", redirect: "course/block-1" },
-];
 
 const router = new VueRouter({ routes });
 
@@ -45,11 +17,21 @@ const vm = new Vue({
     buttons() {
       return this.appData.buttons;
     },
+    sessionId() {
+      return this.state && this.state.session && this.state.session.sessionId;
+    },
     isEarlyBird() {
       return this.state.path === "early-bird";
     },
     isKurs() {
       return this.state.path === "kurs";
+    },
+    isLoggedIn() {
+      const hasSession = this.state.session != null;
+      const activeUntil =
+        hasSession && this.state.session.ts + 30 * 24 * 60 * 60 * 1000;
+      const hasActiveSession = hasSession && Date.now() < activeUntil;
+      return hasActiveSession;
     },
   },
   router,

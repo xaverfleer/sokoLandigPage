@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <Header :routes="course.routes" />
+    <Header :routes="{ ...course.routes, accountRoute }" />
     <main>
       <Block1 :course="course" v-if="$route.params.block === 'block-1'" />
       <Block2 :course="course" v-if="$route.params.block === 'block-2'" />
@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import routes from "../data/routes";
 import Block1 from "./Block-1.vue";
 import Block2 from "./Block-2.vue";
 import Block3 from "./Block-3.vue";
@@ -32,6 +33,11 @@ export default {
     Header,
   },
   computed: {
+    accountRoute() {
+      return this.$root.isLoggedIn
+        ? { ...routes.account, isPrimary: true }
+        : { ...routes.register, text: "Anmelden", isPrimary: true };
+    },
     course() {
       return this.$root.appData.course;
     },
@@ -44,5 +50,3 @@ export default {
   },
 };
 </script>
-
-<style scoped></style>

@@ -7,13 +7,22 @@ function getClient() {
 
 const fns = {
   do: {
-    createUser(paramObject) {
+    createDocument(collection, paramObject) {
       const client = getClient();
-      return client.query(q.Create(q.Collection("users"), paramObject));
+      return client.query(q.Create(q.Collection(collection), paramObject));
+    },
+    createPasswordResetSession(paramObject) {
+      return fns.do.createDocument("passwordResetSession", paramObject);
+    },
+    createUser(paramObject) {
+      return fns.do.createDocument("users", paramObject);
     },
     createSession(paramObject) {
+      return fns.do.createDocument("sessions", paramObject);
+    },
+    deleteDocument(ref) {
       const client = getClient();
-      return client.query(q.Create(q.Collection("sessions"), paramObject));
+      return client.query(q.Delete(ref));
     },
     updateDocument(ref, paramObject) {
       const paramObjWithTimestamp = paramObject || {};
@@ -50,6 +59,18 @@ const fns = {
     sessionByEmail(email) {
       const client = getClient();
       return client.query(q.Get(q.Match(q.Index("sessionByEmail"), email)));
+    },
+    sessionBySessionId(sessionId) {
+      const client = getClient();
+      return client.query(
+        q.Get(q.Match(q.Index("sessionBySessionId"), sessionId))
+      );
+    },
+    passwordResetSessionById(id) {
+      const client = getClient();
+      return client.query(
+        q.Get(q.Match(q.Index("passwordResetSessionById"), id))
+      );
     },
   },
 };

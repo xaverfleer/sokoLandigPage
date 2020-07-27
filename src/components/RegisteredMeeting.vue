@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <Header :routes="$root.appData.standardNavRoutes" />
+    <Header />
     <main>
       <section class="section">
         <h2>Anmeldung erfolgreich</h2>
@@ -33,5 +33,3 @@ export default {
   },
 };
 </script>
-
-<style scoped></style>

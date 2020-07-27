@@ -36,7 +36,7 @@ exports.handler = function register(event, context, callback) {
     .then((doesSessionExist) => {
       logging.log(`Session${doesSessionExist ? " DOES" : " does NOT"} exist`);
       return doesSessionExist
-        ? db
+        ? db.get
             .sessionByEmail(email)
             .then((fetched) => db.do.updateDocument(fetched.ref, {}))
         : db.do.createSession({
@@ -46,7 +46,11 @@ exports.handler = function register(event, context, callback) {
     .then((response) => {
       logging.log(`Successfully logged in.`);
       return Promise.resolve(
-        JSON.stringify({ sessionId: response.data.sessionId })
+        JSON.stringify({
+          email: response.data.email,
+          sessionId: response.data.sessionId,
+          ts: response.ts,
+        })
       );
     })
     .catch(logging.logAndReject)

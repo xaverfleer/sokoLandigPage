@@ -45,6 +45,12 @@ main {
   margin: 1em 0 3em;
 }
 
+input,
+select,
+textarea {
+  font-size: inherit;
+}
+
 .block__supertitle {
   font-size: 2rem;
   color: #966b40;
@@ -149,6 +155,10 @@ main {
   background-color: #408f3d;
 }
 
+.center {
+  text-align: center;
+}
+
 .checklist__item {
   display: flex;
   align-items: center;
@@ -222,8 +232,7 @@ main {
 }
 
 .form--narrow {
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 550px;
 }
 
 .form__buttons {
@@ -253,12 +262,13 @@ main {
   min-width: 15em;
 }
 
-.form-entry--password {
-  min-width: 10em;
+.form-entry__help {
+  margin: 0.3em 0 0 0.3em;
+  color: #c23934;
+  font-size: 1.4rem;
 }
 
 .form-entry__input {
-  flex-grow: 1;
   padding: 1.2rem;
   border-radius: 0.5rem;
 }
@@ -284,6 +294,10 @@ main {
 
 .form-entry__radio-label--disabled {
   color: #aaaaaa;
+}
+
+.form-entry__required {
+  text-decoration: none;
 }
 
 .header {
@@ -518,6 +532,10 @@ main {
 }
 
 @media screen and (min-width: 550px) {
+  .form--narrow {
+    margin: 0 auto;
+  }
+
   .nav:not(.nav--kurs) {
     flex-direction: row;
     align-items: center;
@@ -575,6 +593,10 @@ main {
 
   .footer {
     font-size: 1.4rem;
+  }
+
+  .form-entry__help {
+    font-size: 2rem;
   }
 
   .header {
