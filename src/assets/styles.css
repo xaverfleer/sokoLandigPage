@@ -420,6 +420,11 @@ textarea {
   text-decoration: none;
 }
 
+.paypal-form {
+  display: flex;
+  justify-content: center;
+}
+
 .progress-list__item {
   display: flex;
   align-items: center;
