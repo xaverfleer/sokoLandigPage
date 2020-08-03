@@ -420,9 +420,11 @@ textarea {
   text-decoration: none;
 }
 
-.paypal-form {
+.paypal-button-container {
   display: flex;
   justify-content: center;
+  /* Workaround to hide container behind header. Unclear why this is necessary. */
+  opacity: 0.999;
 }
 
 .progress-list__item {
