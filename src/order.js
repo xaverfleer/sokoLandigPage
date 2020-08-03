@@ -1,4 +1,4 @@
-/* global alert, amplitude, document, paypal, window */
+/* global alert, amplitude, document, paypal, window, XMLHttpRequest */
 
 amplitude.getInstance().logEvent("Order page loaded");
 
@@ -32,10 +32,37 @@ paypal
     },
     onApprove(data, actions) {
       return actions.order.capture().then((details) => {
-        // eslint-disable-next-line no-alert
-        alert(
-          `Zahlung von ${details.payer.name.given_name} erfolgreich ausgeführt. Vorläufig wird dein Konto manuell aktiviert. Wir melden uns in Kürze bei dir. Falls du Fragen hast, melde dich bitte bei kurs@so-kommunizieren.ch.`
-        );
+        function handleSuccess() {
+          // eslint-disable-next-line no-alert
+          alert(
+            `Zahlung von ${details.payer.name.given_name} erfolgreich ausgeführt. Vorläufig wird dein Konto manuell aktiviert. Wir melden uns in Kürze bei dir. Falls du Fragen hast, melde dich bitte bei kurs@so-kommunizieren.ch.`
+          );
+        }
+        function handleFailure() {
+          // Fingers crossed (thread should not enter here)
+          handleSuccess();
+        }
+
+        const stringifiedData = JSON.stringify(details);
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", `.netlify/functions/order`);
+        xhr.send(stringifiedData);
+        xhr.addEventListener("load", () => {
+          switch (xhr.status) {
+            case 200:
+              handleSuccess(xhr);
+              break;
+            case 500:
+            case 504:
+            default:
+              handleFailure();
+              break;
+          }
+        });
+
+        xhr.addEventListener("error", () => {
+          handleFailure();
+        });
       });
     },
   })
