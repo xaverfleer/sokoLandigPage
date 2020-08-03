@@ -5,6 +5,7 @@ const VueLoaderPlugin = require("vue-loader/lib/plugin");
 module.exports = {
   entry: {
     index: "./src/index.js",
+    order: "./src/order.js",
     kurs: "./src/kurs.js",
   },
   output: {
