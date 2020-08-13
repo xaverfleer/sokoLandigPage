@@ -45,6 +45,10 @@ const appData = {
           },
           documents: [
             {
+              href: "/documents/so1-Fahrplan.pdf",
+              text: "Fahrplan – Kursblock 1",
+            },
+            {
               href: "/documents/so1-Zusammenfassung.pdf",
               text: "Zusammenfassung – Kursblock 1",
             },
@@ -239,6 +243,10 @@ const appData = {
             ],
           },
           documents: [
+            {
+              href: "/documents/so2-Fahrplan.pdf",
+              text: "Fahrplan – Kursblock 2",
+            },
             {
               href: "/documents/so2-Zusammenfassung.pdf",
               text: "Zusammenfassung – Kursblock 2",
@@ -487,6 +495,10 @@ const appData = {
             ],
           },
           documents: [
+            {
+              href: "/documents/so3-Fahrplan.pdf",
+              text: "Fahrplan – Kursblock 3",
+            },
             {
               href: "/documents/so3-Zusammenfassung.pdf",
               text: "Zusammenfassung – Kursblock 3",
