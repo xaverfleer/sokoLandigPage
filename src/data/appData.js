@@ -688,7 +688,7 @@ const appData = {
         section41: {
           id: 0,
           blocktitle: {
-            supertitle: "Kursblock 4 (in Produktion)",
+            supertitle: "Kursblock 4",
             main: "Auf mich selbst achten...",
           },
           checklist: {
