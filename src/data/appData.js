@@ -45,6 +45,10 @@ const appData = {
           },
           documents: [
             {
+              href: "/documents/so1-Fahrplan.pdf",
+              text: "Fahrplan – Kursblock 1",
+            },
+            {
               href: "/documents/so1-Zusammenfassung.pdf",
               text: "Zusammenfassung – Kursblock 1",
             },
@@ -239,6 +243,10 @@ const appData = {
             ],
           },
           documents: [
+            {
+              href: "/documents/so2-Fahrplan.pdf",
+              text: "Fahrplan – Kursblock 2",
+            },
             {
               href: "/documents/so2-Zusammenfassung.pdf",
               text: "Zusammenfassung – Kursblock 2",
@@ -487,6 +495,10 @@ const appData = {
             ],
           },
           documents: [
+            {
+              href: "/documents/so3-Fahrplan.pdf",
+              text: "Fahrplan – Kursblock 3",
+            },
             {
               href: "/documents/so3-Zusammenfassung.pdf",
               text: "Zusammenfassung – Kursblock 3",
@@ -890,7 +902,54 @@ const appData = {
         },
         section46: {
           id: 5,
-          title: { main: "Weitere Inhalte sind in Produktion" },
+          title: {
+            main: "...indem wir unser Selbstvertrauen stärken",
+            videoName: "(Video 4.5)",
+          },
+          video: { ref: "https://player.vimeo.com/video/447412269" },
+          checklist: {
+            pretext: "Das wichtigste in Kürze:",
+            entries: [
+              {
+                id: 0,
+                text:
+                  "Ein grundlegendes Vertrauen in unsere Fähigkeiten als Eltern oder Bezugspersonen schenkt uns ein gutes Gefühl, Gelassenheit und den Mut, eigene Wege zu erkunden.",
+              },
+              {
+                id: 1,
+                text:
+                  "In ruhigen Momenten können wir unser Selbstvertrauen einerseits dadurch stärken, dass wir uns weiterentwickeln, andererseits ist auch der Fokus auf schöne, gelungene Momente nährend.",
+              },
+              {
+                id: 2,
+                text:
+                  "Unsere Weiterentwicklung können wir durch die Wahl sinnvoller Lernstrategien fördern (z.B. vertiefende Übungen, mentales Training, Erinnerungshilfen, Memokarten, Lerntagebuch, Austausch mit Gleichgesinnten, Repetition von Inhalten)",
+              },
+              {
+                id: 3,
+                text:
+                  "Durch den Fokus auf gelungene und schöne Momente (z.B. mit der Kernübung, dem Schönwetteraustausch oder dem Sonnenstrahlenbuch) können wir der Negativitätstendenz unseres Gehirns aktiv begegnen und unser Selbstvertrauen nähren.",
+              },
+              {
+                id: 4,
+                text:
+                  "In stressigen Momenten, wenn wir von starken Gefühlen überrumpelt werden, können uns verschiedene Überbrückungstechniken helfen, die freigesetzte Energie der Stressreaktion nicht an unserem Baby auszulassen. Indem wir neugierig mit Techniken experimentieren werden wir mit der Zeit Vertrauen in unsere Fähigkeit gewinnen, Stressreaktionen zu überbrücken. ",
+              },
+              {
+                id: 5,
+                text:
+                  "Nach stressigen Momenten können wir zukunftsorientiert in den Lernprozess investieren, z.B. indem wir die Stressreaktion reflektieren. Wir können auch gegenwartsorientiert etwas tun, was uns das Gefühl gibt, kompetent zu sein, z.B. uns beim Baby entschuldigen. Oder wir können uns vergangenheitsorientiert schöne und gelungene Momente in Erinnerung rufen.",
+              },
+            ],
+          },
+          documents: [
+            {
+              href:
+                "/documents/so4-Strategiekarte-Eigenes-Selbstvertrauen-staerken.pdf",
+              text:
+                "Strategiekarte: Eigenes Selbstvertrauen stärken – Kursblock 4",
+            },
+          ],
         },
       },
     },

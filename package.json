@@ -40,7 +40,7 @@
     "eslint-plugin-import": "^2.21.1",
     "express": "^4.17.1",
     "file-loader": "^6.0.0",
-    "netlify-cli": "^2.53.0",
+    "netlify-cli": "^2.59.1",
     "netlify-lambda": "^1.6.3",
     "prettier": "^1.19.1",
     "style-loader": "^1.2.1",
