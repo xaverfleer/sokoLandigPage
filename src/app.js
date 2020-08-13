@@ -33,6 +33,9 @@ const vm = new Vue({
       const hasActiveSession = hasSession && Date.now() < activeUntil;
       return hasActiveSession;
     },
+    isPaidAccount() {
+      return this.state.isPaidAccount || false;
+    },
   },
   router,
 });
