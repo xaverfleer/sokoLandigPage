@@ -691,6 +691,56 @@ const appData = {
             supertitle: "Kursblock 4 (in Produktion)",
             main: "Auf mich selbst achten...",
           },
+          checklist: {
+            pretext: "In diesem Kursblock…",
+            entries: [
+              {
+                id: 0,
+                text:
+                  "…nimmst du dir selbst gegenüber eine wertschätzende Haltung ein, indem du dir überlegst, wie du mit einem guten Freund kommunizieren würdest (Video 4.1)",
+              },
+              {
+                id: 1,
+                text:
+                  "…erfährst du warum es so anstrengend sein kann, ein Baby zu begleiten und warum es wichtig, ist dass du dich selbst nicht vernachlässigst (Video 4.2)",
+              },
+              {
+                id: 2,
+                text:
+                  "…erhältst du Ideen, wie du dein Selbstbewusstsein in ruhigen Momenten, in stressigen Momenten und nach stressigen Momenten nähren kannst (Video 4.3)",
+              },
+              {
+                id: 3,
+                text:
+                  "…lernst du Möglichkeiten kennen, wie du deinen Selbstwert in ruhigen Momenten, in stressigen Momenten und nach stressigen Momenten nähren kannst (Video 4.4a)",
+              },
+              {
+                id: 4,
+                text:
+                  "…zeigen wir dir, worauf es ankommt, wenn du deine eigenen Grenzen schützt, indem du Nein zu einem Wunsch oder einer Verhaltensweise deines Babys sagst (Video 4.4b)",
+              },
+              {
+                id: 5,
+                text:
+                  "…bekommst du Tipps, wie du dein Selbstvertrauen in ruhigen Momenten, in sehr stressigen Momenten und nach stressigen Momenten nähren kannst (Video 4.5)",
+              },
+            ],
+          },
+          documents: [
+            {
+              href: "/documents/so4-Fahrplan.pdf",
+              text: "Fahrplan – Kursblock 4",
+            },
+            {
+              href: "/documents/so4-Zusammenfassung.pdf",
+              text: "Zusammenfassung – Kursblock 4",
+            },
+            {
+              href: "/documents/so4-Uebungsdossier.pdf",
+              text: "Übungsdossier (PDF) – Kursblock 4",
+            },
+          ],
+        },
           title: {
             main: "Mein guter Freund",
             videoName: "(Video 4.1)",
