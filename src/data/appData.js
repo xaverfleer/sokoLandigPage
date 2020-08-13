@@ -741,13 +741,14 @@ const appData = {
             },
           ],
         },
+        section42: {
           title: {
             main: "Mein guter Freund",
             videoName: "(Video 4.1)",
           },
           video: { ref: "https://player.vimeo.com/video/428741631" },
         },
-        section42: {
+        section43: {
           id: 1,
           title: {
             main: "Du bist wichtig!",
@@ -795,7 +796,7 @@ const appData = {
             ],
           },
         },
-        section43: {
+        section44: {
           id: 2,
           title: {
             main: "...indem wir unser Selbstbewusstsein stärken",
@@ -853,7 +854,7 @@ const appData = {
             },
           ],
         },
-        section44: {
+        section45: {
           id: 3,
           title: {
             main: "...indem wir unseren Selbstwert stärken",
@@ -902,7 +903,7 @@ const appData = {
             },
           ],
         },
-        section45: {
+        section46: {
           id: 4,
           title: {
             main: "...indem wir unsere Grenzen schützen",
@@ -950,7 +951,7 @@ const appData = {
             },
           ],
         },
-        section46: {
+        section47: {
           id: 5,
           title: {
             main: "...indem wir unser Selbstvertrauen stärken",
