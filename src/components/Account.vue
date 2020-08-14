@@ -5,9 +5,8 @@
       <section class="section">
         <h2>Konto verwalten ({{ shortenedEmail }})</h2>
         <p>
-          Du bist angemeldet als
-          {{ $root.isLoggedIn ? $root.state.session.email : "" }}. Falls diese
-          Adresse nicht dir gehört, melde dich bitte
+          Du bist als {{ $root.isLoggedIn ? $root.state.session.email : "" }}
+          angemeldet . Falls diese Adresse nicht dir gehört, melde dich bitte
           <a href="#/logout">hier</a> ab.
         </p>
         <h3>Passwort ändern</h3>
