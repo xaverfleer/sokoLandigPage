@@ -64,6 +64,10 @@ export default {
     text: "Abmelden",
     to: "/logout",
   },
+  order: {
+    text: "Kurs buchen",
+    to: "/order",
+  },
   passwordLinkSent: {
     text: "Password Link versendet",
     to: "/password-link-sent",

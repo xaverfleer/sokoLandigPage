@@ -4,12 +4,42 @@
     <main>
       <section class="section">
         <h2>Konto verwalten ({{ shortenedEmail }})</h2>
-        <p>
-          Du bist angemeldet als
-          {{ $root.isLoggedIn ? $root.state.session.email : "" }}. Falls diese
-          Adresse nicht dir gehört, melde dich bitte
-          <a href="#/logout">hier</a> ab.
-        </p>
+        <h3>Abmelden</h3>
+        <div class="form">
+          <p>
+            Du bist als {{ $root.isLoggedIn ? $root.state.session.email : "" }}
+            angemeldet . Falls diese Adresse nicht dir gehört, melde dich bitte
+            <a href="#/logout">hier</a> ab.
+          </p>
+          <div class="buttons form__buttons">
+            <button class="button button--primary">
+              <a href="#/logout">Abmelden</a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="section" v-if="!$root.isPaidAccount">
+        <h3>Kurs buchen</h3>
+        <div class="form">
+          <p>
+            Du hast freien Zugriff
+            <router-link :to="$root.appData.routes.block01.to"
+              >zum ersten Kursblock.</router-link
+            >
+            Buche den Kurs, um alle Inhalte zu sehen.
+          </p>
+          <div class="buttons form__buttons">
+            <button class="button button--primary">
+              <router-link
+                :to="$root.appData.routes.order.to"
+                @click.native="scrollToTop"
+                >Jetzt buchen</router-link
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="section">
         <h3>Passwort ändern</h3>
         <FormVue :formData="changePasswordForm" />
       </section>

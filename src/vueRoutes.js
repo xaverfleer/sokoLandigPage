@@ -10,6 +10,7 @@ import LoggedIn from "./components/LoggedIn.vue";
 import LoggedOut from "./components/LoggedOut.vue";
 import Login from "./components/Login.vue";
 import Logout from "./components/Logout.vue";
+import Order from "./components/Order.vue";
 import PasswordLinkSent from "./components/PasswordLinkSent.vue";
 import PageNotFound from "./components/PageNotFound.vue";
 import PrivacyPolicy from "./components/PrivacyPolicy.vue";
@@ -32,6 +33,7 @@ export default [
   { path: "/logged-out", component: LoggedOut },
   { path: "/login", component: Login },
   { path: "/logout", component: Logout },
+  { path: "/order", component: Order },
   { path: "/password-link-sent", component: PasswordLinkSent },
   { path: "/page-not-found", component: PageNotFound },
   { path: "/privacy-policy", component: PrivacyPolicy },
