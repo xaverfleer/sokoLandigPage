@@ -20,6 +20,9 @@ const vm = new Vue({
     sessionId() {
       return this.state && this.state.session && this.state.session.sessionId;
     },
+    hasSession() {
+      return this.state.session != null;
+    },
     isEarlyBird() {
       return this.state.path === "early-bird";
     },
@@ -27,10 +30,9 @@ const vm = new Vue({
       return this.state.path === "kurs";
     },
     isLoggedIn() {
-      const hasSession = this.state.session != null;
       const activeUntil =
-        hasSession && this.state.session.ts + 30 * 24 * 60 * 60 * 1000;
-      const hasActiveSession = hasSession && Date.now() < activeUntil;
+        this.hasSession && this.state.session.ts + 30 * 24 * 60 * 60 * 1000;
+      const hasActiveSession = this.hasSession && Date.now() < activeUntil;
       return hasActiveSession;
     },
     isPaidAccount() {
