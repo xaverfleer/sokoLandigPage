@@ -192,6 +192,14 @@ const appData = {
               },
             ],
           },
+          documents: [
+            {
+              href:
+                "/documents/so1-Memokarten.pdf",
+              text:
+                "Memokarten: herablassende vs. gleichwürdige Sprache - Kursblock 1",
+            },
+          ],
         },
         section17: {
           id: 6,
