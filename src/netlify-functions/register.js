@@ -22,8 +22,11 @@ const helpers = {
     const confirmationCode = crypting.randomString();
     const hash = crypting.hash(password + salt);
     const isConfirmed = false;
+    const isPaidAccount = false;
 
-    return { data: { email, hash, salt, confirmationCode, isConfirmed } };
+    return {
+      data: { email, hash, salt, confirmationCode, isConfirmed, isPaidAccount },
+    };
   },
 
   composeEmail(email, cofirmationCode) {

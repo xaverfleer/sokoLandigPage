@@ -688,7 +688,7 @@ const appData = {
         section41: {
           id: 0,
           blocktitle: {
-            supertitle: "Kursblock 4 (in Produktion)",
+            supertitle: "Kursblock 4",
             main: "Auf mich selbst achten...",
           },
           checklist: {
@@ -697,32 +697,32 @@ const appData = {
               {
                 id: 0,
                 text:
-                  "…nimmst du dir selbst gegenüber eine wertschätzende Haltung ein, indem du dir überlegst, wie du mit einem guten Freund kommunizieren würdest (Video 4.1)",
+                  "...nimmst du dir selbst gegenüber eine wertschätzende Haltung ein, indem du dir überlegst, wie du mit einem guten Freund kommunizieren würdest (Video 4.1)",
               },
               {
                 id: 1,
                 text:
-                  "…erfährst du warum es so anstrengend sein kann, ein Baby zu begleiten und warum es wichtig, ist dass du dich selbst nicht vernachlässigst (Video 4.2)",
+                  "...erfährst du warum es so anstrengend sein kann, ein Baby zu begleiten und warum es wichtig, ist dass du dich selbst nicht vernachlässigst (Video 4.2)",
               },
               {
                 id: 2,
                 text:
-                  "…erhältst du Ideen, wie du dein Selbstbewusstsein in ruhigen Momenten, in stressigen Momenten und nach stressigen Momenten nähren kannst (Video 4.3)",
+                  "...erhältst du Ideen, wie du dein Selbstbewusstsein in ruhigen Momenten, in stressigen Momenten und nach stressigen Momenten nähren kannst (Video 4.3)",
               },
               {
                 id: 3,
                 text:
-                  "…lernst du Möglichkeiten kennen, wie du deinen Selbstwert in ruhigen Momenten, in stressigen Momenten und nach stressigen Momenten nähren kannst (Video 4.4a)",
+                  "...lernst du Möglichkeiten kennen, wie du deinen Selbstwert in ruhigen Momenten, in stressigen Momenten und nach stressigen Momenten nähren kannst (Video 4.4a)",
               },
               {
                 id: 4,
                 text:
-                  "…zeigen wir dir, worauf es ankommt, wenn du deine eigenen Grenzen schützt, indem du Nein zu einem Wunsch oder einer Verhaltensweise deines Babys sagst (Video 4.4b)",
+                  "...zeigen wir dir, worauf es ankommt, wenn du deine eigenen Grenzen schützt, indem du Nein zu einem Wunsch oder einer Verhaltensweise deines Babys sagst (Video 4.4b)",
               },
               {
                 id: 5,
                 text:
-                  "…bekommst du Tipps, wie du dein Selbstvertrauen in ruhigen Momenten, in sehr stressigen Momenten und nach stressigen Momenten nähren kannst (Video 4.5)",
+                  "...bekommst du Tipps, wie du dein Selbstvertrauen in ruhigen Momenten, in sehr stressigen Momenten und nach stressigen Momenten nähren kannst (Video 4.5)",
               },
             ],
           },
@@ -741,13 +741,14 @@ const appData = {
             },
           ],
         },
+        section42: {
           title: {
             main: "Mein guter Freund",
             videoName: "(Video 4.1)",
           },
           video: { ref: "https://player.vimeo.com/video/428741631" },
         },
-        section42: {
+        section43: {
           id: 1,
           title: {
             main: "Du bist wichtig!",
@@ -795,7 +796,7 @@ const appData = {
             ],
           },
         },
-        section43: {
+        section44: {
           id: 2,
           title: {
             main: "...indem wir unser Selbstbewusstsein stärken",
@@ -853,7 +854,7 @@ const appData = {
             },
           ],
         },
-        section44: {
+        section45: {
           id: 3,
           title: {
             main: "...indem wir unseren Selbstwert stärken",
@@ -902,7 +903,7 @@ const appData = {
             },
           ],
         },
-        section45: {
+        section46: {
           id: 4,
           title: {
             main: "...indem wir unsere Grenzen schützen",
@@ -950,7 +951,7 @@ const appData = {
             },
           ],
         },
-        section46: {
+        section47: {
           id: 5,
           title: {
             main: "...indem wir unser Selbstvertrauen stärken",

@@ -3,7 +3,7 @@
     <section class="section">
       <div class="block__supertitle">Kursblock&nbsp;5</div>
       <h1 class="block__title">Zurückhaltung üben...</h1>
-      <p>Bitte melde dich an, um alle Inhalte dieses Kurses zu sehen.</p>
+      <p>Bitte buche den Kurs, um alle Inhalte zu sehen.</p>
       <div class="buttons">
         <a
           class="button button--primary cta05"

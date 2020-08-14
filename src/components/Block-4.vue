@@ -1,6 +1,9 @@
 <template>
   <div>
-    <Block4EarlyBird v-if="$root.isEarlyBird" :course="course" />
+    <Block4EarlyBird
+      v-if="$root.isPaidAccount || $root.isEarlyBird"
+      :course="course"
+    />
     <Block4Free v-else />
   </div>
 </template>

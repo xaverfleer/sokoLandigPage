@@ -39,7 +39,7 @@
       </div>
     </section>
     <section class="section">
-      <p>Bitte melde dich an, um alle Inhalte dieses Kurses zu sehen.</p>
+      <p>Bitte buche den Kurs, um alle Inhalte zu sehen.</p>
       <div class="buttons">
         <ButtonVue :info="$root.buttons.cta05Primary" />
       </div>
