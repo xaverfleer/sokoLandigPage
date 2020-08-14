@@ -30,7 +30,11 @@
           </p>
           <div class="buttons form__buttons">
             <button class="button button--primary">
-              <a href="/order.html">Jetzt buchen</a>
+              <router-link
+                :to="$root.appData.routes.order.to"
+                @click.native="scrollToTop"
+                >Jetzt buchen</router-link
+              >
             </button>
           </div>
         </div>
