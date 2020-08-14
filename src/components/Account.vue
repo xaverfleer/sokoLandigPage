@@ -4,11 +4,21 @@
     <main>
       <section class="section">
         <h2>Konto verwalten ({{ shortenedEmail }})</h2>
-        <p>
-          Du bist als {{ $root.isLoggedIn ? $root.state.session.email : "" }}
-          angemeldet . Falls diese Adresse nicht dir gehört, melde dich bitte
-          <a href="#/logout">hier</a> ab.
-        </p>
+        <h3>Abmelden</h3>
+        <div class="form">
+          <p>
+            Du bist als {{ $root.isLoggedIn ? $root.state.session.email : "" }}
+            angemeldet . Falls diese Adresse nicht dir gehört, melde dich bitte
+            <a href="#/logout">hier</a> ab.
+          </p>
+          <div class="buttons form__buttons">
+            <button class="button button--primary">
+              <a href="#/logout">Abmelden</a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="section">
         <h3>Passwort ändern</h3>
         <FormVue :formData="changePasswordForm" />
       </section>

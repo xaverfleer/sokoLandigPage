@@ -145,10 +145,15 @@ textarea {
   color: #408f3d;
 }
 
-.button--primary {
+.button--primary,
+.button--primary a:any-link {
   background-color: #4ba747;
   font-weight: 500;
   color: #ffffff;
+}
+
+.button--primary a:any-link {
+  background-color: transparent;
 }
 
 .button--primary:hover {
