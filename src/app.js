@@ -36,7 +36,7 @@ const vm = new Vue({
       return hasActiveSession;
     },
     isPaidAccount() {
-      return this.state.isPaidAccount || false;
+      return (this.hasSession && this.state.session.isPaidAccount) || false;
     },
   },
   router,
