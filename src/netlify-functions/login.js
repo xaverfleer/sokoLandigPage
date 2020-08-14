@@ -15,6 +15,7 @@ const helpers = {
 exports.handler = function register(event, context, callback) {
   logging.logStart("Start login");
   const respond = responding.responseHandlers(callback);
+  let dbUser;
 
   const { email, password } = helpers.parseEventBody(event.body);
 
@@ -22,7 +23,7 @@ exports.handler = function register(event, context, callback) {
   db.get
     .userByEmail(email)
     .then((fetched) => {
-      const dbUser = fetched.data;
+      dbUser = fetched.data;
       logging.log(`Retrieved user with email: ${dbUser.email}`);
       const correct = crypting.verifyPassword(
         password,
@@ -48,6 +49,7 @@ exports.handler = function register(event, context, callback) {
       return Promise.resolve(
         JSON.stringify({
           email: response.data.email,
+          isPaidAccount: dbUser.isPaidAccount,
           sessionId: response.data.sessionId,
           ts: response.ts,
         })
