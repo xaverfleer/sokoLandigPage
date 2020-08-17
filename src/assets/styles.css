@@ -149,6 +149,10 @@ textarea {
   background-color: #408f3d;
 }
 
+.button--sameline {
+  max-height: 46px;
+}
+
 .button.button--left {
   padding-left: 0;
 }
