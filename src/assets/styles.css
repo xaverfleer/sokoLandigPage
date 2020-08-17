@@ -118,8 +118,8 @@ textarea {
   text-decoration: none;
   border-radius: 5px;
   max-width: 12em;
-
-  padding: 1em;
+  padding: 0.5em 1em;
+  min-height: 46px;
   display: flex;
   align-items: center;
   justify-content: center;
