@@ -1049,6 +1049,20 @@ const appData = {
       ],
       value: "",
     },
+    confirmEmail: {
+      inputId: "form__confirmEmail",
+      label: "E-Mail-Adresse bestätigen",
+      name: "confirmEmail",
+      type: "email",
+      help: "",
+      checks: [
+        {
+          test: (val, allEntries) => val === allEntries.email,
+          message: "Die E-Mail-Adressen stimmen nicht überein.",
+        },
+      ],
+      value: "",
+    },
     email: {
       inputId: "form__email",
       label: "E-Mail-Adresse",
@@ -1068,6 +1082,13 @@ const appData = {
       label: "Passwort",
       name: "password",
       type: "password",
+      value: "",
+    },
+    promoCode: {
+      inputId: "form__promo-code",
+      label: "Rabattcode",
+      name: "promoCode",
+      type: "text",
       value: "",
     },
   },
