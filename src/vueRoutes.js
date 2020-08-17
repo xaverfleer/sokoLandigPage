@@ -19,6 +19,7 @@ import RegisterMeeting from "./components/RegisterMeeting.vue";
 import Registered from "./components/Registered.vue";
 import RegisteredMeeting from "./components/RegisteredMeeting.vue";
 import ResetPassword from "./components/ResetPassword.vue";
+import SetInitialPassword from "./components/SetInitialPassword.vue";
 
 export default [
   { path: "/account", component: Account },
@@ -42,6 +43,7 @@ export default [
   { path: "/registered", component: Registered },
   { path: "/registered-meeting", component: RegisteredMeeting },
   { path: "/reset-password", component: ResetPassword },
+  { path: "/set-initial-password", component: SetInitialPassword },
   { path: "/", redirect: "course/block-1" },
   { path: "/kursblock-1", redirect: "course/block-1" },
   { path: "/kursblock-2", redirect: "course/block-2" },
