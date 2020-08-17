@@ -61,17 +61,6 @@ textarea {
   margin-top: 0.5rem;
 }
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  margin: 1em;
-  text-align: center;
-}
-
-.button.button--left {
-  padding-left: 0;
-}
-
 .booking-offers {
   display: flex;
   flex-direction: column;
@@ -158,6 +147,17 @@ textarea {
 
 .button--primary:hover {
   background-color: #408f3d;
+}
+
+.button.button--left {
+  padding-left: 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+  text-align: flex-end;
 }
 
 .center {
