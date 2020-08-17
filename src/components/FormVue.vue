@@ -10,8 +10,8 @@
         v-if="formData.secondaryButton"
         :info="formData.secondaryButton.route"
       />
-      <button class="button button--primary">
-        {{ formData.buttonText || formData.goal }}
+      <button v-if="buttonLabel" :class="buttonClasses">
+        {{ buttonLabel }}
       </button>
     </div>
   </form>
@@ -24,10 +24,21 @@ import RouteVue from "./RouteVue.vue";
 export default {
   components: { FormEntry, RouteVue },
   computed: {
+    buttonClasses() {
+      return [
+        "button",
+        "button--primary",
+        this.formData.layout === "small" && "button--sameline",
+      ];
+    },
+    buttonLabel() {
+      return this.formData.buttonText || this.formData.goal || "";
+    },
     buttonsClasses() {
       return [
         "buttons form__buttons",
         this.formData.secondaryButton && "form-buttons--dual",
+        this.formData.layout === "small" && "form-buttons--sameline",
       ];
     },
     compactData() {
