@@ -3,6 +3,7 @@ import AccountDeleted from "./components/AccountDeleted.vue";
 import ChangedPassword from "./components/ChangedPassword.vue";
 import ConfirmEmail from "./components/ConfirmEmail.vue";
 import Course from "./components/Course.vue";
+import DefinedPassword from "./components/DefinedPassword.vue";
 import EmailConfirmed from "./components/EmailConfirmed.vue";
 import EmailConfirmFailed from "./components/EmailConfirmFailed.vue";
 import EnterNewPassword from "./components/EnterNewPassword.vue";
@@ -28,6 +29,7 @@ export default [
   { path: "/changed-password", component: ChangedPassword },
   { path: "/course/:block", component: Course },
   { path: "/confirm-email", component: ConfirmEmail },
+  { path: "/defined-password", component: DefinedPassword },
   { path: "/email-confirm-failed", component: EmailConfirmFailed },
   { path: "/email-confirmed", component: EmailConfirmed },
   { path: "/enter-new-password", component: EnterNewPassword },
