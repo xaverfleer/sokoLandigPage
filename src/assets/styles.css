@@ -249,11 +249,16 @@ textarea {
   flex-basis: 100%;
   flex-grow: 1;
   justify-content: flex-end;
-  margin: 2em 0 0 1em;
+  margin: 2.3em 0 0 1em;
 }
 
 .form-buttons--dual {
   justify-content: space-between;
+}
+
+.form-buttons--sameline {
+  flex-grow: 0;
+  flex-basis: auto;
 }
 
 .form-entry {
@@ -431,6 +436,7 @@ textarea {
 }
 
 .paypal-button-container {
+  margin-top: 2em;
   display: flex;
   justify-content: center;
   /* Workaround to hide container behind header. Unclear why this is necessary. */
@@ -486,6 +492,15 @@ textarea {
   border-radius: 5px;
   transform: rotate(-2deg);
   margin: 3em 1em;
+}
+
+.shopping-cart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shopping-cart__label {
+  margin-right: 1em;
 }
 
 .ul--3-dots {
@@ -606,6 +621,10 @@ textarea {
 
   .button {
     font-size: 2rem;
+  }
+
+  .button--sameline {
+    max-height: 54px;
   }
 
   .footer {
