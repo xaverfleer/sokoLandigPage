@@ -17,6 +17,7 @@ import PrivacyPolicy from "./components/PrivacyPolicy.vue";
 import Register from "./components/Register.vue";
 import RegisterMeeting from "./components/RegisterMeeting.vue";
 import Registered from "./components/Registered.vue";
+import Registered2 from "./components/Registered2.vue";
 import RegisteredMeeting from "./components/RegisteredMeeting.vue";
 import ResetPassword from "./components/ResetPassword.vue";
 import SetInitialPassword from "./components/SetInitialPassword.vue";
@@ -41,6 +42,7 @@ export default [
   { path: "/register", component: Register },
   { path: "/register-meeting", component: RegisterMeeting },
   { path: "/registered", component: Registered },
+  { path: "/registered2", component: Registered2 },
   { path: "/registered-meeting", component: RegisteredMeeting },
   { path: "/reset-password", component: ResetPassword },
   { path: "/set-initial-password", component: SetInitialPassword },
