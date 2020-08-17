@@ -30,7 +30,7 @@ export default {
   created() {
     if (this.$root.isLoggedIn)
       this.$router.push(this.$root.appData.routes.account.to);
-    document.title = `Anmeldung erfolgreich | so* kommunizieren`;
+    document.title = `Link versendet | so* kommunizieren`;
   },
 };
 </script>
