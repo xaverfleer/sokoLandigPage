@@ -2,7 +2,7 @@
   <div class="order-flow">
     <h2>Einkaufswagen</h2>
     <div class="shopping-cart">
-      <p class="shopping-cart__label">Im Einkaufswagen:</p>
+      <p class="shopping-cart__label">Im Einkaufswagen:</p>
       <p>1x Early-Bird-Packet: {{ price }}&nbsp;CHF{{ discountMessage }}</p>
     </div>
     <div class="step step--promo-code">
