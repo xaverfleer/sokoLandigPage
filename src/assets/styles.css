@@ -236,6 +236,7 @@ textarea {
 
 .form {
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
   margin: 0 1em 1em 0;
 }
