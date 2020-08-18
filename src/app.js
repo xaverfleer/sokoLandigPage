@@ -26,8 +26,8 @@ const vm = new Vue({
     isEarlyBird() {
       return this.state.path === "early-bird";
     },
-    isKurs() {
-      return this.state.path === "kurs";
+    isFree() {
+      return !this.isPaidAccount;
     },
     isLoggedIn() {
       const activeUntil =

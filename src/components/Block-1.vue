@@ -8,10 +8,10 @@
     <div class="buttons">
       <RouteVue
         :info="{ ...course.routes.block02, isPrimary: true }"
-        v-if="$root.isKurs"
+        v-if="$root.isFree"
       />
-      <ButtonVue :info="$root.buttons.cta05Secondary" v-if="$root.isKurs" />
-      <RouteVue :info="course.routes.block02" v-if="$root.isEarlyBird" />
+      <ButtonVue :info="$root.buttons.cta05Secondary" v-if="$root.isFree" />
+      <RouteVue :info="course.routes.block02" v-if="$root.isPaidAccount" />
     </div>
   </div>
 </template>
