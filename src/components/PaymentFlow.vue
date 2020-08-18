@@ -115,8 +115,10 @@ const vm = {
         this.createPaidUser();
       }
     },
-    handleUserCreationSuccess() {
-      this.$router.push(this.$root.appData.routes.registered2.to);
+    handleUserCreationSuccess(xhr) {
+      if (xhr.response === "Account upgraded") {
+        this.$router.push(this.$root.appData.routes.upgradedAccount.to);
+      } else this.$router.push(this.$root.appData.routes.registered2.to);
     },
     handleUserCreationFailure() {
       alert(

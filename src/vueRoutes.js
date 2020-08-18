@@ -22,6 +22,7 @@ import Registered2 from "./components/Registered2.vue";
 import RegisteredMeeting from "./components/RegisteredMeeting.vue";
 import ResetPassword from "./components/ResetPassword.vue";
 import SetInitialPassword from "./components/SetInitialPassword.vue";
+import UpgradedAccount from "./components/UpgradedAccount.vue";
 
 export default [
   { path: "/account", component: Account },
@@ -48,6 +49,7 @@ export default [
   { path: "/registered-meeting", component: RegisteredMeeting },
   { path: "/reset-password", component: ResetPassword },
   { path: "/set-initial-password", component: SetInitialPassword },
+  { path: "/upgraded-account", component: UpgradedAccount },
   { path: "/", redirect: "course/block-1" },
   { path: "/kursblock-1", redirect: "course/block-1" },
   { path: "/kursblock-2", redirect: "course/block-2" },
