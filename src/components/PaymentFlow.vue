@@ -38,6 +38,7 @@ import FormEntry from "./FormEntry.vue";
 import FormVue from "./FormVue.vue";
 import Header from "./Header.vue";
 import routes from "../data/routes";
+import stateManagement from "../stateManagement";
 
 const vm = {
   components: { Footer, FormEntry, FormVue, Header },
@@ -117,6 +118,11 @@ const vm = {
     },
     handleUserCreationSuccess(xhr) {
       if (xhr.response === "Account upgraded") {
+        if (this.$root.hasSession) {
+          const oldSession = this.$root.state.session;
+          const newSession = { ...oldSession, isPaidAccount: true };
+          stateManagement.updateSession(newSession);
+        }
         this.$router.push(this.$root.appData.routes.upgradedAccount.to);
       } else this.$router.push(this.$root.appData.routes.registered2.to);
     },
