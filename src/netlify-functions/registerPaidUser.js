@@ -17,15 +17,22 @@ const helpers = {
     };
   },
 
-  composeEmail(email, pwCode) {
-    const message = {
+  composeUpgradedEmail(email) {
+    return {
+      to: email,
+      subject: "Zugang freigeschaltet.",
+      text: `Vielen Dank hast du so* kommunizieren mit meinem Baby gebucht.\n\nDu hast nun vollen Zugriff auf alle Inhalte.`,
+    };
+  },
+
+  composePwEmail(email, pwCode) {
+    return {
       to: email,
       subject: "Passwort definieren und loslegen",
       text: `Vielen Dank hast du so* kommunizieren mit meinem Baby gebucht.\n\nKlicke auf den Link um dein Passwort zu definieren: https://so-kommunizieren.ch/kurs?pwCode=${encodeURIComponent(
         pwCode
       )}#/set-initial-password/`,
     };
-    return { message };
   },
 };
 
@@ -42,21 +49,41 @@ exports.handler = function register(event, context, callback = () => {}) {
     .doesUserExist(email)
     .then((doesUserExist) => {
       logging.log(`User${doesUserExist ? " DOES" : " does NOT"} exist.`);
-      return doesUserExist ? Promise.reject() : newUserParams;
-    })
-    .then(() => {
+      if (doesUserExist) {
+        logging.log(`Get user with email ${email}.`);
+        return db.get
+          .userByEmail(email)
+          .then((fetched) => {
+            logging.log(`Upgrade user with email${email}.`);
+            const paramsObject = { data: { isPaidAccount: true, promoCode } };
+            return db.do.updateDocument(fetched.ref, paramsObject);
+          })
+          .then((response) => {
+            logging.log(`Compose email.`);
+            return helpers.composeUpgradedEmail(response.data.email);
+          })
+          .then((message) => {
+            logging.log(`Send email.`);
+            return mailing.sendEmail(message);
+          })
+          .then(() => "Account upgraded");
+      }
       logging.log(`Create user with email ${newUserParams.data.email}.`);
-      return db.do.createUser(newUserParams);
+      return db.do
+        .createUser(newUserParams)
+        .then((response) => {
+          logging.log(`Created︎ user.\nCompose email.`);
+          return helpers.composePwEmail(
+            response.data.email,
+            response.data.pwCode
+          );
+        })
+        .then((message) => {
+          logging.log(`Send email.`);
+          return mailing.sendEmail(message);
+        })
+        .then(() => "Link sent");
     })
-    .then((response) => {
-      logging.log(`Created︎ user.\nCompose email.`);
-      return helpers.composeEmail(response.data.email, response.data.pwCode);
-    })
-    .then(({ message }) => {
-      logging.log(`Send email.`);
-      return mailing.sendEmail(message);
-    })
-    .then(() => "success")
     .catch(logging.logAndReject)
     .then(respond.success, respond.failed);
 };
