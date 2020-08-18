@@ -192,6 +192,14 @@ const appData = {
               },
             ],
           },
+          documents: [
+            {
+              href:
+                "/documents/so1-Memokarten.pdf",
+              text:
+                "Memokarten: herablassende vs. gleichwürdige Sprache - Kursblock 1",
+            },
+          ],
         },
         section17: {
           id: 6,
@@ -795,6 +803,14 @@ const appData = {
               },
             ],
           },
+          documents: [
+            {
+              href:
+                "/documents/so4-Strategiekarte-Ampelcheck.pdf",
+              text:
+                "Strategiekarte: Der Ampel-Check – Kursblock 4",
+            },
+          ],
         },
         section44: {
           id: 2,
