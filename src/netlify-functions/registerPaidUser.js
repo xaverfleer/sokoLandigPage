@@ -5,15 +5,10 @@ const mailing = require("./private/mailing");
 const responding = require("./private/responding");
 
 const helpers = {
-  composeUser(email, name, promoCode) {
+  composeUser(personalData) {
+    const pwCode = crypting.randomString();
     return {
-      data: {
-        email,
-        name,
-        isPaidAccount: true,
-        promoCode,
-        pwCode: crypting.randomString(),
-      },
+      data: { ...personalData, isPaidAccount: true, pwCode },
     };
   },
 
@@ -40,9 +35,18 @@ exports.handler = function register(event, context, callback = () => {}) {
   logging.logStart("Start register paid user");
   const respond = responding.responseHandlers(callback);
 
-  const { email, name, promoCode } = JSON.parse(event.body);
+  const { address, city, email, name, phone, promoCode } = JSON.parse(
+    event.body
+  );
 
-  const newUserParams = helpers.composeUser(email, name, promoCode);
+  const newUserParams = helpers.composeUser({
+    address,
+    city,
+    email,
+    name,
+    phone,
+    promoCode,
+  });
 
   logging.log(`Check if user exists. User email: ${email}`);
   db.get

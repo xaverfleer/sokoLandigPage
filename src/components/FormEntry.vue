@@ -1,7 +1,11 @@
 <template>
   <div :class="formEntryClasses">
     <label class="form-entry__label" :for="options.inputId">
-      <abbr class="form-entry__required" title="Pflichtfeld">* </abbr
+      <abbr
+        class="form-entry__required"
+        title="Pflichtfeld"
+        v-if="!options.optional"
+        >* </abbr
       >{{ options.label }}</label
     >
     <textarea
@@ -19,7 +23,7 @@
       :id="options.inputId"
       v-model="options.value"
       v-else
-      required
+      :required="!options.optional"
     />
     <div class="form-entry__help">{{ options.help }}</div>
   </div>

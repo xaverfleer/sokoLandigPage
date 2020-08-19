@@ -1,4 +1,18 @@
 export default {
+  address: {
+    inputId: "form__address",
+    label: "Adresse",
+    name: "address",
+    type: "text",
+    value: "",
+  },
+  city: {
+    inputId: "form__city",
+    label: "PLZ / Ort",
+    name: "city",
+    type: "text",
+    value: "",
+  },
   comment: {
     inputId: "form__comment",
     isTextArea: true,
@@ -54,6 +68,13 @@ export default {
     label: "Passwort",
     name: "password",
     type: "password",
+    value: "",
+  },
+  phone: {
+    inputId: "form__phone",
+    label: "Telefonnummer",
+    name: "phone",
+    type: "tel",
     value: "",
   },
   promoCode: {

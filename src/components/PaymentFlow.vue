@@ -77,6 +77,13 @@ const vm = {
         { ...this.$root.appData.formEntries.name, fullWidth: true },
         { ...this.$root.appData.formEntries.email },
         { ...this.$root.appData.formEntries.confirmEmail },
+        { ...this.$root.appData.formEntries.city },
+        { ...this.$root.appData.formEntries.address, optional: true },
+        {
+          ...this.$root.appData.formEntries.phone,
+          fullWidth: true,
+          optional: true,
+        },
       ],
       formIsValid: false,
       promoCode: undefined,
