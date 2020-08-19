@@ -21,14 +21,14 @@
           :options="field"
         />
         <div class="buttons form__buttons">
-          <button v-if="price <= 0" class="button button--primary">
+          <button class="button button--primary">
             Weiter
           </button>
         </div>
       </form>
     </div>
-    <div class="step step--payment">
-      <div v-show="price > 0" class="paypal-button-container"></div>
+    <div v-show="showPaypal" class="step step--payment">
+      <div class="paypal-button-container"></div>
     </div>
   </div>
 </template>
@@ -60,6 +60,9 @@ const vm = {
     price() {
       return 35 * (1 - this.discount);
     },
+    showPaypal() {
+      return this.formIsValid && this.price > 0;
+    },
     stringifiedData() {
       return JSON.stringify(this.compactData);
     },
@@ -75,6 +78,7 @@ const vm = {
         { ...this.$root.appData.formEntries.email },
         { ...this.$root.appData.formEntries.confirmEmail },
       ],
+      formIsValid: false,
       promoCode: undefined,
       promoCodeForm: {
         fields: [{ ...this.$root.appData.formEntries.promoCode }],
@@ -114,7 +118,7 @@ const vm = {
     },
     handleSubmit() {
       this.updateHelp(this.formFields);
-      if (this.isInputValid(this.formFields)) {
+      if (this.isFormValid() && this.price <= 0) {
         this.createPaidUser();
       }
     },
@@ -136,8 +140,12 @@ const vm = {
     handlePaymentSuccess() {
       this.createPaidUser();
     },
-    isInputValid(fields) {
-      return fields.reduce((acc, field) => acc && field.help === "", true);
+    isFormValid() {
+      this.formIsValid = this.formFields.reduce(
+        (acc, field) => acc && field.help === "",
+        true
+      );
+      return this.formIsValid;
     },
     loadPaypalButton() {
       paypal
