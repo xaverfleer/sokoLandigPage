@@ -46,7 +46,7 @@ const vm = {
   computed: {
     compactData() {
       return this.formFields
-        .concat([this.promoCodeForm.fields])
+        .concat(this.promoCodeForm.fields)
         .reduce((acc, field) => ({ ...acc, [field.name]: field.value }), {});
     },
     discountMessage() {
