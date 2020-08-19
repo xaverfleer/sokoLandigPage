@@ -805,10 +805,8 @@ const appData = {
           },
           documents: [
             {
-              href:
-                "/documents/so4-Strategiekarte-Ampelcheck.pdf",
-              text:
-                "Strategiekarte: Der Ampel-Check – Kursblock 4",
+              href: "/documents/so4-Strategiekarte-Ampelcheck.pdf",
+              text: "Strategiekarte: Der Ampel-Check – Kursblock 4",
             },
           ],
         },
