@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <Header :routes="$root.appData.account.routes" />
+    <Header />
     <main>
       <section class="section">
         <h2>Konto verwalten ({{ shortenedEmail }})</h2>

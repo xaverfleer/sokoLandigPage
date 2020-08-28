@@ -3,13 +3,6 @@ import routes from "./routes";
 import formEntries from "./formEntries";
 
 const appData = {
-  account: {
-    routes: {
-      kurs: { ...routes.kurs, isPrimary: true },
-      landingPage: routes.landingPage,
-      logout: routes.logout,
-    },
-  },
   course: {
     block01: {
       sections: {
