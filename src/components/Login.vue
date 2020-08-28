@@ -5,6 +5,12 @@
       <section class="section">
         <h2>Anmelden</h2>
         <FormVue :formData="loginForm" />
+        <div>
+          Noch kein Konto?
+          <router-link :to="$root.appData.routes.register.to"
+            >Hier registrieren.
+          </router-link>
+        </div>
       </section>
     </main>
     <Footer />
