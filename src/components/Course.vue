@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <Header :routes="{ ...course.routes, accountRoute }" />
+    <Header :routes="{ ...course.routes }" />
     <main>
       <Block1 :course="course" v-if="$route.params.block === 'block-1'" />
       <Block2 :course="course" v-if="$route.params.block === 'block-2'" />

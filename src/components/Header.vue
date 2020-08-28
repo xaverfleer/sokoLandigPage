@@ -17,6 +17,10 @@
           :route="route"
         />
       </nav>
+      <router-link
+        :to="$root.appData.routes.account.to"
+        class="profile"
+      ></router-link>
     </div>
   </header>
 </template>
@@ -32,9 +36,7 @@ export default {
       return ["nav", "nav--kurs", this.isNavActive ? "nav--active" : ""];
     },
     defaultRoutes() {
-      return this.$root.isLoggedIn
-        ? this.$root.appData.standardNavRoutesLoggedIn
-        : this.$root.appData.standardNavRoutesLoggedOut;
+      return this.$root.appData.standardNavRoutes;
     },
   },
   data() {

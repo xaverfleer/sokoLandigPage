@@ -1041,17 +1041,9 @@ const appData = {
     },
   },
   formEntries,
-  standardNavRoutesLoggedIn: {
+  standardNavRoutes: {
     kurs: { ...routes.kurs, isPrimary: true },
     landingPage: routes.landingPage,
-    account: routes.account,
-    logout: routes.logout,
-  },
-  standardNavRoutesLoggedOut: {
-    kurs: { ...routes.kurs, isPrimary: true },
-    landingPage: routes.landingPage,
-    register: routes.register,
-    login: routes.login,
   },
   routes,
 };
