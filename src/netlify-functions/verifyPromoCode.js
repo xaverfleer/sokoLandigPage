@@ -11,11 +11,12 @@ exports.handler = function register(event, context, callback = () => {}) {
   logging.log(`Request discount for promo codes ${promoCode}`);
   db.get
     .discount(promoCode)
-    .catch(() => ({ data: { discount: 0 } }))
+    .catch(() => ({ data: { discount: 0, expires: "2020-01-01" } }))
     .then((fetched) => {
-      const { discount } = fetched.data;
-      logging.log(`${promoCode} allows discount of ${fetched.data.discount}%.`);
-      return JSON.stringify({ discount, promoCode });
+      const { discount, expires } = fetched.data;
+      const granted = Date.now() <= Date.parse(expires) ? discount : 0;
+      logging.log(`${promoCode} allows discount of ${granted}%.`);
+      return JSON.stringify({ granted, promoCode });
     })
     .catch(logging.logAndReject)
     .then(respond.success, respond.failed);

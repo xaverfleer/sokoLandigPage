@@ -55,6 +55,8 @@ const vm = {
     discountMessageShort() {
       return this.discount
         ? ` ${this.discount * 100}% Rabatt dank Rabattcode ${this.promoCode}`
+        : this.discountWasChecked
+        ? `Kein Rabatt mit Code ${this.promoCode}`
         : "";
     },
     price() {
@@ -72,6 +74,7 @@ const vm = {
   },
   data() {
     return {
+      discountWasChecked: false,
       discount: 0,
       formFields: [
         { ...this.$root.appData.formEntries.name, fullWidth: true },
@@ -95,7 +98,8 @@ const vm = {
         postSubmit: (xhr) => {
           const response = JSON.parse(xhr.response);
           this.promoCode = response.promoCode;
-          this.discount = response.discount / 100;
+          this.discount = response.granted / 100;
+          this.discountWasChecked = true;
           this.waitForPaypal();
         },
         submitLambdaFunction: "verifyPromoCode",
