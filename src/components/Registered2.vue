@@ -3,10 +3,10 @@
     <Header />
     <main>
       <section class="section">
-        <h2>Passwort Link versendet</h2>
+        <h2>Konto ist erfolgreich erstellt</h2>
         <p>
-          Wir haben dir den Link, mit dem du dein Passwort zurücksetzen kannst,
-          versendet.
+          Wir haben dir per E-Mail einen Link gesendet. Bitte folge diesem Link
+          und definiere dein Passwort.
         </p>
         <p>
           <router-link :to="$root.appData.routes.block01.to"
@@ -28,9 +28,7 @@ import Header from "./Header.vue";
 export default {
   components: { Footer, Header },
   created() {
-    if (this.$root.isLoggedIn)
-      this.$router.push(this.$root.appData.routes.account.to);
-    document.title = `Link versendet | so* kommunizieren`;
+    document.title = `Konto erstellt | so* kommunizieren`;
   },
 };
 </script>

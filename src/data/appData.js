@@ -1,14 +1,8 @@
 /* eslint-disable no-irregular-whitespace */
 import routes from "./routes";
+import formEntries from "./formEntries";
 
 const appData = {
-  account: {
-    routes: {
-      kurs: { ...routes.kurs, isPrimary: true },
-      landingPage: routes.landingPage,
-      logout: routes.logout,
-    },
-  },
   course: {
     block01: {
       sections: {
@@ -194,8 +188,7 @@ const appData = {
           },
           documents: [
             {
-              href:
-                "/documents/so1-Memokarten.pdf",
+              href: "/documents/so1-Memokarten.pdf",
               text:
                 "Memokarten: herablassende vs. gleichwürdige Sprache - Kursblock 1",
             },
@@ -805,10 +798,8 @@ const appData = {
           },
           documents: [
             {
-              href:
-                "/documents/so4-Strategiekarte-Ampelcheck.pdf",
-              text:
-                "Strategiekarte: Der Ampel-Check – Kursblock 4",
+              href: "/documents/so4-Strategiekarte-Ampelcheck.pdf",
+              text: "Strategiekarte: Der Ampel-Check – Kursblock 4",
             },
           ],
         },
@@ -1042,62 +1033,10 @@ const appData = {
       isPrimary: false,
     },
   },
-  formEntries: {
-    comment: {
-      inputId: "form__comment",
-      isTextArea: true,
-      label: "Kommentar",
-      name: "comment",
-      value:
-        "Soweit bin ich im Kurs:\n\n\nThemen, die bei mir aktuell sind:\n\n\nFeedback/Wünsche:\n",
-    },
-    confirm: {
-      inputId: "form__confirm",
-      label: "Bestätigen",
-      name: "confirm",
-      type: "password",
-      help: "",
-      checks: [
-        {
-          test: (val, allEntries) => val === allEntries.password,
-          message: "Die Passwörter stimmen nicht überein.",
-        },
-      ],
-      value: "",
-    },
-    email: {
-      inputId: "form__email",
-      label: "E-Mail-Adresse",
-      name: "email",
-      type: "email",
-      value: "",
-    },
-    name: {
-      inputId: "form__name",
-      label: "Name",
-      name: "name",
-      type: "text",
-      value: "",
-    },
-    password: {
-      inputId: "form__password",
-      label: "Passwort",
-      name: "password",
-      type: "password",
-      value: "",
-    },
-  },
-  standardNavRoutesLoggedIn: {
+  formEntries,
+  standardNavRoutes: {
     kurs: { ...routes.kurs, isPrimary: true },
     landingPage: routes.landingPage,
-    account: routes.account,
-    logout: routes.logout,
-  },
-  standardNavRoutesLoggedOut: {
-    kurs: { ...routes.kurs, isPrimary: true },
-    landingPage: routes.landingPage,
-    register: routes.register,
-    login: routes.login,
   },
   routes,
 };

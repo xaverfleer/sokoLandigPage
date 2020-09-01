@@ -32,6 +32,10 @@ export default {
     text: "Passwort geändert",
     to: "/changed-password",
   },
+  definedPassword: {
+    text: "Passwort definiert",
+    to: "/defined-password",
+  },
   emailConfirmed: {
     text: "E-Mail bestätigt",
     to: "/email-confirmed",
@@ -80,6 +84,10 @@ export default {
     text: "Konto erstellt",
     to: "/registered",
   },
+  registered2: {
+    text: "Link versended",
+    to: "/registered2",
+  },
   registeredMeeting: {
     text: "Anmeldung erfolgreich",
     to: "/registered-meeting",
@@ -87,5 +95,9 @@ export default {
   resetPassword: {
     text: "Passwort vergessen?",
     to: "/reset-password",
+  },
+  upgradedAccount: {
+    text: "Account freigeschaltet",
+    to: "/upgraded-account",
   },
 };

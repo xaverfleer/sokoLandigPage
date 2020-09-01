@@ -3,10 +3,13 @@
     <Header />
     <main>
       <section class="section">
-        <h2>Passwort Link versendet</h2>
+        <h2>Account ist freigeschaltet.</h2>
         <p>
-          Wir haben dir den Link, mit dem du dein Passwort zurücksetzen kannst,
-          versendet.
+          Du kannst dich jetzt
+          <router-link :to="$root.appData.routes.login.to"
+            >anmelden</router-link
+          >
+          und alle Inhalte ansehen.
         </p>
         <p>
           <router-link :to="$root.appData.routes.block01.to"
@@ -28,9 +31,7 @@ import Header from "./Header.vue";
 export default {
   components: { Footer, Header },
   created() {
-    if (this.$root.isLoggedIn)
-      this.$router.push(this.$root.appData.routes.account.to);
-    document.title = `Link versendet | so* kommunizieren`;
+    document.title = `Passwort definiert | so* kommunizieren`;
   },
 };
 </script>
