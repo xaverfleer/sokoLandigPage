@@ -129,9 +129,9 @@ const vm = {
     },
     handleSubmit() {
       this.updateHelp(this.formFields);
-      if (this.isFormValid() && this.price <= 0) {
-        this.createPaidUser();
-      }
+      if (this.isFormValid())
+        if (this.price <= 0) this.createPaidUser();
+        else this.waitForPaypal();
     },
     handleUserCreationSuccess(xhr) {
       if (xhr.response === "Account upgraded") {
@@ -159,6 +159,7 @@ const vm = {
       return this.formIsValid;
     },
     loadPaypalButton() {
+      const { price, compactData } = this;
       paypal
         .Buttons({
           createOrder(data, actions) {
@@ -166,11 +167,11 @@ const vm = {
               purchase_units: [
                 {
                   amount: {
-                    value: this.price,
+                    value: price,
                   },
                   description: JSON.stringify({
-                    compactData: this.compactData,
-                    price: this.price,
+                    compactData,
+                    price,
                   }),
                 },
               ],
@@ -200,9 +201,6 @@ const vm = {
         }
       }
     },
-  },
-  mounted() {
-    this.waitForPaypal();
   },
 };
 
