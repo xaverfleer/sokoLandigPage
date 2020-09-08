@@ -1153,6 +1153,12 @@ const appData = {
             ],
           },
         },
+        section56: {
+          id: 5,
+          title: {
+            main: "Weitere Inhalte sind in Produktion.",
+          },
+        },
       },
     },
     routes: {
