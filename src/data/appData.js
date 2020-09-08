@@ -1017,8 +1017,11 @@ const appData = {
         section51: {
           id: 0,
           blocktitle: {
-            supertitle: "Kursblock 5",
+            supertitle: "Kursblock 5 (in Produktion)",
             main: "Zurückhaltung üben...",
+          },
+          checklist: {
+            pretext: "In diesem Kursblock... (in Produktion)",
           },
         },
         section52: {
