@@ -1062,6 +1062,44 @@ const appData = {
             ],
           },
         },
+        section54: {
+          id: 3,
+          title: {
+            main: "Schritt 2 – eine ermöglichende Haltung einnehmen",
+            videoName: "(Video 5.3)",
+          },
+          video: { ref: "https://player.vimeo.com/video/455767701" },
+          checklist: {
+            pretext: "Das wichtigste in Kürze:",
+            entries: [
+              {
+                id: 0,
+                text:
+                  "Wenn das Baby bei seinen Erkundungsbestrebungen nicht ständig auf Verbote stossen und dadurch stark eingeschränkt werden soll, ist es wichtig, dass wir eine ermöglichende Haltung einnehmen. Eine solche Haltung zeigt sich daran, dass...",
+              },
+              {
+                id: 1,
+                text:
+                  "...wir die Umgebung so einrichten, dass es nur wenig Verbot und Gefahren, dafür aber viele anregende Erkundungsmöglichkeiten gibt (vgl. Video 5.2).",
+              },
+              {
+                id: 2,
+                text:
+                  "...wir grundsätzlich bestrebt sind, dafür zu sorgen, dass das Baby seinen Interessen nachgehen kann – auf eine Art und Weise, die für uns angenehm und akzeptabel ist.",
+              },
+              {
+                id: 3,
+                text:
+                  "...wir auf unnötige Verbote verzichten und uns auf diejenigen fokussieren, die wirklich «Not-wenig» sind, also die wirklich für uns, für unser Baby oder für andere eine Not abwenden.",
+              },
+              {
+                id: 4,
+                text:
+                  "...wir lernen, auch auf unerfüllbare Wünsche oder unakzeptables Verhalten mit einem «Ja» statt mit einem «Nein» zu antwortet, ohne dadurch unsere Grenze aufzugeben (z.B. «Ja, wir sehen uns dieses Buch nach dem Essen gemeinsam an. Ich freue mich darauf und jetzt gerade bereite ich das Abendessen vor!»).",
+              },
+            ],
+          },
+        },
       },
     },
     routes: {
