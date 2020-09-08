@@ -1108,6 +1108,12 @@ const appData = {
               },
             ],
           },
+          documents: [
+            {
+              href: "/documents/so5-Strategiekarte-Ermöglichende-Haltung.pdf",
+              text: "Strategiekarte: Eine ermöglichende Haltung einnehmen – Kursblock 5",
+            },
+          ],
         },
         section55: {
           id: 4,
