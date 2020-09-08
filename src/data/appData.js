@@ -1100,6 +1100,59 @@ const appData = {
             ],
           },
         },
+        section55: {
+          id: 4,
+          title: {
+            main: "Schritt 3 – Zurückhaltung üben...",
+            videoName: "(Video 5.4)",
+          },
+          video: { ref: "https://player.vimeo.com/video/455767853" },
+          checklist: {
+            pretext: "Das wichtigste in Kürze:",
+            entries: [
+              {
+                id: 0,
+                text:
+                  "Um sich motorisch und kognitiv zu entwickeln brauchen Babys keine Lehrer oder Trainer, sondern Bezugspersonen, die ihnen in einer anregenden Umgebung und durch eine ermöglichende Haltung das freie Spielen und Forschen ermöglichen.",
+              },
+              {
+                id: 1,
+                text:
+                  "Babys entwickeln sich in sehr unterschiedlichem Tempo und es gibt keinen Grund, die individuelle Entwicklung eines Babys beschleunigen zu wollen.",
+              },
+              {
+                id: 2,
+                text:
+                  "Wenn Bezugspersonen stark in das Spielen und Lernen des Babys eingreifen, riskieren sie, alle drei Wurzeln des inneren Baumes zu schwächen.",
+              },
+              {
+                id: 3,
+                text:
+                  "Das Selbstbewusstsein leidet, weil das Baby keine gute Körperwahrnehmung und Selbsteinschätzung aufbauen kann, wenn es immer dazu angehalten und dabei unterstützt wird, Dinge zu tun, für die es noch nicht bereit ist.",
+              },
+              {
+                id: 4,
+                text:
+                  "Der Selbstwert leidet, weil das Baby seinen Selbstwert an seine Leistungsfähigkeit knüpft, wenn es dazu angehalten wird anders zu Spielen oder schneller zu lernen.",
+              },
+              {
+                id: 5,
+                text:
+                  "Das Selbstvertrauen leidet, weil das Baby sein Interesse am Forschen sowie seine Spontanität und Eigeninitiative verliert, wenn ihm vorgeschrieben wird, womit und wie es spielen soll.",
+              },
+              {
+                id: 6,
+                text:
+                  "Das ABC der Zurückhaltung (abwarten, beschreiben, coachen) kann uns als Leitfaden dabei helfen, zurückhaltend damit zu sein, uns in das Spielen und Lernen unseres Babys einzumischen.",
+              },
+              {
+                id: 7,
+                text:
+                  "Um uns darin zu üben eine ermöglichende zurück-Haltung einzunehmen, können wir Zeiten der ungeteilten Aufmerksamkeit schaffen. In diesen Zeiten beobachten wir neugierig, wie das Baby spielt und forscht und halten uns mit Inputs, Hilfestellungen, Bewertungen usw. bewusst zurück.",
+              },
+            ],
+          },
+        },
       },
     },
     routes: {
