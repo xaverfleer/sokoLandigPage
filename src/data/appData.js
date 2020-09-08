@@ -1064,6 +1064,12 @@ const appData = {
               },
             ],
           },
+          documents: [
+            {
+              href: "/documents/so5-Vertiefung-Anregende-Umgebung.pdf",
+              text: "Vertiefungsinput: Zuhause eine anregende Umgebung schaffen – Kursblock 5",
+            },
+          ],
         },
         section54: {
           id: 3,
@@ -1155,6 +1161,16 @@ const appData = {
               },
             ],
           },
+          documents: [
+            {
+              href: "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung.pdf",
+              text: "Strategiekarte: Das ABC der Zurückhaltung – Kursblock 5",
+            },
+            {
+              href: "/documents/so5-Strategiekarte-Ungeteilte-Aufmerksamkeit.pdf",
+              text: "Strategiekarte: Die Zeit der ungeteilten Aufmerksamkeit – Kursblock 5",
+            },
+          ],
         },
         section56: {
           id: 5,
