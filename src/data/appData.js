@@ -1018,7 +1018,16 @@ const appData = {
           id: 0,
           blocktitle: {
             supertitle: "Kursblock 5",
+            main: "Zurückhaltung üben...",
           },
+        },
+        section52: {
+          id: 1,
+          title: {
+            main: "Einstiegsübung: Lass mich doch!",
+            videoName: "(Video 5.1)",
+          },
+          video: { ref: "https://player.vimeo.com/video/455767350" },
         },
       },
     },
