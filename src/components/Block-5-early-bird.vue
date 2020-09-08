@@ -1,20 +1,21 @@
 <template>
   <div>
-    <section class="section">
-      <div class="block__supertitle">Kursblock&nbsp;5</div>
-      <h1 class="block__title">Zurückhaltung üben...</h1>
-      <p>Noch keine Inhalte verfügbar.</p>
-      <div class="buttons">
-        <RouteVue :info="course.routes.block04" />
-      </div>
-    </section>
+    <Section
+      v-for="section in $root.appData.course.block05.sections"
+      :section="section"
+      :key="section.id"
+    />
+    <div class="buttons">
+      <RouteVue :info="course.routes.block04" />
+    </div>
   </div>
 </template>
 
 <script>
 import RouteVue from "./RouteVue.vue";
+import Section from "./Section.vue";
 export default {
-  components: { RouteVue },
+  components: { RouteVue, Section },
   props: ["course"],
 };
 </script>

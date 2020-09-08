@@ -1011,6 +1011,16 @@ const appData = {
         },
       },
     },
+    block05: {
+      sections: {
+        section51: {
+          id: 0,
+          blocktitle: {
+            supertitle: "Kursblock 5",
+          },
+        },
+      },
+    },
     routes: {
       block01: routes.block01,
       block02: routes.block02,
