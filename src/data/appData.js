@@ -1029,6 +1029,39 @@ const appData = {
           },
           video: { ref: "https://player.vimeo.com/video/455767350" },
         },
+        section53: {
+          id: 2,
+          title: {
+            main: "Schritt 1 – eine anregende Umgebung schaffen",
+            videoName: "(Video 5.2)",
+          },
+          video: { ref: "https://player.vimeo.com/video/455767387" },
+          checklist: {
+            pretext: "Das wichtigste in Kürze:",
+            entries: [
+              {
+                id: 0,
+                text:
+                  "Für die gesunde Entwicklung brauchen Babys eine angemessen (also weder über- noch unterfordernde) Menge an Stimulation und Erkundungsmöglichkeiten.",
+              },
+              {
+                id: 1,
+                text:
+                  "In einer anregenden Umgebung wollen Babys unter anderem spannende Gegenstände erforschen, sich vielfältig bewegen, mit anderen Menschen in (spielerische) Interaktion treten, Erwachsene und andere Kinder beobachten sowie mit zunehmendem Alter sich immer mehr an alltäglichen Aktivitäten beteiligen.",
+              },
+              {
+                id: 2,
+                text:
+                  "Wenn wir beobachten, womit sich unser Baby beschäftigt, können wir uns überlegen, ob wir ihm Gegenstände oder Aktivitäten anbieten können, die gleiche oder ähnliche Komponente haben, wie die bekannte Erfahrung, die aber auch noch neue Komponenten mitbringen (Prinzip der Assimilation).",
+              },
+              {
+                id: 3,
+                text:
+                  "Um ein anregendes Angebot bereitzustellen, können wir Haushaltsmaterial auf vielfältige Weise nutzen.",
+              },
+            ],
+          },
+        },
       },
     },
     routes: {
