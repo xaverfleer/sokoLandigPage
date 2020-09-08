@@ -17,23 +17,23 @@ const appData = {
             entries: [
               {
                 id: 0,
-                text: `…verbindest du dich mit deinem Baby, in dem du dir überlegst, was du ihm von Herzen für sein Leben wünschst (Video 1.1)`,
+                text: `...verbindest du dich mit deinem Baby, in dem du dir überlegst, was du ihm von Herzen für sein Leben wünschst (Viseo 1.1)`,
               },
               {
                 id: 1,
-                text: `…erfährst du, was dein Baby braucht, um innerlich stark zu werden (Video 1.2)`,
+                text: `...erfährst du, was dein Baby braucht, um innerlich stark zu werden (Video 1.2)`,
               },
               {
                 id: 2,
-                text: `…erklären wir, was es bedeutet, das Baby als gleichwürdiges Subjekt zu sehen (Video 1.3)`,
+                text: `...erklären wir, was es bedeutet, das Baby als gleichwürdiges Subjekt zu sehen (Video 1.3)`,
               },
               {
                 id: 3,
-                text: `…zeigen wir anhand eines Praxisbeispiels auf, was subjektorientierte Kommunikation in der Praxis heissen kann (Video 1.4)`,
+                text: `...zeigen wir anhand eines Praxisbeispiels auf, was subjektorientierte Kommunikation in der Praxis heissen kann (Video 1.4)`,
               },
               {
                 id: 4,
-                text: `…lernst du anhand konkreter Sätzen den Unterschied zwischen einer gleichwürdigen und einer herablassenden Sprache kennen (Video 1.5)`,
+                text: `...lernst du anhand konkreter Sätzen den Unterschied zwischen einer gleichwürdigen und einer herablassenden Sprache kennen (Video 1.5)`,
               },
             ],
           },
