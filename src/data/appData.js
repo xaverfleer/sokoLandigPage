@@ -1181,7 +1181,7 @@ const appData = {
         section56: {
           id: 5,
           title: {
-            main: "Zurückhaltung üben, wenn dem Baby etwas nicht gelingt",
+            main: "...wenn dem Baby etwas nicht gelingt",
             videoName: "(Video 5.4a)",
           },
           video: { ref: "https://player.vimeo.com/video/456236097" },
