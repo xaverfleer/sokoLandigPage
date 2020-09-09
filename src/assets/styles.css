@@ -338,7 +338,6 @@ textarea {
 }
 
 .header__content {
-  flex-basis: 56px;
   position: relative;
   background-color: #e5cdad;
   display: flex;

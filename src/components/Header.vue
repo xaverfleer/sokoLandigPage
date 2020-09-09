@@ -18,7 +18,11 @@
         />
       </nav>
       <router-link
-        :to="$root.appData.routes.account.to"
+        :to="
+          $root.isLoggedIn
+            ? $root.appData.routes.account.to
+            : $root.appData.routes.login.to
+        "
         class="profile"
       ></router-link>
     </div>
