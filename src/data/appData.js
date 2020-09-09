@@ -1223,7 +1223,7 @@ const appData = {
           documents: [
             {
               href: "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Frust.pdf",
-              text: "Strategiekarte: Zurückhaltend sein, wenn dem Baby etwas nicht gelingt – Kursblock 5",
+              text: "Strategiekarte: Zurückhaltung, wenn dem Baby etwas nicht gelingt – Kursblock 5",
             },
           ],
         },
