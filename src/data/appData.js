@@ -1181,6 +1181,55 @@ const appData = {
         section56: {
           id: 5,
           title: {
+            main: "Zurückhaltung üben, wenn dem Baby etwas nicht gelingt",
+            videoName: "(Video 5.4a)",
+          },
+          video: { ref: "https://player.vimeo.com/video/456236097" },
+          checklist: {
+            pretext: "Das wichtigste in Kürze:",
+            entries: [
+              {
+                id: 0,
+                text:
+                  "Babys bringen von Geburt aus enorm viel Frustrationstoleranz mit. Immer wieder gelingt es ihnen, Frust in Motivation, Motivation in Anstrengung und Anstrengung in Erfolg umzuwandeln.",
+              },
+              {
+                id: 1,
+                text:
+                  "Wenn wir einem Baby, dem etwas noch nicht gelingt, sehr schnell helfen, nehmen wir ihm nicht nur wertvolle Selbstwirksamkeitserfahrungen, wir riskieren auch, dass seine Frustrationstoleranz immer mehr sinkt.",
+              },
+              {
+                id: 2,
+                text:
+                  "Wenn einem Baby etwas noch nicht gelingt, können wir gemäss dem ABC der Zurückhaltung in vielen Situationen einfach abwarten.",
+              },
+              {
+                id: 3,
+                text:
+                  "Wenn ein Baby immer frustrierter wird, können wir ihm seine Situation beschreiben, damit es sie besser versteht. Oftmals reicht das schon, damit Babys ihren Fust überwinden können.",
+              },
+              {
+                id: 4,
+                text:
+                  "Wenn eine Situation mehr Begleitung verlangt, können wir das Baby coachen, indem wir ihm kleine Tipps geben, ihm die Aufgabe etwas erleichtern oder ihm eine Alternative bieten.",
+              },
+              {
+                id: 5,
+                text:
+                  "Vor allem können wir uns aber darauf konzentrieren, den Frust akzeptierend, verständnisvoll, geduldig und liebevoll zu begleiten und dem Baby unsere Zuversicht auszudrücken, dass es bestimmt irgendwann klappen wird.",
+              },
+            ],
+          },
+          documents: [
+            {
+              href: "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Frust.pdf",
+              text: "Strategiekarte: Zurückhaltend sein, wenn dem Baby etwas nicht gelingt – Kursblock 5",
+            },
+          ],
+        },
+        section57: {
+          id: 6,
+          title: {
             main: "Weitere Inhalte sind in Produktion.",
           },
         },
