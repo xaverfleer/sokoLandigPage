@@ -99,7 +99,7 @@ const appData = {
           documents: [
             {
               href: "/documents/so1-Strategiekarte-Essenz-Strategie.pdf",
-              text: "Strategiekarte: Die Essenz-Strategie – Kursblock 1",
+              text: "Strategiekarte: Die Essenz-Strategie – Kursblock 1",
             },
           ],
         },
@@ -190,7 +190,7 @@ const appData = {
             {
               href: "/documents/so1-Memokarten.pdf",
               text:
-                "Memokarten: herablassende vs. gleichwürdige Sprache - Kursblock 1",
+                "Memokarten: herablassende vs. gleichwürdige Sprache - Kursblock 1",
             },
           ],
         },
@@ -354,7 +354,7 @@ const appData = {
               href:
                 "/documents/so2-Strategiekarte-Wenn-wir-etwas-am-Baby-tun.pdf",
               text:
-                "Strategiekarte: ...wenn wir etwas am Baby tun – Kursblock 2",
+                "Strategiekarte: ...wenn wir etwas am Baby tun – Kursblock 2",
             },
             {
               href:
@@ -592,7 +592,7 @@ const appData = {
           documents: [
             {
               href: "/documents/so3-Strategiekarte-Aktives-Lesen.pdf",
-              text: "Strategiekarte: Aktives Lesen – Kursblock 3",
+              text: "Strategiekarte: Aktives Lesen – Kursblock 3",
             },
           ],
         },
@@ -631,7 +631,7 @@ const appData = {
           documents: [
             {
               href: "/documents/so3-Strategiekarte-WARUM-Prozess.pdf",
-              text: "Strategiekarte: Der WARUM-Prozess – Kursblock 3",
+              text: "Strategiekarte: Der WARUM-Prozess – Kursblock 3",
             },
           ],
         },
@@ -800,7 +800,7 @@ const appData = {
           documents: [
             {
               href: "/documents/so4-Strategiekarte-Ampelcheck.pdf",
-              text: "Strategiekarte: Der Ampel-Check – Kursblock 4",
+              text: "Strategiekarte: Der Ampel-Check – Kursblock 4",
             },
           ],
         },
@@ -846,7 +846,7 @@ const appData = {
               href:
                 "/documents/so4-Strategiekarte-Eigenes-Selbstbewusstsein-staerken.pdf",
               text:
-                "Strategiekarte: Eigenes Selbstbewusstsein stärken – Kursblock 4",
+                "Strategiekarte: Eigenes Selbstbewusstsein stärken – Kursblock 4",
             },
             {
               href: "/documents/so4-Vertiefung-Gefuehlswortschatz.pdf",
@@ -903,7 +903,7 @@ const appData = {
             {
               href:
                 "/documents/so4-Strategiekarte-Eigenen-Selbstwert-staerken.pdf",
-              text: "Strategiekarte: Eigenen Selbstwert stärken – Kursblock 4",
+              text: "Strategiekarte: Eigenen Selbstwert stärken – Kursblock 4",
             },
             {
               href: "/documents/so4-Vertiefung-Beduerfniswortschatz.pdf",
@@ -951,7 +951,7 @@ const appData = {
           documents: [
             {
               href: "/documents/so4-Strategiekarte-Nein-sagen.pdf",
-              text: "Strategiekarte: Nein sagen – Kursblock 4",
+              text: "Strategiekarte: Nein sagen – Kursblock 4",
             },
             {
               href: "/documents/so4-Vertiefung-Inkonsequenz.pdf",
@@ -1006,7 +1006,7 @@ const appData = {
               href:
                 "/documents/so4-Strategiekarte-Eigenes-Selbstvertrauen-staerken.pdf",
               text:
-                "Strategiekarte: Eigenes Selbstvertrauen stärken – Kursblock 4",
+                "Strategiekarte: Eigenes Selbstvertrauen stärken – Kursblock 4",
             },
           ],
         },
@@ -1067,7 +1067,8 @@ const appData = {
           documents: [
             {
               href: "/documents/so5-Vertiefung-Anregende-Umgebung.pdf",
-              text: "Vertiefungsinput: Zuhause eine anregende Umgebung schaffen – Kursblock 5",
+              text:
+                "Vertiefungsinput: Zuhause eine anregende Umgebung schaffen – Kursblock 5",
             },
           ],
         },
@@ -1111,7 +1112,8 @@ const appData = {
           documents: [
             {
               href: "/documents/so5-Strategiekarte-Ermöglichende-Haltung.pdf",
-              text: "Strategiekarte: Eine ermöglichende Haltung einnehmen – Kursblock 5",
+              text:
+                "Strategiekarte: Eine ermöglichende Haltung einnehmen – Kursblock 5",
             },
           ],
         },
@@ -1170,11 +1172,13 @@ const appData = {
           documents: [
             {
               href: "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung.pdf",
-              text: "Strategiekarte: Das ABC der Zurückhaltung – Kursblock 5",
+              text: "Strategiekarte: Das ABC der Zurückhaltung – Kursblock 5",
             },
             {
-              href: "/documents/so5-Strategiekarte-Ungeteilte-Aufmerksamkeit.pdf",
-              text: "Strategiekarte: Die Zeit der ungeteilten Aufmerksamkeit – Kursblock 5",
+              href:
+                "/documents/so5-Strategiekarte-Ungeteilte-Aufmerksamkeit.pdf",
+              text:
+                "Strategiekarte: Die Zeit der ungeteilten Aufmerksamkeit – Kursblock 5",
             },
           ],
         },
@@ -1222,8 +1226,10 @@ const appData = {
           },
           documents: [
             {
-              href: "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Frust.pdf",
-              text: "Strategiekarte: Zurückhaltung, wenn dem Baby etwas nicht gelingt – Kursblock 5",
+              href:
+                "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Frust.pdf",
+              text:
+                "Strategiekarte: Zurückhaltung, wenn dem Baby etwas nicht gelingt – Kursblock 5",
             },
           ],
         },
