@@ -3,7 +3,7 @@
     <Header />
     <main>
       <section class="section">
-        <h2>Early-Bird-Packet buchen – CHF&thinsp;35</h2>
+        <h2>Early-Bird-Packet buchen – CHF 35</h2>
         <p>
           Dieser Onlinekurs befindet sich noch im Aufbau. <em>DEIN</em> Feedback
           ist uns wichtig! Deswegen suchen wir zehn neugierige Eltern oder
