@@ -18,7 +18,7 @@ import Header from "./Header.vue";
 export default {
   components: { Footer, Header },
   created() {
-    document.title = `Konto bestätien | so* kommunizieren`;
+    document.title = `Konto bestätigen | so* kommunizieren`;
 
     const xhr = new XMLHttpRequest();
     xhr.open("PUT", `.netlify/functions/confirmEmail${location.search}`);
