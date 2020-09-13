@@ -161,6 +161,7 @@ const vm = {
     },
     loadPaypalButton() {
       const { price, compactData } = this;
+      document.querySelector(".paypal-button-container").innerHTML = "";
       paypal
         .Buttons({
           createOrder(data, actions) {
