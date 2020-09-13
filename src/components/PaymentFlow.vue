@@ -60,7 +60,8 @@ const vm = {
         : "";
     },
     price() {
-      return 35 * (1 - this.discount);
+      const exact = 35 * (1 - this.discount);
+      return Math.floor(exact * 20) / 20;
     },
     showPaypal() {
       return this.formIsValid && this.price > 0;
