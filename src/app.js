@@ -1,9 +1,31 @@
-/* global amplitude, document,  window */
+/* global XMLHttpRequest, amplitude, document, navigator, window */
 import Vue from "vue/dist/vue.esm";
 import VueRouter from "vue-router/dist/vue-router.esm";
 import appData from "./data/appData";
 import stateM8t from "./stateManagement";
 import routes from "./vueRoutes";
+
+Vue.config.errorHandler = (err, vm, info) => {
+  if (document.location.href.indexOf("localhost") === -1) {
+    let payload;
+    try {
+      payload = {
+        // eslint-disable-next-line no-underscore-dangle
+        comonent: vm.$options._componentTag,
+        data: JSON.stringify(vm.$data),
+        info,
+        userAgent: navigator.userAgent,
+        err: err.stack,
+      };
+    } catch (e) {
+      payload = "Could not compose error data";
+    }
+
+    const xhr = new XMLHttpRequest();
+    xhr.open("PUT", `.netlify/functions/logError`);
+    xhr.send(JSON.stringify(payload));
+  }
+};
 
 Vue.use(VueRouter);
 
