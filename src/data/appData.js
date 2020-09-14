@@ -99,7 +99,7 @@ const appData = {
           documents: [
             {
               href: "/documents/so1-Strategiekarte-Essenz-Strategie.pdf",
-              text: "Strategiekarte: Die Essenz-Strategie – Kursblock 1",
+              text: "Strategiekarte: Die Essenz-Strategie – Kursblock 1",
             },
           ],
         },
@@ -190,7 +190,7 @@ const appData = {
             {
               href: "/documents/so1-Memokarten.pdf",
               text:
-                "Memokarten: herablassende vs. gleichwürdige Sprache - Kursblock 1",
+                "Memokarten: herablassende vs. gleichwürdige Sprache - Kursblock 1",
             },
           ],
         },
@@ -354,7 +354,7 @@ const appData = {
               href:
                 "/documents/so2-Strategiekarte-Wenn-wir-etwas-am-Baby-tun.pdf",
               text:
-                "Strategiekarte: ...wenn wir etwas am Baby tun – Kursblock 2",
+                "Strategiekarte: ...wenn wir etwas am Baby tun – Kursblock 2",
             },
             {
               href:
@@ -592,7 +592,7 @@ const appData = {
           documents: [
             {
               href: "/documents/so3-Strategiekarte-Aktives-Lesen.pdf",
-              text: "Strategiekarte: Aktives Lesen – Kursblock 3",
+              text: "Strategiekarte: Aktives Lesen – Kursblock 3",
             },
           ],
         },
@@ -631,7 +631,7 @@ const appData = {
           documents: [
             {
               href: "/documents/so3-Strategiekarte-WARUM-Prozess.pdf",
-              text: "Strategiekarte: Der WARUM-Prozess – Kursblock 3",
+              text: "Strategiekarte: Der WARUM-Prozess – Kursblock 3",
             },
           ],
         },
@@ -800,7 +800,7 @@ const appData = {
           documents: [
             {
               href: "/documents/so4-Strategiekarte-Ampelcheck.pdf",
-              text: "Strategiekarte: Der Ampel-Check – Kursblock 4",
+              text: "Strategiekarte: Der Ampel-Check – Kursblock 4",
             },
           ],
         },
@@ -846,7 +846,7 @@ const appData = {
               href:
                 "/documents/so4-Strategiekarte-Eigenes-Selbstbewusstsein-staerken.pdf",
               text:
-                "Strategiekarte: Eigenes Selbstbewusstsein stärken – Kursblock 4",
+                "Strategiekarte: Eigenes Selbstbewusstsein stärken – Kursblock 4",
             },
             {
               href: "/documents/so4-Vertiefung-Gefuehlswortschatz.pdf",
@@ -903,7 +903,7 @@ const appData = {
             {
               href:
                 "/documents/so4-Strategiekarte-Eigenen-Selbstwert-staerken.pdf",
-              text: "Strategiekarte: Eigenen Selbstwert stärken – Kursblock 4",
+              text: "Strategiekarte: Eigenen Selbstwert stärken – Kursblock 4",
             },
             {
               href: "/documents/so4-Vertiefung-Beduerfniswortschatz.pdf",
@@ -914,7 +914,7 @@ const appData = {
         section46: {
           id: 5,
           title: {
-            main: "...indem wir unsere Grenzen schützen",
+            main: "...indem wir unsere Grenzen schützen",
             videoName: "(Video 4.4b)",
           },
           video: { ref: "https://player.vimeo.com/video/428742084" },
@@ -924,12 +924,12 @@ const appData = {
               {
                 id: 0,
                 text:
-                  "Manchmal geht unserer Stressreaktion eine Phase voraus, in der wir zugelassen haben, dass unser Baby (oder jemand anderes) unsere persönlichen Grenzen überschreitet.",
+                  "Manchmal geht unserer Stressreaktion eine Phase voraus, in der wir zugelassen haben, dass unser Baby (oder jemand anderes) unsere persönlichen Grenzen überschreitet.",
               },
               {
                 id: 1,
                 text:
-                  "Wir können Stressreaktion daher auch vorbeugen, indem wir lernen, unsere Grenzüberschreibungen frühzeitig wahrzunehmen und wenn es möglich und sinnvoll ist, sie liebevoll zu verteidigen: Ein Nein zu einem Verhalten oder zu einem Wunsch des Babys als Ja zu unseren eigenen Bedürfnissen und Werten.",
+                  "Wir können Stressreaktion daher auch vorbeugen, indem wir lernen, unsere Grenzüberschreibungen frühzeitig wahrzunehmen und wenn es möglich und sinnvoll ist, sie liebevoll zu verteidigen: Ein Nein zu einem Verhalten oder zu einem Wunsch des Babys als Ja zu unseren eigenen Bedürfnissen und Werten.",
               },
               {
                 id: 2,
@@ -944,14 +944,14 @@ const appData = {
               {
                 id: 4,
                 text:
-                  "Wenn wir unsere Grenze aufgezeigt haben, können wir den Blick auf das Baby richten und uns fragen, was eigentlich hinter dem Verhalten steckt, das wir nicht tolerieren können.",
+                  "Wenn wir unsere Grenze aufgezeigt haben, können wir den Blick auf das Baby richten und uns fragen, was eigentlich hinter dem Verhalten steckt, das wir nicht tolerieren können.",
               },
             ],
           },
           documents: [
             {
               href: "/documents/so4-Strategiekarte-Nein-sagen.pdf",
-              text: "Strategiekarte: Nein sagen – Kursblock 4",
+              text: "Strategiekarte: Nein sagen – Kursblock 4",
             },
             {
               href: "/documents/so4-Vertiefung-Inkonsequenz.pdf",
@@ -972,32 +972,32 @@ const appData = {
               {
                 id: 0,
                 text:
-                  "Ein grundlegendes Vertrauen in unsere Fähigkeiten als Eltern oder Bezugspersonen schenkt uns ein gutes Gefühl, Gelassenheit und den Mut, eigene Wege zu erkunden.",
+                  "Ein grundlegendes Vertrauen in unsere Fähigkeiten als Eltern oder Bezugspersonen schenkt uns ein gutes Gefühl, Gelassenheit und den Mut, eigene Wege zu erkunden.",
               },
               {
                 id: 1,
                 text:
-                  "In ruhigen Momenten können wir unser Selbstvertrauen einerseits dadurch stärken, dass wir uns weiterentwickeln, andererseits ist auch der Fokus auf schöne, gelungene Momente nährend.",
+                  "In ruhigen Momenten können wir unser Selbstvertrauen einerseits dadurch stärken, dass wir uns weiterentwickeln, andererseits ist auch der Fokus auf schöne, gelungene Momente nährend.",
               },
               {
                 id: 2,
                 text:
-                  "Unsere Weiterentwicklung können wir durch die Wahl sinnvoller Lernstrategien fördern (z.B. vertiefende Übungen, mentales Training, Erinnerungshilfen, Memokarten, Lerntagebuch, Austausch mit Gleichgesinnten, Repetition von Inhalten)",
+                  "Unsere Weiterentwicklung können wir durch die Wahl sinnvoller Lernstrategien fördern (z.B. vertiefende Übungen, mentales Training, Erinnerungshilfen, Memokarten, Lerntagebuch, Austausch mit Gleichgesinnten, Repetition von Inhalten)",
               },
               {
                 id: 3,
                 text:
-                  "Durch den Fokus auf gelungene und schöne Momente (z.B. mit der Kernübung, dem Schönwetteraustausch oder dem Sonnenstrahlenbuch) können wir der Negativitätstendenz unseres Gehirns aktiv begegnen und unser Selbstvertrauen nähren.",
+                  "Durch den Fokus auf gelungene und schöne Momente (z.B. mit der Kernübung, dem Schönwetteraustausch oder dem Sonnenstrahlenbuch) können wir der Negativitätstendenz unseres Gehirns aktiv begegnen und unser Selbstvertrauen nähren.",
               },
               {
                 id: 4,
                 text:
-                  "In stressigen Momenten, wenn wir von starken Gefühlen überrumpelt werden, können uns verschiedene Überbrückungstechniken helfen, die freigesetzte Energie der Stressreaktion nicht an unserem Baby auszulassen. Indem wir neugierig mit Techniken experimentieren werden wir mit der Zeit Vertrauen in unsere Fähigkeit gewinnen, Stressreaktionen zu überbrücken. ",
+                  "In stressigen Momenten, wenn wir von starken Gefühlen überrumpelt werden, können uns verschiedene Überbrückungstechniken helfen, die freigesetzte Energie der Stressreaktion nicht an unserem Baby auszulassen. Indem wir neugierig mit Techniken experimentieren werden wir mit der Zeit Vertrauen in unsere Fähigkeit gewinnen, Stressreaktionen zu überbrücken. ",
               },
               {
                 id: 5,
                 text:
-                  "Nach stressigen Momenten können wir zukunftsorientiert in den Lernprozess investieren, z.B. indem wir die Stressreaktion reflektieren. Wir können auch gegenwartsorientiert etwas tun, was uns das Gefühl gibt, kompetent zu sein, z.B. uns beim Baby entschuldigen. Oder wir können uns vergangenheitsorientiert schöne und gelungene Momente in Erinnerung rufen.",
+                  "Nach stressigen Momenten können wir zukunftsorientiert in den Lernprozess investieren, z.B. indem wir die Stressreaktion reflektieren. Wir können auch gegenwartsorientiert etwas tun, was uns das Gefühl gibt, kompetent zu sein, z.B. uns beim Baby entschuldigen. Oder wir können uns vergangenheitsorientiert schöne und gelungene Momente in Erinnerung rufen.",
               },
             ],
           },
@@ -1006,7 +1006,7 @@ const appData = {
               href:
                 "/documents/so4-Strategiekarte-Eigenes-Selbstvertrauen-staerken.pdf",
               text:
-                "Strategiekarte: Eigenes Selbstvertrauen stärken – Kursblock 4",
+                "Strategiekarte: Eigenes Selbstvertrauen stärken – Kursblock 4",
             },
           ],
         },
@@ -1017,8 +1017,8 @@ const appData = {
         section51: {
           id: 0,
           blocktitle: {
-            supertitle: "Kursblock 5 (in Produktion)",
-            main: "Zurückhaltung üben...",
+            supertitle: "Kursblock 5 (in Produktion)",
+            main: "Zurückhaltung üben...",
           },
           checklist: {
             pretext: "In diesem Kursblock... (in Produktion)",
@@ -1027,7 +1027,7 @@ const appData = {
         section52: {
           id: 1,
           title: {
-            main: "Einstiegsübung: Lass mich doch!",
+            main: "Einstiegsübung: Lass mich doch!",
             videoName: "(Video 5.1)",
           },
           video: { ref: "https://player.vimeo.com/video/455767350" },
@@ -1035,7 +1035,7 @@ const appData = {
         section53: {
           id: 2,
           title: {
-            main: "Schritt 1 – eine anregende Umgebung schaffen",
+            main: "Schritt 1 – eine anregende Umgebung schaffen",
             videoName: "(Video 5.2)",
           },
           video: { ref: "https://player.vimeo.com/video/455767387" },
@@ -1067,8 +1067,7 @@ const appData = {
           documents: [
             {
               href: "/documents/so5-Vertiefung-Anregende-Umgebung.pdf",
-              text:
-                "Vertiefungsinput: Zuhause eine anregende Umgebung schaffen – Kursblock 5",
+              text: "Vertiefungsinput: Zuhause eine anregende Umgebung schaffen – Kursblock 5",
             },
           ],
         },
@@ -1085,35 +1084,34 @@ const appData = {
               {
                 id: 0,
                 text:
-                  "Wenn das Baby bei seinen Erkundungsbestrebungen nicht ständig auf Verbote stossen und dadurch stark eingeschränkt werden soll, ist es wichtig, dass wir eine ermöglichende Haltung einnehmen. Eine solche Haltung zeigt sich daran, dass...",
+                  "Wenn das Baby bei seinen Erkundungsbestrebungen nicht ständig auf Verbote stossen und dadurch stark eingeschränkt werden soll, ist es wichtig, dass wir eine ermöglichende Haltung einnehmen. Eine solche Haltung zeigt sich daran, dass...",
               },
               {
                 id: 1,
                 text:
-                  "...wir die Umgebung so einrichten, dass es nur wenig Verbot und Gefahren, dafür aber viele anregende Erkundungsmöglichkeiten gibt (vgl. Video 5.2).",
+                  "...wir die Umgebung so einrichten, dass es nur wenig Verbot und Gefahren, dafür aber viele anregende Erkundungsmöglichkeiten gibt (vgl. Video 5.2).",
               },
               {
                 id: 2,
                 text:
-                  "...wir grundsätzlich bestrebt sind, dafür zu sorgen, dass das Baby seinen Interessen nachgehen kann – auf eine Art und Weise, die für uns angenehm und akzeptabel ist.",
+                  "...wir grundsätzlich bestrebt sind, dafür zu sorgen, dass das Baby seinen Interessen nachgehen kann – auf eine Art und Weise, die für uns angenehm und akzeptabel ist.",
               },
               {
                 id: 3,
                 text:
-                  "...wir auf unnötige Verbote verzichten und uns auf diejenigen fokussieren, die wirklich «Not-wenig» sind, also die wirklich für uns, für unser Baby oder für andere eine Not abwenden.",
+                  "...wir auf unnötige Verbote verzichten und uns auf diejenigen fokussieren, die wirklich «Not-wenig» sind, also die wirklich für uns, für unser Baby oder für andere eine Not abwenden.",
               },
               {
                 id: 4,
                 text:
-                  "...wir lernen, auch auf unerfüllbare Wünsche oder unakzeptables Verhalten mit einem «Ja» statt mit einem «Nein» zu antwortet, ohne dadurch unsere Grenze aufzugeben (z.B. «Ja, wir sehen uns dieses Buch nach dem Essen gemeinsam an. Ich freue mich darauf und jetzt gerade bereite ich das Abendessen vor!»).",
+                  "...wir lernen, auch auf unerfüllbare Wünsche oder unakzeptables Verhalten mit einem «Ja» statt mit einem «Nein» zu antwortet, ohne dadurch unsere Grenze aufzugeben (z.B. «Ja, wir sehen uns dieses Buch nach dem Essen gemeinsam an. Ich freue mich darauf und jetzt gerade bereite ich das Abendessen vor!»).",
               },
             ],
           },
           documents: [
             {
               href: "/documents/so5-Strategiekarte-Ermöglichende-Haltung.pdf",
-              text:
-                "Strategiekarte: Eine ermöglichende Haltung einnehmen – Kursblock 5",
+              text: "Strategiekarte: Eine ermöglichende Haltung einnehmen – Kursblock 5",
             },
           ],
         },
@@ -1130,62 +1128,60 @@ const appData = {
               {
                 id: 0,
                 text:
-                  "Um sich motorisch und kognitiv zu entwickeln brauchen Babys keine Lehrer oder Trainer, sondern Bezugspersonen, die ihnen in einer anregenden Umgebung und durch eine ermöglichende Haltung das freie Spielen und Forschen ermöglichen.",
+                  "Um sich motorisch und kognitiv zu entwickeln brauchen Babys keine Lehrer oder Trainer, sondern Bezugspersonen, die ihnen in einer anregenden Umgebung und durch eine ermöglichende Haltung das freie Spielen und Forschen ermöglichen.",
               },
               {
                 id: 1,
                 text:
-                  "Babys entwickeln sich in sehr unterschiedlichem Tempo und es gibt keinen Grund, die individuelle Entwicklung eines Babys beschleunigen zu wollen.",
+                  "Babys entwickeln sich in sehr unterschiedlichem Tempo und es gibt keinen Grund, die individuelle Entwicklung eines Babys beschleunigen zu wollen.",
               },
               {
                 id: 2,
                 text:
-                  "Wenn Bezugspersonen stark in das Spielen und Lernen des Babys eingreifen, riskieren sie, alle drei Wurzeln des inneren Baumes zu schwächen.",
+                  "Wenn Bezugspersonen stark in das Spielen und Lernen des Babys eingreifen, riskieren sie, alle drei Wurzeln des inneren Baumes zu schwächen.",
               },
               {
                 id: 3,
                 text:
-                  "Das Selbstbewusstsein leidet, weil das Baby keine gute Körperwahrnehmung und Selbsteinschätzung aufbauen kann, wenn es immer dazu angehalten und dabei unterstützt wird, Dinge zu tun, für die es noch nicht bereit ist.",
+                  "Das Selbstbewusstsein leidet, weil das Baby keine gute Körperwahrnehmung und Selbsteinschätzung aufbauen kann, wenn es immer dazu angehalten und dabei unterstützt wird, Dinge zu tun, für die es noch nicht bereit ist.",
               },
               {
                 id: 4,
                 text:
-                  "Der Selbstwert leidet, weil das Baby seinen Selbstwert an seine Leistungsfähigkeit knüpft, wenn es dazu angehalten wird anders zu Spielen oder schneller zu lernen.",
+                  "Der Selbstwert leidet, weil das Baby seinen Selbstwert an seine Leistungsfähigkeit knüpft, wenn es dazu angehalten wird anders zu Spielen oder schneller zu lernen.",
               },
               {
                 id: 5,
                 text:
-                  "Das Selbstvertrauen leidet, weil das Baby sein Interesse am Forschen sowie seine Spontanität und Eigeninitiative verliert, wenn ihm vorgeschrieben wird, womit und wie es spielen soll.",
+                  "Das Selbstvertrauen leidet, weil das Baby sein Interesse am Forschen sowie seine Spontanität und Eigeninitiative verliert, wenn ihm vorgeschrieben wird, womit und wie es spielen soll.",
               },
               {
                 id: 6,
                 text:
-                  "Das ABC der Zurückhaltung (abwarten, beschreiben, coachen) kann uns als Leitfaden dabei helfen, zurückhaltend damit zu sein, uns in das Spielen und Lernen unseres Babys einzumischen.",
+                  "Das ABC der Zurückhaltung (abwarten, beschreiben, coachen) kann uns als Leitfaden dabei helfen, zurückhaltend damit zu sein, uns in das Spielen und Lernen unseres Babys einzumischen.",
               },
               {
                 id: 7,
                 text:
-                  "Um uns darin zu üben eine ermöglichende zurück-Haltung einzunehmen, können wir Zeiten der ungeteilten Aufmerksamkeit schaffen. In diesen Zeiten beobachten wir neugierig, wie das Baby spielt und forscht und halten uns mit Inputs, Hilfestellungen, Bewertungen usw. bewusst zurück.",
+                  "Um uns darin zu üben eine ermöglichende zurück-Haltung einzunehmen, können wir Zeiten der ungeteilten Aufmerksamkeit schaffen. In diesen Zeiten beobachten wir neugierig, wie das Baby spielt und forscht und halten uns mit Inputs, Hilfestellungen, Bewertungen usw. bewusst zurück.",
               },
             ],
           },
           documents: [
             {
               href: "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung.pdf",
-              text: "Strategiekarte: Das ABC der Zurückhaltung – Kursblock 5",
+              text: "Strategiekarte: Das ABC der Zurückhaltung – Kursblock 5",
             },
             {
-              href:
-                "/documents/so5-Strategiekarte-Ungeteilte-Aufmerksamkeit.pdf",
-              text:
-                "Strategiekarte: Die Zeit der ungeteilten Aufmerksamkeit – Kursblock 5",
+              href: "/documents/so5-Strategiekarte-Ungeteilte-Aufmerksamkeit.pdf",
+              text: "Strategiekarte: Die Zeit der ungeteilten Aufmerksamkeit – Kursblock 5",
             },
           ],
         },
         section56: {
           id: 5,
           title: {
-            main: "...wenn dem Baby etwas nicht gelingt",
+            main: "...wenn dem Baby etwas nicht gelingt",
             videoName: "(Video 5.4a)",
           },
           video: { ref: "https://player.vimeo.com/video/456236097" },
@@ -1195,46 +1191,98 @@ const appData = {
               {
                 id: 0,
                 text:
-                  "Babys bringen von Geburt aus enorm viel Frustrationstoleranz mit. Immer wieder gelingt es ihnen, Frust in Motivation, Motivation in Anstrengung und Anstrengung in Erfolg umzuwandeln.",
+                  "Babys bringen von Geburt aus enorm viel Frustrationstoleranz mit. Immer wieder gelingt es ihnen, Frust in Motivation, Motivation in Anstrengung und Anstrengung in Erfolg umzuwandeln.",
               },
               {
                 id: 1,
                 text:
-                  "Wenn wir einem Baby, dem etwas noch nicht gelingt, sehr schnell helfen, nehmen wir ihm nicht nur wertvolle Selbstwirksamkeitserfahrungen, wir riskieren auch, dass seine Frustrationstoleranz immer mehr sinkt.",
+                  "Wenn wir einem Baby, dem etwas noch nicht gelingt, sehr schnell helfen, nehmen wir ihm nicht nur wertvolle Selbstwirksamkeitserfahrungen, wir riskieren auch, dass seine Frustrationstoleranz immer mehr sinkt.",
               },
               {
                 id: 2,
                 text:
-                  "Wenn einem Baby etwas noch nicht gelingt, können wir gemäss dem ABC der Zurückhaltung in vielen Situationen einfach abwarten.",
+                  "Wenn einem Baby etwas noch nicht gelingt, können wir gemäss dem ABC der Zurückhaltung in vielen Situationen einfach abwarten.",
               },
               {
                 id: 3,
                 text:
-                  "Wenn ein Baby immer frustrierter wird, können wir ihm seine Situation beschreiben, damit es sie besser versteht. Oftmals reicht das schon, damit Babys ihren Fust überwinden können.",
+                  "Wenn ein Baby immer frustrierter wird, können wir ihm seine Situation beschreiben, damit es sie besser versteht. Oftmals reicht das schon, damit Babys ihren Fust überwinden können.",
               },
               {
                 id: 4,
                 text:
-                  "Wenn eine Situation mehr Begleitung verlangt, können wir das Baby coachen, indem wir ihm kleine Tipps geben, ihm die Aufgabe etwas erleichtern oder ihm eine Alternative bieten.",
+                  "Wenn eine Situation mehr Begleitung verlangt, können wir das Baby coachen, indem wir ihm kleine Tipps geben, ihm die Aufgabe etwas erleichtern oder ihm eine Alternative bieten.",
               },
               {
                 id: 5,
                 text:
-                  "Vor allem können wir uns aber darauf konzentrieren, den Frust akzeptierend, verständnisvoll, geduldig und liebevoll zu begleiten und dem Baby unsere Zuversicht auszudrücken, dass es bestimmt irgendwann klappen wird.",
+                  "Vor allem können wir uns aber darauf konzentrieren, den Frust akzeptierend, verständnisvoll, geduldig und liebevoll zu begleiten und dem Baby unsere Zuversicht auszudrücken, dass es bestimmt irgendwann klappen wird.",
               },
             ],
           },
           documents: [
             {
-              href:
-                "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Frust.pdf",
-              text:
-                "Strategiekarte: Zurückhaltung, wenn dem Baby etwas nicht gelingt – Kursblock 5",
+              href: "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Frust.pdf",
+              text: "Strategiekarte: Zurückhaltung, wenn dem Baby etwas nicht gelingt – Kursblock 5",
             },
           ],
         },
         section57: {
           id: 6,
+          title: {
+            main: "...wenn das Baby etwas gefährliches tut",
+            videoName: "(Video 5.4b)",
+          },
+          video: { ref: "https://player.vimeo.com/video/457796136" },
+          checklist: {
+            pretext: "Das wichtigste in Kürze:",
+            entries: [
+              {
+                id: 0,
+                text:
+                  "Beim Spielen und Forschen begeben sich Babys manchmal in gefährliche Situationen. Wenn die Gefahr gross ist, greifen wir natürlich sofort ein, um Schlimmeres zu verhindern.",
+              },
+              {
+                id: 1,
+                text:
+                  "Insgesamt ist es aber nicht sinnvoll, das Baby vor allen kleinen Unfällen zu bewahren. Schmerz ist nämlich ein wichtiges Feedback im Lernprozess des Babys.",
+              },
+              {
+                id: 2,
+                text:
+                  "Babys, die sehr oft gehalten oder gerettet werden, haben Schwierigkeiten, ein gutes Körpergefühl und eine realistische Selbsteinschätzung aufzubauen.",
+              },
+              {
+                id: 3,
+                text:
+                  "Wenn sich das Baby in Gefahr begibt können wir zuerst einschätzen, ob wir abwarten können, weil das Risiko nicht sehr gross ist.",
+              },
+              {
+                id: 4,
+                text:
+                  "Wenn wir nicht abwarten können oder wollen, können wir dem Baby seine Situation und die Gefahr ruhig beschreiben. Das reicht oft schon, damit das Baby «sich selbst retten» kann.",
+              },
+              {
+                id: 5,
+                text:
+                  "Wenn die Situation mehr Begleitung verlangt, können wir das Baby coachen, indem wir ihm Anweisungen geben, uns so positionieren, dass wir Unfälle abfedern können oder indem wir Halt bieten.",
+              },
+              {
+                id: 6,
+                text:
+                  "Wenn es doch zu einem Unfall kommt und das Baby weint, können wir dieses Weinen liebevoll begleiten und dem Baby anschliessend aufzeigen, was passiert ist, damit es die Situation besser einordnen und verarbeiten kann.",
+              },
+            ],
+          },
+          documents: [
+            {
+              href: "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Gefahr.pdf",
+              text: "Strategiekarte: Zurückhaltung, wenn das Baby in Gefahr ist – Kursblock 5",
+            },
+          ],
+        },
+        section58: {
+          id: 7,
           title: {
             main: "Weitere Inhalte sind in Produktion.",
           },
