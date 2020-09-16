@@ -1008,6 +1008,12 @@ const appData = {
               text:
                 "Strategiekarte: Eigenes Selbstvertrauen stärken – Kursblock 4",
             },
+            {
+              href:
+                "/documents/so4-Strategiekarte-3-Schritt-Plan.pdf",
+              text:
+                "Strategiekarte: 3-Schritt-Plan nach Stressreaktionen – Kursblock 4",
+            },
           ],
         },
       },
