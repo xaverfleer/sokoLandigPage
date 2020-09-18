@@ -5,25 +5,40 @@ import appData from "./data/appData";
 import stateM8t from "./stateManagement";
 import routes from "./vueRoutes";
 
+function logError(payload) {
+  const xhr = new XMLHttpRequest();
+  xhr.open("PUT", `.netlify/functions/logError`);
+  xhr.send(JSON.stringify(payload));
+}
+
 Vue.config.errorHandler = (err, vm, info) => {
   if (document.location.href.indexOf("localhost") === -1) {
     let payload;
     try {
-      payload = {
+      payload = JSON.stringify({
         // eslint-disable-next-line no-underscore-dangle
         comonent: vm.$options._componentTag,
         data: JSON.stringify(vm.$data),
         info,
         userAgent: navigator.userAgent,
         err: err.stack,
-      };
+      });
     } catch (e) {
       payload = "Could not compose error data";
     }
+    logError(payload);
+  }
+};
 
-    const xhr = new XMLHttpRequest();
-    xhr.open("PUT", `.netlify/functions/logError`);
-    xhr.send(JSON.stringify(payload));
+window.onerror = (message, source, lineno, colno, error) => {
+  if (document.location.href.indexOf("localhost") === -1) {
+    let payload;
+    try {
+      payload = JSON.stringify({ message, source, lineno, colno, error });
+    } catch (e) {
+      payload = "Could not compose error data";
+    }
+    logError(payload);
   }
 };
 
