@@ -38,3 +38,13 @@ document
   );
 
 window.setTimeout(offsetAnchor);
+
+function getFormData() {
+  const entries = [].slice.call(formElem.elements);
+
+  const data = entries.reduce(
+    (acc, elem) => (elem.value ? { ...acc, [elem.name]: elem.value } : acc),
+    {}
+  );
+  return JSON.stringify(data);
+}
