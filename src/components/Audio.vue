@@ -3,7 +3,15 @@
     <Header />
     <main>
       <section class="section">
-        <h1><em>so*</em> hören</h1>
+        <p class="hero__supertitle">
+          Onlinekurs für Eltern, Bezugs- und&nbsp;Betreuungspersonen
+        </p>
+        <h1 class="hero__title">
+          <em>so*</em> hören auch mit ausgeschaltenem Bildschrim
+        </h1>
+        <p class="hero__subjektorientiert">
+          <em>*subjektorientiert</em>
+        </p>
       </section>
       <section class="section">
         <h2>Kursblock 1: Innere Stärke und Gleichwürdigkeit</h2>
