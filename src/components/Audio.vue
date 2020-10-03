@@ -87,7 +87,7 @@
         </audio>
       </section>
       <section class="section">
-        <h2>Auf mich selbst achten</h2>
+        <h2>Kursblock 4: Auf mich selbst achten</h2>
         <audio controls src="/audio/04-01-Freund.mp3">
           Dein Browser unterstützt Audiodateien leider nicht. Wir empfehlen
           Mozilla Firefox.
