@@ -73,6 +73,7 @@ function submitForm() {
   });
 
   xhr.addEventListener("error", () => {
+    // eslint-disable-next-line no-alert
     alert(
       "Senden der Nachricht fehlgeschlagen.\nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch."
     );
