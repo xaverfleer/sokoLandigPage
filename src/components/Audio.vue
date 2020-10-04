@@ -123,7 +123,22 @@
           Dein Browser unterstützt Audiodateien leider nicht. Wir empfehlen
           Mozilla Firefox.
         </audio>
-        <!-- Todo: Add videos -->
+        <audio controls src="/audio/05-03-Haltung.mp3">
+          Dein Browser unterstützt Audiodateien leider nicht. Wir empfehlen
+          Mozilla Firefox.
+        </audio>
+        <audio controls src="/audio/05-04-Zurueckhaltung.mp3">
+          Dein Browser unterstützt Audiodateien leider nicht. Wir empfehlen
+          Mozilla Firefox.
+        </audio>
+        <audio controls src="/audio/05-04a-Zurueckhaltung-Frust.mp3">
+          Dein Browser unterstützt Audiodateien leider nicht. Wir empfehlen
+          Mozilla Firefox.
+        </audio>
+        <audio controls src="/audio/05-04b-Zurueckhaltung-Gefahr.mp3">
+          Dein Browser unterstützt Audiodateien leider nicht. Wir empfehlen
+          Mozilla Firefox.
+        </audio>
       </section>
     </main>
     <Footer />
