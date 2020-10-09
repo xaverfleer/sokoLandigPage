@@ -1,5 +1,6 @@
 import Account from "./components/Account.vue";
 import AccountDeleted from "./components/AccountDeleted.vue";
+import Audio from "./components/Audio.vue";
 import ChangedPassword from "./components/ChangedPassword.vue";
 import ConfirmEmail from "./components/ConfirmEmail.vue";
 import Course from "./components/Course.vue";
@@ -27,6 +28,7 @@ import UpgradedAccount from "./components/UpgradedAccount.vue";
 export default [
   { path: "/account", component: Account },
   { path: "/account-deleted", component: AccountDeleted },
+  { path: "/Audio", component: Audio },
   { path: "/changed-password", component: ChangedPassword },
   { path: "/course/:block", component: Course },
   { path: "/confirm-email", component: ConfirmEmail },

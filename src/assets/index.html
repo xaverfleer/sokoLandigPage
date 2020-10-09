@@ -31,6 +31,7 @@
           <a class="nav__entry nav__entry--2ndary" href="#offer">Angebot</a>
           <a class="nav__entry nav__entry--2ndary" href="#prizing">Preise</a>
           <a class="nav__entry nav__entry--2ndary" href="#about-us">Über uns</a>
+          <a class="nav__entry nav__entry--2ndary" href="#contact">Kontakt</a>
         </nav>
       </div>
     </header>
@@ -210,12 +211,6 @@
               auszutauschen.
             </div>
           </div>
-        </div>
-        <div class="buttons">
-          <a class="button button--primary" href="./kurs.html" target="_blank"
-            title="Gratis starten">Gratis starten</a>
-          <a class="button button--2ndary cta05" href="#prizing"
-            title="Jeztzt buchen">Jetzt buchen</a>
         </div>
       </section>
       <section class="section section--prizing" id="prizing">
@@ -414,12 +409,39 @@
           mit Eva die Kursinhalte.
         </p>
       </section>
-      <div class="buttons">
-        <a class="button button--primary" href="./kurs.html" target="_blank"
-          title="Gratis starten">Gratis starten</a>
-        <a class="button button--2ndary cta05" href="#prizing"
-          title="Jetzt buchen">Jetzt buchen</a>
-      </div>
+      <section class="section section--contact" id="contact">
+        <h2>Kontakt</h2>
+        <p>Hast du Fragen, Anregungen, Wünsche oder einfach etwas mitzuteilen?
+          Wir freuen uns über deine Nachricht.
+        </p>
+        <form class="form">
+          <div class="form-entry form-entry--halfwidth">
+            <label for="form__name" class="form-entry__label"><abbr
+                title="Pflichtfeld" class="form-entry__required">*
+              </abbr>Name</label> <input name="name" id="form__name"
+              required="required" type="text" class="form-entry__input">
+            <div class="form-entry__help"></div>
+          </div>
+          <div class="form-entry form-entry--halfwidth"><label for="form__email"
+              class="form-entry__label"><abbr title="Pflichtfeld"
+                class="form-entry__required">* </abbr>E-Mail-Adresse</label>
+            <input name="email" id="form__email" required="required"
+              type="email" class="form-entry__input">
+            <div class="form-entry__help"></div>
+          </div>
+          <div class="form-entry form-entry--fullwidth"><label
+              for="form__message" class="form-entry__label"><abbr
+                title="Pflichtfeld" class="form-entry__required">*
+              </abbr>Nachricht</label> <textarea name="message"
+              id="form__message" rows="10" class="form-entry__input"></textarea>
+            <div class="form-entry__help"></div>
+          </div>
+          <div class="buttons form__buttons"><button
+              class="button button--primary">
+              Nachricht senden
+            </button></div>
+        </form>
+      </section>
     </main>
     <footer class="footer">
       <div id="contact" class="footer__contact">

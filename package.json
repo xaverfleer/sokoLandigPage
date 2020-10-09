@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run build:copy && npm run build:client && npm run build:lambda",
-    "build:copy": "copyfiles src/assets/* src/assets/documents/* src/assets/imgs/* dist/ -u 2",
+    "build:copy": "copyfiles src/assets/* src/assets/audio/* src/assets/documents/* src/assets/imgs/* dist/ -u 2",
     "build:client": "webpack --config webpack.prod.js",
     "build:lambda": "netlify-lambda build src/netlify-functions",
     "formatHtml": "prettyhtml src/assets/**.html",
