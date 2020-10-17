@@ -1009,8 +1009,7 @@ const appData = {
                 "Strategiekarte: Eigenes Selbstvertrauen stärken – Kursblock 4",
             },
             {
-              href:
-                "/documents/so4-Strategiekarte-3-Schritt-Plan.pdf",
+              href: "/documents/so4-Strategiekarte-3-Schritt-Plan.pdf",
               text:
                 "Strategiekarte: 3-Schritt-Plan nach Stressreaktionen – Kursblock 4",
             },
@@ -1073,7 +1072,8 @@ const appData = {
           documents: [
             {
               href: "/documents/so5-Vertiefung-Anregende-Umgebung.pdf",
-              text: "Vertiefungsinput: Zuhause eine anregende Umgebung schaffen – Kursblock 5",
+              text:
+                "Vertiefungsinput: Zuhause eine anregende Umgebung schaffen – Kursblock 5",
             },
           ],
         },
@@ -1117,7 +1117,8 @@ const appData = {
           documents: [
             {
               href: "/documents/so5-Strategiekarte-Ermöglichende-Haltung.pdf",
-              text: "Strategiekarte: Eine ermöglichende Haltung einnehmen – Kursblock 5",
+              text:
+                "Strategiekarte: Eine ermöglichende Haltung einnehmen – Kursblock 5",
             },
           ],
         },
@@ -1179,8 +1180,10 @@ const appData = {
               text: "Strategiekarte: Das ABC der Zurückhaltung – Kursblock 5",
             },
             {
-              href: "/documents/so5-Strategiekarte-Ungeteilte-Aufmerksamkeit.pdf",
-              text: "Strategiekarte: Die Zeit der ungeteilten Aufmerksamkeit – Kursblock 5",
+              href:
+                "/documents/so5-Strategiekarte-Ungeteilte-Aufmerksamkeit.pdf",
+              text:
+                "Strategiekarte: Die Zeit der ungeteilten Aufmerksamkeit – Kursblock 5",
             },
           ],
         },
@@ -1228,8 +1231,10 @@ const appData = {
           },
           documents: [
             {
-              href: "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Frust.pdf",
-              text: "Strategiekarte: Zurückhaltung, wenn dem Baby etwas nicht gelingt – Kursblock 5",
+              href:
+                "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Frust.pdf",
+              text:
+                "Strategiekarte: Zurückhaltung, wenn dem Baby etwas nicht gelingt – Kursblock 5",
             },
           ],
         },
@@ -1282,8 +1287,10 @@ const appData = {
           },
           documents: [
             {
-              href: "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Gefahr.pdf",
-              text: "Strategiekarte: Zurückhaltung, wenn das Baby in Gefahr ist – Kursblock 5",
+              href:
+                "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Gefahr.pdf",
+              text:
+                "Strategiekarte: Zurückhaltung, wenn das Baby in Gefahr ist – Kursblock 5",
             },
           ],
         },
