@@ -17,7 +17,7 @@ const appData = {
             entries: [
               {
                 id: 0,
-                text: `...verbindest du dich mit deinem Baby, in dem du dir überlegst, was du ihm von Herzen für sein Leben wünschst (Viseo 1.1)`,
+                text: `...verbindest du dich mit deinem Baby, in dem du dir überlegst, was du ihm von Herzen für sein Leben wünschst (Video 1.1)`,
               },
               {
                 id: 1,
