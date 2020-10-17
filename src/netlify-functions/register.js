@@ -32,6 +32,7 @@ const helpers = {
   composeEmail(email, cofirmationCode) {
     const message = {
       to: email,
+      bcc: "eva.fleer@gmail.com",
       subject: "Bestätige deine E-Mail-Adresse",
       text: `Vielen Dank für deine Anmeldung auf so-kommunizieren.ch.\n\nKlicke auf den Link um dein Konto zu bestätigen: https://so-kommunizieren.ch/kurs?confirmationCode=${encodeURIComponent(
         cofirmationCode
