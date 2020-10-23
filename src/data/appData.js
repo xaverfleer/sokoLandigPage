@@ -225,8 +225,33 @@ const appData = {
         },
         section17: {
           id: 6,
-          title: { main: "Dokumente" },
+          title: { 
+            main: "Vorsicht Gift! Was schwächt den inneren Baum?",
+            videoName: "(Video 1.6 - In Produktion)",
+          },
           documents: [
+            {
+              href: "/documents/so1-Übung-1.6.pdf",
+              text: "Übung 1.6 - Hinderliche Ansichten",
+            },
+          ],
+        },
+        section18: {
+          id: 7,
+          title: { main: "Weitere Übungen und Dokumente" },
+          documents: [
+            {
+              href: "/documents/so1-Vertiefung-Lernstrategien.pdf",
+              text: "Vertiefung: Lernstrategien – Kursblocks 1",
+            },
+            {
+              href: "/documents/so1-Übung-1.7.pdf",
+              text: "Übung 1.7 - Step by Step... Schwerpunkte setzen",
+            },
+            {
+              href: "/documents/so1-Übung-1.8.pdf",
+              text: "Übung 1.8 - Ich erinnere mich... Erinnerungshilfen schaffen",
+            },
             {
               href: "/documents/so1-Vertiefung.pdf",
               text: "Vertiefung: Sichere Bindung – Kursblocks 1",
