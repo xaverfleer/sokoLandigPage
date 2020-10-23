@@ -560,7 +560,7 @@ const appData = {
         section28: {
           id: 7,
           title: {
-            main: "Weitere Dokumente?",
+            main: "Weitere Dokumente",
           },
           documents: [
             {
