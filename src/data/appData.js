@@ -312,14 +312,6 @@ const appData = {
               href: "/documents/so2-Fahrplan.pdf",
               text: "Fahrplan – Kursblock 2",
             },
-            {
-              href: "/documents/so2-Zusammenfassung.pdf",
-              text: "Zusammenfassung – Kursblock 2",
-            },
-            {
-              href: "/documents/so2-Uebungsdossier.pdf",
-              text: "Übungsdossier (PDF) – Kursblock 2",
-            },
           ],
         },
         section22: {
@@ -554,6 +546,22 @@ const appData = {
             videoName: "(Video 2.6)",
           },
           video: { ref: "https://player.vimeo.com/video/418650809" },
+          documents: [
+            {
+              href: "/documents/so2-Uebungsdossier.pdf",
+              text: "Übungsdossier mit allen Übungen zum Kursblock – Kursblock 2",
+            },
+            {
+              href: "/documents/so2-Zusammenfassung.pdf",
+              text: "Zusammenfassung – Kursblock 2",
+            },
+          ],
+        },
+        section28: {
+          id: 7,
+          title: {
+            main: "Weitere Dokumente?",
+          },
           documents: [
             {
               href: "/documents/so2-Übung-2.6a.pdf",
