@@ -320,10 +320,6 @@ const appData = {
               href: "/documents/so2-Uebungsdossier.pdf",
               text: "Übungsdossier (PDF) – Kursblock 2",
             },
-            {
-              href: "/documents/so2-Uebungsdossier.docx",
-              text: "Übungsdossier (Word) – Kursblock 2",
-            },
           ],
         },
         section22: {
@@ -338,6 +334,10 @@ const appData = {
             {
               href: "/documents/so2-Einstiegsuebung2.pdf",
               text: "Einstiegsübung 2 – Kursblock 2",
+            },
+            {
+              href: "/documents/so2-Übung-2.1.pdf",
+              text: "Übung 2.1 - Was tust du da?",
             },
             {
               href: "/documents/so2-Vertiefung-Baby-led-weaning.pdf",
@@ -371,6 +371,14 @@ const appData = {
             ],
           },
           documents: [
+            {
+              href: "/documents/so2-Übung-2.2a.pdf",
+              text: "Übung 2.2a - Wie sag ich das?",
+            },
+            {
+              href: "/documents/so2-Übung-2.2b.pdf",
+              text: "Übung 2.2b - Gebärdensprache üben",
+            },
             {
               href: "/documents/so2-Vertiefung-Gebaerdensprache.pdf",
               text: "Vertiefung: Gebärdensprache – Kursblock 2",
@@ -415,6 +423,18 @@ const appData = {
           },
           documents: [
             {
+              href: "/documents/so2-Übung-2.3a.pdf",
+              text: "Übung 2.3a - Lina geht zum Arzt",
+            },
+            {
+              href: "/documents/so2-Übung-2.3b.pdf",
+              text: "Übung 2.3b - Ich nehme mir Zeit!",
+            },
+            {
+              href: "/documents/so2-Übung-2.3c.pdf",
+              text: "Übung 2.3c - Es kooperiert nicht!",
+            },
+            {
               href:
                 "/documents/so2-Strategiekarte-Wenn-wir-etwas-am-Baby-tun.pdf",
               text:
@@ -453,6 +473,14 @@ const appData = {
             ],
           },
           documents: [
+            {
+              href: "/documents/so2-Übung-2.4a.pdf",
+              text: "Übung 2.4a - Lina in der Küche",
+            },
+            {
+              href: "/documents/so2-Übung-2.4b.pdf",
+              text: "Übung 2.4b - Belehrungs- und Belohnungsfalle",
+            },
             {
               href:
                 "/documents/so2-Strategiekarte-Wenn-wir-etwas-neben-dem-Baby-tun.pdf",
@@ -504,6 +532,14 @@ const appData = {
           },
           documents: [
             {
+              href: "/documents/so2-Übung-2.5a.pdf",
+              text: "Übung 2.5a - Linas Grosseltern",
+            },
+            {
+              href: "/documents/so2-Übung-2.5b.pdf",
+              text: "Übung 2.5b - Erziehungsmythen hinterfragen",
+            },
+            {
               href:
                 "/documents/so2-Strategiekarte-Wenn-wir-das-Baby-verlassen.pdf",
               text:
@@ -518,6 +554,16 @@ const appData = {
             videoName: "(Video 2.6)",
           },
           video: { ref: "https://player.vimeo.com/video/418650809" },
+          documents: [
+            {
+              href: "/documents/so2-Übung-2.6a.pdf",
+              text: "Übung 2.6a - Step by Step... Schwerpunkte setzen",
+            },
+            {
+              href: "/documents/so2-Übung-2.6b.pdf",
+              text: "Übung 2.6b - Ich erinnere mich... Erinnerungshilfen schaffen",
+            },
+          ],
         },
       },
     },
