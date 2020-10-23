@@ -43,16 +43,12 @@ const appData = {
               text: "Fahrplan – Kursblock 1",
             },
             {
-              href: "/documents/so1-Zusammenfassung.pdf",
-              text: "Zusammenfassung – Kursblock 1",
-            },
-            {
               href: "/documents/so1-Uebungsdossier.pdf",
               text: "Übungsdossier (PDF) – Kursblock 1",
             },
             {
-              href: "/documents/so1-Uebungsdossier.docx",
-              text: "Übungsdossier (Word) – Kursblock 1",
+              href: "/documents/so1-Zusammenfassung.pdf",
+              text: "Zusammenfassung – Kursblock 1",
             },
           ],
         },
@@ -63,6 +59,12 @@ const appData = {
             videoName: "(Video 1.1)",
           },
           video: { ref: "https://player.vimeo.com/video/395825527" },
+          documents: [
+            {
+              href: "/documents/so1-Übung-1.1.pdf",
+              text: "Übung 1.1 - Ich wünsche dir...",
+            },
+          ],
         },
         section13: {
           id: 2,
@@ -97,6 +99,10 @@ const appData = {
             ],
           },
           documents: [
+            {
+              href: "/documents/so1-Übung-1.2.pdf",
+              text: "Übung 1.2 - Lina weint... und jetz?",
+            },
             {
               href: "/documents/so1-Strategiekarte-Essenz-Strategie.pdf",
               text: "Strategiekarte: Die Essenz-Strategie – Kursblock 1",
@@ -133,6 +139,18 @@ const appData = {
           },
           documents: [
             {
+              href: "/documents/so1-Übung-1.3a.pdf",
+              text: "Übung 1.3a - Selbstwas? Schlüsselbegriffe klären",
+            },
+            {
+              href: "/documents/so1-Übung-1.3b.pdf",
+              text: "Übung 1.3b - Vom Objekt zum Subjekt",
+            },
+            {
+              href: "/documents/so1-Übung-1.3c.pdf",
+              text: "Übung 1.3c - Gleichwürdigkeit in meiner Kindheit",
+            },            
+            {
               href: "/documents/so1-Erinnerungskarte.pdf",
               text: "Erinnerungskarte: Innere Stärke – Kursblocks 1",
             },
@@ -145,6 +163,12 @@ const appData = {
             videoName: "(Video 1.4)",
           },
           video: { ref: "https://player.vimeo.com/video/420459304" },
+          documents: [
+            {
+              href: "/documents/so1-Übung-1.4.pdf",
+              text: "Übung 1.4 - Das ist ganz leicht...",
+            },
+          ],
         },
         section16: {
           id: 5,
@@ -187,6 +211,11 @@ const appData = {
             ],
           },
           documents: [
+            {
+              href: "/documents/so1-Übung-1.5.pdf",
+              text:
+                "Übung 1.5 - Hilfe, ein Fehler!",
+            },
             {
               href: "/documents/so1-Memokarten.pdf",
               text:
