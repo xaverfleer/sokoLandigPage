@@ -548,12 +548,12 @@ const appData = {
           video: { ref: "https://player.vimeo.com/video/418650809" },
           documents: [
             {
-              href: "/documents/so2-Uebungsdossier.pdf",
-              text: "Übungsdossier mit allen Übungen zum Kursblock – Kursblock 2",
+              href: "/documents/so2-Übung-2.6a.pdf",
+              text: "Übung 2.6a - Step by Step... Schwerpunkte setzen",
             },
             {
-              href: "/documents/so2-Zusammenfassung.pdf",
-              text: "Zusammenfassung – Kursblock 2",
+              href: "/documents/so2-Übung-2.6b.pdf",
+              text: "Übung 2.6b - Ich erinnere mich... Erinnerungshilfen schaffen",
             },
           ],
         },
@@ -564,12 +564,12 @@ const appData = {
           },
           documents: [
             {
-              href: "/documents/so2-Übung-2.6a.pdf",
-              text: "Übung 2.6a - Step by Step... Schwerpunkte setzen",
+              href: "/documents/so2-Uebungsdossier.pdf",
+              text: "Übungsdossier mit allen Übungen zum Kursblock – Kursblock 2",
             },
             {
-              href: "/documents/so2-Übung-2.6b.pdf",
-              text: "Übung 2.6b - Ich erinnere mich... Erinnerungshilfen schaffen",
+              href: "/documents/so2-Zusammenfassung.pdf",
+              text: "Zusammenfassung – Kursblock 2",
             },
           ],
         },
