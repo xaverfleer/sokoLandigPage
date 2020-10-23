@@ -35,6 +35,10 @@ const appData = {
                 id: 4,
                 text: `...lernst du anhand konkreter Sätzen den Unterschied zwischen einer gleichwürdigen und einer herablassenden Sprache kennen (Video 1.5)`,
               },
+              {
+                id: 5,
+                text: `...zeigen wir auf, mit welchen (Erziehungs-)Mittel wir die innere Stärke eines Babys schwächen (Video 1.6; in Produktion)`,
+              },
             ],
           },
           documents: [
