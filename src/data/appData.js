@@ -42,14 +42,6 @@ const appData = {
               href: "/documents/so1-Fahrplan.pdf",
               text: "Fahrplan – Kursblock 1",
             },
-            {
-              href: "/documents/so1-Uebungsdossier.pdf",
-              text: "Übungsdossier (PDF) – Kursblock 1",
-            },
-            {
-              href: "/documents/so1-Zusammenfassung.pdf",
-              text: "Zusammenfassung – Kursblock 1",
-            },
           ],
         },
         section12: {
@@ -252,14 +244,6 @@ const appData = {
               href: "/documents/so1-Übung-1.8.pdf",
               text: "Übung 1.8 - Ich erinnere mich... Erinnerungshilfen schaffen",
             },
-            {
-              href: "/documents/so1-Vertiefung.pdf",
-              text: "Vertiefung: Sichere Bindung – Kursblocks 1",
-            },
-            {
-              href: "/documents/so1-Literaturliste.pdf",
-              text: "Literaturliste: Bücher, die weiterhelfen",
-            },
           ],
         },
         section19: {
@@ -269,6 +253,14 @@ const appData = {
             {
               href: "/documents/so1-Vertiefung.pdf",
               text: "Vertiefung: Sichere Bindung – Kursblocks 1",
+            },
+            {
+              href: "/documents/so1-Zusammenfassung.pdf",
+              text: "Zusammenfassung – Kursblock 1",
+            },
+            {
+              href: "/documents/so1-Uebungsdossier.pdf",
+              text: "Übungsdossier mit allen Übungen zum Kursblock – Kursblock 1",
             },
             {
               href: "/documents/so1-Literaturliste.pdf",
