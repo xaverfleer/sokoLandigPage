@@ -35,24 +35,16 @@ const appData = {
                 id: 4,
                 text: `...lernst du anhand konkreter Sätzen den Unterschied zwischen einer gleichwürdigen und einer herablassenden Sprache kennen (Video 1.5)`,
               },
+              {
+                id: 5,
+                text: `...zeigen wir auf, mit welchen (Erziehungs-)Mittel wir die innere Stärke eines Babys schwächen (Video 1.6; in Produktion)`,
+              },
             ],
           },
           documents: [
             {
               href: "/documents/so1-Fahrplan.pdf",
               text: "Fahrplan – Kursblock 1",
-            },
-            {
-              href: "/documents/so1-Zusammenfassung.pdf",
-              text: "Zusammenfassung – Kursblock 1",
-            },
-            {
-              href: "/documents/so1-Uebungsdossier.pdf",
-              text: "Übungsdossier (PDF) – Kursblock 1",
-            },
-            {
-              href: "/documents/so1-Uebungsdossier.docx",
-              text: "Übungsdossier (Word) – Kursblock 1",
             },
           ],
         },
@@ -63,6 +55,12 @@ const appData = {
             videoName: "(Video 1.1)",
           },
           video: { ref: "https://player.vimeo.com/video/395825527" },
+          documents: [
+            {
+              href: "/documents/so1-Übung-1.1.pdf",
+              text: "Übung 1.1 - Ich wünsche dir...",
+            },
+          ],
         },
         section13: {
           id: 2,
@@ -97,6 +95,10 @@ const appData = {
             ],
           },
           documents: [
+            {
+              href: "/documents/so1-Übung-1.2.pdf",
+              text: "Übung 1.2 - Lina weint... und jetz?",
+            },
             {
               href: "/documents/so1-Strategiekarte-Essenz-Strategie.pdf",
               text: "Strategiekarte: Die Essenz-Strategie – Kursblock 1",
@@ -133,6 +135,18 @@ const appData = {
           },
           documents: [
             {
+              href: "/documents/so1-Übung-1.3a.pdf",
+              text: "Übung 1.3a - Selbstwas? Schlüsselbegriffe klären",
+            },
+            {
+              href: "/documents/so1-Übung-1.3b.pdf",
+              text: "Übung 1.3b - Vom Objekt zum Subjekt",
+            },
+            {
+              href: "/documents/so1-Übung-1.3c.pdf",
+              text: "Übung 1.3c - Gleichwürdigkeit in meiner Kindheit",
+            },            
+            {
               href: "/documents/so1-Erinnerungskarte.pdf",
               text: "Erinnerungskarte: Innere Stärke – Kursblocks 1",
             },
@@ -145,6 +159,12 @@ const appData = {
             videoName: "(Video 1.4)",
           },
           video: { ref: "https://player.vimeo.com/video/420459304" },
+          documents: [
+            {
+              href: "/documents/so1-Übung-1.4.pdf",
+              text: "Übung 1.4 - Das ist ganz leicht...",
+            },
+          ],
         },
         section16: {
           id: 5,
@@ -188,6 +208,11 @@ const appData = {
           },
           documents: [
             {
+              href: "/documents/so1-Übung-1.5.pdf",
+              text:
+                "Übung 1.5 - Hilfe, ein Fehler!",
+            },
+            {
               href: "/documents/so1-Memokarten.pdf",
               text:
                 "Memokarten: herablassende vs. gleichwürdige Sprache - Kursblock 1",
@@ -196,11 +221,54 @@ const appData = {
         },
         section17: {
           id: 6,
-          title: { main: "Dokumente" },
+          title: { 
+            main: "Was schwächt den inneren Baum?",
+            videoName: "(Video 1.6 - In Produktion)",
+          },
+          documents: [
+            {
+              href: "/documents/so1-Übung-1.6.pdf",
+              text: "Übung 1.6 - Hinderliche Ansichten",
+            },
+          ],
+        },
+        section18: {
+          id: 7,
+          title: { main: "Sinnvolle Lernstrategien nutzen" },
+          documents: [
+            {
+              href: "/documents/so1-Vertiefung-Lernstrategien.pdf",
+              text: "Vertiefung: Lernstrategien – Kursblocks 1",
+            },
+            {
+              href: "/documents/so1-Übung-1.7.pdf",
+              text: "Übung 1.7 - Step by Step... Schwerpunkte setzen",
+            },
+            {
+              href: "/documents/so1-Übung-1.8.pdf",
+              text: "Übung 1.8 - Ich erinnere mich... Erinnerungshilfen schaffen",
+            },
+            {
+              href: "/documents/so1-Lernprotokoll.pdf",
+              text: "Lernprotokoll – Kursblocks 1",
+            },
+          ],
+        },
+        section19: {
+          id: 8,
+          title: { main: "Weitere Dokumente" },
           documents: [
             {
               href: "/documents/so1-Vertiefung.pdf",
               text: "Vertiefung: Sichere Bindung – Kursblocks 1",
+            },
+            {
+              href: "/documents/so1-Zusammenfassung.pdf",
+              text: "Zusammenfassung – Kursblock 1",
+            },
+            {
+              href: "/documents/so1-Uebungsdossier.pdf",
+              text: "Übungsdossier mit allen Übungen – Kursblock 1",
             },
             {
               href: "/documents/so1-Literaturliste.pdf",
@@ -248,18 +316,6 @@ const appData = {
               href: "/documents/so2-Fahrplan.pdf",
               text: "Fahrplan – Kursblock 2",
             },
-            {
-              href: "/documents/so2-Zusammenfassung.pdf",
-              text: "Zusammenfassung – Kursblock 2",
-            },
-            {
-              href: "/documents/so2-Uebungsdossier.pdf",
-              text: "Übungsdossier (PDF) – Kursblock 2",
-            },
-            {
-              href: "/documents/so2-Uebungsdossier.docx",
-              text: "Übungsdossier (Word) – Kursblock 2",
-            },
           ],
         },
         section22: {
@@ -274,6 +330,10 @@ const appData = {
             {
               href: "/documents/so2-Einstiegsuebung2.pdf",
               text: "Einstiegsübung 2 – Kursblock 2",
+            },
+            {
+              href: "/documents/so2-Übung-2.1.pdf",
+              text: "Übung 2.1 - Was tust du da?",
             },
             {
               href: "/documents/so2-Vertiefung-Baby-led-weaning.pdf",
@@ -307,6 +367,14 @@ const appData = {
             ],
           },
           documents: [
+            {
+              href: "/documents/so2-Übung-2.2a.pdf",
+              text: "Übung 2.2a - Wie sag ich das?",
+            },
+            {
+              href: "/documents/so2-Übung-2.2b.pdf",
+              text: "Übung 2.2b - Gebärdensprache üben",
+            },
             {
               href: "/documents/so2-Vertiefung-Gebaerdensprache.pdf",
               text: "Vertiefung: Gebärdensprache – Kursblock 2",
@@ -351,6 +419,18 @@ const appData = {
           },
           documents: [
             {
+              href: "/documents/so2-Übung-2.3a.pdf",
+              text: "Übung 2.3a - Lina geht zum Arzt",
+            },
+            {
+              href: "/documents/so2-Übung-2.3b.pdf",
+              text: "Übung 2.3b - Ich nehme mir Zeit!",
+            },
+            {
+              href: "/documents/so2-Übung-2.3c.pdf",
+              text: "Übung 2.3c - Es kooperiert nicht!",
+            },
+            {
               href:
                 "/documents/so2-Strategiekarte-Wenn-wir-etwas-am-Baby-tun.pdf",
               text:
@@ -389,6 +469,14 @@ const appData = {
             ],
           },
           documents: [
+            {
+              href: "/documents/so2-Übung-2.4a.pdf",
+              text: "Übung 2.4a - Lina in der Küche",
+            },
+            {
+              href: "/documents/so2-Übung-2.4b.pdf",
+              text: "Übung 2.4b - Belehrungs- und Belohnungsfalle",
+            },
             {
               href:
                 "/documents/so2-Strategiekarte-Wenn-wir-etwas-neben-dem-Baby-tun.pdf",
@@ -440,6 +528,14 @@ const appData = {
           },
           documents: [
             {
+              href: "/documents/so2-Übung-2.5a.pdf",
+              text: "Übung 2.5a - Linas Grosseltern",
+            },
+            {
+              href: "/documents/so2-Übung-2.5b.pdf",
+              text: "Übung 2.5b - Erziehungsmythen hinterfragen",
+            },
+            {
               href:
                 "/documents/so2-Strategiekarte-Wenn-wir-das-Baby-verlassen.pdf",
               text:
@@ -454,6 +550,36 @@ const appData = {
             videoName: "(Video 2.6)",
           },
           video: { ref: "https://player.vimeo.com/video/418650809" },
+          documents: [
+            {
+              href: "/documents/so2-Übung-2.6a.pdf",
+              text: "Übung 2.6a - Step by Step... Schwerpunkte setzen",
+            },
+            {
+              href: "/documents/so2-Übung-2.6b.pdf",
+              text: "Übung 2.6b - Ich erinnere mich... Erinnerungshilfen schaffen",
+            },
+            {
+              href: "/documents/so2-Lernprotokoll.pdf",
+              text: "Lernprotokoll – Kursblocks 2",
+            },
+          ],
+        },
+        section28: {
+          id: 7,
+          title: {
+            main: "Weitere Dokumente",
+          },
+          documents: [
+            {
+              href: "/documents/so2-Uebungsdossier.pdf",
+              text: "Übungsdossier mit allen Übungen – Kursblock 2",
+            },
+            {
+              href: "/documents/so2-Zusammenfassung.pdf",
+              text: "Zusammenfassung – Kursblock 2",
+            },
+          ],
         },
       },
     },
@@ -500,18 +626,6 @@ const appData = {
               href: "/documents/so3-Fahrplan.pdf",
               text: "Fahrplan – Kursblock 3",
             },
-            {
-              href: "/documents/so3-Zusammenfassung.pdf",
-              text: "Zusammenfassung – Kursblock 3",
-            },
-            {
-              href: "/documents/so3-Uebungsdossier.pdf",
-              text: "Übungsdossier (PDF) – Kursblock 3",
-            },
-            {
-              href: "/documents/so3-Uebungsdossier.docx",
-              text: "Übungsdossier (Word) – Kursblock 3",
-            },
           ],
         },
         section32: {
@@ -521,6 +635,12 @@ const appData = {
             videoName: "(Video 3.1)",
           },
           video: { ref: "https://player.vimeo.com/video/418114230" },
+          documents: [
+            {
+              href: "/documents/so3-Übung-3.1.pdf",
+              text: "Übung 3.1 - Was brauche ich?",
+            },
+          ],
         },
         section33: {
           id: 2,
@@ -547,6 +667,18 @@ const appData = {
             ],
           },
           documents: [
+            {
+              href: "/documents/so3-Übung-3.2a.pdf",
+              text: "Übung 3.2a - Lina ist müde",
+            },
+            {
+              href: "/documents/so3-Übung-3.2b.pdf",
+              text: "Übung 3.2b - Bindung vs. Autonomie, wie war es bei mir?",
+            },
+            {
+              href: "/documents/so3-Übung-3.2c.pdf",
+              text: "Übung 3.2c - Was gebe ich weiter?",
+            },
             {
               href: "/documents/so3-Vertiefung-co-sleeping.pdf",
               text: "Vertiefung: Sicherheitsregeln Co‑Sleeping – Kursblocks 3",
@@ -591,6 +723,30 @@ const appData = {
           },
           documents: [
             {
+              href: "/documents/so3-Übung-3.3a.pdf",
+              text: "Übung 3.3a - Lina und die Rassel",
+            },
+            {
+              href: "/documents/so3-Übung-3.3b.pdf",
+              text: "Übung 3.3b - Die Signale meines Babys",
+            },
+            {
+              href: "/documents/so3-Übung-3.3c.pdf",
+              text: "Übung 3.3c - Aktives Lesen",
+            },
+            {
+              href: "/documents/so3-Übung-3.3d.pdf",
+              text: "Übung 3.3d - Bedürfnisse hinter Wünschen erkennen",
+            },
+            {
+              href: "/documents/so3-Übung-3.3e.pdf",
+              text: "Übung 3.3e - Kompromisse finden",
+            },
+            {
+              href: "/documents/so3-Übung-3.3f.pdf",
+              text: "Übung 3.3f - Mein Baby kann das allein",
+            },
+            {
               href: "/documents/so3-Strategiekarte-Aktives-Lesen.pdf",
               text: "Strategiekarte: Aktives Lesen – Kursblock 3",
             },
@@ -629,6 +785,18 @@ const appData = {
             ],
           },
           documents: [
+            {
+              href: "/documents/so3-Übung-3.4a.pdf",
+              text: "Übung 3.4a - Lina weint",
+            },
+            {
+              href: "/documents/so3-Übung-3.4b.pdf",
+              text: "Übung 3.4b - Erfahrungen mit dem WARUM-Prozess sammeln",
+            },
+            {
+              href: "/documents/so3-Übung-3.4c.pdf",
+              text: "Übung 3.4c - So weint mein Baby",
+            },
             {
               href: "/documents/so3-Strategiekarte-WARUM-Prozess.pdf",
               text: "Strategiekarte: Der WARUM-Prozess – Kursblock 3",
@@ -677,11 +845,56 @@ const appData = {
           },
           documents: [
             {
+              href: "/documents/so3-Übung-3.5a.pdf",
+              text: "Übung 3.5a - Das normale Baby",
+            },
+            {
+              href: "/documents/so3-Übung-3.5b.pdf",
+              text: "Übung 3.5b - Entwicklungsschritte protokollieren",
+            },
+            {
               href: "/documents/so3-Vertiefung-Entwicklungsspruenge.pdf",
               text: "Vertiefung: Übersicht Entwicklungssprünge – Kursblocks 3",
             },
           ],
         },
+        section37: {
+          id: 6,
+          title: {
+            main: "Dos & Don'ts",
+            videoName: "(Video 3.6 - In Produktion)",
+          },
+          documents: [
+            {
+              href: "/documents/so3-Übung-3.6a.pdf",
+              text: "Übung 3.6a - Step by Step... Schwerpunkte setzen",
+            },
+            {
+              href: "/documents/so3-Übung-3.6b.pdf",
+              text: "Übung 3.6b - Ich erinnere mich... Erinnerungshilfen schaffen",
+            },
+            {
+              href: "/documents/so3-Lernprotokoll.pdf",
+              text: "Lernprotokoll – Kursblock 3",
+            },
+          ],
+        },
+        section38: {
+          id: 7,
+          title: {
+            main: "Weitere Dokumente",
+          },
+          documents: [
+            {
+              href: "/documents/so3-Uebungsdossier.pdf",
+              text: "Übungsdossier mit allen Übungen – Kursblock 3",
+            },
+            {
+              href: "/documents/so3-Zusammenfassung.pdf",
+              text: "Zusammenfassung – Kursblock 3",
+            },
+          ],
+        }
       },
     },
     block04: {
@@ -713,17 +926,17 @@ const appData = {
               {
                 id: 3,
                 text:
-                  "...lernst du Möglichkeiten kennen, wie du deinen Selbstwert in ruhigen Momenten, in stressigen Momenten und nach stressigen Momenten nähren kannst (Video 4.4a)",
+                  "...lernst du Möglichkeiten kennen, wie du deinen Selbstwert in ruhigen Momenten, in stressigen Momenten und nach stressigen Momenten nähren kannst (Video 4.4)",
               },
               {
                 id: 4,
                 text:
-                  "...zeigen wir dir, worauf es ankommt, wenn du deine eigenen Grenzen schützt, indem du Nein zu einem Wunsch oder einer Verhaltensweise deines Babys sagst (Video 4.4b)",
+                  "...zeigen wir dir, worauf es ankommt, wenn du deine eigenen Grenzen schützt, indem du Nein zu einem Wunsch oder einer Verhaltensweise deines Babys sagst (Video 4.5)",
               },
               {
                 id: 5,
                 text:
-                  "...bekommst du Tipps, wie du dein Selbstvertrauen in ruhigen Momenten, in sehr stressigen Momenten und nach stressigen Momenten nähren kannst (Video 4.5)",
+                  "...bekommst du Tipps, wie du dein Selbstvertrauen in ruhigen Momenten, in sehr stressigen Momenten und nach stressigen Momenten nähren kannst (Video 4.6)",
               },
             ],
           },
@@ -866,7 +1079,7 @@ const appData = {
           id: 4,
           title: {
             main: "...indem wir unseren Selbstwert stärken",
-            videoName: "(Video 4.4a)",
+            videoName: "(Video 4.4)",
           },
           video: { ref: "https://player.vimeo.com/video/428741959" },
           checklist: {
@@ -915,7 +1128,7 @@ const appData = {
           id: 5,
           title: {
             main: "...indem wir unsere Grenzen schützen",
-            videoName: "(Video 4.4b)",
+            videoName: "(Video 4.5)",
           },
           video: { ref: "https://player.vimeo.com/video/428742084" },
           checklist: {
@@ -963,7 +1176,7 @@ const appData = {
           id: 6,
           title: {
             main: "...indem wir unser Selbstvertrauen stärken",
-            videoName: "(Video 4.5)",
+            videoName: "(Video 4.6)",
           },
           video: { ref: "https://player.vimeo.com/video/447412269" },
           checklist: {
