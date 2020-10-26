@@ -45,6 +45,7 @@ const appData = {
             {
               href: "/documents/so1-Fahrplan.pdf",
               text: "Fahrplan – Kursblock 1",
+              type: "roadmap",
             },
           ],
         },
@@ -59,6 +60,7 @@ const appData = {
             {
               href: "/documents/so1-Übung-1.1.pdf",
               text: "Übung 1.1 - Ich wünsche dir...",
+              type: "practice",
             },
           ],
         },
@@ -98,10 +100,12 @@ const appData = {
             {
               href: "/documents/so1-Übung-1.2.pdf",
               text: "Übung 1.2 - Lina weint... und jetz?",
+              type: "practice",
             },
             {
               href: "/documents/so1-Strategiekarte-Essenz-Strategie.pdf",
               text: "Strategiekarte: Die Essenz-Strategie – Kursblock 1",
+              type: "strategy",
             },
           ],
         },
@@ -137,18 +141,22 @@ const appData = {
             {
               href: "/documents/so1-Übung-1.3a.pdf",
               text: "Übung 1.3a - Selbstwas? Schlüsselbegriffe klären",
+              type: "practice",
             },
             {
               href: "/documents/so1-Übung-1.3b.pdf",
               text: "Übung 1.3b - Vom Objekt zum Subjekt",
+              type: "practice",
             },
             {
               href: "/documents/so1-Übung-1.3c.pdf",
               text: "Übung 1.3c - Gleichwürdigkeit in meiner Kindheit",
-            },            
+              type: "practice",
+            },
             {
               href: "/documents/so1-Erinnerungskarte.pdf",
               text: "Erinnerungskarte: Innere Stärke – Kursblocks 1",
+              type: "strategy",
             },
           ],
         },
@@ -163,6 +171,7 @@ const appData = {
             {
               href: "/documents/so1-Übung-1.4.pdf",
               text: "Übung 1.4 - Das ist ganz leicht...",
+              type: "practice",
             },
           ],
         },
@@ -209,19 +218,20 @@ const appData = {
           documents: [
             {
               href: "/documents/so1-Übung-1.5.pdf",
-              text:
-                "Übung 1.5 - Hilfe, ein Fehler!",
+              text: "Übung 1.5 - Hilfe, ein Fehler!",
+              type: "practice",
             },
             {
               href: "/documents/so1-Memokarten.pdf",
               text:
                 "Memokarten: herablassende vs. gleichwürdige Sprache - Kursblock 1",
+              type: "strategy",
             },
           ],
         },
         section17: {
           id: 6,
-          title: { 
+          title: {
             main: "Was schwächt den inneren Baum?",
             videoName: "(Video 1.6 - In Produktion)",
           },
@@ -229,6 +239,7 @@ const appData = {
             {
               href: "/documents/so1-Übung-1.6.pdf",
               text: "Übung 1.6 - Hinderliche Ansichten",
+              type: "practice",
             },
           ],
         },
@@ -239,18 +250,23 @@ const appData = {
             {
               href: "/documents/so1-Vertiefung-Lernstrategien.pdf",
               text: "Vertiefung: Lernstrategien – Kursblocks 1",
+              type: "further-information",
             },
             {
               href: "/documents/so1-Übung-1.7.pdf",
               text: "Übung 1.7 - Step by Step... Schwerpunkte setzen",
+              type: "practice",
             },
             {
               href: "/documents/so1-Übung-1.8.pdf",
-              text: "Übung 1.8 - Ich erinnere mich... Erinnerungshilfen schaffen",
+              text:
+                "Übung 1.8 - Ich erinnere mich... Erinnerungshilfen schaffen",
+              type: "practice",
             },
             {
               href: "/documents/so1-Lernprotokoll.pdf",
               text: "Lernprotokoll – Kursblocks 1",
+              type: "practice",
             },
           ],
         },
@@ -261,18 +277,22 @@ const appData = {
             {
               href: "/documents/so1-Vertiefung.pdf",
               text: "Vertiefung: Sichere Bindung – Kursblocks 1",
+              type: "further-information",
             },
             {
               href: "/documents/so1-Zusammenfassung.pdf",
               text: "Zusammenfassung – Kursblock 1",
+              type: "further-information",
             },
             {
               href: "/documents/so1-Uebungsdossier.pdf",
               text: "Übungsdossier mit allen Übungen – Kursblock 1",
+              type: "practice",
             },
             {
               href: "/documents/so1-Literaturliste.pdf",
               text: "Literaturliste: Bücher, die weiterhelfen",
+              type: "further-information",
             },
           ],
         },
@@ -315,6 +335,7 @@ const appData = {
             {
               href: "/documents/so2-Fahrplan.pdf",
               text: "Fahrplan – Kursblock 2",
+              type: "roadmap",
             },
           ],
         },
@@ -326,18 +347,22 @@ const appData = {
             {
               href: "/documents/so2-Einstiegsuebung1.pdf",
               text: "Einstiegsübung 1 – Kursblock 2",
+              type: "practice",
             },
             {
               href: "/documents/so2-Einstiegsuebung2.pdf",
               text: "Einstiegsübung 2 – Kursblock 2",
+              type: "practice",
             },
             {
               href: "/documents/so2-Übung-2.1.pdf",
               text: "Übung 2.1 - Was tust du da?",
+              type: "practice",
             },
             {
               href: "/documents/so2-Vertiefung-Baby-led-weaning.pdf",
               text: "Vertiefung: Baby led weaning – Kursblocks 2",
+              type: "further-information",
             },
           ],
         },
@@ -370,14 +395,17 @@ const appData = {
             {
               href: "/documents/so2-Übung-2.2a.pdf",
               text: "Übung 2.2a - Wie sag ich das?",
+              type: "practice",
             },
             {
               href: "/documents/so2-Übung-2.2b.pdf",
               text: "Übung 2.2b - Gebärdensprache üben",
+              type: "practice",
             },
             {
               href: "/documents/so2-Vertiefung-Gebaerdensprache.pdf",
               text: "Vertiefung: Gebärdensprache – Kursblock 2",
+              type: "further-information",
             },
           ],
         },
@@ -421,26 +449,31 @@ const appData = {
             {
               href: "/documents/so2-Übung-2.3a.pdf",
               text: "Übung 2.3a - Lina geht zum Arzt",
+              type: "practice",
             },
             {
               href: "/documents/so2-Übung-2.3b.pdf",
               text: "Übung 2.3b - Ich nehme mir Zeit!",
+              type: "practice",
             },
             {
               href: "/documents/so2-Übung-2.3c.pdf",
               text: "Übung 2.3c - Es kooperiert nicht!",
+              type: "practice",
             },
             {
               href:
                 "/documents/so2-Strategiekarte-Wenn-wir-etwas-am-Baby-tun.pdf",
               text:
                 "Strategiekarte: ...wenn wir etwas am Baby tun – Kursblock 2",
+              type: "strategy",
             },
             {
               href:
                 "/documents/so2-Strategiekarte-Wenn-das-Baby-nicht-kooperiert.pdf",
               text:
                 "Strategiekarte: ...wenn das Baby nicht kooperiert – Kursblock 2",
+              type: "strategy",
             },
           ],
         },
@@ -472,16 +505,19 @@ const appData = {
             {
               href: "/documents/so2-Übung-2.4a.pdf",
               text: "Übung 2.4a - Lina in der Küche",
+              type: "practice",
             },
             {
               href: "/documents/so2-Übung-2.4b.pdf",
               text: "Übung 2.4b - Belehrungs- und Belohnungsfalle",
+              type: "practice",
             },
             {
               href:
                 "/documents/so2-Strategiekarte-Wenn-wir-etwas-neben-dem-Baby-tun.pdf",
               text:
                 "Strategiekarte: ...wenn wir etwas neben dem Baby tun – Kursblock 2",
+              type: "strategy",
             },
           ],
         },
@@ -530,16 +566,19 @@ const appData = {
             {
               href: "/documents/so2-Übung-2.5a.pdf",
               text: "Übung 2.5a - Linas Grosseltern",
+              type: "practice",
             },
             {
               href: "/documents/so2-Übung-2.5b.pdf",
               text: "Übung 2.5b - Erziehungsmythen hinterfragen",
+              type: "practice",
             },
             {
               href:
                 "/documents/so2-Strategiekarte-Wenn-wir-das-Baby-verlassen.pdf",
               text:
                 "Strategiekarte: ...wenn wir das Baby verlassen – Kursblock 2",
+              type: "strategy",
             },
           ],
         },
@@ -554,14 +593,18 @@ const appData = {
             {
               href: "/documents/so2-Übung-2.6a.pdf",
               text: "Übung 2.6a - Step by Step... Schwerpunkte setzen",
+              type: "practice",
             },
             {
               href: "/documents/so2-Übung-2.6b.pdf",
-              text: "Übung 2.6b - Ich erinnere mich... Erinnerungshilfen schaffen",
+              text:
+                "Übung 2.6b - Ich erinnere mich... Erinnerungshilfen schaffen",
+              type: "practice",
             },
             {
               href: "/documents/so2-Lernprotokoll.pdf",
               text: "Lernprotokoll – Kursblocks 2",
+              type: "practice",
             },
           ],
         },
@@ -574,10 +617,12 @@ const appData = {
             {
               href: "/documents/so2-Uebungsdossier.pdf",
               text: "Übungsdossier mit allen Übungen – Kursblock 2",
+              type: "practice",
             },
             {
               href: "/documents/so2-Zusammenfassung.pdf",
               text: "Zusammenfassung – Kursblock 2",
+              type: "further-information",
             },
           ],
         },
@@ -625,6 +670,7 @@ const appData = {
             {
               href: "/documents/so3-Fahrplan.pdf",
               text: "Fahrplan – Kursblock 3",
+              type: "roadmap",
             },
           ],
         },
@@ -639,6 +685,7 @@ const appData = {
             {
               href: "/documents/so3-Übung-3.1.pdf",
               text: "Übung 3.1 - Was brauche ich?",
+              type: "practice",
             },
           ],
         },
@@ -670,18 +717,22 @@ const appData = {
             {
               href: "/documents/so3-Übung-3.2a.pdf",
               text: "Übung 3.2a - Lina ist müde",
+              type: "practice",
             },
             {
               href: "/documents/so3-Übung-3.2b.pdf",
               text: "Übung 3.2b - Bindung vs. Autonomie, wie war es bei mir?",
+              type: "practice",
             },
             {
               href: "/documents/so3-Übung-3.2c.pdf",
               text: "Übung 3.2c - Was gebe ich weiter?",
+              type: "practice",
             },
             {
               href: "/documents/so3-Vertiefung-co-sleeping.pdf",
               text: "Vertiefung: Sicherheitsregeln Co‑Sleeping – Kursblocks 3",
+              type: "further-information",
             },
           ],
         },
@@ -725,30 +776,37 @@ const appData = {
             {
               href: "/documents/so3-Übung-3.3a.pdf",
               text: "Übung 3.3a - Lina und die Rassel",
+              type: "practice",
             },
             {
               href: "/documents/so3-Übung-3.3b.pdf",
               text: "Übung 3.3b - Die Signale meines Babys",
+              type: "practice",
             },
             {
               href: "/documents/so3-Übung-3.3c.pdf",
               text: "Übung 3.3c - Aktives Lesen",
+              type: "practice",
             },
             {
               href: "/documents/so3-Übung-3.3d.pdf",
               text: "Übung 3.3d - Bedürfnisse hinter Wünschen erkennen",
+              type: "practice",
             },
             {
               href: "/documents/so3-Übung-3.3e.pdf",
               text: "Übung 3.3e - Kompromisse finden",
+              type: "practice",
             },
             {
               href: "/documents/so3-Übung-3.3f.pdf",
               text: "Übung 3.3f - Mein Baby kann das allein",
+              type: "practice",
             },
             {
               href: "/documents/so3-Strategiekarte-Aktives-Lesen.pdf",
               text: "Strategiekarte: Aktives Lesen – Kursblock 3",
+              type: "strategy",
             },
           ],
         },
@@ -788,18 +846,22 @@ const appData = {
             {
               href: "/documents/so3-Übung-3.4a.pdf",
               text: "Übung 3.4a - Lina weint",
+              type: "practice",
             },
             {
               href: "/documents/so3-Übung-3.4b.pdf",
               text: "Übung 3.4b - Erfahrungen mit dem WARUM-Prozess sammeln",
+              type: "practice",
             },
             {
               href: "/documents/so3-Übung-3.4c.pdf",
               text: "Übung 3.4c - So weint mein Baby",
+              type: "practice",
             },
             {
               href: "/documents/so3-Strategiekarte-WARUM-Prozess.pdf",
               text: "Strategiekarte: Der WARUM-Prozess – Kursblock 3",
+              type: "strategy",
             },
           ],
         },
@@ -847,14 +909,17 @@ const appData = {
             {
               href: "/documents/so3-Übung-3.5a.pdf",
               text: "Übung 3.5a - Das normale Baby",
+              type: "practice",
             },
             {
               href: "/documents/so3-Übung-3.5b.pdf",
               text: "Übung 3.5b - Entwicklungsschritte protokollieren",
+              type: "practice",
             },
             {
               href: "/documents/so3-Vertiefung-Entwicklungsspruenge.pdf",
               text: "Vertiefung: Übersicht Entwicklungssprünge – Kursblocks 3",
+              type: "further-information",
             },
           ],
         },
@@ -868,14 +933,18 @@ const appData = {
             {
               href: "/documents/so3-Übung-3.6a.pdf",
               text: "Übung 3.6a - Step by Step... Schwerpunkte setzen",
+              type: "practice",
             },
             {
               href: "/documents/so3-Übung-3.6b.pdf",
-              text: "Übung 3.6b - Ich erinnere mich... Erinnerungshilfen schaffen",
+              text:
+                "Übung 3.6b - Ich erinnere mich... Erinnerungshilfen schaffen",
+              type: "practice",
             },
             {
               href: "/documents/so3-Lernprotokoll.pdf",
               text: "Lernprotokoll – Kursblock 3",
+              type: "practice",
             },
           ],
         },
@@ -888,13 +957,15 @@ const appData = {
             {
               href: "/documents/so3-Uebungsdossier.pdf",
               text: "Übungsdossier mit allen Übungen – Kursblock 3",
+              type: "practice",
             },
             {
               href: "/documents/so3-Zusammenfassung.pdf",
               text: "Zusammenfassung – Kursblock 3",
+              type: "further-information",
             },
           ],
-        }
+        },
       },
     },
     block04: {
@@ -944,14 +1015,17 @@ const appData = {
             {
               href: "/documents/so4-Fahrplan.pdf",
               text: "Fahrplan – Kursblock 4",
+              type: "roadmap",
             },
             {
               href: "/documents/so4-Zusammenfassung.pdf",
               text: "Zusammenfassung – Kursblock 4",
+              type: "further-information",
             },
             {
               href: "/documents/so4-Uebungsdossier.pdf",
               text: "Übungsdossier (PDF) – Kursblock 4",
+              type: "practice",
             },
           ],
         },
@@ -1014,6 +1088,7 @@ const appData = {
             {
               href: "/documents/so4-Strategiekarte-Ampelcheck.pdf",
               text: "Strategiekarte: Der Ampel-Check – Kursblock 4",
+              type: "strategy",
             },
           ],
         },
@@ -1060,18 +1135,22 @@ const appData = {
                 "/documents/so4-Strategiekarte-Eigenes-Selbstbewusstsein-staerken.pdf",
               text:
                 "Strategiekarte: Eigenes Selbstbewusstsein stärken – Kursblock 4",
+              type: "strategy",
             },
             {
               href: "/documents/so4-Vertiefung-Gefuehlswortschatz.pdf",
               text: "Vertiefung: Gefühlswortschatz erweitern – Kursblock 4",
+              type: "further-information",
             },
             {
               href: "/documents/so4-Vertiefung-Stressreaktionen.pdf",
               text: "Vertiefung: Stressreaktionen reflektieren – Kursblock 4",
+              type: "further-information",
             },
             {
               href: "/documents/so4-Vertiefung-Familienleitbild.pdf",
               text: "Vertiefung: Werte für das Familienleitbild – Kursblock 4",
+              type: "further-information",
             },
           ],
         },
@@ -1117,10 +1196,12 @@ const appData = {
               href:
                 "/documents/so4-Strategiekarte-Eigenen-Selbstwert-staerken.pdf",
               text: "Strategiekarte: Eigenen Selbstwert stärken – Kursblock 4",
+              type: "strategy",
             },
             {
               href: "/documents/so4-Vertiefung-Beduerfniswortschatz.pdf",
               text: "Vertiefung: Bedürfniswortschatz erweitern – Kursblock 4",
+              type: "further-information",
             },
           ],
         },
@@ -1165,10 +1246,12 @@ const appData = {
             {
               href: "/documents/so4-Strategiekarte-Nein-sagen.pdf",
               text: "Strategiekarte: Nein sagen – Kursblock 4",
+              type: "strategy",
             },
             {
               href: "/documents/so4-Vertiefung-Inkonsequenz.pdf",
               text: "Vertiefung: Prinzip der Inkonsequenz – Kursblock 4",
+              type: "further-information",
             },
           ],
         },
@@ -1220,11 +1303,13 @@ const appData = {
                 "/documents/so4-Strategiekarte-Eigenes-Selbstvertrauen-staerken.pdf",
               text:
                 "Strategiekarte: Eigenes Selbstvertrauen stärken – Kursblock 4",
+              type: "strategy",
             },
             {
               href: "/documents/so4-Strategiekarte-3-Schritt-Plan.pdf",
               text:
                 "Strategiekarte: 3-Schritt-Plan nach Stressreaktionen – Kursblock 4",
+              type: "strategy",
             },
           ],
         },
@@ -1287,6 +1372,7 @@ const appData = {
               href: "/documents/so5-Vertiefung-Anregende-Umgebung.pdf",
               text:
                 "Vertiefungsinput: Zuhause eine anregende Umgebung schaffen – Kursblock 5",
+              type: "further-information",
             },
           ],
         },
@@ -1332,6 +1418,7 @@ const appData = {
               href: "/documents/so5-Strategiekarte-Ermöglichende-Haltung.pdf",
               text:
                 "Strategiekarte: Eine ermöglichende Haltung einnehmen – Kursblock 5",
+              type: "strategy",
             },
           ],
         },
@@ -1391,12 +1478,14 @@ const appData = {
             {
               href: "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung.pdf",
               text: "Strategiekarte: Das ABC der Zurückhaltung – Kursblock 5",
+              type: "strategy",
             },
             {
               href:
                 "/documents/so5-Strategiekarte-Ungeteilte-Aufmerksamkeit.pdf",
               text:
                 "Strategiekarte: Die Zeit der ungeteilten Aufmerksamkeit – Kursblock 5",
+              type: "strategy",
             },
           ],
         },
@@ -1448,6 +1537,7 @@ const appData = {
                 "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Frust.pdf",
               text:
                 "Strategiekarte: Zurückhaltung, wenn dem Baby etwas nicht gelingt – Kursblock 5",
+              type: "strategy",
             },
           ],
         },
@@ -1504,6 +1594,7 @@ const appData = {
                 "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Gefahr.pdf",
               text:
                 "Strategiekarte: Zurückhaltung, wenn das Baby in Gefahr ist – Kursblock 5",
+              type: "strategy",
             },
           ],
         },
