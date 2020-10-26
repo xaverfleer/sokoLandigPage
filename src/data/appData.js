@@ -71,8 +71,8 @@ const appData = {
             videoName: "(Video 1.2)",
           },
           video: { ref: "https://player.vimeo.com/video/412779252" },
-          subtitle: "Das wichtigste in Kürze:",
           checklist: {
+            pretext: "Das wichtigste in Kürze:",
             entries: [
               {
                 id: 0,
@@ -110,8 +110,8 @@ const appData = {
             videoName: "(Video 1.3)",
           },
           video: { ref: "https://player.vimeo.com/video/420457933" },
-          subtitle: "Das wichtigste in Kürze:",
           checklist: {
+            pretext: "Das wichtigste in Kürze:",
             entries: [
               {
                 id: 0,
@@ -153,8 +153,8 @@ const appData = {
             videoName: "(Video 1.5)",
           },
           video: { ref: "https://player.vimeo.com/video/411396939" },
-          subtitle: "Das wichtigste in Kürze:",
           checklist: {
+            pretext: "Das wichtigste in Kürze:",
             entries: [
               {
                 id: 0,
@@ -285,8 +285,8 @@ const appData = {
           id: 2,
           title: { main: "Mit dem Baby sprechen", videoName: "(Video 2.2)" },
           video: { ref: "https://player.vimeo.com/video/410677189" },
-          subtitle: "Das wichtigste in Kürze:",
           checklist: {
+            pretext: "Das wichtigste in Kürze:",
             entries: [
               {
                 id: 0,
@@ -320,8 +320,8 @@ const appData = {
             videoName: "(Video 2.3)",
           },
           video: { ref: "https://player.vimeo.com/video/410677404" },
-          subtitle: "Das wichtigste in Kürze:",
           checklist: {
+            pretext: "Das wichtigste in Kürze:",
             entries: [
               {
                 id: 0,
@@ -371,8 +371,8 @@ const appData = {
             videoName: "(Video 2.4)",
           },
           video: { ref: "https://player.vimeo.com/video/410677798" },
-          subtitle: "Das wichtigste in Kürze:",
           checklist: {
+            pretext: "Das wichtigste in Kürze:",
             entries: [
               {
                 id: 0,
@@ -404,8 +404,8 @@ const appData = {
             videoName: "(Video 2.5)",
           },
           video: { ref: "https://player.vimeo.com/video/410678171" },
-          subtitle: "Das wichtigste in Kürze:",
           checklist: {
+            pretext: "Das wichtigste in Kürze:",
             entries: [
               {
                 id: 0,
@@ -529,8 +529,8 @@ const appData = {
             videoName: "(Video 3.2)",
           },
           video: { ref: "https://player.vimeo.com/video/418114362" },
-          subtitle: "Das wichtigste in Kürze:",
           checklist: {
+            pretext: "Das wichtigste in Kürze:",
             entries: [
               {
                 id: 0,
@@ -560,8 +560,8 @@ const appData = {
             videoName: "(Video 3.3)",
           },
           video: { ref: "https://player.vimeo.com/video/418114671" },
-          subtitle: "Das wichtigste in Kürze:",
           checklist: {
+            pretext: "Das wichtigste in Kürze:",
             entries: [
               {
                 id: 0,
@@ -603,8 +603,8 @@ const appData = {
             videoName: "(Video 3.4)",
           },
           video: { ref: "https://player.vimeo.com/video/418115074" },
-          subtitle: "Das wichtigste in Kürze:",
           checklist: {
+            pretext: "Das wichtigste in Kürze:",
             entries: [
               {
                 id: 0,
@@ -642,8 +642,8 @@ const appData = {
             videoName: "(Video 3.5)",
           },
           video: { ref: "https://player.vimeo.com/video/418115509" },
-          subtitle: "Das wichtigste in Kürze:",
           checklist: {
+            pretext: "Das wichtigste in Kürze:",
             entries: [
               {
                 id: 0,

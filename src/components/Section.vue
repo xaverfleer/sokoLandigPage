@@ -7,7 +7,6 @@
     <SectionTitle v-if="section.title" :content="section.title" />
     <VideoVue v-if="section.video" :video="section.video" />
     <template v-if="section.checklist">
-      <h3>{{ section.subtitle }}</h3>
       <Checklist :checklist="section.checklist" />
     </template>
     <Document
