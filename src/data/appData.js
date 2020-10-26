@@ -878,7 +878,7 @@ const appData = {
               text: "Lernprotokoll – Kursblock 3",
             },
           ],
-        }
+        },
         section38: {
           id: 7,
           title: {
