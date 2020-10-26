@@ -248,6 +248,10 @@ const appData = {
               href: "/documents/so1-Übung-1.8.pdf",
               text: "Übung 1.8 - Ich erinnere mich... Erinnerungshilfen schaffen",
             },
+            {
+              href: "/documents/so1-Lernprotokoll.pdf",
+              text: "Lernprotokoll – Kursblocks 1",
+            },
           ],
         },
         section19: {
@@ -555,6 +559,10 @@ const appData = {
               href: "/documents/so2-Übung-2.6b.pdf",
               text: "Übung 2.6b - Ich erinnere mich... Erinnerungshilfen schaffen",
             },
+            {
+              href: "/documents/so2-Lernprotokoll.pdf",
+              text: "Lernprotokoll – Kursblocks 2",
+            },
           ],
         },
         section28: {
@@ -853,7 +861,8 @@ const appData = {
         section37: {
           id: 6,
           title: {
-            main: "Weitere Dokumente",
+            main: "Dos & Don'ts",
+            videoName: "(Video 3.6 - In Produktion)",
           },
           documents: [
             {
@@ -873,8 +882,7 @@ const appData = {
         section38: {
           id: 7,
           title: {
-            main: "Dos & Don'ts",
-            videoName: "(Video 3.6 - In Produktion)",
+            main: "Weitere Dokumente",
           },
           documents: [
             {
