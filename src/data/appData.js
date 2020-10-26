@@ -926,17 +926,17 @@ const appData = {
               {
                 id: 3,
                 text:
-                  "...lernst du Möglichkeiten kennen, wie du deinen Selbstwert in ruhigen Momenten, in stressigen Momenten und nach stressigen Momenten nähren kannst (Video 4.4a)",
+                  "...lernst du Möglichkeiten kennen, wie du deinen Selbstwert in ruhigen Momenten, in stressigen Momenten und nach stressigen Momenten nähren kannst (Video 4.4)",
               },
               {
                 id: 4,
                 text:
-                  "...zeigen wir dir, worauf es ankommt, wenn du deine eigenen Grenzen schützt, indem du Nein zu einem Wunsch oder einer Verhaltensweise deines Babys sagst (Video 4.4b)",
+                  "...zeigen wir dir, worauf es ankommt, wenn du deine eigenen Grenzen schützt, indem du Nein zu einem Wunsch oder einer Verhaltensweise deines Babys sagst (Video 4.5)",
               },
               {
                 id: 5,
                 text:
-                  "...bekommst du Tipps, wie du dein Selbstvertrauen in ruhigen Momenten, in sehr stressigen Momenten und nach stressigen Momenten nähren kannst (Video 4.5)",
+                  "...bekommst du Tipps, wie du dein Selbstvertrauen in ruhigen Momenten, in sehr stressigen Momenten und nach stressigen Momenten nähren kannst (Video 4.6)",
               },
             ],
           },
@@ -1079,7 +1079,7 @@ const appData = {
           id: 4,
           title: {
             main: "...indem wir unseren Selbstwert stärken",
-            videoName: "(Video 4.4a)",
+            videoName: "(Video 4.4)",
           },
           video: { ref: "https://player.vimeo.com/video/428741959" },
           checklist: {
@@ -1128,7 +1128,7 @@ const appData = {
           id: 5,
           title: {
             main: "...indem wir unsere Grenzen schützen",
-            videoName: "(Video 4.4b)",
+            videoName: "(Video 4.5)",
           },
           video: { ref: "https://player.vimeo.com/video/428742084" },
           checklist: {
@@ -1176,7 +1176,7 @@ const appData = {
           id: 6,
           title: {
             main: "...indem wir unser Selbstvertrauen stärken",
-            videoName: "(Video 4.5)",
+            videoName: "(Video 4.6)",
           },
           video: { ref: "https://player.vimeo.com/video/447412269" },
           checklist: {
