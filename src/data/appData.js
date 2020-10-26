@@ -264,7 +264,7 @@ const appData = {
             },
             {
               href: "/documents/so1-Uebungsdossier.pdf",
-              text: "Übungsdossier mit allen Übungen zum Kursblock – Kursblock 1",
+              text: "Übungsdossier mit allen Übungen – Kursblock 1",
             },
             {
               href: "/documents/so1-Literaturliste.pdf",
@@ -565,7 +565,7 @@ const appData = {
           documents: [
             {
               href: "/documents/so2-Uebungsdossier.pdf",
-              text: "Übungsdossier mit allen Übungen zum Kursblock – Kursblock 2",
+              text: "Übungsdossier mit allen Übungen – Kursblock 2",
             },
             {
               href: "/documents/so2-Zusammenfassung.pdf",
@@ -618,18 +618,6 @@ const appData = {
               href: "/documents/so3-Fahrplan.pdf",
               text: "Fahrplan – Kursblock 3",
             },
-            {
-              href: "/documents/so3-Zusammenfassung.pdf",
-              text: "Zusammenfassung – Kursblock 3",
-            },
-            {
-              href: "/documents/so3-Uebungsdossier.pdf",
-              text: "Übungsdossier (PDF) – Kursblock 3",
-            },
-            {
-              href: "/documents/so3-Uebungsdossier.docx",
-              text: "Übungsdossier (Word) – Kursblock 3",
-            },
           ],
         },
         section32: {
@@ -639,6 +627,12 @@ const appData = {
             videoName: "(Video 3.1)",
           },
           video: { ref: "https://player.vimeo.com/video/418114230" },
+          documents: [
+            {
+              href: "/documents/so3-Übung-3.1.pdf",
+              text: "Übung 3.1 - Was brauche ich?",
+            },
+          ],
         },
         section33: {
           id: 2,
@@ -665,6 +659,18 @@ const appData = {
             ],
           },
           documents: [
+            {
+              href: "/documents/so3-Übung-3.2a.pdf",
+              text: "Übung 3.2a - Lina ist müde",
+            },
+            {
+              href: "/documents/so3-Übung-3.2b.pdf",
+              text: "Übung 3.2b - Bindung vs. Autonomie, wie war es bei mir?",
+            },
+            {
+              href: "/documents/so3-Übung-3.2c.pdf",
+              text: "Übung 3.2c - Was gebe ich weiter?",
+            },
             {
               href: "/documents/so3-Vertiefung-co-sleeping.pdf",
               text: "Vertiefung: Sicherheitsregeln Co‑Sleeping – Kursblocks 3",
@@ -709,6 +715,30 @@ const appData = {
           },
           documents: [
             {
+              href: "/documents/so3-Übung-3.3a.pdf",
+              text: "Übung 3.3a - Lina und die Rassel",
+            },
+            {
+              href: "/documents/so3-Übung-3.3b.pdf",
+              text: "Übung 3.3b - Die Signale meines Babys",
+            },
+            {
+              href: "/documents/so3-Übung-3.3c.pdf",
+              text: "Übung 3.3c - Aktives Lesen",
+            },
+            {
+              href: "/documents/so3-Übung-3.3d.pdf",
+              text: "Übung 3.3d - Bedürfnisse hinter Wünschen erkennen",
+            },
+            {
+              href: "/documents/so3-Übung-3.3e.pdf",
+              text: "Übung 3.3e - Kompromisse finden",
+            },
+            {
+              href: "/documents/so3-Übung-3.3f.pdf",
+              text: "Übung 3.3f - Mein Baby kann das allein",
+            },
+            {
               href: "/documents/so3-Strategiekarte-Aktives-Lesen.pdf",
               text: "Strategiekarte: Aktives Lesen – Kursblock 3",
             },
@@ -747,6 +777,18 @@ const appData = {
             ],
           },
           documents: [
+            {
+              href: "/documents/so3-Übung-3.4a.pdf",
+              text: "Übung 3.4a - Lina weint",
+            },
+            {
+              href: "/documents/so3-Übung-3.4b.pdf",
+              text: "Übung 3.4b - Erfahrungen mit dem WARUM-Prozess sammeln",
+            },
+            {
+              href: "/documents/so3-Übung-3.4c.pdf",
+              text: "Übung 3.4c - So weint mein Baby",
+            },
             {
               href: "/documents/so3-Strategiekarte-WARUM-Prozess.pdf",
               text: "Strategiekarte: Der WARUM-Prozess – Kursblock 3",
@@ -795,11 +837,56 @@ const appData = {
           },
           documents: [
             {
+              href: "/documents/so3-Übung-3.5a.pdf",
+              text: "Übung 3.5a - Das normale Baby",
+            },
+            {
+              href: "/documents/so3-Übung-3.5b.pdf",
+              text: "Übung 3.5b - Entwicklungsschritte protokollieren",
+            },
+            {
               href: "/documents/so3-Vertiefung-Entwicklungsspruenge.pdf",
               text: "Vertiefung: Übersicht Entwicklungssprünge – Kursblocks 3",
             },
           ],
         },
+        section37: {
+          id: 6,
+          title: {
+            main: "Weitere Dokumente",
+          },
+          documents: [
+            {
+              href: "/documents/so3-Übung-3.6a.pdf",
+              text: "Übung 3.6a - Step by Step... Schwerpunkte setzen",
+            },
+            {
+              href: "/documents/so3-Übung-3.6b.pdf",
+              text: "Übung 3.6b - Ich erinnere mich... Erinnerungshilfen schaffen",
+            },
+            {
+              href: "/documents/so3-Lernprotokoll.pdf",
+              text: "Lernprotokoll – Kursblock 3",
+            },
+          ],
+        }
+        section38: {
+          id: 7,
+          title: {
+            main: "Dos & Don'ts",
+            videoName: "(Video 3.6 - In Produktion)",
+          },
+          documents: [
+            {
+              href: "/documents/so3-Uebungsdossier.pdf",
+              text: "Übungsdossier mit allen Übungen – Kursblock 3",
+            },
+            {
+              href: "/documents/so3-Zusammenfassung.pdf",
+              text: "Zusammenfassung – Kursblock 3",
+            },
+          ],
+        }
       },
     },
     block04: {
