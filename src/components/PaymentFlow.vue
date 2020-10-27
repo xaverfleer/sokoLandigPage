@@ -174,7 +174,7 @@ const vm = {
                     value: price,
                   },
                   description: JSON.stringify({
-                    compactData,
+                    ...compactData,
                     price,
                   }),
                 },
