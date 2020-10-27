@@ -99,7 +99,7 @@ const appData = {
           documents: [
             {
               href: "/documents/so1-Übung-1.2.pdf",
-              text: "Übung 1.2 - Lina weint... und jetz?",
+              text: "Übung 1.2 - Lina weint... und jetzt?",
               type: "practice",
             },
             {
