@@ -213,12 +213,16 @@ textarea {
   margin-right: 1em;
 }
 
-.document__link--practice::before {
-  background-image: url(imgs/edit-24px.svg);
+.document__link--memo::before {
+  background-image: url(imgs/layers-24px.svg);
 }
 
 .document__link--further-information::before {
   background-image: url(imgs/find_in_page-24px.svg);
+}
+
+.document__link--practice::before {
+  background-image: url(imgs/edit-24px.svg);
 }
 
 .document__link--roadmap::before {
