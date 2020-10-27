@@ -60,8 +60,8 @@ const vm = {
         : "";
     },
     price() {
-      const exact = 35 * (1 - this.discount);
-      return Math.floor(exact * 20) / 20;
+      const exact = 180 * (1 - this.discount);
+      return Math.floor(exact / 5) * 5;
     },
     showPaypal() {
       return this.formIsValid && this.price > 0;
@@ -92,7 +92,9 @@ const vm = {
       formIsValid: false,
       promoCode: undefined,
       promoCodeForm: {
-        fields: [{ ...this.$root.appData.formEntries.promoCode }],
+        fields: [
+          { ...this.$root.appData.formEntries.promoCode, value: "EARLYBIRD80" },
+        ],
         goal: "Verifizieren",
         layout: "small",
         name: "promo-code",
