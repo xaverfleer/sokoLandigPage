@@ -214,7 +214,7 @@ textarea {
 }
 
 .document__link--practice::before {
-  background-image: url(imgs/assignment-24px.svg);
+  background-image: url(imgs/edit-24px.svg);
 }
 
 .document__link--further-information::before {
@@ -222,11 +222,11 @@ textarea {
 }
 
 .document__link--roadmap::before {
-  background-image: url(imgs/arrow_upward-24px.svg);
+  background-image: url(imgs/map-24px.svg);
 }
 
 .document__link--strategy::before {
-  background-image: url(imgs/view_quilt-24px.svg);
+  background-image: url(imgs/article-24px.svg);
 }
 
 .early-bird__icon {
