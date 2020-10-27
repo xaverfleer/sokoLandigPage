@@ -173,10 +173,7 @@ const vm = {
                   amount: {
                     value: price,
                   },
-                  description: JSON.stringify({
-                    ...compactData,
-                    price,
-                  }),
+                  description: "so* kommunizieren mit deinem Baby",
                 },
               ],
             });
