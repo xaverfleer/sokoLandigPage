@@ -213,6 +213,26 @@ textarea {
   margin-right: 1em;
 }
 
+.document__link--memo::before {
+  background-image: url(imgs/layers-24px.svg);
+}
+
+.document__link--further-information::before {
+  background-image: url(imgs/find_in_page-24px.svg);
+}
+
+.document__link--practice::before {
+  background-image: url(imgs/edit-24px.svg);
+}
+
+.document__link--roadmap::before {
+  background-image: url(imgs/map-24px.svg);
+}
+
+.document__link--strategy::before {
+  background-image: url(imgs/article-24px.svg);
+}
+
 .early-bird__icon {
   position: absolute;
   height: 64px;
