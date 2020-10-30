@@ -98,14 +98,14 @@ const appData = {
           },
           documents: [
             {
-              href: "/documents/so1-Übung-1.2.pdf",
-              text: "Übung 1.2 – Lina weint... und jetzt?",
-              type: "practice",
-            },
-            {
               href: "/documents/so1-Strategiekarte-Essenz-Strategie.pdf",
               text: "Strategiekarte: Die Essenz-Strategie",
               type: "strategy",
+            },
+            {
+              href: "/documents/so1-Übung-1.2.pdf",
+              text: "Übung 1.2 – Lina weint... und jetzt?",
+              type: "practice",
             },
           ],
         },
@@ -139,6 +139,11 @@ const appData = {
           },
           documents: [
             {
+              href: "/documents/so1-Erinnerungskarte.pdf",
+              text: "Erinnerungskarte: Innere Stärke",
+              type: "strategy",
+            },
+            {
               href: "/documents/so1-Übung-1.3a.pdf",
               text: "Übung 1.3a – Selbstwas? Schlüsselbegriffe klären",
               type: "practice",
@@ -152,11 +157,6 @@ const appData = {
               href: "/documents/so1-Übung-1.3c.pdf",
               text: "Übung 1.3c – Gleichwürdigkeit in meiner Kindheit",
               type: "practice",
-            },
-            {
-              href: "/documents/so1-Erinnerungskarte.pdf",
-              text: "Erinnerungskarte: Innere Stärke",
-              type: "strategy",
             },
           ],
         },
@@ -275,11 +275,6 @@ const appData = {
           title: { main: "Weitere Dokumente" },
           documents: [
             {
-              href: "/documents/so1-Vertiefung.pdf",
-              text: "Vertiefung: Sichere Bindung",
-              type: "further-information",
-            },
-            {
               href: "/documents/so1-Zusammenfassung.pdf",
               text: "Zusammenfassung Kursblock 1",
               type: "further-information",
@@ -288,6 +283,11 @@ const appData = {
               href: "/documents/so1-Uebungsdossier.pdf",
               text: "Übungsdossier Kursblock 1 mit allen Übungen",
               type: "practice",
+            },
+            {
+              href: "/documents/so1-Vertiefung.pdf",
+              text: "Vertiefung: Sichere Bindung",
+              type: "further-information",
             },
             {
               href: "/documents/so1-Literaturliste.pdf",
@@ -447,6 +447,20 @@ const appData = {
           },
           documents: [
             {
+              href:
+                "/documents/so2-Strategiekarte-Wenn-wir-etwas-am-Baby-tun.pdf",
+              text:
+                "Strategiekarte: ...wenn wir etwas am Baby tun",
+              type: "strategy",
+            },
+            {
+              href:
+                "/documents/so2-Strategiekarte-Wenn-das-Baby-nicht-kooperiert.pdf",
+              text:
+                "Strategiekarte: ...wenn das Baby nicht kooperiert",
+              type: "strategy",
+            },
+            {
               href: "/documents/so2-Übung-2.3a.pdf",
               text: "Übung 2.3a – Lina geht zum Arzt",
               type: "practice",
@@ -460,20 +474,6 @@ const appData = {
               href: "/documents/so2-Übung-2.3c.pdf",
               text: "Übung 2.3c – Es kooperiert nicht!",
               type: "practice",
-            },
-            {
-              href:
-                "/documents/so2-Strategiekarte-Wenn-wir-etwas-am-Baby-tun.pdf",
-              text:
-                "Strategiekarte: ...wenn wir etwas am Baby tun",
-              type: "strategy",
-            },
-            {
-              href:
-                "/documents/so2-Strategiekarte-Wenn-das-Baby-nicht-kooperiert.pdf",
-              text:
-                "Strategiekarte: ...wenn das Baby nicht kooperiert",
-              type: "strategy",
             },
           ],
         },
@@ -503,6 +503,13 @@ const appData = {
           },
           documents: [
             {
+              href:
+                "/documents/so2-Strategiekarte-Wenn-wir-etwas-neben-dem-Baby-tun.pdf",
+              text:
+                "Strategiekarte: ...wenn wir etwas neben dem Baby tun",
+              type: "strategy",
+            },
+            {
               href: "/documents/so2-Übung-2.4a.pdf",
               text: "Übung 2.4a – Lina in der Küche",
               type: "practice",
@@ -511,13 +518,6 @@ const appData = {
               href: "/documents/so2-Übung-2.4b.pdf",
               text: "Übung 2.4b – Belehrungs- und Belohnungsfalle",
               type: "practice",
-            },
-            {
-              href:
-                "/documents/so2-Strategiekarte-Wenn-wir-etwas-neben-dem-Baby-tun.pdf",
-              text:
-                "Strategiekarte: ...wenn wir etwas neben dem Baby tun",
-              type: "strategy",
             },
           ],
         },
@@ -564,6 +564,13 @@ const appData = {
           },
           documents: [
             {
+              href:
+                "/documents/so2-Strategiekarte-Wenn-wir-das-Baby-verlassen.pdf",
+              text:
+                "Strategiekarte: ...wenn wir das Baby verlassen",
+              type: "strategy",
+            },
+            {
               href: "/documents/so2-Übung-2.5a.pdf",
               text: "Übung 2.5a – Linas Grosseltern",
               type: "practice",
@@ -572,13 +579,6 @@ const appData = {
               href: "/documents/so2-Übung-2.5b.pdf",
               text: "Übung 2.5b – Erziehungsmythen hinterfragen",
               type: "practice",
-            },
-            {
-              href:
-                "/documents/so2-Strategiekarte-Wenn-wir-das-Baby-verlassen.pdf",
-              text:
-                "Strategiekarte: ...wenn wir das Baby verlassen",
-              type: "strategy",
             },
           ],
         },
@@ -774,6 +774,11 @@ const appData = {
           },
           documents: [
             {
+              href: "/documents/so3-Strategiekarte-Aktives-Lesen.pdf",
+              text: "Strategiekarte: Aktives Lesen",
+              type: "strategy",
+            },
+            {
               href: "/documents/so3-Übung-3.3a.pdf",
               text: "Übung 3.3a – Lina und die Rassel",
               type: "practice",
@@ -802,11 +807,6 @@ const appData = {
               href: "/documents/so3-Übung-3.3f.pdf",
               text: "Übung 3.3f – Mein Baby kann das allein",
               type: "practice",
-            },
-            {
-              href: "/documents/so3-Strategiekarte-Aktives-Lesen.pdf",
-              text: "Strategiekarte: Aktives Lesen",
-              type: "strategy",
             },
           ],
         },
@@ -844,6 +844,11 @@ const appData = {
           },
           documents: [
             {
+              href: "/documents/so3-Strategiekarte-WARUM-Prozess.pdf",
+              text: "Strategiekarte: Der WARUM-Prozess",
+              type: "strategy",
+            },
+            {
               href: "/documents/so3-Übung-3.4a.pdf",
               text: "Übung 3.4a – Lina weint",
               type: "practice",
@@ -857,11 +862,6 @@ const appData = {
               href: "/documents/so3-Übung-3.4c.pdf",
               text: "Übung 3.4c – So weint mein Baby",
               type: "practice",
-            },
-            {
-              href: "/documents/so3-Strategiekarte-WARUM-Prozess.pdf",
-              text: "Strategiekarte: Der WARUM-Prozess",
-              type: "strategy",
             },
           ],
         },
@@ -1083,6 +1083,11 @@ const appData = {
           },
           documents: [
             {
+              href: "/documents/so4-Strategiekarte-Ampelcheck.pdf",
+              text: "Strategiekarte: Der Ampel-Check",
+              type: "strategy",
+            },
+            {
               href:"/documents/so4-Übung-4.2a",
               text: "Übung 4.2a – Linas Vater",
               type: "practice",
@@ -1106,11 +1111,6 @@ const appData = {
               href:"/documents/so4-Übung-4.2e",
               text: "Übung 4.2e – Unperfekt & glücklich",
               type: "practice",
-            },
-            {
-              href: "/documents/so4-Strategiekarte-Ampelcheck.pdf",
-              text: "Strategiekarte: Der Ampel-Check",
-              type: "strategy",
             },
           ],
         },
@@ -1153,6 +1153,13 @@ const appData = {
           },
           documents: [
             {
+              href:
+                "/documents/so4-Strategiekarte-Eigenes-Selbstbewusstsein-staerken.pdf",
+              text:
+                "Strategiekarte: Eigenes Selbstbewusstsein stärken",
+              type: "strategy",
+            },
+            {
               href:"/documents/so4-Übung-4.3a",
               text: "Übung 4.3a – Linas Vater",
               type: "practice",
@@ -1176,13 +1183,6 @@ const appData = {
               href:"/documents/so4-Übung-4.3e",
               text: "Übung 4.3e – Pause! – Umgang mit schwierigen Gefhülen",
               type: "practice",
-            },
-            {
-              href:
-                "/documents/so4-Strategiekarte-Eigenes-Selbstbewusstsein-staerken.pdf",
-              text:
-                "Strategiekarte: Eigenes Selbstbewusstsein stärken",
-              type: "strategy",
             },
             {
               href: "/documents/so4-Vertiefung-Gefuehlswortschatz.pdf",
@@ -1240,6 +1240,12 @@ const appData = {
           },
           documents: [
             {
+              href:
+                "/documents/so4-Strategiekarte-Eigenen-Selbstwert-staerken.pdf",
+              text: "Strategiekarte: Eigenen Selbstwert stärken",
+              type: "strategy",
+            },
+            {
               href:"/documents/so4-Übung-4.4a",
               text: "Übung 4.4a – Die Energiebilanz",
               type: "practice",
@@ -1253,12 +1259,6 @@ const appData = {
               href:"/documents/so4-Übung-4.4c",
               text: "Übung 4.4c – Ich umsorge mich nach einer Stressreaktion",
               type: "practice",
-            },
-            {
-              href:
-                "/documents/so4-Strategiekarte-Eigenen-Selbstwert-staerken.pdf",
-              text: "Strategiekarte: Eigenen Selbstwert stärken",
-              type: "strategy",
             },
             {
               href: "/documents/so4-Vertiefung-Beduerfniswortschatz.pdf",
@@ -1306,6 +1306,11 @@ const appData = {
           },
           documents: [
             {
+              href: "/documents/so4-Strategiekarte-Nein-sagen.pdf",
+              text: "Strategiekarte: Nein sagen",
+              type: "strategy",
+            },
+            {
               href:"/documents/so4-Übung-4.5a",
               text: "Übung 4.5a – Blick auf mich selbst: Meine Grenzen",
               type: "practice",
@@ -1319,11 +1324,6 @@ const appData = {
               href:"/documents/so4-Übung-4.5c",
               text: "Übung 4.5c – Stopp! Das Nein-Sagen üben",
               type: "practice",
-            },
-            {
-              href: "/documents/so4-Strategiekarte-Nein-sagen.pdf",
-              text: "Strategiekarte: Nein sagen",
-              type: "strategy",
             },
             {
               href: "/documents/so4-Vertiefung-Inkonsequenz.pdf",
@@ -1376,6 +1376,19 @@ const appData = {
           },
           documents: [
             {
+              href:
+                "/documents/so4-Strategiekarte-Eigenes-Selbstvertrauen-staerken.pdf",
+              text:
+                "Strategiekarte: Eigenes Selbstvertrauen stärken",
+              type: "strategy",
+            },
+            {
+              href: "/documents/so4-Strategiekarte-3-Schritt-Plan.pdf",
+              text:
+                "Strategiekarte: 3-Schritt-Plan nach Stressreaktionen",
+              type: "strategy",
+            },
+            {
               href:"/documents/so4-Übung-4.6a",
               text: "Übung 4.6a – Es läuft doch gut!",
               type: "practice",
@@ -1389,19 +1402,6 @@ const appData = {
               href:"/documents/so4-Übung-4.7",
               text: "Übung 4.7 – Step by Step... Schwerpunkte setzen",
               type: "practice",
-            },
-            {
-              href:
-                "/documents/so4-Strategiekarte-Eigenes-Selbstvertrauen-staerken.pdf",
-              text:
-                "Strategiekarte: Eigenes Selbstvertrauen stärken",
-              type: "strategy",
-            },
-            {
-              href: "/documents/so4-Strategiekarte-3-Schritt-Plan.pdf",
-              text:
-                "Strategiekarte: 3-Schritt-Plan nach Stressreaktionen",
-              type: "strategy",
             },
           ],
         },
