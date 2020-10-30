@@ -1444,6 +1444,13 @@ const appData = {
             videoName: "(Video 5.1)",
           },
           video: { ref: "https://player.vimeo.com/video/455767350" },
+          documents: [
+            {
+              href:"/documents/so5-Übung-5.1.pdf",
+              text: "Übung 5.1 – Lass mich doch!",
+              type: "practice",
+            },
+          ],
         },
         section53: {
           id: 2,
@@ -1478,6 +1485,16 @@ const appData = {
             ],
           },
           documents: [
+            {
+              href:"/documents/so5-Übung-5.2a.pdf",
+              text: "Übung 5.2a – Das Prinzip der Assimilation",
+              type: "practice",
+            },
+            {
+              href:"/documents/so5-Übung-5.2b.pdf",
+              text: "Übung 5.2b – Die anregende Umgebung",
+              type: "practice",
+            },
             {
               href: "/documents/so5-Vertiefung-Anregende-Umgebung.pdf",
               text:
@@ -1529,6 +1546,16 @@ const appData = {
               text:
                 "Strategiekarte: Eine ermöglichende Haltung einnehmen",
               type: "strategy",
+            },
+            {
+              href:"/documents/so5-Übung-5.3a.pdf",
+              text: "Übung 5.3a – Lina erkundet die Welt",
+              type: "practice",
+            },
+            {
+              href:"/documents/so5-Übung-5.2b.pdf",
+              text: "Übung 5.3b – Nein und Ja: Was löst das aus?",
+              type: "practice",
             },
           ],
         },
@@ -1597,6 +1624,21 @@ const appData = {
                 "Strategiekarte: Die Zeit der ungeteilten Aufmerksamkeit",
               type: "strategy",
             },
+            {
+              href:"/documents/so5-Übung-5.4a.pdf",
+              text: "Übung 5.4a – Lina will sich drehen",
+              type: "practice",
+            },
+            {
+              href:"/documents/so5-Übung-5.4b.pdf",
+              text: "Übung 5.4b – Abwarten und Zurückhaltung üben",
+              type: "practice",
+            },
+            {
+              href:"/documents/so5-Übung-5.4c.pdf",
+              text: "Übung 5.4c – Beschreiben statt bewerten",
+              type: "practice",
+            },
           ],
         },
         section56: {
@@ -1648,6 +1690,21 @@ const appData = {
               text:
                 "Strategiekarte: Zurückhaltung, wenn dem Baby etwas nicht gelingt",
               type: "strategy",
+            },
+            {
+              href:"/documents/so5-Übung-5.5a.pdf",
+              text: "Übung 5.5a – Lina und der Wäschekorb",
+              type: "practice",
+            },
+            {
+              href:"/documents/so5-Übung-5.5b.pdf",
+              text: "Übung 5.5b – Frust aushalten",
+              type: "practice",
+            },
+            {
+              href:"/documents/so5-Übung-5.5c.pdf",
+              text: "Übung 5.5c – Coachen statt lösen",
+              type: "practice",
             },
           ],
         },
@@ -1705,6 +1762,16 @@ const appData = {
               text:
                 "Strategiekarte: Zurückhaltung, wenn das Baby in Gefahr ist",
               type: "strategy",
+            },
+            {
+              href:"/documents/so5-Übung-5.6a.pdf",
+              text: "Übung 5.6a – Lina auf der Treppe",
+              type: "practice",
+            },
+            {
+              href:"/documents/so5-Übung-5.6b.pdf",
+              text: "Übung 5.6b – Angst aushalten",
+              type: "practice",
             },
           ],
         },
