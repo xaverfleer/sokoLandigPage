@@ -1028,7 +1028,7 @@ const appData = {
           video: { ref: "https://player.vimeo.com/video/428741631" },
           documents: [
             {
-              href:"/documents/so4-Übung-4.1",
+              href:"/documents/so4-Übung-4.1.pdf",
               text: "Übung 4.1 – Mein guter Freund",
               type: "practice",
             }
@@ -1088,27 +1088,27 @@ const appData = {
               type: "strategy",
             },
             {
-              href:"/documents/so4-Übung-4.2a",
+              href:"/documents/so4-Übung-4.2a.pdf",
               text: "Übung 4.2a – Linas Vater",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.2b",
+              href:"/documents/so4-Übung-4.2b.pdf",
               text: "Übung 4.2b – Ich vernetze mich",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.2c",
+              href:"/documents/so4-Übung-4.2c.pdf",
               text: "Übung 4.2c – Alarm! Alarm!",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.2d",
+              href:"/documents/so4-Übung-4.2d.pdf",
               text: "Übung 4.2d – Must-Do & Could-Do",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.2e",
+              href:"/documents/so4-Übung-4.2e.pdf",
               text: "Übung 4.2e – Unperfekt & glücklich",
               type: "practice",
             },
@@ -1160,27 +1160,27 @@ const appData = {
               type: "strategy",
             },
             {
-              href:"/documents/so4-Übung-4.3a",
+              href:"/documents/so4-Übung-4.3a.pdf",
               text: "Übung 4.3a – Linas Vater",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.3b",
+              href:"/documents/so4-Übung-4.3b.pdf",
               text: "Übung 4.3b – Meine Vergagenheit",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.3c",
+              href:"/documents/so4-Übung-4.3c.pdf",
               text: "Übung 4.3c – Achtsamkeitspausen",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.3d",
+              href:"/documents/so4-Übung-4.3d.pdf",
               text: "Übung 4.3d – Das Familienleitbild",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.3e",
+              href:"/documents/so4-Übung-4.3e.pdf",
               text: "Übung 4.3e – Pause! – Umgang mit schwierigen Gefhülen",
               type: "practice",
             },
@@ -1246,17 +1246,17 @@ const appData = {
               type: "strategy",
             },
             {
-              href:"/documents/so4-Übung-4.4a",
+              href:"/documents/so4-Übung-4.4a.pdf",
               text: "Übung 4.4a – Die Energiebilanz",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.4b",
+              href:"/documents/so4-Übung-4.4b.pdf",
               text: "Übung 4.4b – Das Sonnenbad",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.4c",
+              href:"/documents/so4-Übung-4.4c.pdf",
               text: "Übung 4.4c – Ich umsorge mich nach einer Stressreaktion",
               type: "practice",
             },
@@ -1311,17 +1311,17 @@ const appData = {
               type: "strategy",
             },
             {
-              href:"/documents/so4-Übung-4.5a",
+              href:"/documents/so4-Übung-4.5a.pdf",
               text: "Übung 4.5a – Blick auf mich selbst: Meine Grenzen",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.5b",
+              href:"/documents/so4-Übung-4.5b.pdf",
               text: "Übung 4.5b – Inkonsequenz",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.5c",
+              href:"/documents/so4-Übung-4.5c.pdf",
               text: "Übung 4.5c – Stopp! Das Nein-Sagen üben",
               type: "practice",
             },
@@ -1389,17 +1389,17 @@ const appData = {
               type: "strategy",
             },
             {
-              href:"/documents/so4-Übung-4.6a",
+              href:"/documents/so4-Übung-4.6a.pdf",
               text: "Übung 4.6a – Es läuft doch gut!",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.6b",
+              href:"/documents/so4-Übung-4.6b.pdf",
               text: "Übung 4.6b – Stress überbrücken: Techniken einüben",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.7",
+              href:"/documents/so4-Übung-4.7.pdf",
               text: "Übung 4.7 – Step by Step... Schwerpunkte setzen",
               type: "practice",
             },
@@ -1713,6 +1713,18 @@ const appData = {
           title: {
             main: "Weitere Inhalte sind in Produktion.",
           },
+          documents: [
+            {
+              href: "/documents/so5-Videoskript-5.7.pdf",
+              text: "Provisorisches Skript zum Video 5.7 (in Produktion)",
+              type: "strategy",
+            },
+            {
+              href: "/documents/so5-Videoskript-5.8.pdf",
+              text: "Provisorisches Skript zum Video 5.8 (in Produktion)",
+              type: "strategy",
+            },
+          ],
         },
       },
     },
