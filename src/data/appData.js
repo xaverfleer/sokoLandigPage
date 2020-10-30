@@ -615,14 +615,14 @@ const appData = {
           },
           documents: [
             {
-              href: "/documents/so2-Uebungsdossier.pdf",
-              text: "Übungsdossier Kursblock 2 mit allen Übungen",
-              type: "practice",
-            },
-            {
               href: "/documents/so2-Zusammenfassung.pdf",
               text: "Zusammenfassung Kursblock 2",
               type: "further-information",
+            },
+            {
+              href: "/documents/so2-Uebungsdossier.pdf",
+              text: "Übungsdossier Kursblock 2 mit allen Übungen",
+              type: "practice",
             },
           ],
         },
@@ -955,14 +955,14 @@ const appData = {
           },
           documents: [
             {
-              href: "/documents/so3-Uebungsdossier.pdf",
-              text: "Übungsdossier Kursblock 3 mit allen Übungen",
-              type: "practice",
-            },
-            {
               href: "/documents/so3-Zusammenfassung.pdf",
               text: "Zusammenfassung Kursblock 3",
               type: "further-information",
+            },
+            {
+              href: "/documents/so3-Uebungsdossier.pdf",
+              text: "Übungsdossier Kursblock 3 mit allen Übungen",
+              type: "practice",
             },
           ],
         },
@@ -1017,16 +1017,6 @@ const appData = {
               text: "Fahrplan Kursblock 4",
               type: "roadmap",
             },
-            {
-              href: "/documents/so4-Zusammenfassung.pdf",
-              text: "Zusammenfassung – Kursblock 4",
-              type: "further-information",
-            },
-            {
-              href: "/documents/so4-Uebungsdossier.pdf",
-              text: "Übungsdossier (PDF) – Kursblock 4",
-              type: "practice",
-            },
           ],
         },
         section42: {
@@ -1036,6 +1026,13 @@ const appData = {
             videoName: "(Video 4.1)",
           },
           video: { ref: "https://player.vimeo.com/video/428741631" },
+          documents: [
+            {
+              href:"/documents/so4-Übung-4.1",
+              text: "Übung 4.1 – Mein guter Freund",
+              type: "practice",
+            }
+          ]
         },
         section43: {
           id: 2,
@@ -1086,8 +1083,33 @@ const appData = {
           },
           documents: [
             {
+              href:"/documents/so4-Übung-4.2a",
+              text: "Übung 4.2a – Linas Vater",
+              type: "practice",
+            },
+            {
+              href:"/documents/so4-Übung-4.2b",
+              text: "Übung 4.2b – Ich vernetze mich",
+              type: "practice",
+            },
+            {
+              href:"/documents/so4-Übung-4.2c",
+              text: "Übung 4.2c – Alarm! Alarm!",
+              type: "practice",
+            },
+            {
+              href:"/documents/so4-Übung-4.2d",
+              text: "Übung 4.2d – Must-Do & Could-Do",
+              type: "practice",
+            },
+            {
+              href:"/documents/so4-Übung-4.2e",
+              text: "Übung 4.2e – Unperfekt & glücklich",
+              type: "practice",
+            },
+            {
               href: "/documents/so4-Strategiekarte-Ampelcheck.pdf",
-              text: "Strategiekarte: Der Ampel-Check – Kursblock 4",
+              text: "Strategiekarte: Der Ampel-Check",
               type: "strategy",
             },
           ],
@@ -1131,25 +1153,50 @@ const appData = {
           },
           documents: [
             {
+              href:"/documents/so4-Übung-4.3a",
+              text: "Übung 4.3a – Linas Vater",
+              type: "practice",
+            },
+            {
+              href:"/documents/so4-Übung-4.3b",
+              text: "Übung 4.3b – Meine Vergagenheit",
+              type: "practice",
+            },
+            {
+              href:"/documents/so4-Übung-4.3c",
+              text: "Übung 4.3c – Achtsamkeitspausen",
+              type: "practice",
+            },
+            {
+              href:"/documents/so4-Übung-4.3d",
+              text: "Übung 4.3d – Das Familienleitbild",
+              type: "practice",
+            },
+            {
+              href:"/documents/so4-Übung-4.3e",
+              text: "Übung 4.3e – Pause! – Umgang mit schwierigen Gefhülen",
+              type: "practice",
+            },
+            {
               href:
                 "/documents/so4-Strategiekarte-Eigenes-Selbstbewusstsein-staerken.pdf",
               text:
-                "Strategiekarte: Eigenes Selbstbewusstsein stärken – Kursblock 4",
+                "Strategiekarte: Eigenes Selbstbewusstsein stärken",
               type: "strategy",
             },
             {
               href: "/documents/so4-Vertiefung-Gefuehlswortschatz.pdf",
-              text: "Vertiefung: Gefühlswortschatz erweitern – Kursblock 4",
+              text: "Vertiefung: Gefühlswortschatz erweitern",
               type: "further-information",
             },
             {
               href: "/documents/so4-Vertiefung-Stressreaktionen.pdf",
-              text: "Vertiefung: Stressreaktionen reflektieren – Kursblock 4",
+              text: "Vertiefung: Stressreaktionen reflektieren",
               type: "further-information",
             },
             {
               href: "/documents/so4-Vertiefung-Familienleitbild.pdf",
-              text: "Vertiefung: Werte für das Familienleitbild – Kursblock 4",
+              text: "Vertiefung: Werte für das Familienleitbild",
               type: "further-information",
             },
           ],
@@ -1193,14 +1240,29 @@ const appData = {
           },
           documents: [
             {
+              href:"/documents/so4-Übung-4.4a",
+              text: "Übung 4.4a – Die Energiebilanz",
+              type: "practice",
+            },
+            {
+              href:"/documents/so4-Übung-4.4b",
+              text: "Übung 4.4b – Das Sonnenbad",
+              type: "practice",
+            },
+            {
+              href:"/documents/so4-Übung-4.4c",
+              text: "Übung 4.4c – Ich umsorge mich nach einer Stressreaktion",
+              type: "practice",
+            },
+            {
               href:
                 "/documents/so4-Strategiekarte-Eigenen-Selbstwert-staerken.pdf",
-              text: "Strategiekarte: Eigenen Selbstwert stärken – Kursblock 4",
+              text: "Strategiekarte: Eigenen Selbstwert stärken",
               type: "strategy",
             },
             {
               href: "/documents/so4-Vertiefung-Beduerfniswortschatz.pdf",
-              text: "Vertiefung: Bedürfniswortschatz erweitern – Kursblock 4",
+              text: "Vertiefung: Bedürfniswortschatz erweitern",
               type: "further-information",
             },
           ],
@@ -1244,13 +1306,28 @@ const appData = {
           },
           documents: [
             {
+              href:"/documents/so4-Übung-4.5a",
+              text: "Übung 4.5a – Blick auf mich selbst: Meine Grenzen",
+              type: "practice",
+            },
+            {
+              href:"/documents/so4-Übung-4.5b",
+              text: "Übung 4.5b – Inkonsequenz",
+              type: "practice",
+            },
+            {
+              href:"/documents/so4-Übung-4.5c",
+              text: "Übung 4.5c – Stopp! Das Nein-Sagen üben",
+              type: "practice",
+            },
+            {
               href: "/documents/so4-Strategiekarte-Nein-sagen.pdf",
-              text: "Strategiekarte: Nein sagen – Kursblock 4",
+              text: "Strategiekarte: Nein sagen",
               type: "strategy",
             },
             {
               href: "/documents/so4-Vertiefung-Inkonsequenz.pdf",
-              text: "Vertiefung: Prinzip der Inkonsequenz – Kursblock 4",
+              text: "Vertiefung: Prinzip der Inkonsequenz",
               type: "further-information",
             },
           ],
@@ -1299,17 +1376,50 @@ const appData = {
           },
           documents: [
             {
+              href:"/documents/so4-Übung-4.6a",
+              text: "Übung 4.6a – Es läuft doch gut!",
+              type: "practice",
+            },
+            {
+              href:"/documents/so4-Übung-4.6b",
+              text: "Übung 4.6b – Stress überbrücken: Techniken einüben",
+              type: "practice",
+            },
+            {
+              href:"/documents/so4-Übung-4.7",
+              text: "Übung 4.7 – Step by Step... Schwerpunkte setzen",
+              type: "practice",
+            },
+            {
               href:
                 "/documents/so4-Strategiekarte-Eigenes-Selbstvertrauen-staerken.pdf",
               text:
-                "Strategiekarte: Eigenes Selbstvertrauen stärken – Kursblock 4",
+                "Strategiekarte: Eigenes Selbstvertrauen stärken",
               type: "strategy",
             },
             {
               href: "/documents/so4-Strategiekarte-3-Schritt-Plan.pdf",
               text:
-                "Strategiekarte: 3-Schritt-Plan nach Stressreaktionen – Kursblock 4",
+                "Strategiekarte: 3-Schritt-Plan nach Stressreaktionen",
               type: "strategy",
+            },
+          ],
+        },
+        section48: {
+          id: 7,
+          title: {
+            main: "Weitere Dokumente",
+          },
+          documents: [
+            {
+              href: "/documents/so4-Zusammenfassung.pdf",
+              text: "Zusammenfassung Kursblock 4",
+              type: "further-information",
+            },
+            {
+              href: "/documents/so4-Uebungsdossier.pdf",
+              text: "Übungsdossier Kurblock 4 mit allen Übungen",
+              type: "practice",
             },
           ],
         },
