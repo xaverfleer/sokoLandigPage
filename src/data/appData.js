@@ -1481,7 +1481,7 @@ const appData = {
             {
               href: "/documents/so5-Vertiefung-Anregende-Umgebung.pdf",
               text:
-                "Vertiefungsinput: Zuhause eine anregende Umgebung schaffen – Kursblock 5",
+                "Vertiefungsinput: Zuhause eine anregende Umgebung schaffen",
               type: "further-information",
             },
           ],
@@ -1527,7 +1527,7 @@ const appData = {
             {
               href: "/documents/so5-Strategiekarte-Ermöglichende-Haltung.pdf",
               text:
-                "Strategiekarte: Eine ermöglichende Haltung einnehmen – Kursblock 5",
+                "Strategiekarte: Eine ermöglichende Haltung einnehmen",
               type: "strategy",
             },
           ],
@@ -1587,14 +1587,14 @@ const appData = {
           documents: [
             {
               href: "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung.pdf",
-              text: "Strategiekarte: Das ABC der Zurückhaltung – Kursblock 5",
+              text: "Strategiekarte: Das ABC der Zurückhaltung",
               type: "strategy",
             },
             {
               href:
                 "/documents/so5-Strategiekarte-Ungeteilte-Aufmerksamkeit.pdf",
               text:
-                "Strategiekarte: Die Zeit der ungeteilten Aufmerksamkeit – Kursblock 5",
+                "Strategiekarte: Die Zeit der ungeteilten Aufmerksamkeit",
               type: "strategy",
             },
           ],
@@ -1603,7 +1603,7 @@ const appData = {
           id: 5,
           title: {
             main: "...wenn dem Baby etwas nicht gelingt",
-            videoName: "(Video 5.4a)",
+            videoName: "(Video 5.5)",
           },
           video: { ref: "https://player.vimeo.com/video/456236097" },
           checklist: {
@@ -1646,7 +1646,7 @@ const appData = {
               href:
                 "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Frust.pdf",
               text:
-                "Strategiekarte: Zurückhaltung, wenn dem Baby etwas nicht gelingt – Kursblock 5",
+                "Strategiekarte: Zurückhaltung, wenn dem Baby etwas nicht gelingt",
               type: "strategy",
             },
           ],
@@ -1654,8 +1654,8 @@ const appData = {
         section57: {
           id: 6,
           title: {
-            main: "...wenn das Baby etwas gefährliches tut",
-            videoName: "(Video 5.4b)",
+            main: "...wenn das Baby etwas Gefährliches tut",
+            videoName: "(Video 5.6)",
           },
           video: { ref: "https://player.vimeo.com/video/457796136" },
           checklist: {
@@ -1703,7 +1703,7 @@ const appData = {
               href:
                 "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Gefahr.pdf",
               text:
-                "Strategiekarte: Zurückhaltung, wenn das Baby in Gefahr ist – Kursblock 5",
+                "Strategiekarte: Zurückhaltung, wenn das Baby in Gefahr ist",
               type: "strategy",
             },
           ],
