@@ -1403,6 +1403,11 @@ const appData = {
               text: "Übung 4.7 – Step by Step... Schwerpunkte setzen",
               type: "practice",
             },
+            {
+              href:"/documents/so4-Vertiefungsinput-Negativitätstendenz-bei-Kindern.pdf",
+              text: "Vertiefung: Umgang mit der Negativitätstendenz unserer Kinder",
+              type: "further-information",
+            },
           ],
         },
         section48: {
