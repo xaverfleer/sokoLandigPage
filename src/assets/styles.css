@@ -134,6 +134,18 @@ textarea {
   color: #408f3d;
 }
 
+.button--gdpr-ignore {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-image: url(imgs/close-24px--brown.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+}
+
 .button--primary,
 .button--primary a:any-link {
   background-color: #4ba747;
@@ -338,6 +350,19 @@ textarea {
 
 .form-entry__required {
   text-decoration: none;
+}
+
+.b {
+  border: none;
+  background-color: #0000;
+}
+
+.gdpr {
+  position: fixed;
+  margin-left: -8px;
+  bottom: 0;
+  background-color: #e5cdad;
+  padding: 1em;
 }
 
 .header {
