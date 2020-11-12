@@ -57,6 +57,7 @@
     "crypto": "^1.0.1",
     "encoding": "^0.1.13",
     "faunadb": "^2.14.2",
+    "logrocket": "^1.0.14",
     "vue": "^2.6.12",
     "vue-router": "^3.4.3"
   }
