@@ -6,6 +6,13 @@ export default {
     type: "text",
     value: "",
   },
+  birthdays: {
+    inputId: "form__birthday",
+    label: "Geburtstag des Kindes/der Kinder",
+    name: "birthday",
+    type: "text",
+    value: "",
+  },
   city: {
     inputId: "form__city",
     label: "PLZ / Ort",
