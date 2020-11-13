@@ -1,16 +1,58 @@
-/* global XMLHttpRequest, alert, amplitude, document, window */
+/* global XMLHttpRequest, alert, amplitude, document, localStorage, window */
+import LogRocket from "logrocket";
 
 const header = document.querySelector(".header");
 const nav = document.querySelector(".nav");
 const formElem = document.querySelector("form");
 
-amplitude.getInstance().logEvent("Page loaded");
+const hideGdpr = () =>
+  document.querySelector(".gdpr").setAttribute("style", "display: none;");
 
-document.querySelectorAll(".cta05").forEach(function bindHandler(e) {
-  e.addEventListener("click", function logEvent() {
-    amplitude.getInstance().logEvent("Jetzt buchen");
-  });
-});
+function consentRequiringActions() {
+  if (window.location.toString().indexOf("localhost") === -1) {
+    LogRocket.init("yxvjmb/soko");
+    amplitude.getInstance().logEvent("Page loaded");
+
+    document.querySelectorAll(".cta05").forEach(function bindHandler(e) {
+      e.addEventListener("click", function logEvent() {
+        amplitude.getInstance().logEvent("Jetzt buchen");
+      });
+    });
+  }
+}
+
+const storageGdpr = localStorage.getItem("soko-gdpr");
+
+if (["accepted", "ignored"].indexOf(storageGdpr) >= 0) {
+  hideGdpr();
+} else {
+  const elems = {
+    accept: document.getElementById("gdpr__accept"),
+    ignore: document.getElementById("gdpr__ignore"),
+  };
+  const handle = {
+    accept: () => {
+      localStorage.setItem("soko-gdpr", "accepted");
+      hideGdpr();
+      handle.unbind();
+      consentRequiringActions();
+    },
+    ignore: () => {
+      localStorage.setItem("soko-gdpr", "ignored");
+      hideGdpr();
+      handle.unbind();
+    },
+    unbind: () => {
+      elems.accept.removeEventListener("click", handle.accept);
+      elems.ignore.removeEventListener("click", handle.ignore);
+    },
+  };
+
+  elems.accept.addEventListener("click", handle.accept);
+  elems.ignore.addEventListener("click", handle.ignore);
+}
+
+if (storageGdpr === "accepted") consentRequiringActions();
 
 nav.addEventListener("click", function toggleNavActive() {
   const { classList } = nav;
