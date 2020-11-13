@@ -120,6 +120,7 @@ textarea {
   max-width: 12em;
   padding: 0.5em 1em;
   min-height: 46px;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
