@@ -1399,6 +1399,11 @@ const appData = {
               type: "practice",
             },
             {
+              href:"/documents/so4-Übung-4.6c.pdf",
+              text: "Übung 4.6c – Anker setzen... Bei Stress schneller ruhig werden",
+              type: "practice",
+            },
+            {
               href:"/documents/so4-Übung-4.7.pdf",
               text: "Übung 4.7 – Step by Step... Schwerpunkte setzen",
               type: "practice",
