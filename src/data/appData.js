@@ -1788,6 +1788,74 @@ const appData = {
         section58: {
           id: 7,
           title: {
+            main: "...wenn das Baby in einen Konflikt gerät",
+            videoName: "(Video 5.7)",
+          },
+          video: { ref: "https://player.vimeo.com/video/482634770" },
+          checklist: {
+            pretext: "Das wichtigste in Kürze:",
+            entries: [
+              {
+                id: 0,
+                text:
+                  "Wenn Babys mit anderen Babys in Konflikte geraten und es dabei aber nicht zu ganz krassen Grenzverletzungen kommt, können wir manchmal kurz abwarten und schauen, wie die Babys das Problem lösen.",
+              },
+              {
+                id: 1,
+                text:
+                  "Wenn abwarten nicht geht, können wir den Babys durch Beschreiben helfen, a) die Situation, b) sich selbst und c) das Gegenüber besser zu verstehen: Wir können dem a) Baby den Konflikt beschreiben, b) seine eigenen Gefühle und/oder c) die wahrgenommenen Gefühle des Gegenübers.",
+              },
+              {
+                id: 2,
+                text:
+                  "Manchmal müssen wir die Babys auch zu einer Konfliktlösung anleiten (coachen). Dabei müssen wir unseren Babys jedoch das Recht zugestehen unsere Lösung zu verweigern.",
+              },
+              {
+                id: 3,
+                text:
+                  "Wenn starke Gefühle im Spiel sind, etwa Trauer, Wut oder Verzweiflung, dann konzentrieren wir uns darauf, diese Gefühle liebevoll und verständnisvoll zu begleiten. Erst wenn sie vorbeiziehen konnten, wenden wir uns wieder der Konfliktlösung zu, sofern es dann noch nötig ist.",
+              },
+              {
+                id: 4,
+                text:
+                  "Wenn es zu gravierenden Grenzverletzungen kommt, dann schreiten wir ein und schützen die Grenzen der betroffenen Babys auf die gleiche Weise, wie wir unsere eigene Grenze schützen würden (vgl. Video 4.5)",
+              },
+            ],
+          },
+          documents: [
+            {
+              href:
+                "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Konflikte.pdf",
+              text:
+                "Strategiekarte: Zurückhaltung, wenn das Baby in einen Konflikt gerät",
+              type: "strategy",
+            },
+            {
+              href:"/documents/so5-Übung-5.7a.pdf",
+              text: "Übung 5.7a – Lina im Sandkasten",
+              type: "practice",
+            },
+            {
+              href:"/documents/so5-Übung-5.7b.pdf",
+              text: "Übung 5.7b – Konfliktverhalen umdeuten",
+              type: "practice",
+            },
+            {
+              href:"/documents/so5-Übung-5.7c.pdf",
+              text: "Übung 5.7c – Konflikte coachen: Konstruktive Lösungen suchen",
+              type: "practice",
+            },
+            {
+              href: "/documents/so5-Vertiefung-Soziales-Verhalten-lernen.pdf",
+              text:
+                "Vertiefungsinput: Wie lernen Kinder soziales Verhalten?",
+              type: "further-information",
+            },
+          ],
+        },
+        section59: {
+          id: 8,
+          title: {
             main: "Weitere Inhalte sind in Produktion.",
           },
           documents: [
