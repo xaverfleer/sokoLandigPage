@@ -1444,7 +1444,49 @@ const appData = {
             main: "Zurückhaltung üben...",
           },
           checklist: {
-            pretext: "In diesem Kursblock... (in Produktion)",
+            pretext: "In diesem Kursblock...",
+            entries: [
+              {
+                id: 0,
+                text:
+                  "...Fühlst du dich in dein spielendes und forschendes Baby ein (Video 5.1)",
+              },
+              {
+                id: 1,
+                text:
+                  "...erhältst du Inputs, was es bedeutet, eine anregende Umgebung für dein Baby bereitzustellen (Video 5.2)",
+              },
+              {
+                id: 2,
+                text:
+                  "...erfährst du, was es heisst, eine ermöglichende Haltung gegenüber den Erkundungsbestebungen des Babys einzunehmen (Video 5.3)",
+              },
+              {
+                id: 3,
+                text:
+                  "...lernst du das ABC der Zurückhaltung sowie die Zeit der ungeteilten Aufmerksamkeit kennen (Video 5.4)",
+              },
+              {
+                id: 4,
+                text:
+                  "...erklären wir, wie dir das ABC der Zurückhaltung weiterhilft, wenn deinem Baby etwas nochnicht gelingt (Video 5.5)",
+              },
+              {
+                id: 5,
+                text:
+                  "...zeigen wir auf, wie du dich am ABC der Zurückhaltung orientierten kannst, wenn dein Baby etwas Gefährliches tut (Video 5.6)",
+              },
+              {
+                id: 6,
+                text:
+                  "...lernst du, wie du das ABC der Zurückhaltung auf Situationan anwenden kannst, in denen dein Baby in eine Konflikt gerät (Video 5.7)",
+              },
+              {
+                id: 7,
+                text:
+                  "...erfährst du, wie du das ABC der Zurückhaltung nutzen kannst, wenn dein Baby ein Erfolgserlebnis hat (Video 5.8)",
+              },
+            ],
           },
         },
         section52: {
@@ -1856,14 +1898,10 @@ const appData = {
         section59: {
           id: 8,
           title: {
-            main: "Weitere Inhalte sind in Produktion.",
+            main: "...wenn das Baby Erfolgserlebnisse hat",
+            videoName: "(Video 5.8, in Produktion)",
           },
           documents: [
-            {
-              href: "/documents/so5-Videoskript-5.7.pdf",
-              text: "Provisorisches Skript zum Video 5.7 (in Produktion)",
-              type: "strategy",
-            },
             {
               href: "/documents/so5-Videoskript-5.8.pdf",
               text: "Provisorisches Skript zum Video 5.8 (in Produktion)",
