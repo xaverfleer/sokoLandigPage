@@ -1480,6 +1480,11 @@ const appData = {
               text: "Übungsdossier Kurblock 5 mit allen Übungen",
               type: "practice",
             },
+            {
+              href: "/documents/so4-Zusammenfassung.pdf",
+              text: "Zusammenfassung Kursblock 4",
+              type: "further-information",
+            },
           ],
         },
         section52: {
