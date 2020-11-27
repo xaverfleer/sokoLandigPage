@@ -1969,7 +1969,7 @@ const appData = {
           documents: [
             {
               href: "/documents/so6-Fahrplaene.pdf",
-              text: "Strategiekarten: Gesamtpaket Kursblock 1 bis 5 – doppelseitig ausdrucken",
+              text: "Fahrpläne: Gesamtpaket Kursblock 1 bis 5 – doppelseitig ausdrucken",
               type: "roadmap",
             },
             {
