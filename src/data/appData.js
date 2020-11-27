@@ -1605,8 +1605,13 @@ const appData = {
               type: "practice",
             },
             {
-              href:"/documents/so5-Übung-5.2b.pdf",
+              href:"/documents/so5-Übung-5.3b.pdf",
               text: "Übung 5.3b – Nein und Ja: Was löst das aus?",
+              type: "practice",
+            },
+            {
+              href:"/documents/so5-Übung-5.3c.pdf",
+              text: "Übung 5.3c – Ja statt Nein sagen",
               type: "practice",
             },
           ],
