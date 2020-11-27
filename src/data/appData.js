@@ -1931,7 +1931,7 @@ const appData = {
             },
             {
               href: "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Lob.pdf",
-              text: "Provisorisches Skript zum Video 5.8 (in Produktion)",
+              text: "Strategiekarte: Zurückhaltung im Umgang mit Lob)",
               type: "strategy",
             },
             {
