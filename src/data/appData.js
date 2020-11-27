@@ -1414,6 +1414,11 @@ const appData = {
               type: "practice",
             },
             {
+              href:"/documents/so4-Lernprotokoll.pdf",
+              text: "Lernprotokoll Kursblock 4",
+              type: "practice",
+            },
+            {
               href:"/documents/so4-Vertiefungsinput-Negativitätstendenz-bei-Kindern.pdf",
               text: "Vertiefung: Umgang mit der Negativitätstendenz unserer Kinder",
               type: "further-information",
@@ -1488,6 +1493,18 @@ const appData = {
               },
             ],
           },
+          documents: [
+            {
+              href: "/documents/so5-Fahrplan.pdf",
+              text: "Fahrplan Kursblock 5",
+              type: "roadmap",
+            },
+            {
+              href: "/documents/so5-Uebungsdossier.pdf",
+              text: "Übungsdossier Kurblock 5 mit allen Übungen",
+              type: "practice",
+            },
+          ],
         },
         section52: {
           id: 1,
@@ -1911,6 +1928,31 @@ const appData = {
               href: "/documents/so5-Videoskript-5.8.pdf",
               text: "Provisorisches Skript zum Video 5.8 (in Produktion)",
               type: "strategy",
+            },
+            {
+              href: "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Lob.pdf",
+              text: "Provisorisches Skript zum Video 5.8 (in Produktion)",
+              type: "strategy",
+            },
+            {
+              href: "/documents/so5-Übung-5.8a.pdf",
+              text: "Übung 5.8a – Lina hat es geschafft",
+              type: "practice",
+            },
+            {
+              href: "/documents/so5-Übung-5.8b.pdf",
+              text: "Übung 5.8b – Beschreiben statt loben",
+              type: "practice",
+            },
+            {
+              href: "/documents/so5-Übung-5.9.pdf",
+              text: "Übung 5.9 – Step by Step... Schwerpunkte setzen",
+              type: "practice",
+            },
+            {
+              href: "/documents/so5-Lernprotokoll.pdf",
+              text: "Lernprotokoll Kursblock 5",
+              type: "practice",
             },
           ],
         },
