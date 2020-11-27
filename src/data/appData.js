@@ -1967,7 +1967,7 @@ const appData = {
             main: "Kursübergreifende Dokumentpakete",
           },
           checklist: {
-            pretext: "Hier finest du kursübergreifende Gesamtpakete zum Herunterladen. Die Gesamtpakete sollen dir das Herunterladen und Ausdrucken erleichtern. Alle Dokumente der Gesamtpakete findest du auch als Einzeldokumente in den jeweiligen Kursblöcken.",
+            pretext: "Hier finest du kursübergreifende Dokumentpakete zum Herunterladen. Die Gesamtpakete sollen dir das Herunterladen und Ausdrucken erleichtern. Alle Dokumente der Gesamtpakete findest du auch als Einzeldokumente in den jeweiligen Kursblöcken.",
           },
           documents: [
             {
