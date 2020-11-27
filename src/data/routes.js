@@ -30,7 +30,6 @@ export default {
   },
   block06: {
     text: "Download Dokumentpakete",
-    teaser: "Dokumentpakete herunterladen",
     to: "/course/block-6",
   },
   changedPassword: {
