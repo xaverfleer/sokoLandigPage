@@ -1964,7 +1964,7 @@ const appData = {
           id: 0,
           blocktitle: {
             supertitle: "Download Dokumentpakete",
-            main: "Gesamtdokumente zum Herunterladen",
+            main: "Kursübergreifende Dokumentpakete",
           },
           documents: [
             {
