@@ -58,5 +58,6 @@ export default [
   { path: "/kursblock-3", redirect: "course/block-3" },
   { path: "/kursblock-4", redirect: "course/block-4" },
   { path: "/kursblock-5", redirect: "course/block-5" },
+  { path: "/kursblock-6", redirect: "course/block-6" },
   { path: "*", redirect: "page-not-found" },
 ];
