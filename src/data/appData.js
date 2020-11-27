@@ -52,6 +52,11 @@ const appData = {
               text: "Übungsdossier Kursblock 1 mit allen Übungen",
               type: "practice",
             },
+            {
+              href: "/documents/so1-Zusammenfassung.pdf",
+              text: "Zusammenfassung Kursblock 1",
+              type: "further-information",
+            },
           ],
         },
         section12: {
@@ -280,11 +285,6 @@ const appData = {
           title: { main: "Weitere Dokumente" },
           documents: [
             {
-              href: "/documents/so1-Zusammenfassung.pdf",
-              text: "Zusammenfassung Kursblock 1",
-              type: "further-information",
-            },
-            {
               href: "/documents/so1-Vertiefung.pdf",
               text: "Vertiefung: Sichere Bindung",
               type: "further-information",
@@ -341,6 +341,11 @@ const appData = {
               href: "/documents/so2-Uebungsdossier.pdf",
               text: "Übungsdossier Kursblock 2 mit allen Übungen",
               type: "practice",
+            },
+            {
+              href: "/documents/so2-Zusammenfassung.pdf",
+              text: "Zusammenfassung Kursblock 2",
+              type: "further-information",
             },
           ],
         },
@@ -613,19 +618,6 @@ const appData = {
             },
           ],
         },
-        section28: {
-          id: 7,
-          title: {
-            main: "Weitere Dokumente",
-          },
-          documents: [
-            {
-              href: "/documents/so2-Zusammenfassung.pdf",
-              text: "Zusammenfassung Kursblock 2",
-              type: "further-information",
-            },
-          ],
-        },
       },
     },
     block03: {
@@ -676,6 +668,11 @@ const appData = {
               href: "/documents/so3-Uebungsdossier.pdf",
               text: "Übungsdossier Kursblock 3 mit allen Übungen",
               type: "practice",
+            },
+            {
+              href: "/documents/so3-Zusammenfassung.pdf",
+              text: "Zusammenfassung Kursblock 3",
+              type: "further-information",
             },
           ],
         },
@@ -953,19 +950,6 @@ const appData = {
             },
           ],
         },
-        section38: {
-          id: 7,
-          title: {
-            main: "Weitere Dokumente",
-          },
-          documents: [
-            {
-              href: "/documents/so3-Zusammenfassung.pdf",
-              text: "Zusammenfassung Kursblock 3",
-              type: "further-information",
-            },
-          ],
-        },
       },
     },
     block04: {
@@ -1021,6 +1005,11 @@ const appData = {
               href: "/documents/so4-Uebungsdossier.pdf",
               text: "Übungsdossier Kurblock 4 mit allen Übungen",
               type: "practice",
+            },
+            {
+              href: "/documents/so4-Zusammenfassung.pdf",
+              text: "Zusammenfassung Kursblock 4",
+              type: "further-information",
             },
           ],
         },
@@ -1421,19 +1410,6 @@ const appData = {
             {
               href:"/documents/so4-Vertiefungsinput-Negativitätstendenz-bei-Kindern.pdf",
               text: "Vertiefung: Umgang mit der Negativitätstendenz unserer Kinder",
-              type: "further-information",
-            },
-          ],
-        },
-        section48: {
-          id: 7,
-          title: {
-            main: "Weitere Dokumente",
-          },
-          documents: [
-            {
-              href: "/documents/so4-Zusammenfassung.pdf",
-              text: "Zusammenfassung Kursblock 4",
               type: "further-information",
             },
           ],
