@@ -1966,28 +1966,25 @@ const appData = {
             supertitle: "Download Dokumentpakete",
             main: "Gesamtdokumente zum Herunterladen",
           },
-        },
-        section62: {
-          id: 1,
           documents: [
             {
               href: "/documents/so6-Fahrplaene.pdf",
-              text: "Strategiekarten: Gesamtpaket Kursblock 1 bis 5",
+              text: "Strategiekarten: Gesamtpaket Kursblock 1 bis 5 – doppelseitig ausdrucken",
               type: "roadmap",
             },
             {
               href: "/documents/so6-Uebungsdossiers.pdf",
-              text: "Übungsdossiers: Gesamtpaket Kursblock 1 bis 5",
+              text: "Übungsdossiers: Gesamtpaket Kursblock 1 bis 5 – doppelseitig ausdrucken",
               type: "practice",
             },
             {
               href: "/documents/so6-Strategiekarten.pdf",
-              text: "Strategiekarten: Gesamtpaket Kursblock 1 bis 5",
+              text: "Strategiekarten: Gesamtpaket Kursblock 1 bis 5 – einseitig ausdrucken",
               type: "strategy",
             },
             {
               href: "/documents/so6-Vertiefungen.pdf",
-              text: "Vertiefungsinputs: Gesamtpaket Kursblock 1 bis 5",
+              text: "Vertiefungsinputs: Gesamtpaket Kursblock 1 bis 5 – doppelsetig ausdrucken",
               type: "further-information",
             },
           ],
