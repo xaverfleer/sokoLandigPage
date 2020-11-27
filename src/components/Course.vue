@@ -20,7 +20,7 @@ import Block2 from "./Block-2.vue";
 import Block3 from "./Block-3.vue";
 import Block4 from "./Block-4.vue";
 import Block5 from "./Block-5.vue";
-import Block5 from "./Block-6.vue";
+import Block6 from "./Block-6.vue";
 import Footer from "./Footer.vue";
 import Header from "./Header.vue";
 
