@@ -1911,12 +1911,24 @@ const appData = {
         },
       },
     },
+    block06: {
+      sections: {
+        section61: {
+          id: 0,
+          blocktitle: {
+            supertitle: "Download Dokumentpakete",
+            main: "Gesamtdokumente zum Herunterladen",
+          },
+        },
+      },
+    },
     routes: {
       block01: routes.block01,
       block02: routes.block02,
       block03: routes.block03,
       block04: routes.block04,
       block05: routes.block05,
+      block06: routes.block06,
     },
   },
   buttons: {

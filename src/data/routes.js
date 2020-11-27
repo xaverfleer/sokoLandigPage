@@ -28,6 +28,11 @@ export default {
     teaser: "Zurückhaltung üben...",
     to: "/course/block-5",
   },
+  block06: {
+    text: "Download Dokumentpakete",
+    teaser: "Dokumentpakete herunterladen",
+    to: "/course/block-6",
+  },
   changedPassword: {
     text: "Passwort geändert",
     to: "/changed-password",
