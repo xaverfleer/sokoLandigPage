@@ -7,6 +7,7 @@
       <Block3 :course="course" v-if="$route.params.block === 'block-3'" />
       <Block4 :course="course" v-if="$route.params.block === 'block-4'" />
       <Block5 :course="course" v-if="$route.params.block === 'block-5'" />
+      <Block6 :course="course" v-if="$route.params.block === 'block-6'" />
     </main>
     <Footer />
   </div>
@@ -19,6 +20,7 @@ import Block2 from "./Block-2.vue";
 import Block3 from "./Block-3.vue";
 import Block4 from "./Block-4.vue";
 import Block5 from "./Block-5.vue";
+import Block5 from "./Block-6.vue";
 import Footer from "./Footer.vue";
 import Header from "./Header.vue";
 
@@ -29,6 +31,7 @@ export default {
     Block3,
     Block4,
     Block5,
+    Block6,
     Footer,
     Header,
   },
