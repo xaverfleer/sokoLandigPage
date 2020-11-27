@@ -1967,6 +1967,31 @@ const appData = {
             main: "Gesamtdokumente zum Herunterladen",
           },
         },
+        section62: {
+          id: 1,
+          documents: [
+            {
+              href: "/documents/so6-Fahrplaene.pdf",
+              text: "Strategiekarten: Gesamtpaket Kursblock 1 bis 5",
+              type: "roadmap",
+            },
+            {
+              href: "/documents/so6-Uebungsdossiers.pdf",
+              text: "Übungsdossiers: Gesamtpaket Kursblock 1 bis 5",
+              type: "practice",
+            },
+            {
+              href: "/documents/so6-Strategiekarten.pdf",
+              text: "Strategiekarten: Gesamtpaket Kursblock 1 bis 5",
+              type: "strategy",
+            },
+            {
+              href: "/documents/so6-Vertiefungen.pdf",
+              text: "Vertiefungsinputs: Gesamtpaket Kursblock 1 bis 5",
+              type: "further-information",
+            },
+          ],
+        },
       },
     },
     routes: {
