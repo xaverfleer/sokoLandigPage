@@ -1966,6 +1966,9 @@ const appData = {
             supertitle: "Download Dokumentpakete",
             main: "Kursübergreifende Dokumentpakete",
           },
+          checklist: {
+            pretext: "Hier finest du kursübergreifende Gesamtpakete zum Herunterladen. Die Gesamtpakete sollen dir das Herunterladen und Ausdrucken erleichtern. Alle Dokumente der Gesamtpakete findest du auch als Einzeldokumente in den jeweiligen Kursblöcken.",
+          },
           documents: [
             {
               href: "/documents/so6-Fahrplaene.pdf",
