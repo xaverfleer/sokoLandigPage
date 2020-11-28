@@ -7,6 +7,7 @@
     />
     <div class="buttons">
       <RouteVue :info="course.routes.block04" />
+      <RouteVue :info="course.routes.block06" />
     </div>
   </div>
 </template>
