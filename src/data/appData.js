@@ -55,7 +55,7 @@ const appData = {
             {
               href: "/documents/so1-Zusammenfassung.pdf",
               text: "Zusammenfassung Kursblock 1",
-              type: "further-information",
+              type: "summary",
             },
           ],
         },
@@ -345,7 +345,7 @@ const appData = {
             {
               href: "/documents/so2-Zusammenfassung.pdf",
               text: "Zusammenfassung Kursblock 2",
-              type: "further-information",
+              type: "summary",
             },
           ],
         },
@@ -672,7 +672,7 @@ const appData = {
             {
               href: "/documents/so3-Zusammenfassung.pdf",
               text: "Zusammenfassung Kursblock 3",
-              type: "further-information",
+              type: "summary",
             },
           ],
         },
@@ -1009,7 +1009,7 @@ const appData = {
             {
               href: "/documents/so4-Zusammenfassung.pdf",
               text: "Zusammenfassung Kursblock 4",
-              type: "further-information",
+              type: "summary",
             },
           ],
         },
@@ -1483,7 +1483,7 @@ const appData = {
             {
               href: "/documents/so4-Zusammenfassung.pdf",
               text: "Zusammenfassung Kursblock 4",
-              type: "further-information",
+              type: "summary",
             },
           ],
         },

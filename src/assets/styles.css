@@ -251,6 +251,10 @@ textarea {
   background-image: url(imgs/map-24px.svg);
 }
 
+.document__link--summary::before {
+  background-image: url(imgs/description-24px.svg);
+}
+
 .document__link--strategy::before {
   background-image: url(imgs/article-24px.svg);
 }
