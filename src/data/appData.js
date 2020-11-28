@@ -1477,8 +1477,8 @@ const appData = {
               type: "practice",
             },
             {
-              href: "/documents/so4-Zusammenfassung.pdf",
-              text: "Zusammenfassung Kursblock 4",
+              href: "/documents/so5-Zusammenfassung.pdf",
+              text: "Zusammenfassung Kursblock 5",
               type: "summary",
             },
           ],
@@ -1964,6 +1964,12 @@ const appData = {
               text:
                 "Strategiekarten: Gesamtpaket Kursblock 1 bis 5 – einseitig ausdrucken",
               type: "strategy",
+            },
+            {
+              href: "/documents/so6-Zusammenfassungen.pdf",
+              text:
+                "Zusammenfassungen: Gesamtpaket Kursblock 1 bis 5 – doppelseitig ausdrucken",
+              type: "summary",
             },
             {
               href: "/documents/so6-Vertiefungen.pdf",
