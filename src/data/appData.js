@@ -459,15 +459,13 @@ const appData = {
             {
               href:
                 "/documents/so2-Strategiekarte-Wenn-wir-etwas-am-Baby-tun.pdf",
-              text:
-                "Strategiekarte: ...wenn wir etwas am Baby tun",
+              text: "Strategiekarte: ...wenn wir etwas am Baby tun",
               type: "strategy",
             },
             {
               href:
                 "/documents/so2-Strategiekarte-Wenn-das-Baby-nicht-kooperiert.pdf",
-              text:
-                "Strategiekarte: ...wenn das Baby nicht kooperiert",
+              text: "Strategiekarte: ...wenn das Baby nicht kooperiert",
               type: "strategy",
             },
             {
@@ -515,8 +513,7 @@ const appData = {
             {
               href:
                 "/documents/so2-Strategiekarte-Wenn-wir-etwas-neben-dem-Baby-tun.pdf",
-              text:
-                "Strategiekarte: ...wenn wir etwas neben dem Baby tun",
+              text: "Strategiekarte: ...wenn wir etwas neben dem Baby tun",
               type: "strategy",
             },
             {
@@ -576,8 +573,7 @@ const appData = {
             {
               href:
                 "/documents/so2-Strategiekarte-Wenn-wir-das-Baby-verlassen.pdf",
-              text:
-                "Strategiekarte: ...wenn wir das Baby verlassen",
+              text: "Strategiekarte: ...wenn wir das Baby verlassen",
               type: "strategy",
             },
             {
@@ -1022,11 +1018,11 @@ const appData = {
           video: { ref: "https://player.vimeo.com/video/428741631" },
           documents: [
             {
-              href:"/documents/so4-Übung-4.1.pdf",
+              href: "/documents/so4-Übung-4.1.pdf",
               text: "Übung 4.1 – Mein guter Freund",
               type: "practice",
-            }
-          ]
+            },
+          ],
         },
         section43: {
           id: 2,
@@ -1082,27 +1078,27 @@ const appData = {
               type: "strategy",
             },
             {
-              href:"/documents/so4-Übung-4.2a.pdf",
+              href: "/documents/so4-Übung-4.2a.pdf",
               text: "Übung 4.2a – Linas Vater",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.2b.pdf",
+              href: "/documents/so4-Übung-4.2b.pdf",
               text: "Übung 4.2b – Ich vernetze mich",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.2c.pdf",
+              href: "/documents/so4-Übung-4.2c.pdf",
               text: "Übung 4.2c – Alarm! Alarm!",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.2d.pdf",
+              href: "/documents/so4-Übung-4.2d.pdf",
               text: "Übung 4.2d – Must-Do & Could-Do",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.2e.pdf",
+              href: "/documents/so4-Übung-4.2e.pdf",
               text: "Übung 4.2e – Unperfekt & glücklich",
               type: "practice",
             },
@@ -1149,32 +1145,31 @@ const appData = {
             {
               href:
                 "/documents/so4-Strategiekarte-Eigenes-Selbstbewusstsein-staerken.pdf",
-              text:
-                "Strategiekarte: Eigenes Selbstbewusstsein stärken",
+              text: "Strategiekarte: Eigenes Selbstbewusstsein stärken",
               type: "strategy",
             },
             {
-              href:"/documents/so4-Übung-4.3a.pdf",
+              href: "/documents/so4-Übung-4.3a.pdf",
               text: "Übung 4.3a – Linas Vater",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.3b.pdf",
+              href: "/documents/so4-Übung-4.3b.pdf",
               text: "Übung 4.3b – Meine Vergagenheit",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.3c.pdf",
+              href: "/documents/so4-Übung-4.3c.pdf",
               text: "Übung 4.3c – Achtsamkeitspausen",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.3d.pdf",
+              href: "/documents/so4-Übung-4.3d.pdf",
               text: "Übung 4.3d – Das Familienleitbild",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.3e.pdf",
+              href: "/documents/so4-Übung-4.3e.pdf",
               text: "Übung 4.3e – Pause! – Umgang mit schwierigen Gefhülen",
               type: "practice",
             },
@@ -1240,17 +1235,17 @@ const appData = {
               type: "strategy",
             },
             {
-              href:"/documents/so4-Übung-4.4a.pdf",
+              href: "/documents/so4-Übung-4.4a.pdf",
               text: "Übung 4.4a – Die Energiebilanz",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.4b.pdf",
+              href: "/documents/so4-Übung-4.4b.pdf",
               text: "Übung 4.4b – Das Sonnenbad",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.4c.pdf",
+              href: "/documents/so4-Übung-4.4c.pdf",
               text: "Übung 4.4c – Ich umsorge mich nach einer Stressreaktion",
               type: "practice",
             },
@@ -1305,17 +1300,17 @@ const appData = {
               type: "strategy",
             },
             {
-              href:"/documents/so4-Übung-4.5a.pdf",
+              href: "/documents/so4-Übung-4.5a.pdf",
               text: "Übung 4.5a – Blick auf mich selbst: Meine Grenzen",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.5b.pdf",
+              href: "/documents/so4-Übung-4.5b.pdf",
               text: "Übung 4.5b – Inkonsequenz",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.5c.pdf",
+              href: "/documents/so4-Übung-4.5c.pdf",
               text: "Übung 4.5c – Stopp! Das Nein-Sagen üben",
               type: "practice",
             },
@@ -1372,44 +1367,45 @@ const appData = {
             {
               href:
                 "/documents/so4-Strategiekarte-Eigenes-Selbstvertrauen-staerken.pdf",
-              text:
-                "Strategiekarte: Eigenes Selbstvertrauen stärken",
+              text: "Strategiekarte: Eigenes Selbstvertrauen stärken",
               type: "strategy",
             },
             {
               href: "/documents/so4-Strategiekarte-3-Schritt-Plan.pdf",
-              text:
-                "Strategiekarte: 3-Schritt-Plan nach Stressreaktionen",
+              text: "Strategiekarte: 3-Schritt-Plan nach Stressreaktionen",
               type: "strategy",
             },
             {
-              href:"/documents/so4-Übung-4.6a.pdf",
+              href: "/documents/so4-Übung-4.6a.pdf",
               text: "Übung 4.6a – Es läuft doch gut!",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.6b.pdf",
+              href: "/documents/so4-Übung-4.6b.pdf",
               text: "Übung 4.6b – Stress überbrücken: Techniken einüben",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.6c.pdf",
-              text: "Übung 4.6c – Anker setzen... Bei Stress schneller ruhig werden",
+              href: "/documents/so4-Übung-4.6c.pdf",
+              text:
+                "Übung 4.6c – Anker setzen... Bei Stress schneller ruhig werden",
               type: "practice",
             },
             {
-              href:"/documents/so4-Übung-4.7.pdf",
+              href: "/documents/so4-Übung-4.7.pdf",
               text: "Übung 4.7 – Step by Step... Schwerpunkte setzen",
               type: "practice",
             },
             {
-              href:"/documents/so4-Lernprotokoll.pdf",
+              href: "/documents/so4-Lernprotokoll.pdf",
               text: "Lernprotokoll Kursblock 4",
               type: "practice",
             },
             {
-              href:"/documents/so4-Vertiefungsinput-Negativitätstendenz-bei-Kindern.pdf",
-              text: "Vertiefung: Umgang mit der Negativitätstendenz unserer Kinder",
+              href:
+                "/documents/so4-Vertiefungsinput-Negativitätstendenz-bei-Kindern.pdf",
+              text:
+                "Vertiefung: Umgang mit der Negativitätstendenz unserer Kinder",
               type: "further-information",
             },
           ],
@@ -1496,7 +1492,7 @@ const appData = {
           video: { ref: "https://player.vimeo.com/video/455767350" },
           documents: [
             {
-              href:"/documents/so5-Übung-5.1.pdf",
+              href: "/documents/so5-Übung-5.1.pdf",
               text: "Übung 5.1 – Lass mich doch!",
               type: "practice",
             },
@@ -1536,12 +1532,12 @@ const appData = {
           },
           documents: [
             {
-              href:"/documents/so5-Übung-5.2a.pdf",
+              href: "/documents/so5-Übung-5.2a.pdf",
               text: "Übung 5.2a – Das Prinzip der Assimilation",
               type: "practice",
             },
             {
-              href:"/documents/so5-Übung-5.2b.pdf",
+              href: "/documents/so5-Übung-5.2b.pdf",
               text: "Übung 5.2b – Die anregende Umgebung",
               type: "practice",
             },
@@ -1593,22 +1589,21 @@ const appData = {
           documents: [
             {
               href: "/documents/so5-Strategiekarte-Ermöglichende-Haltung.pdf",
-              text:
-                "Strategiekarte: Eine ermöglichende Haltung einnehmen",
+              text: "Strategiekarte: Eine ermöglichende Haltung einnehmen",
               type: "strategy",
             },
             {
-              href:"/documents/so5-Übung-5.3a.pdf",
+              href: "/documents/so5-Übung-5.3a.pdf",
               text: "Übung 5.3a – Lina erkundet die Welt",
               type: "practice",
             },
             {
-              href:"/documents/so5-Übung-5.3b.pdf",
+              href: "/documents/so5-Übung-5.3b.pdf",
               text: "Übung 5.3b – Nein und Ja: Was löst das aus?",
               type: "practice",
             },
             {
-              href:"/documents/so5-Übung-5.3c.pdf",
+              href: "/documents/so5-Übung-5.3c.pdf",
               text: "Übung 5.3c – Ja statt Nein sagen",
               type: "practice",
             },
@@ -1675,22 +1670,21 @@ const appData = {
             {
               href:
                 "/documents/so5-Strategiekarte-Ungeteilte-Aufmerksamkeit.pdf",
-              text:
-                "Strategiekarte: Die Zeit der ungeteilten Aufmerksamkeit",
+              text: "Strategiekarte: Die Zeit der ungeteilten Aufmerksamkeit",
               type: "strategy",
             },
             {
-              href:"/documents/so5-Übung-5.4a.pdf",
+              href: "/documents/so5-Übung-5.4a.pdf",
               text: "Übung 5.4a – Lina will sich drehen",
               type: "practice",
             },
             {
-              href:"/documents/so5-Übung-5.4b.pdf",
+              href: "/documents/so5-Übung-5.4b.pdf",
               text: "Übung 5.4b – Abwarten und Zurückhaltung üben",
               type: "practice",
             },
             {
-              href:"/documents/so5-Übung-5.4c.pdf",
+              href: "/documents/so5-Übung-5.4c.pdf",
               text: "Übung 5.4c – Beschreiben statt bewerten",
               type: "practice",
             },
@@ -1747,17 +1741,17 @@ const appData = {
               type: "strategy",
             },
             {
-              href:"/documents/so5-Übung-5.5a.pdf",
+              href: "/documents/so5-Übung-5.5a.pdf",
               text: "Übung 5.5a – Lina und der Wäschekorb",
               type: "practice",
             },
             {
-              href:"/documents/so5-Übung-5.5b.pdf",
+              href: "/documents/so5-Übung-5.5b.pdf",
               text: "Übung 5.5b – Frust aushalten",
               type: "practice",
             },
             {
-              href:"/documents/so5-Übung-5.5c.pdf",
+              href: "/documents/so5-Übung-5.5c.pdf",
               text: "Übung 5.5c – Coachen statt lösen",
               type: "practice",
             },
@@ -1819,12 +1813,12 @@ const appData = {
               type: "strategy",
             },
             {
-              href:"/documents/so5-Übung-5.6a.pdf",
+              href: "/documents/so5-Übung-5.6a.pdf",
               text: "Übung 5.6a – Lina auf der Treppe",
               type: "practice",
             },
             {
-              href:"/documents/so5-Übung-5.6b.pdf",
+              href: "/documents/so5-Übung-5.6b.pdf",
               text: "Übung 5.6b – Angst aushalten",
               type: "practice",
             },
@@ -1876,24 +1870,24 @@ const appData = {
               type: "strategy",
             },
             {
-              href:"/documents/so5-Übung-5.7a.pdf",
+              href: "/documents/so5-Übung-5.7a.pdf",
               text: "Übung 5.7a – Lina im Sandkasten",
               type: "practice",
             },
             {
-              href:"/documents/so5-Übung-5.7b.pdf",
+              href: "/documents/so5-Übung-5.7b.pdf",
               text: "Übung 5.7b – Konfliktverhalen umdeuten",
               type: "practice",
             },
             {
-              href:"/documents/so5-Übung-5.7c.pdf",
-              text: "Übung 5.7c – Konflikte coachen: Konstruktive Lösungen suchen",
+              href: "/documents/so5-Übung-5.7c.pdf",
+              text:
+                "Übung 5.7c – Konflikte coachen: Konstruktive Lösungen suchen",
               type: "practice",
             },
             {
               href: "/documents/so5-Vertiefung-Soziales-Verhalten-lernen.pdf",
-              text:
-                "Vertiefungsinput: Wie lernen Kinder soziales Verhalten?",
+              text: "Vertiefungsinput: Wie lernen Kinder soziales Verhalten?",
               type: "further-information",
             },
           ],
@@ -1911,7 +1905,8 @@ const appData = {
               type: "strategy",
             },
             {
-              href: "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Lob.pdf",
+              href:
+                "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Lob.pdf",
               text: "Strategiekarte: Zurückhaltung im Umgang mit Lob)",
               type: "strategy",
             },
@@ -1948,27 +1943,32 @@ const appData = {
             main: "Kursübergreifende Dokumentpakete",
           },
           checklist: {
-            pretext: "Hier finest du kursübergreifende Dokumentpakete zum Herunterladen. Die Gesamtpakete sollen dir das Herunterladen und Ausdrucken erleichtern. Alle Dokumente der Gesamtpakete findest du auch als Einzeldokumente in den jeweiligen Kursblöcken.",
+            pretext:
+              "Hier finest du kursübergreifende Dokumentpakete zum Herunterladen. Die Gesamtpakete sollen dir das Herunterladen und Ausdrucken erleichtern. Alle Dokumente der Gesamtpakete findest du auch als Einzeldokumente in den jeweiligen Kursblöcken.",
           },
           documents: [
             {
               href: "/documents/so6-Fahrplaene.pdf",
-              text: "Fahrpläne: Gesamtpaket Kursblock 1 bis 5 – doppelseitig ausdrucken",
+              text:
+                "Fahrpläne: Gesamtpaket Kursblock 1 bis 5 – doppelseitig ausdrucken",
               type: "roadmap",
             },
             {
               href: "/documents/so6-Uebungsdossiers.pdf",
-              text: "Übungsdossiers: Gesamtpaket Kursblock 1 bis 5 – doppelseitig ausdrucken",
+              text:
+                "Übungsdossiers: Gesamtpaket Kursblock 1 bis 5 – doppelseitig ausdrucken",
               type: "practice",
             },
             {
               href: "/documents/so6-Strategiekarten.pdf",
-              text: "Strategiekarten: Gesamtpaket Kursblock 1 bis 5 – einseitig ausdrucken",
+              text:
+                "Strategiekarten: Gesamtpaket Kursblock 1 bis 5 – einseitig ausdrucken",
               type: "strategy",
             },
             {
               href: "/documents/so6-Vertiefungen.pdf",
-              text: "Vertiefungsinputs: Gesamtpaket Kursblock 1 bis 5 – doppelsetig ausdrucken",
+              text:
+                "Vertiefungsinputs: Gesamtpaket Kursblock 1 bis 5 – doppelsetig ausdrucken",
               type: "further-information",
             },
           ],
