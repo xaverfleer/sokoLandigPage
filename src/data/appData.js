@@ -1950,31 +1950,31 @@ const appData = {
             {
               href: "/documents/so6-Fahrplaene.pdf",
               text:
-                "Fahrpläne: Gesamtpaket Kursblock 1 bis 5 – doppelseitig ausdrucken",
+                "Fahrpläne: Gesamtpaket Kursblock 1 bis 5 – doppelseitig drucken",
               type: "roadmap",
             },
             {
               href: "/documents/so6-Uebungsdossiers.pdf",
               text:
-                "Übungsdossiers: Gesamtpaket Kursblock 1 bis 5 – doppelseitig ausdrucken",
+                "Übungsdossiers: Gesamtpaket Kursblock 1 bis 5 – doppelseitig drucken",
               type: "practice",
             },
             {
               href: "/documents/so6-Strategiekarten.pdf",
               text:
-                "Strategiekarten: Gesamtpaket Kursblock 1 bis 5 – einseitig ausdrucken",
+                "Strategiekarten: Gesamtpaket Kursblock 1 bis 5 – einseitig drucken",
               type: "strategy",
             },
             {
               href: "/documents/so6-Zusammenfassungen.pdf",
               text:
-                "Zusammenfassungen: Gesamtpaket Kursblock 1 bis 5 – doppelseitig ausdrucken",
+                "Zusammenfassungen: Gesamtpaket Kursblock 1 bis 5 – doppelseitig drucken",
               type: "summary",
             },
             {
               href: "/documents/so6-Vertiefungen.pdf",
               text:
-                "Vertiefungsinputs: Gesamtpaket Kursblock 1 bis 5 – doppelsetig ausdrucken",
+                "Vertiefungsinputs: Gesamtpaket Kursblock 1 bis 5 – doppelsetig drucken",
               type: "further-information",
             },
           ],
