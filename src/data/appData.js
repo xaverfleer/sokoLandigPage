@@ -1898,12 +1898,48 @@ const appData = {
             main: "...wenn das Baby Erfolgserlebnisse hat",
             videoName: "(Video 5.8, in Produktion)",
           },
+          video: { ref: "https://player.vimeo.com/video/488157814" },
+          checklist: {
+            pretext: "Das wichtigste in Kürze:",
+            entries: [
+              {
+                id: 0,
+                text:
+                  "Lob (und andere Belohnungen) gefährden das Selbstbewusstsein des Babys, weil der Fokus weg von seinen Gefühlen wie Freude oder Stolz hin zu einer Bewertung von aussen gelenkt wird. Das Baby braucht dann immer mehr unser Lob, um sich über etwas freuen zu können.",
+              },
+              {
+                id: 1,
+                text:
+                  "Lob (und andere Belohnungen) gefährden den Selbstwert des Babys, weil es das Gefühl bekommt, etwas besonders leisten zu müssen, um geliebt zu werden. Das Baby fühlt sich dann mit der Zeit nur noch dann wertvoll, wenn es eine positive Bewertung (ein Lob oder eine Belohnung) bekommt.",
+              },
+              {
+                id: 2,
+                text:
+                  "Lob (und andere Belohnungen) gefährden das Selbstvertrauen des Babys, da sie es nicht in seinem Erkundungsverhalten unterstützen, sondern es unter Druck setzen und dazu führen, dass es sein natürliches Interesse an einer Tätigkeit verliert.",
+              },
+              {
+                id: 3,
+                text:
+                  "Als Alternative zum Lob können wir dem Baby unsere Aufmerksamkeit schenken, indem wir beschreiben, was ein Baby geschafft oder getan hat, welche Gefühle wir beim Baby wahrnehmen und wie wir uns selbst fühlen.",
+              },
+              {
+                id: 4,
+                text:
+                  "Bei wünschenswertem Verhalten können wir beschreiben, welche positive Auswirkung das Verhalten auf uns oder jemand anderen hat.",
+              },
+              {
+                id: 5,
+                text:
+                  "Beim Coachen geht es darum, dem Baby seine Selbstwirksamkeit bewusst zu machen. Bei Erfolgserlebnissen können wir dazu aufzeigen, wie es zum Erfolg kam: «Du hast so lange geübt und so viel Frust überwunden und jetzt hat es endlich geklappt».",
+              },
+              {
+                id: 6,
+                text:
+                  "Bei sozialem Verhalten können wir das Selbstwirksamkeitsempfinden stärken, indem wir die positive Auswirkung aufzeigen: «Danke, dass du mir hilfst, dann muss ich nicht alles alleine machen und wir sind schneller fertig».",
+              },
+            ],
+          },
           documents: [
-            {
-              href: "/documents/so5-Videoskript-5.8.pdf",
-              text: "Provisorisches Skript zum Video 5.8 (in Produktion)",
-              type: "strategy",
-            },
             {
               href:
                 "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Lob.pdf",
