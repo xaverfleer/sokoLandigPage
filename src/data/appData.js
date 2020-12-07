@@ -597,6 +597,12 @@ const appData = {
           video: { ref: "https://player.vimeo.com/video/418650809" },
           documents: [
             {
+              href: "/documents/so2-Memokarten.pdf",
+              text:
+                "Memokarten: Dos & Don'ts - Kursblock 2",
+              type: "memo",
+            },
+            {
               href: "/documents/so2-Übung-2.6a.pdf",
               text: "Übung 2.6a – Step by Step... Schwerpunkte setzen",
               type: "practice",
@@ -2000,6 +2006,12 @@ const appData = {
               text:
                 "Strategiekarten: Gesamtpaket Kursblock 1 bis 5 – einseitig drucken",
               type: "strategy",
+            },
+            {
+              href: "/documents/so6-Memokarten.pdf",
+              text:
+                "Memokarten: Gesamtpaket Kurblock 1 und 2 - doppelseitig drucken",
+              type: "memo",
             },
             {
               href: "/documents/so6-Zusammenfassungen.pdf",
