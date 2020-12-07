@@ -1895,8 +1895,8 @@ const appData = {
         section59: {
           id: 8,
           title: {
-            main: "...wenn das Baby Erfolgserlebnisse hat",
-            videoName: "(Video 5.8, in Produktion)",
+            main: "...wenn es um das Loben geht",
+            videoName: "(Video 5.8)",
           },
           video: { ref: "https://player.vimeo.com/video/488157814" },
           checklist: {
