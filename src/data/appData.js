@@ -1949,7 +1949,7 @@ const appData = {
             {
               href:
                 "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Lob.pdf",
-              text: "Strategiekarte: Zurückhaltung im Umgang mit Lob)",
+              text: "Strategiekarte: Zurückhaltung im Umgang mit Lob",
               type: "strategy",
             },
             {
