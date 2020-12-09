@@ -1423,7 +1423,7 @@ const appData = {
         section51: {
           id: 0,
           blocktitle: {
-            supertitle: "Kursblock 5 (in Produktion)",
+            supertitle: "Kursblock 5",
             main: "Zurückhaltung üben...",
           },
           checklist: {
