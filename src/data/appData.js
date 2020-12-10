@@ -9,7 +9,7 @@ const appData = {
         section11: {
           id: 0,
           blocktitle: {
-            supertitle: "Kursblock 1",
+            supertitle: "Kursblock 1 (wird momentan überarbeitet)",
             main: "Innere Stärke und Gleichwürdigkeit",
           },
           checklist: {
