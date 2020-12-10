@@ -234,7 +234,7 @@ const appData = {
             {
               href: "/documents/so1-Memokarten.pdf",
               text:
-                "Memokarten: herablassende vs. gleichwürdige Sprache - Kursblock 1",
+                "Memokarten: herablassende vs. gleichwürdige Sprache",
               type: "memo",
             },
           ],
