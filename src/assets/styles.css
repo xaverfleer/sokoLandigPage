@@ -584,6 +584,10 @@ textarea {
   margin-right: 1em;
 }
 
+strong {
+  font-weight: bold;
+}
+
 .ul--3-dots {
   list-style-type: "… ";
 }

@@ -9,7 +9,7 @@ const appData = {
         section11: {
           id: 0,
           blocktitle: {
-            supertitle: "Kursblock 1",
+            supertitle: "Kursblock 1 (wird momentan überarbeitet)",
             main: "Innere Stärke und Gleichwürdigkeit",
           },
           checklist: {
@@ -65,7 +65,7 @@ const appData = {
             main: "Einstiegsübung – Ich wünsche dir...",
             videoName: "(Video 1.1)",
           },
-          video: { ref: "https://player.vimeo.com/video/395825527" },
+          video: { ref: "https://player.vimeo.com/video/489011860" },
           documents: [
             {
               href: "/documents/so1-Übung-1.1.pdf",
@@ -234,7 +234,7 @@ const appData = {
             {
               href: "/documents/so1-Memokarten.pdf",
               text:
-                "Memokarten: herablassende vs. gleichwürdige Sprache - Kursblock 1",
+                "Memokarten: herablassende vs. gleichwürdige Sprache",
               type: "memo",
             },
           ],
@@ -596,6 +596,12 @@ const appData = {
           },
           video: { ref: "https://player.vimeo.com/video/418650809" },
           documents: [
+            {
+              href: "/documents/so2-Memokarten.pdf",
+              text:
+                "Memokarten: Dos & Don'ts - Kursblock 2",
+              type: "memo",
+            },
             {
               href: "/documents/so2-Übung-2.6a.pdf",
               text: "Übung 2.6a – Step by Step... Schwerpunkte setzen",
@@ -1417,7 +1423,7 @@ const appData = {
         section51: {
           id: 0,
           blocktitle: {
-            supertitle: "Kursblock 5 (in Produktion)",
+            supertitle: "Kursblock 5",
             main: "Zurückhaltung üben...",
           },
           checklist: {
@@ -1477,8 +1483,8 @@ const appData = {
               type: "practice",
             },
             {
-              href: "/documents/so4-Zusammenfassung.pdf",
-              text: "Zusammenfassung Kursblock 4",
+              href: "/documents/so5-Zusammenfassung.pdf",
+              text: "Zusammenfassung Kursblock 5",
               type: "summary",
             },
           ],
@@ -1895,19 +1901,55 @@ const appData = {
         section59: {
           id: 8,
           title: {
-            main: "...wenn das Baby Erfolgserlebnisse hat",
-            videoName: "(Video 5.8, in Produktion)",
+            main: "...wenn es um das Loben geht",
+            videoName: "(Video 5.8)",
+          },
+          video: { ref: "https://player.vimeo.com/video/488157814" },
+          checklist: {
+            pretext: "Das wichtigste in Kürze:",
+            entries: [
+              {
+                id: 0,
+                text:
+                  "Lob (und andere Belohnungen) gefährden das Selbstbewusstsein des Babys, weil der Fokus weg von seinen Gefühlen wie Freude oder Stolz hin zu einer Bewertung von aussen gelenkt wird. Das Baby braucht dann immer mehr unser Lob, um sich über etwas freuen zu können.",
+              },
+              {
+                id: 1,
+                text:
+                  "Lob (und andere Belohnungen) gefährden den Selbstwert des Babys, weil es das Gefühl bekommt, etwas besonders leisten zu müssen, um geliebt zu werden. Das Baby fühlt sich dann mit der Zeit nur noch dann wertvoll, wenn es eine positive Bewertung (ein Lob oder eine Belohnung) bekommt.",
+              },
+              {
+                id: 2,
+                text:
+                  "Lob (und andere Belohnungen) gefährden das Selbstvertrauen des Babys, da sie es nicht in seinem Erkundungsverhalten unterstützen, sondern es unter Druck setzen und dazu führen, dass es sein natürliches Interesse an einer Tätigkeit verliert.",
+              },
+              {
+                id: 3,
+                text:
+                  "Als Alternative zum Lob können wir dem Baby unsere Aufmerksamkeit schenken, indem wir beschreiben, was ein Baby geschafft oder getan hat, welche Gefühle wir beim Baby wahrnehmen und wie wir uns selbst fühlen.",
+              },
+              {
+                id: 4,
+                text:
+                  "Bei wünschenswertem Verhalten können wir beschreiben, welche positive Auswirkung das Verhalten auf uns oder jemand anderen hat.",
+              },
+              {
+                id: 5,
+                text:
+                  "Beim Coachen geht es darum, dem Baby seine Selbstwirksamkeit bewusst zu machen. Bei Erfolgserlebnissen können wir dazu aufzeigen, wie es zum Erfolg kam: «Du hast so lange geübt und so viel Frust überwunden und jetzt hat es endlich geklappt».",
+              },
+              {
+                id: 6,
+                text:
+                  "Bei sozialem Verhalten können wir das Selbstwirksamkeitsempfinden stärken, indem wir die positive Auswirkung aufzeigen: «Danke, dass du mir hilfst, dann muss ich nicht alles alleine machen und wir sind schneller fertig».",
+              },
+            ],
           },
           documents: [
             {
-              href: "/documents/so5-Videoskript-5.8.pdf",
-              text: "Provisorisches Skript zum Video 5.8 (in Produktion)",
-              type: "strategy",
-            },
-            {
               href:
                 "/documents/so5-Strategiekarte-ABC-der-Zurückhaltung-Lob.pdf",
-              text: "Strategiekarte: Zurückhaltung im Umgang mit Lob)",
+              text: "Strategiekarte: Zurückhaltung im Umgang mit Lob",
               type: "strategy",
             },
             {
@@ -1950,25 +1992,37 @@ const appData = {
             {
               href: "/documents/so6-Fahrplaene.pdf",
               text:
-                "Fahrpläne: Gesamtpaket Kursblock 1 bis 5 – doppelseitig ausdrucken",
+                "Fahrpläne: Gesamtpaket Kursblock 1 bis 5 – doppelseitig drucken",
               type: "roadmap",
             },
             {
               href: "/documents/so6-Uebungsdossiers.pdf",
               text:
-                "Übungsdossiers: Gesamtpaket Kursblock 1 bis 5 – doppelseitig ausdrucken",
+                "Übungsdossiers: Gesamtpaket Kursblock 1 bis 5 – doppelseitig drucken",
               type: "practice",
             },
             {
               href: "/documents/so6-Strategiekarten.pdf",
               text:
-                "Strategiekarten: Gesamtpaket Kursblock 1 bis 5 – einseitig ausdrucken",
+                "Strategiekarten: Gesamtpaket Kursblock 1 bis 5 – einseitig drucken",
               type: "strategy",
+            },
+            {
+              href: "/documents/so6-Memokarten.pdf",
+              text:
+                "Memokarten: Gesamtpaket Kurblock 1 und 2 - doppelseitig drucken",
+              type: "memo",
+            },
+            {
+              href: "/documents/so6-Zusammenfassungen.pdf",
+              text:
+                "Zusammenfassungen: Gesamtpaket Kursblock 1 bis 5 – doppelseitig drucken",
+              type: "summary",
             },
             {
               href: "/documents/so6-Vertiefungen.pdf",
               text:
-                "Vertiefungsinputs: Gesamtpaket Kursblock 1 bis 5 – doppelsetig ausdrucken",
+                "Vertiefungsinputs: Gesamtpaket Kursblock 1 bis 5 – doppelsetig drucken",
               type: "further-information",
             },
           ],
