@@ -175,7 +175,9 @@ const vm = {
               ],
             });
           },
-          onApprove: () => vm.handlePaymentSuccess(),
+          onApprove: () => {
+            vm.methods.handlePaymentSuccess();
+          },
         })
         .render(".paypal-button-container");
     },
