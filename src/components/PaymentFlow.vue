@@ -41,7 +41,7 @@ import Header from "./Header.vue";
 import routes from "../data/routes";
 import stateManagement from "../stateManagement";
 
-const vm = {
+export default {
   components: { Footer, FormEntry, FormVue, Header },
   computed: {
     compactData() {
@@ -159,6 +159,7 @@ const vm = {
       return this.formIsValid;
     },
     loadPaypalButton() {
+      const vueThis = this;
       const { price, compactData } = this;
       document.querySelector(".paypal-button-container").innerHTML = "";
       paypal
@@ -175,7 +176,9 @@ const vm = {
               ],
             });
           },
-          onApprove: () => vm.handlePaymentSuccess(),
+          onApprove: () => {
+            vueThis.handlePaymentSuccess();
+          },
         })
         .render(".paypal-button-container");
     },
@@ -201,6 +204,4 @@ const vm = {
     },
   },
 };
-
-export default vm;
 </script>
