@@ -80,7 +80,7 @@ const appData = {
             main: "Innere Stärke",
             videoName: "(Video 1.2)",
           },
-          video: { ref: "https://player.vimeo.com/video/412779252" },
+          video: { ref: "https://player.vimeo.com/video/490855723" },
           checklist: {
             pretext: "Das wichtigste in Kürze:",
             entries: [
