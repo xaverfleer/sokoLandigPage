@@ -812,6 +812,11 @@ const appData = {
               text: "Übung 3.3f – Mein Baby kann das allein",
               type: "practice",
             },
+            {
+              href: "/documents/so3-Vertiefung-Aktives-Zuhoeren.pdf",
+              text: "Vertiefung: Vom aktiven Lesen zum aktiven Zuhören",
+              type: "further-information",
+            },
           ],
         },
         section35: {
