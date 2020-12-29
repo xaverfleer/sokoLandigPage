@@ -63,7 +63,7 @@ const appData = {
           id: 1,
           title: {
             main: "Einstiegsübung – Ich wünsche dir...",
-            videoName: "(Video 1.1)",
+            videoName: "(Video 1.1, überarbeitet)",
           },
           video: { ref: "https://player.vimeo.com/video/489011860" },
           documents: [
@@ -78,7 +78,7 @@ const appData = {
           id: 2,
           title: {
             main: "Innere Stärke",
-            videoName: "(Video 1.2)",
+            videoName: "(Video 1.2, überarbeitet)",
           },
           video: { ref: "https://player.vimeo.com/video/490855723" },
           checklist: {
@@ -123,7 +123,7 @@ const appData = {
           id: 3,
           title: {
             main: "Gleichwürdigkeit",
-            videoName: "(Video 1.3)",
+            videoName: "(Video 1.3, wird gerade überarbeitet)",
           },
           video: { ref: "https://player.vimeo.com/video/420457933" },
           checklist: {
