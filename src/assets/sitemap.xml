@@ -1,43 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="https://www.w3.org/1999/xhtml">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+	xmlns:xhtml="https://www.w3.org/1999/xhtml">
 	<url>
 		<loc>https://so-kommunizieren.ch/</loc>
 		<lastmod>2020-03-02</lastmod>
-    <priority>1</priority>
-	</url>
-	<url>
-		<loc>https://www.so-kommunizieren.ch/</loc>
-		<lastmod>2020-03-02</lastmod>
-    <priority>1</priority>
+		<priority>1</priority>
 	</url>
 	<url>
 		<loc>https://so-kommunizieren.ch/kurs</loc>
 		<lastmod>2020-03-02</lastmod>
-    <priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://www.so-kommunizieren.ch/kurs</loc>
-		<lastmod>2020-03-02</lastmod>
-    <priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://so-kommunizieren.ch/submitted</loc>
-		<lastmod>2020-03-02</lastmod>
-    <priority>0</priority>
-	</url>
-	<url>
-		<loc>https://www.so-kommunizieren.ch/submitted</loc>
-		<lastmod>2020-03-02</lastmod>
-    <priority>0</priority>
-	</url>
-	<url>
-		<loc>https://so-kommunizieren.ch/submission-error</loc>
-		<lastmod>2020-03-02</lastmod>
-    <priority>0</priority>
-	</url>
-	<url>
-		<loc>https://www.so-kommunizieren.ch/submission-error</loc>
-		<lastmod>2020-03-02</lastmod>
-    <priority>0</priority>
+		<priority>0.5</priority>
 	</url>
 </urlset>
