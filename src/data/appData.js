@@ -123,27 +123,27 @@ const appData = {
           id: 3,
           title: {
             main: "Gleichwürdigkeit",
-            videoName: "(Video 1.3, wird gerade überarbeitet)",
+            videoName: "(Video 1.3, überarbeitet)",
           },
-          video: { ref: "https://player.vimeo.com/video/420457933" },
+          video: { ref: "https://player.vimeo.com/video/502594256" },
           checklist: {
             pretext: "Das wichtigste in Kürze:",
             entries: [
               {
                 id: 0,
-                text: `Hinter den Strategien der subjektorientierten Kommunikation steht die Grundhaltung, dass wir unser Baby von Anfang an als gleichwürdiges Subjekt wahrnehmen und behandeln.`,
+                text: `Hinter den Strategien der subjektorientierten Kommunikation steht die Grundhaltung, dass wir unser Baby von Anfang an als gleichwürdiges Subjekt wahrnehmen und behandeln.`,
               },
               {
                 id: 1,
-                text: `Unser Baby ist kein Objekt, das wir nach unseren Vorstellungen formen und steuern können. Es ist ein Subjekt mit eigenen Gedanken, Gefühlen und Bedürfnissen. Salopp gesagt: Es ist eine fühlende Person und kein Roboter.`,
+                text: `Unser Baby ist kein Objekt, das wir nach unseren Vorstellungen formen und steuern können. Es ist ein Subjekt mit eigenen Gedanken, Gefühlen und Bedürfnissen. Salopp gesagt: Es ist eine fühlende Person und kein Roboter.`,
               },
               {
                 id: 2,
-                text: `Unser Baby ist gleichwürdig. Das heisst, dass seine Innenwelt (Gedanken, Gefühle, Bedürfnisse, Wünsche etc.) gleich wichtig ist, wie unsere eigene Innenwelt. Wir müssen sie in unseren Handlungen zu verstehen versuchen und mitberücksichtigen.`,
+                text: `Unser Baby ist gleichwürdig. Das heisst, dass seine innere Realität (Gedanken, Gefühle, Bedürfnisse, Wünsche etc.) gleich wichtig ist, wie unsere innere Realität. Wir müssen sie in unseren Handlungen zu verstehen versuchen und mitberücksichtigen.`,
               },
               {
                 id: 3,
-                text: `Gleichwürdigkeit ist nicht das gleiche wie Gleichgültigkeit, Gleichheit oder Gleichberechtigung.`,
+                text: `Wir dürfen auf jedes Verhalten und jeden Wunsch empathisch, also mit Verständnis, Liebe und Begleitung reagieren, auch auf Verhalten, dass wir nicht akzeptieren können oder auf Wünsche, die wir nicht erfüllen wollen.`,
               },
             ],
           },
@@ -174,7 +174,7 @@ const appData = {
           id: 4,
           title: {
             main: "Lina weint",
-            videoName: "(Video 1.4)",
+            videoName: "(Video 1.4, wird gerade überarbeitet)",
           },
           video: { ref: "https://player.vimeo.com/video/420459304" },
           documents: [
