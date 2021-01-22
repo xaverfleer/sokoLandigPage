@@ -165,7 +165,12 @@ const appData = {
             },
             {
               href: "/documents/so1-Übung-1.3c.pdf",
-              text: "Übung 1.3c – Gleichwürdigkeit in meiner Kindheit",
+              text: "Übung 1.3c – Meine Gastfamilie: Ein Gedankenexperiment",
+              type: "practice",
+            },
+            {
+              href: "/documents/so1-Übung-1.3d.pdf",
+              text: "Übung 1.3d – Gleichwürdigkeit in meiner Kindheit",
               type: "practice",
             },
           ],
