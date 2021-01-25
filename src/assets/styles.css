@@ -476,6 +476,41 @@ textarea {
   border-radius: 5px;
 }
 
+.modal {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.modal__scrim {
+  background-color: #895929;
+  height: 100%;
+  opacity: 0.4;
+  position: absolute;
+  width: 100%;
+}
+
+.modal__video {
+  height: 0;
+  max-width: 700px;
+  padding-bottom: 56.25%;
+  position: relative;
+  width: 100%;
+}
+
+.modal__video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 .nav {
   display: flex;
   flex-direction: column;
@@ -525,6 +560,10 @@ textarea {
 .nav a {
   color: #966b40;
   text-decoration: none;
+}
+
+.page {
+  filter: blur(4px);
 }
 
 .paypal-button-container {
