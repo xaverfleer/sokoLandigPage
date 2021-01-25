@@ -4,6 +4,11 @@ import LogRocket from "logrocket";
 const header = document.querySelector(".header");
 const nav = document.querySelector(".nav");
 const formElem = document.querySelector("form");
+const modalElems = {
+  modal: document.querySelector(".modal"),
+  close: document.querySelector(".modal__close"),
+};
+const page = document.querySelector(".page");
 
 const hideGdpr = () =>
   document.querySelector(".gdpr").setAttribute("style", "display: none;");
@@ -123,3 +128,8 @@ function submitForm() {
 }
 
 document.querySelector("form").addEventListener("submit", submitForm);
+
+modalElems.close.addEventListener("click", () => {
+  modalElems.modal.classList.remove("modal--open");
+  page.classList.remove("page--modal-is-open");
+});

@@ -478,13 +478,30 @@ textarea {
 
 .modal {
   align-items: center;
-  display: flex;
+  display: none;
   height: 100vh;
   justify-content: center;
   position: fixed;
   width: 100vw;
   top: 0;
   left: 0;
+}
+
+.modal--open {
+  display: flex;
+}
+
+.modal__close {
+  background-color: transparent;
+  background-image: url(imgs/close-24px--brown.svg);
+  background-position: center;
+  background-size: contain;
+  border: none;
+  height: 60px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 60px;
 }
 
 .modal__scrim {
@@ -562,7 +579,7 @@ textarea {
   text-decoration: none;
 }
 
-.page {
+.page--modal-is-open {
   filter: blur(4px);
 }
 
