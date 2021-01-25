@@ -406,11 +406,15 @@ textarea {
 }
 
 .header__emotion {
-  flex-basis: 350px;
+  align-items: center;
   background-image: url(./imgs/mother-father-and-baby-child-on-a-white-bed-mini-cropped.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-basis: 350px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header__logo {
@@ -422,6 +426,28 @@ textarea {
   position: absolute;
   left: 0;
   top: -144px;
+}
+
+.header__play-video {
+  background-color: transparent;
+  background-image: url(./imgs/play_arrow-24px.svg);
+  background-position: center;
+  background-size: contain;
+  border: 3px solid #895929;
+  border-radius: 50%;
+  display: block;
+  height: 5em;
+  margin: 4.5em auto 0.5em;
+  opacity: 0.5;
+  width: 5em;
+}
+
+.header__play-video:hover {
+  opacity: 1;
+}
+
+.header__teaser {
+  display: none;
 }
 
 .hero__subjektorientiert {
@@ -650,6 +676,12 @@ strong {
 @media screen and (min-width: 550px) {
   .form--narrow {
     margin: 0 auto;
+  }
+
+  .header__teaser {
+    color: #895929;
+    display: block;
+    text-align: center;
   }
 
   .nav:not(.nav--kurs) {
