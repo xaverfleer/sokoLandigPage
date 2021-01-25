@@ -1,1 +1,6 @@
+- add video to header|emotion|button
+- increase font weight of header|gratis-starten
+- fix smooth scrolling
+- fix anchor link position
 - move google site verification to Netlify
+- remove margin of body
