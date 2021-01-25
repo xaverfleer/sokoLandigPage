@@ -2,6 +2,7 @@
 import LogRocket from "logrocket";
 
 const header = document.querySelector(".header");
+const headerPlayVideo = document.querySelector(".header__play-video");
 const nav = document.querySelector(".nav");
 const formElem = document.querySelector("form");
 const modalElems = {
@@ -128,6 +129,11 @@ function submitForm() {
 }
 
 document.querySelector("form").addEventListener("submit", submitForm);
+
+headerPlayVideo.addEventListener("click", () => {
+  modalElems.modal.classList.add("modal--open");
+  page.classList.add("page--modal-is-open");
+});
 
 modalElems.close.addEventListener("click", () => {
   modalElems.modal.classList.remove("modal--open");
