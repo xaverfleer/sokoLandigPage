@@ -1,7 +1,9 @@
 /* global XMLHttpRequest, alert, amplitude, document, localStorage, window */
 import LogRocket from "logrocket";
 
-const Vimeo = { Player: require("@vimeo/player").default };
+const Player = require("@vimeo/player").default;
+
+const Vimeo = { Player };
 
 const header = document.querySelector(".header");
 const headerPlayVideo = document.querySelector(".header__play-video");
@@ -136,20 +138,20 @@ document.querySelector("form").addEventListener("submit", submitForm);
 
 const modalPlayer = new Vimeo.Player(modalElems.vimeoVideo);
 
-headerPlayVideo.addEventListener("click", openModal);
-modalElems.close.addEventListener("click", closeModal);
+function closeModal() {
+  modalElems.modal.classList.remove("modal--open");
+  page.classList.remove("page--modal-is-open");
+  modalPlayer.pause();
+}
 
 function openModal() {
   modalElems.modal.classList.add("modal--open");
   page.classList.add("page--modal-is-open");
   modalPlayer.play();
   document.addEventListener("keyup", (event) => {
-    event.key === "Escape" && closeModal();
+    if (event.key === "Escape") closeModal();
   });
 }
 
-function closeModal() {
-  modalElems.modal.classList.remove("modal--open");
-  page.classList.remove("page--modal-is-open");
-  modalPlayer.pause();
-}
+headerPlayVideo.addEventListener("click", openModal);
+modalElems.close.addEventListener("click", closeModal);
