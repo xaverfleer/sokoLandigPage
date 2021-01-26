@@ -7,7 +7,7 @@
       <div class="buttons">
         <a
           class="button button--primary cta05"
-          href="index.html#prizing"
+          href="index.html#pricing"
           title="Jetzt buchen"
           >Jetzt buchen</a
         >

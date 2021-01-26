@@ -243,8 +243,7 @@ const appData = {
             },
             {
               href: "/documents/so1-Memokarten.pdf",
-              text:
-                "Memokarten: herablassende vs. gleichwürdige Sprache",
+              text: "Memokarten: herablassende vs. gleichwürdige Sprache",
               type: "memo",
             },
           ],
@@ -608,8 +607,7 @@ const appData = {
           documents: [
             {
               href: "/documents/so2-Memokarten.pdf",
-              text:
-                "Memokarten: Dos & Don'ts - Kursblock 2",
+              text: "Memokarten: Dos & Don'ts - Kursblock 2",
               type: "memo",
             },
             {
@@ -2056,13 +2054,13 @@ const appData = {
   buttons: {
     cta05Primary: {
       text: "Jetzt buchen",
-      target: "index#prizing",
+      target: "index#pricing",
       logEvent: "Jetzt buchen",
       isPrimary: true,
     },
     cta05Secondary: {
       text: "Jetzt buchen",
-      target: "index#prizing",
+      target: "index#pricing",
       logEvent: "Jetzt buchen",
       isPrimary: false,
     },

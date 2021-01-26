@@ -1,4 +1,4 @@
-- prizing -> pricing (booking)
+- pricing -> pricing (booking)
 - increase font weight of header|gratis-starten
 - move google site verification to Netlify
 - remove margin of body
