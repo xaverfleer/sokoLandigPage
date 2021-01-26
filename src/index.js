@@ -136,14 +136,20 @@ document.querySelector("form").addEventListener("submit", submitForm);
 
 const modalPlayer = new Vimeo.Player(modalElems.vimeoVideo);
 
-headerPlayVideo.addEventListener("click", () => {
+headerPlayVideo.addEventListener("click", openModal);
+modalElems.close.addEventListener("click", closeModal);
+
+function openModal() {
   modalElems.modal.classList.add("modal--open");
   page.classList.add("page--modal-is-open");
   modalPlayer.play();
-});
+  document.addEventListener("keyup", (event) => {
+    event.key === "Escape" && closeModal();
+  });
+}
 
-modalElems.close.addEventListener("click", () => {
+function closeModal() {
   modalElems.modal.classList.remove("modal--open");
   page.classList.remove("page--modal-is-open");
   modalPlayer.pause();
-});
+}
