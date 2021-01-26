@@ -395,8 +395,8 @@ textarea {
 .header--fixed .header__content {
   position: fixed;
   top: 0;
-  left: 8px;
-  right: 8px;
+  left: 0px;
+  right: 0px;
   z-index: 80;
 }
 
