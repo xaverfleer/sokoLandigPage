@@ -47,6 +47,7 @@ h3 {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -634,6 +635,11 @@ textarea {
   margin: 2em auto;
   transform: rotate(350deg);
   border-radius: 0.5rem;
+}
+
+.scroll-offset {
+  position: relative;
+  top: -5em;
 }
 
 .section {

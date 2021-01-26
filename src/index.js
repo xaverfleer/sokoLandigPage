@@ -78,22 +78,6 @@ window.addEventListener("scroll", function toggleHeaderPositioning() {
   else header.classList.remove("header--fixed");
 });
 
-function offsetAnchor() {
-  if (window.location.hash.length !== 0) {
-    window.scrollTo(window.scrollX, window.scrollY - 50);
-  }
-}
-
-document
-  .querySelectorAll('a[href^="#"]')
-  .forEach((elem) =>
-    elem.addEventListener("click", () =>
-      window.setTimeout(() => offsetAnchor())
-    )
-  );
-
-window.setTimeout(offsetAnchor);
-
 function getFormData() {
   const entries = [].slice.call(formElem.elements);
 
