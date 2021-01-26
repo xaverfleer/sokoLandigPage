@@ -390,7 +390,7 @@ textarea {
 }
 
 .header--fixed {
-  margin-bottom: 58px;
+  margin-bottom: 70px;
 }
 
 .header--fixed .header__content {
@@ -821,6 +821,10 @@ strong {
 
   .header {
     font-size: 2rem;
+  }
+
+  .header--fixed {
+    margin-bottom: 78px;
   }
 
   .header--fixed .header__content {
