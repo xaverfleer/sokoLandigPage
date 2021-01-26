@@ -1,6 +1,8 @@
 /* global XMLHttpRequest, alert, amplitude, document, localStorage, window */
 import LogRocket from "logrocket";
 
+const Vimeo = { Player: require("@vimeo/player").default };
+
 const header = document.querySelector(".header");
 const headerPlayVideo = document.querySelector(".header__play-video");
 const nav = document.querySelector(".nav");
@@ -8,7 +10,9 @@ const formElem = document.querySelector("form");
 const modalElems = {
   modal: document.querySelector(".modal"),
   close: document.querySelector(".modal__close"),
+  vimeoVideo: document.querySelector(".modal__video-iframe"),
 };
+
 const page = document.querySelector(".page");
 
 const hideGdpr = () =>
@@ -130,12 +134,16 @@ function submitForm() {
 
 document.querySelector("form").addEventListener("submit", submitForm);
 
+const modalPlayer = new Vimeo.Player(modalElems.vimeoVideo);
+
 headerPlayVideo.addEventListener("click", () => {
   modalElems.modal.classList.add("modal--open");
   page.classList.add("page--modal-is-open");
+  modalPlayer.play();
 });
 
 modalElems.close.addEventListener("click", () => {
   modalElems.modal.classList.remove("modal--open");
   page.classList.remove("page--modal-is-open");
+  modalPlayer.pause();
 });
