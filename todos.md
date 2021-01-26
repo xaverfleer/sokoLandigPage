@@ -1,7 +1,8 @@
-- pricing -> pricing (booking)
-- increase font weight of header|gratis-starten
 - move google site verification to Netlify
-- remove margin of body
+- ✅ remove margin of body
 - ✅ add video to header|emotion|button
 - ✅ fix smooth scrolling
 - ✅ fix anchor link position
+- ✅ pricing -> pricing (booking)
+- ✅ collapse nav on wider screen
+- ✅ increase font weight of header|gratis-starten
