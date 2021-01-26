@@ -747,20 +747,6 @@ strong {
     display: block;
     text-align: center;
   }
-
-  .nav:not(.nav--kurs) {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .nav:not(.nav--kurs)::before {
-    display: none;
-  }
-
-  .nav:not(.nav--kurs) .nav__entry {
-    margin: 0 10px;
-    display: block;
-  }
 }
 
 @media screen and (min-width: 600px) {
@@ -775,6 +761,22 @@ strong {
   .booking-offers {
     flex-direction: row;
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .nav:not(.nav--kurs) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav:not(.nav--kurs)::before {
+    display: none;
+  }
+
+  .nav:not(.nav--kurs) .nav__entry {
+    margin: 0 10px;
+    display: block;
   }
 }
 
