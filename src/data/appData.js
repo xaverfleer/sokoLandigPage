@@ -242,6 +242,11 @@ const appData = {
               type: "practice",
             },
             {
+              href: "/documents/so1-Übung-1.6.pdf",
+              text: "Übung 1.6 – Hinderliche Ansichten",
+              type: "practice",
+            },
+            {
               href: "/documents/so1-Memokarten.pdf",
               text:
                 "Memokarten: herablassende vs. gleichwürdige Sprache",
@@ -250,20 +255,6 @@ const appData = {
           ],
         },
         section17: {
-          id: 6,
-          title: {
-            main: "Was schwächt den inneren Baum?",
-            videoName: "(Video 1.6 - In Produktion)",
-          },
-          documents: [
-            {
-              href: "/documents/so1-Übung-1.6.pdf",
-              text: "Übung 1.6 – Hinderliche Ansichten",
-              type: "practice",
-            },
-          ],
-        },
-        section18: {
           id: 7,
           title: { main: "Sinnvolle Lernstrategien nutzen" },
           documents: [
@@ -290,7 +281,7 @@ const appData = {
             },
           ],
         },
-        section19: {
+        section18: {
           id: 8,
           title: { main: "Weitere Dokumente" },
           documents: [
