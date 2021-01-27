@@ -74,7 +74,7 @@ nav.addEventListener("click", function toggleNavActive() {
 });
 
 window.addEventListener("scroll", function toggleHeaderPositioning() {
-  if (window.pageYOffset > 360) header.classList.add("header--fixed");
+  if (window.pageYOffset > 350) header.classList.add("header--fixed");
   else header.classList.remove("header--fixed");
 });
 

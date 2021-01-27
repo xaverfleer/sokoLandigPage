@@ -13,6 +13,7 @@ a * {
 
 body {
   font-size: 1.4rem;
+  margin: 0;
 }
 
 button {
@@ -70,11 +71,6 @@ textarea {
   margin-top: 0.5rem;
 }
 
-.booking-offers {
-  display: flex;
-  flex-direction: column;
-}
-
 .booking-offer {
   display: flex;
   flex-direction: column;
@@ -94,7 +90,7 @@ textarea {
   padding: 0.5em;
 }
 
-.booking-offer__prize {
+.booking-offer__price {
   font-size: 2em;
 }
 
@@ -123,6 +119,7 @@ textarea {
   border: none;
   font-size: 1.4rem;
   letter-spacing: 0.1em;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 5px;
@@ -388,14 +385,14 @@ textarea {
 }
 
 .header--fixed {
-  margin-bottom: 56px;
+  margin-bottom: 70px;
 }
 
 .header--fixed .header__content {
   position: fixed;
   top: 0;
-  left: 8px;
-  right: 8px;
+  left: 0px;
+  right: 0px;
   z-index: 80;
 }
 
@@ -569,9 +566,11 @@ textarea {
 }
 
 .nav__entry--primary {
-  padding: 5px 10px;
-  border: 1px solid #966b40;
+  border: 3px solid #966b40;
   border-radius: 5px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  padding: 5px 10px;
 }
 
 /* this rule is needed to override user agents stylesheets */
@@ -745,7 +744,15 @@ strong {
     display: block;
     text-align: center;
   }
+}
 
+@media screen and (min-width: 600px) {
+  .booking-offers {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 650px) {
   .nav:not(.nav--kurs) {
     flex-direction: row;
     align-items: center;
@@ -758,21 +765,6 @@ strong {
   .nav:not(.nav--kurs) .nav__entry {
     margin: 0 10px;
     display: block;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .booking-offer__main {
-    flex: 0 0 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .booking-offers {
-    flex-direction: row;
-    justify-content: center;
   }
 }
 
@@ -815,6 +807,10 @@ strong {
 
   .header {
     font-size: 2rem;
+  }
+
+  .header--fixed {
+    margin-bottom: 78px;
   }
 
   .header--fixed .header__content {
