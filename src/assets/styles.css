@@ -637,6 +637,7 @@ textarea {
 }
 
 .scroll-offset {
+  display: block;
   position: relative;
   top: -5em;
 }
