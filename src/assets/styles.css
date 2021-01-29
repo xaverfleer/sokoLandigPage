@@ -686,9 +686,9 @@ strong {
 }
 
 .value-proposition {
+  align-items: stretch;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
 }
 
 .value-proposition__entry {
