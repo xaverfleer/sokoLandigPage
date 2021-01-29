@@ -458,7 +458,8 @@ textarea {
 
 .hero__discount-img {
   float: right;
-  max-width: 30%;
+  max-width: 45%;
+  max-width: clamp(180px, 35%, 350px);
   transform: rotateZ(-15deg);
 }
 
