@@ -448,6 +448,12 @@ textarea {
   display: none;
 }
 
+.hero__discount-img {
+  float: right;
+  max-width: 30%;
+  transform: rotateZ(-15deg);
+}
+
 .hero__subjektorientiert {
   font-size: 1.4rem;
   margin: 0;
