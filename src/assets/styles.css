@@ -585,6 +585,19 @@ textarea {
   text-decoration: none;
 }
 
+.offer-options {
+  display: flex;
+}
+
+.offer-options__option {
+  flex: 1 0 0;
+  margin-right: 1em;
+}
+
+.offer-options__option:last-of-type {
+  margin-right: 0;
+}
+
 .page--modal-is-open {
   filter: blur(4px);
 }
