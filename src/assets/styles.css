@@ -72,14 +72,14 @@ textarea {
 }
 
 .booking-offer {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px #966b40;
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
-  box-shadow: 0 0 10px #000000;
-  margin: 0.5em;
-  text-align: center;
+  margin: 0.5em 0.5em 2em;
   padding-bottom: 0.5em;
-  background-color: #ffffff;
+  text-align: center;
 }
 
 .booking-offer__detail {
@@ -692,14 +692,16 @@ strong {
 }
 
 .value-proposition__entry {
-  min-width: 12em;
-  max-width: 30em;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px #966b40;
+  display: flex;
   flex-basis: 0;
   flex-grow: 1;
+  margin: 0 0.5em 2em;
+  max-width: 30em;
+  min-width: 12em;
   padding: 1em;
-  margin-bottom: 2em;
-
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
