@@ -80,7 +80,15 @@ textarea {
   flex-direction: column;
   margin: 2em 0.5em 2em;
   padding-bottom: 0.5em;
+  position: relative;
   text-align: center;
+  padding-bottom: 6em;
+}
+
+.booking-offer__buttons {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .booking-offer__detail {
