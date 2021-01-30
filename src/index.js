@@ -15,6 +15,17 @@ const modalElems = {
   vimeoVideo: document.querySelector(".modal__video-iframe"),
 };
 
+const learningMode = {
+  buttons: {
+    alone: document.getElementById("learn-button--alone"),
+    group: document.getElementById("learn-button--in-group"),
+  },
+  content: {
+    alone: document.getElementById("learn-content--alone"),
+    group: document.getElementById("learn-content--in-group"),
+  },
+};
+
 const page = document.querySelector(".page");
 
 const hideGdpr = () =>
@@ -139,3 +150,13 @@ function openModal() {
 
 headerPlayVideo.addEventListener("click", openModal);
 modalElems.close.addEventListener("click", closeModal);
+
+learningMode.buttons.alone.addEventListener("click", () => {
+  learningMode.content.alone.style.setProperty("display", "block");
+  learningMode.content.group.style.setProperty("display", "none");
+});
+
+learningMode.buttons.group.addEventListener("click", () => {
+  learningMode.content.alone.style.setProperty("display", "none");
+  learningMode.content.group.style.setProperty("display", "block");
+});

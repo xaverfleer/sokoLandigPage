@@ -595,15 +595,6 @@ textarea {
   text-decoration: none;
 }
 
-.offer-options {
-  display: grid;
-  grid-template: auto auto / auto auto;
-}
-
-.offer-options__option {
-  margin: 0 0.5em;
-}
-
 .offer-selector {
   display: flex;
 }
