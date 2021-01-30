@@ -604,6 +604,14 @@ textarea {
   margin: 0 0.5em;
 }
 
+.offer-selector {
+  display: flex;
+}
+
+.offer-selector__button {
+  flex: 1 0 0;
+}
+
 .page--modal-is-open {
   filter: blur(4px);
 }
