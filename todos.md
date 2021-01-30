@@ -1,3 +1,8 @@
+- angebote: Piktogramme
+- angebote: tabs (should also fix overflowing buttons)
+- angebote: entscheitungsfrage
+- inhalte: piktogramme links und rechts
+
 - move google site verification to Netlify
 - ✅ remove margin of body
 - ✅ add video to header|emotion|button
@@ -6,3 +11,4 @@
 - ✅ pricing -> pricing (booking)
 - ✅ collapse nav on wider screen
 - ✅ increase font weight of header|gratis-starten
+- ✅ angebote: fix margin between options
