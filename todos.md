@@ -1,5 +1,5 @@
-- angebote: Piktogramme
 - angebote: tabs (should also fix overflowing buttons)
+- angebote: Piktogramme
 - angebote: entscheitungsfrage
 - inhalte: piktogramme links und rechts
 
