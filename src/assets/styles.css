@@ -599,6 +599,10 @@ textarea {
   grid-template: auto auto / auto auto;
 }
 
+.offer-options__option {
+  margin: 0 0.5em;
+}
+
 .page--modal-is-open {
   filter: blur(4px);
 }
