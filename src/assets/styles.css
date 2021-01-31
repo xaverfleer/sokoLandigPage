@@ -31,6 +31,10 @@ h3 {
   font-family: source-serif-pro, serif;
 }
 
+h1 {
+  font-size: 3.8rem;
+}
+
 h2,
 h3 {
   text-align: center;
@@ -392,6 +396,10 @@ textarea {
   flex-direction: column;
 }
 
+.header--left {
+  text-align: left;
+}
+
 .header--fixed {
   margin-bottom: 70px;
 }
@@ -477,7 +485,6 @@ textarea {
 .hero__title {
   margin-top: 0.1rem;
   margin-bottom: 0.1rem;
-  font-size: 3.8rem;
 }
 
 .hidden {
