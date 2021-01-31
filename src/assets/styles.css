@@ -637,6 +637,7 @@ textarea {
 .offers {
   border: solid #966b40;
   box-shadow: 5px 5px 2px #966b40;
+  border-radius: 0 0 5px 5px;
   border-width: 0 3px 3px 3px;
   padding: 2em 1em 1em;
 }
