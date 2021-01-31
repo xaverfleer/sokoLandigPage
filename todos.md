@@ -1,7 +1,10 @@
 - angebote: tabs (should also fix overflowing buttons)
+- update /order with new plans
 - angebote: Piktogramme
 - angebote: entscheitungsfrage
 - inhalte: piktogramme links und rechts
+- better menu in /kurs
+- Register for second half of first block
 
 - move google site verification to Netlify
 - ✅ remove margin of body
