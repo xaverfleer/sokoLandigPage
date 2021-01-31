@@ -297,19 +297,21 @@
           <a class="scroll-offset" id="offer"></a>
           <h2>Angebote</h2>
           <div class="offer-selector">
-            <button class="offer-selector__button" id="learn-button--in-group">
-              Ich lerne gerne in einer Gruppe
-            </button>
-            <button class="offer-selector__button" id="learn-button--alone">
+            <button
+              class="offer-selector__button offer-selector__button--active offer-selector__button--alone"
+              id="learn-button--alone"
+            >
               Ich lerne gerne selbstständig
+            </button>
+            <button
+              class="offer-selector__button offer-selector__button--group"
+              id="learn-button--in-group"
+            >
+              Ich lerne gerne in einer Gruppe
             </button>
           </div>
           <div class="offers">
-            <div
-              class="offers__offer"
-              id="learn-content--alone"
-              style="display: none"
-            >
+            <div class="offers__offer offer--alone" id="learn-content--alone">
               <h3>Freier Onlinekurs</h3>
               <p>
                 <strong
@@ -369,7 +371,11 @@
                 </div>
               </div>
             </div>
-            <div class="offers__offer" id="learn-content--in-group">
+            <div
+              class="offers__offer offer--group"
+              id="learn-content--in-group"
+              style="display: none"
+            >
               <h3>Geführter Gruppenkurs</h3>
               <p>
                 <strong

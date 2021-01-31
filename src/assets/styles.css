@@ -607,7 +607,31 @@ textarea {
 }
 
 .offer-selector__button {
+  border: solid #966b40;
+  border-width: 1px 1px 3px 1px;
+  border-bottom-width: 3px;
+  border-radius: 5px 5px 0 0;
   flex: 1 0 0;
+  height: 3em;
+}
+
+.offer-selector__button--active {
+  border-width: 3px 3px 0 3px;
+  font-weight: 600;
+}
+
+.offer-selector__button--alone {
+  background-color: #e5cdad;
+}
+
+.offer-selector__button--group {
+  background-color: #f6ede2;
+}
+
+.offers {
+  border: solid #966b40;
+  border-width: 0 3px 3px 3px;
+  padding: 2em 1em 1em;
 }
 
 .page--modal-is-open {

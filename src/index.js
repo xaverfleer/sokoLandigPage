@@ -152,11 +152,15 @@ headerPlayVideo.addEventListener("click", openModal);
 modalElems.close.addEventListener("click", closeModal);
 
 learningMode.buttons.alone.addEventListener("click", () => {
+  learningMode.buttons.group.classList.remove("offer-selector__button--active");
+  learningMode.buttons.alone.classList.add("offer-selector__button--active");
   learningMode.content.alone.style.setProperty("display", "block");
   learningMode.content.group.style.setProperty("display", "none");
 });
 
 learningMode.buttons.group.addEventListener("click", () => {
+  learningMode.buttons.alone.classList.remove("offer-selector__button--active");
+  learningMode.buttons.group.classList.add("offer-selector__button--active");
   learningMode.content.alone.style.setProperty("display", "none");
   learningMode.content.group.style.setProperty("display", "block");
 });
