@@ -1,10 +1,12 @@
 - angebote: tabs (should also fix overflowing buttons)
+- round corners of discount circle
 - update /order with new plans
 - angebote: Piktogramme
 - angebote: entscheitungsfrage
 - inhalte: piktogramme links und rechts
 - better menu in /kurs
 - Register for second half of first block
+- streamline font sizes
 
 - move google site verification to Netlify
 - ✅ remove margin of body
@@ -15,3 +17,4 @@
 - ✅ collapse nav on wider screen
 - ✅ increase font weight of header|gratis-starten
 - ✅ angebote: fix margin between options
+- ✅ add impressum
