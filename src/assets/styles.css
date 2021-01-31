@@ -613,7 +613,11 @@ textarea {
   border-bottom-width: 3px;
   border-radius: 5px 5px 0 0;
   flex: 1 0 0;
-  height: 3em;
+  font-weight: 300;
+  height: 4.5em;
+  letter-spacing: 0.1em;
+  padding: 0.5em;
+  text-transform: uppercase;
 }
 
 .offer-selector__button--active {
