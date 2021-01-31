@@ -1,6 +1,3 @@
-- angebote: tabs (should also fix overflowing buttons)
-- round corners of discount circle
-- update /order with new plans
 - angebote: Piktogramme
 - angebote: entscheitungsfrage
 - inhalte: piktogramme links und rechts
@@ -18,3 +15,6 @@
 - ✅ increase font weight of header|gratis-starten
 - ✅ angebote: fix margin between options
 - ✅ add impressum
+- ✅ angebote: tabs (should also fix overflowing buttons)
+- ❌ round corners of discount circle
+- ✅ update /order with new plans
