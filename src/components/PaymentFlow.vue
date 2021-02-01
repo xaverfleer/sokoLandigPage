@@ -79,7 +79,7 @@ export default {
         { ...this.$root.appData.formEntries.confirmEmail },
         { ...this.$root.appData.formEntries.city },
         { ...this.$root.appData.formEntries.address, optional: true },
-        { ...this.$root.appData.formEntries.phone },
+        { ...this.$root.appData.formEntries.phone, optional: true },
         { ...this.$root.appData.formEntries.birthdays, optional: true },
       ],
       formIsValid: false,
