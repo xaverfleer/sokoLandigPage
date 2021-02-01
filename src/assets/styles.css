@@ -632,6 +632,14 @@ textarea {
   border-radius: 0 0 5px 5px;
 }
 
+.offers__offer {
+  display: none;
+}
+
+.offers__offer--active {
+  display: block;
+}
+
 .page--modal-is-open {
   filter: blur(4px);
 }
@@ -803,6 +811,26 @@ strong {
 }
 
 @media screen and (min-width: 600px) {
+  .offer__space {
+    flex: 1 0 0;
+  }
+
+  .offers {
+    display: flex;
+  }
+
+  .offers__offer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .offers__offer--alone {
+    margin-right: 0.5em;
+  }
+
+  .offers__offer--group {
+    margin-left: 0.5em;
+  }
 }
 
 @media screen and (min-width: 650px) {
