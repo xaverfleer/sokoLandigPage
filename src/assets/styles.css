@@ -804,9 +804,6 @@ strong {
 }
 
 @media screen and (min-width: 600px) {
-  .booking-offers {
-    display: flex;
-  }
 }
 
 @media screen and (min-width: 650px) {

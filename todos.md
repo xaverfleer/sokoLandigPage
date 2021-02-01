@@ -1,4 +1,3 @@
-- fix offers in /order
 - Desktop-friendly Angebote
 - Piktogramme in Angebote
 - entscheitungsfrage in Angebote
@@ -20,6 +19,7 @@
 - ✅ angebote: tabs (should also fix overflowing buttons)
 - ❌ round corners of discount circle
 - ✅ update /order with new plans
+- ✅ fix offers in /order
 
 # Eva
 
