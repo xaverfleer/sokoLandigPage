@@ -82,7 +82,6 @@ textarea {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  margin: 2em 0.5em 2em;
   padding-bottom: 0.5em;
   position: relative;
   text-align: center;
@@ -108,24 +107,14 @@ textarea {
 }
 
 .booking-offer__title {
-  height: 3em;
+  background-color: #e5cdad;
   border-radius: 5px 5px 0 0;
-
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-
   display: flex;
   flex-direction: column;
+  height: 3em;
   justify-content: center;
-}
-
-.booking-offer__title--2ndary {
-  background-color: #e5cdad;
-}
-
-.booking-offer__title--primary {
-  background-color: #966b40;
-  color: #ffffff;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .button {
