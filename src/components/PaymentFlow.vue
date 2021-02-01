@@ -3,7 +3,7 @@
     <h3>Einkaufswagen</h3>
     <div class="form-aligned shopping-cart">
       <p class="shopping-cart__label">Im Einkaufswagen:</p>
-      <p>1x {{ offer.name }}{{ discountMessage }}</p>
+      <p>1x {{ offer.name }} – CHF {{ price }} {{ discountMessage }}</p>
     </div>
     <div class="step step--promo-code">
       <h3>Rabatt</h3>
