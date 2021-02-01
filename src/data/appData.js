@@ -184,9 +184,9 @@ const appData = {
           id: 4,
           title: {
             main: "Lina weint",
-            videoName: "(Video 1.4, wird gerade überarbeitet)",
+            videoName: "(Video 1.4, überarbeitet)",
           },
-          video: { ref: "https://player.vimeo.com/video/420459304" },
+          video: { ref: "https://player.vimeo.com/video/507152872" },
           documents: [
             {
               href: "/documents/so1-Übung-1.4.pdf",
@@ -199,7 +199,7 @@ const appData = {
           id: 5,
           title: {
             main: "Herablassende vs. gleichwürdige Sprache",
-            videoName: "(Video 1.5)",
+            videoName: "(Video 1.5, wird momentan überarbeitet)",
           },
           video: { ref: "https://player.vimeo.com/video/411396939" },
           checklist: {
