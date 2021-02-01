@@ -1,8 +1,9 @@
 - fix offers in /order
-- angebote: Piktogramme
-- angebote: entscheitungsfrage
-- inhalte: piktogramme links und rechts
-- better menu in /kurs
+- Desktop-friendly Angebote
+- Piktogramme in Angebote
+- entscheitungsfrage in Angebote
+- Piktogramme links und rechts in Inhalte
+- besseres Menu in /kurs
 - Register for second half of first block
 - streamline font sizes
 
@@ -19,3 +20,7 @@
 - ✅ angebote: tabs (should also fix overflowing buttons)
 - ❌ round corners of discount circle
 - ✅ update /order with new plans
+
+# Eva
+
+- write copy for /order
