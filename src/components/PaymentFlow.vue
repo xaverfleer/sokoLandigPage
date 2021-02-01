@@ -172,8 +172,10 @@ export default {
               ],
             });
           },
-          onApprove: () => {
-            vueThis.handlePaymentSuccess();
+          onApprove: (data, actions) => {
+            return actions.order.capture().then(function(details) {
+              vueThis.handlePaymentSuccess();
+            });
           },
         })
         .render(".paypal-button-container");
