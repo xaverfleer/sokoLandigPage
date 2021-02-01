@@ -1,3 +1,4 @@
+- fix offers in /order
 - angebote: Piktogramme
 - angebote: entscheitungsfrage
 - inhalte: piktogramme links und rechts
