@@ -1,4 +1,3 @@
-- Desktop-friendly Angebote
 - Piktogramme in Angebote
 - entscheitungsfrage in Angebote
 - Piktogramme links und rechts in Inhalte
@@ -20,6 +19,7 @@
 - ❌ round corners of discount circle
 - ✅ update /order with new plans
 - ✅ fix offers in /order
+- ✅ Desktop-friendly Angebote
 
 # Eva
 
