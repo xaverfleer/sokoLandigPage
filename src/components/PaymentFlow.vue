@@ -90,7 +90,7 @@ export default {
       promoCode: undefined,
       promoCodeForm: {
         fields: [
-          { ...this.$root.appData.formEntries.promoCode, value: "EARLYBIRD80" },
+          { ...this.$root.appData.formEntries.promoCode, value: "FEBRUAR50" },
         ],
         goal: "Verifizieren",
         layout: "small",
