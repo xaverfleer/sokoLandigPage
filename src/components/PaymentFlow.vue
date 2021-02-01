@@ -69,9 +69,6 @@ export default {
       return JSON.stringify(this.compactData);
     },
   },
-  created() {
-    document.title = `Early-Bird buchen | so* kommunizieren`;
-  },
   data() {
     return {
       discountWasChecked: false,
