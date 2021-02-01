@@ -38,7 +38,6 @@ import Footer from "./Footer.vue";
 import FormEntry from "./FormEntry.vue";
 import FormVue from "./FormVue.vue";
 import Header from "./Header.vue";
-import routes from "../data/routes";
 import stateManagement from "../stateManagement";
 
 export default {
