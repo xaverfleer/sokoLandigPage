@@ -20,6 +20,7 @@
 - ✅ update /order with new plans
 - ✅ fix offers in /order
 - ✅ Desktop-friendly Angebote
+- ✅ remove registers, add borders
 
 # Eva
 
