@@ -810,6 +810,22 @@ strong {
   }
 }
 
+@media screen and (min-width: 580px) {
+  .nav:not(.nav--kurs) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav:not(.nav--kurs)::before {
+    display: none;
+  }
+
+  .nav:not(.nav--kurs) .nav__entry {
+    margin: 0 10px;
+    display: block;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .offer__space {
     flex: 1 0 0;
@@ -830,22 +846,6 @@ strong {
 
   .offers__offer--group {
     margin-left: 0.5em;
-  }
-}
-
-@media screen and (min-width: 650px) {
-  .nav:not(.nav--kurs) {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .nav:not(.nav--kurs)::before {
-    display: none;
-  }
-
-  .nav:not(.nav--kurs) .nav__entry {
-    margin: 0 10px;
-    display: block;
   }
 }
 
