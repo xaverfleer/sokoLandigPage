@@ -827,17 +827,41 @@ strong {
 }
 
 @media screen and (min-width: 600px) {
+  .offer-selector__button {
+    border-width: 3px 3px 0 3px;
+    flex: 1 0 0;
+  }
+
+  .offer-selector__button--alone {
+    margin-right: 0.5em;
+  }
+
+  .offer-selector__button--group {
+    margin-left: 0.5em;
+  }
+
   .offer__space {
     flex: 1 0 0;
   }
 
   .offers {
     display: flex;
+    border: none;
+    padding: 0;
+  }
+
+  .offers-wrapper {
+    box-shadow: none;
   }
 
   .offers__offer {
+    border: 3px solid #966b40;
+    border-radius: 0 0 5px 5px;
+    border-width: 0 3px 3px 3px;
     display: flex;
+    flex: 1 0 0;
     flex-direction: column;
+    padding: 1em;
   }
 
   .offers__offer--alone {
