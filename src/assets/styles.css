@@ -188,6 +188,11 @@ textarea {
   text-align: center;
 }
 
+.checklist {
+  padding-inline: 1em;
+  padding-inline: clamp(1em, 7vw, 3em);
+}
+
 .checklist__item {
   display: flex;
   align-items: center;
@@ -200,11 +205,18 @@ textarea {
   content: " ";
   background-image: url(imgs/check-24px.svg);
   background-repeat: no-repeat;
-  margin: 0 1em 0 2em;
+}
+
+.checklist__item--kursblock-1::before,
+.checklist__item--kursblock-2::before,
+.checklist__item--kursblock-3::before,
+.checklist__item--kursblock-4::before,
+.checklist__item--kursblock-5::before {
+  display: none;
 }
 
 .checklist__text {
-  margin-right: 3em;
+  margin: 0 1em;
 }
 
 .date {
