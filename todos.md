@@ -1,10 +1,26 @@
-- Piktogramme in Angebote
-- entscheitungsfrage in Angebote
-- Piktogramme links und rechts in Inhalte
-- besseres Menu in /kurs
-- Register for second half of first block
-- streamline font sizes
+## todos
 
+- schema.org
+- blog
+  - infrastructure with netlifycms
+  - comments
+  - email subscription to updates
+  - blog main page
+  - upcoming topics
+- forum
+  - check for pre build solutions
+  - anmelden
+  - add comment
+  - load comments from fauna.com
+
+## maybe sommeday
+
+- streamline font sizes
+- besseres Menu in /kurs
+
+## done/won't do
+
+- Register for second half of first block
 - move google site verification to Netlify
 - ✅ remove margin of body
 - ✅ add video to header|emotion|button
@@ -21,7 +37,14 @@
 - ✅ fix offers in /order
 - ✅ Desktop-friendly Angebote
 - ✅ remove registers, add borders
+- ✅ Piktogramme in Angebote
+- ✅ Piktogramme links und rechts in Inhalte
+- ✅ funnel strategy
+  - 00: read a blog
+  - 01: subscribe for updates
+  - 02: share a link
+  - 03: book course
 
 # Eva
 
-- write copy for /order
+- entscheidungsfrage in Angebote <- ok ohne?
