@@ -1,0 +1,34 @@
+- Mann hilf nicht erziehung
+  - keine gemeinsame Meinung
+- weine nicht baby
+- du darfst
+  - weinen
+  - wütend sein
+- starke gefühle
+- gemeinsame Linie eltern
+- kind gehorcht nicht
+- Wie oft muss ich nein sagen
+- ja zum wunsch, nein zur handlung
+- baby schreien lassen
+- erziehung baby, was ist wichtig
+- ist eryiehung wichtig
+- was ist eryiehung
+- eryiehungsmuster
+- baby im frust begleiten
+- ist erziehung nötig
+- kinder streiten
+- baby trötzelt
+- wann wird schreien besser
+- trotzphase wann besser
+- frustrationstoleranz
+- beziehung statt erziehung
+- baby schreit
+- baby treibt mich in Wahnsinn
+- ideen, was unternehmen mit meinem baby
+- baby im trotz verstehen
+- unerzogen
+
+- konsequenzen
+- grenzen setzen
+- Baby manipuliert
+- körperkontakt
