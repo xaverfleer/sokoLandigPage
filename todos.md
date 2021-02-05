@@ -7,6 +7,7 @@
   - email subscription to updates
   - blog main page
   - upcoming topics
+- Eva vermarkten as proposed by Tim Ferris
 - forum
   - check for pre build solutions
   - anmelden
