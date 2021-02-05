@@ -27,7 +27,31 @@
 - ideen, was unternehmen mit meinem baby
 - baby im trotz verstehen
 - unerzogen
-
+- 7x no
+- write posts about authors for networking
+- 10 blogs you should know
+- check what alfie kohn Blogs about
+- Braucht mein Baby grenzen?
+- Wann soll ich nein sagen
+- Können Babys manipulieren?
+- Wann beginnt Erziehung bei meinem Bab
+- Darf ich mein Kind schreien lasse
+- Was ist wichtig bei der Erziehung des Babys?
+- Ist erziehung wichtig?
+- Was gehört zu Erziehung?
+- Ist erziehung nötig?
+- Wie begleite ich mein Kind im Frust.
+- Wie begleite ich streitende Kinder
+- Was ist wichtig in der Erziehung?
+- Ist Erziehung Manipulation
+- Mein Baby manipuliert mich!
+- Ist Manipulation immer schlecht?
+- Wann wird schreien beim Baby besser?
+- Wie Frust beim Baby begleiten?
+- Wie entwickelt mein Baby frustrationstoleranz?
+- Was ist so\* kommunizieren?
+- grenzen
+- konsequent
 - konsequenzen
 - grenzen setzen
 - Baby manipuliert
