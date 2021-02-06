@@ -2,7 +2,8 @@
 
 - move to gridsome
   - fix index.bundle.js
-- clean up
+  - clean up
+- fix margin around gdpr
 - blog
   - infrastructure with netlifycms
   - comments
