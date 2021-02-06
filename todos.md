@@ -1,12 +1,12 @@
 ## todos
 
-- schema.org
 - blog
   - infrastructure with netlifycms
   - comments
   - email subscription to updates
   - blog main page
   - upcoming topics
+- schema.org
 - Eva vermarkten as proposed by Tim Ferris
 - forum
   - check for pre build solutions
