@@ -1,6 +1,7 @@
 ## todos
 
 - move to gridsome
+  - fix index.bundle.js
 - clean up
 - blog
   - infrastructure with netlifycms
