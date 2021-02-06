@@ -4,8 +4,8 @@ const VueLoaderPlugin = require("vue-loader/lib/plugin");
 
 module.exports = {
   entry: {
-    index: "./src/index.js",
-    kurs: "./src/kurs.js",
+    index: "./src-legacy/index.js",
+    kurs: "./src-legacy/kurs.js",
   },
   output: {
     filename: "[name].bundle.js",

@@ -1,5 +1,7 @@
 ## todos
 
+- move to gridsome
+- clean up
 - blog
   - infrastructure with netlifycms
   - comments
