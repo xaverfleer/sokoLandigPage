@@ -4,8 +4,7 @@
   "description": "This is the landing page for SOKo - Subject Oriented Communications.",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build:gridsome && npm run build:client && npm run build:lambda",
-    "build:client": "webpack --config webpack.prod.js",
+    "build": "npm run build:gridsome && npm run build:lambda",
     "build:gridsome": "gridsome build",
     "build:lambda": "netlify-lambda build src-legacy/netlify-functions",
     "formatHtml": "prettyhtml src-legacy/assets/**.html",
