@@ -43,6 +43,11 @@ const appData = {
           },
           documents: [
             {
+              href: "/documents/so1-Kursübersicht.pdf",
+              text: "Kursübersicht Block 1-5 – Alle Videos auf einen Blick ",
+              type: "roadmap",
+            },
+            {
               href: "/documents/so1-Fahrplan.pdf",
               text: "Fahrplan Kursblock 1",
               type: "roadmap",
