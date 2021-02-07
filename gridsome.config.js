@@ -1,5 +1,5 @@
 module.exports = {
-  siteName: "Gridsome",
+  siteName: "so* kommunizieren",
   plugins: [
     {
       use: "@gridsome/source-filesystem",
@@ -9,7 +9,6 @@ module.exports = {
       },
     },
   ],
-
   templates: {
     Post: [
       {
@@ -18,7 +17,7 @@ module.exports = {
       },
     ],
   },
-
+  titleTemplate: "%s | so* kommunizieren",
   transformers: {
     remark: {
       externalLinksTarget: "_blank",
