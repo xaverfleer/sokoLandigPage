@@ -53,11 +53,6 @@ const appData = {
               type: "practice",
             },
             {
-              href: "/documents/so1-Uebungsdossier-Loesungen.pdf",
-              text: "Musterlösungen zum Übungsdossier Kursblock 1",
-              type: "practice",
-            },
-            {
               href: "/documents/so1-Zusammenfassung.pdf",
               text: "Zusammenfassung Kursblock 1",
               type: "summary",
