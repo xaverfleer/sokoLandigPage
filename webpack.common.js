@@ -4,7 +4,7 @@ const path = require("path");
 module.exports = {
   entry: {
     index: "./src-legacy/index.js",
-    kurs: "./src-legacy/kurs.js",
+    // kurs: "./src-legacy/kurs.js",
   },
   output: {
     filename: "[name].bundle.js",

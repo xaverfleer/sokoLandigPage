@@ -15,7 +15,7 @@ import Logout from "./components/Logout.vue";
 import OrderAlone from "./components/OrderAlone.vue";
 import OrderGroup from "./components/OrderGroup.vue";
 import PasswordLinkSent from "./components/PasswordLinkSent.vue";
-import PageNotFound from "./components/PageNotFound.vue";
+// import PageNotFound from "./components/PageNotFound.vue";
 import PrivacyPolicy from "./components/PrivacyPolicy.vue";
 import Register from "./components/Register.vue";
 import RegisterMeeting from "./components/RegisterMeeting.vue";
@@ -44,7 +44,7 @@ export default [
   { path: "/order", component: OrderAlone },
   { path: "/order-group", component: OrderGroup },
   { path: "/password-link-sent", component: PasswordLinkSent },
-  { path: "/page-not-found", component: PageNotFound },
+  // { path: "/page-not-found", component: PageNotFound },
   { path: "/privacy-policy", component: PrivacyPolicy },
   { path: "/register", component: Register },
   { path: "/register-meeting", component: RegisterMeeting },
@@ -54,12 +54,12 @@ export default [
   { path: "/reset-password", component: ResetPassword },
   { path: "/set-initial-password", component: SetInitialPassword },
   { path: "/upgraded-account", component: UpgradedAccount },
-  { path: "/", redirect: "course/block-1" },
+  // { path: "/", redirect: "course/block-1" },
   { path: "/kursblock-1", redirect: "course/block-1" },
   { path: "/kursblock-2", redirect: "course/block-2" },
   { path: "/kursblock-3", redirect: "course/block-3" },
   { path: "/kursblock-4", redirect: "course/block-4" },
   { path: "/kursblock-5", redirect: "course/block-5" },
   { path: "/kursblock-6", redirect: "course/block-6" },
-  { path: "*", redirect: "page-not-found" },
+  // { path: "*", redirect: "page-not-found" },
 ];

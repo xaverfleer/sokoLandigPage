@@ -53,6 +53,8 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.4",
     "@sendgrid/mail": "^6.5.5",
     "@vimeo/player": "^2.15.0",
     "crypto": "^1.0.1",

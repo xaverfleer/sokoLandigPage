@@ -1,8 +1,16 @@
 ## todos
 
 - move to gridsome
-  - fix index.bundle.js
-  - clean up
+  - add blog
+    - add layout
+    - render blog from markdown
+    - add /blog
+    - add netlifyCMS
+    - add author
+    - add tags pages
+  - ✅ fix index.bundle.js
+  - ❌ clean up
+  - make the move
 - fix margin around gdpr
 - blog
   - infrastructure with netlifycms
