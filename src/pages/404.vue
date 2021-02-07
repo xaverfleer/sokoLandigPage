@@ -6,7 +6,7 @@
           <img
             alt="Growing tree"
             class="header__logo"
-            src="../assets/imgs/logo.png"
+            src="/imgs/logo.png"
             title="Zur Startseite"
           />
         </a>
