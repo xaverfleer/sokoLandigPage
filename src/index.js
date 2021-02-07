@@ -21,8 +21,8 @@ const learningMode = {
     group: document.getElementById("learn-button--in-group"),
   },
   content: {
-    alone: document.getElementById("learn-content--alone"),
-    group: document.getElementById("learn-content--in-group"),
+    alone: document.querySelector(".offers__offer--alone"),
+    group: document.querySelector(".offers__offer--group"),
   },
 };
 
@@ -152,15 +152,15 @@ headerPlayVideo.addEventListener("click", openModal);
 modalElems.close.addEventListener("click", closeModal);
 
 learningMode.buttons.alone.addEventListener("click", () => {
-  learningMode.buttons.group.classList.remove("offer-selector__button--active");
   learningMode.buttons.alone.classList.add("offer-selector__button--active");
-  learningMode.content.alone.style.setProperty("display", "block");
-  learningMode.content.group.style.setProperty("display", "none");
+  learningMode.buttons.group.classList.remove("offer-selector__button--active");
+  learningMode.content.alone.classList.add("offers__offer--active");
+  learningMode.content.group.classList.remove("offers__offer--active");
 });
 
 learningMode.buttons.group.addEventListener("click", () => {
   learningMode.buttons.alone.classList.remove("offer-selector__button--active");
   learningMode.buttons.group.classList.add("offer-selector__button--active");
-  learningMode.content.alone.style.setProperty("display", "none");
-  learningMode.content.group.style.setProperty("display", "block");
+  learningMode.content.alone.classList.remove("offers__offer--active");
+  learningMode.content.group.classList.add("offers__offer--active");
 });

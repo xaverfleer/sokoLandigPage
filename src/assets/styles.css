@@ -77,13 +77,10 @@ textarea {
 }
 
 .booking-offer {
-  background-color: #ffffff;
   background-color: #f6ede2;
   border-radius: 5px;
-  box-shadow: 5px 5px 2px #966b40;
   display: flex;
   flex-direction: column;
-  margin: 2em 0.5em 2em;
   padding-bottom: 0.5em;
   position: relative;
   text-align: center;
@@ -109,24 +106,14 @@ textarea {
 }
 
 .booking-offer__title {
-  height: 3em;
+  background-color: #e5cdad;
   border-radius: 5px 5px 0 0;
-
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-
   display: flex;
   flex-direction: column;
+  height: 3em;
   justify-content: center;
-}
-
-.booking-offer__title--2ndary {
-  background-color: #e5cdad;
-}
-
-.booking-offer__title--primary {
-  background-color: #966b40;
-  color: #ffffff;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .button {
@@ -201,6 +188,11 @@ textarea {
   text-align: center;
 }
 
+.checklist {
+  padding-inline: 1em;
+  padding-inline: clamp(1em, 7vw, 3em);
+}
+
 .checklist__item {
   display: flex;
   align-items: center;
@@ -213,11 +205,18 @@ textarea {
   content: " ";
   background-image: url(imgs/check-24px.svg);
   background-repeat: no-repeat;
-  margin: 0 1em 0 2em;
+}
+
+.checklist__item--kursblock-1::before,
+.checklist__item--kursblock-2::before,
+.checklist__item--kursblock-3::before,
+.checklist__item--kursblock-4::before,
+.checklist__item--kursblock-5::before {
+  display: none;
 }
 
 .checklist__text {
-  margin-right: 3em;
+  margin: 0 1em;
 }
 
 .date {
@@ -636,10 +635,21 @@ textarea {
 
 .offers {
   border: solid #966b40;
-  box-shadow: 5px 5px 2px #966b40;
-  border-radius: 0 0 5px 5px;
   border-width: 0 3px 3px 3px;
   padding: 2em 1em 1em;
+}
+
+.offers-wrapper {
+  box-shadow: 5px 5px 2px #966b40;
+  border-radius: 0 0 5px 5px;
+}
+
+.offers__offer {
+  display: none;
+}
+
+.offers__offer--active {
+  display: block;
 }
 
 .page--modal-is-open {
@@ -812,13 +822,7 @@ strong {
   }
 }
 
-@media screen and (min-width: 600px) {
-  .booking-offers {
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 580px) {
   .nav:not(.nav--kurs) {
     flex-direction: row;
     align-items: center;
@@ -831,6 +835,53 @@ strong {
   .nav:not(.nav--kurs) .nav__entry {
     margin: 0 10px;
     display: block;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .offer-selector__button {
+    border-width: 3px 3px 0 3px;
+    flex: 1 0 0;
+  }
+
+  .offer-selector__button--alone {
+    margin-right: 0.5em;
+  }
+
+  .offer-selector__button--group {
+    margin-left: 0.5em;
+  }
+
+  .offer__space {
+    flex: 1 0 0;
+  }
+
+  .offers {
+    display: flex;
+    border: none;
+    padding: 0;
+  }
+
+  .offers-wrapper {
+    box-shadow: none;
+  }
+
+  .offers__offer {
+    border: 3px solid #966b40;
+    border-radius: 0 0 5px 5px;
+    border-width: 0 3px 3px 3px;
+    display: flex;
+    flex: 1 0 0;
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  .offers__offer--alone {
+    margin-right: 0.5em;
+  }
+
+  .offers__offer--group {
+    margin-left: 0.5em;
   }
 }
 

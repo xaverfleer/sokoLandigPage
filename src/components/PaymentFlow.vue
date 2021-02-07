@@ -1,19 +1,19 @@
 <template>
   <div class="order-flow">
-    <h2>Einkaufswagen</h2>
+    <h3>Einkaufswagen</h3>
     <div class="form-aligned shopping-cart">
       <p class="shopping-cart__label">Im Einkaufswagen:</p>
-      <p>1x Early-Bird-Packet: {{ price }}&nbsp;CHF{{ discountMessage }}</p>
+      <p>1x {{ offer.name }} – CHF {{ price }} {{ discountMessage }}</p>
     </div>
     <div class="step step--promo-code">
-      <h2>Rabatt</h2>
+      <h3>Rabatt</h3>
       <div class="promo-code">
         <FormVue :formData="promoCodeForm" />
         <div class="form-aligned">{{ discountMessageShort }}</div>
       </div>
     </div>
     <div class="step step--recipient">
-      <h2>Persönliche Angaben</h2>
+      <h3>Persönliche Angaben</h3>
       <form class="form" @submit.prevent="handleSubmit">
         <FormEntry
           v-for="field in formFields"
@@ -38,7 +38,6 @@ import Footer from "./Footer.vue";
 import FormEntry from "./FormEntry.vue";
 import FormVue from "./FormVue.vue";
 import Header from "./Header.vue";
-import routes from "../data/routes";
 import stateManagement from "../stateManagement";
 
 export default {
@@ -60,7 +59,7 @@ export default {
         : "";
     },
     price() {
-      const exact = 180 * (1 - this.discount);
+      const exact = this.offer.price * (1 - this.discount);
       return Math.floor(exact / 5) * 5;
     },
     showPaypal() {
@@ -69,9 +68,6 @@ export default {
     stringifiedData() {
       return JSON.stringify(this.compactData);
     },
-  },
-  created() {
-    document.title = `Early-Bird buchen | so* kommunizieren`;
   },
   data() {
     return {
@@ -90,7 +86,7 @@ export default {
       promoCode: undefined,
       promoCodeForm: {
         fields: [
-          { ...this.$root.appData.formEntries.promoCode, value: "EARLYBIRD80" },
+          { ...this.$root.appData.formEntries.promoCode, value: "FEBRUAR50" },
         ],
         goal: "Verifizieren",
         layout: "small",
@@ -176,8 +172,10 @@ export default {
               ],
             });
           },
-          onApprove: () => {
-            vueThis.handlePaymentSuccess();
+          onApprove: (data, actions) => {
+            return actions.order.capture().then(function(details) {
+              vueThis.handlePaymentSuccess();
+            });
           },
         })
         .render(".paypal-button-container");
@@ -203,5 +201,6 @@ export default {
       }
     },
   },
+  props: ["offer"],
 };
 </script>

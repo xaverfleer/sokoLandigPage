@@ -2052,6 +2052,18 @@ const appData = {
     },
   },
   formEntries,
+  offers: {
+    single: {
+      name: "Freier Onlinekurs",
+      price: 195,
+      title: "Freier Onlinekurs – 50% Rabatt im Februar",
+    },
+    group: {
+      name: "Geführter Gruppenkurs",
+      price: 295,
+      title: "Geführter Gruppenkurs – 50% Rabatt im Februar",
+    },
+  },
   standardNavRoutes: {
     kurs: { ...routes.kurs, isPrimary: true },
     landingPage: routes.landingPage,
