@@ -44,7 +44,7 @@ const appData = {
           documents: [
             {
               href: "/documents/so1-Kursübersicht.pdf",
-              text: "Kursübersicht Block 1-5 – Alle Videos auf einen Blick ",
+              text: "Kursübersicht Block 1 bis 5 – Alle Videos auf einen Blick ",
               type: "roadmap",
             },
             {
@@ -127,7 +127,7 @@ const appData = {
         section14: {
           id: 3,
           title: {
-            main: "Gleichwürdigkeit",
+            main: "Das gleichwürdige Subjekt",
             videoName: "(Video 1.3, überarbeitet)",
           },
           video: { ref: "https://player.vimeo.com/video/502594256" },
@@ -183,7 +183,7 @@ const appData = {
         section15: {
           id: 4,
           title: {
-            main: "Lina weint",
+            main: "Lina weint – Drei Versionen ",
             videoName: "(Video 1.4, überarbeitet)",
           },
           video: { ref: "https://player.vimeo.com/video/507152872" },
@@ -351,7 +351,7 @@ const appData = {
         },
         section22: {
           id: 1,
-          title: { main: "Einstiegsübung", videoName: "(Video 2.1)" },
+          title: { main: "Einstiegsübung – Was machst du da?", videoName: "(Video 2.1)" },
           video: { ref: "https://player.vimeo.com/video/410677081" },
           documents: [
             {
@@ -422,7 +422,7 @@ const appData = {
         section24: {
           id: 3,
           title: {
-            main: "...wenn wir etwas am Baby tun",
+            main: "Etwas am Baby tun",
             videoName: "(Video 2.3)",
           },
           video: { ref: "https://player.vimeo.com/video/410677404" },
@@ -488,7 +488,7 @@ const appData = {
         section25: {
           id: 4,
           title: {
-            main: "...wenn wir etwas neben dem Baby tun",
+            main: "Etwas neben dem Baby tun",
             videoName: "(Video 2.4)",
           },
           video: { ref: "https://player.vimeo.com/video/410677798" },
@@ -531,7 +531,7 @@ const appData = {
         section26: {
           id: 5,
           title: {
-            main: "...wenn wir das Baby verlassen",
+            main: "Das Baby verlassen",
             videoName: "(Video 2.5)",
           },
           video: { ref: "https://player.vimeo.com/video/410678171" },
@@ -695,7 +695,7 @@ const appData = {
         section33: {
           id: 2,
           title: {
-            main: "Die Bedürfnisse des Babys sind wichtig",
+            main: "Bedürfnisse des Babys",
             videoName: "(Video 3.2)",
           },
           video: { ref: "https://player.vimeo.com/video/418114362" },
@@ -742,7 +742,7 @@ const appData = {
         section34: {
           id: 3,
           title: {
-            main: "...wenn das Baby mit leisen Signalen kommuniziert",
+            main: "Leise Babysignale",
             videoName: "(Video 3.3)",
           },
           video: { ref: "https://player.vimeo.com/video/418114671" },
@@ -821,7 +821,7 @@ const appData = {
         section35: {
           id: 4,
           title: {
-            main: "...wenn das Baby weint",
+            main: "Babyweinen",
             videoName: "(Video 3.4)",
           },
           video: { ref: "https://player.vimeo.com/video/418115074" },
@@ -876,7 +876,7 @@ const appData = {
         section36: {
           id: 5,
           title: {
-            main: "...wenn das Baby «schwierig» ist",
+            main: "Temperamente und Entwicklungssprünge",
             videoName: "(Video 3.5)",
           },
           video: { ref: "https://player.vimeo.com/video/418115509" },
@@ -1022,7 +1022,7 @@ const appData = {
         section42: {
           id: 1,
           title: {
-            main: "Mein guter Freund",
+            main: "Einstiegsübung – Mein guter Freund",
             videoName: "(Video 4.1)",
           },
           video: { ref: "https://player.vimeo.com/video/428741631" },
@@ -1117,7 +1117,7 @@ const appData = {
         section44: {
           id: 3,
           title: {
-            main: "...indem wir unser Selbstbewusstsein stärken",
+            main: "Das eigene Selbstbewusstsein stärken",
             videoName: "(Video 4.3)",
           },
           video: { ref: "https://player.vimeo.com/video/428741838" },
@@ -1203,7 +1203,7 @@ const appData = {
         section45: {
           id: 4,
           title: {
-            main: "...indem wir unseren Selbstwert stärken",
+            main: "Den eigenen Selbstwert stärken",
             videoName: "(Video 4.4)",
           },
           video: { ref: "https://player.vimeo.com/video/428741959" },
@@ -1269,7 +1269,7 @@ const appData = {
         section46: {
           id: 5,
           title: {
-            main: "...indem wir unsere Grenzen schützen",
+            main: "Die eigenen Grenzen schützen",
             videoName: "(Video 4.5)",
           },
           video: { ref: "https://player.vimeo.com/video/428742084" },
@@ -1334,7 +1334,7 @@ const appData = {
         section47: {
           id: 6,
           title: {
-            main: "...indem wir unser Selbstvertrauen stärken",
+            main: "Das eigene Selbstvertrauen stärken",
             videoName: "(Video 4.6)",
           },
           video: { ref: "https://player.vimeo.com/video/447412269" },
@@ -1496,7 +1496,7 @@ const appData = {
         section52: {
           id: 1,
           title: {
-            main: "Einstiegsübung: Lass mich doch!",
+            main: "Einstiegsübung – Lass mich doch!",
             videoName: "(Video 5.1)",
           },
           video: { ref: "https://player.vimeo.com/video/455767350" },
@@ -1511,7 +1511,7 @@ const appData = {
         section53: {
           id: 2,
           title: {
-            main: "Schritt 1 – eine anregende Umgebung schaffen",
+            main: "Schritt 1 – Die anregende Umgebung",
             videoName: "(Video 5.2)",
           },
           video: { ref: "https://player.vimeo.com/video/455767387" },
@@ -1562,7 +1562,7 @@ const appData = {
         section54: {
           id: 3,
           title: {
-            main: "Schritt 2 – eine ermöglichende Haltung einnehmen",
+            main: "Schritt 2 – Die ermöglichende Haltung",
             videoName: "(Video 5.3)",
           },
           video: { ref: "https://player.vimeo.com/video/455767701" },
@@ -1622,7 +1622,7 @@ const appData = {
         section55: {
           id: 4,
           title: {
-            main: "Schritt 3 – Zurückhaltung üben...",
+            main: "Schritt 3 – Zurückhaltung",
             videoName: "(Video 5.4)",
           },
           video: { ref: "https://player.vimeo.com/video/455767853" },
@@ -1703,7 +1703,7 @@ const appData = {
         section56: {
           id: 5,
           title: {
-            main: "...wenn dem Baby etwas nicht gelingt",
+            main: "Umgang mit Misserfolgen und Frut",
             videoName: "(Video 5.5)",
           },
           video: { ref: "https://player.vimeo.com/video/456236097" },
@@ -1770,7 +1770,7 @@ const appData = {
         section57: {
           id: 6,
           title: {
-            main: "...wenn das Baby etwas Gefährliches tut",
+            main: "Umgang mit Gefahren",
             videoName: "(Video 5.6)",
           },
           video: { ref: "https://player.vimeo.com/video/457796136" },
@@ -1837,7 +1837,7 @@ const appData = {
         section58: {
           id: 7,
           title: {
-            main: "...wenn das Baby in einen Konflikt gerät",
+            main: "Umgang mit Konfliken zwischen Kindern",
             videoName: "(Video 5.7)",
           },
           video: { ref: "https://player.vimeo.com/video/482634770" },
@@ -1905,7 +1905,7 @@ const appData = {
         section59: {
           id: 8,
           title: {
-            main: "...wenn es um das Loben geht",
+            main: "Umgang mit Erfolgen und erwünschtem Verhalten",
             videoName: "(Video 5.8)",
           },
           video: { ref: "https://player.vimeo.com/video/488157814" },
