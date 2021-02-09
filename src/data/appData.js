@@ -422,7 +422,7 @@ const appData = {
         section24: {
           id: 3,
           title: {
-            main: "Etwas am Baby tun",
+            main: "Etwas am Baby tun und Umgang mit Widerstand",
             videoName: "(Video 2.3)",
           },
           video: { ref: "https://player.vimeo.com/video/410677404" },
@@ -488,7 +488,7 @@ const appData = {
         section25: {
           id: 4,
           title: {
-            main: "Etwas neben dem Baby tun",
+            main: "Das Baby im Alltag miteibeziehen",
             videoName: "(Video 2.4)",
           },
           video: { ref: "https://player.vimeo.com/video/410677798" },
