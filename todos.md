@@ -8,7 +8,7 @@
     - ✅ impressum
     - ✅ add /login
     - ✅ add 404
-    - add order.Vue
+    - ✅ add order.Vue
     - add /account
     - add /course/block-1
     - add /course/block-2
@@ -24,7 +24,7 @@
     - add /logged-in
     - add /logged-out
     - add /logout
-    - add /order
+    - ✅ add /order
     - add /password-link-sent
     - ✅ add /register
     - add /registered
