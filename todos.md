@@ -33,6 +33,7 @@
     - ✅ add /reset-password
     - add /upgraded-account
   - check if netlify-functions work in production
+  - apply Layout to Index.vue
   - add blog
     - add layout
     - render blog from markdown
