@@ -9,13 +9,16 @@
     - ✅ add /login
     - ✅ add 404
     - ✅ add order.Vue
+    - add /kurs
+      - ✅ add /course/block-1
+      - ✅ add /course/block-2
+      - ✅ add /course/block-3
+      - ✅ add /course/block-4
+      - ✅ add /course/block-5
+      - ✅ add /course/block-6
+      - update meta info
+      - add nav entries
     - add /account
-    - add /course/block-1
-    - add /course/block-2
-    - add /course/block-3
-    - add /course/block-4
-    - add /course/block-5
-    - add /course/block-6
     - add /changed-password
     - add /defined-password
     - add /email-confirmed

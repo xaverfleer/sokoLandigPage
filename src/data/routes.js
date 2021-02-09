@@ -30,7 +30,7 @@ export default {
   },
   block06: {
     text: "Download Dokumentpakete",
-    to: "/course/block-6",
+    to: "/kurs/06-download-dokumentenpakete",
   },
   changedPassword: {
     text: "Passwort geändert",
