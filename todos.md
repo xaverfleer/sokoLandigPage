@@ -3,8 +3,9 @@
 - move to gridsome
   - ✅ add metadata
     - ✅ title attribute
-  - fix footer
+  - ✅ fix footer
   - move all pages to gridsome
+    - ✅ impressum
     - ✅ add /login
     - ✅ add 404
     - add order.Vue

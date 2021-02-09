@@ -38,9 +38,9 @@
       </div>
       <div class="footer__copyright">
         © 2020 Fleer & Fleer |
-        <a href="/impressum" rel="nofollow">
-          Impressum
-        </a>
+        <g-link :to="appData.routes.impressum.to" rel="nofollow">
+          {{ appData.routes.impressum.text }}
+        </g-link>
       </div>
     </footer>
   </div>

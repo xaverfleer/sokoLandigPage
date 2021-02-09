@@ -56,6 +56,10 @@ export default {
     text: "Zum Kurs",
     to: "/course/block-1",
   },
+  impressum: {
+    text: "Impressum",
+    to: "/impressum",
+  },
   loggedIn: {
     text: "Angemeldet",
     to: "/logged-in",
