@@ -2,7 +2,6 @@
   <Layout v-slot:default="state">
     <Block3Paid :state="state" v-if="state.isPaidAccount" />
     <Block3Free v-else />
-    a
   </Layout>
 </template>
 
