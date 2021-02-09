@@ -977,7 +977,7 @@ const appData = {
               {
                 id: 1,
                 text:
-                  "...erfährst du warum es so anstrengend sein kann, ein Baby zu begleiten und warum es wichtig, ist dass du dich selbst nicht vernachlässigst (Video 4.2)",
+                  "...erfährst du warum es so anstrengend sein kann, ein Baby zu begleiten und warum es wichtig ist, dass du dich selbst nicht vernachlässigst (Video 4.2)",
               },
               {
                 id: 2,
@@ -1703,7 +1703,7 @@ const appData = {
         section56: {
           id: 5,
           title: {
-            main: "Umgang mit Misserfolgen und Frut",
+            main: "Umgang mit Misserfolgen und Frust",
             videoName: "(Video 5.5)",
           },
           video: { ref: "https://player.vimeo.com/video/456236097" },
