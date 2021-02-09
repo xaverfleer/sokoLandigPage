@@ -1,0 +1,45 @@
+<template>
+  <Layout v-slot:default="state">
+    <Block2Paid :state="state" v-if="state.isPaidAccount" />
+    <Block2Free v-else />
+  </Layout>
+</template>
+
+<script>
+import Block2Free from "~/components/Block2Free.vue";
+import Block2Paid from "~/components/Block2Paid.vue";
+
+export default {
+  components: {
+    Block2Free,
+    Block2Paid,
+  },
+  metaInfo: {
+    meta: [
+      {
+        name: "canonical",
+        href: "https://so-kommunizieren.ch/kurs/02-mit-dem-baby-interagieren",
+      },
+      {
+        name: "description",
+        content:
+          "Von Objekt- und Gebärdesprache zu konkreten Strategien, wie du mit deinem Baby interagieren kannst.",
+      },
+      {
+        name: "google-site-verification",
+        content: "21ovtDZF6FXeZlkMfWnPWAjtK_km4OwN5yRwcJRA0O4",
+      },
+      {
+        name: "robots",
+        content: "noindex",
+      },
+    ],
+    script: [
+      {
+        src: "/amplitudeSnippet.js",
+      },
+    ],
+    title: "Mit dem Baby interagieren",
+  },
+};
+</script>
