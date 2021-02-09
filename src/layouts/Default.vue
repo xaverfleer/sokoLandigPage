@@ -26,6 +26,7 @@
     </header>
     <main>
       <slot
+        :isEarlyBird="isEarlyBird"
         :isFree="isFree"
         :isLoggedIn="isLoggedIn"
         :isPaidAccount="isPaidAccount"

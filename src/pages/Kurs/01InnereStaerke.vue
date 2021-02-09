@@ -1,6 +1,6 @@
 <template>
   <Layout v-slot:default="state">
-    <Section
+    <SectionVue
       v-for="section in appData.course.block01.sections"
       :section="section"
       :key="section.id"
@@ -11,8 +11,13 @@
         v-if="state.isFree"
       />
       <ButtonVue :info="appData.buttons.cta05Secondary" v-if="state.isFree" />
+
       <RouteVue
-        :info="appData.course.routes.block02"
+        :info="
+          state.isEarlyBird
+            ? kursToEarlyBird(appData.course.routes.block02)
+            : appData.course.routes.block02
+        "
         v-if="state.isPaidAccount"
       />
     </div>
@@ -21,13 +26,12 @@
 
 <script>
 import ButtonVue from "~/components/ButtonVue.vue";
-import FormVue from "~/components/FormVue.vue";
 import RouteVue from "~/components/RouteVue.vue";
-import Section from "~/components/Section.vue";
+import SectionVue from "~/components/SectionVue.vue";
 import appData from "~/data/appData";
 
 export default {
-  components: { ButtonVue, FormVue, RouteVue, Section },
+  components: { ButtonVue, RouteVue, SectionVue },
   computed: {
     appData() {
       return appData;
@@ -59,6 +63,14 @@ export default {
       },
     ],
     title: "Innere Stärke und Gleichwürdigkeit, Early-Birds",
+  },
+  methods: {
+    kursToEarlyBird(kursRoute) {
+      return {
+        ...kursRoute,
+        to: kursRoute.to.split("/kurs/").join("/early-bird/"),
+      };
+    },
   },
 };
 </script>

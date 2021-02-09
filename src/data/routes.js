@@ -6,7 +6,7 @@ export default {
   block01: {
     text: "Kursblock 1",
     teaser: "Innere Stärke und Gleichwürdigkeit",
-    to: "/course/block-1",
+    to: "/kurs/01-innere-staerke",
   },
   block02: {
     text: "Kursblock 2",
