@@ -1,3 +1,6 @@
+- bonding
+- vater baby beziehung
+- vater kind beziehung
 - Mann hilf nicht erziehung
   - keine gemeinsame Meinung
 - weine nicht baby
