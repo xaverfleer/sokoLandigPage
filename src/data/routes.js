@@ -26,7 +26,7 @@ export default {
   block05: {
     text: "Kursblock 5",
     teaser: "Zurückhaltung üben...",
-    to: "/course/block-5",
+    to: "/kurs/05-zurueckhaltung-ueben",
   },
   block06: {
     text: "Download Dokumentpakete",
