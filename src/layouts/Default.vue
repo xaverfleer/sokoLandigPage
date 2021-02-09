@@ -25,7 +25,11 @@
       </div>
     </header>
     <main>
-      <slot />
+      <slot
+        :isFree="isFree"
+        :isLoggedIn="isLoggedIn"
+        :isPaidAccount="isPaidAccount"
+      />
     </main>
     <footer class="footer">
       <div id="contact" class="footer__contact">

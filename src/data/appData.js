@@ -2045,13 +2045,13 @@ const appData = {
   buttons: {
     cta05Primary: {
       text: "Jetzt buchen",
-      target: "index#pricing",
+      target: "/#offer",
       logEvent: "Jetzt buchen",
       isPrimary: true,
     },
     cta05Secondary: {
       text: "Jetzt buchen",
-      target: "index#pricing",
+      target: "/#offer",
       logEvent: "Jetzt buchen",
       isPrimary: false,
     },
