@@ -28,13 +28,19 @@
       <slot />
     </main>
     <footer class="footer">
-      <div class="content has-text-centered">
-        <p>
-          Created by <a href="chadcollins.net"><strong>Chad Collins</strong></a
-          >. Powered by
-          <a href="https://gridsome.org/"><strong>Gridsome</strong></a
-          >.
-        </p>
+      <div id="contact" class="footer__contact">
+        Kontaktiere uns unter
+        <a href="mailto:kurs@so-kommunizieren.ch" rel="nofollow"
+          >kurs@so-kommunizieren.ch</a
+        >
+        oder
+        <a href="tel:+41774466505" rel="nofollow"> +41 77 44 66 505</a>.
+      </div>
+      <div class="footer__copyright">
+        © 2020 Fleer & Fleer |
+        <a href="/impressum" rel="nofollow">
+          Impressum
+        </a>
       </div>
     </footer>
   </div>
