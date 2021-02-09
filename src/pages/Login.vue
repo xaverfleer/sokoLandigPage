@@ -46,5 +46,24 @@ export default {
       };
     },
   },
+  metaInfo: {
+    meta: [
+      { name: "canonical", href: "https://so-kommunizieren.ch/login" },
+      {
+        name: "description",
+        content: "Anmelden und loslegen. Login zum Online-Videokurs.",
+      },
+      {
+        name: "google-site-verification",
+        content: "21ovtDZF6FXeZlkMfWnPWAjtK_km4OwN5yRwcJRA0O4",
+      },
+    ],
+    script: [
+      {
+        src: "/amplitudeSnippet.js",
+      },
+    ],
+    title: "Login",
+  },
 };
 </script>
