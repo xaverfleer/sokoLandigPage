@@ -50,7 +50,7 @@ export default {
   },
   landingPage: {
     text: "Zur Startseite",
-    href: "/index.html",
+    href: "/",
   },
   kurs: {
     text: "Zum Kurs",

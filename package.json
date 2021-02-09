@@ -6,11 +6,9 @@
   "scripts": {
     "build": "npm run build:gridsome && npm run build:lambda",
     "build:gridsome": "gridsome build",
-    "build:lambda": "netlify-lambda build src-legacy/netlify-functions",
-    "formatHtml": "prettyhtml src-legacy/assets/**.html",
-    "start:client": "webpack-dev-server --open --config webpack.dev.js",
-    "start:gridsome": "gridsome develop",
-    "start:lambda": "netlify-lambda serve src-legacy/netlify-functions -c webpack.server.js",
+    "build:lambda": "netlify-lambda build src/netlify-functions",
+    "start:client": "gridsome develop",
+    "start:lambda": "netlify-lambda serve src/netlify-functions -c webpack.server.js",
     "test": "tape 'src-legacy/**/*Test.js'"
   },
   "repository": {

@@ -2,6 +2,6 @@
 
 [build]
   command="npm run build"
-  functionsSource = "src-legacy/netlify-functions"
+  functionsSource = "src/netlify-functions"
   functions = "dist/netlify-functions"
   publish = "dist"

@@ -3,14 +3,14 @@
     <header class="header" id="header">
       <div class="header__emotion"></div>
       <div class="header__content">
-        <a class="header__home" href="./index.html">
+        <g-link class="header__home" to="/">
           <img
             alt="Kleiner Baum"
             class="header__logo"
             src="/imgs/logo.png"
             title="Zur Startseite"
           />
-        </a>
+        </g-link>
         <nav :class="navClasses" @click="toggleNav">
           <NavEntry
             v-for="route in appliedRoutes"
