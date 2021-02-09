@@ -41,12 +41,12 @@ export default {
     meta: [
       {
         name: "canonical",
-        href: "https://so-kommunizieren.ch/early-bird/01-innere-staerke",
+        href: "https://so-kommunizieren.ch/kurs/01-innere-staerke",
       },
       {
         name: "description",
         content:
-          "Innere Stärke und Gleichwürdigkeit. Exklusiver Zugang für Early Birds",
+          "Was wir unseren Babys wirklich wünschen und warum gehorsam nicht unser Ziel ist.",
       },
       {
         name: "google-site-verification",
@@ -62,7 +62,7 @@ export default {
         src: "/amplitudeSnippet.js",
       },
     ],
-    title: "Innere Stärke und Gleichwürdigkeit, Early-Birds",
+    title: "Innere Stärke und Gleichwürdigkeit",
   },
   methods: {
     kursToEarlyBird(kursRoute) {

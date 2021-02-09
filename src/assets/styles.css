@@ -724,6 +724,10 @@ textarea {
   background-color: #f6ede2;
 }
 
+.section.section--no-background {
+  background-color: #fff;
+}
+
 .section:nth-of-type(2n) .document {
   background-color: #ffffff;
 }
