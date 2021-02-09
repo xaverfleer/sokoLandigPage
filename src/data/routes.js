@@ -82,7 +82,7 @@ export default {
   },
   register: {
     text: "Konto erstellen",
-    to: "/register",
+    to: "/konto-erstellen",
   },
   registered: {
     text: "Konto erstellt",
