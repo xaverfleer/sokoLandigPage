@@ -16,7 +16,7 @@ export default {
   block03: {
     text: "Kursblock 3",
     teaser: "Das Baby verstehen...",
-    to: "/course/block-3",
+    to: "/kurs/03-das-baby-verstehen",
   },
   block04: {
     text: "Kursblock 4",
