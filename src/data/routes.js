@@ -21,7 +21,7 @@ export default {
   block04: {
     text: "Kursblock 4",
     teaser: "Auf mich selbst achten...",
-    to: "/course/block-4",
+    to: "/kurs/04-auf-sich-selbst-achten",
   },
   block05: {
     text: "Kursblock 5",
