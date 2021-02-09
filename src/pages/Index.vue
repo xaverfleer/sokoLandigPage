@@ -364,7 +364,7 @@
                 <div class="buttons booking-offer__buttons">
                   <a
                     class="button button--primary"
-                    href="./kurs.html#/order"
+                    href="/buchen"
                     title="Jetzt buchen"
                     >Jetzt buchen</a
                   >
