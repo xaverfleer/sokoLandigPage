@@ -1,6 +1,37 @@
 ## todos
 
 - move to gridsome
+  - ✅ add metadata
+    - ✅ title attribute
+  - fix footer
+  - move all pages to gridsome
+    - ✅ add /login
+    - ✅ add 404
+    - add order.Vue
+    - add /account
+    - add /course/block-1
+    - add /course/block-2
+    - add /course/block-3
+    - add /course/block-4
+    - add /course/block-5
+    - add /course/block-6
+    - add /changed-password
+    - add /defined-password
+    - add /email-confirmed
+    - add /email-confirm-failed
+    - add /course/block-1
+    - add /logged-in
+    - add /logged-out
+    - add /logout
+    - add /order
+    - add /password-link-sent
+    - ✅ add /register
+    - add /registered
+    - add /registered2
+    - add /registered-meeting
+    - ✅ add /reset-password
+    - add /upgraded-account
+  - check if netlify-functions work in production
   - add blog
     - add layout
     - render blog from markdown
