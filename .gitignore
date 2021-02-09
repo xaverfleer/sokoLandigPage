@@ -1,6 +1,6 @@
-node_modules
-sendgrid.env
+.env
 .netlify
 dist
-# Do not remove ".env". The file contains personal information.
-.env
+node_modules
+sendgrid.env
+src/.temp
