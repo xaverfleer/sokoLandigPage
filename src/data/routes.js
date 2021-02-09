@@ -98,7 +98,7 @@ export default {
   },
   resetPassword: {
     text: "Passwort vergessen?",
-    to: "/reset-password",
+    to: "/passwort-zuruecksetzen",
   },
   upgradedAccount: {
     text: "Account freigeschaltet",
