@@ -304,7 +304,7 @@ const appData = {
           id: 0,
           blocktitle: {
             supertitle: "Kursblock 2",
-            main: "Mit dem Baby interagieren...",
+            main: "Mit dem Baby interagieren",
           },
           checklist: {
             pretext: "In diesem Kursblock…",
@@ -627,7 +627,7 @@ const appData = {
           id: 0,
           blocktitle: {
             supertitle: "Kursblock 3",
-            main: "Das Baby verstehen...",
+            main: "Das Baby verstehen",
           },
           checklist: {
             pretext: "In diesem Kursblock…",
@@ -964,7 +964,7 @@ const appData = {
           id: 0,
           blocktitle: {
             supertitle: "Kursblock 4",
-            main: "Auf mich selbst achten...",
+            main: "Auf sich selbst achten",
           },
           checklist: {
             pretext: "In diesem Kursblock…",
@@ -1428,7 +1428,7 @@ const appData = {
           id: 0,
           blocktitle: {
             supertitle: "Kursblock 5",
-            main: "Zurückhaltung üben...",
+            main: "Zurückhaltung üben",
           },
           checklist: {
             pretext: "In diesem Kursblock...",
