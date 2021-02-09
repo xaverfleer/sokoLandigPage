@@ -1436,7 +1436,7 @@ const appData = {
               {
                 id: 0,
                 text:
-                  "...Fühlst du dich in dein spielendes und forschendes Baby ein (Video 5.1)",
+                  "...Fühlst du dich in dein spielendes und forschendes Baby ein (Video 5.1)",
               },
               {
                 id: 1,
@@ -1446,7 +1446,7 @@ const appData = {
               {
                 id: 2,
                 text:
-                  "...erfährst du, was es heisst, eine ermöglichende Haltung gegenüber den Erkundungsbestebungen des Babys einzunehmen (Video 5.3)",
+                  "...erfährst du, was es heisst, eine ermöglichende Haltung gegenüber den Erkundungsbestebungen des Babys einzunehmen (Video 5.3)",
               },
               {
                 id: 3,
@@ -1456,22 +1456,22 @@ const appData = {
               {
                 id: 4,
                 text:
-                  "...erklären wir, wie dir das ABC der Zurückhaltung weiterhilft, wenn deinem Baby etwas nochnicht gelingt (Video 5.5)",
+                  "...erklären wir, wie dir das ABC der Zurückhaltung weiterhilft, wenn deinem Baby etwas nochn icht gelingt (Video 5.5)",
               },
               {
                 id: 5,
                 text:
-                  "...zeigen wir auf, wie du dich am ABC der Zurückhaltung orientierten kannst, wenn dein Baby etwas Gefährliches tut (Video 5.6)",
+                  "...zeigen wir auf, wie du dich am ABC der Zurückhaltung orientierten kannst, wenn dein Baby etwas Gefährliches tut (Video 5.6)",
               },
               {
                 id: 6,
                 text:
-                  "...lernst du, wie du das ABC der Zurückhaltung auf Situationan anwenden kannst, in denen dein Baby in eine Konflikt gerät (Video 5.7)",
+                  "...lernst du, wie du das ABC der Zurückhaltung auf Situationan anwenden kannst, in denen dein Baby in eine Konflikt gerät (Video 5.7)",
               },
               {
                 id: 7,
                 text:
-                  "...erfährst du, wie du das ABC der Zurückhaltung nutzen kannst, wenn dein Baby ein Erfolgserlebnis hat (Video 5.8)",
+                  "...erfährst du, wie du das ABC der Zurückhaltung nutzen kannst, wenn dein Baby ein Erfolgserlebnis hat (Video 5.8)",
               },
             ],
           },
@@ -1577,7 +1577,7 @@ const appData = {
               {
                 id: 1,
                 text:
-                  "...wir die Umgebung so einrichten, dass es nur wenig Verbot und Gefahren, dafür aber viele anregende Erkundungsmöglichkeiten gibt (vgl. Video 5.2).",
+                  "...wir die Umgebung so einrichten, dass es nur wenig Verbot und Gefahren, dafür aber viele anregende Erkundungsmöglichkeiten gibt (vgl. Video 5.2).",
               },
               {
                 id: 2,
