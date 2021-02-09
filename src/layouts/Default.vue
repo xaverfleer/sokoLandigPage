@@ -1,18 +1,29 @@
 <template>
-  <div class="layout">
-    <Navbar />
-    <section class="hero is-medium is-primary">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title is-1">
-            {{ pageTitle }}
-          </h1>
-          <h2 v-if="pageSubtitle" class="subtitle">
-            {{ pageSubtitle }}
-          </h2>
-        </div>
+  <div class="page">
+    <header class="header" id="header">
+      <div class="header__emotion"></div>
+      <div class="header__content">
+        <a class="header__home" href="./index.html">
+          <img
+            alt="Kleiner Baum"
+            class="header__logo"
+            src="/imgs/logo.png"
+            title="Zur Startseite"
+          />
+        </a>
+        <nav :class="navClasses" @click="toggleNav">
+          <NavEntry
+            v-for="route in appliedRoutes"
+            :key="route.to"
+            :route="route"
+          />
+        </nav>
+        <router-link
+          :to="isLoggedIn ? appData.routes.account.to : appData.routes.login.to"
+          class="profile"
+        ></router-link>
       </div>
-    </section>
+    </header>
     <main>
       <slot />
     </main>
@@ -20,7 +31,8 @@
       <div class="content has-text-centered">
         <p>
           Created by <a href="chadcollins.net"><strong>Chad Collins</strong></a
-          >. Powered by <a href="https://gridsome.org/"><strong>Gridsome</strong></a
+          >. Powered by
+          <a href="https://gridsome.org/"><strong>Gridsome</strong></a
           >.
         </p>
       </div>
@@ -37,21 +49,51 @@ query {
 </static-query>
 
 <script>
-import Navbar from '../components/Navbar';
+import NavEntry from "~/components/NavEntry";
+import appData from "~/data/appData";
+import stateM8t from "~/stateManagement";
+
 export default {
-  props: { pageTitle: '', pageSubtitle: '', color: '' },
-  components: { Navbar },
+  components: { NavEntry },
+  computed: {
+    appData() {
+      return appData;
+    },
+    appliedRoutes() {
+      return this.routes || this.defaultRoutes;
+    },
+    defaultRoutes() {
+      return appData.standardNavRoutes;
+    },
+    hasSession() {
+      return this.state.session != null;
+    },
+    isLoggedIn() {
+      const activeUntil =
+        this.hasSession && this.state.session.ts + 30 * 24 * 60 * 60 * 1000;
+      const hasActiveSession = this.hasSession && Date.now() < activeUntil;
+      return hasActiveSession;
+    },
+    navClasses() {
+      return [
+        "nav",
+        Object.values(this.appliedRoutes).length > 3 && "nav--kurs",
+        this.isNavActive && "nav--active",
+      ];
+    },
+  },
+  data() {
+    return { isNavActive: false, state: {} };
+  },
+  methods: {
+    toggleNav() {
+      this.isNavActive = !this.isNavActive;
+    },
+  },
+  mounted() {
+    this.state = stateM8t.subscribe((state) => {
+      this.state = state;
+    });
+  },
 };
 </script>
-
-<style lang="scss">
-@import '@/assets/scss/overrides.scss';
-
-body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
-    Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
-}
-</style>

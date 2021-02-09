@@ -1,34 +1,27 @@
 <template>
-  <div class="page">
-    <header class="header">
-      <div class="header__content">
-        <a class="header__home" href="/">
-          <img
-            alt="Growing tree"
-            class="header__logo"
-            src="/imgs/logo.png"
-            title="Zur Startseite"
-          />
-        </a>
-        <nav class="nav">
-          <a
-            class="nav__entry nav__entry--primary"
-            href="./kurs.html"
-            target="_blank"
-            >Gratis starten</a
-          >
-          <a class="nav__entry nav__entry--2ndary" href="#contents">Inhalte</a>
-          <a class="nav__entry nav__entry--2ndary" href="#offer">Angebote</a>
-          <a class="nav__entry nav__entry--2ndary" href="#about-me"
-            >Über mich</a
-          >
-          <a class="nav__entry nav__entry--2ndary" href="#contact">Kontakt</a>
-        </nav>
-      </div>
-    </header>
-  </div>
+  <Layout>
+    <section class="section">
+      <h2>Seite nicht gefunden</h2>
+      <p>
+        Die gesuchte Seite ist entweder temporär nicht verfügbar, wurde an einen
+        anderen Ort verschoben oder existiert nicht mehr.
+      </p>
+      <p>
+        <router-link :to="appData.routes.block01.to">Zum Kurs</router-link>
+        oder
+        <a href="/index.html">zur Startseite.</a>
+      </p>
+    </section>
+  </Layout>
 </template>
 
 <script>
-export default {};
+import appData from "~/data/appData";
+export default {
+  computed: {
+    appData() {
+      return appData;
+    },
+  },
+};
 </script>
