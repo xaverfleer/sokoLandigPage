@@ -42,7 +42,7 @@ export default {
   },
   emailConfirmed: {
     text: "E-Mail bestätigt",
-    to: "/email-confirmed",
+    to: "/email-bestaetigt",
   },
   emailConfirmFailed: {
     text: "E-Mail Bestätigung fehlgeschlagen",
