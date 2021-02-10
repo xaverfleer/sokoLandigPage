@@ -12,7 +12,7 @@
         </div>
       </div>
       <div class="header__content">
-        <g-link class="header__home" href="/">
+        <g-link class="header__home" to="/">
           <img
             alt="Growing tree"
             class="header__logo"
@@ -23,11 +23,11 @@
           />
         </g-link>
         <nav class="nav">
-          <a
+          <g-link
             class="nav__entry nav__entry--primary"
-            href="./kurs.html"
+            to="/kurs/"
             target="_blank"
-            >Gratis starten</a
+            >Gratis starten</g-link
           >
           <a class="nav__entry nav__entry--2ndary" href="#contents">Inhalte</a>
           <a class="nav__entry nav__entry--2ndary" href="#offer">Angebote</a>
@@ -88,12 +88,12 @@
           Kommunikation mit Babys!
         </p>
         <div class="buttons">
-          <a
+          <g-link
             class="button button--primary"
-            href="./kurs.html"
+            to="/kurs/"
             target="_blank"
             title="Gratis starten"
-            >Gratis starten</a
+            >Gratis starten</g-link
           >
           <a class="button button--2ndary cta05" href="#contents" title="Inhalt"
             >Mehr erfahren</a
@@ -362,11 +362,11 @@
                   Kursstart jederzeit möchlich
                 </div>
                 <div class="buttons booking-offer__buttons">
-                  <a
+                  <g-link
                     class="button button--primary"
-                    href="/buchen"
+                    to="/buchen/"
                     title="Jetzt buchen"
-                    >Jetzt buchen</a
+                    >Jetzt buchen</g-link
                   >
                 </div>
               </div>
@@ -438,11 +438,11 @@
                   Noch 7 Plätze verfügbar
                 </div>
                 <div class="buttons booking-offer__buttons">
-                  <a
+                  <g-link
                     class="button button--primary"
-                    href="./kurs.html#/order-group"
+                    to="/gruppenkurs-buchen/"
                     title="Jetzt buchen"
-                    >Jetzt buchen</a
+                    >Jetzt buchen</g-link
                   >
                 </div>
               </div>
@@ -566,9 +566,9 @@
       </div>
       <div class="footer__copyright">
         © 2020 Fleer & Fleer |
-        <a href="/impressum" rel="nofollow">
+        <g-link to="/impressum/" rel="nofollow">
           Impressum
-        </a>
+        </g-link>
       </div>
     </footer>
     <div class="gdpr">
