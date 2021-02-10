@@ -1,5 +1,5 @@
 <template>
-  <Layout v-slot:default="state">
+  <Layout :routes="navRoutes" v-slot:default="state">
     <Block6Paid :state="state" v-if="state.isPaidAccount" />
     <Block6Free v-else />
   </Layout>
@@ -8,11 +8,23 @@
 <script>
 import Block6Free from "~/components/Block6Free.vue";
 import Block6Paid from "~/components/Block6Paid.vue";
+import appData from "~/data/appData";
 
 export default {
   components: {
     Block6Free,
     Block6Paid,
+  },
+  computed: {
+    isEarlyBird() {
+      return document.location.pathname.indexOf("/early-bird/") > -1;
+    },
+    navRoutes() {
+      const crs = appData.courseRoutes;
+      return this.isEarlyBird
+        ? Array.from(crs).map((cr) => this.kursToEarlyBird(cr))
+        : crs;
+    },
   },
   metaInfo: {
     meta: [
@@ -39,6 +51,14 @@ export default {
       },
     ],
     title: "Download Dokumentenpakete",
+  },
+  methods: {
+    kursToEarlyBird(courseRoute) {
+      return {
+        ...courseRoute,
+        to: courseRoute.to.split("/kurs/").join("/early-bird/"),
+      };
+    },
   },
 };
 </script>

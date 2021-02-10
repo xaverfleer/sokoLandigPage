@@ -1,5 +1,5 @@
 <template>
-  <Layout v-slot:default="state">
+  <Layout :routes="navRoutes" v-slot:default="state">
     <Block3Paid :state="state" v-if="state.isPaidAccount" />
     <Block3Free v-else />
   </Layout>
@@ -8,11 +8,23 @@
 <script>
 import Block3Free from "~/components/Block3Free.vue";
 import Block3Paid from "~/components/Block3Paid.vue";
+import appData from "~/data/appData";
 
 export default {
   components: {
     Block3Free,
     Block3Paid,
+  },
+  computed: {
+    isEarlyBird() {
+      return document.location.pathname.indexOf("/early-bird/") > -1;
+    },
+    navRoutes() {
+      const crs = appData.courseRoutes;
+      return this.isEarlyBird
+        ? Array.from(crs).map((cr) => this.kursToEarlyBird(cr))
+        : crs;
+    },
   },
   metaInfo: {
     meta: [
@@ -40,6 +52,14 @@ export default {
       },
     ],
     title: "Das Baby verstehen",
+  },
+  methods: {
+    kursToEarlyBird(courseRoute) {
+      return {
+        ...courseRoute,
+        to: courseRoute.to.split("/kurs/").join("/early-bird/"),
+      };
+    },
   },
 };
 </script>

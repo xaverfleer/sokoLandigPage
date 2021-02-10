@@ -1,5 +1,5 @@
 <template>
-  <Layout v-slot:default="state">
+  <Layout :routes="navRoutes" v-slot:default="state">
     <Block2Paid :state="state" v-if="state.isPaidAccount" />
     <Block2Free v-else />
   </Layout>
@@ -8,11 +8,23 @@
 <script>
 import Block2Free from "~/components/Block2Free.vue";
 import Block2Paid from "~/components/Block2Paid.vue";
+import appData from "~/data/appData";
 
 export default {
   components: {
     Block2Free,
     Block2Paid,
+  },
+  computed: {
+    isEarlyBird() {
+      return document.location.pathname.indexOf("/early-bird/") > -1;
+    },
+    navRoutes() {
+      const crs = appData.courseRoutes;
+      return this.isEarlyBird
+        ? Array.from(crs).map((cr) => this.kursToEarlyBird(cr))
+        : crs;
+    },
   },
   metaInfo: {
     meta: [
@@ -40,6 +52,14 @@ export default {
       },
     ],
     title: "Mit dem Baby interagieren",
+  },
+  methods: {
+    kursToEarlyBird(courseRoute) {
+      return {
+        ...courseRoute,
+        to: courseRoute.to.split("/kurs/").join("/early-bird/"),
+      };
+    },
   },
 };
 </script>

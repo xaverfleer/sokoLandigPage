@@ -1,5 +1,5 @@
 <template>
-  <Layout v-slot:default="state">
+  <Layout :routes="navRoutes" v-slot:default="state">
     <Block5Paid :state="state" v-if="state.isPaidAccount" />
     <Block5Free v-else />
   </Layout>
@@ -8,11 +8,23 @@
 <script>
 import Block5Free from "~/components/Block5Free.vue";
 import Block5Paid from "~/components/Block5Paid.vue";
+import appData from "~/data/appData";
 
 export default {
   components: {
     Block5Free,
     Block5Paid,
+  },
+  computed: {
+    isEarlyBird() {
+      return document.location.pathname.indexOf("/early-bird/") > -1;
+    },
+    navRoutes() {
+      const crs = appData.courseRoutes;
+      return this.isEarlyBird
+        ? Array.from(crs).map((cr) => this.kursToEarlyBird(cr))
+        : crs;
+    },
   },
   metaInfo: {
     meta: [
@@ -40,6 +52,14 @@ export default {
       },
     ],
     title: "Zurückhaltung üben",
+  },
+  methods: {
+    kursToEarlyBird(courseRoute) {
+      return {
+        ...courseRoute,
+        to: courseRoute.to.split("/kurs/").join("/early-bird/"),
+      };
+    },
   },
 };
 </script>

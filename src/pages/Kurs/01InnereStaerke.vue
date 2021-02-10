@@ -1,5 +1,5 @@
 <template>
-  <Layout v-slot:default="state">
+  <Layout :routes="navRoutes" v-slot:default="state">
     <SectionVue
       v-for="section in appData.course.block01.sections"
       :section="section"
@@ -36,6 +36,15 @@ export default {
     appData() {
       return appData;
     },
+    isEarlyBird() {
+      return document.location.pathname.indexOf("/early-bird/") > -1;
+    },
+    navRoutes() {
+      const crs = this.appData.courseRoutes;
+      return this.isEarlyBird
+        ? Array.from(crs).map((cr) => this.kursToEarlyBird(cr))
+        : crs;
+    },
   },
   metaInfo: {
     meta: [
@@ -52,6 +61,10 @@ export default {
         name: "google-site-verification",
         content: "21ovtDZF6FXeZlkMfWnPWAjtK_km4OwN5yRwcJRA0O4",
       },
+      {
+        name: "robots",
+        content: "noindex",
+      },
     ],
     script: [
       {
@@ -61,10 +74,10 @@ export default {
     title: "Innere Stärke und Gleichwürdigkeit",
   },
   methods: {
-    kursToEarlyBird(kursRoute) {
+    kursToEarlyBird(courseRoute) {
       return {
-        ...kursRoute,
-        to: kursRoute.to.split("/kurs/").join("/early-bird/"),
+        ...courseRoute,
+        to: courseRoute.to.split("/kurs/").join("/early-bird/"),
       };
     },
   },
