@@ -64,6 +64,8 @@ import NavEntry from "~/components/NavEntry";
 import appData from "~/data/appData";
 import stateM8t from "~/stateManagement";
 
+import { isEarlyBird } from "~/helpers";
+
 export default {
   components: { NavEntry },
   computed: {
@@ -80,7 +82,7 @@ export default {
       return this.state.session != null;
     },
     isEarlyBird() {
-      return document.location.pathname.indexOf("early-bird") > -1;
+      return isEarlyBird(this);
     },
     isFree() {
       return !this.isPaidAccount;

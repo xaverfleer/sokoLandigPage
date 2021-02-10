@@ -9,6 +9,7 @@
 import Block3Free from "~/components/Block3Free.vue";
 import Block3Paid from "~/components/Block3Paid.vue";
 import appData from "~/data/appData";
+import { isEarlyBird } from "~/helpers";
 
 export default {
   components: {
@@ -16,12 +17,9 @@ export default {
     Block3Paid,
   },
   computed: {
-    isEarlyBird() {
-      return document.location.pathname.indexOf("/early-bird/") > -1;
-    },
     navRoutes() {
       const crs = appData.courseRoutes;
-      return this.isEarlyBird
+      return isEarlyBird(this)
         ? Array.from(crs).map((cr) => this.kursToEarlyBird(cr))
         : crs;
     },

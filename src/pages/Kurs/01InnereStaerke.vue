@@ -29,6 +29,7 @@ import ButtonVue from "~/components/ButtonVue.vue";
 import RouteVue from "~/components/RouteVue.vue";
 import SectionVue from "~/components/SectionVue.vue";
 import appData from "~/data/appData";
+import { isEarlyBird } from "~/helpers";
 
 export default {
   components: { ButtonVue, RouteVue, SectionVue },
@@ -36,12 +37,9 @@ export default {
     appData() {
       return appData;
     },
-    isEarlyBird() {
-      return document.location.pathname.indexOf("/early-bird/") > -1;
-    },
     navRoutes() {
       const crs = this.appData.courseRoutes;
-      return this.isEarlyBird
+      return isEarlyBird(this)
         ? Array.from(crs).map((cr) => this.kursToEarlyBird(cr))
         : crs;
     },
