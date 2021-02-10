@@ -16,8 +16,8 @@
       - ✅ add /course/block-4
       - ✅ add /course/block-5
       - ✅ add /course/block-6
-      - update meta info
-      - add nav entries
+      - ✅ update meta info
+      - ✅ add nav entries
     - add /account
     - add /changed-password
     - add /defined-password
