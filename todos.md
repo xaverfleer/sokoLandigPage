@@ -1,5 +1,6 @@
 ## todos
 
+- fix gridsome build
 - move to gridsome
   - ✅ add metadata
     - ✅ title attribute
