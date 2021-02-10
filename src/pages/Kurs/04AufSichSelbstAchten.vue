@@ -35,10 +35,7 @@ export default {
         content:
           "Wie du dich selber beobachten kannst und deine Grenzen schützen kannst.",
       },
-      {
-        name: "google-site-verification",
-        content: "21ovtDZF6FXeZlkMfWnPWAjtK_km4OwN5yRwcJRA0O4",
-      },
+
       {
         name: "robots",
         content: "noindex",

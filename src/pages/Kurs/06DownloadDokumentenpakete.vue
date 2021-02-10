@@ -34,10 +34,7 @@ export default {
         name: "description",
         content: "Alle Dokumente gebündelt, um sie bequem auszudrucken.",
       },
-      {
-        name: "google-site-verification",
-        content: "21ovtDZF6FXeZlkMfWnPWAjtK_km4OwN5yRwcJRA0O4",
-      },
+
       {
         name: "robots",
         content: "noindex",

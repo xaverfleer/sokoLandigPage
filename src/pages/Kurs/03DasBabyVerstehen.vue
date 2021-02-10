@@ -35,10 +35,7 @@ export default {
         content:
           "Vom Perspektivenwechsel zu leisen Signalen, die zeiten, was dein Baby beschäftigt.",
       },
-      {
-        name: "google-site-verification",
-        content: "21ovtDZF6FXeZlkMfWnPWAjtK_km4OwN5yRwcJRA0O4",
-      },
+
       {
         name: "robots",
         content: "noindex",

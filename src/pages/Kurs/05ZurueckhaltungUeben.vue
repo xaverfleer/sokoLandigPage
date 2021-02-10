@@ -35,10 +35,7 @@ export default {
         content:
           "Wie und warum du dein Baby unterstützen kannst, ohne unnötig einzugreifen",
       },
-      {
-        name: "google-site-verification",
-        content: "21ovtDZF6FXeZlkMfWnPWAjtK_km4OwN5yRwcJRA0O4",
-      },
+
       {
         name: "robots",
         content: "noindex",

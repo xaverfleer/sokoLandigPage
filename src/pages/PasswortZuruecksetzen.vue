@@ -37,10 +37,6 @@ export default {
         name: "description",
         content: "Passwort vergessen? Hier zurücksetzen und einloggen.",
       },
-      {
-        name: "google-site-verification",
-        content: "21ovtDZF6FXeZlkMfWnPWAjtK_km4OwN5yRwcJRA0O4",
-      },
     ],
     script: [
       {

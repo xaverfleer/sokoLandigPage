@@ -55,10 +55,7 @@ export default {
         content:
           "Was wir unseren Babys wirklich wünschen und warum gehorsam nicht unser Ziel ist.",
       },
-      {
-        name: "google-site-verification",
-        content: "21ovtDZF6FXeZlkMfWnPWAjtK_km4OwN5yRwcJRA0O4",
-      },
+
       {
         name: "robots",
         content: "noindex",

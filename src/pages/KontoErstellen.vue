@@ -44,10 +44,6 @@ export default {
         content:
           "Neues Konto erstellen und loslegen. Registrierung zum Online-Videokurs.",
       },
-      {
-        name: "google-site-verification",
-        content: "21ovtDZF6FXeZlkMfWnPWAjtK_km4OwN5yRwcJRA0O4",
-      },
     ],
     script: [
       {

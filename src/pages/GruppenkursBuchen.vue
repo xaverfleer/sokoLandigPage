@@ -32,10 +32,6 @@ export default {
         content:
           "Geleiteten, strukturierten Onlinekurs buchen und unbeschränkten Zugriff sichern.",
       },
-      {
-        name: "google-site-verification",
-        content: "21ovtDZF6FXeZlkMfWnPWAjtK_km4OwN5yRwcJRA0O4",
-      },
     ],
     script: [
       {

@@ -35,10 +35,7 @@ export default {
         content:
           "Von Objekt- und Gebärdesprache zu konkreten Strategien, wie du mit deinem Baby interagieren kannst.",
       },
-      {
-        name: "google-site-verification",
-        content: "21ovtDZF6FXeZlkMfWnPWAjtK_km4OwN5yRwcJRA0O4",
-      },
+
       {
         name: "robots",
         content: "noindex",

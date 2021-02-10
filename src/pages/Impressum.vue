@@ -33,10 +33,6 @@ export default {
     meta: [
       { name: "canonical", href: "https://so-kommunizieren.ch/impressum" },
       { name: "description", content: "So findest du uns." },
-      {
-        name: "google-site-verification",
-        content: "21ovtDZF6FXeZlkMfWnPWAjtK_km4OwN5yRwcJRA0O4",
-      },
     ],
     script: [
       {
