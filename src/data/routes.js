@@ -34,11 +34,11 @@ export default {
   },
   changedPassword: {
     text: "Passwort geändert",
-    to: "/changed-password",
+    to: "/passwort-geaendert/",
   },
   definedPassword: {
     text: "Passwort definiert",
-    to: "/defined-password",
+    to: "/passwort-definiert",
   },
   emailConfirmed: {
     text: "E-Mail bestätigt",
