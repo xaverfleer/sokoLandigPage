@@ -24,7 +24,7 @@
     - add /defined-password
     - add /email-confirmed
     - add /email-confirm-failed
-    - add /course/block-1
+    - ✅ add /course/block-1
     - add /logged-in
     - add /logged-out
     - add /logout
