@@ -74,7 +74,7 @@ export default {
   },
   logout: {
     text: "Abmelden",
-    to: "/logout",
+    to: "/abmelden",
   },
   order: {
     text: "Kurs buchen",
