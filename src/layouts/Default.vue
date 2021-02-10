@@ -119,5 +119,6 @@ export default {
       this.state = state;
     });
   },
+  props: ["routes"],
 };
 </script>

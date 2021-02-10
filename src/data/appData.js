@@ -2073,6 +2073,14 @@ const appData = {
     kurs: { ...routes.kurs, isPrimary: true },
     landingPage: routes.landingPage,
   },
+  courseRoutes: [
+    routes.block01,
+    routes.block02,
+    routes.block03,
+    routes.block04,
+    routes.block05,
+    routes.block06,
+  ],
   routes,
 };
 
