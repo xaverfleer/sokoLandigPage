@@ -7,7 +7,7 @@ import routes from "./vueRoutes";
 
 function logError(payload) {
   const xhr = new XMLHttpRequest();
-  xhr.open("PUT", `.netlify/functions/logError`);
+  xhr.open("PUT", `/.netlify/functions/logError`);
   xhr.send(JSON.stringify(payload));
 }
 

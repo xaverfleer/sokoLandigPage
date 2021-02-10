@@ -706,7 +706,7 @@ function onMounted() {
 
   function submitForm() {
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", `.netlify/functions/sendMessage`);
+    xhr.open("POST", `/.netlify/functions/sendMessage`);
     xhr.send(getFormData());
     xhr.addEventListener("load", () => {
       switch (xhr.status) {

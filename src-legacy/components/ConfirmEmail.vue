@@ -21,7 +21,7 @@ export default {
     document.title = `Konto bestätigen | so* kommunizieren`;
 
     const xhr = new XMLHttpRequest();
-    xhr.open("PUT", `.netlify/functions/confirmEmail${location.search}`);
+    xhr.open("PUT", `/.netlify/functions/confirmEmail${location.search}`);
     xhr.send();
 
     xhr.addEventListener("load", () => {

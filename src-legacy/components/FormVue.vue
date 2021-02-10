@@ -89,7 +89,7 @@ export default {
       const xhr = new XMLHttpRequest();
       xhr.open(
         "POST",
-        `.netlify/functions/${this.formData.submitLambdaFunction}`
+        `/.netlify/functions/${this.formData.submitLambdaFunction}`
       );
       xhr.send(this.stringifiedData);
       xhr.addEventListener("load", () => {

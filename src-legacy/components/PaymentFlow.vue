@@ -105,7 +105,7 @@ export default {
   methods: {
     createPaidUser() {
       const xhr = new XMLHttpRequest();
-      xhr.open("POST", `.netlify/functions/registerPaidUser`);
+      xhr.open("POST", `/.netlify/functions/registerPaidUser`);
       xhr.send(this.stringifiedData);
       xhr.addEventListener("load", () => {
         switch (xhr.status) {
