@@ -90,7 +90,7 @@ export default {
   },
   registered: {
     text: "Konto erstellt",
-    to: "/registered",
+    to: "/email-bestaetigen",
   },
   registered2: {
     text: "Link versended",
