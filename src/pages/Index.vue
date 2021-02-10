@@ -12,7 +12,7 @@
         </div>
       </div>
       <div class="header__content">
-        <a class="header__home" href="./index.html">
+        <g-link class="header__home" href="/">
           <img
             alt="Growing tree"
             class="header__logo"
@@ -21,7 +21,7 @@
             src="/imgs/logo.png"
             title="Zur Startseite"
           />
-        </a>
+        </g-link>
         <nav class="nav">
           <a
             class="nav__entry nav__entry--primary"
