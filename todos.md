@@ -35,6 +35,8 @@
     - add /registered-meeting
     - ✅ add /reset-password
     - add /upgraded-account
+  - fix scrolling behavior to '/#offer'
+  - check that all paths work
   - check if netlify-functions work in production
   - apply Layout to Index.vue
   - add blog
