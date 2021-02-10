@@ -49,7 +49,7 @@ export default {
   },
   metaInfo: {
     meta: [
-      { name: "canonical", href: "https://so-kommunizieren.ch/login" },
+      { name: "canonical", href: "https://so-kommunizieren.ch/login/" },
       {
         name: "description",
         content: "Anmelden und loslegen. Login zum Online-Videokurs.",

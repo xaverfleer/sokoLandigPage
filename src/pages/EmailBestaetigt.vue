@@ -18,7 +18,7 @@ export default {
     meta: [
       {
         name: "canonical",
-        href: "https://so-kommunizieren.ch/email-bestaetigt",
+        href: "https://so-kommunizieren.ch/email-bestaetigt/",
       },
       {
         name: "description",

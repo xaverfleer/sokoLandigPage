@@ -778,7 +778,7 @@ function onMounted() {
 export default {
   metaInfo: {
     meta: [
-      { name: "canonical", href: "https://so-kommunizieren.ch" },
+      { name: "canonical", href: "https://so-kommunizieren.ch/" },
       {
         name: "description",
         content:

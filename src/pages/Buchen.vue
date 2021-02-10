@@ -23,7 +23,7 @@ export default {
   },
   metaInfo: {
     meta: [
-      { name: "canonical", href: "https://so-kommunizieren.ch/buchen" },
+      { name: "canonical", href: "https://so-kommunizieren.ch/buchen/" },
       {
         name: "description",
         content: "Buchen und unbeschränkten Zugriff sichern.",

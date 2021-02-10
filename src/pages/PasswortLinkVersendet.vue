@@ -21,7 +21,7 @@ export default {
     meta: [
       {
         name: "canonical",
-        href: "https://so-kommunizieren.ch/passwort-link-versendet",
+        href: "https://so-kommunizieren.ch/passwort-link-versendet/",
       },
       {
         name: "description",

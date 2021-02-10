@@ -25,7 +25,7 @@ export default {
     meta: [
       {
         name: "canonical",
-        href: "https://so-kommunizieren.ch/gruppenkurs-buchen",
+        href: "https://so-kommunizieren.ch/gruppenkurs-buchen/",
       },
       {
         name: "description",

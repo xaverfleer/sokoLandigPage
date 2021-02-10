@@ -48,7 +48,7 @@ export default {
     meta: [
       {
         name: "canonical",
-        href: "https://so-kommunizieren.ch/kurs/01-innere-staerke",
+        href: "https://so-kommunizieren.ch/kurs/01-innere-staerke/",
       },
       {
         name: "description",

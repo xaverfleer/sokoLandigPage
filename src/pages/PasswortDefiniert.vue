@@ -22,7 +22,7 @@ export default {
     meta: [
       {
         name: "canonical",
-        href: "https://so-kommunizieren.ch/passwort-definiert",
+        href: "https://so-kommunizieren.ch/passwort-definiert/",
       },
       {
         name: "description",

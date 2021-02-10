@@ -28,7 +28,7 @@ export default {
     meta: [
       {
         name: "canonical",
-        href: "https://so-kommunizieren.ch/kurs/06-download-dokumentenpakete",
+        href: "https://so-kommunizieren.ch/kurs/06-download-dokumentenpakete/",
       },
       {
         name: "description",

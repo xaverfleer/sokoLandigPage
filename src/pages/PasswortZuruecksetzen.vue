@@ -31,7 +31,7 @@ export default {
     meta: [
       {
         name: "canonical",
-        href: "https://so-kommunizieren.ch/passwort-zuruecksetzen",
+        href: "https://so-kommunizieren.ch/passwort-zuruecksetzen/",
       },
       {
         name: "description",

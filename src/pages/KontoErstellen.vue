@@ -37,7 +37,7 @@ export default {
     meta: [
       {
         name: "canonical",
-        href: "https://so-kommunizieren.ch/konto-erstellen",
+        href: "https://so-kommunizieren.ch/konto-erstellen/",
       },
       {
         name: "description",

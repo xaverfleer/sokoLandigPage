@@ -16,7 +16,7 @@
 export default {
   metaInfo: {
     meta: [
-      { name: "canonical", href: "https://so-kommunizieren.ch/abgemeldet" },
+      { name: "canonical", href: "https://so-kommunizieren.ch/abgemeldet/" },
       {
         name: "description",
         content: "Du bist erfolgreich abgemeldet.",

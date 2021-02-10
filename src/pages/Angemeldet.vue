@@ -16,7 +16,7 @@
 export default {
   metaInfo: {
     meta: [
-      { name: "canonical", href: "https://so-kommunizieren.ch/angemeldet" },
+      { name: "canonical", href: "https://so-kommunizieren.ch/angemeldet/" },
       {
         name: "description",
         content: "Du bist erfolgreich angemeldet.",

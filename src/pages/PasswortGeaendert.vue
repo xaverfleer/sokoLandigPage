@@ -17,7 +17,7 @@ export default {
     meta: [
       {
         name: "canonical",
-        href: "https://so-kommunizieren.ch/passwort-geaendert",
+        href: "https://so-kommunizieren.ch/passwort-geaendert/",
       },
       {
         name: "description",

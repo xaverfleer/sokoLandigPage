@@ -28,7 +28,7 @@ export default {
     meta: [
       {
         name: "canonical",
-        href: "https://so-kommunizieren.ch/kurs/04-auf-sich-selbst-achten",
+        href: "https://so-kommunizieren.ch/kurs/04-auf-sich-selbst-achten/",
       },
       {
         name: "description",

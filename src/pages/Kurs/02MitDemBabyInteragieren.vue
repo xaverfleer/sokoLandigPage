@@ -28,7 +28,7 @@ export default {
     meta: [
       {
         name: "canonical",
-        href: "https://so-kommunizieren.ch/kurs/02-mit-dem-baby-interagieren",
+        href: "https://so-kommunizieren.ch/kurs/02-mit-dem-baby-interagieren/",
       },
       {
         name: "description",

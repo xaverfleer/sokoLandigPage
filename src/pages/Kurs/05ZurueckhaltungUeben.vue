@@ -28,7 +28,7 @@ export default {
     meta: [
       {
         name: "canonical",
-        href: "https://so-kommunizieren.ch/kurs/05-zurueckhaltung-ueben",
+        href: "https://so-kommunizieren.ch/kurs/05-zurueckhaltung-ueben/",
       },
       {
         name: "description",

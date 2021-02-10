@@ -28,7 +28,7 @@ export default {
     meta: [
       {
         name: "canonical",
-        href: "https://so-kommunizieren.ch/kurs/03-das-baby-verstehen",
+        href: "https://so-kommunizieren.ch/kurs/03-das-baby-verstehen/",
       },
       {
         name: "description",
