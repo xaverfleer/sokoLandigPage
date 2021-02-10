@@ -31,10 +31,10 @@ export default {
     },
   },
   methods: {
-    kursToEarlyBird(kursRoute) {
+    kursToEarlyBird(courseRoute) {
       return {
-        ...kursRoute,
-        to: kursRoute.to.split("/kurs/").join("/early-bird/"),
+        ...courseRoute,
+        to: courseRoute.to.split("/kurs/").join("/early-bird/"),
       };
     },
   },
