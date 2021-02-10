@@ -1,0 +1,48 @@
+<template>
+  <Layout>
+    <section class="section">
+      <h2>{{ offer.title }}</h2>
+      <PaymentFlow :offer="offer" />
+    </section>
+  </Layout>
+</template>
+
+<script>
+import PaymentFlow from "~/components/PaymentFlow.vue";
+import appData from "~/data/appData";
+
+export default {
+  components: { PaymentFlow },
+  computed: {
+    appData() {
+      return appData;
+    },
+    offer() {
+      return appData.offers.group;
+    },
+  },
+  metaInfo: {
+    meta: [
+      {
+        name: "canonical",
+        href: "https://so-kommunizieren.ch/gruppenkurs-buchen",
+      },
+      {
+        name: "description",
+        content:
+          "Geleiteten, strukturierten Onlinekurs buchen und unbeschränkten Zugriff sichern.",
+      },
+      {
+        name: "google-site-verification",
+        content: "21ovtDZF6FXeZlkMfWnPWAjtK_km4OwN5yRwcJRA0O4",
+      },
+    ],
+    script: [
+      {
+        src: "/amplitudeSnippet.js",
+      },
+    ],
+    title: "Gruppenkurs buchen",
+  },
+};
+</script>
