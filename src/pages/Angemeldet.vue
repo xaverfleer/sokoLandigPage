@@ -21,6 +21,7 @@ export default {
         name: "description",
         content: "Du bist erfolgreich angemeldet.",
       },
+      { name: "robots", content: "noindex" },
     ],
     script: [
       {

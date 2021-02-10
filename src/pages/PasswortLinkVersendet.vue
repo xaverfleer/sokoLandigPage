@@ -27,6 +27,7 @@ export default {
         name: "description",
         content: "Wir haben dir den Passwortlink per E-Mail zugesendet.",
       },
+      { name: "robots", content: "noindex" },
     ],
     script: [
       {
