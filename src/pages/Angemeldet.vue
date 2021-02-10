@@ -23,7 +23,6 @@ export default {
       },
       { name: "robots", content: "noindex" },
     ],
-
     title: "Login",
   },
 };
