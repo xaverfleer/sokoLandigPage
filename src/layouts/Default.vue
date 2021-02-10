@@ -122,5 +122,10 @@ export default {
     });
   },
   props: ["routes"],
+  script: [
+    {
+      src: "/amplitudeSnippet.js",
+    },
+  ],
 };
 </script>

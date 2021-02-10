@@ -41,11 +41,6 @@ export default {
         content: "noindex",
       },
     ],
-    script: [
-      {
-        src: "/amplitudeSnippet.js",
-      },
-    ],
     title: "Das Baby verstehen",
   },
   methods: {

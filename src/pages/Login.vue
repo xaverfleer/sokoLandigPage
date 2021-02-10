@@ -55,11 +55,6 @@ export default {
         content: "Anmelden und loslegen. Login zum Online-Videokurs.",
       },
     ],
-    script: [
-      {
-        src: "/amplitudeSnippet.js",
-      },
-    ],
     title: "Login",
   },
 };

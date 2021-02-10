@@ -33,11 +33,6 @@ export default {
           "Geleiteten, strukturierten Onlinekurs buchen und unbeschränkten Zugriff sichern.",
       },
     ],
-    script: [
-      {
-        src: "/amplitudeSnippet.js",
-      },
-    ],
     title: "Gruppenkurs buchen",
   },
 };

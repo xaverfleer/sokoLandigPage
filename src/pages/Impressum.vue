@@ -34,11 +34,6 @@ export default {
       { name: "canonical", href: "https://so-kommunizieren.ch/impressum" },
       { name: "description", content: "So findest du uns." },
     ],
-    script: [
-      {
-        src: "/amplitudeSnippet.js",
-      },
-    ],
     title: "Impressum",
   },
 };

@@ -45,11 +45,6 @@ export default {
           "Neues Konto erstellen und loslegen. Registrierung zum Online-Videokurs.",
       },
     ],
-    script: [
-      {
-        src: "/amplitudeSnippet.js",
-      },
-    ],
     title: "Konto erstellen",
   },
 };

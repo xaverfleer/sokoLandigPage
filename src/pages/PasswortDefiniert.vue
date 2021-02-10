@@ -30,11 +30,6 @@ export default {
       },
       { name: "robots", content: "noindex" },
     ],
-    script: [
-      {
-        src: "/amplitudeSnippet.js",
-      },
-    ],
     title: "Passwort definiert",
   },
 };

@@ -41,11 +41,6 @@ export default {
         content: "noindex",
       },
     ],
-    script: [
-      {
-        src: "/amplitudeSnippet.js",
-      },
-    ],
     title: "Auf sich selbst achten",
   },
   methods: {

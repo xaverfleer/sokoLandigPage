@@ -34,11 +34,6 @@ export default {
       },
       { name: "robots", content: "noindex" },
     ],
-    script: [
-      {
-        src: "/amplitudeSnippet.js",
-      },
-    ],
     title: "E-Mail nicht bestätigt",
   },
 };

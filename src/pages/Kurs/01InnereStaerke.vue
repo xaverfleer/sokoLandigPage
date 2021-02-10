@@ -61,11 +61,6 @@ export default {
         content: "noindex",
       },
     ],
-    script: [
-      {
-        src: "/amplitudeSnippet.js",
-      },
-    ],
     title: "Innere Stärke und Gleichwürdigkeit",
   },
   methods: {

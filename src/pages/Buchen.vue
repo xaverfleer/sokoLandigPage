@@ -29,11 +29,6 @@ export default {
         content: "Buchen und unbeschränkten Zugriff sichern.",
       },
     ],
-    script: [
-      {
-        src: "/amplitudeSnippet.js",
-      },
-    ],
     title: "Kurs buchen",
   },
 };

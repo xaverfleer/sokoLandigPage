@@ -38,11 +38,6 @@ export default {
         content: "Passwort vergessen? Hier zurücksetzen und einloggen.",
       },
     ],
-    script: [
-      {
-        src: "/amplitudeSnippet.js",
-      },
-    ],
     title: "Passwort zurücksetzen",
   },
 };
