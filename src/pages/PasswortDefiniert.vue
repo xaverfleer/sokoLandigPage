@@ -7,6 +7,7 @@
         <g-link to="/login/">anmelden</g-link>
         und alle Inhalte ansehen.
       </p>
+      <p>
         <g-link to="/kurs/">Zum Kurs</g-link>
         oder
         <g-link href="/">zur Startseite.</g-link>
