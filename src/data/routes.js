@@ -82,7 +82,7 @@ export default {
   },
   passwordLinkSent: {
     text: "Password Link versendet",
-    to: "/password-link-sent",
+    to: "/passwort-link-versendet",
   },
   register: {
     text: "Konto erstellen",
