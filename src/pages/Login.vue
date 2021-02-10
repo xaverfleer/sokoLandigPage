@@ -14,6 +14,7 @@
 <script>
 import FormVue from "~/components/FormVue.vue";
 import appData from "~/data/appData";
+import stateManagement from "~/stateManagement";
 
 export default {
   components: { FormVue },
