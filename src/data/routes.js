@@ -94,7 +94,7 @@ export default {
   },
   registered2: {
     text: "Link versended",
-    to: "/registered2",
+    to: "/email-bestaetigt-link",
   },
   registeredMeeting: {
     text: "Anmeldung erfolgreich",
