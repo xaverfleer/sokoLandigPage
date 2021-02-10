@@ -62,7 +62,7 @@ export default {
   },
   loggedIn: {
     text: "Angemeldet",
-    to: "/logged-in",
+    to: "/angemeldet",
   },
   loggedOut: {
     text: "Abgemeldet",
