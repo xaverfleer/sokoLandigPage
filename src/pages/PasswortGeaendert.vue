@@ -30,7 +30,7 @@ export default {
         src: "/amplitudeSnippet.js",
       },
     ],
-    title: "Passwort-Link versendet",
+    title: "Passwort geändert",
   },
 };
 </script>
