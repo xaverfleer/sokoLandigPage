@@ -46,7 +46,7 @@ export default {
   },
   emailConfirmFailed: {
     text: "E-Mail Bestätigung fehlgeschlagen",
-    to: "/email-confirm-failed",
+    to: "/email-nicht-bestaetigt",
   },
   landingPage: {
     text: "Zur Startseite",
