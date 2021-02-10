@@ -7,9 +7,9 @@
         anderen Ort verschoben oder existiert nicht mehr.
       </p>
       <p>
-        <router-link :to="appData.routes.block01.to">Zum Kurs</router-link>
+        <g-link to="/kurs/">Zum Kurs</g-link>
         oder
-        <a href="/index.html">zur Startseite.</a>
+        <g-link to="/">zur Startseite.</g-link>
       </p>
     </section>
   </Layout>

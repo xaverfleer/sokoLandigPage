@@ -18,7 +18,7 @@
       </p>
       <p>
         Zurück
-        <a href="/index.html">zur Startseite</a>
+        <g-link to="/">zur Startseite</g-link>
       </p>
     </section>
   </Layout>
