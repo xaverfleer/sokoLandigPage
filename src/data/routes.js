@@ -106,6 +106,6 @@ export default {
   },
   upgradedAccount: {
     text: "Account freigeschaltet",
-    to: "/upgraded-account",
+    to: "/account-freigeschaltet",
   },
 };
