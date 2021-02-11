@@ -1,4 +1,10 @@
 /* global localStorage */
+
+const ls =
+  typeof localStorage !== "undefined"
+    ? localStorage
+    : { getItem() {}, setItem() {} };
+
 function validateState(stringState) {
   let state;
   try {
@@ -18,7 +24,7 @@ function validateState(stringState) {
 function getState() {
   const defaultState = {};
 
-  const lsState = localStorage.getItem("soko");
+  const lsState = ls.getItem("soko");
   return (validateState(lsState) && JSON.parse(lsState)) || defaultState;
 }
 
@@ -38,7 +44,7 @@ function setState(change) {
 
   const newState = change(oldState);
   if (validateState(JSON.stringify(newState))) {
-    localStorage.setItem("soko", JSON.stringify(newState));
+    ls.setItem("soko", JSON.stringify(newState));
     callSubscriptions(newState);
   }
 }
