@@ -34,6 +34,24 @@ function callSubscriptions(state) {
   subscriptions.forEach((subscriber) => subscriber(state));
 }
 
+function hasSession() {
+  const state = getState();
+  return state.session != null;
+}
+
+function isLoggedIn() {
+  const state = getState();
+  const activeUntil =
+    hasSession() && state.session.ts + 30 * 24 * 60 * 60 * 1000;
+  const hasActiveSession = hasSession() && Date.now() < activeUntil;
+  return hasActiveSession;
+}
+
+function isPaidAccount() {
+  const state = getState();
+  return (hasSession() && state.session.isPaidAccount) || false;
+}
+
 function subscribe(subscriber) {
   if (typeof subscriber === "function") subscriptions.push(subscriber);
   return getState();
@@ -49,12 +67,23 @@ function setState(change) {
   }
 }
 
-function updatePath(path) {
-  setState((oldState) => ({ ...oldState, path }));
-}
-
 function updateSession(session) {
   setState((oldState) => ({ ...oldState, session }));
 }
 
-export default { updatePath, updateSession, subscribe };
+function upgradeToPaidAccount() {
+  const state = getState();
+  if (hasSession()) {
+    const oldSession = state.session;
+    const newSession = { ...oldSession, isPaidAccount: true };
+    updateSession(newSession);
+  }
+}
+
+export default {
+  isLoggedIn,
+  isPaidAccount,
+  updateSession,
+  upgradeToPaidAccount,
+  subscribe,
+};

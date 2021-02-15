@@ -128,11 +128,7 @@ export default {
     },
     handleUserCreationSuccess(xhr) {
       if (xhr.response === "Account upgraded") {
-        if (hasSession) {
-          const oldSession = state.session;
-          const newSession = { ...oldSession, isPaidAccount: true };
-          stateManagement.updateSession(newSession);
-        }
+        stateManagement.upgradeToPaidAccount();
         this.$router.push(appData.routes.upgradedAccount.to);
       } else this.$router.push(appData.routes.registered2.to);
     },

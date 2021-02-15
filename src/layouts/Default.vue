@@ -78,9 +78,6 @@ export default {
     defaultRoutes() {
       return appData.standardNavRoutes;
     },
-    hasSession() {
-      return this.state.session != null;
-    },
     isEarlyBird() {
       return isEarlyBird(this);
     },
@@ -88,17 +85,10 @@ export default {
       return !this.isPaidAccount;
     },
     isLoggedIn() {
-      const activeUntil =
-        this.hasSession && this.state.session.ts + 30 * 24 * 60 * 60 * 1000;
-      const hasActiveSession = this.hasSession && Date.now() < activeUntil;
-      return hasActiveSession;
+      return stateM8t.isLoggedIn();
     },
     isPaidAccount() {
-      return (
-        (this.hasSession && this.state.session.isPaidAccount) ||
-        this.isEarlyBird ||
-        false
-      );
+      return stateM8t.isPaidAccount() || this.isEarlyBird;
     },
     navClasses() {
       return [
