@@ -3,6 +3,10 @@ export default {
     text: "Zum Konto",
     to: "/account",
   },
+  accountDeleted: {
+    text: "Konto gelöscht",
+    to: "/konto-geloescht",
+  },
   block01: {
     text: "Kursblock 1",
     teaser: "Innere Stärke und Gleichwürdigkeit",
