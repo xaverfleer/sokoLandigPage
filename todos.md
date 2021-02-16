@@ -10,7 +10,7 @@
     - ✅ add /login
     - ✅ add 404
     - ✅ add order.Vue
-    - add /kurs
+    - ✅ add /kurs
       - ✅ add /course/block-1
       - ✅ add /course/block-2
       - ✅ add /course/block-3
@@ -19,27 +19,33 @@
       - ✅ add /course/block-6
       - ✅ update meta info
       - ✅ add nav entries
-    - add /account
-    - add /changed-password
-    - add /defined-password
-    - add /email-confirmed
-    - add /email-confirm-failed
+    - ✅ add /account
+    - ✅ add /changed-password
+    - ✅ add /defined-password
+    - ✅ add /email-confirmed
+    - ✅ add /email-confirm-failed
     - ✅ add /course/block-1
-    - add /logged-in
-    - add /logged-out
-    - add /logout
+    - ✅ add /logged-in
+    - ✅ add /logged-out
+    - ✅ add /logout
     - ✅ add /order
-    - add /password-link-sent
+    - ✅ add /password-link-sent
     - ✅ add /register
-    - add /registered
-    - add /registered2
-    - add /registered-meeting
+    - ✅ add /registered
+    - ✅ add /registered2
+    - ❌ add /registered-meeting
     - ✅ add /reset-password
-    - add /upgraded-account
+    - ✅ add /upgraded-account
+    - ✅ add /konto-gelöscht
+  - add meta info to /404/
   - fix scrolling behavior to '/#offer'
   - check that all paths work
   - check if netlify-functions work in production
+  - add document\_\_link--overview-progress
   - apply Layout to Index.vue
+  - Header|Navbar|Account
+    - center
+    - add title attribute
   - add blog
     - add layout
     - render blog from markdown
