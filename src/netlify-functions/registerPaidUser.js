@@ -26,9 +26,9 @@ const helpers = {
       to: email,
       bcc: "eva.fleer@gmail.com",
       subject: "Passwort definieren und loslegen",
-      text: `Vielen Dank hast du so* kommunizieren mit meinem Baby gebucht.\n\nKlicke auf den Link um dein Passwort zu definieren: https://so-kommunizieren.ch/kurs?pwCode=${encodeURIComponent(
+      text: `Vielen Dank hast du so* kommunizieren mit meinem Baby gebucht.\n\nKlicke auf den Link um dein Passwort zu definieren: https://so-kommunizieren.ch/passwort-definieren/?pwCode=${encodeURIComponent(
         pwCode
-      )}#/passwort-definieren/`,
+      )}`,
     };
   },
 };
