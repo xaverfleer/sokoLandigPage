@@ -21,6 +21,11 @@ function validateState(stringState) {
   return isValid;
 }
 
+function getSessionId() {
+  const state = getState();
+  return state && state.session && state.session.sessionId;
+}
+
 function getState() {
   const defaultState = {};
 
@@ -81,6 +86,7 @@ function upgradeToPaidAccount() {
 }
 
 export default {
+  getSessionId,
   isLoggedIn,
   isPaidAccount,
   updateSession,
