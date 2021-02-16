@@ -19,24 +19,24 @@ require("encoding");
 const helpers = {
   composeUser(email, password) {
     const salt = crypting.randomString();
-    const confirmationCode = crypting.randomString();
     const hash = crypting.hash(password + salt);
     const isConfirmed = false;
     const isPaidAccount = false;
+    const pwCode = crypting.randomString();
 
     return {
-      data: { email, hash, salt, confirmationCode, isConfirmed, isPaidAccount },
+      data: { email, hash, salt, isConfirmed, isPaidAccount, pwCode },
     };
   },
 
-  composeEmail(email, cofirmationCode) {
+  composeEmail(email, pwCode) {
     const message = {
       to: email,
       bcc: "eva.fleer@gmail.com",
       subject: "Bestätige deine E-Mail-Adresse",
-      text: `Vielen Dank für deine Anmeldung auf so-kommunizieren.ch.\n\nKlicke auf den Link um dein Konto zu bestätigen: https://so-kommunizieren.ch/kurs?confirmationCode=${encodeURIComponent(
-        cofirmationCode
-      )}#/confirm-email/\n\nFalls du kein Konto erstellen wolltest, kannst du diese E-Mail ignorieren.`,
+      text: `Vielen Dank für deine Anmeldung auf so-kommunizieren.ch.\n\nKlicke auf den Link um dein Passwort zu definieren: https://so-kommunizieren.ch/passwort-definieren/?pwCode=${encodeURIComponent(
+        pwCode
+      )}`,
     };
     return Promise.resolve({ message });
   },
@@ -65,10 +65,7 @@ exports.handler = function register(event, context, callback = () => {}) {
     })
     .then((response) => {
       logging.log(`Created︎ user.\nCompose email.`);
-      return helpers.composeEmail(
-        response.data.email,
-        response.data.confirmationCode
-      );
+      return helpers.composeEmail(response.data.email, response.data.pwCode);
     })
     .then(({ message }) => {
       logging.log(`Send email.`);
