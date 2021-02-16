@@ -105,7 +105,9 @@ export default {
       return stateManagement.isLoggedIn();
     },
     shortenedEmail() {
-      const email = (this.isLoggedIn && this.state.session.email) || "";
+      const email =
+        (this.isLoggedIn && this.state.session && this.state.session.email) ||
+        "";
       return `${email.substring(0, 3)}...${email.substring(email.length - 3)}`;
     },
     isPaidAccount() {
