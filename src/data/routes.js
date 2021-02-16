@@ -1,7 +1,7 @@
 export default {
   account: {
     text: "Zum Konto",
-    to: "/account",
+    to: "/konto",
   },
   accountDeleted: {
     text: "Konto gelöscht",
