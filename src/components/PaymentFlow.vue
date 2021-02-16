@@ -130,7 +130,7 @@ export default {
       if (xhr.response === "Account upgraded") {
         stateManagement.upgradeToPaidAccount();
         this.$router.push(appData.routes.upgradedAccount.to);
-      } else this.$router.push(appData.routes.registered2.to);
+      } else this.$router.push(appData.routes.registered.to);
     },
     handleUserCreationFailure() {
       alert(
