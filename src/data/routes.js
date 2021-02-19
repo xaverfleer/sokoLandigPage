@@ -14,6 +14,7 @@ export default {
   },
   block02: {
     text: "Kursblock 2",
+    teaser: "Mit dem Baby interagieren",
     to: "/course/block-2",
   },
   block03: {
