@@ -445,7 +445,7 @@
                     Anmeldeschluss: 05. März 2021
                   </div>
                   <div class="booking-offer__entry booking-offer__detail">
-                    Noch 7 Plätze verfügbar
+                    Noch 6 Plätze verfügbar
                   </div>
                   <div class="buttons booking-offer__buttons">
                     <g-link
