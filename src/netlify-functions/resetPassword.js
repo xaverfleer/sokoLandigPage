@@ -9,9 +9,9 @@ const helpers = {
     const message = {
       to: email,
       subject: "Passwort zurücksetzen.",
-      text: `Klicke auf den Link um dein zurückzusetzen: https://so-kommunizieren.ch/kurs?passwordChangeCode=${encodeURIComponent(
+      text: `Klicke auf den Link um dein zurückzusetzen: https://so-kommunizieren.ch/neues-passwort-definieren?passwordChangeCode=${encodeURIComponent(
         id
-      )}#/enter-new-password/\n\nFalls du keinen Link angefordert hast, kannst du diese E-Mail ignorieren.`,
+      )}\n\nFalls du keinen Link angefordert hast, kannst du diese E-Mail ignorieren.`,
     };
     return message;
   },
