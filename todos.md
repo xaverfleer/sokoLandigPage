@@ -37,8 +37,12 @@
     - ✅ add /reset-password
     - ✅ add /upgraded-account
     - ✅ add /konto-gelöscht
+  - bugfixes
+    - ✅ fix scrolling behavior to '/#offer'
+  - testing
+    - add scenarios
+    - test scenarios
   - add meta info to /404/
-  - fix scrolling behavior to '/#offer'
   - check that all paths work
   - check if netlify-functions work in production
   - add document\_\_link--overview-progress
