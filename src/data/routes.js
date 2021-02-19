@@ -14,23 +14,22 @@ export default {
   },
   block02: {
     text: "Kursblock 2",
-    teaser: "Mit dem Baby interagieren...",
-    to: "/kurs/02-mit-dem-baby-interagieren",
+    to: "/course/block-2",
   },
   block03: {
     text: "Kursblock 3",
-    teaser: "Das Baby verstehen...",
-    to: "/kurs/03-das-baby-verstehen",
+    teaser: "Das Baby verstehen",
+    to: "/course/block-3",
   },
   block04: {
     text: "Kursblock 4",
-    teaser: "Auf mich selbst achten...",
-    to: "/kurs/04-auf-sich-selbst-achten",
+    teaser: "Auf sich selbst achten",
+    to: "/course/block-4",
   },
   block05: {
     text: "Kursblock 5",
-    teaser: "Zurückhaltung üben...",
-    to: "/kurs/05-zurueckhaltung-ueben",
+    teaser: "Zurückhaltung üben",
+    to: "/course/block-5",
   },
   block06: {
     text: "Download Dokumentpakete",

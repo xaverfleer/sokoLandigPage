@@ -43,6 +43,12 @@ const appData = {
           },
           documents: [
             {
+              href: "/documents/so1-Kursübersicht.pdf",
+              text:
+                "Kursübersicht Block 1 bis 5 – Alle Videos auf einen Blick ",
+              type: "roadmap",
+            },
+            {
               href: "/documents/so1-Fahrplan.pdf",
               text: "Fahrplan Kursblock 1",
               type: "roadmap",
@@ -50,11 +56,6 @@ const appData = {
             {
               href: "/documents/so1-Uebungsdossier.pdf",
               text: "Übungsdossier Kursblock 1 mit allen Übungen",
-              type: "practice",
-            },
-            {
-              href: "/documents/so1-Uebungsdossier-Loesungen.pdf",
-              text: "Musterlösungen zum Übungsdossier Kursblock 1",
               type: "practice",
             },
             {
@@ -127,7 +128,7 @@ const appData = {
         section14: {
           id: 3,
           title: {
-            main: "Gleichwürdigkeit",
+            main: "Das gleichwürdige Subjekt",
             videoName: "(Video 1.3, überarbeitet)",
           },
           video: { ref: "https://player.vimeo.com/video/502594256" },
@@ -183,7 +184,7 @@ const appData = {
         section15: {
           id: 4,
           title: {
-            main: "Lina weint",
+            main: "Lina weint – Drei Versionen ",
             videoName: "(Video 1.4, überarbeitet)",
           },
           video: { ref: "https://player.vimeo.com/video/507152872" },
@@ -219,7 +220,7 @@ const appData = {
               },
               {
                 id: 3,
-                text: `Wir müssen von uns selbst nicht Perfektion erwarten und auch nicht anstreben, immer genau das richtig zu sagen. Dadurch würden wir dem Baby vermitteln, dass es uns mehr um Selbstoptimierung geht anstatt um seine Bedürfnisse.`,
+                text: `Wir müssen von uns selbst nicht Perfektion erwarten und auch nicht anstreben, immer genau das Richtig zu sagen. Dadurch würden wir dem Baby vermitteln, dass es uns mehr um Selbstoptimierung geht, anstatt um seine Bedürfnisse.`,
               },
               {
                 id: 4,
@@ -227,7 +228,7 @@ const appData = {
               },
               {
                 id: 5,
-                text: `Falls wir uns bei einer herablassenden Aussage ertappen und diese korrigieren wollen, können wir einfach eine gleichwürdigere Alternative direkt hinterherliefern.`,
+                text: `Falls wir uns bei einer herablassenden Aussage ertappen und diese korrigieren wollen, können wir einfach eine gleichwürdige Alternative direkt hinterherliefern.`,
               },
               {
                 id: 6,
@@ -304,7 +305,7 @@ const appData = {
           id: 0,
           blocktitle: {
             supertitle: "Kursblock 2",
-            main: "Mit dem Baby interagieren...",
+            main: "Mit dem Baby interagieren",
           },
           checklist: {
             pretext: "In diesem Kursblock…",
@@ -351,7 +352,10 @@ const appData = {
         },
         section22: {
           id: 1,
-          title: { main: "Einstiegsübung", videoName: "(Video 2.1)" },
+          title: {
+            main: "Einstiegsübung – Was machst du da?",
+            videoName: "(Video 2.1)",
+          },
           video: { ref: "https://player.vimeo.com/video/410677081" },
           documents: [
             {
@@ -385,7 +389,7 @@ const appData = {
             entries: [
               {
                 id: 0,
-                text: `Babys erlernen Sprache wenn wir mit ihnen sprechen. Zuerst bauen sie ein passives Wissen und Verstehen auf. Sie versehen immer deutlich mehr als dass sie selbst mitteilen können.`,
+                text: `Babys erlernen Sprache wenn wir mit ihnen sprechen. Zuerst bauen sie ein passives Wissen und Verstehen auf. Sie verstehen immer deutlich mehr, als dass sie selbst mitteilen können.`,
               },
               {
                 id: 1,
@@ -422,7 +426,7 @@ const appData = {
         section24: {
           id: 3,
           title: {
-            main: "...wenn wir etwas am Baby tun",
+            main: "Etwas am Baby tun und Umgang mit Widerstand",
             videoName: "(Video 2.3)",
           },
           video: { ref: "https://player.vimeo.com/video/410677404" },
@@ -435,7 +439,7 @@ const appData = {
               },
               {
                 id: 1,
-                text: `Wenn wir etwas am Baby tun (z.B. wickeln, baden, in den Autositz einbinden), ist es wichtig, das Baby nicht wie ein Objekt (etwa eine Puppe) zu behandeln, sondern mit ihm als Subjekt in eine Interaktion zu treten.`,
+                text: `Wenn wir etwas am Baby tun (z.B. wickeln, baden, im Autositz anschnallen), ist es wichtig, das Baby nicht wie ein Objekt (etwa eine Puppe) zu behandeln, sondern mit ihm als Subjekt in eine Interaktion zu treten.`,
               },
               {
                 id: 2,
@@ -447,7 +451,7 @@ const appData = {
               },
               {
                 id: 4,
-                text: `Wenn sich das Baby wehrt, können wir versuchen, das Vorhaben spielerischer umzusetzen, nach Alternativen zu suchen oder wenn es nicht anders geht, das Baby abzulenken oder, wenn nichts anderes hilft, dich mit so wenig Kraft wie nötig durchzusetzen.`,
+                text: `Wenn sich das Baby wehrt, können wir versuchen, das Vorhaben spielerischer umzusetzen, nach Alternativen zu suchen oder wenn es nicht anders geht, das Baby abzulenken oder nur so wenig Kraft wie nötig einzusetzen, um uns durchzusetzen.`,
               },
               {
                 id: 5,
@@ -488,7 +492,7 @@ const appData = {
         section25: {
           id: 4,
           title: {
-            main: "...wenn wir etwas neben dem Baby tun",
+            main: "Das Baby im Alltag miteibeziehen",
             videoName: "(Video 2.4)",
           },
           video: { ref: "https://player.vimeo.com/video/410677798" },
@@ -497,7 +501,7 @@ const appData = {
             entries: [
               {
                 id: 0,
-                text: `Wenn sich das Baby für unsere alltäglichen Handlungen (kochen, putzen, aufräumen) interessiert, können wir es in die Handlung miteinbeziehen, indem wir: unser Handeln kommentieren, ihm die Objekte, mit denen wir handeln, zu erforschen geben oder ihm die Möglichkeit geben, die Tätigkeit selbst zu erforschen. (→ Strategiekarte)`,
+                text: `Wenn sich das Baby für unsere alltäglichen Handlungen (kochen, putzen, aufräumen) interessiert, können wir es in die Handlung miteinbeziehen, indem wir: unser Handeln kommentieren, ihm die Objekte zu erforschen geben, mit denen wir handeln, oder ihm die Möglichkeit geben, die Tätigkeit selbst zu erforschen. (→ Strategiekarte)`,
               },
               {
                 id: 1,
@@ -531,7 +535,7 @@ const appData = {
         section26: {
           id: 5,
           title: {
-            main: "...wenn wir das Baby verlassen",
+            main: "Das Baby verlassen",
             videoName: "(Video 2.5)",
           },
           video: { ref: "https://player.vimeo.com/video/410678171" },
@@ -565,7 +569,7 @@ const appData = {
               },
               {
                 id: 6,
-                text: `Wenn wir das Baby einer anderen Bezugsperson zur Betreuung abgeben, sollten wir eine gewisse Zeit zur Eingewöhnung einplanen, damit das Baby Vertrauen aufbauen kann.`,
+                text: `Wenn wir das Baby einer anderen Bezugsperson zur Betreuung geben, sollten wir eine gewisse Zeit zur Eingewöhnung einplanen, damit das Baby Vertrauen aufbauen kann.`,
               },
             ],
           },
@@ -627,7 +631,7 @@ const appData = {
           id: 0,
           blocktitle: {
             supertitle: "Kursblock 3",
-            main: "Das Baby verstehen...",
+            main: "Das Baby verstehen",
           },
           checklist: {
             pretext: "In diesem Kursblock…",
@@ -695,7 +699,7 @@ const appData = {
         section33: {
           id: 2,
           title: {
-            main: "Die Bedürfnisse des Babys sind wichtig",
+            main: "Bedürfnisse des Babys",
             videoName: "(Video 3.2)",
           },
           video: { ref: "https://player.vimeo.com/video/418114362" },
@@ -704,7 +708,7 @@ const appData = {
             entries: [
               {
                 id: 0,
-                text: `Die Bedürfnisse von Babys lassen sich grob in drei Kategorien zuteilen (a) physiologische Bedürfnisse: z.B. Nahrung, Wärme, Schlaf, Gesundheit, Schmerzfreiheit, (b) Bindungs- und Nähebedürfnisse: z.B. Körpernähe, Interaktion, Schutz vor zu vielen Reizen und (c) Autonomie- und Erkundungsbedürfnisse: z.B. freies Spielen, Stillen nach Bedarf`,
+                text: `Die Bedürfnisse von Babys lassen sich grob in drei Kategorien zuteilen: (a) physiologische Bedürfnisse: z.B. Nahrung, Wärme, Schlaf, Gesundheit, Schmerzfreiheit, (b) Bindungs- und Nähebedürfnisse: z.B. Körpernähe, Interaktion, Schutz vor zu vielen Reizen und (c) Autonomie- und Erkundungsbedürfnisse: z.B. freies Spielen, Stillen nach Bedarf`,
               },
               {
                 id: 1,
@@ -712,7 +716,7 @@ const appData = {
               },
               {
                 id: 2,
-                text: `Gute Möglichkeiten, die Bindungs- und Nähebedürfnisse des Babys zu stillen, sind z.B., rasch auf die physiologischen Bedürfnisse des Babys zu reagieren, das Baby nahe bei sich schlafen zu lassen, z.B. im Familienbett oder im Beistellbett (siehe dazu unser PDF «Sicherheitsregeln für Co‑Sleeping»), das Baby häufig in einem Tragetuch oder in einer Traghilfe zu tragen und immer mal wieder in spielerische und kommunikative Interaktionen mit dem Baby zu treten.`,
+                text: `Gute Möglichkeiten, die Bindungs- und Nähebedürfnisse des Babys zu stillen, sind z.B., rasch auf die physiologischen Bedürfnisse des Babys zu reagieren, das Baby nahe bei sich schlafen zu lassen, z.B. im Familienbett oder im Beistellbett (siehe dazu unser PDF «Sicherheitsregeln für Co‑Sleeping»), das Baby häufig in einem Tragtuch oder in einer Traghilfe zu tragen und immer mal wieder in spielerische und kommunikative Interaktionen mit dem Baby zu treten.`,
               },
             ],
           },
@@ -742,7 +746,7 @@ const appData = {
         section34: {
           id: 3,
           title: {
-            main: "...wenn das Baby mit leisen Signalen kommuniziert",
+            main: "Leise Babysignale",
             videoName: "(Video 3.3)",
           },
           video: { ref: "https://player.vimeo.com/video/418114671" },
@@ -821,7 +825,7 @@ const appData = {
         section35: {
           id: 4,
           title: {
-            main: "...wenn das Baby weint",
+            main: "Babyweinen",
             videoName: "(Video 3.4)",
           },
           video: { ref: "https://player.vimeo.com/video/418115074" },
@@ -876,7 +880,7 @@ const appData = {
         section36: {
           id: 5,
           title: {
-            main: "...wenn das Baby «schwierig» ist",
+            main: "Temperamente und Entwicklungssprünge",
             videoName: "(Video 3.5)",
           },
           video: { ref: "https://player.vimeo.com/video/418115509" },
@@ -964,7 +968,7 @@ const appData = {
           id: 0,
           blocktitle: {
             supertitle: "Kursblock 4",
-            main: "Auf mich selbst achten...",
+            main: "Auf sich selbst achten",
           },
           checklist: {
             pretext: "In diesem Kursblock…",
@@ -977,7 +981,7 @@ const appData = {
               {
                 id: 1,
                 text:
-                  "...erfährst du warum es so anstrengend sein kann, ein Baby zu begleiten und warum es wichtig, ist dass du dich selbst nicht vernachlässigst (Video 4.2)",
+                  "...erfährst du warum es so anstrengend sein kann, ein Baby zu begleiten und warum es wichtig ist, dass du dich selbst nicht vernachlässigst (Video 4.2)",
               },
               {
                 id: 2,
@@ -1022,7 +1026,7 @@ const appData = {
         section42: {
           id: 1,
           title: {
-            main: "Mein guter Freund",
+            main: "Einstiegsübung – Mein guter Freund",
             videoName: "(Video 4.1)",
           },
           video: { ref: "https://player.vimeo.com/video/428741631" },
@@ -1117,7 +1121,7 @@ const appData = {
         section44: {
           id: 3,
           title: {
-            main: "...indem wir unser Selbstbewusstsein stärken",
+            main: "Das eigene Selbstbewusstsein stärken",
             videoName: "(Video 4.3)",
           },
           video: { ref: "https://player.vimeo.com/video/428741838" },
@@ -1203,7 +1207,7 @@ const appData = {
         section45: {
           id: 4,
           title: {
-            main: "...indem wir unseren Selbstwert stärken",
+            main: "Den eigenen Selbstwert stärken",
             videoName: "(Video 4.4)",
           },
           video: { ref: "https://player.vimeo.com/video/428741959" },
@@ -1218,7 +1222,7 @@ const appData = {
               {
                 id: 1,
                 text:
-                  "In ruhigen Momenten können wir unseren Selbstwert stärken, in dem wir uns bedingungslos immer wieder Dinge gönnen, die uns guttun und unsere Ressourcen aufladen. Die Übung «Energiebilanz» und «Sonnenbad» können uns dabei helfen.",
+                  "In ruhigen Momenten können wir unseren Selbstwert stärken, in dem wir uns bedingungslos immer wieder Dinge gönnen, die uns gut tun und unsere Ressourcen aufladen. Die Übungen «Energiebilanz» und «Sonnenbad» können uns dabei helfen.",
               },
               {
                 id: 2,
@@ -1269,7 +1273,7 @@ const appData = {
         section46: {
           id: 5,
           title: {
-            main: "...indem wir unsere Grenzen schützen",
+            main: "Die eigenen Grenzen schützen",
             videoName: "(Video 4.5)",
           },
           video: { ref: "https://player.vimeo.com/video/428742084" },
@@ -1284,7 +1288,7 @@ const appData = {
               {
                 id: 1,
                 text:
-                  "Wir können Stressreaktion daher auch vorbeugen, indem wir lernen, unsere Grenzüberschreibungen frühzeitig wahrzunehmen und wenn es möglich und sinnvoll ist, sie liebevoll zu verteidigen: Ein Nein zu einem Verhalten oder zu einem Wunsch des Babys als Ja zu unseren eigenen Bedürfnissen und Werten.",
+                  "Wir können Stressreaktion daher auch vorbeugen, indem wir lernen, Grenzüberschreibungen frühzeitig wahrzunehmen und wenn es möglich und sinnvoll ist, unsere Grenzen liebevoll zu verteidigen: Ein Nein zu einem Verhalten oder zu einem Wunsch des Babys als Ja zu unseren eigenen Bedürfnissen und Werten.",
               },
               {
                 id: 2,
@@ -1294,7 +1298,7 @@ const appData = {
               {
                 id: 3,
                 text:
-                  "Das Nein-Sagen ist eher ein Prozess als ein einmaliges Ereignis. Zum Prozess gehört, dass wir dem Baby Zeit lassen, um unser Nein zu versehen und dass wir den Frust des Babys, der mit einem Nein einhergehen kann, aushalten und liebevoll begleiten können.",
+                  "Das Nein-Sagen ist eher ein Prozess als ein einmaliges Ereignis. Zum Prozess gehört, dass wir dem Baby Zeit lassen, um unser Nein zu verstehen und dass wir den Frust des Babys, der mit einem Nein einhergehen kann, aushalten und liebevoll begleiten können.",
               },
               {
                 id: 4,
@@ -1334,7 +1338,7 @@ const appData = {
         section47: {
           id: 6,
           title: {
-            main: "...indem wir unser Selbstvertrauen stärken",
+            main: "Das eigene Selbstvertrauen stärken",
             videoName: "(Video 4.6)",
           },
           video: { ref: "https://player.vimeo.com/video/447412269" },
@@ -1349,7 +1353,7 @@ const appData = {
               {
                 id: 1,
                 text:
-                  "In ruhigen Momenten können wir unser Selbstvertrauen einerseits dadurch stärken, dass wir uns weiterentwickeln, andererseits ist auch der Fokus auf schöne, gelungene Momente nährend.",
+                  "In ruhigen Momenten können wir unser Selbstvertrauen einerseits dadurch stärken, dass wir uns weiterentwickeln. Andererseits ist auch der Fokus auf schöne, gelungene Momente nährend.",
               },
               {
                 id: 2,
@@ -1364,7 +1368,7 @@ const appData = {
               {
                 id: 4,
                 text:
-                  "In stressigen Momenten, wenn wir von starken Gefühlen überrumpelt werden, können uns verschiedene Überbrückungstechniken helfen, die freigesetzte Energie der Stressreaktion nicht an unserem Baby auszulassen. Indem wir neugierig mit Techniken experimentieren werden wir mit der Zeit Vertrauen in unsere Fähigkeit gewinnen, Stressreaktionen zu überbrücken. ",
+                  "In stressigen Momenten, wenn wir von starken Gefühlen überrumpelt werden, können uns verschiedene Überbrückungstechniken helfen, die freigesetzte Energie der Stressreaktion nicht an unserem Baby auszulassen. Indem wir neugierig mit Techniken experimentieren, werden wir mit der Zeit Vertrauen in unsere Fähigkeit gewinnen, Stressreaktionen zu überbrücken. ",
               },
               {
                 id: 5,
@@ -1428,7 +1432,7 @@ const appData = {
           id: 0,
           blocktitle: {
             supertitle: "Kursblock 5",
-            main: "Zurückhaltung üben...",
+            main: "Zurückhaltung üben",
           },
           checklist: {
             pretext: "In diesem Kursblock...",
@@ -1436,7 +1440,7 @@ const appData = {
               {
                 id: 0,
                 text:
-                  "...Fühlst du dich in dein spielendes und forschendes Baby ein (Video 5.1)",
+                  "...fühlst du dich in dein spielendes und forschendes Baby ein (Video 5.1)",
               },
               {
                 id: 1,
@@ -1496,7 +1500,7 @@ const appData = {
         section52: {
           id: 1,
           title: {
-            main: "Einstiegsübung: Lass mich doch!",
+            main: "Einstiegsübung – Lass mich doch!",
             videoName: "(Video 5.1)",
           },
           video: { ref: "https://player.vimeo.com/video/455767350" },
@@ -1511,7 +1515,7 @@ const appData = {
         section53: {
           id: 2,
           title: {
-            main: "Schritt 1 – eine anregende Umgebung schaffen",
+            main: "Schritt 1 – Die anregende Umgebung",
             videoName: "(Video 5.2)",
           },
           video: { ref: "https://player.vimeo.com/video/455767387" },
@@ -1521,7 +1525,7 @@ const appData = {
               {
                 id: 0,
                 text:
-                  "Für die gesunde Entwicklung brauchen Babys eine angemessen (also weder über- noch unterfordernde) Menge an Stimulation und Erkundungsmöglichkeiten.",
+                  "Für die gesunde Entwicklung brauchen Babys eine angemessene (also weder über- noch unterfordernde) Menge an Stimulation und Erkundungsmöglichkeiten.",
               },
               {
                 id: 1,
@@ -1531,7 +1535,7 @@ const appData = {
               {
                 id: 2,
                 text:
-                  "Wenn wir beobachten, womit sich unser Baby beschäftigt, können wir uns überlegen, ob wir ihm Gegenstände oder Aktivitäten anbieten können, die gleiche oder ähnliche Komponente haben, wie die bekannte Erfahrung, die aber auch noch neue Komponenten mitbringen (Prinzip der Assimilation).",
+                  "Wenn wir beobachten, womit sich unser Baby beschäftigt, können wir uns überlegen, ob wir ihm Gegenstände oder Aktivitäten anbieten können, die gleiche oder ähnliche Komponenten haben, wie die bekannte Erfahrung, die aber auch noch neue Komponenten mitbringen (Prinzip der Assimilation).",
               },
               {
                 id: 3,
@@ -1562,7 +1566,7 @@ const appData = {
         section54: {
           id: 3,
           title: {
-            main: "Schritt 2 – eine ermöglichende Haltung einnehmen",
+            main: "Schritt 2 – Die ermöglichende Haltung",
             videoName: "(Video 5.3)",
           },
           video: { ref: "https://player.vimeo.com/video/455767701" },
@@ -1622,7 +1626,7 @@ const appData = {
         section55: {
           id: 4,
           title: {
-            main: "Schritt 3 – Zurückhaltung üben...",
+            main: "Schritt 3 – Zurückhaltung",
             videoName: "(Video 5.4)",
           },
           video: { ref: "https://player.vimeo.com/video/455767853" },
@@ -1652,7 +1656,7 @@ const appData = {
               {
                 id: 4,
                 text:
-                  "Der Selbstwert leidet, weil das Baby seinen Selbstwert an seine Leistungsfähigkeit knüpft, wenn es dazu angehalten wird anders zu Spielen oder schneller zu lernen.",
+                  "Der Selbstwert leidet, weil das Baby seinen Selbstwert an seine Leistungsfähigkeit knüpft, wenn es dazu angehalten wird anders zu spielen oder schneller zu lernen.",
               },
               {
                 id: 5,
@@ -1667,7 +1671,7 @@ const appData = {
               {
                 id: 7,
                 text:
-                  "Um uns darin zu üben eine ermöglichende zurück-Haltung einzunehmen, können wir Zeiten der ungeteilten Aufmerksamkeit schaffen. In diesen Zeiten beobachten wir neugierig, wie das Baby spielt und forscht und halten uns mit Inputs, Hilfestellungen, Bewertungen usw. bewusst zurück.",
+                  "Um uns darin zu üben, eine ermöglichende zurück-Haltung einzunehmen, können wir Zeiten der ungeteilten Aufmerksamkeit schaffen. In diesen Zeiten beobachten wir neugierig, wie das Baby spielt und forscht, und halten uns mit Inputs, Hilfestellungen, Bewertungen usw. bewusst zurück.",
               },
             ],
           },
@@ -1703,7 +1707,7 @@ const appData = {
         section56: {
           id: 5,
           title: {
-            main: "...wenn dem Baby etwas nicht gelingt",
+            main: "Umgang mit Misserfolgen und Frust",
             videoName: "(Video 5.5)",
           },
           video: { ref: "https://player.vimeo.com/video/456236097" },
@@ -1718,7 +1722,7 @@ const appData = {
               {
                 id: 1,
                 text:
-                  "Wenn wir einem Baby, dem etwas noch nicht gelingt, sehr schnell helfen, nehmen wir ihm nicht nur wertvolle Selbstwirksamkeitserfahrungen, wir riskieren auch, dass seine Frustrationstoleranz immer mehr sinkt.",
+                  "Wenn wir einem Baby, dem etwas noch nicht gelingt, sehr schnell helfen, nehmen wir ihm nicht nur wertvolle Selbstwirksamkeitserfahrungen, wir riskieren auch, dass seine Frustrationstoleranz sinkt.",
               },
               {
                 id: 2,
@@ -1770,7 +1774,7 @@ const appData = {
         section57: {
           id: 6,
           title: {
-            main: "...wenn das Baby etwas Gefährliches tut",
+            main: "Umgang mit Gefahren",
             videoName: "(Video 5.6)",
           },
           video: { ref: "https://player.vimeo.com/video/457796136" },
@@ -1795,7 +1799,7 @@ const appData = {
               {
                 id: 3,
                 text:
-                  "Wenn sich das Baby in Gefahr begibt können wir zuerst einschätzen, ob wir abwarten können, weil das Risiko nicht sehr gross ist.",
+                  "Wenn sich das Baby in Gefahr begibt, können wir zuerst einschätzen, ob wir abwarten können, weil das Risiko nicht sehr gross ist.",
               },
               {
                 id: 4,
@@ -1837,7 +1841,7 @@ const appData = {
         section58: {
           id: 7,
           title: {
-            main: "...wenn das Baby in einen Konflikt gerät",
+            main: "Umgang mit Konfliken zwischen Kindern",
             videoName: "(Video 5.7)",
           },
           video: { ref: "https://player.vimeo.com/video/482634770" },
@@ -1852,12 +1856,12 @@ const appData = {
               {
                 id: 1,
                 text:
-                  "Wenn abwarten nicht geht, können wir den Babys durch Beschreiben helfen, a) die Situation, b) sich selbst und c) das Gegenüber besser zu verstehen: Wir können dem a) Baby den Konflikt beschreiben, b) seine eigenen Gefühle und/oder c) die wahrgenommenen Gefühle des Gegenübers.",
+                  "Wenn abwarten nicht geht, können wir den Babys durch Beschreiben helfen, a) die Situation, b) sich selbst und c) das Gegenüber besser zu verstehen: Wir können dem Baby a) den Konflikt, b) seine eigenen Gefühle und/oder c) die wahrgenommenen Gefühle des Gegenübers beschreiben.",
               },
               {
                 id: 2,
                 text:
-                  "Manchmal müssen wir die Babys auch zu einer Konfliktlösung anleiten (coachen). Dabei müssen wir unseren Babys jedoch das Recht zugestehen unsere Lösung zu verweigern.",
+                  "Manchmal müssen wir die Babys auch zu einer Konfliktlösung anleiten (coachen). Dabei müssen wir unseren Babys jedoch das Recht zugestehen, unsere Lösung zu verweigern.",
               },
               {
                 id: 3,
@@ -1905,7 +1909,7 @@ const appData = {
         section59: {
           id: 8,
           title: {
-            main: "...wenn es um das Loben geht",
+            main: "Umgang mit Erfolgen und erwünschtem Verhalten",
             videoName: "(Video 5.8)",
           },
           video: { ref: "https://player.vimeo.com/video/488157814" },
@@ -1920,7 +1924,7 @@ const appData = {
               {
                 id: 1,
                 text:
-                  "Lob (und andere Belohnungen) gefährden den Selbstwert des Babys, weil es das Gefühl bekommt, etwas besonders leisten zu müssen, um geliebt zu werden. Das Baby fühlt sich dann mit der Zeit nur noch dann wertvoll, wenn es eine positive Bewertung (ein Lob oder eine Belohnung) bekommt.",
+                  "Lob (und andere Belohnungen) gefährden den Selbstwert des Babys, weil es das Gefühl bekommt, etwas Besonders leisten zu müssen, um geliebt zu werden. Das Baby fühlt sich mit der Zeit nur noch dann wertvoll, wenn es eine positive Bewertung (ein Lob oder eine Belohnung) bekommt.",
               },
               {
                 id: 2,
