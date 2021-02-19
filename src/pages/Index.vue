@@ -784,6 +784,11 @@ function onMounted() {
     learningMode.content.alone.classList.remove("offers__offer--active");
     learningMode.content.group.classList.add("offers__offer--active");
   });
+
+  document.querySelector("html").style.scrollBehavior = "";
+  setTimeout(() => {
+    document.querySelector("html").style.scrollBehavior = "smooth";
+  }, 5000);
 }
 
 export default {
