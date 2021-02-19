@@ -39,7 +39,11 @@
     - ✅ add /konto-gelöscht
   - bugfixes
     - ✅ fix scrolling behavior to '/#offer'
-    - add /passwort zuruecksetzen
+    - ✅ add /neues-passwort-definieren
+  - post release
+    - update with evas intermediate work
+    - bugfixes
+      - fix scenario (1) fail login with incorrect pw (2) login with correct pw
   - testing
     - add scenarios
       - 01: book with discount -> set password -> change password -> delete account
