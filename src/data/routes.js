@@ -58,7 +58,7 @@ export default {
   },
   kurs: {
     text: "Zum Kurs",
-    to: "/course/block-1",
+    to: "/kurs",
   },
   impressum: {
     text: "Impressum",
