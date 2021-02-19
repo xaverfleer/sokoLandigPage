@@ -39,8 +39,11 @@
     - ✅ add /konto-gelöscht
   - bugfixes
     - ✅ fix scrolling behavior to '/#offer'
+    - add /passwort zuruecksetzen
   - testing
     - add scenarios
+      - 01: book with discount -> set password -> change password -> delete account
+      - 02: book group-paid with paypal sandbox -> delete account
     - test scenarios
   - add meta info to /404/
   - check that all paths work
