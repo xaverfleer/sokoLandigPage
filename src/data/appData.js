@@ -9,7 +9,7 @@ const appData = {
         section11: {
           id: 0,
           blocktitle: {
-            supertitle: "Kursblock 1 (wird momentan überarbeitet)",
+            supertitle: "Kursblock 1",
             main: "Innere Stärke und Gleichwürdigkeit",
           },
           checklist: {
@@ -69,7 +69,7 @@ const appData = {
           id: 1,
           title: {
             main: "Einstiegsübung – Ich wünsche dir...",
-            videoName: "(Video 1.1, überarbeitet)",
+            videoName: "(Video 1.1)",
           },
           video: { ref: "https://player.vimeo.com/video/489011860" },
           documents: [
@@ -84,7 +84,7 @@ const appData = {
           id: 2,
           title: {
             main: "Innere Stärke",
-            videoName: "(Video 1.2, überarbeitet)",
+            videoName: "(Video 1.2)",
           },
           video: { ref: "https://player.vimeo.com/video/490855723" },
           checklist: {
@@ -129,7 +129,7 @@ const appData = {
           id: 3,
           title: {
             main: "Das gleichwürdige Subjekt",
-            videoName: "(Video 1.3, überarbeitet)",
+            videoName: "(Video 1.3)",
           },
           video: { ref: "https://player.vimeo.com/video/502594256" },
           checklist: {
@@ -185,7 +185,7 @@ const appData = {
           id: 4,
           title: {
             main: "Lina weint – Drei Versionen ",
-            videoName: "(Video 1.4, überarbeitet)",
+            videoName: "(Video 1.4)",
           },
           video: { ref: "https://player.vimeo.com/video/507152872" },
           documents: [
@@ -200,39 +200,31 @@ const appData = {
           id: 5,
           title: {
             main: "Herablassende vs. gleichwürdige Sprache",
-            videoName: "(Video 1.5, wird momentan überarbeitet)",
+            videoName: "(Video 1.5)",
           },
-          video: { ref: "https://player.vimeo.com/video/411396939" },
+          video: { ref: "https://player.vimeo.com/video/514884071" },
           checklist: {
             pretext: "Das wichtigste in Kürze:",
             entries: [
               {
                 id: 0,
-                text: `Subjektorientiert zu kommunizieren bedeutet, eine gleichwürdige Beziehung zum Baby aufzubauen und dies über eine gleichwürdige Sprache auszudrücken.`,
+                text: `Subjektorientiert zu kommunizieren bedeutet, eine gleichwürdige Beziehung zum Baby aufzubauen und dies über eine gleichwürdige Sprache auszudrücken.`,
               },
               {
                 id: 1,
-                text: `Eine gleichwürdige Sprache findet auf Augenhöhe statt, sie ist nicht herablassend.              `,
+                text: `Eine gleichwürdige Sprache ist einfühlsam, wertschätzend und stärkend.`,
               },
               {
                 id: 2,
-                text: `Wir haben vermutlich alle schon einmal herablassende Sätze gegenüber Kindern gehört oder selbst benutzt. Einige Beispiele findest du in diesem Video.`,
+                text: `Das Gegenteil von einer gleichwürdigen Sprache ist eine entwürdigende, herablassende Sprache.`,
               },
               {
                 id: 3,
-                text: `Wir müssen von uns selbst nicht Perfektion erwarten und auch nicht anstreben, immer genau das Richtig zu sagen. Dadurch würden wir dem Baby vermitteln, dass es uns mehr um Selbstoptimierung geht, anstatt um seine Bedürfnisse.`,
+                text: `Leider ist eine entwürdigende Sprache (z.B. Gefühle kleinreden, Drohungen aussprechen oder Vergleiche anstellen) gegenüber Babys und Kindern in unserer Gesellschaft keine Seltenheit.`,
               },
               {
                 id: 4,
-                text: `Es ist kein Drama, wenn uns manchmal herablassende Sätze herausrutschen. Wenn wir grundsätzlich eine gleichwürdige Beziehung leben, hält diese Beziehung auch einige herablassende Aussagen aus.`,
-              },
-              {
-                id: 5,
-                text: `Falls wir uns bei einer herablassenden Aussage ertappen und diese korrigieren wollen, können wir einfach eine gleichwürdige Alternative direkt hinterherliefern.`,
-              },
-              {
-                id: 6,
-                text: `Wir können uns auch nachträglich entschuldigen, wenn wir das für angemessen halten.`,
+                text: `Wenn wir gleichwürdig kommunizieren wollen, geht es um eine innere Haltung und nicht darum, perfekt zu sein und immer das richtige zu sagen.`,
               },
             ],
           },
@@ -304,7 +296,7 @@ const appData = {
         section21: {
           id: 0,
           blocktitle: {
-            supertitle: "Kursblock 2",
+            supertitle: "Kursblock 2 (wird aktuell überarbeitet)",
             main: "Mit dem Baby interagieren",
           },
           checklist: {
