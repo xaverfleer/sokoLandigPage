@@ -92,23 +92,23 @@ const appData = {
             entries: [
               {
                 id: 0,
-                text: `Damit Kinder zu selbständigen Erwachsenen heranwachsen, die ein gesundes, glückliches und erfüllendes Leben führen können, brauchen sie genügend innere Stärke.`,
+                text: `Die Strategien der subjektorientierten Kommunikation, zielen darauf ab, Kinder innerlich zu stärken.`,
               },
               {
                 id: 1,
-                text: `Wichtige Wurzeln der inneren Stärke sind ein differenziertes Selbstbewusstsein (ich kenne mich), ein positiver und möglichst bedingungsloser Selbstwert (ich bin gut, so wie ich bin) sowie ein gesundes Selbstvertrauen (ich vertraue in meine Fähigkeiten).`,
+                text: `Innere Stärke ist ein wichtiger Schlüssel zu einem selbstbestimmten, gesunden, glücklichen und erfüllenden Leben.`,
               },
               {
                 id: 2,
-                text: `Die Art und Weise, wie wir mit Kindern kommunizieren, kann sie innerlich stärken – oder auch nicht.`,
+                text: `Innerlich starke Menschen verfügen über viele persönliche Ressourcen, die ihnen dabei helfen, mit den Herausforderungen des Lebens umgehen zu können und ihr Leben aktiv zu gestalten.`,
               },
               {
                 id: 3,
-                text: `Kommunikationsstrategien können uns helfen, das Kind innerlich zu stärken.`,
+                text: `Drei wichtige Wurzeln der inneren Stärke sind: Selbstbewusstsein (Ich kenne mich), Selbstwert (Ich bin gut, so wie ich bin) und Selbstvertrauen (ich vertraue in meine Fähigkeiten).`,
               },
               {
                 id: 4,
-                text: `Hinter den Kommunikationsstrategien der subjektorientierten Kommunikation steht die Grundhaltung, unser Kind als gleichwürdiges Subjekt wahrzunehmen und zu behandeln.`,
+                text: `Um die Wurzeln der inneren Stärke zu nähren, können wir unserer Kommunikation so oft wir möglich die Essenzen «Verständnis», «Liebe» und «Begleitung» hinzufügen.`,
               },
             ],
           },
@@ -145,11 +145,19 @@ const appData = {
               },
               {
                 id: 2,
-                text: `Unser Baby ist gleichwürdig. Das heisst, dass seine innere Realität (Gedanken, Gefühle, Bedürfnisse, Wünsche etc.) gleich wichtig ist, wie unsere innere Realität. Wir müssen sie in unseren Handlungen zu verstehen versuchen und mitberücksichtigen.`,
+                text: `Unser Baby ist gleichwürdig. Das heisst, dass seine innere Realität (Gedanken, Gefühle, Bedürfnisse, Wünsche etc.) gleich wichtig ist, wie unsere innere Realität. Wir müssen sie zu verstehen versuchen und in unseren Handlungen mitberücksichtigen.`,
               },
               {
                 id: 3,
+                text: `Unser Fokus liegt nicht auf der Frage, wie wir das Verhalten des Babys steuern können, damit es das tut, was wir wollen. Der Fokus liegt auf der Frage, wie wir einfühlsam auf die Gefühle und Bedürfnisse, die hinter dem Verhalten stecken, eingehen können, damit das Baby zu einem Menschen heranwächst, der einfühlsam mit sich selbst und mit anderen umgehet`,
+              },
+              {
+                id: 4,
                 text: `Wir dürfen auf jedes Verhalten und jeden Wunsch empathisch, also mit Verständnis, Liebe und Begleitung reagieren, auch auf Verhalten, dass wir nicht akzeptieren können oder auf Wünsche, die wir nicht erfüllen wollen.`,
+              },
+              {
+                id: 5,
+                text: `Gleichwürdigkeit heisst nicht Gleichberechtigung: Erwachsene tragen die Hauptverantwortung für das Wohlergehen aller Familienmitglieder und treffen auch die nötigen Entscheide dazu.`,
               },
             ],
           },
@@ -224,6 +232,10 @@ const appData = {
               },
               {
                 id: 4,
+                text: `Wenn wir unser Baby innerlich stärken wollen, geht es darum, entwürdigende Aussagen Schritt für Schritt durch gleichwürdige Alternativen zu ersetzen.`,
+              },
+              {
+                id: 5,
                 text: `Wenn wir gleichwürdig kommunizieren wollen, geht es um eine innere Haltung und nicht darum, perfekt zu sein und immer das richtige zu sagen.`,
               },
             ],
