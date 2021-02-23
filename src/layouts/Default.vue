@@ -48,6 +48,13 @@
         </g-link>
       </div>
     </footer>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=253945996208376&ev=PageView&noscript=1"
+      />
+    </noscript>
   </div>
 </template>
 
@@ -113,6 +120,9 @@ export default {
   },
   props: ["routes"],
   script: [
+    {
+      src: "~/scripts/fbPixel.js",
+    },
     {
       src: "/amplitudeSnippet.js",
     },
