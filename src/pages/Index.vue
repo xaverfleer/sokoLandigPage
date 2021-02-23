@@ -86,15 +86,16 @@
             </li>
           </ul>
           <p>
-            Die ersten drei Lebensjahre machen den Unterschied! Probleme, die im Schulalter, 
-            in der Jugend oder auch noch im Erwachsenenleben auftreten, wurzeln oft in frühsten 
-            Kindheitserfahrungen. Die Art und Weise, wie wir mit einem Kind in seinen ersten 
-            Lebensjahren kommunizieren und umgehen, beeinflusst seine künftige kognitive, 
-            soziale und psychische Entwicklung besonders stark und nachhaltig. 
+            Die ersten drei Lebensjahre machen den Unterschied! Probleme, die im
+            Schulalter, in der Jugend oder auch noch im Erwachsenenleben
+            auftreten, wurzeln oft in frühsten Kindheitserfahrungen. Die Art und
+            Weise, wie wir mit einem Kind in seinen ersten Lebensjahren
+            kommunizieren und umgehen, beeinflusst seine künftige kognitive,
+            soziale und psychische Entwicklung besonders stark und nachhaltig.
           </p>
           <p>
-            Nähre die gesunde Entwicklung deines Babys von Anfang an. Starte jetzt gratis 
-            mit dem Onlinekurs zur <em>subjektorientierten</em>
+            Nähre die gesunde Entwicklung deines Babys von Anfang an. Starte
+            jetzt gratis mit dem Onlinekurs zur <em>subjektorientierten</em>
             Kommunikation mit Babys!
           </p>
           <div class="buttons">
