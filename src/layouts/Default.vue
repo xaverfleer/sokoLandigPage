@@ -121,7 +121,7 @@ export default {
   props: ["routes"],
   script: [
     {
-      src: "~/scripts/fbPixel.js",
+      src: "/fbPixel.js",
     },
     {
       src: "/amplitudeSnippet.js",

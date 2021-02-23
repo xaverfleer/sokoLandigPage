@@ -770,7 +770,7 @@ export default {
         src: "/amplitudeSnippet.js",
       },
       {
-        src: "~/scripts/fbPixel.js",
+        src: "/fbPixel.js",
       },
     ],
     title: "Nährende Kommunikation mit deinem Baby",
