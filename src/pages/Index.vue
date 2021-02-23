@@ -565,6 +565,11 @@
         ></iframe>
       </div>
     </div>
+    <img
+      height="1"
+      width="1"
+      src="https://www.facebook.com/tr?id=253945996208376&ev=PageView&noscript=1"
+    />
   </div>
 </template>
 
@@ -763,6 +768,9 @@ export default {
     script: [
       {
         src: "/amplitudeSnippet.js",
+      },
+      {
+        src: "~/scripts/fbPixel.js",
       },
     ],
     title: "Nährende Kommunikation mit deinem Baby",
