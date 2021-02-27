@@ -48,6 +48,7 @@
         </g-link>
       </div>
     </footer>
+    <GdprNotice />
     <noscript>
       <img
         height="1"
@@ -67,6 +68,8 @@ query {
 </static-query>
 
 <script>
+import GdprNotice from "~/components/GdprNotice";
+import LogRocket from "logrocket";
 import NavEntry from "~/components/NavEntry";
 import appData from "~/data/appData";
 import stateM8t from "~/stateManagement";
@@ -74,7 +77,7 @@ import stateM8t from "~/stateManagement";
 import { isEarlyBird } from "~/helpers";
 
 export default {
-  components: { NavEntry },
+  components: { GdprNotice, NavEntry },
   computed: {
     appData() {
       return appData;
@@ -97,6 +100,9 @@ export default {
     isPaidAccount() {
       return stateM8t.isPaidAccount() || this.isEarlyBird;
     },
+    logRocketExists() {
+      return LogRocket === "object";
+    },
     navClasses() {
       return [
         "nav",
@@ -109,6 +115,14 @@ export default {
     return { isNavActive: false, state: {} };
   },
   methods: {
+    analyse() {
+      this.logRocketExists && LogRocket.init("yxvjmb/soko");
+    },
+    analyticsRelated() {
+      if (window.location.toString().indexOf("localhost") === -1) {
+        this.analyse();
+      }
+    },
     toggleNav() {
       this.isNavActive = !this.isNavActive;
     },
@@ -117,6 +131,8 @@ export default {
     this.state = stateM8t.subscribe((state) => {
       this.state = state;
     });
+
+    this.analyticsRelated();
   },
   props: ["routes"],
   script: [
