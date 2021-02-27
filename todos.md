@@ -3,6 +3,9 @@
 - gdpr
   - say we always track you
   - fix margin
+  - remove css button--gdpr-ignore selectors
+  - update layouts/Default.vue
+  - test
 - add document\_\_link--overview-progress
 - bugfixes
   - fix scenario (1) fail login with incorrect pw (2) login with correct pw
