@@ -26,6 +26,7 @@
   - upcoming topics
 - clean src/legacy and static
 - update sitemap
+- check seo
 - schema.org
 - Eva vermarkten as proposed by Tim Ferris
 - forum
