@@ -1,5 +1,6 @@
 ## todos
 
+- check what errors mean
 - track all page loads
 - add document\_\_link--overview-progress
 - bugfixes
