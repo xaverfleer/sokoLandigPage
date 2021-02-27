@@ -536,16 +536,7 @@
           </g-link>
         </div>
       </footer>
-      <div class="gdpr">
-        <p>
-          Wir verwenden Cookies, um die bestmögliche Erfahrung auf unserer
-          Website zu ermöglichen. Wenn du diese Seite weiterhin nutzt, gehen wir
-          davon aus, dass du damit einverstanden bist.
-        </p>
-        <button class="button button--primary gdpr__button" id="gdpr__accept">
-          Ok
-        </button>
-      </div>
+      <GdprNotice />
     </div>
     <div class="modal">
       <div class="modal__scrim"></div>
@@ -569,6 +560,7 @@
 </template>
 
 <script>
+import GdprNotice from "~/components/GdprNotice";
 import LogRocket from "logrocket";
 
 const page = document.querySelector(".page");
@@ -599,57 +591,28 @@ function onMounted() {
     },
   };
 
-  function gdprRelated() {
-    function consentRequiringActions() {
-      if (window.location.toString().indexOf("localhost") === -1) {
-        typeof LogRocket === "object" &&
-          LogRocket.init &&
-          LogRocket.init("yxvjmb/soko");
-        typeof amplitude === "object" &&
-          amplitude.getInstance &&
-          amplitude.getInstance().logEvent("Page loaded");
+  function analyticsRelated() {
+    function analyse() {
+      typeof LogRocket === "object" &&
+        LogRocket.init &&
+        LogRocket.init("yxvjmb/soko");
+      typeof amplitude === "object" &&
+        amplitude.getInstance &&
+        amplitude.getInstance().logEvent("Page loaded");
 
-        document.querySelectorAll(".cta05").forEach(function bindHandler(e) {
-          e.addEventListener("click", function logEvent() {
-            amplitude.getInstance().logEvent("Jetzt buchen");
-          });
+      document.querySelectorAll(".cta05").forEach(function bindHandler(e) {
+        e.addEventListener("click", function logEvent() {
+          amplitude.getInstance().logEvent("Jetzt buchen");
         });
-      }
+      });
     }
 
-    function manageVisibility() {
-      function hideGdpr() {
-        document.querySelector(".gdpr").setAttribute("style", "display: none;");
-      }
-
-      const storageGdpr = localStorage.getItem("soko-gdpr");
-
-      if (["accepted", "ignored"].indexOf(storageGdpr) >= 0) {
-        hideGdpr();
-      } else {
-        const elems = {
-          accept: document.getElementById("gdpr__accept"),
-        };
-        const handle = {
-          accept: () => {
-            localStorage.setItem("soko-gdpr", "accepted");
-            hideGdpr();
-            handle.unbind();
-          },
-          unbind: () => {
-            elems.accept.removeEventListener("click", handle.accept);
-          },
-        };
-
-        elems.accept.addEventListener("click", handle.accept);
-      }
+    if (window.location.toString().indexOf("localhost") === -1) {
+      analyse();
     }
-
-    consentRequiringActions();
-    manageVisibility();
   }
 
-  gdprRelated();
+  analyticsRelated();
 
   nav.addEventListener("click", function toggleNavActive() {
     const { classList } = nav;
