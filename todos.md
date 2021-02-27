@@ -7,7 +7,7 @@
 - bugfixes
   - fix scenario (1) fail login with incorrect pw (2) login with correct pw
 - add meta info to /404/
-- move to gridsome
+- seo optimization with ubersuggest
 - apply Layout to Index.vue
 - Header|Navbar|Account
   - center
