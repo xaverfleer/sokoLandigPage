@@ -713,6 +713,7 @@ function onMounted() {
 }
 
 export default {
+  components: { GdprNotice },
   metaInfo: {
     meta: [
       { name: "canonical", href: "https://so-kommunizieren.ch/" },
