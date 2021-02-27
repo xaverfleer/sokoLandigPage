@@ -571,6 +571,8 @@
 <script>
 import LogRocket from "logrocket";
 
+const page = document.querySelector(".page");
+
 function onMounted() {
   const Player = require("@vimeo/player").default;
 
@@ -597,56 +599,57 @@ function onMounted() {
     },
   };
 
-  const page = document.querySelector(".page");
+  function gdprRelated() {
+    function consentRequiringActions() {
+      if (window.location.toString().indexOf("localhost") === -1) {
+        typeof LogRocket === "object" &&
+          LogRocket.init &&
+          LogRocket.init("yxvjmb/soko");
+        typeof amplitude === "object" &&
+          amplitude.getInstance &&
+          amplitude.getInstance().logEvent("Page loaded");
 
-  const hideGdpr = () =>
-    document.querySelector(".gdpr").setAttribute("style", "display: none;");
-
-  function consentRequiringActions() {
-    if (window.location.toString().indexOf("localhost") === -1) {
-      LogRocket.init("yxvjmb/soko");
-      amplitude.getInstance().logEvent("Page loaded");
-
-      document.querySelectorAll(".cta05").forEach(function bindHandler(e) {
-        e.addEventListener("click", function logEvent() {
-          amplitude.getInstance().logEvent("Jetzt buchen");
+        document.querySelectorAll(".cta05").forEach(function bindHandler(e) {
+          e.addEventListener("click", function logEvent() {
+            amplitude.getInstance().logEvent("Jetzt buchen");
+          });
         });
-      });
+      }
     }
+
+    function manageVisibility() {
+      function hideGdpr() {
+        document.querySelector(".gdpr").setAttribute("style", "display: none;");
+      }
+
+      const storageGdpr = localStorage.getItem("soko-gdpr");
+
+      if (["accepted", "ignored"].indexOf(storageGdpr) >= 0) {
+        hideGdpr();
+      } else {
+        const elems = {
+          accept: document.getElementById("gdpr__accept"),
+        };
+        const handle = {
+          accept: () => {
+            localStorage.setItem("soko-gdpr", "accepted");
+            hideGdpr();
+            handle.unbind();
+          },
+          unbind: () => {
+            elems.accept.removeEventListener("click", handle.accept);
+          },
+        };
+
+        elems.accept.addEventListener("click", handle.accept);
+      }
+    }
+
+    consentRequiringActions();
+    manageVisibility();
   }
 
-  const storageGdpr = localStorage.getItem("soko-gdpr");
-
-  if (["accepted", "ignored"].indexOf(storageGdpr) >= 0) {
-    hideGdpr();
-  } else {
-    const elems = {
-      accept: document.getElementById("gdpr__accept"),
-      ignore: document.getElementById("gdpr__ignore"),
-    };
-    const handle = {
-      accept: () => {
-        localStorage.setItem("soko-gdpr", "accepted");
-        hideGdpr();
-        handle.unbind();
-        consentRequiringActions();
-      },
-      ignore: () => {
-        localStorage.setItem("soko-gdpr", "ignored");
-        hideGdpr();
-        handle.unbind();
-      },
-      unbind: () => {
-        elems.accept.removeEventListener("click", handle.accept);
-        elems.ignore.removeEventListener("click", handle.ignore);
-      },
-    };
-
-    elems.accept.addEventListener("click", handle.accept);
-    elems.ignore.addEventListener("click", handle.ignore);
-  }
-
-  if (storageGdpr === "accepted") consentRequiringActions();
+  gdprRelated();
 
   nav.addEventListener("click", function toggleNavActive() {
     const { classList } = nav;
