@@ -563,7 +563,7 @@
 import GdprNotice from "~/components/GdprNotice";
 import LogRocket from "logrocket";
 
-const page = document.querySelector(".page");
+const page = typeof document === "object" && document.querySelector(".page");
 
 function onMounted() {
   const Player = require("@vimeo/player").default;
