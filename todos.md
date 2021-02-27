@@ -28,6 +28,8 @@
   - email subscription to updates
   - blog main page
   - upcoming topics
+- clean src/legacy and static
+- update sitemap
 - schema.org
 - Eva vermarkten as proposed by Tim Ferris
 - forum
