@@ -381,12 +381,19 @@ textarea {
 }
 
 .gdpr {
-  position: fixed;
-  margin: 0;
-  left: 0;
-  bottom: 0;
+  align-items: center;
   background-color: #e5cdad;
-  padding: 1em;
+  bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  left: 0;
+  max-width: 100%;
+  padding: 0 1em;
+  position: fixed;
+}
+
+.gdpr__button {
+  margin-left: 1em;
 }
 
 .header {
