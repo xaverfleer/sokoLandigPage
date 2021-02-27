@@ -537,19 +537,14 @@
         </div>
       </footer>
       <div class="gdpr">
-        <h3 class="gdpr__heading">Diese Webseite verwendet Cookies</h3>
-        <p class="gdpr__p">
+        <p>
           Wir verwenden Cookies, um die bestmögliche Erfahrung auf unserer
-          Website zu ermöglichen. Wenn du auf "Akzeptieren" klickst, stimmst du
-          der Verwendung von Cookies durch uns zu. Wenn Sie unsere Website
-          weiterhin ohne irgendeine Aktion nutzen, verwenden wir keine Cookies.
+          Website zu ermöglichen. Wenn du diese Seite weiterhin nutzt, gehen wir
+          davon aus, dass du damit einverstanden bist.
         </p>
-        <div class="buttons">
-          <button class="button button--primary" id="gdpr__accept">
-            Akzeptieren
-          </button>
-        </div>
-        <button class="button--gdpr-ignore" id="gdpr__ignore"></button>
+        <button class="button button--primary gdpr__button" id="gdpr__accept">
+          Ok
+        </button>
       </div>
     </div>
     <div class="modal">
