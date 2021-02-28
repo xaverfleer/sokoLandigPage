@@ -112,13 +112,8 @@ export default {
     return { isNavActive: false, state: {} };
   },
   methods: {
-    analyse() {
-      typeof LogRocket === "object" && LogRocket.init("yxvjmb/soko");
-    },
     analyticsRelated() {
-      if (window.location.toString().indexOf("localhost") === -1) {
-        this.analyse();
-      }
+      typeof LogRocket === "object" && LogRocket.init("yxvjmb/soko");
     },
     toggleNav() {
       this.isNavActive = !this.isNavActive;

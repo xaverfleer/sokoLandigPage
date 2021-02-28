@@ -607,9 +607,7 @@ function onMounted() {
       });
     }
 
-    if (window.location.toString().indexOf("localhost") === -1) {
-      analyse();
-    }
+    analyse();
   }
 
   analyticsRelated();
