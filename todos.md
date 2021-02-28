@@ -34,6 +34,7 @@
   - anmelden
   - add comment
   - load comments from fauna.com
+- find out how to hide gdpr with firefox
 
 ## maybe sommeday
 
