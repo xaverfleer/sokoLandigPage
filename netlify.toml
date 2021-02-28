@@ -7,5 +7,7 @@
   publish = "dist"
 
 [[headers]]
+  for = "/*"
+  
   [headers.values]
     Content-Security-Policy = "worker-src cdn.lr-ingest.io"
