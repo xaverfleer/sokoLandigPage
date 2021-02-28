@@ -1,4 +1,4 @@
-(function(e, t) {
+function amplitudeSnippet(e, t) {
   var n = e.amplitude || { _q: [], _iq: {} };
   var r = t.createElement("script");
   r.type = "text/javascript";
@@ -88,6 +88,10 @@
     return n._iq[e];
   };
   e.amplitude = n;
-})(window, document);
+}
 
-amplitude.getInstance().init("9be3db711118b04251e198e1fa9e8359");
+if (typeof window === "object") {
+  amplitudeSnippet(window, document);
+
+  amplitude.getInstance().init("9be3db711118b04251e198e1fa9e8359");
+}
