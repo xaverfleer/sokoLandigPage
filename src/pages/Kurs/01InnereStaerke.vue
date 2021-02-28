@@ -28,6 +28,7 @@
 import ButtonVue from "~/components/ButtonVue.vue";
 import RouteVue from "~/components/RouteVue.vue";
 import SectionVue from "~/components/SectionVue.vue";
+import analytics from "~/scripts/analytics";
 import appData from "~/data/appData";
 import { isEarlyBird } from "~/helpers";
 
@@ -70,6 +71,9 @@ export default {
         to: courseRoute.to.split("/kurs/").join("/early-bird/"),
       };
     },
+  },
+  mounted() {
+    analytics(this.$route.path);
   },
 };
 </script>
