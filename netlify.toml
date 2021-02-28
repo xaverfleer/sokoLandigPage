@@ -5,3 +5,7 @@
   functionsSource = "src/netlify-functions"
   functions = "dist/netlify-functions"
   publish = "dist"
+
+[[headers]]
+  [headers.values]
+    Content-Security-Policy = "worker-src cdn.lr-ingest.io"
