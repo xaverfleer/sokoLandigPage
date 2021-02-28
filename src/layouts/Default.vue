@@ -100,9 +100,6 @@ export default {
     isPaidAccount() {
       return stateM8t.isPaidAccount() || this.isEarlyBird;
     },
-    logRocketExists() {
-      return LogRocket === "object";
-    },
     navClasses() {
       return [
         "nav",
@@ -116,7 +113,7 @@ export default {
   },
   methods: {
     analyse() {
-      this.logRocketExists && LogRocket.init("yxvjmb/soko");
+      typeof LogRocket === "object" && LogRocket.init("yxvjmb/soko");
     },
     analyticsRelated() {
       if (window.location.toString().indexOf("localhost") === -1) {
