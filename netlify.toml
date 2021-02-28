@@ -10,4 +10,4 @@
   for = "/*"
 
   [headers.values]
-    Content-Security-Policy = "worker-src 'self'"
+    Content-Security-Policy = "worker-src 'self' blob: data:"
