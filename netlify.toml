@@ -8,6 +8,6 @@
 
 [[headers]]
   for = "/*"
-  
+
   [headers.values]
-    Content-Security-Policy = "worker-src cdn.lr-ingest.io"
+    Content-Security-Policy = "worker-src 'self'"
