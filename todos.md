@@ -1,7 +1,7 @@
 ## todos
 
-- check what errors mean
-- track all page loads
+- add trailing slashes
+- track what's seen on landing page
 - add document\_\_link--overview-progress
 - bugfixes
   - fix scenario (1) fail login with incorrect pw (2) login with correct pw
@@ -27,6 +27,7 @@
 - clean src/legacy and static
 - update sitemap
 - check seo
+  - add title attributes to all sites
 - schema.org
 - Eva vermarkten as proposed by Tim Ferris
 - forum
@@ -34,7 +35,8 @@
   - anmelden
   - add comment
   - load comments from fauna.com
-- find out how to hide gdpr with firefox
+- find out how to hide gdpr with firefox ios
+- check what errors mean
 
 ## maybe sommeday
 
