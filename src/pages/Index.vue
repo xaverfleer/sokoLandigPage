@@ -722,10 +722,6 @@ export default {
         content:
           "Übersicht zur subjektorienten Kommunikation: Wie stärke ich Selbstwert, Selbstbewusstsein und Selbstvertrauen meines Babys?",
       },
-      {
-        name: "google-site-verification",
-        content: "21ovtDZF6FXeZlkMfWnPWAjtK_km4OwN5yRwcJRA0O4",
-      },
     ],
     script: [
       {
