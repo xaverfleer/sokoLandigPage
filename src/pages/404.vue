@@ -23,5 +23,12 @@ export default {
       return appData;
     },
   },
+  metaInfo: {
+    meta: [
+      { name: "canonical", href: "https://so-kommunizieren.ch/404/" },
+      { name: "robots", content: "noindex" },
+    ],
+    title: "Seite nicht gefunden",
+  },
 };
 </script>
