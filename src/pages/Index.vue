@@ -53,9 +53,6 @@
             <em>*subjektorientiert: einfühlsam, wertschätzend, stärkend</em>
           </p>
           <br />
-          <div>
-            <img class="hero__discount-img" src="/imgs/rabattstern.png" />
-          </div>
           <p>
             Du bist...
           </p>
@@ -200,16 +197,15 @@
                 width="100"
               />
               <div class="checklist__text">
-                ...was es heisst, dein Baby als gleichwürdiges Subjekt
-                wahrzunehmen und zu behandeln&nbsp;(Kursblock&nbsp;1, gratis
-                verfügbar)
+                ...welche Wurzeln dein Baby innerlich stark fürs Leben machen und was
+                es heisst, dein Baby als gleichwürdiges Subjekt zu sehen. (Kursblock&nbsp;1)
               </div>
             </li>
             <li class="checklist__item checklist__item--kursblock-2">
               <div class="checklist__text">
                 ...wie du im Alltag immer wieder in nährende Interaktionen mit
-                deinem Baby treten kannst, zum Beispiel wenn du das Baby
-                pflegst.&nbsp;(Kursblock&nbsp;2)
+                deinem Baby treten kannst und wie du Widerstand (z.B. beim Wickeln) 
+                konstruktiv begleiten kannst. (Kursblock&nbsp;2)
               </div>
               <img
                 alt="Vater wickelt sein Baby"
@@ -224,15 +220,15 @@
                 width="100"
               />
               <div class="checklist__text">
-                ...wie du die Signale und das Verhalten deines Babys aktiv lesen
-                und angemessen darauf reagieren kannst.&nbsp;(Kursblock&nbsp;3)
+                ...wie du die Körpersignale, das Weinen und das Verhalten deines Babys 
+                verstehen und angemessen darauf reagieren kannst. (Kursblock&nbsp;3)
               </div>
             </li>
             <li class="checklist__item checklist__item--kursblock-4">
               <div class="checklist__text">
-                ...wie du dich selbst stärken kannst, damit du genügend
-                Ressourcen für den Alltag mit deinem Baby
-                hast.&nbsp;(Kursblock&nbsp;4)
+                ...wie du dich selbst stärken und deine Grenzen schützen kannst kannst, 
+                damit du genügend Ressourcen für den Alltag mit deinem Baby hast. 
+                (Kursblock&nbsp;4)
               </div>
               <img
                 alt="Starke Eltern"
@@ -249,7 +245,8 @@
               <div class="checklist__text">
                 ...wie du das Spielen und Forschen deines Babys begleiten
                 kannst, damit es in seinem Forschungsdrang gestärkt
-                wird.&nbsp;(Kursblock&nbsp;5)
+                wird und Frustrationstoleranz sowie Sozialkompetenz entwickeln kann.
+                (Kursblock&nbsp;5)
               </div>
             </li>
           </ul>
@@ -307,8 +304,7 @@
                     Freier Onlinekurs
                   </div>
                   <div class="booking-offer__entry booking-offer__main">
-                    <div class="booking-offer__price">CHF 95</div>
-                    <div>(Standardpreis: CHF 195)</div>
+                    <div class="booking-offer__price">CHF 195</div>
                   </div>
                   <div class="booking-offer__entry booking-offer__detail">
                     Freier, dauerhafter Zugang zu allen Kursinhalten
@@ -326,7 +322,7 @@
                     Kursstart jederzeit möglich
                   </div>
                   <div class="booking-offer__entry booking-offer__detail">
-                    Upgrade zu geführtem Gruppenkurs für CHF&nbsp;50 möglich
+                    Upgrade zu geführtem Gruppenkurs für CHF&nbsp;100 möglich
                   </div>
                   <div class="buttons booking-offer__buttons">
                     <g-link
@@ -374,8 +370,7 @@
                     Geführter Gruppenkurs
                   </div>
                   <div class="booking-offer__entry booking-offer__main">
-                    <div class="booking-offer__price">CHF 145</div>
-                    <div>(Standardpreis: CHF 295)</div>
+                    <div class="booking-offer__price">CHF 295</div>
                   </div>
                   <div class="booking-offer__entry booking-offer__detail">
                     Freier und dauerhafter Zugang zu allen Kursinhalten
