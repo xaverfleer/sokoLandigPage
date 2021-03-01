@@ -8,6 +8,7 @@
 <script>
 import Block5Free from "~/components/Block5Free.vue";
 import Block5Paid from "~/components/Block5Paid.vue";
+import analytics from "~/scripts/analytics";
 import appData from "~/data/appData";
 import { isEarlyBird } from "~/helpers";
 
@@ -50,6 +51,9 @@ export default {
         to: courseRoute.to.split("/kurs/").join("/early-bird/"),
       };
     },
+  },
+  mounted() {
+    analytics(this.$route.path);
   },
 };
 </script>

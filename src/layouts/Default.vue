@@ -48,6 +48,14 @@
         </g-link>
       </div>
     </footer>
+    <GdprNotice />
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=253945996208376&ev=PageView&noscript=1"
+      />
+    </noscript>
   </div>
 </template>
 
@@ -60,6 +68,8 @@ query {
 </static-query>
 
 <script>
+import GdprNotice from "~/components/GdprNotice";
+import LogRocket from "logrocket";
 import NavEntry from "~/components/NavEntry";
 import appData from "~/data/appData";
 import stateM8t from "~/stateManagement";
@@ -67,7 +77,7 @@ import stateM8t from "~/stateManagement";
 import { isEarlyBird } from "~/helpers";
 
 export default {
-  components: { NavEntry },
+  components: { GdprNotice, NavEntry },
   computed: {
     appData() {
       return appData;
@@ -102,6 +112,9 @@ export default {
     return { isNavActive: false, state: {} };
   },
   methods: {
+    analyticsRelated() {
+      typeof LogRocket === "object" && LogRocket.init("yxvjmb/soko");
+    },
     toggleNav() {
       this.isNavActive = !this.isNavActive;
     },
@@ -110,9 +123,14 @@ export default {
     this.state = stateM8t.subscribe((state) => {
       this.state = state;
     });
+
+    this.analyticsRelated();
   },
   props: ["routes"],
   script: [
+    {
+      src: "/fbPixel.js",
+    },
     {
       src: "/amplitudeSnippet.js",
     },

@@ -1,3 +1,4 @@
+- live after birth
 - bonding
 - vater baby beziehung
 - vater kind beziehung

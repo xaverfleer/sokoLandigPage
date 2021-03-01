@@ -1,79 +1,33 @@
 ## todos
 
-- fix gridsome build
-- move to gridsome
-  - ✅ add metadata
-    - ✅ title attribute
-  - ✅ fix footer
-  - move all pages to gridsome
-    - ✅ impressum
-    - ✅ add /login
-    - ✅ add 404
-    - ✅ add order.Vue
-    - ✅ add /kurs
-      - ✅ add /course/block-1
-      - ✅ add /course/block-2
-      - ✅ add /course/block-3
-      - ✅ add /course/block-4
-      - ✅ add /course/block-5
-      - ✅ add /course/block-6
-      - ✅ update meta info
-      - ✅ add nav entries
-    - ✅ add /account
-    - ✅ add /changed-password
-    - ✅ add /defined-password
-    - ✅ add /email-confirmed
-    - ✅ add /email-confirm-failed
-    - ✅ add /course/block-1
-    - ✅ add /logged-in
-    - ✅ add /logged-out
-    - ✅ add /logout
-    - ✅ add /order
-    - ✅ add /password-link-sent
-    - ✅ add /register
-    - ✅ add /registered
-    - ✅ add /registered2
-    - ❌ add /registered-meeting
-    - ✅ add /reset-password
-    - ✅ add /upgraded-account
-    - ✅ add /konto-gelöscht
-  - bugfixes
-    - ✅ fix scrolling behavior to '/#offer'
-    - ✅ add /neues-passwort-definieren
-  - post release
-    - update with evas intermediate work
-    - bugfixes
-      - fix scenario (1) fail login with incorrect pw (2) login with correct pw
-  - testing
-    - add scenarios
-      - 01: book with discount -> set password -> change password -> delete account
-      - 02: book group-paid with paypal sandbox -> delete account
-    - test scenarios
-  - add meta info to /404/
-  - check that all paths work
-  - check if netlify-functions work in production
-  - add document\_\_link--overview-progress
-  - apply Layout to Index.vue
-  - Header|Navbar|Account
-    - center
-    - add title attribute
-  - add blog
-    - add layout
-    - render blog from markdown
-    - add /blog
-    - add netlifyCMS
-    - add author
-    - add tags pages
-  - ✅ fix index.bundle.js
-  - ❌ clean up
-  - make the move
-- fix margin around gdpr
+- add trailing slashes
+- track what's seen on landing page
+- add document\_\_link--overview-progress
+- bugfixes
+  - fix scenario (1) fail login with incorrect pw (2) login with correct pw
+- add meta info to /404/
+- seo optimization with ubersuggest
+- apply Layout to Index.vue
+- Header|Navbar|Account
+  - center
+  - add title attribute
+- add blog
+  - add layout
+  - render blog from markdown
+  - add /blog
+  - add netlifyCMS
+  - add author
+  - add tags pages
 - blog
   - infrastructure with netlifycms
   - comments
   - email subscription to updates
   - blog main page
   - upcoming topics
+- clean src/legacy and static
+- update sitemap
+- check seo
+  - add title attributes to all sites
 - schema.org
 - Eva vermarkten as proposed by Tim Ferris
 - forum
@@ -81,6 +35,8 @@
   - anmelden
   - add comment
   - load comments from fauna.com
+- find out how to hide gdpr with firefox ios
+- check what errors mean
 
 ## maybe sommeday
 
@@ -91,23 +47,6 @@
 
 - Register for second half of first block
 - move google site verification to Netlify
-- ✅ remove margin of body
-- ✅ add video to header|emotion|button
-- ✅ fix smooth scrolling
-- ✅ fix anchor link position
-- ✅ pricing -> pricing (booking)
-- ✅ collapse nav on wider screen
-- ✅ increase font weight of header|gratis-starten
-- ✅ angebote: fix margin between options
-- ✅ add impressum
-- ✅ angebote: tabs (should also fix overflowing buttons)
-- ❌ round corners of discount circle
-- ✅ update /order with new plans
-- ✅ fix offers in /order
-- ✅ Desktop-friendly Angebote
-- ✅ remove registers, add borders
-- ✅ Piktogramme in Angebote
-- ✅ Piktogramme links und rechts in Inhalte
 - ✅ funnel strategy
   - 00: read a blog
   - 01: subscribe for updates

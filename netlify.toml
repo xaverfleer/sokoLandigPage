@@ -5,3 +5,9 @@
   functionsSource = "src/netlify-functions"
   functions = "dist/netlify-functions"
   publish = "dist"
+
+[[headers]]
+  for = "/*"
+
+  [headers.values]
+    Content-Security-Policy = "worker-src 'self' blob: data:"

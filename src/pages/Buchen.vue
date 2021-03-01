@@ -9,6 +9,7 @@
 
 <script>
 import PaymentFlow from "~/components/PaymentFlow.vue";
+import analytics from "~/scripts/analytics";
 import appData from "~/data/appData";
 
 export default {
@@ -40,6 +41,9 @@ export default {
       },
     ],
     title: "Kurs buchen",
+  },
+  mounted() {
+    analytics(this.$route.path);
   },
 };
 </script>

@@ -16,12 +16,24 @@
 </template>
 
 <script>
+import analytics from "~/scripts/analytics";
 import appData from "~/data/appData";
+
 export default {
   computed: {
     appData() {
       return appData;
     },
+  },
+  metaInfo: {
+    meta: [
+      { name: "canonical", href: "https://so-kommunizieren.ch/404/" },
+      { name: "robots", content: "noindex" },
+    ],
+    title: "Seite nicht gefunden",
+  },
+  mounted() {
+    analytics("/404/");
   },
 };
 </script>

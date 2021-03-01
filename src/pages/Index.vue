@@ -83,15 +83,16 @@
             </li>
           </ul>
           <p>
-            Die ersten drei Lebensjahre machen den Unterschied! Probleme, die im Schulalter, 
-            in der Jugend oder auch noch im Erwachsenenleben auftreten, wurzeln oft in frühsten 
-            Kindheitserfahrungen. Die Art und Weise, wie wir mit einem Kind in seinen ersten 
-            Lebensjahren kommunizieren und umgehen, beeinflusst seine künftige kognitive, 
-            soziale und psychische Entwicklung besonders stark und nachhaltig. 
+            Die ersten drei Lebensjahre machen den Unterschied! Probleme, die im
+            Schulalter, in der Jugend oder auch noch im Erwachsenenleben
+            auftreten, wurzeln oft in frühsten Kindheitserfahrungen. Die Art und
+            Weise, wie wir mit einem Kind in seinen ersten Lebensjahren
+            kommunizieren und umgehen, beeinflusst seine künftige kognitive,
+            soziale und psychische Entwicklung besonders stark und nachhaltig.
           </p>
           <p>
-            Nähre die gesunde Entwicklung deines Babys von Anfang an. Starte jetzt gratis 
-            mit dem Onlinekurs zur <em>subjektorientierten</em>
+            Nähre die gesunde Entwicklung deines Babys von Anfang an. Starte
+            jetzt gratis mit dem Onlinekurs zur <em>subjektorientierten</em>
             Kommunikation mit Babys!
           </p>
           <div class="buttons">
@@ -530,21 +531,7 @@
           </g-link>
         </div>
       </footer>
-      <div class="gdpr">
-        <h3 class="gdpr__heading">Diese Webseite verwendet Cookies</h3>
-        <p class="gdpr__p">
-          Wir verwenden Cookies, um die bestmögliche Erfahrung auf unserer
-          Website zu ermöglichen. Wenn du auf "Akzeptieren" klickst, stimmst du
-          der Verwendung von Cookies durch uns zu. Wenn Sie unsere Website
-          weiterhin ohne irgendeine Aktion nutzen, verwenden wir keine Cookies.
-        </p>
-        <div class="buttons">
-          <button class="button button--primary" id="gdpr__accept">
-            Akzeptieren
-          </button>
-        </div>
-        <button class="button--gdpr-ignore" id="gdpr__ignore"></button>
-      </div>
+      <GdprNotice />
     </div>
     <div class="modal">
       <div class="modal__scrim"></div>
@@ -559,11 +546,19 @@
         ></iframe>
       </div>
     </div>
+    <img
+      height="1"
+      width="1"
+      src="https://www.facebook.com/tr?id=253945996208376&ev=PageView&noscript=1"
+    />
   </div>
 </template>
 
 <script>
+import GdprNotice from "~/components/GdprNotice";
 import LogRocket from "logrocket";
+
+const page = typeof document === "object" && document.querySelector(".page");
 
 function onMounted() {
   const Player = require("@vimeo/player").default;
@@ -591,15 +586,14 @@ function onMounted() {
     },
   };
 
-  const page = document.querySelector(".page");
-
-  const hideGdpr = () =>
-    document.querySelector(".gdpr").setAttribute("style", "display: none;");
-
-  function consentRequiringActions() {
-    if (window.location.toString().indexOf("localhost") === -1) {
-      LogRocket.init("yxvjmb/soko");
-      amplitude.getInstance().logEvent("Page loaded");
+  function analyticsRelated() {
+    function analyse() {
+      typeof LogRocket === "object" &&
+        LogRocket.init &&
+        LogRocket.init("yxvjmb/soko");
+      typeof amplitude === "object" &&
+        amplitude.getInstance &&
+        amplitude.getInstance().logEvent("Page loaded");
 
       document.querySelectorAll(".cta05").forEach(function bindHandler(e) {
         e.addEventListener("click", function logEvent() {
@@ -607,40 +601,11 @@ function onMounted() {
         });
       });
     }
+
+    analyse();
   }
 
-  const storageGdpr = localStorage.getItem("soko-gdpr");
-
-  if (["accepted", "ignored"].indexOf(storageGdpr) >= 0) {
-    hideGdpr();
-  } else {
-    const elems = {
-      accept: document.getElementById("gdpr__accept"),
-      ignore: document.getElementById("gdpr__ignore"),
-    };
-    const handle = {
-      accept: () => {
-        localStorage.setItem("soko-gdpr", "accepted");
-        hideGdpr();
-        handle.unbind();
-        consentRequiringActions();
-      },
-      ignore: () => {
-        localStorage.setItem("soko-gdpr", "ignored");
-        hideGdpr();
-        handle.unbind();
-      },
-      unbind: () => {
-        elems.accept.removeEventListener("click", handle.accept);
-        elems.ignore.removeEventListener("click", handle.ignore);
-      },
-    };
-
-    elems.accept.addEventListener("click", handle.accept);
-    elems.ignore.addEventListener("click", handle.ignore);
-  }
-
-  if (storageGdpr === "accepted") consentRequiringActions();
+  analyticsRelated();
 
   nav.addEventListener("click", function toggleNavActive() {
     const { classList } = nav;
@@ -741,6 +706,7 @@ function onMounted() {
 }
 
 export default {
+  components: { GdprNotice },
   metaInfo: {
     meta: [
       { name: "canonical", href: "https://so-kommunizieren.ch/" },
@@ -749,14 +715,13 @@ export default {
         content:
           "Übersicht zur subjektorienten Kommunikation: Wie stärke ich Selbstwert, Selbstbewusstsein und Selbstvertrauen meines Babys?",
       },
-      {
-        name: "google-site-verification",
-        content: "21ovtDZF6FXeZlkMfWnPWAjtK_km4OwN5yRwcJRA0O4",
-      },
     ],
     script: [
       {
         src: "/amplitudeSnippet.js",
+      },
+      {
+        src: "/fbPixel.js",
       },
     ],
     title: "Nährende Kommunikation mit deinem Baby",
