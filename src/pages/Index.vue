@@ -556,6 +556,7 @@
 <script>
 import GdprNotice from "~/components/GdprNotice";
 import LogRocket from "logrocket";
+import { trackCustomEvent, trackPageLoad } from "~/scripts/analytics";
 
 const page = typeof document === "object" && document.querySelector(".page");
 
@@ -703,14 +704,6 @@ export default {
         name: "description",
         content:
           "Übersicht zur subjektorienten Kommunikation: Wie stärke ich Selbstwert, Selbstbewusstsein und Selbstvertrauen meines Babys?",
-      },
-    ],
-    script: [
-      {
-        src: "/amplitudeSnippet.js",
-      },
-      {
-        src: "/fbPixel.js",
       },
     ],
     title: "Nährende Kommunikation mit deinem Baby",
