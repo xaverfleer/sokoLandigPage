@@ -590,9 +590,7 @@ function onMounted() {
     typeof LogRocket === "object" &&
       LogRocket.init &&
       LogRocket.init("yxvjmb/soko");
-    typeof amplitude === "object" &&
-      amplitude.getInstance &&
-      amplitude.getInstance().logEvent("Page loaded");
+    trackPageLoad("/");
   }
 
   analyticsRelated();
@@ -666,6 +664,8 @@ function onMounted() {
     document.addEventListener("keyup", (event) => {
       if (event.key === "Escape") closeModal();
     });
+
+    trackCustomEvent("Played emotion video");
   }
 
   headerPlayVideo.addEventListener("click", openModal);
