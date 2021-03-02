@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import analytics from "~/scripts/analytics";
+import { trackPageLoad } from "~/scripts/analytics";
 import appData from "~/data/appData";
 
 export default {
@@ -33,7 +33,7 @@ export default {
     title: "Seite nicht gefunden",
   },
   mounted() {
-    analytics("/404/");
+    trackPageLoad("/404/");
   },
 };
 </script>

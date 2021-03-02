@@ -559,6 +559,7 @@
 <script>
 import GdprNotice from "~/components/GdprNotice";
 import LogRocket from "logrocket";
+import { trackPageLoad } from "~/scripts/analytics";
 
 const page = typeof document === "object" && document.querySelector(".page");
 
@@ -593,9 +594,7 @@ function onMounted() {
       typeof LogRocket === "object" &&
         LogRocket.init &&
         LogRocket.init("yxvjmb/soko");
-      typeof amplitude === "object" &&
-        amplitude.getInstance &&
-        amplitude.getInstance().logEvent("Page loaded");
+      trackPageLoad("/");
 
       document.querySelectorAll(".cta05").forEach(function bindHandler(e) {
         e.addEventListener("click", function logEvent() {
