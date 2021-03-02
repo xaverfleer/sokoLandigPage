@@ -585,14 +585,10 @@ function onMounted() {
   };
 
   function analyticsRelated() {
-    function analyse() {
-      typeof LogRocket === "object" &&
-        LogRocket.init &&
-        LogRocket.init("yxvjmb/soko");
-      trackPageLoad("/");
-    }
-
-    analyse();
+    typeof LogRocket === "object" &&
+      LogRocket.init &&
+      LogRocket.init("yxvjmb/soko");
+    trackPageLoad("/");
   }
 
   analyticsRelated();
