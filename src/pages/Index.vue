@@ -559,9 +559,7 @@
 <script>
 import GdprNotice from "~/components/GdprNotice";
 import LogRocket from "logrocket";
-import { trackPageLoad } from "~/scripts/analytics";
-
-const page = typeof document === "object" && document.querySelector(".page");
+import { trackCustomEvent, trackPageLoad } from "~/scripts/analytics";
 
 function onMounted() {
   const Player = require("@vimeo/player").default;
@@ -663,6 +661,7 @@ function onMounted() {
   document.querySelector("form").addEventListener("submit", submitForm);
 
   const modalPlayer = new Vimeo.Player(modalElems.vimeoVideo);
+  const page = typeof document === "object" && document.querySelector(".page");
 
   function closeModal() {
     modalElems.modal.classList.remove("modal--open");
@@ -677,6 +676,7 @@ function onMounted() {
     document.addEventListener("keyup", (event) => {
       if (event.key === "Escape") closeModal();
     });
+    trackCustomEvent("Played emotion video");
   }
 
   headerPlayVideo.addEventListener("click", openModal);

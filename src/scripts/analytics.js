@@ -1,10 +1,14 @@
 import amplitudeSnippet from "~/scripts/amplitudeSnippet";
 import fbPixel from "~/scripts/fbPixel";
 
-export default { trackPageLoad };
+export default { trackCustomEvent, trackPageLoad };
+
+export function trackCustomEvent(eventName) {
+  if (typeof amplitude === "object") {
+    amplitude.getInstance().logEvent(eventName);
+  }
+}
 
 export function trackPageLoad(path) {
-  if (typeof amplitude === "object") {
-    amplitude.getInstance().logEvent(`${path} page loaded/`);
-  }
+  trackCustomEvent(`${path} page loaded`);
 }
