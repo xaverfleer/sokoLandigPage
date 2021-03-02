@@ -53,9 +53,6 @@
             <em>*subjektorientiert: einfühlsam, wertschätzend, stärkend</em>
           </p>
           <br />
-          <div>
-            <img class="hero__discount-img" src="/imgs/rabattstern.png" />
-          </div>
           <p>
             Du bist...
           </p>

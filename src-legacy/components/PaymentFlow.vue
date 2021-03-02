@@ -85,9 +85,7 @@ export default {
       formIsValid: false,
       promoCode: undefined,
       promoCodeForm: {
-        fields: [
-          { ...this.$root.appData.formEntries.promoCode, value: "FEBRUAR50" },
-        ],
+        fields: [{ ...this.$root.appData.formEntries.promoCode }],
         goal: "Verifizieren",
         layout: "small",
         name: "promo-code",

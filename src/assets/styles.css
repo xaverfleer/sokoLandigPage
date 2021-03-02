@@ -456,13 +456,6 @@ textarea {
   display: none;
 }
 
-.hero__discount-img {
-  float: right;
-  max-width: 45%;
-  max-width: clamp(170px, 35%, 350px);
-  transform: rotateZ(-15deg);
-}
-
 .hero__subjektorientiert {
   font-size: 1.4rem;
   margin: 0;
