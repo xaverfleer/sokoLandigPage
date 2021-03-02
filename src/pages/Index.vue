@@ -586,16 +586,12 @@ function onMounted() {
   };
 
   function analyticsRelated() {
-    function analyse() {
-      typeof LogRocket === "object" &&
-        LogRocket.init &&
-        LogRocket.init("yxvjmb/soko");
-      typeof amplitude === "object" &&
-        amplitude.getInstance &&
-        amplitude.getInstance().logEvent("Page loaded");
-    }
-
-    analyse();
+    typeof LogRocket === "object" &&
+      LogRocket.init &&
+      LogRocket.init("yxvjmb/soko");
+    typeof amplitude === "object" &&
+      amplitude.getInstance &&
+      amplitude.getInstance().logEvent("Page loaded");
   }
 
   analyticsRelated();
