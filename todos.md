@@ -1,6 +1,10 @@
 ## todos
 
-- add trailing slashes
+- create dashboard with
+  - page openings
+  - /buchen/
+  - /gruppenkurs-buchen/
+- add username to amplitude tracked user
 - track what's seen on landing page
 - add document\_\_link--overview-progress
 - bugfixes
