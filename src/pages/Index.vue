@@ -514,8 +514,8 @@
           </form>
         </section>
       </main>
-      <footer class="footer">
-        <div id="contact" class="footer__contact">
+      <footer class="footer" id="footer">
+        <div class="footer__contact">
           Kontaktiere uns unter
           <a href="mailto:kurs@so-kommunizieren.ch" rel="nofollow"
             >kurs@so-kommunizieren.ch</a
@@ -556,7 +556,11 @@
 <script>
 import GdprNotice from "~/components/GdprNotice";
 import LogRocket from "logrocket";
-import { trackCustomEvent, trackPageLoad } from "~/scripts/analytics";
+import {
+  trackCustomEvent,
+  trackPageLoad,
+  trackScrolling,
+} from "~/scripts/analytics";
 
 const page = typeof document === "object" && document.querySelector(".page");
 
@@ -591,6 +595,12 @@ function onMounted() {
       LogRocket.init &&
       LogRocket.init("yxvjmb/soko");
     trackPageLoad("/");
+
+    trackScrolling("contents", "#contents");
+    trackScrolling("offer", "#offer");
+    trackScrolling("about-me", "#about-me");
+    trackScrolling("contact", "#contact");
+    trackScrolling("footer", "#footer");
   }
 
   analyticsRelated();
