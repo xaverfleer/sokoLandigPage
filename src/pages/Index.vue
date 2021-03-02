@@ -103,10 +103,7 @@
               title="Gratis starten"
               >Gratis starten</g-link
             >
-            <a
-              class="button button--2ndary cta05"
-              href="#contents"
-              title="Inhalt"
+            <a class="button button--2ndary" href="#contents" title="Inhalt"
               >Mehr erfahren</a
             >
           </div>
@@ -593,12 +590,6 @@ function onMounted() {
         LogRocket.init &&
         LogRocket.init("yxvjmb/soko");
       trackPageLoad("/");
-
-      document.querySelectorAll(".cta05").forEach(function bindHandler(e) {
-        e.addEventListener("click", function logEvent() {
-          amplitude.getInstance().logEvent("Jetzt buchen");
-        });
-      });
     }
 
     analyse();
