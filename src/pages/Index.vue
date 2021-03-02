@@ -195,15 +195,16 @@
                 width="100"
               />
               <div class="checklist__text">
-                ...welche Wurzeln dein Baby innerlich stark fürs Leben machen und was
-                es heisst, dein Baby als gleichwürdiges Subjekt zu sehen. (Kursblock&nbsp;1)
+                ...welche Wurzeln dein Baby innerlich stark fürs Leben machen
+                und was es heisst, dein Baby als gleichwürdiges Subjekt zu
+                sehen. (Kursblock&nbsp;1)
               </div>
             </li>
             <li class="checklist__item checklist__item--kursblock-2">
               <div class="checklist__text">
                 ...wie du im Alltag immer wieder in nährende Interaktionen mit
-                deinem Baby treten kannst und wie du Widerstand (z.B. beim Wickeln) 
-                konstruktiv begleiten kannst. (Kursblock&nbsp;2)
+                deinem Baby treten kannst und wie du Widerstand (z.B. beim
+                Wickeln) konstruktiv begleiten kannst. (Kursblock&nbsp;2)
               </div>
               <img
                 alt="Vater wickelt sein Baby"
@@ -218,15 +219,16 @@
                 width="100"
               />
               <div class="checklist__text">
-                ...wie du die Körpersignale, das Weinen und das Verhalten deines Babys 
-                verstehen und angemessen darauf reagieren kannst. (Kursblock&nbsp;3)
+                ...wie du die Körpersignale, das Weinen und das Verhalten deines
+                Babys verstehen und angemessen darauf reagieren kannst.
+                (Kursblock&nbsp;3)
               </div>
             </li>
             <li class="checklist__item checklist__item--kursblock-4">
               <div class="checklist__text">
-                ...wie du dich selbst stärken und deine Grenzen schützen kannst kannst, 
-                damit du genügend Ressourcen für den Alltag mit deinem Baby hast. 
-                (Kursblock&nbsp;4)
+                ...wie du dich selbst stärken und deine Grenzen schützen kannst
+                kannst, damit du genügend Ressourcen für den Alltag mit deinem
+                Baby hast. (Kursblock&nbsp;4)
               </div>
               <img
                 alt="Starke Eltern"
@@ -242,8 +244,8 @@
               />
               <div class="checklist__text">
                 ...wie du das Spielen und Forschen deines Babys begleiten
-                kannst, damit es in seinem Forschungsdrang gestärkt
-                wird und Frustrationstoleranz sowie Sozialkompetenz entwickeln kann.
+                kannst, damit es in seinem Forschungsdrang gestärkt wird und
+                Frustrationstoleranz sowie Sozialkompetenz entwickeln kann.
                 (Kursblock&nbsp;5)
               </div>
             </li>
