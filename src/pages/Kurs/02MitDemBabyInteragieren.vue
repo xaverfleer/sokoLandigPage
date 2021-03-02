@@ -8,7 +8,7 @@
 <script>
 import Block2Free from "~/components/Block2Free.vue";
 import Block2Paid from "~/components/Block2Paid.vue";
-import analytics from "~/scripts/analytics";
+import { trackPageLoad } from "~/scripts/analytics";
 import appData from "~/data/appData";
 import { isEarlyBird } from "~/helpers.js";
 
@@ -53,7 +53,7 @@ export default {
     },
   },
   mounted() {
-    analytics(this.$route.path);
+    trackPageLoad(this.$route.path);
   },
 };
 </script>
