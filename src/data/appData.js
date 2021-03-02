@@ -2069,12 +2069,12 @@ const appData = {
     single: {
       name: "Freier Onlinekurs",
       price: 195,
-      title: "Freier Onlinekurs – 50% Rabatt im Februar",
+      title: "Freier Onlinekurs",
     },
     group: {
       name: "Geführter Gruppenkurs",
       price: 295,
-      title: "Geführter Gruppenkurs – 50% Rabatt im Februar",
+      title: "Geführter Gruppenkurs",
     },
   },
   standardNavRoutes: {
