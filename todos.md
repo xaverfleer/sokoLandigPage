@@ -1,62 +1,66 @@
-## todos
+# todos
 
-- create dashboard with
-  - page openings
-  - /buchen/
-  - /gruppenkurs-buchen/
-- add username to amplitude tracked user
-- track what's seen on landing page
-- add document\_\_link--overview-progress
+# growth chanels
+
+- blog
+- seo
+- strategy cards
+- PR: Eva vermarkten as proposed by Tim Ferris
+- page improvements
+- better wording on landing page
+- forum
+
+## channel: blog
+
+- add layout
+- render blog from markdown
+- add /blog
+- add netlifyCMS
+- add author
+- add tags pages
+- infrastructure with netlifycms
+- comments
+- email subscription to updates
+- blog main page
+- upcoming topics
+
+## channel: forum
+
+- check for pre build solutions
+- anmelden
+- add comment
+- load comments from fauna.com
+
+## channel: PR (as tim ferris)
+
+## chennel: seo
+
+- Header|Navbar|Account: add title attribute
+- update sitemap
+- add title attributes to all sites
+- seo optimization with ubersuggest
+- schema.org
+
+## channel: ux
+
+- font-sizes
+
+## channel: strategy cards
+
+# bugfixes
+
 - bugfixes
   - fix scenario (1) fail login with incorrect pw (2) login with correct pw
-- add meta info to /404/
-- seo optimization with ubersuggest
-- apply Layout to Index.vue
-- Header|Navbar|Account
-  - center
-  - add title attribute
-- add blog
-  - add layout
-  - render blog from markdown
-  - add /blog
-  - add netlifyCMS
-  - add author
-  - add tags pages
-- blog
-  - infrastructure with netlifycms
-  - comments
-  - email subscription to updates
-  - blog main page
-  - upcoming topics
-- clean src/legacy and static
-- update sitemap
-- check seo
-  - add title attributes to all sites
-- schema.org
-- Eva vermarkten as proposed by Tim Ferris
-- forum
-  - check for pre build solutions
-  - anmelden
-  - add comment
-  - load comments from fauna.com
-- find out how to hide gdpr with firefox ios
-- check what errors mean
+  - add meta info to /404/
+  - firefox / -> /kurs/: find out how to hide gdpr with firefox ios
+  - understand page errors -> fix
 
-## maybe sommeday
+# channel ux improvement on /kurs/
 
-- streamline font sizes
 - besseres Menu in /kurs
+- add document\_\_link--overview-progress
 
-## done/won't do
+# analytics
 
 - Register for second half of first block
-- move google site verification to Netlify
-- ✅ funnel strategy
-  - 00: read a blog
-  - 01: subscribe for updates
-  - 02: share a link
-  - 03: book course
-
-# Eva
-
-- entscheidungsfrage in Angebote <- ok ohne?
+- add username to amplitude tracked user
