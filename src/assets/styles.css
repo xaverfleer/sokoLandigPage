@@ -683,17 +683,6 @@ textarea {
   cursor: pointer;
 }
 
-.reduction {
-  font-size: 1.4em;
-  max-width: 10em;
-  color: #ffffff;
-  background-color: #966b40;
-  padding: 1em;
-  margin: 2em auto;
-  transform: rotate(350deg);
-  border-radius: 0.5rem;
-}
-
 .scroll-offset {
   display: block;
   position: relative;
