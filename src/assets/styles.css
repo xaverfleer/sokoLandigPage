@@ -749,14 +749,14 @@ strong {
   flex-grow: 1;
   margin: 0 0.5em 2em;
   max-width: 30em;
-  min-width: 12em;
+  min-width: 9em;
   padding: 1em;
   flex-direction: column;
   align-items: center;
 }
 
 .value-proposition__icon {
-  width: 50%;
+  width: 25%;
 }
 
 .value-proposition__description {
