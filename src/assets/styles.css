@@ -12,13 +12,13 @@ a * {
 }
 
 body {
-  font-size: 1.4rem;
+  font-size: 1.23607rem;
   margin: 0;
 }
 
 button {
   cursor: pointer;
-  font-size: 1.4rem;
+  font-size: 1.23607rem;
 }
 
 button:focus {
@@ -33,7 +33,7 @@ h3 {
 }
 
 h1 {
-  font-size: 3.8rem;
+  font-size: 3.23606rem;
 }
 
 h2,
@@ -43,7 +43,7 @@ h3 {
 
 h2 {
   margin-top: 0.4em;
-  font-size: 2.7rem;
+  font-size: 3.23606rem;
 }
 
 h3 {
@@ -71,7 +71,7 @@ textarea {
 }
 
 .block__title {
-  font-size: 3.8rem;
+  font-size: 3.23606rem;
   margin-top: 0.5rem;
 }
 
@@ -117,7 +117,7 @@ textarea {
 
 .button {
   border: none;
-  font-size: 1.4rem;
+  font-size: 1.23607rem;
   letter-spacing: 0.1em;
   text-align: center;
   text-transform: uppercase;
@@ -326,7 +326,7 @@ textarea {
 .form-entry__help {
   margin: 0.3em 0 0 0.3em;
   color: #c23934;
-  font-size: 1.4rem;
+  font-size: 1.23607rem;
 }
 
 .form-entry__input {
@@ -457,7 +457,7 @@ textarea {
 }
 
 .hero__subjektorientiert {
-  font-size: 1.4rem;
+  font-size: 2rem;
   margin: 0;
 }
 
@@ -772,7 +772,7 @@ strong {
 }
 
 .video-name {
-  font-size: 1.4rem;
+  font-size: 1.23607rem;
 }
 
 .vimeo-video__container {
@@ -877,19 +877,19 @@ strong {
   }
 
   h2 {
-    font-size: 3.8rem;
+    font-size: 3.23606rem;
   }
 
   h3 {
-    font-size: 2.7rem;
+    font-size: 3.23606rem;
   }
 
   .block__supertitle {
-    font-size: 2.8rem;
+    font-size: 3.23606rem;
   }
 
   .block__title {
-    font-size: 5.3rem;
+    font-size: 5.236042rem;
   }
 
   .button {
@@ -901,7 +901,7 @@ strong {
   }
 
   .footer {
-    font-size: 1.4rem;
+    font-size: 1.23607rem;
   }
 
   .form-entry__help {
@@ -922,16 +922,16 @@ strong {
   }
 
   .hero__subjektorientiert {
-    font-size: 2.7rem;
+    font-size: 2rem;
   }
 
   .hero__supertitle {
-    font-size: 2.8rem;
+    font-size: 2rem;
     margin-bottom: 0.1rem;
   }
 
   .hero__title {
-    font-size: 5.3rem;
+    font-size: 5.236042rem;
   }
 
   .nav:not(.nav--kurs).nav__entry {
