@@ -101,7 +101,7 @@ textarea {
 }
 
 .booking-offer__price {
-  font-size: 2em;
+  font-size: 3.23606rem;
 }
 
 .booking-offer__title {
@@ -783,7 +783,7 @@ strong {
 }
 
 .video-name {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .vimeo-video__container {
@@ -963,6 +963,6 @@ strong {
   }
 
   .video-name {
-    font-size: 20px;
+    font-size: 2rem;
   }
 }
