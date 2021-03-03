@@ -457,19 +457,18 @@ textarea {
 }
 
 .hero__subjektorientiert {
-  font-size: 2rem;
+  font-size: 1.23607rem;
   margin: 0;
 }
 
 .hero__supertitle {
-  font-size: 2rem;
+  font-size: 1.23607rem;
   color: #966b40;
   margin-bottom: 0.1rem;
 }
 
 .hero__title {
-  margin-top: 0.1rem;
-  margin-bottom: 0.1rem;
+  margin: 0;
 }
 
 .hidden {
