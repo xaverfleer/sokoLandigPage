@@ -48,7 +48,9 @@
             und&nbsp;Betreuungspersonen
           </p>
           <h1 class="hero__title">
-            <em>so*</em> kommunizieren mit meinem&nbsp;Baby
+            Beziehung statt Erziehung. Wie?
+            <br />
+            <em>so*</em> kommunizieren mit meinem&nbsp;Baby!
           </h1>
           <p class="hero__subjektorientiert">
             <em>*subjektorientiert: einfühlsam, wertschätzend, stärkend</em>
