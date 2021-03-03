@@ -278,7 +278,6 @@
               <div
                 class="offers__offer offers__offer--active offers__offer--alone"
               >
-                <h3>Freier Onlinekurs</h3>
                 <p>
                   <strong
                     >Du lernst gerne allein, unverbindlich und in deinem eigenen
@@ -335,7 +334,6 @@
                 </div>
               </div>
               <div class="offers__offer offers__offer--group">
-                <h3>Geführter Gruppenkurs</h3>
                 <p>
                   <strong
                     >Du lernst gerne strukturiert, geführt und in einer

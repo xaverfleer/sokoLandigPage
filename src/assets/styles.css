@@ -43,16 +43,17 @@ h3 {
 
 h2 {
   margin-top: 0.4em;
-  font-size: 3.23606rem;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.23607rem;
   margin-top: 1em;
 }
 
 html {
   font-size: 62.5%;
+  font-size: clamp(62.5%, 1.7vw, 85%);
 }
 
 main {
@@ -267,7 +268,7 @@ textarea {
   padding: 10px;
   height: 90px;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.76393rem;
   color: #ffffff;
 }
 
@@ -867,48 +868,8 @@ strong {
 }
 
 @media screen and (min-width: 800px) {
-  body {
-    font-size: 2rem;
-  }
-
-  button {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 3.23606rem;
-  }
-
-  h3 {
-    font-size: 3.23606rem;
-  }
-
-  .block__supertitle {
-    font-size: 3.23606rem;
-  }
-
-  .block__title {
-    font-size: 5.236042rem;
-  }
-
-  .button {
-    font-size: 2rem;
-  }
-
   .button--sameline {
     max-height: 54px;
-  }
-
-  .footer {
-    font-size: 1.23607rem;
-  }
-
-  .form-entry__help {
-    font-size: 2rem;
-  }
-
-  .header {
-    font-size: 2rem;
   }
 
   .header--fixed {
@@ -920,17 +881,8 @@ strong {
     margin: 0 auto;
   }
 
-  .hero__subjektorientiert {
-    font-size: 2rem;
-  }
-
   .hero__supertitle {
-    font-size: 2rem;
     margin-bottom: 0.1rem;
-  }
-
-  .hero__title {
-    font-size: 5.236042rem;
   }
 
   .nav:not(.nav--kurs).nav__entry {
@@ -944,9 +896,5 @@ strong {
 
   .value-proposition__entry {
     min-width: 26%;
-  }
-
-  .video-name {
-    font-size: 2rem;
   }
 }
