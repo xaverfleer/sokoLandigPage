@@ -44,7 +44,8 @@
       <main>
         <section class="section hero">
           <p class="hero__supertitle">
-            Der Onlinekurs für Eltern, Bezugs- und&nbsp;Betreuungspersonen
+            Der Online-Video-Kurs für Eltern, Bezugs-
+            und&nbsp;Betreuungspersonen
           </p>
           <h1 class="hero__title">
             <em>so*</em> kommunizieren mit meinem&nbsp;Baby
@@ -92,7 +93,8 @@
           </p>
           <p>
             Nähre die gesunde Entwicklung deines Babys von Anfang an. Starte
-            jetzt gratis mit dem Onlinekurs zur <em>subjektorientierten</em>
+            jetzt gratis mit dem Online-Video-Kurs zur
+            <em>subjektorientierten</em>
             Kommunikation mit Babys!
           </p>
           <div class="buttons">
@@ -285,9 +287,10 @@
                   >
                 </p>
                 <p>
-                  Mit dem freien Onlinekurs erwirbst du einen dauerhaften Zugang
-                  zu allen Kursinhalten. Die Kursinhalte bearbeitest du nach
-                  deinem eigenen Plan und in deinem individuellen Lerntempo.
+                  Mit dem freien Online-Video-Kurs erwirbst du einen dauerhaften
+                  Zugang zu allen Kursinhalten. Die Kursinhalte bearbeitest du
+                  nach deinem eigenen Plan und in deinem
+                  individuellen Lerntempo.
                 </p>
                 <p>
                   Zusätzlich hast du die unverbindliche Möglichkeit, einmal pro
@@ -300,7 +303,7 @@
                 <p class="offer__space"></p>
                 <div class="booking-offer">
                   <div class="booking-offer__entry booking-offer__title">
-                    Freier Onlinekurs
+                    Freier Online-Video-Kurs
                   </div>
                   <div class="booking-offer__entry booking-offer__main">
                     <div class="booking-offer__price">CHF 195</div>
@@ -344,8 +347,8 @@
                   Mit dem geführten Gruppenkurs wirst du Teil einer fixen
                   Lerngruppe. In regelmässigen Onlinemeetings (2x im Monat)
                   führe ich dich und deine Gruppe über einen Zeitraum von sechs
-                  Monaten Schritt für Schritt durch den Onlinekurs. Ich schaffe
-                  für dich eine klare Struktur und Verbindlichkeit.
+                  Monaten Schritt für Schritt durch den Online-Video-Kurs. Ich
+                  schaffe für dich eine klare Struktur und Verbindlichkeit.
                 </p>
                 <p>
                   Vor jedem Onlinemeeting schaust du dir als Vorbereitung die
@@ -424,9 +427,9 @@
             Ich bin Eva Fleer, ausgebildete und erfahrene Pädagogin und in
             Ausbildung zur Leiterin von Kursen für Eltern gemäss dem Konzept
             «Elternkompass». Im Verlauf dieser Ausbildung habe ich den
-            Onlinekurs zur <em>subjektorientierten</em> Kommunikation mit Babys
-            erstellt. In diesem Kurs trage ich Wissen und Strategien aus der
-            Ausbildung, aus rund 50 Fachbüchern sowie aus den folgenden
+            Online-Video-Kurs zur <em>subjektorientierten</em> Kommunikation mit
+            Babys erstellt. In diesem Kurs trage ich Wissen und Strategien aus
+            der Ausbildung, aus rund 50 Fachbüchern sowie aus den folgenden
             absolvierten Kursen zusammen:
           </p>
           <p></p>

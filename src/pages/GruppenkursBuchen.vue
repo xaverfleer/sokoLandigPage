@@ -31,7 +31,7 @@ export default {
       {
         name: "description",
         content:
-          "Geleiteten, strukturierten Onlinekurs buchen und unbeschränkten Zugriff sichern.",
+          "Geleiteten, strukturierten Online-Video-Kurs buchen und unbeschränkten Zugriff sichern.",
       },
     ],
     script: [

@@ -2067,9 +2067,9 @@ const appData = {
   formEntries,
   offers: {
     single: {
-      name: "Freier Onlinekurs",
+      name: "Freier Online-Video-Kurs",
       price: 195,
-      title: "Freier Onlinekurs",
+      title: "Freier Online-Video-Kurs",
     },
     group: {
       name: "Geführter Gruppenkurs",
