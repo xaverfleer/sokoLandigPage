@@ -24,6 +24,11 @@
         gehen kurz auf gleichwürdige Alternativen ein.
       </p>
       <VideoVue :video="{ ref: 'https://player.vimeo.com/video/514884071' }" />
+      <p>
+        <g-link to="/blog/">Zurück zur Übersicht</g-link>
+        oder
+        <g-link to="/kurs-">zum Kurs.</g-link>
+      </p>
     </Section>
   </Layout>
 </template>

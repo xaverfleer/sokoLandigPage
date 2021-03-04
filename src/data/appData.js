@@ -2080,6 +2080,7 @@ const appData = {
   standardNavRoutes: {
     kurs: { ...routes.kurs, isPrimary: true },
     landingPage: routes.landingPage,
+    blog: routes.blog,
   },
   courseRoutes: [
     routes.block01,

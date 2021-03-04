@@ -30,6 +30,7 @@ export default {
     text: "Download Dokumentpakete",
     to: "/kurs/06-download-dokumentenpakete/",
   },
+  blog: { text: "Blog", to: "/blog/" },
   changedPassword: { text: "Passwort geändert", to: "/passwort-geaendert/" },
   definedPassword: { text: "Passwort definiert", to: "/passwort-definiert/" },
   emailConfirmed: { text: "E-Mail bestätigt", to: "/email-bestaetigt/" },
