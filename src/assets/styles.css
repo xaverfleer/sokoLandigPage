@@ -76,6 +76,15 @@ textarea {
   margin-top: 0.5rem;
 }
 
+.blog__date-and-author {
+  color: #888;
+  font-style: italic;
+}
+
+.blog__title {
+  margin-top: 0;
+}
+
 .booking-offer {
   background-color: #f6ede2;
   border-radius: 5px;
