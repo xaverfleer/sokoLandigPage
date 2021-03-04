@@ -677,25 +677,6 @@ textarea {
   padding: 1em;
 }
 
-.progress-list__item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1em;
-}
-
-.progress-list__item::before {
-  flex: 0 0 32px;
-  height: 32px;
-  content: " ";
-  background-image: url(/imgs/autorenew-24px.svg);
-  background-repeat: no-repeat;
-  margin: 0 1em 0 2em;
-}
-
-.progress-list__item--done::before {
-  background-image: url(/imgs/check-24px.svg);
-}
-
 .profile {
   display: flex;
   padding: 12px 12px 12px 0;
