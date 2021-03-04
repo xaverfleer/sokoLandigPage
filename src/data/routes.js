@@ -1,5 +1,5 @@
 export default {
-  account: { text: "Zum Konto", to: "/konto/" },
+  account: { text: "Konto", to: "/konto/" },
   accountDeleted: { text: "Konto gelöscht", to: "/konto-geloescht/" },
   block01: {
     text: "Kursblock 1",
@@ -37,8 +37,8 @@ export default {
     text: "E-Mail Bestätigung fehlgeschlagen",
     to: "/email-nicht-bestaetigt/",
   },
-  landingPage: { text: "Zur Startseite", href: "/" },
-  kurs: { text: "Zum Kurs", to: "/kurs/" },
+  landingPage: { text: "Startseite", href: "/" },
+  kurs: { text: "Kurs", to: "/kurs/" },
   impressum: { text: "Impressum", to: "/impressum/" },
   loggedIn: { text: "Angemeldet", to: "/angemeldet/" },
   loggedOut: { text: "Abgemeldet", to: "/abgemeldet/" },
