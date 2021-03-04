@@ -658,6 +658,25 @@ textarea {
   opacity: 0.999;
 }
 
+.post-list {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.post-list__content {
+  color: #000;
+  text-align: left;
+}
+
+.post-list__date-and-author {
+  font-size: 1.23607rem;
+  margin-left: 0.5em;
+}
+
+.post-list__post {
+  padding: 1em;
+}
+
 .progress-list__item {
   display: flex;
   align-items: center;
