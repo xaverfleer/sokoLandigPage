@@ -2,7 +2,7 @@
   <Layout :routes="navRoutes">
     <Section class="section">
       <p class="blog__date-and-author">22. Februar 2021 – Eva Fleer</p>
-      <h1 class="blog__title">Gleichwürdig oder Erniedrigend?</h1>
+      <h1 class="blog__title">Gleichwürdig oder entwürdigend?</h1>
       <h2>Warum Gleichwürdigkeit?</h2>
       <p>
         Kinder brauchen innere Stärke, um mit den Herausforderungen des Lebens
