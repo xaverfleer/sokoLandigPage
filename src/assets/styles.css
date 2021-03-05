@@ -195,6 +195,7 @@ textarea {
 .checklist {
   padding-inline: 1em;
   padding-inline: clamp(1em, 7vw, 3em);
+  margin-bottom: 2em;
 }
 
 .checklist__item {
@@ -758,10 +759,6 @@ textarea {
 
 strong {
   font-weight: bold;
-}
-
-.ul--3-dots {
-  list-style-type: "… ";
 }
 
 .value-proposition {

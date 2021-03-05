@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>{{ checklist.pretext }}</p>
+    <p v-html="checklist.pretext">checklist.pretext</p>
     <div class="checklist">
       <ChecklistEntry
         v-for="entry in checklist.entries"
