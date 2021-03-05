@@ -8,16 +8,20 @@
             class="post-list__post"
             to="/blog/gleichwuerdig-oder-entwuerdigend/"
           >
-            <g-image src="~/assets/imgs/gleichwuerdig-vs-entwuerdigend.png" width="400" />
+            <g-image
+              class="post-list__img"
+              src="~/assets/imgs/gleichwuerdig-vs-entwuerdigend.png"
+            />
             <div class="post-list__content">
               <h2 class="post-list__title">
                 Gleichwürdig oder entwürdigend?
-                <span class="post-list__date-and-author">
-                  22. Februar 2021 – Eva Fleer</span
-                >
+                <div class="post-list__date-and-author">
+                  22. Februar 2021 – Eva Fleer
+                </div>
               </h2>
-              Eine gleichwürdige Sprache stärkt Kinder, eine entwürdigende Sprache schwächt sie. 
-              Was ist der Unterschied? Sieben konkrete Beispiele!
+              Eine gleichwürdige Sprache stärkt Kinder, eine entwürdigende
+              Sprache schwächt sie. Was ist der Unterschied? Sieben konkrete
+              Beispiele!
             </div>
           </g-link>
         </li>

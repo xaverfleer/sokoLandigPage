@@ -674,11 +674,13 @@ textarea {
 
 .post-list__content {
   color: #000;
+  margin: 1.4em 0;
 }
 
 .post-list__date-and-author {
   font-size: 1.23607rem;
-  margin-left: 0.5em;
+  color: #888;
+  font-style: italic;
 }
 
 .post-list__img {
@@ -688,12 +690,11 @@ textarea {
 .post-list__post {
   align-items: flex-start;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   padding: 1em;
 }
 
 .post-list__title {
-  margin-top: 1em;
   text-align: left;
 }
 
@@ -900,6 +901,18 @@ strong {
 
   .offers__offer--group {
     margin-left: 0.5em;
+  }
+
+  .post-list__content {
+    margin-left: 1em;
+  }
+
+  .post-list__img {
+    max-width: 38%;
+  }
+
+  .post-list__post {
+    flex-direction: row;
   }
 }
 
