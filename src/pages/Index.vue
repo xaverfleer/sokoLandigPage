@@ -101,19 +101,21 @@
             </div>
           </div>
           <p>
-            Du willst durch deine Kommunikation...
+            Deine Kommunikation macht den Unterschied, und zwar von Anfang an!
+            Die ersten drei Lebensjahre beeinflussen dein Kind besonders stark und nachhaltig.
+            Kommuniziere von Anfang an <em>subjektorientiert</em> und...
           </p>
           <ul class="ul--3-dots">
             <li>
-              deinem Baby helfen, ein positives Selbstbild und ein gesundes
-              Selbstvertrauen aufzubauen?
+              nähre nachhaltig die gesunde kognitive, psychische und soziale Entwicklung deines Babys!
             </li>
             <li>
-              ein stabiles Fundament für eine glückliche Kindheit und ein
-              erfülltes Erwachsenenleben schaffen?
+              hilf deinem Baby, ein positives Selbstbild und ein gesundes
+              Selbstvertrauen aufzubauen!
             </li>
             <li>
-              die gesunde kognitive, psychische und soziale Entwicklung deines Babys nähren?
+              schaffe ein stabiles Fundament für eine glückliche Kindheit und ein
+              erfülltes Erwachsenenleben!
             </li>
           </ul>
           <p>
