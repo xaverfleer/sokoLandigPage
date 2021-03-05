@@ -60,6 +60,35 @@
           </p>
           <br />
           <p>
+            Du wünschst dir für dich und dein Baby...
+          </p>
+          <div class="value-proposition">
+            <div class="value-proposition__entry">
+              <div class="value-proposition__titie">Mehr<br />Verständnis</div>
+              <div class="value-proposition__description">
+                Verstehe die Körpersprache, das Weinen und das Verhalten deines
+                Babys richtig. Reagiere angemessen und beuge Frust bei dir und
+                deinem Baby vor.
+              </div>
+            </div>
+            <div class="value-proposition__entry">
+              <div class="value-proposition__titie">Mehr Gelassenheit</div>
+              <div class="value-proposition__description">
+                Lass dich von gut gemeinten Ratschlägen und herausfordernden
+                nicht verunsichern. Kommuniziere auf eine Weise, die dich und
+                dein Baby stärkt.
+              </div>
+            </div>
+            <div class="value-proposition__entry">
+              <div class="value-proposition__titie">Weniger Machtkämpfe</div>
+              <div class="value-proposition__description">
+                Bleibe in Konfliktsituationen klar und zugewandt. Gewinne durch
+                eine bedürfnisorientierte Kommunikation die Kooperation deines
+                Babys.
+              </div>
+            </div>
+          </div>
+          <p>
             Du bist...
           </p>
           <ul class="ul--3-dots">
@@ -89,42 +118,8 @@
             </li>
           </ul>
           <p>
-            Du wünschst dir...
-          </p>
-          <div class="value-proposition">
-            <div class="value-proposition__entry">
-              <h3 class="value-proposition__titie">Mehr Verständnis</h3>
-              <div class="value-proposition__description">
-                <br />
-                Du erfährst, wie du die Körpersprache, das Weinen und das Verhalten deines 
-                Babys lesen und richtig verstehen kannst. So kannst du angemessen auf 
-                die wahren Bedürfnisse deines Babys reagieren und Frust bei dir und deinem 
-                Baby vorbeugen. 
-              </div>
-            </div>
-            <div class="value-proposition__entry">
-              <h3 class="value-proposition__titie">Mehr Gelassenheit</h3>
-              <div class="value-proposition__description">
-                <br />
-                Du erhältst Wissen und Strategien, um auf eine stärkende Weise zu 
-                kommunizieren. Herausfordernde Alltagssituationen und gut gemeinte 
-                Ratschläge verunsichern dich nicht mehr, denn du weisst, was dir und 
-                deinem Baby wirklich gut tut.
-              </div>
-            </div>
-            <div class="value-proposition__entry">
-              <h3 class="value-proposition__titie">Weniger Machtkämpfe</h3>
-              <div class="value-proposition__description">
-                <br />
-                Du lernst, wie du Machtkämpfe mit deinem Baby vermeidest. Durch eine 
-                bedürfnisorientierte Kommunikation kannst du die Kooperationsbereitschaft 
-                deines Babys gewinnen. Durch eine zugewandte Klarheit kannst du deine 
-                eigenen Grenzen wahren, ohne dabei das Baby herablassend zu behandeln.
-              </div>
-            </div>
-          </div>
-          <p>
-            Starte jetzt gratis mit dem Online-Video-Kurs zur <em>subjektorientierten</em>
+            Starte jetzt gratis mit dem Online-Video-Kurs zur
+            <em>subjektorientierten</em>
             Kommunikation mit Babys!
           </p>
           <div class="buttons">
@@ -153,9 +148,8 @@
                 class="value-proposition__icon"
                 src="imgs/video_library-24px.svg"
               />
-              <h3 class="value-proposition__titie">Inputvideos</h3>
+              <div class="value-proposition__titie">Inputvideos</div>
               <div class="value-proposition__description">
-                <br />
                 50&thinsp;-&thinsp;90 Minuten animierte Videos pro Kursblock
                 bieten Wissen und Strategien rund um eine einfühlsame,
                 wertschätzende und stärkende Kommunikation mit Babys.
@@ -163,9 +157,8 @@
             </div>
             <div class="value-proposition__entry">
               <img class="value-proposition__icon" src="imgs/edit-24px.svg" />
-              <h3 class="value-proposition__titie">Übungen</h3>
+              <div class="value-proposition__titie">Übungen</div>
               <div class="value-proposition__description">
-                <br />
                 Ein breites Angebot an Übungen hilft dir, die Inhalte aus den
                 Videos zu vertiefen und zu festigen.
               </div>
@@ -175,9 +168,8 @@
                 class="value-proposition__icon"
                 src="imgs/description-24px.svg"
               />
-              <h3 class="value-proposition__titie">Zusammenfassungen</h3>
+              <div class="value-proposition__titie">Zusammen- fassungen</div>
               <div class="value-proposition__description">
-                <br />
                 Zusammenfassungen der wichtigsten Kursinhalte ermöglichen einen
                 raschen Überblick und eine schnelle Repetition der Themen.
               </div>
@@ -187,9 +179,8 @@
                 class="value-proposition__icon"
                 src="imgs/article-24px.svg"
               />
-              <h3 class="value-proposition__titie">Strategiekarten</h3>
+              <div class="value-proposition__titie">Strategiekarten</div>
               <div class="value-proposition__description">
-                <br />
                 Alle Kommunikationsstrategien findest du zusammengefasst auf je
                 einer A5-Seite, z.B. zum Aufhängen als Erinnerungshilfe.
               </div>
@@ -199,18 +190,16 @@
                 class="value-proposition__icon"
                 src="imgs/find_in_page-24px.svg"
               />
-              <h3 class="value-proposition__titie">Vertiefungsmaterial</h3>
+              <div class="value-proposition__titie">Vertiefungs- material</div>
               <div class="value-proposition__description">
-                <br />
                 Vertiefende Materialien im PDF-Format zu diversen Themen rund um
                 die Entwicklung des Babys stehen zum Download zur Verfügung.
               </div>
             </div>
             <div class="value-proposition__entry">
               <img class="value-proposition__icon" src="imgs/map-24px.svg" />
-              <h3 class="value-proposition__titie">Kursfahrplan</h3>
+              <div class="value-proposition__titie">Kursfahrplan</div>
               <div class="value-proposition__description">
-                <br />
                 Ein Fahrplan gibt dir eine Übersicht über alle Kursblockinhalte
                 und hilft dir, dich im Kursblock zurechtzufinden.
               </div>
