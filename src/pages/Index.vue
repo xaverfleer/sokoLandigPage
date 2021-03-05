@@ -213,61 +213,64 @@
               <img
                 alt="Alle stehen oben auf dem Podest als Symbol, dass alle wichtig sind."
                 src="/imgs/alle-sind-wichtig.png"
-                width="100"
+                width="150"
               />
               <div class="checklist__text">
+                <strong>im Kursblock 1</strong><br />
                 ...welche Wurzeln dein Baby innerlich stark fürs Leben machen
                 und was es heisst, dein Baby als gleichwürdiges Subjekt zu
-                sehen. (Kursblock&nbsp;1)
+                sehen.
               </div>
             </li>
             <li class="checklist__item checklist__item--kursblock-2">
               <div class="checklist__text">
+                <strong>im Kursblock 2</strong><br />
                 ...wie du im Alltag immer wieder in nährende Interaktionen mit
                 deinem Baby treten kannst und wie du Widerstand (z.B. beim
-                Wickeln) konstruktiv begleiten kannst. (Kursblock&nbsp;2)
+                Wickeln) konstruktiv begleiten kannst. 
               </div>
               <img
                 alt="Vater wickelt sein Baby"
                 src="/imgs/babypflege.png"
-                width="100"
+                width="150"
               />
             </li>
             <li class="checklist__item checklist__item--kursblock-3">
               <img
                 alt="Weinendes, überfordertes Baby"
                 src="/imgs/baby-weint.png"
-                width="100"
+                width="150"
               />
               <div class="checklist__text">
+                <strong>im Kursblock 3</strong><br />
                 ...wie du die Körpersignale, das Weinen und das Verhalten deines
-                Babys verstehen und angemessen darauf reagieren kannst.
-                (Kursblock&nbsp;3)
+                Babys richtig verstehen und angemessen darauf reagieren kannst.
               </div>
             </li>
             <li class="checklist__item checklist__item--kursblock-4">
               <div class="checklist__text">
+                <strong>im Kursblock 4</strong><br />
                 ...wie du dich selbst stärken und deine Grenzen schützen kannst
                 kannst, damit du genügend Ressourcen für den Alltag mit deinem
-                Baby hast. (Kursblock&nbsp;4)
+                Baby hast.
               </div>
               <img
                 alt="Starke Eltern"
                 src="/imgs/starke-eltern.png"
-                width="100"
+                width="150"
               />
             </li>
             <li class="checklist__item checklist__item--kursblock-5">
               <img
                 alt="Baby forscht auf dem Wäschekorb"
                 src="/imgs/baby-forscht.png"
-                width="100"
+                width="150"
               />
               <div class="checklist__text">
+                <strong>im Kursblock 5</strong><br />
                 ...wie du das Spielen und Forschen deines Babys begleiten
                 kannst, damit es in seinem Forschungsdrang gestärkt wird und
                 Frustrationstoleranz sowie Sozialkompetenz entwickeln kann.
-                (Kursblock&nbsp;5)
               </div>
             </li>
           </ul>
