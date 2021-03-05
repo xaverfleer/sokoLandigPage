@@ -61,6 +61,18 @@
           </p>
           <br />
           <p>
+            Du bist...
+          </p>
+          <ul class="ul--3-dots">
+            <li>
+              werdende Mutter oder werdender Vater
+            </li>
+            <li>
+              Elternteil, Bezugs- oder Betreuungsperson eines Kindes zwischen 0
+              und 2 Jahren
+            </li>
+          </ul>
+          <p>
             Du wünschst dir für dich und dein Baby...
           </p>
           <div class="value-proposition">
@@ -90,32 +102,21 @@
             </div>
           </div>
           <p>
-            Du bist...
+            Deine Kommunikation macht den Unterschied, und zwar von Anfang an!
+            Die ersten drei Lebensjahre beeinflussen dein Kind besonders stark und nachhaltig.
+            Kommuniziere von Anfang an <em>subjektorientiert</em> und...
           </p>
           <ul class="ul--3-dots">
             <li>
-              werdende Mutter oder werdender Vater
+              nähre nachhaltig die gesunde kognitive, psychische und soziale Entwicklung deines Babys!
             </li>
             <li>
-              Elternteil, Bezugs- oder Betreuungsperson eines Kindes zwischen 0
-              und 2 Jahren
-            </li>
-          </ul>
-          <p>
-            Du willst durch deine Kommunikation...
-          </p>
-          <ul class="ul--3-dots">
-            <li>
-              ein stabiles Fundament für eine glückliche Kindheit und ein
-              erfülltes Erwachsenenleben schaffen?
+              hilf deinem Baby, ein positives Selbstbild und ein gesundes
+              Selbstvertrauen aufzubauen!
             </li>
             <li>
-              deinem Baby helfen, ein positives Selbstbild und ein gesundes
-              Selbstvertrauen aufzubauen?
-            </li>
-            <li>
-              die Lebensqualität und das Wohlbefinden aller Familienmitglieder
-              positiv beeinflussen?
+              schaffe ein stabiles Fundament für eine glückliche Kindheit und ein
+              erfülltes Erwachsenenleben!
             </li>
           </ul>
           <p>
