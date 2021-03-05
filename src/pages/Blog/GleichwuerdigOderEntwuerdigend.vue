@@ -50,9 +50,9 @@
         Verhaltensweisen verständnislos getadelt und bestraft. 
       </p>
       <p>
-        In diesem Videsieben habe ich sieben Kategorien von entwürdigenden Aussagen zusammengestellt, denen 
+        In diesem Video habe ich sieben Kategorien von entwürdigenden Aussagen zusammengestellt, denen 
         ich im Alltag immer wieder begegne. Ich erkläre, warum diese Aussagen entwürdigend sind und ich gehen 
-        darauf ein, welche gleichwürdigen Alternativen wir haben.
+        kurz darauf ein, welche gleichwürdigen Alternativen wir haben.
       </p>
       <VideoVue :video="{ ref: 'https://player.vimeo.com/video/514884071' }" />
       <p>
