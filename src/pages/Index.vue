@@ -60,23 +60,18 @@
             <em>*subjektorientiert: einfühlsam, wertschätzend, stärkend</em>
           </p>
           <br />
-          <p></p>
-          <Checklist
-            :checklist="{
-              pretext: 'Du bist...',
-              entries: [
-                {
-                  id: 0,
-                  text: '... werdende Mutter oder werdender Vater oder',
-                },
-                {
-                  id: 1,
-                  text:
-                    '... Elternteil, Bezugs- oder Betreuungsperson eines Kindes zwischen 0 und 2 Jahren',
-                },
-              ],
-            }"
-          />
+          <p>
+            Du bist...
+          </p>
+          <ul class="ul--3-dots">
+            <li>
+              werdende Mutter oder werdender Vater
+            </li>
+            <li>
+              Elternteil, Bezugs- oder Betreuungsperson eines Kindes zwischen 0
+              und 2 Jahren
+            </li>
+          </ul>
           <p>
             Du wünschst dir für dich und dein Baby...
           </p>
@@ -114,17 +109,17 @@
                 {
                   id: 0,
                   text:
-                    '... nähre nachhaltig die gesunde kognitive, psychische und soziale Entwicklung deines Babys!',
+                    'nähre nachhaltig die gesunde kognitive, psychische und soziale Entwicklung deines Babys!',
                 },
                 {
                   id: 1,
                   text:
-                    '... hilf deinem Baby, ein positives Selbstbild und ein gesundes Selbstvertrauen aufzubauen!',
+                    'hilf deinem Baby, ein positives Selbstbild und ein gesundes Selbstvertrauen aufzubauen!',
                 },
                 {
                   id: 2,
                   text:
-                    '... schaffe ein stabiles Fundament für eine glückliche Kindheit und ein erfülltes Erwachsenenleben!',
+                    'schaffe ein stabiles Fundament für eine glückliche Kindheit und ein erfülltes Erwachsenenleben!',
                 },
               ],
             }"
