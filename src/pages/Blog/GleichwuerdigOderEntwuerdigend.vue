@@ -1,5 +1,5 @@
 <template>
-  <Layout :routes="navRoutes">
+  <Layout>
     <Section class="section">
       <p class="blog__date-and-author">22. Februar 2021 – Eva Fleer</p>
       <h1 class="blog__title">Gleichwürdig oder entwürdigend?</h1>
