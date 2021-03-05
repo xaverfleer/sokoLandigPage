@@ -8,7 +8,7 @@
 <script>
 import Block5Free from "~/components/Block5Free.vue";
 import Block5Paid from "~/components/Block5Paid.vue";
-import { trackPageLoad } from "~/scripts/analytics";
+import { trackPageLoad } from "~/scripts/analyticsMethods";
 import appData from "~/data/appData";
 import { isEarlyBird } from "~/helpers";
 

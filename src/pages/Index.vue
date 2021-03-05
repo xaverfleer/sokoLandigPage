@@ -566,7 +566,7 @@ import {
   trackCustomEvent,
   trackPageLoad,
   trackScrolling,
-} from "~/scripts/analytics";
+} from "~/scripts/analyticsMethods";
 
 const page = typeof document === "object" && document.querySelector(".page");
 

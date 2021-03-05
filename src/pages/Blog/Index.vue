@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { trackPageLoad } from "~/scripts/analytics";
+import { trackPageLoad } from "~/scripts/analyticsMethods";
 
 export default {
   metaInfo: {

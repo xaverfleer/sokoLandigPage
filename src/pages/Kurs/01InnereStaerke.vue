@@ -28,7 +28,7 @@
 import ButtonVue from "~/components/ButtonVue.vue";
 import RouteVue from "~/components/RouteVue.vue";
 import SectionVue from "~/components/SectionVue.vue";
-import { trackPageLoad } from "~/scripts/analytics";
+import { trackPageLoad } from "~/scripts/analyticsMethods";
 import appData from "~/data/appData";
 import { isEarlyBird } from "~/helpers";
 

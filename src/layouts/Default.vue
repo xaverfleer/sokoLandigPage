@@ -68,6 +68,7 @@ query {
 </static-query>
 
 <script>
+import "~/scripts/analyticsSnippets";
 import GdprNotice from "~/components/GdprNotice";
 import LogRocket from "logrocket";
 import NavEntry from "~/components/NavEntry";

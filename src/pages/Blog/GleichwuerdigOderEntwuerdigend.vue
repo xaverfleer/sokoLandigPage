@@ -35,7 +35,7 @@
 
 <script>
 import VideoVue from "~/components/VideoVue.vue";
-import { trackPageLoad } from "~/scripts/analytics";
+import { trackPageLoad } from "~/scripts/analyticsMethods";
 
 export default {
   components: { VideoVue },
