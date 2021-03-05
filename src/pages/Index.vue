@@ -16,6 +16,7 @@
           <g-link class="header__home" to="/">
             <g-image
               alt="so* kommunizieren Baum"
+              blur="0"
               class="header__logo"
               height="200"
               src="~/assets/imgs/so-kommunizieren.png"
@@ -145,6 +146,7 @@
           <div class="value-proposition">
             <div class="value-proposition__entry">
               <g-image
+                blur="0"
                 class="value-proposition__icon"
                 height="54"
                 src="~/assets/imgs/video-symbol.svg"
@@ -159,6 +161,7 @@
             </div>
             <div class="value-proposition__entry">
               <g-image
+                blur="0"
                 class="value-proposition__icon"
                 height="54"
                 src="~/assets/imgs/edit-symbol.svg"
