@@ -75,8 +75,8 @@
               <div class="value-proposition__titie">Mehr Gelassenheit</div>
               <div class="value-proposition__description">
                 Lass dich von gut gemeinten Ratschlägen und herausfordernden
-                nicht verunsichern. Kommuniziere auf eine Weise, die dich und
-                dein Baby stärkt.
+                Situationen nicht verunsichern. Kommuniziere auf eine Weise, die
+                dich und dein Baby stärkt.
               </div>
             </div>
             <div class="value-proposition__entry">
