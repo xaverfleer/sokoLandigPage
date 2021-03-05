@@ -1,10 +1,12 @@
 # todos
 
-- add piktogramme to value props
 - Blog/Index.vue -> add image and teaser
 - fix Search console issues
-- log referrer
 - add facebook like button to blog
+- Strategy
+- log referrer
+- (eva) add piktogramme to value props
+- (eva) blog entries
 
 # growth chanels
 
