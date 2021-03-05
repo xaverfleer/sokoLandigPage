@@ -8,16 +8,16 @@
             class="post-list__post"
             to="/blog/gleichwuerdig-oder-entwuerdigend/"
           >
-            <g-image src="~/assets/imgs/alle-sind-wichtig.png" width="150" />
+            <g-image src="~/assets/imgs/gleichwuerdig-vs-entwuerdigend.png" width="400" />
             <div class="post-list__content">
               <h2 class="post-list__title">
-                Gleichwürdig oder erniedrigend?
+                Gleichwürdig oder entwürdigend?
                 <span class="post-list__date-and-author">
                   22. Februar 2021 – Eva Fleer</span
                 >
               </h2>
-              Worauf kann ich mich achten, damit ich gleichwürdig statt
-              erniedrigend mit meinem Baby spreche?
+              Eine gleichwürdige Sprache stärkt Kinder, eine entwürdigende Sprache schwächt sie. 
+              Was ist der Unterschied? Sieben konkrete Beispiele!
             </div>
           </g-link>
         </li>
