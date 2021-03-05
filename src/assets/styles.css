@@ -258,7 +258,7 @@ textarea {
 }
 
 .document__link--practice::before {
-  background-image: url(/imgs/edit-24px.svg);
+  background-image: url(./imgs/edit-symbol.svg);
 }
 
 .document__link--roadmap::before {

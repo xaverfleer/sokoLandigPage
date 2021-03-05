@@ -158,7 +158,12 @@
               </div>
             </div>
             <div class="value-proposition__entry">
-              <img class="value-proposition__icon" src="imgs/edit-24px.svg" />
+              <g-image
+                class="value-proposition__icon"
+                height="54"
+                src="~/assets/imgs/edit-symbol.svg"
+                width="54"
+              />
               <div class="value-proposition__titie">Übungen</div>
               <div class="value-proposition__description">
                 Ein breites Angebot an Übungen hilft dir, die Inhalte aus den
