@@ -1,10 +1,18 @@
 # todos
 
+- add piktogramme to value props
+- Blog/Index.vue -> add image and teaser
+- fix Search console issues
+- log referrer
 - add facebook like button to blog
 
 # growth chanels
 
 - blog
+- meetup
+  - with children
+  - without children
+- newsletter
 - seo
 - strategy cards
 - PR: Eva vermarkten as proposed by Tim Ferris
@@ -25,6 +33,8 @@
 - email subscription to updates
 - blog main page
 - upcoming topics
+  - Definition Gleichwürdigkeit + warum wichtig
+  - unsere Mission
 
 ## channel: forum
 
@@ -32,6 +42,10 @@
 - anmelden
 - add comment
 - load comments from fauna.com
+
+## channel: newsletter
+
+- subscribe for news
 
 ## channel: PR (as tim ferris)
 
@@ -42,6 +56,7 @@
 - add title attributes to all sites
 - seo optimization with ubersuggest
 - schema.org
+- add mission to webpage
 
 ## channel: ux
 
