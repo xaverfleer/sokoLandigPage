@@ -60,6 +60,18 @@
           </p>
           <br />
           <p>
+            Du bist...
+          </p>
+          <ul class="ul--3-dots">
+            <li>
+              werdende Mutter oder werdender Vater
+            </li>
+            <li>
+              Elternteil, Bezugs- oder Betreuungsperson eines Kindes zwischen 0
+              und 2 Jahren
+            </li>
+          </ul>
+          <p>
             Du wünschst dir für dich und dein Baby...
           </p>
           <div class="value-proposition">
@@ -89,32 +101,19 @@
             </div>
           </div>
           <p>
-            Du bist...
-          </p>
-          <ul class="ul--3-dots">
-            <li>
-              werdende Mutter oder werdender Vater
-            </li>
-            <li>
-              Elternteil, Bezugs- oder Betreuungsperson eines Kindes zwischen 0
-              und 2 Jahren
-            </li>
-          </ul>
-          <p>
             Du willst durch deine Kommunikation...
           </p>
           <ul class="ul--3-dots">
-            <li>
-              ein stabiles Fundament für eine glückliche Kindheit und ein
-              erfülltes Erwachsenenleben schaffen?
-            </li>
             <li>
               deinem Baby helfen, ein positives Selbstbild und ein gesundes
               Selbstvertrauen aufzubauen?
             </li>
             <li>
-              die Lebensqualität und das Wohlbefinden aller Familienmitglieder
-              positiv beeinflussen?
+              ein stabiles Fundament für eine glückliche Kindheit und ein
+              erfülltes Erwachsenenleben schaffen?
+            </li>
+            <li>
+              die gesunde kognitive, psychische und soziale Entwicklung deines Babys nähren?
             </li>
           </ul>
           <p>
