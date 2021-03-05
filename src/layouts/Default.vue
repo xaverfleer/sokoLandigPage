@@ -128,13 +128,5 @@ export default {
     this.analyticsRelated();
   },
   props: ["routes"],
-  script: [
-    {
-      src: "/fbPixel.js",
-    },
-    {
-      src: "/amplitudeSnippet.js",
-    },
-  ],
 };
 </script>
