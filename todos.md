@@ -1,5 +1,7 @@
 # todos
 
+- add facebook like button to blog
+
 # growth chanels
 
 - blog
