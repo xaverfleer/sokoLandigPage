@@ -674,7 +674,6 @@ textarea {
 
 .post-list__content {
   color: #000;
-  text-align: left;
 }
 
 .post-list__date-and-author {
@@ -683,7 +682,14 @@ textarea {
 }
 
 .post-list__post {
+  display: flex;
+  align-items: flex-start;
   padding: 1em;
+}
+
+.post-list__title {
+  margin-top: 0;
+  text-align: left;
 }
 
 .profile {

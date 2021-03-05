@@ -3,14 +3,22 @@
     <Section class="section">
       <h1>Blog mit Gedanken rund um subjektorientierte Kommunikation</h1>
       <ul class="post-list">
-        <li class="post-list__post">
-          <g-link to="/blog/gleichwuerdig-oder-entwuerdigend/">
-            <h2 class="post-list__content">
-              Gleichwürdig oder Erniedrigend?
-              <span class="post-list__date-and-author">
-                22. Februar 2021 – Eva Fleer</span
-              >
-            </h2>
+        <li>
+          <g-link
+            class="post-list__post"
+            to="/blog/gleichwuerdig-oder-entwuerdigend/"
+          >
+            <g-image src="~/assets/imgs/alle-sind-wichtig.png" width="150" />
+            <div class="post-list__content">
+              <h2 class="post-list__title">
+                Gleichwürdig oder erniedrigend?
+                <span class="post-list__date-and-author">
+                  22. Februar 2021 – Eva Fleer</span
+                >
+              </h2>
+              Worauf kann ich mich achten, damit ich gleichwürdig statt
+              erniedrigend mit meinem Baby spreche?
+            </div>
           </g-link>
         </li>
       </ul>
