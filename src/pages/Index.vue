@@ -89,17 +89,42 @@
             </li>
           </ul>
           <p>
-            Die ersten drei Lebensjahre machen den Unterschied! Probleme, die im
-            Schulalter, in der Jugend oder auch noch im Erwachsenenleben
-            auftreten, wurzeln oft in frühsten Kindheitserfahrungen. Die Art und
-            Weise, wie wir mit einem Kind in seinen ersten Lebensjahren
-            kommunizieren und umgehen, beeinflusst seine künftige kognitive,
-            soziale und psychische Entwicklung besonders stark und nachhaltig.
+            Du wünschst dir...
           </p>
+          <div class="value-proposition">
+            <div class="value-proposition__entry">
+              <h3 class="value-proposition__titie">Mehr Verständnis</h3>
+              <div class="value-proposition__description">
+                <br />
+                Du erfährst, wie du die Körpersprache, das Weinen und das Verhalten deines 
+                Babys lesen und richtig verstehen kannst. So kannst du angemessen auf 
+                die wahren Bedürfnisse deines Babys reagieren und Frust bei dir und deinem 
+                Baby vorbeugen. 
+              </div>
+            </div>
+            <div class="value-proposition__entry">
+              <h3 class="value-proposition__titie">Mehr Gelassenheit</h3>
+              <div class="value-proposition__description">
+                <br />
+                Du erhältst Wissen und Strategien, um auf eine stärkende Weise zu 
+                kommunizieren. Herausfordernde Alltagssituationen und gut gemeinte 
+                Ratschläge verunsichern dich nicht mehr, denn du weisst, was dir und 
+                deinem Baby wirklich gut tut.
+              </div>
+            </div>
+            <div class="value-proposition__entry">
+              <h3 class="value-proposition__titie">Weniger Machtkämpfe</h3>
+              <div class="value-proposition__description">
+                <br />
+                Du lernst, wie du Machtkämpfe mit deinem Baby vermeidest. Durch eine 
+                bedürfnisorientierte Kommunikation kannst du die Kooperationsbereitschaft 
+                deines Babys gewinnen. Durch eine zugewandte Klarheit kannst du deine 
+                eigenen Grenzen wahren, ohne dabei das Baby herablassend zu behandeln.
+              </div>
+            </div>
+          </div>
           <p>
-            Nähre die gesunde Entwicklung deines Babys von Anfang an. Starte
-            jetzt gratis mit dem Online-Video-Kurs zur
-            <em>subjektorientierten</em>
+            Starte jetzt gratis mit dem Online-Video-Kurs zur <em>subjektorientierten</em>
             Kommunikation mit Babys!
           </p>
           <div class="buttons">
