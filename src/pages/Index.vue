@@ -144,9 +144,11 @@
           </p>
           <div class="value-proposition">
             <div class="value-proposition__entry">
-              <img
+              <g-image
                 class="value-proposition__icon"
-                src="imgs/video_library-24px.svg"
+                height="54"
+                src="~/assets/imgs/video-symbol.svg"
+                width="54"
               />
               <div class="value-proposition__titie">Inputvideos</div>
               <div class="value-proposition__description">
