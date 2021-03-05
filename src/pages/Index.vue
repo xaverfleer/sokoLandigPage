@@ -411,13 +411,13 @@
                     30 Tage Geld-zurück-Garantie
                   </div>
                   <div class="booking-offer__entry booking-offer__detail">
-                    Nächster Kursstart: 7. April 2021
+                    Nächster Kursstart: 18. August 2021
                   </div>
                   <div class="booking-offer__entry booking-offer__detail">
-                    Anmeldeschluss: 5. März 2021
+                    Anmeldeschluss: 5. Juli 2021
                   </div>
                   <div class="booking-offer__entry booking-offer__detail">
-                    Noch 6 Plätze verfügbar
+                    Noch 7 Plätze verfügbar
                   </div>
                   <div class="buttons booking-offer__buttons">
                     <g-link
