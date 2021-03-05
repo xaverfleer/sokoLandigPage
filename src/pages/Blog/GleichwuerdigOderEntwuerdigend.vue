@@ -38,7 +38,7 @@
       </p>
       <p>
         <strong>Ich sehe und höre dich. Du bist wichtig. Und ich bin auch wichtig. Deswegen kann ich dir 
-          nicht alles ermöglichen und nicht jeden Wunsch erfüllen. Trotzde sind all deine Gedanken, Gefühle, 
+          nicht alles ermöglichen und nicht jeden Wunsch erfüllen. Trotzdem sind all deine Gedanken, Gefühle, 
           Bedürfnisse und Wünsche in diesem Moment richtig und berechtigt.</strong>
       </p>
       <br />
