@@ -775,6 +775,7 @@ strong {
 }
 
 .value-proposition__icon {
+  margin-bottom: 0.5em;
   width: 25%;
 }
 
