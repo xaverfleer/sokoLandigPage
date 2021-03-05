@@ -4,11 +4,13 @@
       <div class="header__emotion"></div>
       <div class="header__content">
         <g-link class="header__home" to="/">
-          <img
-            alt="Kleiner Baum"
+          <g-image
+            alt="so* kommunizieren Baum"
             class="header__logo"
-            src="/imgs/logo.png"
+            height="200"
+            src="~/assets/imgs/so-kommunizieren.png"
             title="Zur Startseite"
+            width="156"
           />
         </g-link>
         <nav :class="navClasses" @click="toggleNav">

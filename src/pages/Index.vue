@@ -14,13 +14,13 @@
         </div>
         <div class="header__content">
           <g-link class="header__home" to="/">
-            <img
-              alt="Growing tree"
+            <g-image
+              alt="so* kommunizieren Baum"
               class="header__logo"
               height="200"
-              width="auto"
-              src="/imgs/logo.png"
+              src="~/assets/imgs/so-kommunizieren.png"
               title="Zur Startseite"
+              width="156"
             />
           </g-link>
           <nav class="nav">
@@ -227,7 +227,7 @@
                 <strong>im Kursblock 2</strong><br />
                 ...wie du im Alltag immer wieder in nährende Interaktionen mit
                 deinem Baby treten kannst und wie du Widerstand (z.B. beim
-                Wickeln) konstruktiv begleiten kannst. 
+                Wickeln) konstruktiv begleiten kannst.
               </div>
               <img
                 alt="Vater wickelt sein Baby"
