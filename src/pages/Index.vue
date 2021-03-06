@@ -163,22 +163,19 @@
               </div>
             </div>
             <div class="value-proposition__entry">
-              <g-image
-                blur="0"
+              <img
                 class="value-proposition__icon"
-                height="54"
-                src="~/assets/imgs/edit-symbol.svg"
-                width="54"
+                src="imgs/article-24px.svg"
               />
-              <div class="value-proposition__titie">Übungen</div>
+              <div class="value-proposition__titie">Strategiekarten</div>
               <div class="value-proposition__description">
-                Ein breites Angebot an Übungen hilft dir, die Inhalte aus den
-                Videos zu vertiefen und zu festigen.
+                Alle Kommunikationsstrategien findest du zusammengefasst auf je
+                einer A5-Seite, z.B. zum Aufhängen als Erinnerungshilfe.
               </div>
               <p class="value-proposition__space" />
               <a
                 class="value-proposition__sample"
-                href="https://so-kommunizieren.ch/documents/so3-%C3%9Cbung-3.3e.pdf"
+                href="https://so-kommunizieren.ch/documents/so5-Strategiekarte-ABC-der-Zur%C3%BCckhaltung.pdf"
                 target="_blank"
                 >Beispiel</a
               >
@@ -204,24 +201,6 @@
             <div class="value-proposition__entry">
               <img
                 class="value-proposition__icon"
-                src="imgs/article-24px.svg"
-              />
-              <div class="value-proposition__titie">Strategiekarten</div>
-              <div class="value-proposition__description">
-                Alle Kommunikationsstrategien findest du zusammengefasst auf je
-                einer A5-Seite, z.B. zum Aufhängen als Erinnerungshilfe.
-              </div>
-              <p class="value-proposition__space" />
-              <a
-                class="value-proposition__sample"
-                href="https://so-kommunizieren.ch/documents/so5-Strategiekarte-ABC-der-Zur%C3%BCckhaltung.pdf"
-                target="_blank"
-                >Beispiel</a
-              >
-            </div>
-            <div class="value-proposition__entry">
-              <img
-                class="value-proposition__icon"
                 src="imgs/find_in_page-24px.svg"
               />
               <div class="value-proposition__titie">Vertiefungs- material</div>
@@ -233,6 +212,27 @@
               <a
                 class="value-proposition__sample"
                 href="https://so-kommunizieren.ch/documents/so2-Vertiefung-Baby-led-weaning.pdf"
+                target="_blank"
+                >Beispiel</a
+              >
+            </div>
+            <div class="value-proposition__entry">
+              <g-image
+                blur="0"
+                class="value-proposition__icon"
+                height="54"
+                src="~/assets/imgs/edit-symbol.svg"
+                width="54"
+              />
+              <div class="value-proposition__titie">Übungen</div>
+              <div class="value-proposition__description">
+                Ein breites Angebot an Übungen hilft dir, die Inhalte aus den
+                Videos zu vertiefen und zu festigen.
+              </div>
+              <p class="value-proposition__space" />
+              <a
+                class="value-proposition__sample"
+                href="https://so-kommunizieren.ch/documents/so3-%C3%9Cbung-3.3e.pdf"
                 target="_blank"
                 >Beispiel</a
               >
