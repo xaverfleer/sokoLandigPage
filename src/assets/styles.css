@@ -767,6 +767,10 @@ strong {
   flex-wrap: wrap;
 }
 
+.value-proposition__description {
+  text-align: center;
+}
+
 .value-proposition__entry {
   background-color: #fff;
   border: 1px solid #996b40;
@@ -786,10 +790,6 @@ strong {
 .value-proposition__icon {
   margin-bottom: 0.5em;
   width: 25%;
-}
-
-.value-proposition__description {
-  text-align: center;
 }
 
 .value-proposition__titie {
