@@ -761,6 +761,10 @@ strong {
   font-weight: bold;
 }
 
+.ul--3-dots {
+  list-style-type: "… ";
+}
+
 .value-proposition {
   align-items: stretch;
   display: flex;

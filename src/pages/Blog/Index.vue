@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <Section class="section">
-      <h1>Blog mit Gedanken rund um subjektorientierte Kommunikation</h1>
+      <h1>Der Blog Rund um die <em>subjektorientierte</em> Kommunikation mit Babys</h1>
       <ul class="post-list">
         <li>
           <g-link
