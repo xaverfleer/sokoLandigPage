@@ -211,6 +211,13 @@
                 Alle Kommunikationsstrategien findest du zusammengefasst auf je
                 einer A5-Seite, z.B. zum Aufhängen als Erinnerungshilfe.
               </div>
+              <p class="value-proposition__space" />
+              <a
+                class="value-proposition__sample"
+                href="https://so-kommunizieren.ch/documents/so5-Strategiekarte-ABC-der-Zur%C3%BCckhaltung.pdf"
+                target="_blank"
+                >Beispiel</a
+              >
             </div>
             <div class="value-proposition__entry">
               <img
@@ -222,6 +229,13 @@
                 Vertiefende Materialien im PDF-Format zu diversen Themen rund um
                 die Entwicklung des Babys stehen zum Download zur Verfügung.
               </div>
+              <p class="value-proposition__space" />
+              <a
+                class="value-proposition__sample"
+                href="https://so-kommunizieren.ch/documents/so2-Vertiefung-Baby-led-weaning.pdf"
+                target="_blank"
+                >Beispiel</a
+              >
             </div>
             <div class="value-proposition__entry">
               <img class="value-proposition__icon" src="imgs/map-24px.svg" />
@@ -230,6 +244,13 @@
                 Ein Fahrplan gibt dir eine Übersicht über alle Kursblockinhalte
                 und hilft dir, dich im Kursblock zurechtzufinden.
               </div>
+              <p class="value-proposition__space" />
+              <a
+                class="value-proposition__sample"
+                href="https://so-kommunizieren.ch/documents/so2-Fahrplan.pdf"
+                target="_blank"
+                >Beispiel</a
+              >
             </div>
           </div>
           <p>
