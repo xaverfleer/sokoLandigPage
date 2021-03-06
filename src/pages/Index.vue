@@ -80,33 +80,25 @@
           <p>
             Du wünschst dir für dich und dein Baby...
           </p>
-          <div class="value-proposition">
-            <div class="value-proposition__entry">
-              <div class="value-proposition__titie">Mehr<br />Verständnis</div>
-              <div class="value-proposition__description">
-                Verstehe die Körpersprache, das Weinen und das Verhalten deines
-                Babys richtig. Reagiere angemessen und beuge Frust bei dir und
-                deinem Baby vor.
-              </div>
-            </div>
-            <div class="value-proposition__entry">
-              <div class="value-proposition__titie">Mehr Gelassenheit</div>
-              <div class="value-proposition__description">
-                Lass dich von gut gemeinten Ratschlägen und herausfordernden
-                Situationen nicht verunsichern. Kommuniziere auf eine Weise, die
-                dich und dein Baby stärkt.
-              </div>
-            </div>
-            <div class="value-proposition__entry">
-              <div class="value-proposition__titie">Weniger Machtkämpfe</div>
-              <div class="value-proposition__description">
-                Bleibe in Konfliktsituationen klar und zugewandt. Gewinne durch
-                eine bedürfnisorientierte Kommunikation die Kooperation deines
-                Babys.
-              </div>
-            </div>
-          </div>
-          <p></p>
+          <Cards
+            :cards="[
+              {
+                title: 'Mehr\nVerständnis',
+                text:
+                  'Verstehe die Körpersprache, das Weinen und das Verhalten deines Babys richtig. Reagiere angemessen und beuge Frust bei dir und deinem Baby vor.',
+              },
+              {
+                title: 'Mehr\nGelassenheit',
+                text:
+                  'Lass dich von gut gemeinten Ratschlägen und herausfordernden Situationen nicht verunsichern. Kommuniziere auf eine Weise, die dich und dein Baby stärkt.',
+              },
+              {
+                title: 'Weniger\nMachtkämpfe',
+                text:
+                  'Bleibe in Konfliktsituationen klar und zugewandt. Gewinne durch eine bedürfnisorientierte Kommunikation die Kooperation deines Babys.',
+              },
+            ]"
+          />
           <Checklist
             :checklist="{
               pretext: `Deine Kommunikation macht den Unterschied, und zwar von Anfang an! Die ersten drei Lebensjahre beeinflussen dein Kind besonders stark und nachhaltig. Kommuniziere von Anfang an <em>subjektorientiert</em> und ...`,
@@ -598,6 +590,7 @@
 </template>
 
 <script>
+import Cards from "~/components/Cards";
 import Checklist from "~/components/Checklist";
 import GdprNotice from "~/components/GdprNotice";
 import LogRocket from "logrocket";
@@ -751,7 +744,7 @@ function onMounted() {
 }
 
 export default {
-  components: { Checklist, GdprNotice },
+  components: { Cards, Checklist, GdprNotice },
   metaInfo: {
     meta: [
       { name: "canonical", href: "https://so-kommunizieren.ch/" },
