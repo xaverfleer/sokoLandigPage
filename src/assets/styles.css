@@ -792,6 +792,19 @@ strong {
   width: 25%;
 }
 
+.value-proposition__sample {
+  align-self: flex-end;
+  background-color: #f6ede2;
+  border-radius: 5px;
+  color: inherit;
+  margin-top: 0.5em;
+  padding: 0.5em 1.5em;
+}
+
+.value-proposition__space {
+  flex-grow: 1;
+}
+
 .value-proposition__titie {
   color: #966b40;
   font-size: 2rem;

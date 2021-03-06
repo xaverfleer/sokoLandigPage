@@ -175,6 +175,13 @@
                 Ein breites Angebot an Übungen hilft dir, die Inhalte aus den
                 Videos zu vertiefen und zu festigen.
               </div>
+              <p class="value-proposition__space" />
+              <a
+                class="value-proposition__sample"
+                href="https://so-kommunizieren.ch/documents/so3-%C3%9Cbung-3.3e.pdf"
+                target="_blank"
+                >Beispiel</a
+              >
             </div>
             <div class="value-proposition__entry">
               <img
