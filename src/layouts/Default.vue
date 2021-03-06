@@ -104,9 +104,11 @@ export default {
       return stateM8t.isPaidAccount() || this.isEarlyBird;
     },
     navClasses() {
+      const path = this.$route.path;
       return [
         "nav",
-        Object.values(this.appliedRoutes).length > 3 && "nav--kurs",
+        (-1 < path.indexOf("/kurs/") || -1 < path.indexOf("/early-bird/")) &&
+          "nav--kurs",
         this.isNavActive && "nav--active",
       ];
     },
