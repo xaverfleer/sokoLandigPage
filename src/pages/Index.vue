@@ -156,6 +156,13 @@
                 bieten Wissen und Strategien rund um eine einfühlsame,
                 wertschätzende und stärkende Kommunikation mit Babys.
               </div>
+              <p class="value-proposition__space" />
+              <a
+                class="value-proposition__sample"
+                href="http://player.vimeo.com/video/490855723?autoplay=1"
+                target="_blank"
+                >Beispiel</a
+              >
             </div>
             <div class="value-proposition__entry">
               <img
