@@ -85,11 +85,20 @@
         kurz darauf ein, welche gleichwürdigen Alternativen wir haben.
       </p>
       <VideoVue :video="{ ref: 'https://player.vimeo.com/video/514884071' }" />
-      <p>
-        <g-link to="/blog/">Zurück zur Übersicht</g-link>
-        oder
-        <g-link to="/kurs-">zum Kurs.</g-link>
-      </p>
+      <div class="buttons">
+        <g-link
+          class="button button--primary"
+           to="/blog"
+           title="Zurück zur Übersicht"
+           >Zur Übersicht</g-link
+            >
+        <g-link
+          class ="button button--2ndary"
+          to="/kurs/01-innere-staerke/"
+          target="_blank"
+          title="Zum Onlinekurs"
+          >Zum Onlinekurs</g-link>
+      </div>
     </Section>
   </Layout>
 </template>
