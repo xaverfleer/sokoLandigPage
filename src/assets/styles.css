@@ -600,6 +600,10 @@ textarea {
   padding: 5px 10px;
 }
 
+.nav__entry--primary > a {
+  font-weight: 800;
+}
+
 /* this rule is needed to override user agents stylesheets */
 .nav a {
   color: #966b40;
