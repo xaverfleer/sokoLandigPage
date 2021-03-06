@@ -193,6 +193,13 @@
                 Zusammenfassungen der wichtigsten Kursinhalte ermöglichen einen
                 raschen Überblick und eine schnelle Repetition der Themen.
               </div>
+              <p class="value-proposition__space" />
+              <a
+                class="value-proposition__sample"
+                href="https://so-kommunizieren.ch/documents/so3-Zusammenfassung.pdf"
+                target="_blank"
+                >Beispiel</a
+              >
             </div>
             <div class="value-proposition__entry">
               <img
