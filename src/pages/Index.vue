@@ -75,33 +75,25 @@
           <p>
             Du wünschst dir für dich und dein Baby...
           </p>
-          <div class="value-proposition">
-            <div class="value-proposition__entry">
-              <div class="value-proposition__titie">Mehr<br />Verständnis</div>
-              <div class="value-proposition__description">
-                Verstehe die Körpersprache, das Weinen und das Verhalten deines
-                Babys richtig. Reagiere angemessen und beuge Frust bei dir und
-                deinem Baby vor.
-              </div>
-            </div>
-            <div class="value-proposition__entry">
-              <div class="value-proposition__titie">Mehr Gelassenheit</div>
-              <div class="value-proposition__description">
-                Lass dich von gut gemeinten Ratschlägen und herausfordernden
-                Situationen nicht verunsichern. Kommuniziere auf eine Weise, die
-                dich und dein Baby stärkt.
-              </div>
-            </div>
-            <div class="value-proposition__entry">
-              <div class="value-proposition__titie">Weniger Machtkämpfe</div>
-              <div class="value-proposition__description">
-                Bleibe in Konfliktsituationen klar und zugewandt. Gewinne durch
-                eine bedürfnisorientierte Kommunikation die Kooperation deines
-                Babys.
-              </div>
-            </div>
-          </div>
-          <p></p>
+          <Cards
+            :cards="[
+              {
+                title: 'Mehr\nVerständnis',
+                text:
+                  'Verstehe die Körpersprache, das Weinen und das Verhalten deines Babys richtig. Reagiere angemessen und beuge Frust bei dir und deinem Baby vor.',
+              },
+              {
+                title: 'Mehr\nGelassenheit',
+                text:
+                  'Lass dich von gut gemeinten Ratschlägen und herausfordernden Situationen nicht verunsichern. Kommuniziere auf eine Weise, die dich und dein Baby stärkt.',
+              },
+              {
+                title: 'Weniger\nMachtkämpfe',
+                text:
+                  'Bleibe in Konfliktsituationen klar und zugewandt. Gewinne durch eine bedürfnisorientierte Kommunikation die Kooperation deines Babys.',
+              },
+            ]"
+          />
           <Checklist
             :checklist="{
               pretext: `Deine Kommunikation macht den Unterschied, und zwar von Anfang an! Die ersten drei Lebensjahre beeinflussen dein Kind besonders stark und nachhaltig. Kommuniziere von Anfang an <em>subjektorientiert</em> und ...`,
@@ -166,6 +158,60 @@
               </div>
             </div>
             <div class="value-proposition__entry">
+              <img
+                class="value-proposition__icon"
+                src="imgs/article-24px.svg"
+              />
+              <div class="value-proposition__titie">Strategiekarten</div>
+              <div class="value-proposition__description">
+                Alle Kommunikationsstrategien findest du zusammengefasst auf je
+                einer A5-Seite, z.B. zum Aufhängen als Erinnerungshilfe.
+              </div>
+              <p class="value-proposition__space" />
+              <a
+                class="value-proposition__sample"
+                href="https://so-kommunizieren.ch/documents/so5-Strategiekarte-ABC-der-Zur%C3%BCckhaltung.pdf"
+                target="_blank"
+                >Beispiel</a
+              >
+            </div>
+            <div class="value-proposition__entry">
+              <img
+                class="value-proposition__icon"
+                src="imgs/description-24px.svg"
+              />
+              <div class="value-proposition__titie">Zusammen- fassungen</div>
+              <div class="value-proposition__description">
+                Zusammenfassungen der wichtigsten Kursinhalte ermöglichen einen
+                raschen Überblick und eine schnelle Repetition der Themen.
+              </div>
+              <p class="value-proposition__space" />
+              <a
+                class="value-proposition__sample"
+                href="https://so-kommunizieren.ch/documents/so3-Zusammenfassung.pdf"
+                target="_blank"
+                >Beispiel</a
+              >
+            </div>
+            <div class="value-proposition__entry">
+              <img
+                class="value-proposition__icon"
+                src="imgs/find_in_page-24px.svg"
+              />
+              <div class="value-proposition__titie">Vertiefungs- material</div>
+              <div class="value-proposition__description">
+                Vertiefende Materialien im PDF-Format zu diversen Themen rund um
+                die Entwicklung des Babys stehen zum Download zur Verfügung.
+              </div>
+              <p class="value-proposition__space" />
+              <a
+                class="value-proposition__sample"
+                href="https://so-kommunizieren.ch/documents/so2-Vertiefung-Baby-led-weaning.pdf"
+                target="_blank"
+                >Beispiel</a
+              >
+            </div>
+            <div class="value-proposition__entry">
               <g-image
                 blur="0"
                 class="value-proposition__icon"
@@ -178,39 +224,13 @@
                 Ein breites Angebot an Übungen hilft dir, die Inhalte aus den
                 Videos zu vertiefen und zu festigen.
               </div>
-            </div>
-            <div class="value-proposition__entry">
-              <img
-                class="value-proposition__icon"
-                src="imgs/description-24px.svg"
-              />
-              <div class="value-proposition__titie">Zusammen- fassungen</div>
-              <div class="value-proposition__description">
-                Zusammenfassungen der wichtigsten Kursinhalte ermöglichen einen
-                raschen Überblick und eine schnelle Repetition der Themen.
-              </div>
-            </div>
-            <div class="value-proposition__entry">
-              <img
-                class="value-proposition__icon"
-                src="imgs/article-24px.svg"
-              />
-              <div class="value-proposition__titie">Strategiekarten</div>
-              <div class="value-proposition__description">
-                Alle Kommunikationsstrategien findest du zusammengefasst auf je
-                einer A5-Seite, z.B. zum Aufhängen als Erinnerungshilfe.
-              </div>
-            </div>
-            <div class="value-proposition__entry">
-              <img
-                class="value-proposition__icon"
-                src="imgs/find_in_page-24px.svg"
-              />
-              <div class="value-proposition__titie">Vertiefungs- material</div>
-              <div class="value-proposition__description">
-                Vertiefende Materialien im PDF-Format zu diversen Themen rund um
-                die Entwicklung des Babys stehen zum Download zur Verfügung.
-              </div>
+              <p class="value-proposition__space" />
+              <a
+                class="value-proposition__sample"
+                href="https://so-kommunizieren.ch/documents/so3-%C3%9Cbung-3.3e.pdf"
+                target="_blank"
+                >Beispiel</a
+              >
             </div>
             <div class="value-proposition__entry">
               <img class="value-proposition__icon" src="imgs/map-24px.svg" />
@@ -219,6 +239,13 @@
                 Ein Fahrplan gibt dir eine Übersicht über alle Kursblockinhalte
                 und hilft dir, dich im Kursblock zurechtzufinden.
               </div>
+              <p class="value-proposition__space" />
+              <a
+                class="value-proposition__sample"
+                href="https://so-kommunizieren.ch/documents/so2-Fahrplan.pdf"
+                target="_blank"
+                >Beispiel</a
+              >
             </div>
           </div>
           <p>
@@ -593,6 +620,7 @@
 </template>
 
 <script>
+import Cards from "~/components/Cards";
 import Checklist from "~/components/Checklist";
 import GdprNotice from "~/components/GdprNotice";
 import LogRocket from "logrocket";
@@ -746,7 +774,7 @@ function onMounted() {
 }
 
 export default {
-  components: { Checklist, GdprNotice },
+  components: { Cards, Checklist, GdprNotice },
   metaInfo: {
     meta: [
       { name: "canonical", href: "https://so-kommunizieren.ch/" },

@@ -771,6 +771,10 @@ strong {
   flex-wrap: wrap;
 }
 
+.value-proposition__description {
+  text-align: center;
+}
+
 .value-proposition__entry {
   background-color: #fff;
   border: 1px solid #996b40;
@@ -792,8 +796,17 @@ strong {
   width: 25%;
 }
 
-.value-proposition__description {
-  text-align: center;
+.value-proposition__sample {
+  align-self: flex-end;
+  background-color: #f6ede2;
+  border-radius: 5px;
+  color: inherit;
+  margin-top: 0.5em;
+  padding: 0.5em 1.5em;
+}
+
+.value-proposition__space {
+  flex-grow: 1;
 }
 
 .value-proposition__titie {
