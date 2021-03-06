@@ -2078,8 +2078,11 @@ const appData = {
     },
   },
   standardNavRoutes: {
-    kurs: { ...routes.kurs, isPrimary: true },
-    landingPage: routes.landingPage,
+    kurs: { ...routes.kurs, isPrimary: true, text: "Gratis starten" },
+    contents: { text: "Inhalte", to: "/#contents" },
+    offer: { text: "Angebote", to: "/#offer" },
+    aboutMe: { text: "Über mich", to: "/#about-me" },
+    contact: { text: "Kontakt", to: "/#contact" },
     blog: routes.blog,
   },
   courseRoutes: [
