@@ -38,10 +38,10 @@
             <a class="nav__entry nav__entry--2ndary" href="#about-me"
               >Über mich</a
             >
+            <a class="nav__entry nav__entry--2ndary" href="#contact">Kontakt</a>
             <g-link class="nav__entry nav__entry--2ndary" to="/blog/"
               >Blog</g-link
             >
-            <a class="nav__entry nav__entry--2ndary" href="#contact">Kontakt</a>
           </nav>
           <g-link
             :to="
