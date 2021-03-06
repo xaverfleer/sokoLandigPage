@@ -43,6 +43,12 @@
             >
             <a class="nav__entry nav__entry--2ndary" href="#contact">Kontakt</a>
           </nav>
+          <g-link
+            :to="
+              isLoggedIn ? appData.routes.account.to : appData.routes.login.to
+            "
+            class="profile"
+          />
         </div>
       </header>
       <main>
@@ -631,6 +637,8 @@ import Cards from "~/components/Cards";
 import Checklist from "~/components/Checklist";
 import GdprNotice from "~/components/GdprNotice";
 import LogRocket from "logrocket";
+import appData from "~/data/appData";
+import stateManagement from "~/stateManagement";
 import {
   trackCustomEvent,
   trackPageLoad,
@@ -782,6 +790,14 @@ function onMounted() {
 
 export default {
   components: { Cards, Checklist, GdprNotice },
+  computed: {
+    appData() {
+      return appData;
+    },
+    isLoggedIn() {
+      return stateManagement.isLoggedIn();
+    },
+  },
   metaInfo: {
     meta: [
       { name: "canonical", href: "https://so-kommunizieren.ch/" },
