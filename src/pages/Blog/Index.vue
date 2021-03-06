@@ -1,7 +1,30 @@
 <template>
   <Layout>
     <Section class="section">
-      <h1>Der Blog Rund um die <em>subjektorientierte</em> Kommunikation mit Babys</h1>
+      <h1>Der Blog Rund um die <em>subjektorientierte</em> Kommunikation</h1>
+      <ul class="post-list">
+        <li>
+          <g-link
+            class="post-list__post"
+            to="/blog/gedankenexperiment-gastfamilie/"
+          >
+            <g-image
+              class="post-list__img"
+              src="~/assets/imgs/Schimpfen.jpg"
+            />
+            <div class="post-list__content">
+              <h2 class="post-list__title">
+                Ignorieren, Schimpfen, Strafen, Erpressen... Warum herkömmliche Erziehungsmethoden unseren Kindern schaden.
+                <div class="post-list__date-and-author">
+                  06. März 2021 – Eva Fleer
+                </div>
+              </h2>
+              Herkömmliche Erziehungsmethoden zielen oft vor allem darauf ab, kindliches Verhalten zu steuern und zu kontrollieren. 
+              Das schadet der gesunden psychischen, kognitiven und sozialen Entwicklung unserer Kinder. 
+            </div>
+          </g-link>
+        </li>
+      </ul>
       <ul class="post-list">
         <li>
           <g-link
