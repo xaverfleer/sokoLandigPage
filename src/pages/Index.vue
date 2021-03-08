@@ -24,25 +24,7 @@
               width="156"
             />
           </g-link>
-          <nav class="nav">
-            <g-link
-              class="nav__entry nav__entry--primary"
-              to="/kurs/"
-              target="_blank"
-              >Gratis starten</g-link
-            >
-            <a class="nav__entry nav__entry--2ndary" href="#contents"
-              >Inhalte</a
-            >
-            <a class="nav__entry nav__entry--2ndary" href="#offer">Angebote</a>
-            <a class="nav__entry nav__entry--2ndary" href="#about-me"
-              >Über mich</a
-            >
-            <a class="nav__entry nav__entry--2ndary" href="#contact">Kontakt</a>
-            <g-link class="nav__entry nav__entry--2ndary" to="/blog/"
-              >Blog</g-link
-            >
-          </nav>
+          <Navigation />
           <g-link
             :to="
               isLoggedIn ? appData.routes.account.to : appData.routes.login.to
@@ -637,6 +619,7 @@ import Cards from "~/components/Cards";
 import Checklist from "~/components/Checklist";
 import GdprNotice from "~/components/GdprNotice";
 import LogRocket from "logrocket";
+import Navigation from "~/components/Navigation";
 import appData from "~/data/appData";
 import stateManagement from "~/stateManagement";
 import {
@@ -672,13 +655,6 @@ function onMounted() {
       group: document.querySelector(".offers__offer--group"),
     },
   };
-
-  nav.addEventListener("click", function toggleNavActive() {
-    const { classList } = nav;
-    if ([].slice.call(classList).indexOf("nav--active") > -1)
-      classList.remove("nav--active");
-    else classList.add("nav--active");
-  });
 
   window.addEventListener("scroll", function toggleHeaderPositioning() {
     if (window.pageYOffset > 350) header.classList.add("header--fixed");
@@ -774,7 +750,7 @@ function onMounted() {
 }
 
 export default {
-  components: { Cards, Checklist, GdprNotice },
+  components: { Cards, Checklist, GdprNotice, Navigation },
   computed: {
     appData() {
       return appData;
