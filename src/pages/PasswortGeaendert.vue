@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class="section">
-      <h2>Passwort ist erfolgreich geändert</h2>
+      <h1>Passwort ist erfolgreich geändert</h1>
       <p>
         <g-link to="/kurs/">Zum Kurs</g-link>
         oder

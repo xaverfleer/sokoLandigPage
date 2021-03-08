@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class="section">
-      <h2>Anmeldung erfolgreich</h2>
+      <h1>Anmeldung erfolgreich</h1>
       <p>Du bist erfolgreich angemeldet</p>
       <p>
         <g-link to="/kurs/">Zum Kurs</g-link>

@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class="section">
-      <h2>Account ist freigeschaltet.</h2>
+      <h1>Account ist freigeschaltet.</h1>
       <p>
         Du kannst dich jetzt
         <g-link to="/login/">anmelden</g-link>

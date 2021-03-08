@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class="section">
-      <h2>Anmelden</h2>
+      <h1>Anmelden</h1>
       <FormVue :formData="loginForm" />
       <div>
         Noch kein Konto?

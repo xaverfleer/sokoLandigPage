@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class="section">
-      <h2>Passwort ist erfolgreich definiert.</h2>
+      <h1>Passwort ist erfolgreich definiert.</h1>
       <p>
         Du kannst dich jetzt
         <g-link to="/login/">anmelden</g-link>

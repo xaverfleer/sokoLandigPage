@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class="section">
-      <h2>Konto erstellen</h2>
+      <h1>Konto erstellen</h1>
       <FormVue :formData="registerForm" />
     </section>
   </Layout>

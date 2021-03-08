@@ -1,8 +1,8 @@
 <template>
   <Layout>
     <section class="section">
-      <h2>Konto verwalten ({{ shortenedEmail }})</h2>
-      <h3>Abmelden</h3>
+      <h1>Konto verwalten ({{ shortenedEmail }})</h1>
+      <h2>Abmelden</h2>
       <div class="form">
         <p>
           Du bist als
@@ -18,7 +18,7 @@
       </div>
     </section>
     <section class="section" v-if="!isPaidAccount">
-      <h3>Kurs buchen</h3>
+      <h2>Kurs buchen</h2>
       <div class="form">
         <p>
           Du hast freien Zugriff
@@ -33,11 +33,11 @@
       </div>
     </section>
     <section class="section">
-      <h3>Passwort ändern</h3>
+      <h2>Passwort ändern</h2>
       <FormVue :formData="changePasswordForm" />
     </section>
     <section class="section">
-      <h3>Konto löschen</h3>
+      <h2>Konto löschen</h2>
       <p class="center">
         Achtung, dieser Schritt kann nicht rückgängig gemacht werden!
       </p>

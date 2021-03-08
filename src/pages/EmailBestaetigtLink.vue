@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class="section">
-      <h2>E-mailadresse ist erfolgreich bestätigt</h2>
+      <h1>E-mailadresse ist erfolgreich bestätigt</h1>
       <p>
         Wir haben dir per E-Mail einen Link gesendet. Bitte folge diesem Link
         und definiere dein Passwort.

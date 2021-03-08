@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class="section">
-      <h2>Abmelden erfolgreich</h2>
+      <h1>Abmelden erfolgreich</h1>
       <p>Du bist erfolgreich abgemeldet.</p>
       <p>
         <g-link to="/kurs/">Zum Kurs</g-link>

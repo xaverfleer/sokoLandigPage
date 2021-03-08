@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class="section">
-      <h2>{{ offer.title }}</h2>
+      <h1>{{ offer.title }}</h1>
       <PaymentFlow :offer="offer" />
     </section>
   </Layout>

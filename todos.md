@@ -1,12 +1,10 @@
 # todos
 
-- Blog/Index.vue -> add image and teaser
+- fix app.neilpatel issues
 - fix Search console issues
-- add facebook like button to blog
 - Strategy
+- add facebook like button to blog
 - log referrer
-- (eva) add piktogramme to value props
-- (eva) blog entries
 
 # growth chanels
 

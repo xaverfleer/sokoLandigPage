@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class="section">
-      <h2>Schade dass du uns verlässt.</h2>
+      <h1>Schade dass du uns verlässt.</h1>
       <p>Dein Konto ist erfolgreich gelöscht.</p>
       <p>
         <g-link to="/kurs/">Zum Kurs</g-link>

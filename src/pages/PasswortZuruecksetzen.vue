@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class="section">
-      <h2>Passwort zurücksetzen</h2>
+      <h1>Passwort zurücksetzen</h1>
       <FormVue :formData="resetPasswordForm" />
     </section>
   </Layout>

@@ -5,11 +5,11 @@
         <div class="header__emotion">
           <div class="header__emotion-content">
             <button class="header__play-video"></button>
-            <div class="header__teaser">
+            <h1 class="header__teaser">
               so* kommunizieren,
               <br />
               gesunde Entwicklung nähren
-            </div>
+            </h1>
           </div>
         </div>
         <div class="header__content">

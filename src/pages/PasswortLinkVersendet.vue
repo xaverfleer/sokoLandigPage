@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <section class="section">
-      <h2>Passwort Link versendet</h2>
+      <h1>Passwort Link versendet</12>
       <p>
         Wir haben dir den Link, mit dem du dein Passwort zurücksetzen kannst,
         versendet.
