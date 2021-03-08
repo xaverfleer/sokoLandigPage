@@ -4,7 +4,7 @@
       <header class="header">
         <div class="header__emotion">
           <div class="header__emotion-content">
-            <button class="header__play-video"></button>
+            <button @click="openModal" class="header__play-video"></button>
             <div class="header__teaser">
               so* kommunizieren,
               <br />
@@ -595,7 +595,7 @@
     </div>
     <div class="modal">
       <div class="modal__scrim"></div>
-      <button class="modal__close"></button>
+      <button @click="closeModal" class="modal__close"></button>
       <div class="modal__video">
         <iframe
           class="modal__video-iframe"
@@ -628,21 +628,9 @@ import {
   trackScrolling,
 } from "~/scripts/analyticsMethods";
 
-const page = typeof document === "object" && document.querySelector(".page");
-
 function onMounted() {
-  const Player = require("@vimeo/player").default;
-
-  const Vimeo = { Player };
-
   const header = document.querySelector(".header");
-  const headerPlayVideo = document.querySelector(".header__play-video");
   const formElem = document.querySelector("form");
-  const modalElems = {
-    modal: document.querySelector(".modal"),
-    close: document.querySelector(".modal__close"),
-    vimeoVideo: document.querySelector(".modal__video-iframe"),
-  };
 
   const learningMode = {
     buttons: {
@@ -702,28 +690,6 @@ function onMounted() {
 
   document.querySelector("form").addEventListener("submit", submitForm);
 
-  const modalPlayer = new Vimeo.Player(modalElems.vimeoVideo);
-
-  function closeModal() {
-    modalElems.modal.classList.remove("modal--open");
-    page.classList.remove("page--modal-is-open");
-    modalPlayer.pause();
-  }
-
-  function openModal() {
-    modalElems.modal.classList.add("modal--open");
-    page.classList.add("page--modal-is-open");
-    modalPlayer.play();
-    document.addEventListener("keyup", (event) => {
-      if (event.key === "Escape") closeModal();
-    });
-
-    trackCustomEvent("Played emotion video");
-  }
-
-  headerPlayVideo.addEventListener("click", openModal);
-  modalElems.close.addEventListener("click", closeModal);
-
   learningMode.buttons.alone.addEventListener("click", () => {
     learningMode.buttons.alone.classList.add("offer-selector__button--active");
     learningMode.buttons.group.classList.remove(
@@ -758,6 +724,9 @@ export default {
       return stateManagement.isLoggedIn();
     },
   },
+  data() {
+    return { elems: { modal: { root: {} } }, modalPlayer: {} };
+  },
   metaInfo: {
     meta: [
       { name: "canonical", href: "https://so-kommunizieren.ch/" },
@@ -782,8 +751,35 @@ export default {
       trackScrolling("contact", "#contact");
       trackScrolling("footer", "#footer");
     },
+    closeModal() {
+      this.elems.modal.root.classList.remove("modal--open");
+      this.elems.page.classList.remove("page--modal-is-open");
+      this.modalPlayer.pause();
+    },
+    openModal: function() {
+      this.elems.modal.root.classList.add("modal--open");
+      this.elems.page.classList.add("page--modal-is-open");
+      this.modalPlayer.play();
+      document.addEventListener("keyup", (event) => {
+        if (event.key === "Escape") this.closeModal();
+      });
+
+      trackCustomEvent("Played emotion video");
+    },
   },
   mounted() {
+    const Player = require("@vimeo/player").default;
+    const Vimeo = { Player };
+
+    this.elems.modal.root = document.querySelector(".modal");
+    this.elems.modal.vimeoVideo = document.querySelector(
+      ".modal__video-iframe"
+    );
+    this.elems.page =
+      typeof document === "object" && document.querySelector(".page");
+
+    this.modalPlayer = new Vimeo.Player(this.elems.modal.vimeoVideo);
+
     this.analyticsRelated();
     onMounted();
   },
