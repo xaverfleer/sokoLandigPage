@@ -193,8 +193,10 @@ textarea {
 }
 
 .checklist {
-  padding-inline: 1em;
-  padding-inline: clamp(1em, 7vw, 3em);
+  padding-inline-end: 1em;
+  padding-inline-end: clamp(1em, 7vw, 3em);
+  padding-inline-start: 1em;
+  padding-inline-start: clamp(1em, 7vw, 3em);
   margin-bottom: 2em;
 }
 
