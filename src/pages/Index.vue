@@ -637,7 +637,6 @@ function onMounted() {
 
   const header = document.querySelector(".header");
   const headerPlayVideo = document.querySelector(".header__play-video");
-  const nav = document.querySelector(".nav");
   const formElem = document.querySelector("form");
   const modalElems = {
     modal: document.querySelector(".modal"),
