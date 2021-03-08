@@ -32,6 +32,16 @@
 		<priority>0.8</priority>
 	</url>
 	<url>
+		<loc>https://so-kommunizieren.ch/buchen/</loc>
+		<lastmod>2021-03-08</lastmod>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://so-kommunizieren.ch/gruppenkurs-buchen/</loc>
+		<lastmod>2021-03-08</lastmod>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>https://so-kommunizieren.ch/login/</loc>
 		<lastmod>2021-03-06</lastmod>
 		<priority>0.5</priority>
