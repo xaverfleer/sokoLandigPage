@@ -91,7 +91,7 @@ export default {
       {
         name: "canonical",
         href:
-          "https://so-kommunizieren.ch/blog/gedankenexpriment-gastfamilie/",
+          "https://so-kommunizieren.ch/blog/gedankenexperiment-gastfamilie/",
       },
       {
         name: "description",

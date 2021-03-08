@@ -114,7 +114,7 @@ export default {
       {
         name: "canonical",
         href:
-          "https://so-kommunizieren.ch/blog/gleichwuerdig-oder-erniedrigend/",
+          "https://so-kommunizieren.ch/blog/gleichwuerdig-oder-entwuerdigend/",
       },
       {
         name: "description",
