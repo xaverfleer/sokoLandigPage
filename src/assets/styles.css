@@ -250,6 +250,10 @@ textarea {
   margin-right: 1em;
 }
 
+.document__link--list::before {
+  background-image: url(./imgs/list-symbol.svg);
+}
+
 .document__link--memo::before {
   background-image: url(/imgs/layers-24px.svg);
 }
