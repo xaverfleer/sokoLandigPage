@@ -3,12 +3,37 @@
 	xmlns:xhtml="https://www.w3.org/1999/xhtml">
 	<url>
 		<loc>https://so-kommunizieren.ch/</loc>
-		<lastmod>2020-03-02</lastmod>
+		<lastmod>2021-03-08</lastmod>
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>https://so-kommunizieren.ch/kurs</loc>
-		<lastmod>2020-03-02</lastmod>
+		<loc>https://so-kommunizieren.ch/kurs/</loc>
+		<lastmod>2021-03-08</lastmod>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://so-kommunizieren.ch/blog/</loc>
+		<lastmod>2021-03-08</lastmod>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://so-kommunizieren.ch/blog/gedankenexperiment-gastfamilie/</loc>
+		<lastmod>2021-03-08</lastmod>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://so-kommunizieren.ch/blog/nein-sagen-drei-strategien/</loc>
+		<lastmod>2021-03-07</lastmod>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://so-kommunizieren.ch/blog/gleichwuerdig-oder-entwuerdigend/</loc>
+		<lastmod>2021-02-22</lastmod>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://so-kommunizieren.ch/login/</loc>
+		<lastmod>2021-03-06</lastmod>
 		<priority>0.5</priority>
 	</url>
 </urlset>
