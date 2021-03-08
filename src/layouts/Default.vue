@@ -13,13 +13,7 @@
             width="156"
           />
         </g-link>
-        <nav :class="navClasses" @click="toggleNav">
-          <NavEntry
-            v-for="route in appliedRoutes"
-            :key="route.to"
-            :route="route"
-          />
-        </nav>
+        <Navigation :routes="routes" />
         <router-link
           :to="isLoggedIn ? appData.routes.account.to : appData.routes.login.to"
           class="profile"
@@ -73,23 +67,17 @@ query {
 import "~/scripts/analyticsSnippets";
 import GdprNotice from "~/components/GdprNotice";
 import LogRocket from "logrocket";
-import NavEntry from "~/components/NavEntry";
+import Navigation from "~/components/Navigation";
 import appData from "~/data/appData";
 import stateM8t from "~/stateManagement";
 
 import { isEarlyBird } from "~/helpers";
 
 export default {
-  components: { GdprNotice, NavEntry },
+  components: { GdprNotice, Navigation },
   computed: {
     appData() {
       return appData;
-    },
-    appliedRoutes() {
-      return this.routes || this.defaultRoutes;
-    },
-    defaultRoutes() {
-      return appData.standardNavRoutes;
     },
     isEarlyBird() {
       return isEarlyBird(this);
@@ -103,25 +91,13 @@ export default {
     isPaidAccount() {
       return stateM8t.isPaidAccount() || this.isEarlyBird;
     },
-    navClasses() {
-      const path = this.$route.path;
-      return [
-        "nav",
-        (-1 < path.indexOf("/kurs/") || -1 < path.indexOf("/early-bird/")) &&
-          "nav--kurs",
-        this.isNavActive && "nav--active",
-      ];
-    },
   },
   data() {
-    return { isNavActive: false, state: {} };
+    return { state: {} };
   },
   methods: {
     analyticsRelated() {
       typeof LogRocket === "object" && LogRocket.init("yxvjmb/soko");
-    },
-    toggleNav() {
-      this.isNavActive = !this.isNavActive;
     },
   },
   mounted() {
