@@ -203,8 +203,7 @@ export default {
           "Herkömmliche Erziehungsmethoden wie Ignorieren, Schimpfen, Strafen und Erpressen schaden Kindern.",
       },
     ],
-    title:
-      "Ignorieren, Schimpfen, Strafen, Erpressen... Warum herkömmliche Erziehungsmethoden unseren Kindern schaden",
+    title: "Gedankenexperiment Gastfamilie",
   },
   mounted() {
     trackPageLoad(this.$route.path);

@@ -301,8 +301,7 @@ export default {
           "Wie können wir ein Nein formulieren und eine Grenze klar machen, ohne die Verbindung zum Kind zu verlieren? Drei wertvolle Strategien.",
       },
     ],
-    title:
-      "Nein sagen, aber wie? Drei Strategien, die alle Eltern kennen sollten!",
+    title: "Nein sagen – Drei Strategien.",
   },
   mounted() {
     trackPageLoad(this.$route.path);
