@@ -673,21 +673,6 @@ function onMounted() {
     },
   };
 
-  function analyticsRelated() {
-    typeof LogRocket === "object" &&
-      LogRocket.init &&
-      LogRocket.init("yxvjmb/soko");
-    trackPageLoad("/");
-
-    trackScrolling("contents", "#contents");
-    trackScrolling("offer", "#offer");
-    trackScrolling("about-me", "#about-me");
-    trackScrolling("contact", "#contact");
-    trackScrolling("footer", "#footer");
-  }
-
-  analyticsRelated();
-
   nav.addEventListener("click", function toggleNavActive() {
     const { classList } = nav;
     if ([].slice.call(classList).indexOf("nav--active") > -1)
@@ -809,6 +794,23 @@ export default {
     ],
     title: "Nährende Kommunikation mit deinem Baby",
   },
-  mounted: onMounted,
+  methods: {
+    analyticsRelated() {
+      typeof LogRocket === "object" &&
+        LogRocket.init &&
+        LogRocket.init("yxvjmb/soko");
+      trackPageLoad("/");
+
+      trackScrolling("contents", "#contents");
+      trackScrolling("offer", "#offer");
+      trackScrolling("about-me", "#about-me");
+      trackScrolling("contact", "#contact");
+      trackScrolling("footer", "#footer");
+    },
+  },
+  mounted() {
+    this.analyticsRelated();
+    onMounted();
+  },
 };
 </script>
