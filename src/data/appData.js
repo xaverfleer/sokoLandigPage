@@ -308,7 +308,7 @@ const appData = {
         section21: {
           id: 0,
           blocktitle: {
-            supertitle: "Kursblock 2 (wird aktuell überarbeitet)",
+            supertitle: "Kursblock 2 (wird gerade überarbeitet)",
             main: "Mit dem Baby interagieren",
           },
           checklist: {
@@ -357,7 +357,7 @@ const appData = {
         section22: {
           id: 1,
           title: {
-            main: "Einstiegsübung – Was machst du da?",
+            main: "Einstiegsübung – Was tust du da?",
             videoName: "(Video 2.1)",
           },
           video: { ref: "https://player.vimeo.com/video/410677081" },
