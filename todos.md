@@ -1,10 +1,9 @@
 # todos
 
-- fix app.neilpatel issues
-- fix Search console issues
 - Strategy
 - add facebook like button to blog
 - log referrer
+- add schema.org
 
 # growth chanels
 
