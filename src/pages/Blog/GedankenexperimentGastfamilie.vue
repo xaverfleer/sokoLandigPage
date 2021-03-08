@@ -46,7 +46,7 @@
         Doch dieses Problem ist im Prinzip unwesentlich. Denn viel wesentlicher als die Frage, ob Dressur funktioniert oder nicht, ist die Frage, wie es Kindern dabei geht! Und auf diese Frage gibt es eine eindeutige Antwort: Diese herkömmlichen Erziehungsmethoden tun Kindern nicht gut. Sie schaden ihrer gesunden psychischen, kognitiven und sozialen Entwicklung massiv! Denn sie nehmen einem Kind das wichtigste, was es für eine gesunde Entwicklung braucht: Nämlich die Gewissheit, bedingungslos geliebt zu werden. Jedes Mal, wenn ein Kind erlebt, dass es ignoriert, ausgeschimpft oder bestraft wird (und zu einer Strafe gehört auch der Entzug einer in Aussicht gestellten Belohnung), zweifelt es daran, als Mensch liebeswürdig und wertvoll zu sein. Denn es erlebt, dass ihm Liebe, Zuneigung und Wertschätzung entzogen bzw. vorenthalten oder nur unter bestimmten Bedingungen geschenkt werden, nämlich dann, wenn es sich angepasst verhält. 
       </p>
       <p>
-        <strong>Erlebt ein Kind systematisch gezielten Liebesentzug oder dosierte Liebesvergabe, entwickelt es Minderwertigkeitskomplexe und Versagensängste.</strong>
+        <strong>Erlebt ein Kind systematisch gezielten Liebesentzug oder dosierte Liebesvergabe, tendiert es dazu, Minderwertigkeitskomplexe und Versagensängste zu entwickeln.</strong>
       </p>
       <p>
         Immer wieder fühlt es sich so, wie wir uns vermutlich im Gedankenexperiment in unserer Gastfamilie gefühlt haben: unverstanden, ungeliebt und hilflos. Und daraus schliesst es, dass es falsch, nicht liebeswürdig und unfähig ist. Ein Kind mit diesem Mindset ist anfällig für alle möglichen psychischen Erkrankungen und für Gruppendruck. Ebenso leiden seine Empathiefähigkeit und damit auch seine Sozialkompetenz. Denn Empathie – also die Fähigkeit die Perspektive anderer Menschen einzunehmen und mitzuberücksichtigen – entwickeln Kinder vor allem darüber, dass sie selbst empathisch behandelt werden. Erziehungsmethoden wie Ignorieren, Schimpfen, Strafen oder Erpressen sind aber alles andere als empathisch.
@@ -62,11 +62,20 @@
       <p>
         <strong>Dein Kind kann sich seine Familie nicht aussuchen. Aber du kannst dich fragen: In was für einer Familie soll mein Kind aufwachsen?</strong>
       </p>
-      <p>
-        <g-link to="/blog/">Zurück zur Übersicht</g-link>
-        oder
-        <g-link to="/kurs-">zum Kurs.</g-link>
-      </p>
+      <div class="buttons">
+        <g-link
+          class="button button--primary"
+           to="/blog"
+           title="Zurück zur Übersicht"
+           >Zur Übersicht</g-link
+            >
+        <g-link
+          class ="button button--2ndary"
+          to="/kurs/01-innere-staerke/"
+          target="_blank"
+          title="Zum Onlinekurs"
+          >Zum Onlinekurs</g-link>
+      </div>
     </Section>
   </Layout>
 </template>
