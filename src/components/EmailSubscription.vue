@@ -25,7 +25,7 @@ export default {
         postSubmit: () => {
           alert("Vielen Dank. Deine E-Mail-Adresse ist registriert.");
         },
-        submitLambdaFunction: "sendMessage",
+        submitLambdaFunction: "subscribeForNewsletter",
       },
     };
   },
