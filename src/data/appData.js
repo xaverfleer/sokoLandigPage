@@ -2002,6 +2002,12 @@ const appData = {
           },
           documents: [
             {
+              href: "/documents/so1-Kursübersicht.pdf",
+              text:
+                "Kursübersicht Block 1 bis 5 – Alle Videos auf einen Blick ",
+              type: "list",
+            },
+            {
               href: "/documents/so6-Fahrplaene.pdf",
               text:
                 "Fahrpläne: Gesamtpaket Kursblock 1 bis 5 – doppelseitig drucken",

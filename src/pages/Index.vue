@@ -73,7 +73,7 @@
               {
                 title: 'Mehr\nGelassenheit',
                 text:
-                  'Lass dich von gut gemeinten Ratschlägen und herausfordernden Situationen nicht verunsichern. Kommuniziere auf eine Weise, die dich und dein Baby stärkt.',
+                  'Lass dich von veralteten Ratschlägen und herausfordernden Situationen nicht verunsichern. Kommuniziere auf eine Weise, die dich und dein Baby nachweislich stärkt.',
               },
               {
                 title: 'Weniger\nMachtkämpfe',
