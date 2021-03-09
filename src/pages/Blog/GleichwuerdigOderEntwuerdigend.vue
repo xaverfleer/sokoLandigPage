@@ -106,9 +106,10 @@
         welche gleichwürdigen Alternativen wir haben.
       </p>
       <VideoVue :video="{ ref: 'https://player.vimeo.com/video/514884071' }" />
+      <EmailSubscription />
       <div class="buttons">
         <g-link
-          class="button button--primary"
+          class="button button--2ndary"
           to="/blog"
           title="Zurück zur Übersicht"
           >Zur Übersicht</g-link
@@ -126,11 +127,12 @@
 </template>
 
 <script>
+import EmailSubscription from "~/components/EmailSubscription.vue";
 import VideoVue from "~/components/VideoVue.vue";
 import { trackPageLoad } from "~/scripts/analyticsMethods";
 
 export default {
-  components: { VideoVue },
+  components: { EmailSubscription, VideoVue },
   metaInfo: {
     meta: [
       {

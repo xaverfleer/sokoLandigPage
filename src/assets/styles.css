@@ -346,7 +346,7 @@ textarea {
 
 .form-entry--halfwidth {
   flex-basis: 40%;
-  min-width: 15em;
+  min-width: 12em;
 }
 
 .form-entry__help {
