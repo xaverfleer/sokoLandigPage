@@ -82,10 +82,22 @@
               },
             ]"
           />
-          <Checklist
-            :checklist="{
-              pretext: `Deine Kommunikation macht den Unterschied, und zwar von Anfang an! Die ersten drei Lebensjahre beeinflussen dein Kind besonders stark und nachhaltig. Kommuniziere von Anfang an <em>subjektorientiert</em> und ...`,
-              entries: [
+          <p>
+            Deine Kommunikation macht den Unterschied, und zwar von Anfang an!
+            Die ersten drei Lebensjahre beeinflussen dein Kind besonders stark
+            und nachhaltig. Kommuniziere von Anfang an
+            <em>subjektorientiert</em> und ...
+          </p>
+          <g-image
+            alt="Sprechblase"
+            blur="0"
+            class="speech-bubble speech-bubble--right"
+            src="~/assets/imgs/sprechblase-1.png"
+            width="500"
+          />
+          <div class="checklist">
+            <ChecklistEntry
+              v-for="entry in [
                 {
                   id: 0,
                   text:
@@ -101,9 +113,11 @@
                   text:
                     'schaffe ein stabiles Fundament für eine glückliche Kindheit und ein erfülltes Erwachsenenleben!',
                 },
-              ],
-            }"
-          />
+              ]"
+              :key="entry.id"
+              :entry="entry"
+            />
+          </div>
           <p>
             Starte jetzt gratis mit dem Online-Video-Kurs zur
             <em>subjektorientierten</em>
@@ -637,7 +651,7 @@
 
 <script>
 import Cards from "~/components/Cards";
-import Checklist from "~/components/Checklist";
+import ChecklistEntry from "~/components/ChecklistEntry.vue";
 import GdprNotice from "~/components/GdprNotice";
 import LogRocket from "logrocket";
 import Navigation from "~/components/Navigation";
@@ -736,7 +750,7 @@ function onMounted() {
 }
 
 export default {
-  components: { Cards, Checklist, GdprNotice, Navigation },
+  components: { Cards, ChecklistEntry, GdprNotice, Navigation },
   computed: {
     appData() {
       return appData;
