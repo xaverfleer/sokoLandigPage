@@ -26,6 +26,7 @@
 - page improvements
 - better wording on landing page
 - forum
+- was bedeutet serie
 
 ## channel: blog
 
@@ -68,6 +69,20 @@
 ## channel: ux
 
 - font-sizes
+
+## was bedeutet serie
+
+- themen
+  - bindung
+  - babygebärdensprache
+  - aktives lesen
+  - abc der Zurückhaltung
+- Definition
+- was ist es nicht
+- Hintergrund
+- wichtige Persönlichkeit
+- Zitat
+- Soko Sicht
 
 ## channel: strategy cards
 
