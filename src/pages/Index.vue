@@ -90,7 +90,7 @@
           <g-image
             alt="Die ersten drei Jahre zählen"
             src="~/assets/imgs/sprechblase-1.png"
-            max-width="500"
+            width="500"
             class="speech-bubble--right"
           />
           <p class="speech-bubble__clear"></p>
@@ -302,7 +302,7 @@
           <g-image
             alt="Knder brauchen innere Stärke"
             src="~/assets/imgs/sprechblase-2.png"
-            max-width="500"
+            width="500"
           />
           <p class="speech-bubble__clear" />
           <p>
@@ -379,7 +379,7 @@
           <g-image
             alt="Die ersten drei Jahre zählen"
             src="~/assets/imgs/sprechblase-3.png"
-            max-width="541"
+            width="541"
             class="speech-bubble--right"
           />
           <p class="speech-bubble__clear" />
