@@ -132,6 +132,7 @@
           <div class="value-proposition">
             <div class="value-proposition__entry">
               <g-image
+                alt="Inputvideos Icon"
                 blur="0"
                 class="value-proposition__icon"
                 height="54"
@@ -154,6 +155,7 @@
             </div>
             <div class="value-proposition__entry">
               <img
+                alt="Strategiekarten Icon"
                 class="value-proposition__icon"
                 src="imgs/article-24px.svg"
               />
@@ -172,6 +174,7 @@
             </div>
             <div class="value-proposition__entry">
               <img
+                alt="Zusammenfassungen Icon"
                 class="value-proposition__icon"
                 src="imgs/description-24px.svg"
               />
@@ -190,6 +193,7 @@
             </div>
             <div class="value-proposition__entry">
               <img
+                alt="Vertiefungsmaterial Icon"
                 class="value-proposition__icon"
                 src="imgs/find_in_page-24px.svg"
               />
@@ -208,6 +212,7 @@
             </div>
             <div class="value-proposition__entry">
               <g-image
+                alt="Übungen Icon"
                 blur="0"
                 class="value-proposition__icon"
                 height="54"
@@ -228,7 +233,11 @@
               >
             </div>
             <div class="value-proposition__entry">
-              <img class="value-proposition__icon" src="imgs/map-24px.svg" />
+              <img
+                alt="Kursfahrplan / Kurs[bersicht Icon"
+                class="value-proposition__icon"
+                src="imgs/map-24px.svg"
+              />
               <div class="value-proposition__titie">Kursfahrplan</div>
               <div class="value-proposition__description">
                 Ein Fahrplan gibt dir eine Übersicht über alle Kursblockinhalte
@@ -618,6 +627,7 @@
       </div>
     </div>
     <img
+      alt="Utility"
       height="1"
       width="1"
       src="https://www.facebook.com/tr?id=253945996208376&ev=PageView&noscript=1"
