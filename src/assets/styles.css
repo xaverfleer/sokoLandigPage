@@ -137,6 +137,7 @@ textarea {
 .button {
   border: none;
   font-size: 1.23607rem;
+  font-weight: 800;
   letter-spacing: 0.1em;
   text-align: center;
   text-transform: uppercase;
@@ -152,7 +153,6 @@ textarea {
 
 .button--2ndary {
   color: #4ba747;
-  font-weight: 800;
 }
 
 .button--2ndary:hover {
@@ -162,7 +162,6 @@ textarea {
 .button--primary,
 .button--primary a:any-link {
   background-color: #4ba747;
-  font-weight: 500;
   color: #ffffff;
 }
 
