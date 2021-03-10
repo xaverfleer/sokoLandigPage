@@ -6,8 +6,8 @@
 | brown-light-01 | #f6ede2  | every 2nd section         | like sand, but brighter                        |
 | brown-dark     | #966b40  | header, footer, reduction | trunk in logo - slightly darkened for contrast |
 | brown-dark-01  | #895929  | button:hover              | darken brown dark                              |
-| green          | #4ba747  |                           |                                                |
-| green-01       | #408f3d  | button--2ndary:hover      | darkened green                                 |
+| green          | #3b8439  |                           |                                                |
+| green-01       | #4ba747  | button--2ndary:hover      | brightened green                               |
 | red            | c23934 " | input help                | Salesforce Lightning Design System             |
 
 # Font sizes
