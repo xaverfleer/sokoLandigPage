@@ -266,6 +266,14 @@
               >
             </div>
           </div>
+          <g-image
+            alt="Sprechblase"
+            blur="0"
+            class="speech-bubble speech-bubble--left"
+            src="~/assets/imgs/sprechblase-2.png"
+            width="500"
+          />
+          <p class="speech-bubble__clear" />
           <p>
             In den fünf Kursblöcken lernst du...
           </p>

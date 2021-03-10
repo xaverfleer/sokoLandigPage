@@ -768,7 +768,13 @@ textarea {
 }
 
 .speech-bubble {
+  margin: 1em 0;
   max-width: 47vw;
+}
+
+.speech-bubble__clear {
+  clear: both;
+  content: "asdf";
 }
 
 .speech-bubble--left {
