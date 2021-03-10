@@ -16,12 +16,14 @@ function fbPixel(f, b, e, v, n, t, s) {
 }
 
 if (typeof window === "object") {
-  fbPixel(
-    window,
-    document,
-    "script",
-    "https://connect.facebook.net/en_US/fbevents.js"
-  );
-  fbq("init", "253945996208376");
-  fbq("track", "PageView");
+  setTimeout(() => {
+    fbPixel(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+    fbq("init", "253945996208376");
+    fbq("track", "PageView");
+  }, 200);
 }
