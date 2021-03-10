@@ -4,7 +4,11 @@
       <header class="header">
         <div class="header__emotion">
           <div class="header__emotion-content">
-            <button @click="openModal" class="header__play-video"></button>
+            <button
+              @click="openModal"
+              aria-label="Teaser Video Abspielen"
+              class="header__play-video"
+            ></button>
             <div class="header__teaser">
               so* kommunizieren,
               <br />
