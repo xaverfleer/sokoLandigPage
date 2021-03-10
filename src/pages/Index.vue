@@ -171,6 +171,7 @@
               <a
                 class="value-proposition__sample"
                 href="http://player.vimeo.com/video/490855723?autoplay=1"
+                rel="noopener"
                 target="_blank"
                 >Beispiel</a
               >
