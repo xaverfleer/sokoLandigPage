@@ -33,6 +33,7 @@
             :to="
               isLoggedIn ? appData.routes.account.to : appData.routes.login.to
             "
+            :aria-label="isLoggedIn ? 'Konto' : 'Login'"
             class="profile"
           />
         </div>
