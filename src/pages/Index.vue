@@ -470,27 +470,38 @@
             </div>
           </div>
         </section>
-        <section class="section">
+        <section class="section" itemscope itemtype="https://schema.org/Person">
           <a class="scroll-offset" id="about-me"></a>
           <h2>Über mich</h2>
-          <img alt="Porträt von Eva Fleer" class="img" src="imgs/Eva.jpg" />
+          <img
+            alt="Porträt von Eva Fleer"
+            class="img"
+            src="imgs/Eva.jpg"
+            itemprop="image"
+          />
           <p>
-            <strong
+            <strong itemprop="jobTitle"
               >Trainerin für <em>subjketorientierte</em> Kommunikation mit
               Babys</strong
             ><br />
             <strong>Leiterin Elternkompasskurse (in Ausbildung)</strong><br />
-            <strong>Master an der Pädagogischen Hochschule Bern</strong>
+            <strong
+              >Master an der
+              <span itemprop="alumniOf"
+                >Pädagogischen Hochschule Bern</span
+              ></strong
+            >
           </p>
           <br />
           <p>
-            Ich bin Eva Fleer, ausgebildete und erfahrene Pädagogin und in
-            Ausbildung zur Leiterin von Kursen für Eltern gemäss dem Konzept
-            «Elternkompass». Im Verlauf dieser Ausbildung habe ich den
-            Online-Video-Kurs zur <em>subjektorientierten</em> Kommunikation mit
-            Babys erstellt. In diesem Kurs trage ich Wissen und Strategien aus
-            der Ausbildung, aus rund 50 Fachbüchern sowie aus den folgenden
-            absolvierten Kursen zusammen:
+            Ich bin <span itemprop="name">Eva Fleer</span>, ausgebildete und
+            erfahrene Pädagogin und in Ausbildung zur Leiterin von Kursen für
+            Eltern gemäss dem Konzept «Elternkompass». Im Verlauf dieser
+            Ausbildung habe ich den Online-Video-Kurs zur
+            <em>subjektorientierten</em> Kommunikation mit Babys erstellt. In
+            diesem Kurs trage ich Wissen und Strategien aus der Ausbildung, aus
+            rund 50 Fachbüchern sowie aus den folgenden absolvierten Kursen
+            zusammen:
           </p>
           <p></p>
           <ul>
