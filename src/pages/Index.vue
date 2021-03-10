@@ -60,9 +60,7 @@
               und 2 Jahren
             </li>
           </ul>
-          <p>
-            Du wünschst dir für dich und dein Baby...
-          </p>
+          <p>Du wünschst dir für dich und dein Baby...</p>
           <Cards
             :cards="[
               {
@@ -84,16 +82,24 @@
           />
           <p>
             Deine Kommunikation macht den Unterschied, und zwar von Anfang an!
-            Die ersten drei Lebensjahre beeinflussen dein Kind besonders stark
-            und nachhaltig. Kommuniziere von Anfang an
-            <em>subjektorientiert</em> und ...
+            Die ersten drei Lebensjahre beeinflussen die kognitive, psychische
+            und soziale Entwicklung deines Kindes besonders stark und
+            nachhaltig. Probleme, die im späteren Leben auftauchen, wurzeln oft
+            in frühsten Kindheitserfahrungen.
           </p>
           <g-image
-            alt="Sprechblase"
-            blur="0"
-            class="speech-bubble speech-bubble--right"
+            alt="Die ersten drei Jahre zählen"
             src="~/assets/imgs/sprechblase-1.png"
+            width="500"
+            class="speech-bubble--right"
           />
+          <p class="speech-bubble__clear"></p>
+          <p>
+            <br /><br />Eine einfühlsame, wertschätzende und stärkende
+            Kommunikation bereits in den ersten Lebensjahen ist das Wertvollste,
+            das du deinem Kind schenken kannst. Kommuniziere von Anfang an
+            <em>subjektorientiert</em> und ...
+          </p>
           <div class="checklist">
             <ChecklistEntry
               v-for="entry in [
@@ -265,16 +271,44 @@
               >
             </div>
           </div>
+          <p>
+            <br />Für eine gesunde kognitive, psychische und soziale Entwicklung
+            brauchen Kinder vor allem eins: Innere Stärke. Innerlich starke
+            Kinder...
+          </p>
+          <div class="checklist">
+            <ChecklistEntry
+              v-for="entry in [
+                {
+                  id: 0,
+                  text:
+                    'kennen sich selbst gut und können auch andere Menschen differenziert lesen und so empathisch reagieren.',
+                },
+                {
+                  id: 1,
+                  text:
+                    'haben einen starken Selbstwert und gehen wertschätzend mit sich selbst und mit anderen Menschen um.',
+                },
+                {
+                  id: 2,
+                  text:
+                    'vertrauen in ihre Fähigkeiten, Neues zu lernen, mit Schwierigkeiten umzugehen und etwas zu bewirken.',
+                },
+              ]"
+              :key="entry.id"
+              :entry="entry"
+            />
+          </div>
           <g-image
-            alt="Sprechblase"
-            blur="0"
-            class="speech-bubble speech-bubble--left"
+            alt="Knder brauchen innere Stärke"
             src="~/assets/imgs/sprechblase-2.png"
-            style="width: 47vw"
+            width="500"
           />
           <p class="speech-bubble__clear" />
           <p>
-            In den fünf Kursblöcken lernst du...
+            <br />In den fünf Kursblöcken dreht sich alles um die Frage, wie du
+            durch deine Kommunikation dein Kind von Anfang an innerlich stärken
+            kannst. Du lernst...
           </p>
           <ul class="checklist">
             <li class="checklist__item  checklist__item--kursblock-1">
@@ -342,11 +376,13 @@
               </div>
             </li>
           </ul>
-          <img
-            alt="Mother on laptop and baby sleeping in bed"
-            class="img"
-            src="imgs/mother-on-laptop-and-baby-sleeping-in-bed.jpg"
+          <g-image
+            alt="Die ersten drei Jahre zählen"
+            src="~/assets/imgs/sprechblase-3.png"
+            width="541"
+            class="speech-bubble--right"
           />
+          <p class="speech-bubble__clear" />
         </section>
         <section class="section">
           <a class="scroll-offset" href="/#offer" id="offer"></a>
