@@ -22,10 +22,8 @@
               alt="so* kommunizieren Baum"
               blur="0"
               class="header__logo"
-              height="200"
               src="~/assets/imgs/so-kommunizieren.png"
               title="Zur Startseite"
-              width="156"
             />
           </g-link>
           <Navigation />
