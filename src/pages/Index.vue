@@ -544,10 +544,10 @@
         <section class="section" itemscope itemtype="https://schema.org/Person">
           <p class="scroll-offset" id="about-me" />
           <h2>Über mich</h2>
-          <img
+          <g-image
             alt="Porträt von Eva Fleer"
             class="img"
-            src="imgs/Eva.jpg"
+            src="~/assets/imgs/eva.jpg"
             itemprop="image"
           />
           <p>
