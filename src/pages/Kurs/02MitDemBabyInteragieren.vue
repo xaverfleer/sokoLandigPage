@@ -36,11 +36,6 @@ export default {
         content:
           "Von Objekt- und Gebärdesprache zu konkreten Strategien, wie du mit deinem Baby interagieren kannst.",
       },
-
-      {
-        name: "robots",
-        content: "noindex",
-      },
     ],
     title: "Mit dem Baby interagieren",
   },

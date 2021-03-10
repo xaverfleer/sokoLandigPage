@@ -56,11 +56,6 @@ export default {
         content:
           "Was wir unseren Babys wirklich wünschen und warum gehorsam nicht unser Ziel ist.",
       },
-
-      {
-        name: "robots",
-        content: "noindex",
-      },
     ],
     title: "Innere Stärke und Gleichwürdigkeit",
   },

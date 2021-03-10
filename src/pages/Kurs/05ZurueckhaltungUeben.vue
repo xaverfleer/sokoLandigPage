@@ -36,11 +36,6 @@ export default {
         content:
           "Wie und warum du dein Baby unterstützen kannst, ohne unnötig einzugreifen",
       },
-
-      {
-        name: "robots",
-        content: "noindex",
-      },
     ],
     title: "Zurückhaltung üben",
   },

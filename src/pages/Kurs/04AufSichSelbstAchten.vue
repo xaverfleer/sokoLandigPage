@@ -36,11 +36,6 @@ export default {
         content:
           "Wie du dich selber beobachten kannst und deine Grenzen schützen kannst.",
       },
-
-      {
-        name: "robots",
-        content: "noindex",
-      },
     ],
     title: "Auf sich selbst achten",
   },

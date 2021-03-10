@@ -36,11 +36,6 @@ export default {
         content:
           "Vom Perspektivenwechsel zu leisen Signalen, die zeiten, was dein Baby beschäftigt.",
       },
-
-      {
-        name: "robots",
-        content: "noindex",
-      },
     ],
     title: "Das Baby verstehen",
   },

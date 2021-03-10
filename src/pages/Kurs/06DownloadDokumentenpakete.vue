@@ -35,11 +35,6 @@ export default {
         name: "description",
         content: "Alle Dokumente gebündelt, um sie bequem auszudrucken.",
       },
-
-      {
-        name: "robots",
-        content: "noindex",
-      },
     ],
     title: "Download Dokumentenpakete",
   },
