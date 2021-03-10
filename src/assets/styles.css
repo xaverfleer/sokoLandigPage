@@ -786,6 +786,10 @@ textarea {
   margin-left: 1em;
 }
 
+span {
+  font-weight: inherit;
+}
+
 strong {
   font-weight: bold;
 }
