@@ -1,9 +1,17 @@
 # todos
 
+- lighthouse improvements
+- draft für soko-definition
+- sokoinsta post dos-donts
 - Strategy
+  - create idea dump
 - add facebook like button to blog
+- add facebook share button to blog
 - log referrer
+- sprechblase auf soko
+- update font
 - add schema.org
+  - https://schema.org/Offer
 
 # growth chanels
 
