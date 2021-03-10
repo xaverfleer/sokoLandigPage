@@ -323,16 +323,16 @@
                 und was es heisst, dein Baby als gleichwürdiges Subjekt zu
                 sehen.
               </div>
-              <img
+              <g-image
                 alt="Alle stehen oben auf dem Podest als Symbol, dass alle wichtig sind."
-                src="/imgs/alle-sind-wichtig.png"
+                src="~/assets/imgs/alle-sind-wichtig.png"
                 width="150"
               />
             </li>
             <li class="checklist__item checklist__item--kursblock-2">
-              <img
+              <g-image
                 alt="Vater wickelt sein Baby"
-                src="/imgs/babypflege.png"
+                src="~/assets/imgs/babypflege.png"
                 width="150"
               />
               <div class="checklist__text">
@@ -348,16 +348,16 @@
                 ...wie du die Körpersignale, das Weinen und das Verhalten deines
                 Babys richtig verstehen und angemessen darauf reagieren kannst.
               </div>
-              <img
+              <g-image
                 alt="Weinendes, überfordertes Baby"
-                src="/imgs/baby-weint.png"
+                src="~/assets/imgs/baby-weint.png"
                 width="150"
               />
             </li>
             <li class="checklist__item checklist__item--kursblock-4">
-              <img
+              <g-image
                 alt="Starke Eltern"
-                src="/imgs/starke-eltern.png"
+                src="~/assets/imgs/starke-eltern.png"
                 width="150"
               />
               <div class="checklist__text">
@@ -374,9 +374,9 @@
                 kannst, damit es in seinem Forschungsdrang gestärkt wird und
                 Frustrationstoleranz sowie Sozialkompetenz entwickeln kann.
               </div>
-              <img
+              <g-image
                 alt="Baby forscht auf dem Wäschekorb"
-                src="/imgs/baby-forscht.png"
+                src="~/assets/imgs/baby-forscht.png"
                 width="150"
               />
             </li>
