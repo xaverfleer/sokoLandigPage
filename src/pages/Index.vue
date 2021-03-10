@@ -123,7 +123,7 @@
           </div>
         </section>
         <section class="section">
-          <a class="scroll-offset" id="contents"></a>
+          <a class="scroll-offset" href="/#contents" id="contents"></a>
           <h2>Inhalte</h2>
           <p>
             Der Online-Video-Kurs «<em>so*</em> kommunizieren mit meinem Baby»
@@ -319,7 +319,7 @@
           />
         </section>
         <section class="section">
-          <a class="scroll-offset" id="offer"></a>
+          <a class="scroll-offset" href="/#offer" id="offer"></a>
           <h2>Angebote</h2>
           <div class="offers-wrapper">
             <div class="offer-selector">
@@ -471,7 +471,7 @@
           </div>
         </section>
         <section class="section" itemscope itemtype="https://schema.org/Person">
-          <a class="scroll-offset" id="about-me"></a>
+          <a class="scroll-offset" href="/#about-me" id="about-me"></a>
           <h2>Über mich</h2>
           <img
             alt="Porträt von Eva Fleer"
@@ -530,7 +530,7 @@
           </p>
         </section>
         <section class="section">
-          <a class="scroll-offset" id="contact"></a>
+          <a class="scroll-offset" href="/#contact" id="contact"></a>
           <h2>Kontakt</h2>
           <p>
             Hast du Fragen, Anregungen, Wünsche oder einfach etwas mitzuteilen?
