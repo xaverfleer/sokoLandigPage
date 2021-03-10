@@ -769,7 +769,7 @@ textarea {
 
 .speech-bubble {
   margin: 1em 0;
-  max-width: 47vw;
+  width: 47vw;
 }
 
 .speech-bubble__clear {

@@ -93,7 +93,6 @@
             blur="0"
             class="speech-bubble speech-bubble--right"
             src="~/assets/imgs/sprechblase-1.png"
-            width="500"
           />
           <div class="checklist">
             <ChecklistEntry
@@ -271,7 +270,7 @@
             blur="0"
             class="speech-bubble speech-bubble--left"
             src="~/assets/imgs/sprechblase-2.png"
-            width="500"
+            style="width: 47vw"
           />
           <p class="speech-bubble__clear" />
           <p>
