@@ -89,9 +89,8 @@
           </p>
           <g-image
             alt="Die ersten drei Jahre zählen"
+            class="speech-bubble speech-bubble--right"
             src="~/assets/imgs/sprechblase-1.png"
-            width="500"
-            class="speech-bubble--right"
           />
           <p class="speech-bubble__clear"></p>
           <p>
@@ -301,6 +300,7 @@
           </div>
           <g-image
             alt="Knder brauchen innere Stärke"
+            class="speech-bubble speech-bubble--left"
             src="~/assets/imgs/sprechblase-2.png"
             width="500"
           />
@@ -378,9 +378,9 @@
           </ul>
           <g-image
             alt="Die ersten drei Jahre zählen"
+            class="speech-bubble speech-bubble--right"
             src="~/assets/imgs/sprechblase-3.png"
             width="541"
-            class="speech-bubble--right"
           />
           <p class="speech-bubble__clear" />
         </section>

@@ -768,8 +768,8 @@ textarea {
 }
 
 .speech-bubble {
-  margin: 1em 0;
-  width: 47vw;
+  margin: 2em 0;
+  width: 80%;
 }
 
 .speech-bubble__clear {
