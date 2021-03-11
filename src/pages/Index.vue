@@ -707,6 +707,7 @@ import Navigation from "~/components/Navigation";
 import appData from "~/data/appData";
 import stateManagement from "~/stateManagement";
 import {
+  trackCampaign,
   trackCustomEvent,
   trackPageLoad,
   trackScrolling,
@@ -827,6 +828,8 @@ export default {
       typeof LogRocket === "object" &&
         LogRocket.init &&
         LogRocket.init("yxvjmb/soko");
+
+      trackCampaign();
       trackPageLoad("/");
 
       trackScrolling("contents", "#contents");

@@ -45,6 +45,7 @@ query {
 </static-query>
 
 <script>
+import { trackCampaign } from "~/scripts/analyticsMethods";
 import "~/scripts/analyticsSnippets";
 import GdprNotice from "~/components/GdprNotice";
 import HeaderVue from "~/components/HeaderVue";
@@ -79,6 +80,7 @@ export default {
   methods: {
     analyticsRelated() {
       typeof LogRocket === "object" && LogRocket.init("yxvjmb/soko");
+      trackCampaign();
     },
   },
   mounted() {

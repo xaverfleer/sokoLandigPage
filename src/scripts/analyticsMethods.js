@@ -1,3 +1,18 @@
+export function trackCampaign() {
+  const search = document.location.search;
+  const campaignName = (search.split("c=")[1] || "").split("&")[0];
+  campaignName && trackCustomEvent(`Campaign ${campaignName}`);
+  window.history.replaceState(
+    {},
+    "",
+    search
+      .split(`c=${campaignName}`)
+      .join("")
+      .split("&&")
+      .join("")
+  );
+}
+
 export function trackCustomEvent(eventName) {
   if (typeof amplitude === "object") {
     amplitude.getInstance().logEvent(eventName);
