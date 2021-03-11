@@ -160,7 +160,7 @@
                 src="~/assets/imgs/video-symbol.svg"
                 width="54"
               />
-              <div class="value-proposition__titie">Inputvideos</div>
+              <div class="value-proposition__titie">Input&shy;videos</div>
               <div class="value-proposition__description">
                 50&thinsp;-&thinsp;90 Minuten animierte Videos pro Kursblock
                 bieten Wissen und Strategien rund um eine einfühlsame,
@@ -200,7 +200,7 @@
                 class="value-proposition__icon"
                 src="imgs/description-24px.svg"
               />
-              <div class="value-proposition__titie">Zusammen- fassungen</div>
+              <div class="value-proposition__titie">Zusammen&shy;fassungen</div>
               <div class="value-proposition__description">
                 Zusammenfassungen der wichtigsten Kursinhalte ermöglichen einen
                 raschen Überblick und eine schnelle Repetition der Themen.
@@ -219,7 +219,9 @@
                 class="value-proposition__icon"
                 src="imgs/find_in_page-24px.svg"
               />
-              <div class="value-proposition__titie">Vertiefungs- material</div>
+              <div class="value-proposition__titie">
+                Vertiefungs&shy;material
+              </div>
               <div class="value-proposition__description">
                 Vertiefende Materialien im PDF-Format zu diversen Themen rund um
                 die Entwicklung des Babys stehen zum Download zur Verfügung.
