@@ -4,11 +4,10 @@
 - draft für soko-definition
 - sokoinsta post dos-donts
 - Strategy
-  - create idea dump
+  - add manuel linder ideas to growth channels
 - add facebook like button to blog
 - add facebook share button to blog
 - log referrer
-- sprechblase auf soko
 - update font
 - add schema.org
   - https://schema.org/Offer
