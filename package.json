@@ -51,6 +51,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "@fontsource/piazzolla": "^4.2.4",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
     "@sendgrid/mail": "^6.5.5",
@@ -60,6 +61,7 @@
     "faunadb": "^2.14.2",
     "gridsome": "^0.7.23",
     "logrocket": "^1.0.14",
+    "npm-font-source-sans-pro": "^1.0.2",
     "vue": "^2.6.12",
     "vue-router": "^3.4.9"
   }

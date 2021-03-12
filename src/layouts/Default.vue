@@ -45,15 +45,16 @@ query {
 </static-query>
 
 <script>
-import { trackCampaign } from "~/scripts/analyticsMethods";
-import "~/scripts/analyticsSnippets";
+import "@fontsource/piazzolla";
 import GdprNotice from "~/components/GdprNotice";
 import HeaderVue from "~/components/HeaderVue";
-import LogRocket from "logrocket";
 import appData from "~/data/appData";
-import stateM8t from "~/stateManagement";
-
 import { isEarlyBird } from "~/helpers";
+import LogRocket from "logrocket";
+import { trackCampaign } from "~/scripts/analyticsMethods";
+import "~/scripts/analyticsSnippets";
+import stateM8t from "~/stateManagement";
+import "npm-font-source-sans-pro";
 
 export default {
   components: { GdprNotice, HeaderVue },

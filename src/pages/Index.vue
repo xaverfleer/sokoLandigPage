@@ -699,10 +699,10 @@
 </template>
 
 <script>
+import "@fontsource/piazzolla";
 import Cards from "~/components/Cards";
 import ChecklistEntry from "~/components/ChecklistEntry.vue";
 import GdprNotice from "~/components/GdprNotice";
-import LogRocket from "logrocket";
 import Navigation from "~/components/Navigation";
 import appData from "~/data/appData";
 import stateManagement from "~/stateManagement";
@@ -712,6 +712,8 @@ import {
   trackPageLoad,
   trackScrolling,
 } from "~/scripts/analyticsMethods";
+import LogRocket from "logrocket";
+import "npm-font-source-sans-pro";
 
 function onMounted() {
   const header = document.querySelector(".header");
