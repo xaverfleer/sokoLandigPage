@@ -752,13 +752,11 @@ function onMounted() {
       switch (xhr.status) {
         case 200:
           [].slice.call(formElem.elements).forEach(function clearElem(elem) {
-            // eslint-disable-next-line no-param-reassign
             elem.value = "";
           });
           // this.handleSuccess(xhr);
           break;
         default:
-          // eslint-disable-next-line no-alert
           alert(
             "Senden der Nachricht fehlgeschlagen.\nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch."
           );
@@ -767,7 +765,6 @@ function onMounted() {
     });
 
     xhr.addEventListener("error", () => {
-      // eslint-disable-next-line no-alert
       alert(
         "Senden der Nachricht fehlgeschlagen.\nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch."
       );
