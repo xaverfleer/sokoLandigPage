@@ -712,7 +712,6 @@ import {
   trackPageLoad,
   trackScrolling,
 } from "~/scripts/analyticsMethods";
-import LogRocket from "logrocket";
 import "npm-font-source-sans-pro";
 
 function onMounted() {
@@ -827,10 +826,6 @@ export default {
   },
   methods: {
     analyticsRelated() {
-      typeof LogRocket === "object" &&
-        LogRocket.init &&
-        LogRocket.init("yxvjmb/soko");
-
       trackCampaign();
       trackPageLoad("/");
 

@@ -50,7 +50,6 @@ import GdprNotice from "~/components/GdprNotice";
 import HeaderVue from "~/components/HeaderVue";
 import appData from "~/data/appData";
 import { isEarlyBird } from "~/helpers";
-import LogRocket from "logrocket";
 import { trackCampaign } from "~/scripts/analyticsMethods";
 import "~/scripts/analyticsSnippets";
 import stateM8t from "~/stateManagement";
@@ -80,7 +79,6 @@ export default {
   },
   methods: {
     analyticsRelated() {
-      typeof LogRocket === "object" && LogRocket.init("yxvjmb/soko");
       trackCampaign();
     },
   },

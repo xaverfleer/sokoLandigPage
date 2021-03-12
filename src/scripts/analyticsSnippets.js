@@ -1,2 +1,5 @@
-import amplitudeSnippet from "~/scripts/amplitudeSnippet";
-import fbPixel from "~/scripts/fbPixel";
+import "~/scripts/amplitudeSnippet";
+import "~/scripts/fbPixel";
+import LogRocket from "logrocket";
+
+typeof LogRocket === "object" && LogRocket.init("yxvjmb/soko");
