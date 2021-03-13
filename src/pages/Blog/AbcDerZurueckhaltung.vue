@@ -18,22 +18,22 @@
       <br />
       <h2>Sieben Gründe für mehr Zurückhaltung</h2>
       <p>
-        <strong>Interessensverlust:</strong> Diverse Studien belegen, dass das
-        Interesse eines Kindes an einer Tätigkeit abnimmt, wenn es sich dazu
+        <strong>#1 Interessensverlust:</strong> Diverse Studien belegen, dass
+        das Interesse eines Kindes an einer Tätigkeit abnimmt, wenn es sich dazu
         gedrängt fühlt, etwas (auf eine bestimmte Art und Weise) zu tun. Es
         verliert nicht nur das Interesse an einer bestimmten Aktivität, sondern
         auch das Interesse daran, Gegenstände und Aktivitäten kreativ und
         vielfältig zu erkunden.
       </p>
       <p>
-        <strong>Leistungsdruck:</strong> Kinder, die beim Spielen angetrieben
+        <strong>#2 Leistungsdruck:</strong> Kinder, die beim Spielen angetrieben
         werden, etwas zu schaffen (z.B. durch Anweisungen oder Lob) bzw. Babys,
         deren Eltern eine sehr belehrende Rolle einnehmen, neigen später dazu,
         ihren Selbstwert an ihre Leistung zu knüpfen: Sie fühlen sich nur dann
         wertvoll und liebeswürdig, wenn sie besondere Leistung erbringen können.
       </p>
       <p>
-        <strong>Gefühl der Inkompetenz:</strong> Wenn Eltern dem Kind ständig
+        <strong>#3 Gefühl der Inkompetenz:</strong> Wenn Eltern dem Kind ständig
         Dinge beibringen wollen, die das Kind selbst noch nicht kann, nimmt das
         Vertrauen des Kindes in seine Fähigkeiten ab. Das Kind erlebt dann, dass
         die Art und Weise, wie es forscht und lernt, nicht gut genug ist. So
@@ -41,29 +41,29 @@
         anzugehen.
       </p>
       <p>
-        <strong>Verlust der Frustrationstoleranz</strong> Kinder, deren Eltern
-        (bei Frust) sehr schnell helfen oder Lösungen anbieten, verlieren mit
-        der Zeit ihre angeborene Frustrationstoleranz. Anstatt Frust in
+        <strong>#4 Verlust der Frustrationstoleranz</strong> Kinder, deren
+        Eltern (bei Frust) sehr schnell helfen oder Lösungen anbieten, verlieren
+        mit der Zeit ihre angeborene Frustrationstoleranz. Anstatt Frust in
         Motivation umzuwandeln und Motivation schliesslich in Stolz, lernen
         diese Kinder, bei Frust schnell aufzugeben und sich von der Hilfe von
         aussen abhängig zu machen.
       </p>
       <p>
-        <strong>Verminderte Körperwahrnehmung</strong> Kinder, die ständig dazu
-        animiert und dabei unterstützt werden, Dinge zu tun, für die sie noch
-        nicht bereit sind, haben Schwierigkeiten zu lernen, sich auf ihre
+        <strong>#5 Verminderte Körperwahrnehmung</strong> Kinder, die ständig
+        dazu animiert und dabei unterstützt werden, Dinge zu tun, für die sie
+        noch nicht bereit sind, haben Schwierigkeiten zu lernen, sich auf ihre
         Selbsteinschätzung und ihr Körpergefühl zu verlassen. So bauen sie weder
         eine gute Selbstwahrnehmung noch eine gute Selbsteinschätzung auf.
       </p>
       <p>
-        <strong>Abhängigkeit</strong> Eine weitere Gefahr von übermässigem
+        <strong>#6 Abhängigkeit</strong> Eine weitere Gefahr von übermässigem
         Bespielen oder Belehren ist, dass das Kind von den Inputs der Eltern
         abhängig werden kann. Es verliert seine Spontaneität und
         Eigeninitiative, weil ungebetene Anweisungen dem Baby die Möglichkeit
         nehmen, auf seine Weise zu denken, zu entdecken und zu experimentieren.
       </p>
       <p>
-        <strong>Reizüberflutung</strong> Beim Entertainen des Kindes besteht
+        <strong>#7 Reizüberflutung</strong> Beim Entertainen des Kindes besteht
         auch immer die Gefahr, dass wir das Baby überreizen, wenn wir nicht sehr
         vorsichtig auf seine Signale achten (z.B. glasige Augen, Abwenden des
         Blicks, unruhiges Quengeln…). Kinder, die oft überreizt sind, können
@@ -124,15 +124,15 @@
       </p>
       <ul>
         <li>
-          …die Situation beschreiben: <br />«Du hast dich gerade ganz allein da
+          die Situation beschreiben: <br />«Du hast dich gerade ganz allein da
           hochgezogen»
         </li>
         <li>
-          …die wahrgenommenen Gefühle des Kindes spiegeln: <br />«Du siehst
+          die wahrgenommenen Gefühle des Kindes spiegeln: <br />«Du siehst
           richtig glücklich und stolz aus!»
         </li>
         <li>
-          …unsere eigenen Gefühle zum Ausdruck bringen: <br />«Ich freue mich
+          unsere eigenen Gefühle zum Ausdruck bringen: <br />«Ich freue mich
           gerade sehr mit dir!»
         </li>
       </ul>
@@ -157,6 +157,7 @@
         ihn ab, anstatt ihn zu verhindern, so dass unser Kind seine
         Körperwahrnehmung verfeinern kann.
       </p>
+      <br />
       <p>
         Differenzierte Inputs, wie du das ABC der Zurückhaltung auf verschiedene
         Situationen anwenden kannst, findest du in unserem Online-Video-Kurs. Im
@@ -167,7 +168,7 @@
           href="/documents/Blog-ABC-der-Zurueckhaltung-Beispiele.pdf"
           target="_blank"
           class="document__link document__link--further-information"
-          >Kursdaten und Kursplan</a
+          >Das ABC der Zurückhaltung: Drei konkrete Beispiele</a
         >
       </div>
       <EmailSubscription />
