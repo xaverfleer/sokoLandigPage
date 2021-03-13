@@ -210,7 +210,7 @@ export default {
           "Wie können wir den Forscher- und Entdeckerdrang unserer Kinder stärken? Das ABC der Zurückhaltung als Leitfaden",
       },
     ],
-    title: "Nein sagen – Drei Strategien.",
+    title: "ABC der Zurueckhaltung",
   },
   mounted() {
     trackPageLoad(this.$route.path);
