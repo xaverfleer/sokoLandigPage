@@ -4,20 +4,46 @@
       <h1>Der Blog rund um die <em>subjektorientierte</em> Kommunikation</h1>
       <ul class="post-list">
         <li>
+          <g-link class="post-list__post" to="/blog/abc-der-zurueckhaltung/">
+            <g-image
+              class="post-list__img"
+              src="~/assets/imgs/ABC-Der-Zurueckhaltung.jpg"
+            />
+            <div class="post-list__content">
+              <h2 class="post-list__title">
+                Das ABC der Zurückhaltung
+                <div class="post-list__date-and-author">
+                  13. März 2021 – Eva Fleer
+                </div>
+              </h2>
+              Eine zurückhaltende Begleitung des kindlichen Spiels bringt viele
+              Vorteile. Das ABC der Zurückhaltung kann uns als Richtlinie
+              dienen.
+            </div>
+          </g-link>
+        </li>
+      </ul>
+      <ul class="post-list">
+        <li>
           <g-link
             class="post-list__post"
             to="/blog/nein-sagen-drei-strategien/"
           >
-            <g-image class="post-list__img" src="~/assets/imgs/Baby-spielt-mit-Flasche2.png" />
+            <g-image
+              class="post-list__img"
+              src="~/assets/imgs/Baby-spielt-mit-Flasche2.png"
+            />
             <div class="post-list__content">
               <h2 class="post-list__title">
-                "Nein" sagen, aber wie? Drei Strategien, die alle Eltern kennen sollten!
+                "Nein" sagen, aber wie? Drei Strategien, die alle Eltern kennen
+                sollten!
                 <div class="post-list__date-and-author">
                   07. März 2021 – Eva Fleer
                 </div>
               </h2>
-              "Nein" sagen und Grenzen setzen gehören zum Alltag mit Kindern dazu. Wie können wir "Nein" sagen, 
-              ohne die Verbindung zum Kind zu verlieren? Drei nützliche Strategien!
+              "Nein" sagen und Grenzen setzen gehören zum Alltag mit Kindern
+              dazu. Wie können wir "Nein" sagen, ohne die Verbindung zum Kind zu
+              verlieren? Drei nützliche Strategien!
             </div>
           </g-link>
         </li>
