@@ -545,12 +545,18 @@
         <section class="section" itemscope itemtype="https://schema.org/Person">
           <p class="scroll-offset" id="about-me" />
           <h2>Über mich</h2>
-          <g-image
-            alt="Porträt von Eva Fleer"
-            class="img"
-            src="~/assets/imgs/eva.jpg"
+          <div
             itemprop="image"
-          />
+            itemscope
+            itemtype="https://schema.org/ImageObject"
+          >
+            <g-image
+              alt="Porträt von Eva Fleer"
+              class="img"
+              src="~/assets/imgs/eva.jpg"
+              itemprop="contentUrl"
+            />
+          </div>
           <p>
             <strong itemprop="jobTitle"
               >Trainerin für <em>subjketorientierte</em> Kommunikation mit
