@@ -559,8 +559,13 @@
             <strong>Leiterin Elternkompasskurse (in Ausbildung)</strong><br />
             <strong
               >Master an der
-              <span itemprop="alumniOf"
-                >Pädagogischen Hochschule Bern</span
+              <span
+                itemprop="alumniOf"
+                itemscope
+                itemtype="https://schema.org/CollegeOrUniversity"
+                ><span itemprop="name">
+                  Pädagogischen Hochschule Bern</span
+                ></span
               ></strong
             >
           </p>
