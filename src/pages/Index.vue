@@ -555,6 +555,8 @@
               class="img"
               src="~/assets/imgs/eva.jpg"
               itemprop="contentUrl"
+              itemscope
+              itemtype="https://scchema.org/URL"
             />
           </div>
           <p>
