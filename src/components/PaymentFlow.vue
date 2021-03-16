@@ -28,6 +28,9 @@
       </form>
     </div>
     <div v-show="showPaypal" class="step step--payment">
+      <button @click="handleInvoiceButtonClick" class="payment-method">
+        Rechnung
+      </button>
       <div class="paypal-button-container"></div>
     </div>
   </div>
@@ -45,6 +48,7 @@ export default {
     compactData() {
       return this.formFields
         .concat(this.promoCodeForm.fields)
+        .concat({ name: "paymentMethod", value: this.paymentMethod })
         .reduce((acc, field) => ({ ...acc, [field.name]: field.value }), {});
     },
     discountMessage() {
@@ -82,6 +86,7 @@ export default {
         { ...appData.formEntries.birthdays, optional: true },
       ],
       formIsValid: false,
+      paymentMethod: undefined,
       promoCode: undefined,
       promoCodeForm: {
         fields: [{ ...appData.formEntries.promoCode }],
@@ -120,6 +125,10 @@ export default {
         this.handleUserCreationFailure();
       });
     },
+    handleInvoiceButtonClick() {
+      this.paymentMethod = "invoice";
+      this.createPaidUser();
+    },
     handleSubmit() {
       this.updateHelp(this.formFields);
       if (this.isFormValid())
@@ -138,6 +147,7 @@ export default {
       );
     },
     handlePaymentSuccess() {
+      this.paymentMethod = "paypal/credit-card";
       this.createPaidUser();
     },
     isFormValid() {
