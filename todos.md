@@ -1,20 +1,27 @@
 # todos
 
+- weitere Blog Post vorschlagen
 - lighthouse improvements
-- draft für soko-definition
-- sokoinsta post dos-donts
-- Strategy
-  - add manuel linder ideas to growth channels
+- add schema.org to blog
+  - https://schema.org/Offer
 - add facebook like button to blog
 - add facebook share button to blog
-- log referrer
-- update font
-- add schema.org
-  - https://schema.org/Offer
+- gridsome background-image
+- per Rechnung bezahlen
+- ongoing mini-budget für fb ads
+- Strategy
+  - add manuel linder ideas to growth channels
+- bezahlung in euro
+- sponsoren
+  - freude-herrscht.ch/deutsch/gesuche/
+  - burgergemeinde bern
+  - katholische kirche betn
+- draft für soko-definition
 
 # growth chanels
 
 - blog
+- geburtsvorbereitungskurs
 - meetup
   - with children
   - without children
