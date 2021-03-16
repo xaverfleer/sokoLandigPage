@@ -1,19 +1,19 @@
 <template>
   <div class="order-flow">
-    <h3>Einkaufswagen</h3>
+    <h2>Einkaufswagen</h2>
     <div class="form-aligned shopping-cart">
       <p class="shopping-cart__label">Im Einkaufswagen:</p>
       <p>1x {{ offer.name }} – CHF {{ price }} {{ discountMessage }}</p>
     </div>
     <div class="step step--promo-code">
-      <h3>Rabatt</h3>
+      <h2>Rabatt</h2>
       <div class="promo-code">
         <FormVue :formData="promoCodeForm" />
         <div class="form-aligned">{{ discountMessageShort }}</div>
       </div>
     </div>
     <div class="step step--recipient">
-      <h3>Persönliche Angaben</h3>
+      <h2>Persönliche Angaben</h2>
       <form class="form" @submit.prevent="handleSubmit">
         <FormEntry
           v-for="field in formFields"
