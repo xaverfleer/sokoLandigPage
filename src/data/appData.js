@@ -2088,6 +2088,7 @@ const appData = {
     contents: { href: "/#contents", text: "Inhalte" },
     offer: { href: "/#offer", text: "Angebote" },
     aboutMe: { href: "/#about-me", text: "Über mich" },
+    philosophie: routes.philosophie,
     contact: { href: "/#contact", text: "Kontakt" },
     blog: routes.blog,
   },
