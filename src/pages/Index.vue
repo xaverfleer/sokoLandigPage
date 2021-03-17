@@ -603,7 +603,7 @@
                 {
                   id: 2,
                   text:
-                    'für tiefe, erfüllende und tragfähige Eltern-Kind-Beziehungen',
+                    'für tiefe, erfüllende und tragfähige Eltern-Kind-Beziehungen.',
                 },
               ]"
               :key="entry.id"
