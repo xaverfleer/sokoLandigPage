@@ -561,7 +561,7 @@
           </div>
           <p>
             <strong itemprop="jobTitle"
-              >Trainerin für <em>subjketorientierte</em> Kommunikation mit
+              >Kursleiterin <em>subjketorientierte</em> Kommunikation mit
               Babys</strong
             ><br />
             <strong>Leiterin Elternkompasskurse (in Ausbildung)</strong><br />
@@ -580,28 +580,45 @@
           <br />
           <p>
             Ich bin <span itemprop="name">Eva Fleer</span>, ausgebildete und
-            erfahrene Pädagogin und in Ausbildung zur Leiterin von Kursen für
-            Eltern gemäss dem Konzept «Elternkompass». Im Verlauf dieser
-            Ausbildung habe ich den Online-Video-Kurs zur
-            <em>subjektorientierten</em> Kommunikation mit Babys erstellt. In
-            diesem Kurs trage ich Wissen und Strategien aus der Ausbildung, aus
-            rund 50 Fachbüchern sowie aus den folgenden absolvierten Kursen
-            zusammen:
+            erfahrene Pädagogin mit diversen Weiterbildungen im Bereich
+            Kommunikation und in Ausbildung zur Leiterin von Kursen für Eltern
+            gemäss dem Konzept «Elternkompass».
           </p>
-          <p></p>
-          <ul>
-            <li>Kurs «Familylab» nach Jesper Juul bei Nina Trepp</li>
-            <li>
-              Kurs «Wie Kinder ihren Selbstwert entdecken» bei Fabian Grolimund
-            </li>
-            <li>Onlinekurs «Resilienisch» bei Nora Völker</li>
-            <li>
-              Onlinekurs «Die Kunst gelassen und empathisch zu erziehen» von
-              Lienhard Valentin
-            </li>
-            <li>Onlinekurs «Erziehen ohne Schimpfen» von Nicolas Schmidt</li>
-            <li>Onlinekurs «Mein Familienkompass» von Nora Imlau</li>
-          </ul>
+          <p>
+            Ich setze mich ein...
+          </p>
+          <div class="checklist">
+            <ChecklistEntry
+              v-for="entry in [
+                {
+                  id: 0,
+                  text:
+                    'für das Recht jedes Kindes auf die Achtung seiner Würde, auf körperliche und geistige Unversehrtheit und auf freie Persönlichkeitsentfaltung.',
+                },
+                {
+                  id: 1,
+                  text:
+                    'für eine gewaltfreie, bedürfnis- und bindungsorientierte Erziehung von Anfang an.',
+                },
+                {
+                  id: 2,
+                  text:
+                    'für tiefe, erfüllende und tragfähige Eltern-Kind-Beziehungen',
+                },
+              ]"
+              :key="entry.id"
+              :entry="entry"
+            />
+          </div>
+          <p>
+            Dazu stelle ich im Onlinekurs in anschaulichen Videos Wissen und
+            Strategien rund um eine nährende Kommunikation mit Babys zur
+            Verfügung. Eine einfühlsame, wertschätzende und stärkende
+            Kommunikation bereits in den ersten Lebensjahren liegt mir besonders
+            am Herzen. Denn diese frühsten Kindheitserfahrungen beeinflussen die
+            Qualität der Eltern-Kind-Beziehung sowie die kognitive, psychische
+            und soziale Entwicklung eines Kindes besonders stark und nachhaltig.
+          </p>
           <p>
             Die «Theorie» erprobe ich täglich im Alltag mit meiner zweijährigen
             Tochter. Dabei erlebe ich immer wieder, wie uns das Wissen und die
@@ -613,6 +630,12 @@
             spannenden Weg hin zu einer einfühlsamen, wertschätzenden und
             stärkenden Kommunikation dazugehören.
           </p>
+          <p>
+            Ausgleich zum und Auszeit vom Arbeits- und Familienleben finde ich
+            beim Eiskunstlaufen, beim Lesen, beim Schwimmen in der Aare, beim
+            Zusammensein mit Freunden und ja, ab und zu auch beim Eintauchen in
+            meine Lieblingsserien.
+          </p>
         </section>
         <section class="section">
           <p class="scroll-offset" id="contact" />
@@ -620,6 +643,10 @@
           <p>
             Hast du Fragen, Anregungen, Wünsche oder einfach etwas mitzuteilen?
             Ich freue mich über deine Nachricht.
+          </p>
+          <p>
+            Auf Anfrage halte ich auch Vorträge oder leite Workshops rund um die
+            Themen der subjektorientierten Kommunikation.
           </p>
           <form class="form">
             <div class="form-entry form-entry--halfwidth">
