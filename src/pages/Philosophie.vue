@@ -106,7 +106,7 @@ import { trackPageLoad } from "~/scripts/analyticsMethods";
 export default {
   metaInfo: {
     meta: [
-      { name: "canonical", href: "https://so-kommunizieren.ch/blog/" },
+      { name: "canonical", href: "https://so-kommunizieren.ch/philosophie/" },
       {
         name: "description",
         content:
