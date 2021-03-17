@@ -1,5 +1,7 @@
 # todos
 
+- 2 blogposts on landing page
+- move contact form on separate page
 - weitere Blog Post vorschlagen
 - lighthouse improvements
 - add schema.org to blog
@@ -17,6 +19,9 @@
   - burgergemeinde bern
   - katholische kirche betn
 - draft für soko-definition
+- consider also Xaver for "nicht nur sozitante"
+- consider so-kommunizieren as content page instead of selling page
+- consider autoplay
 
 # growth chanels
 
