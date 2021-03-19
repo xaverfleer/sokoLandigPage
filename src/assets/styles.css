@@ -263,6 +263,7 @@ textarea {
 .customer-feedback__author {
   font-style: italic;
   padding-top: 0.5em;
+  align-self: flex-end;
 }
 
 .customer-feedback__content {
@@ -278,7 +279,7 @@ textarea {
   flex: 1 1 200px;
   flex-direction: column;
   margin: 1em;
-  padding: 4em 1em 2em;
+  padding: 3em 1em 2em;
 }
 
 .customer-feedback__entry::before {
