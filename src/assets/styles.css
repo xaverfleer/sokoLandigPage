@@ -255,6 +255,39 @@ textarea {
   display: inline-block;
 }
 
+.customer-feedback {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: #fff; */
+}
+
+.customer-feedback__author {
+  font-style: italic;
+  padding-top: 0.5em;
+}
+
+.customer-feedback__content {
+  font-style: italic;
+  text-align: center;
+}
+
+.customer-feedback__entry {
+  align-items: center;
+  background-color: #e5cdad;
+  border-radius: 5px;
+  display: flex;
+  flex: 1 1 200px;
+  flex-direction: column;
+  margin: 1em;
+  padding: 4em 1em 2em;
+}
+
+.customer-feedback__entry::before {
+  content: "“";
+  font-size: 8.472136rem;
+  font-style: italic;
+}
+
 .date {
   color: #999999;
 }

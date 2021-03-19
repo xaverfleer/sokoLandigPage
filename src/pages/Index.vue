@@ -389,6 +389,33 @@
             width="541"
           />
           <p class="speech-bubble__clear" />
+          <div class="customer-feedback">
+            <div class="customer-feedback__entry">
+              <div class="customer-feedback__content">
+                Dein Kurs prägt die Kommunikation mit unserer Tochter sehr. Die
+                Art und Weise wie du erklärst findet bei uns sofort Verständnis,
+                bleibt in Erinnerung und ist einfach in der Praxis anzuwenden.
+                Das ist perfekt.
+              </div>
+              <div class="customer-feedback__author">— Ilena und Max</div>
+            </div>
+            <div class="customer-feedback__entry">
+              <div class="customer-feedback__content">
+                Die Lektionen sind praktisch und anschaulich gestaltet und
+                machen richtig Lust, gewisse Ideen gleich auszuprobieren.
+              </div>
+              <div class="customer-feedback__author">— Katrin</div>
+            </div>
+            <div class="customer-feedback__entry">
+              <div class="customer-feedback__content">
+                Dein Kurs vermittelt bodenständig und ohne extreme Ideologie,
+                was Kommunikation bewirken kann. Die konkreten Strategien helfen
+                uns im Alltag, herablassende Muster durch eine stärkende
+                Kommunikation zu ersetzen.
+              </div>
+              <div class="customer-feedback__author">— Rahel und John</div>
+            </div>
+          </div>
         </section>
         <section class="section">
           <p class="scroll-offset" id="offer" />
