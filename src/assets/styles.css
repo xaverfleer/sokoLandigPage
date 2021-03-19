@@ -258,7 +258,6 @@ textarea {
 .customer-feedback {
   display: flex;
   flex-wrap: wrap;
-  /* background-color: #fff; */
 }
 
 .customer-feedback__author {
