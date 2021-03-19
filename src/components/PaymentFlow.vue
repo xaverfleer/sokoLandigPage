@@ -168,7 +168,8 @@ export default {
     },
     loadPaypalButton() {
       const vueThis = this;
-      const { price, compactData } = this;
+      const { price } = this;
+      const { currency } = this.state;
       document.querySelector(".paypal-button-container").innerHTML = "";
       paypal
         .Buttons({
@@ -177,6 +178,7 @@ export default {
               purchase_units: [
                 {
                   amount: {
+                    currency_code: currency,
                     value: price,
                   },
                   description: "so* kommunizieren mit deinem Baby",
