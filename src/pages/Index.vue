@@ -745,7 +745,7 @@ import ChecklistEntry from "~/components/ChecklistEntry.vue";
 import GdprNotice from "~/components/GdprNotice";
 import Navigation from "~/components/Navigation";
 import appData from "~/data/appData";
-import stateManagement from "~/stateManagement";
+import stateM8t from "~/stateManagement";
 import {
   trackCampaign,
   trackCustomEvent,
@@ -844,7 +844,7 @@ export default {
       return appData;
     },
     isLoggedIn() {
-      return stateManagement.isLoggedIn();
+      return stateM8t.isLoggedIn();
     },
   },
   data() {

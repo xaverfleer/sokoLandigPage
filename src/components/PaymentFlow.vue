@@ -40,7 +40,7 @@
 import FormEntry from "./FormEntry.vue";
 import FormVue from "./FormVue.vue";
 import appData from "~/data/appData";
-import stateManagement from "../stateManagement";
+import stateM8t from "../stateManagement";
 
 export default {
   components: { FormEntry, FormVue },
@@ -137,7 +137,7 @@ export default {
     },
     handleUserCreationSuccess(xhr) {
       if (xhr.response === "Account upgraded") {
-        stateManagement.upgradeToPaidAccount();
+        stateM8t.upgradeToPaidAccount();
         this.$router.push(appData.routes.upgradedAccount.to);
       } else this.$router.push(appData.routes.registered.to);
     },
