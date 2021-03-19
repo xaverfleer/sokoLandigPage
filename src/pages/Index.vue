@@ -181,10 +181,10 @@
                 class="value-proposition__icon"
                 src="imgs/article-24px.svg"
               />
-              <div class="value-proposition__titie">Strategiekarten</div>
+              <div class="value-proposition__titie">Strategie&shy;karten</div>
               <div class="value-proposition__description">
-                Alle Kommunikationsstrategien findest du zusammengefasst auf je
-                einer A5-Seite, z.B. zum Aufhängen als Erinnerungshilfe.
+                Alle Kommunikations&shy;strategien findest du zusammengefasst
+                auf je einer A5-Seite, z.B. zum Aufhängen als Erinnerungshilfe.
               </div>
               <p class="value-proposition__space" />
               <a
