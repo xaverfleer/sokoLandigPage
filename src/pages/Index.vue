@@ -397,14 +397,22 @@
                 bleibt in Erinnerung und ist einfach in der Praxis anzuwenden.
                 Das ist perfekt.
               </div>
-              <div class="customer-feedback__author">— Ilena und Max</div>
+              <div class="customer-feedback__author">
+                — Ilena und Max<span class="customer-feedback__author-type"
+                  >, Eltern</span
+                >
+              </div>
             </div>
             <div class="customer-feedback__entry">
               <div class="customer-feedback__content">
                 Die Lektionen sind praktisch und anschaulich gestaltet und
                 machen richtig Lust, gewisse Ideen gleich auszuprobieren.
               </div>
-              <div class="customer-feedback__author">— Katrin</div>
+              <div class="customer-feedback__author">
+                Katrin<span class="customer-feedback__author-type"
+                  >, Mutter</span
+                >
+              </div>
             </div>
             <div class="customer-feedback__entry">
               <div class="customer-feedback__content">
@@ -413,7 +421,11 @@
                 uns im Alltag, herablassende Muster durch eine stärkende
                 Kommunikation zu ersetzen.
               </div>
-              <div class="customer-feedback__author">— Rahel und John</div>
+              <div class="customer-feedback__author">
+                Rahel und John<span class="customer-feedback__author-type"
+                  >, Eltern</span
+                >
+              </div>
             </div>
           </div>
         </section>
