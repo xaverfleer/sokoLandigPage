@@ -409,7 +409,7 @@
                 machen richtig Lust, gewisse Ideen gleich auszuprobieren.
               </div>
               <div class="customer-feedback__author">
-                Katrin<span class="customer-feedback__author-type"
+                — Katrin<span class="customer-feedback__author-type"
                   >, Mutter</span
                 >
               </div>
@@ -422,7 +422,7 @@
                 Kommunikation zu ersetzen.
               </div>
               <div class="customer-feedback__author">
-                Rahel und John<span class="customer-feedback__author-type"
+                — Rahel und John<span class="customer-feedback__author-type"
                   >, Eltern</span
                 >
               </div>
