@@ -225,6 +225,31 @@ textarea {
   margin: 0 1em;
 }
 
+.currency-selector {
+  text-align: center;
+  margin: 0 auto 2em;
+}
+
+.currency-selector__button {
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  color: #3b8439;
+  padding: 0 1em;
+  width: 4em;
+}
+
+.currency-selector__button--active {
+  background-color: #3b8439;
+  color: #fff;
+}
+
+.currency-selector__buttons-wrapper {
+  border: 1px solid #3b8439;
+  border-radius: 11px;
+  display: inline-block;
+}
+
 .date {
   color: #999999;
 }

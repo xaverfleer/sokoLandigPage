@@ -1,9 +1,13 @@
 <template>
   <div class="order-flow">
     <h2>Einkaufswagen</h2>
+    <CurrencySelector :currency="state.currency" />
     <div class="form-aligned shopping-cart">
       <p class="shopping-cart__label">Im Einkaufswagen:</p>
-      <p>1x {{ offer.name }} – CHF {{ price }} {{ discountMessage }}</p>
+      <p>
+        1x {{ offer.name }} – {{ currencyShown }} {{ price }}
+        {{ discountMessage }}
+      </p>
     </div>
     <div class="step step--promo-code">
       <h2>Rabatt</h2>
@@ -37,19 +41,23 @@
 </template>
 
 <script>
+import CurrencySelector from "./CurrencySelector.vue";
 import FormEntry from "./FormEntry.vue";
 import FormVue from "./FormVue.vue";
 import appData from "~/data/appData";
 import stateM8t from "../stateManagement";
 
 export default {
-  components: { FormEntry, FormVue },
+  components: { CurrencySelector, FormEntry, FormVue },
   computed: {
     compactData() {
       return this.formFields
         .concat(this.promoCodeForm.fields)
         .concat({ name: "paymentMethod", value: this.paymentMethod })
         .reduce((acc, field) => ({ ...acc, [field.name]: field.value }), {});
+    },
+    currencyShown() {
+      return this.state.currency === "EUR" ? "€" : "CHF";
     },
     discountMessage() {
       return this.discount ? ` (inkl. ${this.discountMessageShort})` : "";
@@ -102,6 +110,7 @@ export default {
         },
         submitLambdaFunction: "verifyPromoCode",
       },
+      state: {},
     };
   },
   methods: {
@@ -203,6 +212,11 @@ export default {
         }
       }
     },
+  },
+  mounted() {
+    this.state = stateM8t.subscribe((state) => {
+      this.state = state;
+    });
   },
   props: ["offer"],
 };

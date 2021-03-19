@@ -393,6 +393,7 @@
         <section class="section">
           <p class="scroll-offset" id="offer" />
           <h2>Angebote</h2>
+          <CurrencySelector :currency="state.currency" />
           <div class="offers-wrapper">
             <div class="offer-selector">
               <button
@@ -438,7 +439,9 @@
                     Freier Online-Video-Kurs
                   </div>
                   <div class="booking-offer__entry booking-offer__main">
-                    <div class="booking-offer__price">CHF 195</div>
+                    <div class="booking-offer__price">
+                      {{ this.currencyShown }} 195
+                    </div>
                   </div>
                   <div class="booking-offer__entry booking-offer__detail">
                     Freier, dauerhafter Zugang zu allen Kursinhalten
@@ -456,7 +459,8 @@
                     Kursstart jederzeit möglich
                   </div>
                   <div class="booking-offer__entry booking-offer__detail">
-                    Upgrade zu geführtem Gruppenkurs für CHF&nbsp;100 möglich
+                    Upgrade zu geführtem Gruppenkurs für
+                    {{ this.currencyShown }}&nbsp;100 möglich
                   </div>
                   <div class="buttons booking-offer__buttons">
                     <g-link
@@ -503,7 +507,9 @@
                     Geführter Gruppenkurs
                   </div>
                   <div class="booking-offer__entry booking-offer__main">
-                    <div class="booking-offer__price">CHF 295</div>
+                    <div class="booking-offer__price">
+                      {{ currencyShown }} 295
+                    </div>
                   </div>
                   <div class="booking-offer__entry booking-offer__detail">
                     Freier und dauerhafter Zugang zu allen Kursinhalten
@@ -741,7 +747,8 @@
 <script>
 import "@fontsource/piazzolla";
 import Cards from "~/components/Cards";
-import ChecklistEntry from "~/components/ChecklistEntry.vue";
+import ChecklistEntry from "~/components/ChecklistEntry";
+import CurrencySelector from "~/components/CurrencySelector";
 import GdprNotice from "~/components/GdprNotice";
 import Navigation from "~/components/Navigation";
 import appData from "~/data/appData";
@@ -838,17 +845,29 @@ function onMounted() {
 }
 
 export default {
-  components: { Cards, ChecklistEntry, GdprNotice, Navigation },
+  components: {
+    Cards,
+    ChecklistEntry,
+    CurrencySelector,
+    GdprNotice,
+    Navigation,
+  },
   computed: {
+    allCurrencyButtons() {
+      return document.querySelectorAll(".currency-selector__button");
+    },
     appData() {
       return appData;
+    },
+    currencyShown() {
+      return this.state.currency === "EUR" ? "€" : "CHF";
     },
     isLoggedIn() {
       return stateM8t.isLoggedIn();
     },
   },
   data() {
-    return { elems: { modal: { root: {} } }, modalPlayer: {} };
+    return { elems: { modal: { root: {} } }, modalPlayer: {}, state: {} };
   },
   metaInfo: {
     meta: [
@@ -902,6 +921,11 @@ export default {
     this.modalPlayer = new Vimeo.Player(this.elems.modal.vimeoVideo);
 
     this.analyticsRelated();
+
+    this.state = stateM8t.subscribe((state) => {
+      this.state = state;
+    });
+
     onMounted();
   },
 };
