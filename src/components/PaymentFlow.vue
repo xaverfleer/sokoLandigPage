@@ -70,7 +70,11 @@ export default {
         : "";
     },
     price() {
-      const exact = this.offer.price * (1 - this.discount);
+      const fullPrice =
+        this.state?.currency === "EUR"
+          ? this.offer.priceEur
+          : this.offer.priceChf;
+      const exact = fullPrice * (1 - this.discount);
       return Math.floor(exact / 5) * 5;
     },
     showPaypal() {

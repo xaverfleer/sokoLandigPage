@@ -479,7 +479,7 @@
                   </div>
                   <div class="booking-offer__entry booking-offer__main">
                     <div class="booking-offer__price">
-                      {{ this.currencyShown }} 195
+                      {{ this.currencyShown }} {{ prices.single }}
                     </div>
                   </div>
                   <div class="booking-offer__entry booking-offer__detail">
@@ -547,7 +547,7 @@
                   </div>
                   <div class="booking-offer__entry booking-offer__main">
                     <div class="booking-offer__price">
-                      {{ currencyShown }} 295
+                      {{ currencyShown }} {{ prices.group }}
                     </div>
                   </div>
                   <div class="booking-offer__entry booking-offer__detail">
@@ -903,6 +903,17 @@ export default {
     },
     isLoggedIn() {
       return stateM8t.isLoggedIn();
+    },
+    prices() {
+      return this.state.currency === "EUR"
+        ? {
+            group: appData.offers.group.priceEur,
+            single: appData.offers.single.priceEur,
+          }
+        : {
+            group: appData.offers.group.priceChf,
+            single: appData.offers.single.priceChf,
+          };
     },
   },
   data() {
