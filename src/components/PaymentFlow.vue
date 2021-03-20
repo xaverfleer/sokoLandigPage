@@ -52,7 +52,7 @@ export default {
       return this.formFields
         .concat(this.promoCodeForm.fields)
         .concat(
-          { name: "paymentMethod", value: this.paymentmethod },
+          { name: "paymentMethod", value: this.paymentMethod },
           { name: "offerName", value: this.offer.name }
         )
         .reduce((acc, field) => ({ ...acc, [field.name]: field.value }), {});
