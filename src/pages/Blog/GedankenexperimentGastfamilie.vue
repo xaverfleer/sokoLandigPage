@@ -165,6 +165,77 @@
           aufwachsen?</strong
         >
       </p>
+    </section>
+    <section class="section">
+      <h2>Mehr zum Thema</h2>
+      <ul class="post-list">
+        <li>
+          <g-link class="post-list__post" to="/blog/abc-der-zurueckhaltung/">
+            <g-image
+              class="post-list__img"
+              src="~/assets/imgs/ABC-Der-Zurueckhaltung.jpg"
+            />
+            <div class="post-list__content">
+              <h2 class="post-list__title">
+                Das ABC der Zurückhaltung
+                <div class="post-list__date-and-author">
+                  13. März 2021 – Eva Fleer
+                </div>
+              </h2>
+              Eine zurückhaltende Begleitung des kindlichen Spiels bringt viele
+              Vorteile. Das ABC der Zurückhaltung kann uns als Richtlinie
+              dienen.
+            </div>
+          </g-link>
+        </li>
+        <li>
+          <g-link
+            class="post-list__post"
+            to="/blog/nein-sagen-drei-strategien/"
+          >
+            <g-image
+              class="post-list__img"
+              src="~/assets/imgs/Baby-spielt-mit-Flasche2.png"
+            />
+            <div class="post-list__content">
+              <h2 class="post-list__title">
+                "Nein" sagen, aber wie? Drei Strategien, die alle Eltern kennen
+                sollten!
+                <div class="post-list__date-and-author">
+                  07. März 2021 – Eva Fleer
+                </div>
+              </h2>
+              "Nein" sagen und Grenzen setzen gehören zum Alltag mit Kindern
+              dazu. Wie können wir "Nein" sagen, ohne die Verbindung zum Kind zu
+              verlieren? Drei nützliche Strategien!
+            </div>
+          </g-link>
+        </li>
+        <li>
+          <g-link
+            class="post-list__post"
+            to="/blog/gleichwuerdig-oder-entwuerdigend/"
+          >
+            <g-image
+              class="post-list__img"
+              src="~/assets/imgs/gleichwuerdig-vs-entwuerdigend.png"
+            />
+            <div class="post-list__content">
+              <h2 class="post-list__title">
+                Gleichwürdig oder entwürdigend?
+                <div class="post-list__date-and-author">
+                  22. Februar 2021 – Eva Fleer
+                </div>
+              </h2>
+              Eine gleichwürdige Sprache stärkt Kinder, eine entwürdigende
+              Sprache schwächt sie. Was ist der Unterschied? Sieben konkrete
+              Beispiele!
+            </div>
+          </g-link>
+        </li>
+      </ul>
+    </section>
+    <section class="section">
       <EmailSubscription />
       <BlogCtas />
     </section>
