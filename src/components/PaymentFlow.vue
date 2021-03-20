@@ -51,7 +51,10 @@ export default {
     compactData() {
       return this.formFields
         .concat(this.promoCodeForm.fields)
-        .concat({ name: "paymentMethod", value: this.paymentMethod })
+        .concat(
+          { name: "paymentMethod", value: this.paymentmethod },
+          { name: "offerName", value: this.offer.name }
+        )
         .reduce((acc, field) => ({ ...acc, [field.name]: field.value }), {});
     },
     currencyShown() {
