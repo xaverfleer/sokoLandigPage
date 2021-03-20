@@ -171,7 +171,6 @@ export default {
     loadPaypalButton() {
       const vueThis = this;
       const { price } = this;
-      const { currency } = this.state;
       document.querySelector(".paypal-button-container").innerHTML = "";
       paypal
         .Buttons({
