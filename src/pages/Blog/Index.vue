@@ -22,8 +22,6 @@
             </div>
           </g-link>
         </li>
-      </ul>
-      <ul class="post-list">
         <li>
           <g-link
             class="post-list__post"
@@ -47,8 +45,6 @@
             </div>
           </g-link>
         </li>
-      </ul>
-      <ul class="post-list">
         <li>
           <g-link
             class="post-list__post"
@@ -70,8 +66,6 @@
             </div>
           </g-link>
         </li>
-      </ul>
-      <ul class="post-list">
         <li>
           <g-link
             class="post-list__post"
