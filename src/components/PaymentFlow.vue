@@ -220,6 +220,17 @@ export default {
     this.state = stateM8t.subscribe((state) => {
       this.state = state;
     });
+
+    if (
+      document.location.pathname.endsWith("-euro/") &&
+      this.state.currency !== "EUR"
+    )
+      stateM8t.setCurrency("EUR");
+    if (
+      document.location.pathname.endsWith("buchen/") &&
+      this.state.currency !== "CHF"
+    )
+      stateM8t.setCurrency("CHF");
   },
   props: ["offer"],
 };
