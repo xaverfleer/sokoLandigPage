@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <Section class="section">
+    <section class="section">
       <p class="blog__date-and-author">13. März 2021 – Eva Fleer</p>
       <h1 class="blog__title">
         Das ABC der Zurückhaltung <br />Ein Leitfaden für die Begleitung des
@@ -187,7 +187,7 @@
           >Zum Onlinekurs</g-link
         >
       </div>
-    </Section>
+    </section>
   </Layout>
 </template>
 
