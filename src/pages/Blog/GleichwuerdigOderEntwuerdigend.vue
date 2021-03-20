@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <Section class="section">
+    <section class="section">
       <p class="blog__date-and-author">22. Februar 2021 – Eva Fleer</p>
       <h1 class="blog__title">Gleichwürdig oder entwürdigend?</h1>
       <p>
@@ -114,15 +114,10 @@
           title="Zurück zur Übersicht"
           >Zur Übersicht</g-link
         >
-        <g-link
-          class="button button--2ndary"
-          to="/kurs/01-innere-staerke/"
-          target="_blank"
-          title="Zum Onlinekurs"
-          >Zum Onlinekurs</g-link
+          >Zur Startseite</g-link
         >
       </div>
-    </Section>
+    </section>
   </Layout>
 </template>
 

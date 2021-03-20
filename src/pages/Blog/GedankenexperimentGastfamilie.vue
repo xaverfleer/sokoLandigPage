@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <Section class="section">
+    <section class="section">
       <p class="blog__date-and-author">06. März 2021 – Eva Fleer</p>
       <h1 class="blog__title">
         Ignorieren, Schimpfen, Strafen, Erpressen... Warum herkömmliche
@@ -181,7 +181,7 @@
           >Zum Onlinekurs</g-link
         >
       </div>
-    </Section>
+    </section>
   </Layout>
 </template>
 

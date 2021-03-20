@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <Section class="section">
+    <section class="section">
       <p class="blog__date-and-author">07. März 2021 – Eva Fleer</p>
       <h1 class="blog__title">
         «Nein» sagen, aber wie? <br />Drei Strategien, die alle Eltern kennen
@@ -280,7 +280,7 @@
           >Zum Onlinekurs</g-link
         >
       </div>
-    </Section>
+    </section>
   </Layout>
 </template>
 
