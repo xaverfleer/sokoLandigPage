@@ -166,32 +166,19 @@
         >
       </p>
       <EmailSubscription />
-      <div class="buttons">
-        <g-link
-          class="button button--2ndary"
-          to="/blog"
-          title="Zurück zur Übersicht"
-          >Zur Übersicht</g-link
-        >
-        <g-link
-          class="button button--2ndary"
-          to="/kurs/01-innere-staerke/"
-          target="_blank"
-          title="Zum Onlinekurs"
-          >Zum Onlinekurs</g-link
-        >
-      </div>
+      <BlogCtas />
     </section>
   </Layout>
 </template>
 
 <script>
+import BlogCtas from "~/components/BlogCtas";
 import EmailSubscription from "~/components/EmailSubscription.vue";
 import VideoVue from "~/components/VideoVue.vue";
 import { trackPageLoad } from "~/scripts/analyticsMethods";
 
 export default {
-  components: { EmailSubscription, VideoVue },
+  components: { BlogCtas, EmailSubscription, VideoVue },
   metaInfo: {
     meta: [
       {

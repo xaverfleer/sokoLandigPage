@@ -107,27 +107,19 @@
       </p>
       <VideoVue :video="{ ref: 'https://player.vimeo.com/video/514884071' }" />
       <EmailSubscription />
-      <div class="buttons">
-        <g-link
-          class="button button--2ndary"
-          to="/blog"
-          title="Zurück zur Übersicht"
-          >Zur Übersicht</g-link
-        >
-          >Zur Startseite</g-link
-        >
-      </div>
+      <BlogCtas />
     </section>
   </Layout>
 </template>
 
 <script>
+import BlogCtas from "~/components/BlogCtas";
 import EmailSubscription from "~/components/EmailSubscription.vue";
 import VideoVue from "~/components/VideoVue.vue";
 import { trackPageLoad } from "~/scripts/analyticsMethods";
 
 export default {
-  components: { EmailSubscription, VideoVue },
+  components: { BlogCtas, EmailSubscription, VideoVue },
   metaInfo: {
     meta: [
       {
