@@ -1,7 +1,6 @@
 <template>
   <div class="order-flow">
     <h2>Einkaufswagen</h2>
-    <CurrencySelector :currency="state.currency" />
     <div class="form-aligned shopping-cart">
       <p class="shopping-cart__label">Im Einkaufswagen:</p>
       <p>
@@ -41,14 +40,13 @@
 </template>
 
 <script>
-import CurrencySelector from "./CurrencySelector.vue";
 import FormEntry from "./FormEntry.vue";
 import FormVue from "./FormVue.vue";
 import appData from "~/data/appData";
 import stateM8t from "../stateManagement";
 
 export default {
-  components: { CurrencySelector, FormEntry, FormVue },
+  components: { FormEntry, FormVue },
   computed: {
     compactData() {
       return this.formFields
@@ -182,7 +180,6 @@ export default {
               purchase_units: [
                 {
                   amount: {
-                    currency_code: currency,
                     value: price,
                   },
                   description: "so* kommunizieren mit deinem Baby",

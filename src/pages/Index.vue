@@ -504,7 +504,9 @@
                   <div class="buttons booking-offer__buttons">
                     <g-link
                       class="button button--primary"
-                      to="/buchen/"
+                      :to="
+                        state.currency === 'EUR' ? '/buchen-euro/' : '/buchen/'
+                      "
                       title="Jetzt buchen"
                       >Jetzt buchen</g-link
                     >
@@ -577,7 +579,11 @@
                   <div class="buttons booking-offer__buttons">
                     <g-link
                       class="button button--primary"
-                      to="/gruppenkurs-buchen/"
+                      :to="
+                        state.currency === 'EUR'
+                          ? '/gruppenkurs-buchen-euro/'
+                          : '/gruppenkurs-buchen/'
+                      "
                       title="Jetzt buchen"
                       >Jetzt buchen</g-link
                     >
