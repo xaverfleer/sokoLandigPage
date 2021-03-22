@@ -7,6 +7,7 @@
 
 a,
 a * {
+  color: #966b40;
   cursor: pointer;
   text-decoration: none;
 }
@@ -914,7 +915,7 @@ strong {
   align-self: flex-end;
   background-color: #f6ede2;
   border-radius: 5px;
-  color: inherit;
+  font-weight: 800;
   margin-top: 0.5em;
   padding: 0.5em 1.5em;
 }
