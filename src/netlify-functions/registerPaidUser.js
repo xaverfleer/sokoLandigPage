@@ -37,15 +37,24 @@ exports.handler = function register(event, context, callback = () => {}) {
   logging.logStart("Start register paid user");
   const respond = responding.responseHandlers(callback);
 
-  const { address, city, email, name, phone, promoCode } = JSON.parse(
-    event.body
-  );
+  const {
+    address,
+    city,
+    email,
+    name,
+    offerName,
+    paymentMethod,
+    phone,
+    promoCode,
+  } = JSON.parse(event.body);
 
   const newUserParams = helpers.composeUser({
     address,
     city,
     email,
     name,
+    offerName,
+    paymentMethod,
     phone,
     promoCode,
   });

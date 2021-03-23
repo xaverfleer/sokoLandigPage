@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import stateManagement from "../stateManagement";
+import stateM8t from "../stateManagement";
 
 export default {
   metaInfo: {
@@ -28,7 +28,7 @@ export default {
     title: "Abmelden",
   },
   created() {
-    stateManagement.updateSession(null);
+    stateM8t.updateSession(null);
     this.$router.push("/abgemeldet/");
   },
 };

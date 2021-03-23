@@ -21,7 +21,7 @@
 import FormEntry from "./FormEntry.vue";
 import RouteVue from "./RouteVue.vue";
 
-import stateManagement from "~/stateManagement";
+import stateM8t from "~/stateManagement";
 
 export default {
   components: { FormEntry, RouteVue },
@@ -46,7 +46,7 @@ export default {
     compactData() {
       const formData = this.formData.fields.reduce(
         (acc, field) => ({ ...acc, [field.name]: field.value }),
-        { sessionId: stateManagement.getSessionId() }
+        { sessionId: stateM8t.getSessionId() }
       );
       const searchData = window.location.search
         .substring(1)

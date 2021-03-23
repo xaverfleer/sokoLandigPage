@@ -50,7 +50,7 @@
 import FormVue from "~/components/FormVue.vue";
 
 import appData from "~/data/appData";
-import stateManagement from "~/stateManagement";
+import stateM8t from "~/stateManagement";
 
 export default {
   components: { FormVue },
@@ -96,13 +96,13 @@ export default {
         ],
         goal: "Konto löschen",
         name: "deleteAccount",
-        postSubmit: () => stateManagement.updateSession(null),
+        postSubmit: () => stateM8t.updateSession(null),
         submitLambdaFunction: "deleteAccount",
         successRoute: appData.routes.accountDeleted.to,
       };
     },
     isLoggedIn() {
-      return stateManagement.isLoggedIn();
+      return stateM8t.isLoggedIn();
     },
     shortenedEmail() {
       const email =
@@ -111,7 +111,7 @@ export default {
       return `${email.substring(0, 3)}...${email.substring(email.length - 3)}`;
     },
     isPaidAccount() {
-      return stateManagement.isPaidAccount;
+      return stateM8t.isPaidAccount;
     },
   },
   data() {
@@ -132,7 +132,7 @@ export default {
     title: "Konto",
   },
   mounted() {
-    this.state = stateManagement.subscribe((state) => {
+    this.state = stateM8t.subscribe((state) => {
       this.state = state;
     });
   },

@@ -27,7 +27,7 @@ function getSessionId() {
 }
 
 function getState() {
-  const defaultState = {};
+  const defaultState = { currency: "CHF" };
 
   const lsState = ls.getItem("soko");
   return (validateState(lsState) && JSON.parse(lsState)) || defaultState;
@@ -62,6 +62,10 @@ function subscribe(subscriber) {
   return getState();
 }
 
+function setCurrency(currency) {
+  setState((oldState) => ({ ...oldState, currency }));
+}
+
 function setState(change) {
   const oldState = getState();
 
@@ -91,5 +95,6 @@ export default {
   isPaidAccount,
   updateSession,
   upgradeToPaidAccount,
+  setCurrency,
   subscribe,
 };

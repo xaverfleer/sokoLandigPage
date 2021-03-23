@@ -3,7 +3,10 @@
     <h2>Einkaufswagen</h2>
     <div class="form-aligned shopping-cart">
       <p class="shopping-cart__label">Im Einkaufswagen:</p>
-      <p>1x {{ offer.name }} – CHF {{ price }} {{ discountMessage }}</p>
+      <p>
+        1x {{ offer.name }} – {{ currencyShown }} {{ price }}
+        {{ discountMessage }}
+      </p>
     </div>
     <div class="step step--promo-code">
       <h2>Rabatt</h2>
@@ -40,7 +43,7 @@
 import FormEntry from "./FormEntry.vue";
 import FormVue from "./FormVue.vue";
 import appData from "~/data/appData";
-import stateManagement from "../stateManagement";
+import stateM8t from "../stateManagement";
 
 export default {
   components: { FormEntry, FormVue },
@@ -48,8 +51,14 @@ export default {
     compactData() {
       return this.formFields
         .concat(this.promoCodeForm.fields)
-        .concat({ name: "paymentMethod", value: this.paymentMethod })
+        .concat(
+          { name: "paymentMethod", value: this.paymentMethod },
+          { name: "offerName", value: this.offer.name }
+        )
         .reduce((acc, field) => ({ ...acc, [field.name]: field.value }), {});
+    },
+    currencyShown() {
+      return this.state.currency === "EUR" ? "€" : "CHF";
     },
     discountMessage() {
       return this.discount ? ` (inkl. ${this.discountMessageShort})` : "";
@@ -62,7 +71,11 @@ export default {
         : "";
     },
     price() {
-      const exact = this.offer.price * (1 - this.discount);
+      const fullPrice =
+        this.state?.currency === "EUR"
+          ? this.offer.priceEur
+          : this.offer.priceChf;
+      const exact = fullPrice * (1 - this.discount);
       return Math.floor(exact / 5) * 5;
     },
     showPaypal() {
@@ -102,6 +115,7 @@ export default {
         },
         submitLambdaFunction: "verifyPromoCode",
       },
+      state: {},
     };
   },
   methods: {
@@ -137,7 +151,7 @@ export default {
     },
     handleUserCreationSuccess(xhr) {
       if (xhr.response === "Account upgraded") {
-        stateManagement.upgradeToPaidAccount();
+        stateM8t.upgradeToPaidAccount();
         this.$router.push(appData.routes.upgradedAccount.to);
       } else this.$router.push(appData.routes.registered.to);
     },
@@ -159,7 +173,7 @@ export default {
     },
     loadPaypalButton() {
       const vueThis = this;
-      const { price, compactData } = this;
+      const { price } = this;
       document.querySelector(".paypal-button-container").innerHTML = "";
       paypal
         .Buttons({
@@ -203,6 +217,22 @@ export default {
         }
       }
     },
+  },
+  mounted() {
+    this.state = stateM8t.subscribe((state) => {
+      this.state = state;
+    });
+
+    if (
+      document.location.pathname.endsWith("-euro/") &&
+      this.state.currency !== "EUR"
+    )
+      stateM8t.setCurrency("EUR");
+    if (
+      document.location.pathname.endsWith("buchen/") &&
+      this.state.currency !== "CHF"
+    )
+      stateM8t.setCurrency("CHF");
   },
   props: ["offer"],
 };

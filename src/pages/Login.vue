@@ -14,7 +14,7 @@
 <script>
 import FormVue from "~/components/FormVue.vue";
 import appData from "~/data/appData";
-import stateManagement from "~/stateManagement";
+import stateM8t from "~/stateManagement";
 
 export default {
   components: { FormVue },
@@ -34,7 +34,7 @@ export default {
           const { email, isPaidAccount, sessionId, ts } = JSON.parse(
             xhr.responseText
           );
-          stateManagement.updateSession({
+          stateM8t.updateSession({
             email,
             isPaidAccount,
             sessionId,

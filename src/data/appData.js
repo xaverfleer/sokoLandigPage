@@ -2074,12 +2074,14 @@ const appData = {
   offers: {
     single: {
       name: "Freier Online-Video-Kurs",
-      price: 195,
+      priceChf: 195,
+      priceEur: 180,
       title: "Freier Online-Video-Kurs",
     },
     group: {
       name: "Geführter Gruppenkurs",
-      price: 295,
+      priceChf: 295,
+      priceEur: 270,
       title: "Geführter Gruppenkurs",
     },
   },

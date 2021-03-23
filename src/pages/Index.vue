@@ -181,10 +181,10 @@
                 class="value-proposition__icon"
                 src="imgs/article-24px.svg"
               />
-              <div class="value-proposition__titie">Strategiekarten</div>
+              <div class="value-proposition__titie">Strategie&shy;karten</div>
               <div class="value-proposition__description">
-                Alle Kommunikationsstrategien findest du zusammengefasst auf je
-                einer A5-Seite, z.B. zum Aufhängen als Erinnerungshilfe.
+                Alle Kommunikations&shy;strategien findest du zusammengefasst
+                auf je einer A5-Seite, z.B. zum Aufhängen als Erinnerungshilfe.
               </div>
               <p class="value-proposition__space" />
               <a
@@ -389,10 +389,50 @@
             width="541"
           />
           <p class="speech-bubble__clear" />
+          <div class="customer-feedback">
+            <div class="customer-feedback__entry">
+              <div class="customer-feedback__content">
+                Dein Kurs prägt die Kommunikation mit unserer Tochter sehr. Die
+                Art und Weise wie du erklärst findet bei uns sofort Verständnis,
+                bleibt in Erinnerung und ist einfach in der Praxis anzuwenden.
+                Das ist perfekt.
+              </div>
+              <div class="customer-feedback__author">
+                — Ilena und Max<span class="customer-feedback__author-type"
+                  >, Eltern</span
+                >
+              </div>
+            </div>
+            <div class="customer-feedback__entry">
+              <div class="customer-feedback__content">
+                Die Lektionen sind praktisch und anschaulich gestaltet und
+                machen richtig Lust, gewisse Ideen gleich auszuprobieren.
+              </div>
+              <div class="customer-feedback__author">
+                — Katrin<span class="customer-feedback__author-type"
+                  >, Mutter</span
+                >
+              </div>
+            </div>
+            <div class="customer-feedback__entry">
+              <div class="customer-feedback__content">
+                Dein Kurs vermittelt bodenständig und ohne extreme Ideologie,
+                was Kommunikation bewirken kann. Die konkreten Strategien helfen
+                uns im Alltag, herablassende Muster durch eine stärkende
+                Kommunikation zu ersetzen.
+              </div>
+              <div class="customer-feedback__author">
+                — Rahel und John<span class="customer-feedback__author-type"
+                  >, Eltern</span
+                >
+              </div>
+            </div>
+          </div>
         </section>
         <section class="section">
           <p class="scroll-offset" id="offer" />
           <h2>Angebote</h2>
+          <CurrencySelector :currency="state.currency" />
           <div class="offers-wrapper">
             <div class="offer-selector">
               <button
@@ -438,7 +478,9 @@
                     Freier Online-Video-Kurs
                   </div>
                   <div class="booking-offer__entry booking-offer__main">
-                    <div class="booking-offer__price">CHF 195</div>
+                    <div class="booking-offer__price">
+                      {{ this.currencyShown }} {{ prices.single }}
+                    </div>
                   </div>
                   <div class="booking-offer__entry booking-offer__detail">
                     Freier, dauerhafter Zugang zu allen Kursinhalten
@@ -456,12 +498,15 @@
                     Kursstart jederzeit möglich
                   </div>
                   <div class="booking-offer__entry booking-offer__detail">
-                    Upgrade zu geführtem Gruppenkurs für CHF&nbsp;100 möglich
+                    Upgrade zu geführtem Gruppenkurs für
+                    {{ this.currencyShown }}&nbsp;100 möglich
                   </div>
                   <div class="buttons booking-offer__buttons">
                     <g-link
                       class="button button--primary"
-                      to="/buchen/"
+                      :to="
+                        state.currency === 'EUR' ? '/buchen-euro/' : '/buchen/'
+                      "
                       title="Jetzt buchen"
                       >Jetzt buchen</g-link
                     >
@@ -503,7 +548,9 @@
                     Geführter Gruppenkurs
                   </div>
                   <div class="booking-offer__entry booking-offer__main">
-                    <div class="booking-offer__price">CHF 295</div>
+                    <div class="booking-offer__price">
+                      {{ currencyShown }} {{ prices.group }}
+                    </div>
                   </div>
                   <div class="booking-offer__entry booking-offer__detail">
                     Freier und dauerhafter Zugang zu allen Kursinhalten
@@ -532,7 +579,11 @@
                   <div class="buttons booking-offer__buttons">
                     <g-link
                       class="button button--primary"
-                      to="/gruppenkurs-buchen/"
+                      :to="
+                        state.currency === 'EUR'
+                          ? '/gruppenkurs-buchen-euro/'
+                          : '/gruppenkurs-buchen/'
+                      "
                       title="Jetzt buchen"
                       >Jetzt buchen</g-link
                     >
@@ -741,11 +792,12 @@
 <script>
 import "@fontsource/piazzolla";
 import Cards from "~/components/Cards";
-import ChecklistEntry from "~/components/ChecklistEntry.vue";
+import ChecklistEntry from "~/components/ChecklistEntry";
+import CurrencySelector from "~/components/CurrencySelector";
 import GdprNotice from "~/components/GdprNotice";
 import Navigation from "~/components/Navigation";
 import appData from "~/data/appData";
-import stateManagement from "~/stateManagement";
+import stateM8t from "~/stateManagement";
 import {
   trackCampaign,
   trackCustomEvent,
@@ -838,17 +890,40 @@ function onMounted() {
 }
 
 export default {
-  components: { Cards, ChecklistEntry, GdprNotice, Navigation },
+  components: {
+    Cards,
+    ChecklistEntry,
+    CurrencySelector,
+    GdprNotice,
+    Navigation,
+  },
   computed: {
+    allCurrencyButtons() {
+      return document.querySelectorAll(".currency-selector__button");
+    },
     appData() {
       return appData;
     },
+    currencyShown() {
+      return this.state.currency === "EUR" ? "€" : "CHF";
+    },
     isLoggedIn() {
-      return stateManagement.isLoggedIn();
+      return stateM8t.isLoggedIn();
+    },
+    prices() {
+      return this.state.currency === "EUR"
+        ? {
+            group: appData.offers.group.priceEur,
+            single: appData.offers.single.priceEur,
+          }
+        : {
+            group: appData.offers.group.priceChf,
+            single: appData.offers.single.priceChf,
+          };
     },
   },
   data() {
-    return { elems: { modal: { root: {} } }, modalPlayer: {} };
+    return { elems: { modal: { root: {} } }, modalPlayer: {}, state: {} };
   },
   metaInfo: {
     meta: [
@@ -902,6 +977,11 @@ export default {
     this.modalPlayer = new Vimeo.Player(this.elems.modal.vimeoVideo);
 
     this.analyticsRelated();
+
+    this.state = stateM8t.subscribe((state) => {
+      this.state = state;
+    });
+
     onMounted();
   },
 };

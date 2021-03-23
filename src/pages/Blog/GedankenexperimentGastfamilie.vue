@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <Section class="section">
+    <section class="section">
       <p class="blog__date-and-author">06. März 2021 – Eva Fleer</p>
       <h1 class="blog__title">
         Ignorieren, Schimpfen, Strafen, Erpressen... Warum herkömmliche
@@ -165,33 +165,91 @@
           aufwachsen?</strong
         >
       </p>
+    </section>
+    <section class="section">
+      <h2>Mehr zum Thema</h2>
+      <ul class="post-list">
+        <li>
+          <g-link class="post-list__post" to="/blog/abc-der-zurueckhaltung/">
+            <g-image
+              class="post-list__img"
+              src="~/assets/imgs/ABC-Der-Zurueckhaltung.jpg"
+            />
+            <div class="post-list__content">
+              <h2 class="post-list__title">
+                Das ABC der Zurückhaltung
+                <div class="post-list__date-and-author">
+                  13. März 2021 – Eva Fleer
+                </div>
+              </h2>
+              Eine zurückhaltende Begleitung des kindlichen Spiels bringt viele
+              Vorteile. Das ABC der Zurückhaltung kann uns als Richtlinie
+              dienen.
+            </div>
+          </g-link>
+        </li>
+        <li>
+          <g-link
+            class="post-list__post"
+            to="/blog/nein-sagen-drei-strategien/"
+          >
+            <g-image
+              class="post-list__img"
+              src="~/assets/imgs/Baby-spielt-mit-Flasche2.png"
+            />
+            <div class="post-list__content">
+              <h2 class="post-list__title">
+                "Nein" sagen, aber wie? Drei Strategien, die alle Eltern kennen
+                sollten!
+                <div class="post-list__date-and-author">
+                  07. März 2021 – Eva Fleer
+                </div>
+              </h2>
+              "Nein" sagen und Grenzen setzen gehören zum Alltag mit Kindern
+              dazu. Wie können wir "Nein" sagen, ohne die Verbindung zum Kind zu
+              verlieren? Drei nützliche Strategien!
+            </div>
+          </g-link>
+        </li>
+        <li>
+          <g-link
+            class="post-list__post"
+            to="/blog/gleichwuerdig-oder-entwuerdigend/"
+          >
+            <g-image
+              class="post-list__img"
+              src="~/assets/imgs/gleichwuerdig-vs-entwuerdigend.png"
+            />
+            <div class="post-list__content">
+              <h2 class="post-list__title">
+                Gleichwürdig oder entwürdigend?
+                <div class="post-list__date-and-author">
+                  22. Februar 2021 – Eva Fleer
+                </div>
+              </h2>
+              Eine gleichwürdige Sprache stärkt Kinder, eine entwürdigende
+              Sprache schwächt sie. Was ist der Unterschied? Sieben konkrete
+              Beispiele!
+            </div>
+          </g-link>
+        </li>
+      </ul>
+    </section>
+    <section class="section">
       <EmailSubscription />
-      <div class="buttons">
-        <g-link
-          class="button button--2ndary"
-          to="/blog"
-          title="Zurück zur Übersicht"
-          >Zur Übersicht</g-link
-        >
-        <g-link
-          class="button button--2ndary"
-          to="/kurs/01-innere-staerke/"
-          target="_blank"
-          title="Zum Onlinekurs"
-          >Zum Onlinekurs</g-link
-        >
-      </div>
-    </Section>
+      <BlogCtas />
+    </section>
   </Layout>
 </template>
 
 <script>
+import BlogCtas from "~/components/BlogCtas";
 import EmailSubscription from "~/components/EmailSubscription.vue";
 import VideoVue from "~/components/VideoVue.vue";
 import { trackPageLoad } from "~/scripts/analyticsMethods";
 
 export default {
-  components: { EmailSubscription, VideoVue },
+  components: { BlogCtas, EmailSubscription, VideoVue },
   metaInfo: {
     meta: [
       {
