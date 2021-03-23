@@ -14,7 +14,9 @@
       </g-link>
       <Navigation :routes="routes" />
       <router-link
-        :to="isLoggedIn ? appData.routes.account.to : appData.routes.login.to"
+        :to="
+          isLoggedIn ? appData.routes.account.to : appData.routes.register.to
+        "
         class="profile"
       ></router-link>
     </div>
