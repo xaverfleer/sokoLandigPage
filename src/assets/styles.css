@@ -262,9 +262,10 @@ textarea {
 }
 
 .customer-feedback__author {
+  align-self: flex-end;
   font-style: italic;
   padding-top: 0.5em;
-  align-self: flex-end;
+  text-align: right;
 }
 
 .customer-feedback__content {
