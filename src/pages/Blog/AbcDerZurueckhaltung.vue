@@ -102,7 +102,7 @@
         können wir abwarten und uns darüber freuen, wie kreativ und eigenständig
         unser Kind die Welt entdeckt. Es gibt z.B. keinen Grund, einem Kind zu
         erklären, wie ein Spielzeug «richtig» funktioniert, wenn es dieses
-        "falsch" anwendet. Es gibt auch keinen Grundm einem Baby zu helfen, sich
+        "falsch" anwendet. Es gibt auch keinen Grund einem Baby zu helfen, sich
         auf den Bauch zu drehen, wenn es konzentriert dabei ist, das zu üben.
         Kinder wollen und können «es» selbst schaffen!
       </p>
