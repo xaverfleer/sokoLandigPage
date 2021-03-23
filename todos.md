@@ -37,6 +37,7 @@
 - better wording on landing page
 - forum
 - was bedeutet serie
+- webinar
 
 ## channel: blog
 
@@ -95,6 +96,13 @@
 - Soko Sicht
 
 ## channel: strategy cards
+
+## channel: webinar
+
+- Fragen vorher schicken
+- Werbung auf FB
+- Zeitlich beschränkter Rabatt
+- 1h
 
 # bugfixes
 
