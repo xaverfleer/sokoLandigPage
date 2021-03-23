@@ -5,8 +5,8 @@
       <p>
         Kinder sind kleine Persönlichkeiten mit einem angeborenen und
         unverhandelbaren Recht auf Menschenwürde. Das ist eine zentrale
-        Überzeugung hinter der subjektorientierten Kommunikation. Unsere
-        Überzeugung stützen wir auf nichts Geringeres als auf die
+        Überzeugung hinter der subjektorientierten Kommunikation. Diese
+        Überzeugung basiert auf nichts Geringerem als auf der
         UNO-Kinderrechtskonvention.
       </p>
       <g-image
@@ -21,18 +21,22 @@
         zu werden und die eigne Persönlichkeit zu entfalten. Anders ausgedrückt:
         Kinder haben das Recht darauf, als einzigartiges Subjekt mit ihrer ganz
         eigenen inneren Realität gesehen und miteinbezogen, anstatt als Objekt
-        fremdbestimmt und abgefertigt zu werden. Kindern als Subjekt zu begegnen
-        ist eine andere Bezeichnung dafür, Kindern das Recht auf Würde
-        zuzugestehen.
+        fremdbestimmt und abgefertigt zu werden.
+      </p>
+      <p>
+        <strong
+          >Kindern als Subjekt zu begegnen ist eine andere Bezeichnung dafür,
+          Kindern das Recht auf Würde zuzugestehen.</strong
+        >
       </p>
       <p>
         Mit dieser Überzeugung distanziert sich die subjektorientierte
-        Kommunikation von allen Erziehungsansätzen, die primär darauf abzielen,
-        das Verhalten von Kindern durch äussere Anreize (wie Schimpfen,
-        bewusstes Ignorieren, Drohen, Strafen oder Bestechung durch Belohnungen)
-        zu steuern und zu kontrollieren. Solche Erziehungsmethoden reduzieren
-        Kinder auf ihr Verhalten, ohne nach den inneren, subjektiven
-        Beweggründen zu fragen.
+        Kommunikation von allen Erziehungsansätzen, die darauf abzielen, das
+        Verhalten von Kindern durch äussere Anreize zu steuern und zu
+        kontrollieren. Erziehungsmethoden wie Schimpfen, bewusstes Ignorieren,
+        Drohen, Strafen oder Bestechen durch Belohnungen reduzieren Kinder auf
+        ihr Verhalten, ohne nach den inneren, subjektiven Beweggründen zu
+        fragen.
       </p>
       <g-image
         alt="Kinder duerfen nicht auf das Verhalten reduziert werden"
