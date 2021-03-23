@@ -1,4 +1,8 @@
 /* global localStorage */
+window.addEventListener("storage", () => {
+  const newState = JSON.parse(window.localStorage.getItem("soko"));
+  setState(() => newState);
+});
 
 const ls =
   typeof localStorage !== "undefined"
