@@ -1,7 +1,6 @@
 # todos
 
 - 2 blogposts on landing page
-- move contact form on separate page
 - weitere Blog Post vorschlagen
 - lighthouse improvements
 - add schema.org to blog

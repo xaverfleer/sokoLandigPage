@@ -31,6 +31,7 @@ export default {
     to: "/kurs/06-download-dokumentenpakete/",
   },
   blog: { text: "Blog", to: "/blog/" },
+  contact: { text: "Kontakt", to: "/kontakt/" },
   philosophie: { text: "Philosophie", to: "/philosophie/" },
   changedPassword: { text: "Passwort geändert", to: "/passwort-geaendert/" },
   definedPassword: { text: "Passwort definiert", to: "/passwort-definiert/" },

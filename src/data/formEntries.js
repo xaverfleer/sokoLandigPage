@@ -63,6 +63,13 @@ export default {
     type: "email",
     value: "",
   },
+  message: {
+    inputId: "form__message",
+    isTextArea: true,
+    label: "Nachricht",
+    name: "message",
+    value: "",
+  },
   name: {
     inputId: "form__name",
     label: "Name",

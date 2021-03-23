@@ -11,7 +11,8 @@
     </main>
     <footer class="footer">
       <div id="contact" class="footer__contact">
-        Kontaktiere uns unter
+        Kontaktiere uns mit dem
+        <g-link to="/kontakt/">Kontaktformular,</g-link> unter
         <a href="mailto:kurs@so-kommunizieren.ch" rel="nofollow"
           >kurs@so-kommunizieren.ch</a
         >

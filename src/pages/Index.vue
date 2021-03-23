@@ -688,70 +688,11 @@
             meine Lieblingsserien.
           </p>
         </section>
-        <section class="section">
-          <p class="scroll-offset" id="contact" />
-          <h2>Kontakt</h2>
-          <p>
-            Hast du Fragen, Anregungen, Wünsche oder einfach etwas mitzuteilen?
-            Ich freue mich über deine Nachricht.
-          </p>
-          <p>
-            Auf Anfrage halte ich auch Vorträge oder leite Workshops rund um die
-            Themen der subjektorientierten Kommunikation.
-          </p>
-          <form class="form">
-            <div class="form-entry form-entry--halfwidth">
-              <label for="form__name" class="form-entry__label"
-                ><abbr title="Pflichtfeld" class="form-entry__required">* </abbr
-                >Name</label
-              >
-              <input
-                name="name"
-                id="form__name"
-                required="required"
-                type="text"
-                class="form-entry__input"
-              />
-              <div class="form-entry__help"></div>
-            </div>
-            <div class="form-entry form-entry--halfwidth">
-              <label for="form__email" class="form-entry__label"
-                ><abbr title="Pflichtfeld" class="form-entry__required">* </abbr
-                >E-Mail-Adresse</label
-              >
-              <input
-                name="email"
-                id="form__email"
-                required="required"
-                type="email"
-                class="form-entry__input"
-              />
-              <div class="form-entry__help"></div>
-            </div>
-            <div class="form-entry form-entry--fullwidth">
-              <label for="form__message" class="form-entry__label"
-                ><abbr title="Pflichtfeld" class="form-entry__required">* </abbr
-                >Nachricht</label
-              >
-              <textarea
-                name="message"
-                id="form__message"
-                rows="10"
-                class="form-entry__input"
-              ></textarea>
-              <div class="form-entry__help"></div>
-            </div>
-            <div class="buttons form__buttons">
-              <button class="button button--primary">
-                Nachricht senden
-              </button>
-            </div>
-          </form>
-        </section>
       </main>
       <footer class="footer" id="footer">
         <div class="footer__contact">
-          Kontaktiere uns unter
+          Kontaktiere uns mit dem
+          <g-link to="/kontakt/">Kontaktformular,</g-link> unter
           <a href="mailto:kurs@so-kommunizieren.ch" rel="nofollow"
             >kurs@so-kommunizieren.ch</a
           >
@@ -808,7 +749,6 @@ import "npm-font-source-sans-pro";
 
 function onMounted() {
   const header = document.querySelector(".header");
-  const formElem = document.querySelector("form");
 
   const learningMode = {
     buttons: {
@@ -825,45 +765,6 @@ function onMounted() {
     if (window.pageYOffset > 350) header.classList.add("header--fixed");
     else header.classList.remove("header--fixed");
   });
-
-  function getFormData() {
-    const entries = [].slice.call(formElem.elements);
-
-    const data = entries.reduce(
-      (acc, elem) => (elem.value ? { ...acc, [elem.name]: elem.value } : acc),
-      {}
-    );
-    return JSON.stringify(data);
-  }
-
-  function submitForm() {
-    const xhr = new XMLHttpRequest();
-    xhr.open("POST", `/.netlify/functions/sendMessage`);
-    xhr.send(getFormData());
-    xhr.addEventListener("load", () => {
-      switch (xhr.status) {
-        case 200:
-          [].slice.call(formElem.elements).forEach(function clearElem(elem) {
-            elem.value = "";
-          });
-          // this.handleSuccess(xhr);
-          break;
-        default:
-          alert(
-            "Senden der Nachricht fehlgeschlagen.\nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch."
-          );
-          break;
-      }
-    });
-
-    xhr.addEventListener("error", () => {
-      alert(
-        "Senden der Nachricht fehlgeschlagen.\nBitte versuche es später noch einmal oder kontaktiere uns unter kurs@so-kommunizieren.ch."
-      );
-    });
-  }
-
-  document.querySelector("form").addEventListener("submit", submitForm);
 
   learningMode.buttons.alone.addEventListener("click", () => {
     learningMode.buttons.alone.classList.add("offer-selector__button--active");
@@ -944,7 +845,6 @@ export default {
       trackScrolling("contents", "#contents");
       trackScrolling("offer", "#offer");
       trackScrolling("about-me", "#about-me");
-      trackScrolling("contact", "#contact");
       trackScrolling("footer", "#footer");
     },
     closeModal() {
