@@ -126,6 +126,7 @@
       <br />
       <h2>
         2. Strategie: Ein "Ja" in der Fantasie
+      </h2>
       <g-image
         alt="Baby and rabbit"
         class="img"
