@@ -125,9 +125,7 @@
       </p>
       <br />
       <h2>
-        2. Strategie: Dem Wunsch in der Fantasie nachgehen <br />oder ein
-        Verhalten in der Fantasie ermöglichen
-      </h2>
+        2. Strategie: Ein "Ja" in der Fantasie
       <g-image
         alt="Baby and rabbit"
         class="img"
@@ -200,8 +198,7 @@
       </p>
       <br />
       <h2>
-        3. Strategie: Nein zum Wunsch oder zum Verhalten, <br />Ja zu Frust,
-        Ärger und Trauer
+        3. Strategie: Ein "Ja" zu Frust, Ärger, Trauer...
       </h2>
       <g-image
         alt="Baby and father"
