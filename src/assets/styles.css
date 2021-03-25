@@ -762,7 +762,7 @@ textarea {
 }
 
 .post-list li:last-of-type .post-list__post {
-  border-bottom: none;
+  border-width: 0;
 }
 
 .post-list__content {
@@ -782,8 +782,9 @@ textarea {
 
 .post-list__post {
   align-items: flex-start;
-  border-bottom: 1px solid black;
-  border-image: linear-gradient(to right, #fff, #966b40, #fff) 30;
+  border: 1px solid #966b40;
+  border-image: linear-gradient(to right, #fff0, #966b40, #fff0) 30;
+  border-width: 0 0 1px 0;
   display: flex;
   flex-direction: column-reverse;
   padding-bottom: 2em;
