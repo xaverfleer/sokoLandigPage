@@ -416,15 +416,26 @@
             </div>
             <div class="customer-feedback__entry">
               <div class="customer-feedback__content">
-                Dein Kurs vermittelt bodenständig und ohne extreme Ideologie,
-                was Kommunikation bewirken kann. Die konkreten Strategien helfen
-                uns im Alltag, herablassende Muster durch eine stärkende
-                Kommunikation zu ersetzen.
+                Mir ist die Art, wie ich mit meiner Tochter kommuniziere, sehr
+                wichtig. Im Online Kurs "so-kommunizieren" habe ich dafür sehr
+                konkrete und hilfreiche Inputs erhalten. Zum Beispiel hat es
+                mich beschäftigt, wie ich meiner Tochter auf eine konstruktive
+                Art "Nein" sagen kann oder wie ich ihr meine Emotionen mitteilen
+                soll. Sowohl mit spannenden theoretischen Erklärungen, wie auch
+                mit praktischen Handlungs&shy;vorschlägen bietet der Kurs
+                wertvolle Unterstützung bei solchen Fragen. Ich denke, dass alle
+                Eltern und indirekt natürlich deren Kinder vom Kurs profitieren
+                können. Empfehlen würde ich ihn allen Eltern, denen die
+                emotionale Stärke ihrer Kinder am Herzen liegt und die offen
+                dafür sind, sich mit dem Thema Kommunikation
+                auseinander&shy;zusetzen.
               </div>
               <div class="customer-feedback__author">
-                — Rahel und John<span class="customer-feedback__author-type"
-                  >, Eltern</span
-                >
+                —
+                <a href="https://lisafilipe.ch/" rel="noreferrer">Lisa Filipe</a
+                ><span class="customer-feedback__author-type"
+                  >, Coach & Beraterin
+                </span>
               </div>
             </div>
           </div>
