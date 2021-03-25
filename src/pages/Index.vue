@@ -434,7 +434,7 @@
                 —
                 <a href="https://lisafilipe.ch/" rel="noreferrer">Lisa Filipe</a
                 ><span class="customer-feedback__author-type"
-                  >, Coach & Beraterin
+                  >, Ethnologin & Coach für Frauengesundheit
                 </span>
               </div>
             </div>
