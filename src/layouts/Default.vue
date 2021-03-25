@@ -14,10 +14,10 @@
         Kontaktiere uns mit dem
         <g-link to="/kontakt/">Kontaktformular,</g-link> unter
         <a href="mailto:kurs@so-kommunizieren.ch" rel="nofollow"
-          >kurs@so-kommunizieren.ch</a
+          >kurs@so&#8209;kommunizieren.ch</a
         >
         oder
-        <a href="tel:+41774466505" rel="nofollow"> +41 77 44 66 505</a>.
+        <a href="tel:+41774466505" rel="nofollow"> +41 77 44 66 505</a>.
       </div>
       <div class="footer__copyright">
         © 2020 Fleer & Fleer |

@@ -350,10 +350,9 @@ textarea {
 .footer {
   background-color: #966b40;
   box-sizing: border-box;
-  padding: 10px;
-  height: 90px;
+  padding: 1em;
   text-align: center;
-  font-size: 0.76393rem;
+  font-size: 1.23607rem;
   color: #ffffff;
 }
 
