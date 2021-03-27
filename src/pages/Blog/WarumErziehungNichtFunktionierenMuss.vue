@@ -68,7 +68,7 @@
       </ol>
       <p>
         Sie hat sich also überspitzt gesagt versprochen, dass diese Strategien
-        ihr das gehorsame, glückliche Kind hervorbringen.
+        ihr ein gehorsames, glückliches Kind hervorbringen.
       </p>
       <br />
       <h2>Subjektorientierte Kommunikation kann "funktionieren"...</h2>
@@ -126,7 +126,7 @@
         >
       </p>
       <p>
-        Das Kernziel der subjektorientierten Kommunikation ist es, ein Kind
+        Das Kernziel der subjektorientierten Kommunikation ist, ein Kind
         innerlich zu stärken. Mehr zu diesem Thema findest du im frei
         zugänglichen ersten Kursblock im Video 1.2.
       </p>
@@ -147,7 +147,7 @@
         völlig daneben, widersprechen, sind frech, hassen ab und zu ihre Eltern
         oder Geschwister, haben mitunter manchmal Selbstzweifel und
         Versagensängste oder knicken mal bei Gruppendruck ein. Das gehört alles
-        zur Entwicklung und zum Leben dazu und es gibt keine Erziehung und keine
+        zur Entwicklung und zum Leben dazu. Es gibt keine Erziehung und keine
         Kommunikationsstrategie, die das verhindern könnte.
       </p>
       <br />
@@ -171,7 +171,7 @@
         Gesellschaft. Herkömmliche (sogenannte behavioristische) Methoden
         versprechen als Ergebnis vor allem das richtige Verhalten. Wir brauchen
         bloss die richtigen negativen oder positiven Anreize zu setzen und schon
-        haben wir ein kooperative, rücksichtsvolles, hilfsbereites, dankbares
+        haben wir ein kooperatives, rücksichtsvolles, hilfsbereites, dankbares
         (…) Kind.
       </p>
       <p>
@@ -279,7 +279,7 @@
       <p>
         Und da haben wir sie wieder: Die behavioristische Idee, dass eine
         Erziehungsstrategie dann erfolgreich ist, wenn sie das kindliche
-        Verhalten positive beeinflusst. Hätte die Wunschzeit bei dieser Mutter
+        Verhalten positiv beeinflusst. Hätte die Wunschzeit bei dieser Mutter
         nicht den entsprechenden Effekt auf das Verhalten der Kinder gehabt,
         hätte sie nach dieser Idee zum Schluss kommen müssen, dass sie nichts
         bringt bzw. dass sie nicht funktioniert. Ob die Wunschzeit z.B. das
@@ -293,7 +293,7 @@
       </h2>
       <p>
         Wenn Eltern der Idee verfallen, mit den richtigen Strategien das
-        richtige (messbare) Ergebnis erzielen zu können, setzt sie das enorm
+        richtige (messbare) Ergebnis erzielen zu können, setzen sie sich enorm
         unter Druck. Dabei ist dieser Druck für viele Eltern mit der
         bedürfnisorientierten Erziehung noch grösser geworden, weil die Ratgeber
         als «richtiges» Ergebnis nicht nur das gute, soziale Verhalten, sondern
@@ -309,8 +309,8 @@
       </p>
       <p>
         <em>
-          «Jedenfalls, wie man es macht, macht man es falsch - irgendwer ist
-          gefühlt immer unzufrieden.»
+          «Egal, wie man es macht, macht man es falsch - irgendwer ist gefühlt
+          immer unzufrieden.»
         </em>
       </p>
       <p>
@@ -336,7 +336,7 @@
       <p>
         Gleichzeitig weiss ich, dass keine Erziehungs- und keine
         Kommunikationsstrategie der Welt meiner Tochter das Leben garantiert,
-        dass ich mir für sie wünsche. Aus den Erkenntnissen der Wissenschaft
+        das ich mir für sie wünsche. Aus den Erkenntnissen der Wissenschaft
         lässt sich nicht schliessen, dass Kinder, die bedürfnisorientiert
         aufwachsen und weitgehend eine gewaltfreie, subjektorientierte
         Kommunikation erleben, nie Lernschwierigkeiten haben, nie in einer Krise
