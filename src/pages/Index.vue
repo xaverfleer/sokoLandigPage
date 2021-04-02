@@ -98,9 +98,9 @@
           <p class="speech-bubble__clear"></p>
           <p>
             <br /><br />Eine einfühlsame, wertschätzende und stärkende
-            Kommunikation bereits in den ersten Lebensjahen ist das Wertvollste,
-            das du deinem Kind schenken kannst. Kommuniziere von Anfang an
-            <em>subjektorientiert</em> und ...
+            Kommunikation bereits in den ersten Lebensjahren ist das
+            Wertvollste, das du deinem Kind schenken kannst. Kommuniziere von
+            Anfang an <em>subjektorientiert</em> und ...
           </p>
           <div class="checklist">
             <ChecklistEntry
