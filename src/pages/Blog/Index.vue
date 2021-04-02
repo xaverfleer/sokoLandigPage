@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <Section class="section">
+    <Section>
       <h1>Der Blog rund um die <em>subjektorientierte</em> Kommunikation</h1>
       <ul class="post-list">
         <li>

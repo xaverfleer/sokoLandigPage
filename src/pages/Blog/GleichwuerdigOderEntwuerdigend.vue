@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="section">
+    <section>
       <p class="blog__date-and-author">22. Februar 2021 – Eva Fleer</p>
       <h1 class="blog__title">Gleichwürdig oder entwürdigend?</h1>
       <p>
@@ -107,7 +107,7 @@
       </p>
       <VideoVue :video="{ ref: 'https://player.vimeo.com/video/514884071' }" />
     </section>
-    <section class="section">
+    <section>
       <h2>Mehr zum Thema</h2>
       <ul class="post-list">
         <li>
@@ -175,7 +175,7 @@
         </li>
       </ul>
     </section>
-    <section class="section">
+    <section>
       <EmailSubscription />
       <BlogCtas />
     </section>

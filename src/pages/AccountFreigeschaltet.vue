@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="section">
+    <section>
       <h1>Account ist freigeschaltet.</h1>
       <p>
         Du kannst dich jetzt

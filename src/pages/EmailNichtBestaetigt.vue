@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="section">
+    <section>
       <h1>Konto ist nicht bestätigt</h1>
       <p>
         Das Konto konnte leider nicht bestätigt werden. Bitte erneut versuchen.

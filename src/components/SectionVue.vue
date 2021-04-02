@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section>
     <template v-if="section.blocktitle">
       <div class="block__supertitle">{{ section.blocktitle.supertitle }}</div>
       <h1 class="block__title">{{ section.blocktitle.main }}</h1>

@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <Section class="section">
+    <Section>
       <h1>Philosophie der <em>subjektorientierten</em> Kommunikation</h1>
       <p>
         Kinder sind kleine Persönlichkeiten mit einem angeborenen und

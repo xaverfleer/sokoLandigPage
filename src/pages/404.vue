@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="section">
+    <section>
       <h1>Seite nicht gefunden</h1>
       <p>
         Die gesuchte Seite ist entweder temporär nicht verfügbar, wurde an einen

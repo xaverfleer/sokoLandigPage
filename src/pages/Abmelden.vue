@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="section">
+    <section>
       <h1>Abmelden</h1>
       <p>Bitte warten.</p>
       <p>

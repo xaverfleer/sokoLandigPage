@@ -37,7 +37,7 @@
         </div>
       </header>
       <main>
-        <section class="section hero">
+        <section class="hero">
           <p class="hero__supertitle">
             Der Online-Video-Kurs für Eltern, Bezugs-
             und&nbsp;Betreuungspersonen
@@ -143,7 +143,7 @@
             >
           </div>
         </section>
-        <section class="section">
+        <section>
           <p class="scroll-offset" id="contents" />
           <h2>Inhalte</h2>
           <p>
@@ -440,7 +440,7 @@
             </div>
           </div>
         </section>
-        <section class="section">
+        <section>
           <p class="scroll-offset" id="offer" />
           <h2>Angebote</h2>
           <CurrencySelector :currency="state.currency" />
@@ -604,7 +604,7 @@
             </div>
           </div>
         </section>
-        <section class="section" itemscope itemtype="https://schema.org/Person">
+        <section itemscope itemtype="https://schema.org/Person">
           <p class="scroll-offset" id="about-me" />
           <h2>Über mich</h2>
           <div

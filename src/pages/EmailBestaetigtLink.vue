@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="section">
+    <section>
       <h1>E-mailadresse ist erfolgreich bestätigt</h1>
       <p>
         Wir haben dir per E-Mail einen Link gesendet. Bitte folge diesem Link

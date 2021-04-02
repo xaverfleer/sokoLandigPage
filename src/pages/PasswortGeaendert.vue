@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="section">
+    <section>
       <h1>Passwort ist erfolgreich geändert</h1>
       <p>
         <g-link to="/kurs/">Zum Kurs</g-link>

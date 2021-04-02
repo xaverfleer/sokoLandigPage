@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="section">
+    <section>
       <h1>Abmelden erfolgreich</h1>
       <p>Du bist erfolgreich abgemeldet.</p>
       <p>

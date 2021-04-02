@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="section">
+    <section>
       <h1>Anmeldung erfolgreich</h1>
       <p>Du bist erfolgreich angemeldet</p>
       <p>

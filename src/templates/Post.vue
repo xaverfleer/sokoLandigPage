@@ -10,7 +10,7 @@
     <!-- </ul> -->
     <!-- </nav> -->
     <!-- </div> -->
-    <!-- <section class="section"> -->
+    <!-- <section> -->
     <!-- <div class="container"> -->
     <!-- <div class="content"> -->
     <!-- <div v-html="$page.post.content"></div> -->

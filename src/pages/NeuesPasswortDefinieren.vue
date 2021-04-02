@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="section">
+    <section>
       <h1>Neues Passwort definieren</h1>
       <FormVue :formData="newPasswordForm" />
     </section>

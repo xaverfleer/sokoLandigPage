@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="section">
+    <section>
       <h1>Kontakt</h1>
       <p>
         Hast du Fragen, Anregungen, Wünsche oder einfach etwas mitzuteilen? Ich

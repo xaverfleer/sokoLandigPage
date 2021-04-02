@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="section">
+    <section>
       <h1>Passwort zurücksetzen</h1>
       <FormVue :formData="resetPasswordForm" />
     </section>

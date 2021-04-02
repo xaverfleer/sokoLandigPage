@@ -1,7 +1,7 @@
 <template>
   <div>
     <SectionVue :section="appData.course.block06.sections.section61" />
-    <section class="section section--no-background">
+    <section class="section--no-background">
       <p>Bitte buche den Kurs, um alle Inhalte zu sehen.</p>
       <div class="buttons">
         <RouteVue :info="appData.course.routes.block05" />

@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="section">
+    <section>
       <h1>E-Mailadresse bestätigen</h1>
       <p>
         Wir haben dein Konto erfolgreich erstellt und dir per E-Mail einen Link

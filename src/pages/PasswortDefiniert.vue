@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="section">
+    <section>
       <h1>Passwort ist erfolgreich definiert.</h1>
       <p>
         Du kannst dich jetzt

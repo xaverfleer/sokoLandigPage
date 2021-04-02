@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="section">
+    <section>
       <h1>E-Mail ist erfolgreich bestätigt</h1>
       <p>Vielen Dank für die Bestätigung.</p>
       <p>

@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="section">
+    <section>
       <h1>Anmelden</h1>
       <FormVue :formData="loginForm" />
       <div>

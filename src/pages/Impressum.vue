@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="section">
+    <section>
       <h1>Impressum</h1>
       <h2 class="header--left">Fleer & Fleer</h2>
       <p>

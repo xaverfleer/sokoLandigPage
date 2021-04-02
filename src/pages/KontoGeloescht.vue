@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="section">
+    <section>
       <h1>Schade dass du uns verlässt.</h1>
       <p>Dein Konto ist erfolgreich gelöscht.</p>
       <p>
