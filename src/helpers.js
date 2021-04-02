@@ -3,7 +3,6 @@ export function isEarlyBird(that) {
 }
 
 export function kursToEarlyBird(courseRoute) {
-  debugger;
   return {
     ...courseRoute,
     to: courseRoute.to.split("/kurs/").join("/early-bird/"),
