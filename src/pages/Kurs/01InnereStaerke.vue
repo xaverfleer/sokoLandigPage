@@ -42,7 +42,7 @@ export default {
     navRoutes() {
       const crs = this.appData.courseRoutes;
       return isEarlyBird(this)
-        ? Array.from(crs).map((cr) => this.kursToEarlyBird(cr))
+        ? Array.from(crs).map((cr) => kursToEarlyBird(cr))
         : crs;
     },
   },

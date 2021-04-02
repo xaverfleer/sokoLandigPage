@@ -21,7 +21,7 @@ export default {
     navRoutes() {
       const crs = appData.courseRoutes;
       return isEarlyBird(this)
-        ? Array.from(crs).map((cr) => this.kursToEarlyBird(cr))
+        ? Array.from(crs).map((cr) => kursToEarlyBird(cr))
         : crs;
     },
   },
@@ -38,9 +38,6 @@ export default {
       },
     ],
     title: "Zurückhaltung üben",
-  },
-  methods: {
-    kursToEarlyBird,
   },
   mounted() {
     trackPageLoad(this.$route.path);
