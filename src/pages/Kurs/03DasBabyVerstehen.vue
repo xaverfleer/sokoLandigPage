@@ -10,7 +10,7 @@ import Block3Free from "~/components/Block3Free.vue";
 import Block3Paid from "~/components/Block3Paid.vue";
 import { trackPageLoad } from "~/scripts/analyticsMethods";
 import appData from "~/data/appData";
-import { isEarlyBird } from "~/helpers";
+import { isEarlyBird, kursToEarlyBird } from "~/helpers";
 
 export default {
   components: {
@@ -40,12 +40,7 @@ export default {
     title: "Das Baby verstehen",
   },
   methods: {
-    kursToEarlyBird(courseRoute) {
-      return {
-        ...courseRoute,
-        to: courseRoute.to.split("/kurs/").join("/early-bird/"),
-      };
-    },
+    kursToEarlyBird,
   },
   mounted() {
     trackPageLoad(this.$route.path);

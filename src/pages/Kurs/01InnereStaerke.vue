@@ -28,9 +28,10 @@
 import ButtonVue from "~/components/ButtonVue.vue";
 import RouteVue from "~/components/RouteVue.vue";
 import SectionVue from "~/components/SectionVue.vue";
-import { trackPageLoad } from "~/scripts/analyticsMethods";
+
 import appData from "~/data/appData";
-import { isEarlyBird } from "~/helpers";
+import { isEarlyBird, kursToEarlyBird } from "~/helpers";
+import { trackPageLoad } from "~/scripts/analyticsMethods";
 
 export default {
   components: { ButtonVue, RouteVue, SectionVue },
@@ -60,12 +61,7 @@ export default {
     title: "Innere Stärke und Gleichwürdigkeit",
   },
   methods: {
-    kursToEarlyBird(courseRoute) {
-      return {
-        ...courseRoute,
-        to: courseRoute.to.split("/kurs/").join("/early-bird/"),
-      };
-    },
+    kursToEarlyBird,
   },
   mounted() {
     trackPageLoad(this.$route.path);

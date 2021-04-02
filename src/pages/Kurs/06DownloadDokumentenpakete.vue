@@ -10,7 +10,7 @@ import Block6Free from "~/components/Block6Free.vue";
 import Block6Paid from "~/components/Block6Paid.vue";
 import { trackPageLoad } from "~/scripts/analyticsMethods";
 import appData from "~/data/appData";
-import { isEarlyBird } from "~/helpers";
+import { isEarlyBird, kursToEarlyBird } from "~/helpers";
 
 export default {
   components: {
@@ -39,12 +39,7 @@ export default {
     title: "Download Dokumentenpakete",
   },
   methods: {
-    kursToEarlyBird(courseRoute) {
-      return {
-        ...courseRoute,
-        to: courseRoute.to.split("/kurs/").join("/early-bird/"),
-      };
-    },
+    kursToEarlyBird,
   },
   mounted() {
     trackPageLoad(this.$route.path);

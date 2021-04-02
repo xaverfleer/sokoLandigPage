@@ -23,6 +23,8 @@ import RouteVue from "~/components/RouteVue.vue";
 import SectionVue from "~/components/SectionVue.vue";
 
 import appData from "~/data/appData";
+import { kursToEarlyBird } from "~/helpers";
+
 export default {
   components: { ButtonVue, RouteVue, SectionVue },
   computed: {
@@ -31,12 +33,7 @@ export default {
     },
   },
   methods: {
-    kursToEarlyBird(courseRoute) {
-      return {
-        ...courseRoute,
-        to: courseRoute.to.split("/kurs/").join("/early-bird/"),
-      };
-    },
+    kursToEarlyBird,
   },
   props: ["state"],
 };
