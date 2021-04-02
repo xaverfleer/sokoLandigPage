@@ -70,6 +70,7 @@ export default {
     handleSubmit(event) {
       this.updateHelp(this.formData.fields);
       if (this.isInputValid(this.formData.fields)) {
+        this.formData.preSubmit && this.formData.preSubmit();
         this.submitForm();
       }
     },
