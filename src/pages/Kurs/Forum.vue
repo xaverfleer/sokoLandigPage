@@ -56,9 +56,10 @@
 import FormVue from "~/components/FormVue.vue";
 import ForumEntry from "~/components/ForumEntry.vue";
 import RouteVue from "~/components/RouteVue.vue";
-import { trackPageLoad } from "~/scripts/analyticsMethods";
+
 import appData from "~/data/appData";
 import { isEarlyBird, kursToEarlyBird } from "~/helpers";
+import { trackPageLoad } from "~/scripts/analyticsMethods";
 
 export default {
   components: { FormVue, ForumEntry, RouteVue },
