@@ -12,7 +12,7 @@
       class="form-entry__input"
       name="comment"
       id="form__comment"
-      rows="10"
+      :rows="options.rows || '10'"
       v-if="options.isTextArea"
       v-model="options.value"
     ></textarea>

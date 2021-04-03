@@ -2,30 +2,66 @@
   <Layout :routes="navRoutes">
     <section>
       <h1>Mitgliederforum</h1>
-      <p>Austausch von Fragen, Antworten und allerlei Interessantem.</p>
-      <div class="forum-entries"></div>
-    </section>
-    <section>
-      <h2>Neuen Eintrag erfassen</h2>
+      <p>
+        Austausch von Fragen, Antworten, Gedanken, Angregendem allerlei
+        Interessantem.
+      </p>
+      <h2>Neue Diskussion starten</h2>
       <FormVue :formData="submitCommentForm" />
     </section>
-    <div class="buttons">
-      <RouteVue
-        :info="{ ...appData.course.routes.block01, text: 'Zum Kurs' }"
-      />
-    </div>
+    <section>
+      <h2>Diskussionen</h2>
+      <div class="forum-entries">
+        <ForumEntry
+          :entry="{
+            author: 'Xaver Fleer',
+            text: 'Ich habe einen zweiten Gedanken.',
+            timestamp: '2.4.2021 15:17',
+          }"
+        />
+        <ForumEntry
+          :entry="{
+            author: 'Xaver Fleer',
+            text: 'Ich habe dazu einen Gedanken.',
+            timestamp: '2.4.2021 15:17',
+          }"
+          class="forum-entry--sub-entry"
+        />
+        <ForumEntry
+          :entry="{
+            author: 'Xaver Fleer',
+            text: 'Ich habe dazu einen anderen Gedanken.',
+            timestamp: '2.4.2021 15:17',
+          }"
+          class="forum-entry--sub-entry"
+        />
+        <ForumEntry
+          :entry="{
+            author: 'Xaver Fleer',
+            text: 'Ich habe einen Gedanken.',
+            timestamp: '2.4.2021 15:16',
+          }"
+        />
+      </div>
+      <div class="buttons">
+        <RouteVue
+          :info="{ ...appData.course.routes.block01, text: 'Zum Kurs' }"
+        />
+      </div>
+    </section>
   </Layout>
 </template>
 
 <script>
 import FormVue from "~/components/FormVue.vue";
+import ForumEntry from "~/components/ForumEntry.vue";
 import RouteVue from "~/components/RouteVue.vue";
 import { trackPageLoad } from "~/scripts/analyticsMethods";
 import appData from "~/data/appData";
 import { isEarlyBird, kursToEarlyBird } from "~/helpers";
 
 export default {
-  components: { FormVue, RouteVue },
+  components: { FormVue, ForumEntry, RouteVue },
   computed: {
     appData() {
       return appData;
@@ -38,13 +74,14 @@ export default {
     },
     submitCommentForm() {
       return {
-        fields: [{ ...appData.formEntries.message }],
-        goal: "Kommentar posten",
+        fields: [
+          { ...appData.formEntries.message, label: "Neuer Eintrag", rows: 3 },
+        ],
+        goal: "Eintrag posten",
         name: "submit-forum-comment",
-        // postSubmit: () => {
-        // alert("Vielen Dank. Deine E-Mail-Adresse ist registriert.");
-        // },
-        // submitLambdaFunction: "submitForumComment",
+        preSubmit() {
+          alert("Dieses Feature funktioniert leider noch nicht.");
+        },
       };
     },
   },
