@@ -93,6 +93,14 @@ section:nth-of-type(2n) .document {
   background-color: #ffffff;
 }
 
+span {
+  font-weight: inherit;
+}
+
+strong {
+  font-weight: bold;
+}
+
 .block__supertitle {
   font-size: 1.23607rem;
   color: #966b40;
@@ -896,14 +904,6 @@ section:nth-of-type(2n) .document {
 .speech-bubble--right {
   float: right;
   margin-left: 1em;
-}
-
-span {
-  font-weight: inherit;
-}
-
-strong {
-  font-weight: bold;
 }
 
 .ul--3-dots {
