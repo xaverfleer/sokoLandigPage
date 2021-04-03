@@ -4,6 +4,28 @@
       <h1>Der Blog rund um die <em>subjektorientierte</em> Kommunikation</h1>
       <ul class="post-list">
         <li>
+          <g-link
+            class="post-list__post"
+            to="/blog/warum-erziehung-nicht-funktionieren-muss/"
+          >
+            <g-image
+              class="post-list__img"
+              src="~/assets/imgs/schlecht-erzogen-gut-erzogen2.png"
+            />
+            <div class="post-list__content">
+              <h2 class="post-list__title">
+                Warum Erziehungsstrategien nicht funktionieren müssen
+                <div class="post-list__date-and-author">
+                  26. März 2021 – Eva Fleer
+                </div>
+              </h2>
+              Wie sinnvoll eine Erziehungsstrategie ist, lässt sich nicht am
+              Verhalten, nicht am Lernerfolg und auch nicht an der Zufriedenheit
+              eines Kindes messen.
+            </div>
+          </g-link>
+        </li>
+        <li>
           <g-link class="post-list__post" to="/blog/abc-der-zurueckhaltung/">
             <g-image
               class="post-list__img"

@@ -18,10 +18,10 @@
       <p>
         Menschenwürde umfasst das Recht, als Individuum mit allen Gedanken,
         Gefühlen, Bedürfnissen, Wünschen, Träumen etc. wahr- und ernstgenommen
-        zu werden und die eigne Persönlichkeit zu entfalten. Anders ausgedrückt:
-        Kinder haben das Recht darauf, als einzigartiges Subjekt mit ihrer ganz
-        eigenen inneren Realität gesehen und miteinbezogen, anstatt als Objekt
-        fremdbestimmt und abgefertigt zu werden.
+        zu werden und die eigene Persönlichkeit zu entfalten. Anders
+        ausgedrückt: Kinder haben das Recht darauf, als einzigartiges Subjekt
+        mit ihrer ganz eigenen inneren Realität gesehen und miteinbezogen,
+        anstatt als Objekt fremdbestimmt und abgefertigt zu werden.
       </p>
       <p>
         <strong
