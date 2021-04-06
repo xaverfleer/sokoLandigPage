@@ -71,6 +71,13 @@ function setCurrency(currency) {
   setState((oldState) => ({ ...oldState, currency }));
 }
 
+export function setSubscriptionAlert(subscriptionAlert) {
+  setState((oldState) => ({
+    ...oldState,
+    subscriptionAlert: { ...subscriptionAlert, lastUpdate: Date.now() },
+  }));
+}
+
 function setState(change) {
   const oldState = getState();
 

@@ -124,7 +124,7 @@
         kategorisch «Nein» sagen.
       </p>
       <br />
-      <h2>
+      <h2 id="mail-subscription-alert-trigger">
         2. Strategie: Ein "Ja" in der Fantasie
       </h2>
       <g-image
@@ -334,6 +334,10 @@
       <EmailSubscription />
       <BlogCtas />
     </section>
+    <div class="subscription-alert">
+      <EmailSubscription />
+      <div @click="closeSubscriptionAlert" class="modal__close"></div>
+    </div>
   </Layout>
 </template>
 
@@ -341,10 +345,22 @@
 import BlogCtas from "~/components/BlogCtas";
 import EmailSubscription from "~/components/EmailSubscription.vue";
 import VideoVue from "~/components/VideoVue.vue";
+
 import { trackPageLoad } from "~/scripts/analyticsMethods";
+import stateM8t, { setSubscriptionAlert } from "~/stateManagement";
 
 export default {
   components: { BlogCtas, EmailSubscription, VideoVue },
+  computed: {
+    subscriptionAlertElem() {
+      return document.querySelector(".subscription-alert");
+    },
+  },
+  data() {
+    return {
+      state: {},
+    };
+  },
   metaInfo: {
     meta: [
       {
@@ -359,7 +375,37 @@ export default {
     ],
     title: "Nein sagen – Drei Strategien.",
   },
+  methods: {
+    closeSubscriptionAlert() {
+      document.querySelector(".subscription-alert").style.display = "none";
+      setSubscriptionAlert({ closed: true });
+    },
+    prepareSubscriptionAlert(alertState) {
+      const vueThis = this;
+      if (
+        (!alertState ||
+          (alertState.closed !== true && alertState.subscribed !== true)) &&
+        window.IntersectionObserver !== null
+      ) {
+        function handler(entries, observer) {
+          if (entries[0].isIntersecting) {
+            vueThis.subscriptionAlertElem.style.display = "block";
+            observer.disconnect();
+          }
+        }
+
+        let observer = new IntersectionObserver(handler);
+        observer.observe(
+          document.getElementById("mail-subscription-alert-trigger")
+        );
+      }
+    },
+  },
   mounted() {
+    this.state = stateM8t.subscribe((state) => {
+      this.state = state;
+    });
+    this.prepareSubscriptionAlert(this.state.subscriptionAlert);
     trackPageLoad(this.$route.path);
   },
 };
