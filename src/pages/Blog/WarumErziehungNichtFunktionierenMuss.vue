@@ -3,7 +3,7 @@
     <section class="section">
       <p class="blog__date-and-author">26. März 2021 – Eva Fleer</p>
       <h1 class="blog__title">
-        Warum Erziehungsstrategien nicht funktionieren müssen
+        Warum Erziehungs&shy;strategien nicht funktionieren müssen
       </h1>
       <p>
         In meinem Beitrag «Nein sagen aber wie? Drei Strategien, die alle Eltern
