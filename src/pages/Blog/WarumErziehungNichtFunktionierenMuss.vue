@@ -130,6 +130,7 @@
         innerlich zu stärken. Mehr zu diesem Thema findest du im frei
         zugänglichen ersten Kursblock im Video 1.2.
       </p>
+      <br />
       <div class="buttons">
         <g-link
           class="button button--primary"
