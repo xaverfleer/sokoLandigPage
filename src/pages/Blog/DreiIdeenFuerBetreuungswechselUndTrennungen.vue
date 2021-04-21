@@ -338,7 +338,7 @@ export default {
       },
     ],
     title:
-      "Dei Ideen, um einem Kind Betreuungswechsel und Trennungen zu erleichtern",
+      "Drei Ideen, um einem Kind Betreuungswechsel und Trennungen zu erleichtern",
   },
   mounted() {
     trackPageLoad(this.$route.path);
