@@ -1,0 +1,2567 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://shop.muelicom.ch/Time-Timer-MOD -->
+<html lang="de" class="script webkit"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./timetimermod_files/a.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/string" src="./timetimermod_files/string.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/legacy" src="./timetimermod_files/legacy.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/tools" src="./timetimermod_files/tools.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/constants" src="./timetimermod_files/constants.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/browser" src="./timetimermod_files/browser.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/scope" src="./timetimermod_files/scope.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/json" src="./timetimermod_files/json.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/base64" src="./timetimermod_files/base64.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ep/inject-sec-token" src="./timetimermod_files/inject-sec-token.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/storage" src="./timetimermod_files/storage.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="$ready" src="./timetimermod_files/$ready.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/data" src="./timetimermod_files/data.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/disable-selection" src="./timetimermod_files/disable-selection.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/focusable" src="./timetimermod_files/focusable.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/form" src="./timetimermod_files/form.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/ie" src="./timetimermod_files/ie.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/keycode" src="./timetimermod_files/keycode.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/labels" src="./timetimermod_files/labels.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/jquery-1-7" src="./timetimermod_files/jquery-1-7.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/plugin" src="./timetimermod_files/plugin.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/safe-active-element" src="./timetimermod_files/safe-active-element.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/safe-blur" src="./timetimermod_files/safe-blur.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/scroll-parent" src="./timetimermod_files/scroll-parent.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/tabbable" src="./timetimermod_files/tabbable.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/unique-id" src="./timetimermod_files/unique-id.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/version" src="./timetimermod_files/version.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/mouse" src="./timetimermod_files/mouse.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/dialog" src="./timetimermod_files/dialog.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/tabs" src="./timetimermod_files/tabs.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/slider" src="./timetimermod_files/slider.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="$pub" src="./timetimermod_files/$pub.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/cookie" src="./timetimermod_files/cookie.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="class" src="./timetimermod_files/class.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/mime" src="./timetimermod_files/mime.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="$dict" src="./timetimermod_files/$dict.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="$tmpl" src="./timetimermod_files/$tmpl.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ep/ui/core" src="./timetimermod_files/core.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/support" src="./timetimermod_files/support.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/event/special/load" src="./timetimermod_files/load.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/event/special/touch" src="./timetimermod_files/touch.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/version" src="./timetimermod_files/version.js(1).Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ep/ui/validate" src="./timetimermod_files/validate.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="de_epages" src="./timetimermod_files/de_epages.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="de_epages/content/inc/megamenu" src="./timetimermod_files/megamenu.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/event/special/dom" src="./timetimermod_files/dom.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="de_epages/product/inc/energylabel" src="./timetimermod_files/energylabel.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="util/utf8" src="./timetimermod_files/utf8.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/button" src="./timetimermod_files/button.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/draggable" src="./timetimermod_files/draggable.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/resizable" src="./timetimermod_files/resizable.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/escape-selector" src="./timetimermod_files/escape-selector.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/masonry" src="./timetimermod_files/masonry.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/button" src="./timetimermod_files/button.js(1).Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/draggable" src="./timetimermod_files/draggable.js(1).Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/resizable" src="./timetimermod_files/resizable.js(1).Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/controlgroup" src="./timetimermod_files/controlgroup.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/checkboxradio" src="./timetimermod_files/checkboxradio.js.Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/controlgroup" src="./timetimermod_files/controlgroup.js(1).Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/widgets/checkboxradio" src="./timetimermod_files/checkboxradio.js(1).Herunterladen"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui/form-reset-mixin" src="./timetimermod_files/form-reset-mixin.js.Herunterladen"></script><!--<base href="https://shop.muelicom.ch/epages/175411.sf/de_CH/">--><base href=".">
+
+    <title>TimeTimer MOD - lernprogramme.ch</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<meta name="description" content="TimeTimer MOD! Neues Outfit des kleinsten TimeTimer mit abgedecktem Ziffernblatt und verschraubtem Batteriefach. Ideal für den individualisierenden Unterricht im Schulzimmer!">
+
+    
+
+<script async="" src="./timetimermod_files/analytics.js.Herunterladen"></script><script type="text/javascript" src="./timetimermod_files/saved_resource"></script>
+
+
+<script type="text/javascript">
+
+(function(require){
+
+function config(a,b){config._(config.c[a]||(config.c[a]={}),b)}config.c=require.config=require.config||{};config._=function(a,b){for(var c in b)b[c]instanceof Object?config._(a[c]||(a[c]={}),b[c]):a[c]=b[c]};
+
+
+config("jquery/canvas/canvastext", {
+  fontRoot: ["", "WebRoot", "Store", "Shops", "175411", "56D8", "5E3F", "6C86", "6C67", "BC2C", "0A00", "0E18", "595E"].join("/")
+});
+
+config("ep", {
+  baseUrl: ["https\u003A", "", "shop\u002Emuelicom\u002Ech", "epages", "175411\u002Esf", "de_CH", ""].join("/"),
+  canonicalUrl: 'https\u003A\u002F\u002Fshop\u002Emuelicom\u002Ech\u002FTime-Timer-MOD',
+  objectId: '18286230',
+  viewAction: 'View',
+  storeFrontUrl: ["https\u003A", "", "shop\u002Emuelicom\u002Ech", "epages", "175411\u002Esf"].join("/"),
+  requestProtocolAndServer: 'https\u003A\u002F\u002Fshop\u002Emuelicom\u002Ech',
+  webUrj: ["http\u003A", "", "shop\u002Emuelicom\u002Ech", "epages", "175411\u002Esf", "\u003FObjectPath\u003D", "Shops", "175411", "Products", "2104", "SubProducts", "2104-0004"].join("/"),
+  webUrlSsl: ["https\u003A", "", "shop\u002Emuelicom\u002Ech", "epages", "175411\u002Esf", "\u003FObjectPath\u003D", "Shops", "175411", "Products", "2104", "SubProducts", "2104-0004"].join("/"),
+  google: {
+    
+  }
+});
+
+}(require));
+</script>
+
+<link type="text/css" href="./timetimermod_files/package-sf.css" rel="stylesheet">
+
+<script type="text/javascript" src="./timetimermod_files/package-sf.js.Herunterladen"></script>
+
+
+
+<script type="text/javascript">
+    var jq = jQuery.noConflict();
+</script>
+<script type="text/javascript">
+    require(["jquery/metaparse", "de_epages/design/inc/sf-initialize"]);
+
+    
+      
+    require(["de_epages/externalcontent/dojogadgetfix"]);
+    
+
+    require(["ep/inject-sec-token"], function (ep) {
+        ep.injectSecToken();
+    });
+
+    
+</script>
+<script type="text/javascript">
+window.offscreenBuffering = true;
+</script>
+
+<script type="text/javascript">
+require(["jquery", "util/storage", "$ready!"], function ($, storage) {
+  var fromCategory = storage.sessionStorage("Product::FromCategory");
+
+  if( fromCategory ){
+    // jump to span < h3
+    $("h3 .BreadcrumbLastItem").parent().parent()
+      .children()
+        .not(':last-child')
+        .remove()
+      .end()
+      .prepend(fromCategory);
+
+    storage.sessionStorage("Product::FromCategory", null);
+  }
+});
+</script>
+
+  
+    <!-- Universal Analytics start -->
+<script type="text/javascript">
+    // Disable tracking if the opt-out cookie exists.
+    var disableStr = 'ga-disable-UA-115328610-1';
+    if (document.cookie.indexOf(disableStr + '=true') > -1) {
+        window[disableStr] = true;
+    }
+
+    // Opt-out function
+    function gaOptout() {
+        document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+        window[disableStr] = true;
+    }
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    var epUAConfig = 'auto';
+    
+
+    
+        ga('create', 'UA-115328610-1', epUAConfig);
+    
+    ga('set', 'anonymizeIp', true);
+</script>
+
+    
+
+
+    <script type="text/javascript">
+        
+            ga('send', 'pageview', {
+              'page': '\u002FShops\u002F175411\u002FProducts\u002F2104\u002FSubProducts\u002F2104-0004',
+              'title': 'TimeTimer\u0020MOD'
+            });
+        
+    </script>
+
+<!-- Universal Analytics end -->
+
+  
+
+
+
+
+
+<meta property="og:image" content="https://shop.muelicom.ch/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_1.jpg">
+<meta property="og:image:alt" content="TimeTimer MOD">
+<meta property="og:title" content="TimeTimer MOD">
+<meta property="og:type" content="product">
+
+    <meta property="og:url" content="https://shop.muelicom.ch/Time-Timer-MOD">
+
+<meta property="og:description" content="TimeTimer MOD! Neues Outfit des kleinsten TimeTimer mit abgedecktem Ziffernblatt und verschraubtem Batteriefach. Ideal für den individualisierenden Unterricht im Schulzimmer!">
+
+
+<link rel="shortcut icon" type="image/x-icon" href="https://shop.muelicom.ch/WebRoot/Store/Shops/175411/MediaGallery/favicon.ico">
+
+
+
+
+<link rel="canonical" href="https://shop.muelicom.ch/Time-Timer-MOD">
+  
+
+
+  <link href="./timetimermod_files/StorefrontStyle_481.css" rel="stylesheet" type="text/css">
+
+  
+
+  
+    <!--[if IE]>
+    <link href="/WebRoot/StoreTypes/7.57.0/Store/lib/de_epages/design/style-ie.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <style type="text/css">
+      /* if IE 10 */
+      @import url('/WebRoot/StoreTypes/7.57.0/Store/lib/de_epages/design/style-ie.css') screen and (-ms-high-contrast: active), (-ms-high-contrast: none);
+    </style>
+
+
+
+
+
+
+  
+<script type="text/javascript">
+try{
+  window.onerror = window.onerrorbak;
+}
+catch(e){
+}
+</script>
+  
+<!-- Begin: User-defined HTML Head area -->
+
+  <style>
+/* Einstellung für das Startbild */
+
+div[itemscope] h2 { display: none; } 
+/* Hauptmenue -> Subkategorie */
+.ep-megamenu-second-level-element > a {
+    padding-left: 5px !important;
+    border-left: 1px solid #B0BEC5;
+    font-weight: normal;
+}
+/* Text auf der Startseite mit Rahmen unten */
+div.TextComplete {
+  margin-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #B0BEC5;
+  color: #546e7a;
+}
+/* Produkte auf der Startseite als Hotdeal */
+.HotDeal {
+    padding: 10px;
+    border: 1px solid #B0BEC5 !important;
+    border-radius: 5px;
+    margin-right: 1.1em;
+}
+/* Die Beschreibung und die Preise */
+.InfoArea {
+    border-top: 1px solid #B0BEC5;
+    padding: 10px 0;
+    border-bottom: 1px solid #B0BEC5;
+    margin-bottom: 15px;
+}
+.InfoArea > a {
+  font-weight: bold;
+  color: #546e7a;
+}
+.InfoArea > a:hover {font-weight: bold;}
+.ProductImage { border: 1px solid #ccc;}
+.NavBarElement2 a { font-weight: bold !important; }
+/* =========== Artikel Uebersichtseiten ============== */
+/* Ausblenden der Filter */
+.InputLabelling.SelectLabelling.FloatLeft.MarginRightSmall,
+select#ep-PageSize,
+.InputField.FloatLeft { display: none;}
+/* Produktbeschreibung */
+.ListItemProduct .ListItemProductInfoContainer { padding-left: 15px; }
+.ListItemProductContainer.TopPaddingWide td.PercentWidth50 { width: 20%; }
+.ListItemProductTopFloatArea h3.Headline a { font-size: 22px; }
+.ListItemProduct .ImageArea { padding-top: 7px; }
+.ListItemProduct .InfoArea { border-bottom: none; }
+.ListItemProduct .PriceArea { margin: 10px; }
+
+/* ============ Artikel Detail-Seite ================ */
+.ImgLeft .ProductImage #ProductSlideshow { margin: 0 auto !important; }
+#ProductThumbs  ul  li { margin-top: 15px; }
+
+/* ============ Warenkorb ================ */
+.ep-contentBox-check {
+    border: 1px solid #F0F0F0;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.ep-megamenu-container {
+    background: #e2f6fd;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+#BasketTable th {
+    font-weight: bold;
+    font-size: 16px;
+}
+span#ContinueShoppingButton {
+    background: #4caf50;
+    padding: 5px 10px;
+}
+span#ContinueShoppingButton a {
+   color: #fff;
+}
+/* Infotext bei "Bestellen und als Kunden registrieren" ausblenden */
+.ep-contentBox-check .ep-contentbox-item p.insert-line-spacing, .ep-contentBox-check .ep-contentbox-item ul {display: none;}
+.CrossellingCount .CrossellingInfoArea { border-bottom: 1px solid rgba(0,0,0,0.15); padding-bottom: 10px; }
+.CrossellingImageArea { text-align: left; padding: 15px 0px !important; }
+.CrossellingImageArea img { padding: 10px; border: 1px solid rgb(204, 204, 204); }
+
+.Price.FloatLeft { margin-top: 15px; }
+/* Damit alle Bilder gleichgross sind bei den Crossseling */
+.CrossellingImageArea a img { height: 75px !important; }
+/* Nach Tax-Info (Preis inkl MwSt.) kommt ein Strich */
+.TaxAndShippingInfo {
+    border-bottom: 5px solid #ddd;
+    padding-bottom: 20px;
+}
+/* Im Grauen Kasten beim Preis wird der Strich aber ausgeblendet */
+.InfoArea.New .TaxAndShippingInfo {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+</style>
+
+<!-- End: User-defined HTML Head area -->
+<script type="text/javascript">
+
+(function(win){
+  if( !jQuery.fn.jquerysdk ){
+    jQuery.noConflict(true);
+
+    var $ = jQuery,
+      noConflict = $.config.noConflict;
+
+    if( !noConflict ){
+      win.$ = $;
+    }
+    else if( typeof noConflict == 'string' ){
+      win[ noConflict ] = $;
+    }
+  }
+  
+    try{
+      win.onerror = function() {
+        return true;
+      };
+    }
+    catch(e){
+    }
+  
+})(window);
+</script>
+
+
+
+
+
+</head>
+
+    
+
+  
+<body class="epages no-sidebars" lang="de" itemscope="" itemtype="http://schema.org/WebPage"><div style="left: -100em; position: absolute; width: 100em;"></div>
+
+
+
+
+  
+    
+    <div class="Layout1 GeneralLayout Div">
+
+ 
+  <div class="NavBarRoof HorizontalNavBar">
+    <div class="PropertyContainer">
+      
+
+ 
+  
+  
+  <div class="SizeContainer"><div class="NavigationElement NavBarElement0 ">
+  <a rel="nofollow" class="Action " href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411&amp;ViewAction=ViewMyAccount">Mein Konto</a>
+</div>
+  <div class="NavigationElement NavBarElement1 ">
+    <a rel="nofollow" class="Action " href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411&amp;ViewAction=ViewMyAccount&amp;LastViewAction=ViewMyAccount&amp;HideNotice=1">Anmelden</a>
+  </div>
+
+<div class="NavigationElement NavBarElement2 "><a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411&amp;ViewAction=ViewNewsletter">Newsletter abonnieren</a></div></div>
+  
+  
+
+
+    </div>
+  </div>
+ 
+ 
+  <div class="Header HorizontalNavBar">
+    <div class="PropertyContainer">
+      
+
+ 
+  
+  
+  <div class="SizeContainer custom-container custom-left">
+<div class="ShopLogo NavBarElement0">
+  <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=Categories" title="lernprogramme.ch" class="ShowElement">
+  <img src="./timetimermod_files/logo.png" alt="lernprogramme.ch">
+  </a>
+
+</div>
+<div class=" NavBarElement1" id="NavElement_15412132">
+  
+  <div class="NavigationText ">
+  
+  </div>
+  
+</div>
+</div>
+  <div class="SizeContainer custom-container custom-right">
+
+<div class="SearchElement NavBarElement2">
+  <form method="post" class="ep-js" data-js="" action="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411">
+    <div class="Entry">
+      <input type="hidden" name="ViewAction" value="ContentSearch">
+      <input type="hidden" name="ErrorAction" value="View">
+      <input type="hidden" name="ErrorObjectID" value="18286230">
+      <input type="hidden" name="NavBarSearch" value="1">
+      <input type="hidden" name="PagerSize" value="5">
+      <div class="InputField SearchForm horizontal-search">
+          <input class="Search ep-js ep-uiInput ep-uiInput-text ep-uiValidate" data-js="" name="SearchString" value="" placeholder="Suchbegriff">
+          
+          <button name="SearchButton" type="submit" class="search-button">
+            <span class="ep-sprite ep-sprite-s ep-uiInput-buttonSpriteOnly Icon SearchIcon"></span>
+          </button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+
+<div class="NavBarElement3 BasketBox NavElementIcon ">
+
+  
+    <span>
+      <img src="./timetimermod_files/ico_s_basket.png" class="FloatLeft" alt="Warenkorb">
+    </span>
+  
+
+  
+    <span>Ihr Warenkorb ist leer.</span>
+  
+
+  
+
+</div>
+
+</div>
+  
+  
+
+
+    </div>
+  </div>
+  <div class="NavBarTop HorizontalNavBar">
+    <div class="PropertyContainer">
+      
+
+ 
+  
+  
+  <div class="SizeContainer custom-container custom-left">
+  
+    
+      
+        
+          <ul class="HorizontalDisplay NavBarElement0 ep-megamenu" id="MegaMenu15314840">
+            
+              
+              <li class="ep-megamenu-first-level-element NavigationElement Category-27707065">
+                
+                
+                  <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Categories/Kostenlose_Beratungen"><span class="active-marker" style="left: 33.5px;"></span>Beratungen</a>
+                
+                
+                
+                
+              
+              </li>
+              
+            
+              
+              <li class="ep-megamenu-first-level-element NavigationElement Category-20375145">
+                
+                
+                  <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Categories/Kurse"><span class="active-marker" style="left: 67px;"></span>Kurse für Schulteams</a>
+                
+                
+                
+                
+              
+              </li>
+              
+            
+              
+              <li class="ep-megamenu-first-level-element NavigationElement Category-15916230">
+                
+                
+                  <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Categories/TimeTimer"><span class="active-marker" style="left: 32px;"></span>TimeTimer</a>
+                
+                
+                
+                
+              
+              </li>
+              
+            
+              
+              <li class="ep-megamenu-first-level-element NavigationElement Category-44091448">
+                
+                
+                  <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Categories/Roboter"><span class="active-marker" style="left: 21px;"></span>Robotik</a>
+                
+                
+                
+                
+              
+              </li>
+              
+            
+              
+              <li class="ep-megamenu-first-level-element NavigationElement Category-15916200">
+                
+                
+                  <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Categories/Lernprogramme1"><span class="active-marker" style="left: 49.5px;"></span>Lernprogramme</a>
+                
+                
+                
+                
+              
+              </li>
+              
+            
+              
+              <li class="ep-megamenu-first-level-element NavigationElement Category-14573685">
+                
+                
+                  <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Categories/Unterrichtsvorbereitung"><span class="active-marker" style="left: 58.5px;"></span>Planung Unterricht</a>
+                
+                
+                
+                
+              
+              </li>
+              
+            
+              
+              <li class="ep-megamenu-first-level-element NavigationElement Category-14573689">
+                
+                
+                  <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Categories/AboutUs"><span class="active-marker" style="left: 25.5px;"></span>Über uns</a>
+                
+                
+                
+                
+              
+              </li>
+              
+            
+              
+              <li class="ep-megamenu-first-level-element NavigationElement Category-14573664">
+                
+                
+                  <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Categories/ContactForm"><span class="active-marker" style="left: 21.5px;"></span>Kontakt</a>
+                
+                
+                
+                
+              
+              </li>
+              
+            
+              
+              <li class="ep-megamenu-first-level-element NavigationElement Category-20253571">
+                
+                
+                  <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Categories/Links"><span class="active-marker" style="left: 13px;"></span>Links</a>
+                
+                
+                
+                
+              
+              </li>
+              
+            
+          </ul>
+        
+      
+    
+
+<script type="text/javascript">
+require(["de_epages/content/inc/megamenu", "$ready!"], function (megamenu) {
+  megamenu.init({
+    selector: "#" + "MegaMenu15314840",
+    isEditorMode:  false 
+  });
+});
+</script>
+</div>
+  <div class="SizeContainer custom-container custom-right"></div>
+  
+  
+
+
+    </div>
+  </div>
+ 
+  <div class="Middle">
+ 
+  
+  
+ 
+    <!--[if IE 7]><span id="ContentAreaFix"></span><![endif]-->
+    <div class="ContentArea">
+      <div class="ContentAreaInner">
+        <div class="ContentAreaWrapper">
+          
+  
+
+  
+    
+
+<h3 class="BottomMargin BreadCrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+  
+    
+      <span itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+        <a itemprop="item" class="BreadcrumbItem" href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Categories">
+          <span itemprop="name">Kategorien</span>
+        </a>
+        <meta itemprop="position" content="1">
+        
+      </span>
+    
+      <span itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+        <a itemprop="item" class="BreadcrumbItem" href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Categories/TimeTimer">
+          <span itemprop="name">TimeTimer</span>
+        </a>
+        <meta itemprop="position" content="2">
+        
+      </span>
+    
+  
+  <span itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+    <link itemprop="item" href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Products/2104/SubProducts/2104-0004">
+    <span itemprop="name" class="BreadcrumbLastItem">TimeTimer MOD</span>
+    <meta itemprop="position" content="3">
+  </span>
+</h3>
+<div class="AlignRight"></div>
+<hr class="Separator">
+
+
+<div itemscope="" itemtype="http://schema.org/Product" itemprop="mainEntity">
+
+
+
+  
+    
+  
+
+
+  
+
+
+
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+<div class="ProductDetails ImgLeft">
+    <div class="InfoArea New">
+            
+        
+        <h1 itemprop="name">TimeTimer MOD</h1>
+
+        <meta itemprop="itemCondition" content="http://schema.org/NewCondition">
+<meta itemprop="sku" content="2104-0004">
+<meta itemprop="manufacturer" content="">
+<meta itemprop="brand" content="">
+<meta itemprop="category" content="TimeTimer">
+
+
+      
+
+      
+      
+        <span class="VariationInfo DisplayBlock SmallTopMargin">
+            (Grösse: Time Timer MOD (9x9 cm) inkl. schwarze Hülle)
+        </span>
+      
+
+  
+
+
+
+    
+      
+
+
+
+
+      
+      
+    
+
+
+    
+      
+
+      
+      
+      
+      <div class="PriceContainer" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+        <meta itemprop="url" content="https://shop.muelicom.ch/Time-Timer-MOD">
+        <meta itemprop="priceValidUntil" content="">
+        
+      
+      <div class="AlignLeft">
+        Alter Preis <span class="LineThrough">CHF 51.00</span>
+      </div>
+      
+
+      
+        <div class="Price">
+        
+          
+
+  
+  
+    
+    
+      
+    
+    
+      
+    
+    
+    <span class="price-value"><span itemprop="priceCurrency" content="CHF">CHF</span> <span itemprop="price" content="48.00">48.00</span>
+    
+      
+    
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+        
+        </div>
+        
+          
+            
+          
+        
+        
+        <div class="TaxAndShippingInfo">
+          
+            <span class="FontSmaller">Preis inkl. MwSt., zzgl. <a class="FontSmaller" href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=Categories/Shipping" target="MyPopup" rel="nofollow">Versand</a> </span>
+          
+        </div>
+        
+      
+        
+        
+        
+          
+          
+        
+        
+      
+      
+      
+      
+      
+
+
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+    
+    
+    
+
+    
+      
+    
+
+    <br class="ClearBoth">
+                                                             
+       <form id="basketForm_standalone" method="post" action="https://shop.muelicom.ch/epages/175411.sf/de_CH/?" class="  ShowInlineElement AddToBasketForm ep-js" data-js="">
+        <div class="ShowInlineElement">
+        <input type="hidden" name="LastProductObjectID" value="18286230">
+        <input type="hidden" name="ChangeObjectID" value="18286230">
+        <input type="hidden" name="ChangeAction" value="AddToBasket">
+      
+                                                           
+        
+        
+
+        
+
+          
+          
+            
+              
+                <span class="NoWrap">
+                  <input type="text" class="Quantity epWidth50 epWidth-29 ep-js ep-uiInput ep-uiInput-text ep-uiValidate" data-js="" name="Quantity" value="1">
+                  
+                  
+                  <button name="AddToBasket" type="submit" class="ep-js  AddToBasketButton ep-uiInput-big ep-uiInput ep-uiInput-button" data-js="" data-productid="18286230">
+                    <span class="ep-sprite ep-sprite-s BasketIcon"></span>
+                    In den Warenkorb
+                    
+                  </button>
+                  <br class="ClearBoth">
+                  
+                </span>
+                <div class="ClearBoth MinimizeHeight"></div>
+              
+            
+          
+
+                                                        
+        
+      
+      </div>
+    </form>
+    
+    
+  
+  
+
+
+
+
+
+<span class="SmallText DisplayBlock ProductShippingMethods">Mögliche Versandmethode: Versand</span>
+      </div>
+      <ul class="AdditionalLinks New">
+<li><a class="LinkIcon LinkProductRecommendation InPrintViewNotVisible " rel="nofollow" href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411&amp;ViewAction=ViewRegistrationRedirect&amp;Path=/Shops/175411/Products/2104/SubProducts/2104-0004">Weiterempfehlen</a></li>
+
+
+
+
+<li>
+<form id="CompareProductForm" method="post" class="InPrintViewNotVisible ep-js" data-js="" action="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Products/2104/SubProducts/2104-0004&amp;ViewAction=ViewComparison">
+  <input type="submit" class="Link LinkProductComparison LinkIcon" value="Alternativangebote">
+</form>
+</li>
+
+
+
+<li><a class="LinkIcon LinkProductInquiry InPrintViewNotVisible" rel="nofollow" href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Products/2104/SubProducts/2104-0004&amp;ViewAction=ViewInquiry">Frage stellen</a></li>
+
+
+</ul>
+      
+
+</div>
+
+
+
+
+
+
+  
+    <div class="ProductImage">
+      
+
+  <div id="ProductImages" class="noscript">
+    <ul>
+  
+      
+      
+        
+          
+        
+        
+          
+        
+        
+          
+        
+      
+      <li>
+        <a href="https://shop.muelicom.ch/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_1.jpg">
+          <img itemprop="image" alt="TimeTimer MOD" src="./timetimermod_files/Timer_Mod_1_xs.jpg" data-src-xs="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_1_xs.jpg" data-src-s="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_1_s.jpg" data-src-ms="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_1_ms.jpg" data-src-m="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_1_m.jpg" data-src-ml="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_1_ml.jpg" data-src-l="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_1.jpg">
+        </a>
+      </li>
+      
+      
+        
+          
+        
+        
+        
+          
+        
+      
+      <li>
+        <a href="https://shop.muelicom.ch/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_5.jpg">
+          <img itemprop="image" alt="TimeTimer MOD" src="./timetimermod_files/Timer_Mod_5_xs.jpg" data-src-xs="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_5_xs.jpg" data-src-s="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_5_s.jpg" data-src-ms="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_5_ms.jpg" data-src-m="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_5_m.jpg" data-src-ml="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_5_ml.jpg" data-src-l="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_5.jpg">
+        </a>
+      </li>
+      
+      
+        
+          
+        
+        
+        
+      
+      <li>
+        <a href="https://shop.muelicom.ch/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_4.jpg">
+          <img itemprop="image" alt="TimeTimer MOD" src="./timetimermod_files/Timer_Mod_4_xs.jpg" data-src-xs="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_4_xs.jpg" data-src-s="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_4_s.jpg" data-src-ms="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_4_ms.jpg" data-src-m="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_4_m.jpg" data-src-ml="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_4_ml.jpg" data-src-l="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_Mod_4.jpg">
+        </a>
+      </li>
+      
+      
+        
+          
+        
+        
+        
+      
+      <li>
+        <a href="https://shop.muelicom.ch/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_board_1.jpg">
+          <img itemprop="image" alt="TimeTimer MOD" src="./timetimermod_files/Timer_board_1_xs.jpg" data-src-xs="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_board_1_xs.jpg" data-src-s="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_board_1_s.jpg" data-src-ms="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_board_1_ms.jpg" data-src-m="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_board_1_m.jpg" data-src-ml="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_board_1_ml.jpg" data-src-l="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_board_1.jpg">
+        </a>
+      </li>
+      
+      
+        
+          
+        
+        
+        
+      
+      <li>
+        <a href="https://shop.muelicom.ch/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_board_2.jpg">
+          <img itemprop="image" alt="TimeTimer MOD" src="./timetimermod_files/Timer_board_2_xs.jpg" data-src-xs="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_board_2_xs.jpg" data-src-s="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_board_2_s.jpg" data-src-ms="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_board_2_ms.jpg" data-src-m="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_board_2_m.jpg" data-src-ml="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_board_2_ml.jpg" data-src-l="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Timer_board_2.jpg">
+        </a>
+      </li>
+      
+      
+        
+          
+        
+        
+        
+      
+      <li>
+        <a href="https://shop.muelicom.ch/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/MOD-Berry.jpg">
+          <img itemprop="image" alt="TimeTimer MOD" src="./timetimermod_files/MOD-Berry_xs.jpg" data-src-xs="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/MOD-Berry_xs.jpg" data-src-s="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/MOD-Berry_s.jpg" data-src-ms="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/MOD-Berry_ms.jpg" data-src-m="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/MOD-Berry_m.jpg" data-src-ml="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/MOD-Berry_ml.jpg" data-src-l="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/MOD-Berry.jpg">
+        </a>
+      </li>
+      
+      
+        
+          
+        
+        
+        
+      
+      <li>
+        <a href="https://shop.muelicom.ch/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-1.jpg">
+          <img itemprop="image" alt="TimeTimer MOD" src="./timetimermod_files/Time-Timer-MOD-1_xs.jpg" data-src-xs="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-1_xs.jpg" data-src-s="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-1_s.jpg" data-src-ms="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-1_ms.jpg" data-src-m="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-1_m.jpg" data-src-ml="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-1_ml.jpg" data-src-l="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-1.jpg">
+        </a>
+      </li>
+      
+      
+        
+          
+        
+        
+        
+      
+      <li>
+        <a href="https://shop.muelicom.ch/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-4.jpg">
+          <img itemprop="image" alt="TimeTimer MOD" src="./timetimermod_files/Time-Timer-MOD-4_xs.jpg" data-src-xs="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-4_xs.jpg" data-src-s="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-4_s.jpg" data-src-ms="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-4_ms.jpg" data-src-m="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-4_m.jpg" data-src-ml="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-4_ml.jpg" data-src-l="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-4.jpg">
+        </a>
+      </li>
+      
+      
+        
+          
+        
+        
+        
+      
+      <li>
+        <a href="https://shop.muelicom.ch/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-childrens-room-JAC5026.jpg">
+          <img itemprop="image" alt="TimeTimer MOD" src="./timetimermod_files/Time-Timer-MOD-childrens-room-JAC5026_xs.jpg" data-src-xs="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-childrens-room-JAC5026_xs.jpg" data-src-s="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-childrens-room-JAC5026_s.jpg" data-src-ms="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-childrens-room-JAC5026_ms.jpg" data-src-m="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-childrens-room-JAC5026_m.jpg" data-src-ml="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-childrens-room-JAC5026_ml.jpg" data-src-l="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-childrens-room-JAC5026.jpg">
+        </a>
+      </li>
+      
+      
+        
+          
+        
+        
+        
+      
+      <li>
+        <a href="https://shop.muelicom.ch/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-design-office-JAC5026.jpg">
+          <img itemprop="image" alt="TimeTimer MOD" src="./timetimermod_files/Time-Timer-MOD-design-office-JAC5026_xs.jpg" data-src-xs="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-design-office-JAC5026_xs.jpg" data-src-s="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-design-office-JAC5026_s.jpg" data-src-ms="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-design-office-JAC5026_ms.jpg" data-src-m="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-design-office-JAC5026_m.jpg" data-src-ml="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-design-office-JAC5026_ml.jpg" data-src-l="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-design-office-JAC5026.jpg">
+        </a>
+      </li>
+      
+      
+        
+          
+        
+        
+        
+      
+      <li>
+        <a href="https://shop.muelicom.ch/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-package-JAC5026-2.jpg">
+          <img itemprop="image" alt="TimeTimer MOD" src="./timetimermod_files/Time-Timer-MOD-package-JAC5026-2_xs.jpg" data-src-xs="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-package-JAC5026-2_xs.jpg" data-src-s="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-package-JAC5026-2_s.jpg" data-src-ms="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-package-JAC5026-2_ms.jpg" data-src-m="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-package-JAC5026-2_m.jpg" data-src-ml="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-package-JAC5026-2_ml.jpg" data-src-l="/WebRoot/Store/Shops/175411/577C/01D6/B255/BF91/C4FC/0A00/0E18/A65D/Time-Timer-MOD-package-JAC5026-2.jpg">
+        </a>
+      </li>
+      
+  
+  
+    </ul>
+  </div>
+  <div id="ProductSlideshow" style="position: relative; width: 100%; max-width: 500px; height: 992px; max-height: 500px;"><div class="ep-uiSlides ep-uiSlides-ctrl-auto" style="cursor: pointer;"><div class="ep-uiSlides-box" title="Vergrößern"><div style="display: none;"></div><div style=""><img alt="TimeTimer MOD" src="./timetimermod_files/Timer_Mod_1_ml.jpg"></div></div><div class="ep-uiSlides-desc" style=""><div class="ep-uiSlides-caption" style="display: none;">TimeTimer MOD</div><div class="ep-uiSlides-count" style="display: none;">1/11</div></div><div class="ep-uiSlides-ctrl ep-uiSlides-ctrlPrev ui-hidden"><a href="javascript:void(0);">&lt;</a></div><div class="ep-uiSlides-ctrl ep-uiSlides-ctrlNext"><a href="javascript:void(0);">&gt;</a></div></div></div>
+  <div id="ProductThumbs" style="width:100%;"><div class="ep-uiThumbbox ep-uiThumbbox-list"><ul><li data-item="0" class="active" style="width: 50px; height: 50px; line-height: 50px;"><img src="./timetimermod_files/Timer_Mod_1_xs.jpg" alt="TimeTimer MOD"></li><li data-item="1" style="width: 50px; height: 50px; line-height: 50px;"><img src="./timetimermod_files/Timer_Mod_5_xs.jpg" alt="TimeTimer MOD"></li><li data-item="2" style="width: 50px; height: 50px; line-height: 50px;"><img src="./timetimermod_files/Timer_Mod_4_xs.jpg" alt="TimeTimer MOD"></li><li data-item="3" style="width: 50px; height: 50px; line-height: 50px;"><img src="./timetimermod_files/Timer_board_1_xs.jpg" alt="TimeTimer MOD"></li><li data-item="4" style="width: 50px; height: 50px; line-height: 50px;"><img src="./timetimermod_files/Timer_board_2_xs.jpg" alt="TimeTimer MOD"></li><li data-item="5" style="width: 50px; height: 50px; line-height: 50px;"><img src="./timetimermod_files/MOD-Berry_xs.jpg" alt="TimeTimer MOD"></li><li data-item="6" style="width: 50px; height: 50px; line-height: 50px;"><img src="./timetimermod_files/Time-Timer-MOD-1_xs.jpg" alt="TimeTimer MOD"></li><li data-item="7" style="width: 50px; height: 50px; line-height: 50px;"><img src="./timetimermod_files/Time-Timer-MOD-4_xs.jpg" alt="TimeTimer MOD"></li><li data-item="8" style="width: 50px; height: 50px; line-height: 50px;"><img src="./timetimermod_files/Time-Timer-MOD-childrens-room-JAC5026_xs.jpg" alt="TimeTimer MOD"></li><li data-item="9" style="width: 50px; height: 50px; line-height: 50px;"><img src="./timetimermod_files/Time-Timer-MOD-design-office-JAC5026_xs.jpg" alt="TimeTimer MOD"></li><li data-item="10" style="width: 50px; height: 50px; line-height: 50px;"><img src="./timetimermod_files/Time-Timer-MOD-package-JAC5026-2_xs.jpg" alt="TimeTimer MOD"></li></ul></div></div>
+  <script type="text/javascript">
+    jQuery.ready({
+        plugin: [ 'ep.ui.core', 'jQuery.event.special.dom',  'ep.ui.slides' , 'ep.ui.thumbbox', 'ep.ui.lightbox'],
+        DOM:    true
+    }, function($){
+      var slideShow = ep('#ProductSlideshow');
+
+    
+      var
+        box = slideShow.closest('.ProductImage'),
+        resize = function(){
+          slideShow.css({
+            "max-height": ( slideShow.width()) + "px",
+             "height": slideShow.width() + "px" 
+          });
+        };
+      box.on("resize", resize);
+      resize();
+    
+
+    
+      slideShow
+        .uiSlides({
+          images        : '#ProductImages img',
+          caption       : false,
+          count         : false,
+          controls      : 'auto',
+          delay         : 0 * 1000,
+          autoplay      : 0 == 0 ? false : true,
+          action        : "lightbox"
+        });
+    
+      slideShow
+        .uiLightbox({
+          images        : '#ProductImages img',
+          caption       : false,
+          count         : false,
+          controls      : 'visible',
+          thumbs        :  true 
+        });
+    
+      ep('#ProductThumbs')
+        .uiThumbbox({
+          images        : '#ProductImages img',
+          view          : 'list',
+          width         : 50,
+          height        : 50
+       });
+    
+    });
+  </script>
+
+
+
+    </div>
+  
+    <div class="SocialMedia">
+  <div class="ep-gadget DisplayInlineBlock ep-2-click-button-twitter ep-2-click-button SocialWeb" data-ep-gadget="{&quot;alias&quot;:&quot;twitter&quot;, &quot;cartridge&quot;:&quot;externalcontent&quot;, &quot;options&quot;:{&quot;type&quot;:&quot;share&quot;, &quot;count&quot;:&quot;horizontal&quot;,&quot;text&quot;:&quot;TimeTimer MOD&quot;}}" title="Aktivieren Sie mit einem Klick den Button. Erst danach können Sie die Seite in den sozialen Netzwerken teilen. Nach der Aktivierung werden Daten an Dritte übertragen."><span></span></div>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="ProductInfoTabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all epProductInfoTabs ep-js" data-js="">
+  <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+  
+  
+    <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active ui-tabs-tab ui-tab" role="tab" tabindex="0" aria-controls="tab-product-description" aria-labelledby="ui-id-1" aria-selected="true" aria-expanded="true">
+      <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/#tab-product-description" title="" role="presentation" tabindex="-1" class="ui-tabs-anchor" id="ui-id-1">Beschreibung</a>
+    </li>
+    
+  
+  </ul>
+  
+  
+  <div class="ui-tabs-panel ui-widget-content ui-corner-bottom" id="tab-product-description" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false">
+        
+        <div class="description" itemprop="description">
+          
+            
+              
+            
+            
+            
+          
+          
+            <p>Neues Modell mit Plexiglasscheibe über dem Ziffernblatt, Lautstärkeregler für das akkustische Signal und kompakt verschraubtem Batteriefach! D<span style="font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Verdana, Helvetica; font-size: 14px; line-height: 18.2px;">ie Zeit (rote Scheibe) wird mit einem Drehknopf eingestellt.&nbsp;</span>Grösse: 9x9cm.<br>
+Im Schulalltag oder fürs Kinderzimmer von den beiden kleinsten TimeTimer <strong>das stabilere Modell</strong>, da das Ziffernblatt geschützt ist und sich die Batterie&nbsp;durchs Herumtragen im Batteriefach nicht lösen kann.</p>
+
+<p>Beim TimeTimer wird die verbleibende Zeit durch eine rote Scheibe sichtbar gemacht. Die Scheibe wird an den gewünschten Ort gedreht und läuft dann auf den Nullpunkt zurück, so dass die rote Fläche immer kleiner wird und die noch verbleibende Zeit visualisiert. Der TimeTimer wird mit einer Batterie betrieben. Auch Personen, die eine herkömmliche Uhr nicht verstehen, können auf diese Weise jederzeit erkennen, wie viel Zeit (z. B. für eine zu erledigende Aufgabe) noch zur Verfügung steht. Am Ende der eingestellten Zeit ertönt ein akustisches Signal, dessen Lautstärke eingestellt (oder abgeschaltet) werden kann.&nbsp;</p>
+
+<p><span style="font-size: 14px; line-height: 1.3;">Der <strong>TimeTimer MOD</strong> wird mit schwarzer Hülle geliefert. Die farbigen Hüllen werden der Bestellung beigelegt. Es stehen drei Farben zur Auswahl.&nbsp;</span></p>
+
+<p>&nbsp;</p>
+
+<p><strong style="font-size: 14px; font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Verdana, Helvetica;">Bei einer Bestellung ab 10 Stück berechnet der Warenkorb <span style="color:#080808;">5% Mengenrabatt</span>, ab 20 Stück <span style="color:#f50606;"><span style="color:#01050b;">10% </span>Mengenrabatt<span style="color:#0a0909;">.</span></span></strong><br>
+<strong><span style="font-size:11px;"><span style="font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Verdana, Helvetica;">Falls Sie unterschiedliche TimeTimer-Modelle bestellen, ist der Warenkorb mit dem Rabattsystem&nbsp;überfordert, der Rabatt wird jedoch in der Rechnung berücksichtigt.</span></span></strong><br>
+<strong style="font-size: 14px; font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Verdana, Helvetica;">​<span style="font-size:11px;">Die Batterien werden kostenlos mitgeliefert.</span></strong></p>
+          
+        </div>
+        
+        
+      </div>
+    
+  
+</div>
+
+
+
+
+
+
+
+
+
+  
+  <h2>Auswahl: TimeTimer MOD</h2>
+  <table class="VariationsTable">
+    <tbody><tr>
+      <th class="SeparateColumn">Artikel-Nr.</th>
+  
+      <th class="SeparateColumn">Grösse</th>
+  
+      
+      <th class="SeparateColumn AlignRight">Preis</th>
+      <th> </th>
+    </tr>
+
+  
+    
+      
+        
+      <tr>
+        <td class="AttributeLabel">
+          <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Products/2104/SubProducts/2104-0004" class="SelectedItem Action">2104-0004</a>
+        </td>
+      
+        
+        <td>
+           Time Timer MOD (9x9 cm) inkl. schwarze Hülle
+        </td>
+        
+      
+      
+        <td class="NoWrap AlignRight">
+          
+            
+
+  
+  
+    
+      
+    
+    
+      
+    
+    
+    
+    <span class="price-value">CHF 48.00
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+            
+
+            
+            
+
+          
+          
+        </td>
+      
+        <td class="AlignRight ExtraSlimColumn">
+          <div class="FloatRight AlignCenter">
+
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+    
+    
+    
+
+    
+      
+    
+
+    
+                                                             
+       <form id="basketForm_0" method="post" action="https://shop.muelicom.ch/epages/175411.sf/de_CH/?" class="  ShowInlineElement AddToBasketForm ep-js" data-js="">
+        <div class="ShowInlineElement">
+        <input type="hidden" name="LastProductObjectID" value="18286230">
+        <input type="hidden" name="ChangeObjectID" value="18286230">
+        <input type="hidden" name="ChangeAction" value="AddToBasket">
+      
+                                                           
+        
+        
+
+        
+
+          
+          
+            
+              
+                <span class="NoWrap">
+                  <input type="text" class="Quantity epWidth50 epWidth-29 ep-js ep-uiInput ep-uiInput-text ep-uiValidate" data-js="" name="Quantity" value="1">
+                  
+                  
+                  <button name="AddToBasket" type="submit" class="ButtonBasket ep-js ep-uiInput ep-uiInput-button" data-js="" data-productid="18286230" title="In den Warenkorb">
+                    <span class="ep-uiInput-buttonSpriteOnly ep-sprite ep-sprite-s BasketIcon"></span>
+                  </button>
+                  
+                </span>
+                
+              
+            
+          
+
+                                                        
+        
+      
+      </div>
+    </form>
+    
+    
+  
+  
+
+
+
+
+
+</div>
+        </td>
+      
+      </tr>
+        
+      
+    
+      
+        
+      <tr class="AlternateRow">
+        <td class="AttributeLabel">
+          <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Products/2104/SubProducts/2104-0008">2104-0008</a>
+        </td>
+      
+        
+        <td>
+           Time Timer MOD (9x9 cm), pink
+        </td>
+        
+      
+      
+        <td class="NoWrap AlignRight">
+          
+            
+
+  
+  
+    
+      
+    
+    
+      
+    
+    
+    
+    <span class="price-value">CHF 56.00
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+            
+
+            
+            
+
+          
+          
+        </td>
+      
+        <td class="AlignRight ExtraSlimColumn">
+          <div class="FloatRight AlignCenter">
+
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+    
+    
+    
+
+    
+      
+    
+
+    
+                                                             
+       <form id="basketForm_1" method="post" action="https://shop.muelicom.ch/epages/175411.sf/de_CH/?" class="  ShowInlineElement AddToBasketForm ep-js" data-js="">
+        <div class="ShowInlineElement">
+        <input type="hidden" name="LastProductObjectID" value="18286230">
+        <input type="hidden" name="ChangeObjectID" value="18286324">
+        <input type="hidden" name="ChangeAction" value="AddToBasket">
+      
+                                                           
+        
+        
+
+        
+
+          
+          
+            
+              
+                <span class="NoWrap">
+                  <input type="text" class="Quantity epWidth50 epWidth-29 ep-js ep-uiInput ep-uiInput-text ep-uiValidate" data-js="" name="Quantity" value="1">
+                  
+                  
+                  <button name="AddToBasket" type="submit" class="ButtonBasket ep-js ep-uiInput ep-uiInput-button" data-js="" data-productid="18286324" title="In den Warenkorb">
+                    <span class="ep-uiInput-buttonSpriteOnly ep-sprite ep-sprite-s BasketIcon"></span>
+                  </button>
+                  
+                </span>
+                
+              
+            
+          
+
+                                                        
+        
+      
+      </div>
+    </form>
+    
+    
+  
+  
+
+
+
+
+
+</div>
+        </td>
+      
+      </tr>
+        
+      
+    
+      
+        
+      <tr>
+        <td class="AttributeLabel">
+          <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Products/2104/SubProducts/2104-0009">2104-0009</a>
+        </td>
+      
+        
+        <td>
+           Time Timer MOD (9x9 cm), blau
+        </td>
+        
+      
+      
+        <td class="NoWrap AlignRight">
+          
+            
+
+  
+  
+    
+      
+    
+    
+      
+    
+    
+    
+    <span class="price-value">CHF 56.00
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+            
+
+            
+            
+
+          
+          
+        </td>
+      
+        <td class="AlignRight ExtraSlimColumn">
+          <div class="FloatRight AlignCenter">
+
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+    
+    
+    
+
+    
+      
+    
+
+    
+                                                             
+       <form id="basketForm_2" method="post" action="https://shop.muelicom.ch/epages/175411.sf/de_CH/?" class="  ShowInlineElement AddToBasketForm ep-js" data-js="">
+        <div class="ShowInlineElement">
+        <input type="hidden" name="LastProductObjectID" value="18286230">
+        <input type="hidden" name="ChangeObjectID" value="18286325">
+        <input type="hidden" name="ChangeAction" value="AddToBasket">
+      
+                                                           
+        
+        
+
+        
+
+          
+          
+            
+              
+                <span class="NoWrap">
+                  <input type="text" class="Quantity epWidth50 epWidth-29 ep-js ep-uiInput ep-uiInput-text ep-uiValidate" data-js="" name="Quantity" value="1">
+                  
+                  
+                  <button name="AddToBasket" type="submit" class="ButtonBasket ep-js ep-uiInput ep-uiInput-button" data-js="" data-productid="18286325" title="In den Warenkorb">
+                    <span class="ep-uiInput-buttonSpriteOnly ep-sprite ep-sprite-s BasketIcon"></span>
+                  </button>
+                  
+                </span>
+                
+              
+            
+          
+
+                                                        
+        
+      
+      </div>
+    </form>
+    
+    
+  
+  
+
+
+
+
+
+</div>
+        </td>
+      
+      </tr>
+        
+      
+    
+      
+        
+      <tr class="AlternateRow">
+        <td class="AttributeLabel">
+          <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Products/2104/SubProducts/2104-0010">2104-0010</a>
+        </td>
+      
+        
+        <td>
+           Time Timer MOD (9x9 cm), grün
+        </td>
+        
+      
+      
+        <td class="NoWrap AlignRight">
+          
+            
+
+  
+  
+    
+      
+    
+    
+      
+    
+    
+    
+    <span class="price-value">CHF 56.00
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+            
+
+            
+            
+
+          
+          
+        </td>
+      
+        <td class="AlignRight ExtraSlimColumn">
+          <div class="FloatRight AlignCenter">
+
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+    
+    
+    
+
+    
+      
+    
+
+    
+                                                             
+       <form id="basketForm_3" method="post" action="https://shop.muelicom.ch/epages/175411.sf/de_CH/?" class="  ShowInlineElement AddToBasketForm ep-js" data-js="">
+        <div class="ShowInlineElement">
+        <input type="hidden" name="LastProductObjectID" value="18286230">
+        <input type="hidden" name="ChangeObjectID" value="18286326">
+        <input type="hidden" name="ChangeAction" value="AddToBasket">
+      
+                                                           
+        
+        
+
+        
+
+          
+          
+            
+              
+                <span class="NoWrap">
+                  <input type="text" class="Quantity epWidth50 epWidth-29 ep-js ep-uiInput ep-uiInput-text ep-uiValidate" data-js="" name="Quantity" value="1">
+                  
+                  
+                  <button name="AddToBasket" type="submit" class="ButtonBasket ep-js ep-uiInput ep-uiInput-button" data-js="" data-productid="18286326" title="In den Warenkorb">
+                    <span class="ep-uiInput-buttonSpriteOnly ep-sprite ep-sprite-s BasketIcon"></span>
+                  </button>
+                  
+                </span>
+                
+              
+            
+          
+
+                                                        
+        
+      
+      </div>
+    </form>
+    
+    
+  
+  
+
+
+
+
+
+</div>
+        </td>
+      
+      </tr>
+        
+      
+    
+  
+
+    </tbody></table>
+    
+      <div class="TaxAndShippingInfo">
+        
+  
+  
+    
+      
+        * <span class="FontSmaller">Preise inkl. MwSt., zzgl. <a class="FontSmaller" href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=Categories/Shipping" target="MyPopup" rel="nofollow">Versand</a> </span>
+        
+      
+    
+    
+  
+  
+
+      </div>
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Zu diesem Produkt empfehlen wir</h2>
+  <table class="CrossellingCount">
+  
+  
+    
+      
+        
+      
+    
+      <tbody><tr>
+      <td class="MediumColumn" itemscope="" itemprop="isRelatedTo" itemtype="http://schema.org/Offer">
+        
+          <div class="CrossellingInfoArea">
+            <b>Zubehör:</b>
+          </div>
+        
+        
+          <div class="CrossellingImageArea">
+          
+            <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Products/2132" title="Zum Produkt">
+          
+            <img class="ProductSmallImage LinkImage" src="./timetimermod_files/Timer_board_1_s.jpg" alt="TimeTimer Dry Erase Board" style="position: relative;" onerror="jq(this).attr(&#39;title&#39;,&#39;&#39;); jq(this).attr(&#39;alt&#39;,&#39;&#39;); jq(this).width(10)"><br>
+            </a>
+          </div>
+        
+        <div class="CrossellingInfoArea">
+        
+          <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Products/2132" title="Zum Produkt">TimeTimer Dry Erase Board </a>
+        
+          <div class="ClearBoth"></div>
+          <div class="Price FloatLeft">
+            
+
+  
+  
+    
+    
+      
+    
+    
+    
+    <span class="price-value"><span itemprop="priceCurrency" content="CHF">CHF</span> <span itemprop="price" content="24.00">24.00</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+            
+          </div>
+          
+          <div class="ClearLeft">
+             
+          
+          </div>
+          <div class="ClearBoth">
+          
+          </div>
+       
+        
+          
+        
+       
+        </div>
+      </td>
+    
+  
+  </tr>
+  </tbody></table>
+  
+    <div class="TaxAndShippingInfo">
+      
+  
+  
+    
+      
+        * <span class="FontSmaller">Preise inkl. MwSt., zzgl. <a class="FontSmaller" href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=Categories/Shipping" target="MyPopup" rel="nofollow">Versand</a> </span>
+        
+      
+    
+    
+  
+  
+
+    </div>
+  
+  
+  <hr class="Separator">
+
+
+
+
+
+  <h2>Kunden, die dieses Produkt gekauft haben, haben auch diese Produkte gekauft</h2>
+  <table class="CrossellingCount">
+  
+  
+    
+      
+        
+          
+        
+      
+      
+      <tbody><tr>
+      <td class="MediumColumn" itemscope="" itemprop="isRelatedTo" itemtype="http://schema.org/Offer">
+        
+          <div class="CrossellingImageArea">
+        
+            <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Products/1003">
+        
+            <img class="ProductSmallImage LinkImage" src="./timetimermod_files/Timetimer_classic_logo_s.gif" alt="TimeTimer classic" title="TimeTimer classic" style="position: relative;"><br>
+            </a>
+          </div>
+        
+        <div class="CrossellingInfoArea">
+          
+          <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Products/1003">TimeTimer classic</a>
+          
+          <div class="ClearBoth"></div>
+          <div class="Price FloatLeft">
+            
+
+  
+  
+    
+    
+      
+    
+    
+      
+        <span class="VariationPriceFromText">ab</span>
+      
+    
+    
+    <span class="price-value"><span itemprop="priceCurrency" content="CHF">CHF</span> <span itemprop="price" content="45.00">45.00</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+            
+        
+        
+          </div>
+       
+        
+          
+        
+       
+      
+        </div>
+        <div class="TextAlignRight ClearBoth">
+       
+        </div>
+      </td>
+    
+  
+    
+      
+        
+          
+        
+      
+      
+      
+      <td class="MediumColumn" itemscope="" itemprop="isRelatedTo" itemtype="http://schema.org/Offer">
+        
+          <div class="CrossellingImageArea">
+        
+            <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Products/1083">
+        
+            <img class="ProductSmallImage LinkImage" src="./timetimermod_files/Timer_Plus_1_s.jpg" alt="TimeTimer Plus" title="TimeTimer Plus" style="position: relative;"><br>
+            </a>
+          </div>
+        
+        <div class="CrossellingInfoArea">
+          
+          <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Products/1083">TimeTimer Plus</a>
+          
+          <div class="ClearBoth"></div>
+          <div class="Price FloatLeft">
+            
+
+  
+  
+    
+    
+      
+    
+    
+      
+        <span class="VariationPriceFromText">ab</span>
+      
+    
+    
+    <span class="price-value"><span itemprop="priceCurrency" content="CHF">CHF</span> <span itemprop="price" content="54.00">54.00</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+            
+        
+        
+          </div>
+       
+        
+          
+        
+       
+      
+        </div>
+        <div class="TextAlignRight ClearBoth">
+       
+        </div>
+      </td>
+    
+  
+    
+      
+        
+      
+      
+      
+      <td class="MediumColumn" itemscope="" itemprop="isRelatedTo" itemtype="http://schema.org/Offer">
+        
+          <div class="CrossellingImageArea">
+        
+            <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Products/2132">
+        
+            <img class="ProductSmallImage LinkImage" src="./timetimermod_files/Timer_board_1_s.jpg" alt="TimeTimer Dry Erase Board" title="TimeTimer Dry Erase Board" style="position: relative;"><br>
+            </a>
+          </div>
+        
+        <div class="CrossellingInfoArea">
+          
+          <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Products/2132">TimeTimer Dry Erase Board</a>
+          
+          <div class="ClearBoth"></div>
+          <div class="Price FloatLeft">
+            
+
+  
+  
+    
+    
+      
+    
+    
+    
+    <span class="price-value"><span itemprop="priceCurrency" content="CHF">CHF</span> <span itemprop="price" content="24.00">24.00</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+            
+        
+        
+          </div>
+       
+        
+          
+        
+       
+      
+        </div>
+        <div class="TextAlignRight ClearBoth">
+       
+        </div>
+      </td>
+    
+  
+    
+      
+        
+          
+        
+      
+      </tr>
+      <tr>
+      <td class="MediumColumn" itemscope="" itemprop="isRelatedTo" itemtype="http://schema.org/Offer">
+        
+          <div class="CrossellingImageArea">
+        
+            <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Products/1146">
+        
+            <img class="ProductSmallImage LinkImage" src="./timetimermod_files/lesikus_logo_neu_s.JPG" alt="Grundkurs Lesetechnik (Lesikus)" title="Grundkurs Lesetechnik (Lesikus)" style="position: relative;"><br>
+            </a>
+          </div>
+        
+        <div class="CrossellingInfoArea">
+          
+          <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Products/1146">Grundkurs Lesetechnik (Lesikus)</a>
+          
+          <div class="ClearBoth"></div>
+          <div class="Price FloatLeft">
+            
+
+  
+  
+    
+    
+      
+    
+    
+      
+        <span class="VariationPriceFromText">ab</span>
+      
+    
+    
+    <span class="price-value"><span itemprop="priceCurrency" content="CHF">CHF</span> <span itemprop="price" content="46.00">46.00</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+            
+        
+        
+          </div>
+       
+        
+          
+        
+       
+      
+        <div class="ClearBoth"><a href="https://shop.muelicom.ch/WebRoot/Store/Shops/175411/5722/F3BE/B820/10BF/0CDA/0A00/0E18/8D92/Handbuch-Grundkurs-Lesetechnik-1_2.pdf" target="_blank" id="Link_ProductDataSheet_1" class="FontSmaller product-data-sheet-link">Produktdatenblatt</a>
+</div>
+      
+        </div>
+        <div class="TextAlignRight ClearBoth">
+       
+        </div>
+      </td>
+    
+  
+    
+      
+        
+      
+      
+      
+      <td class="MediumColumn" itemscope="" itemprop="isRelatedTo" itemtype="http://schema.org/Offer">
+        
+          <div class="CrossellingImageArea">
+        
+            <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Products/2148">
+        
+            <img class="ProductSmallImage LinkImage" src="./timetimermod_files/timer_twist_1_s.jpg" alt="TimeTimer Zeitmesser Twist" title="TimeTimer Zeitmesser Twist" style="position: relative;"><br>
+            </a>
+          </div>
+        
+        <div class="CrossellingInfoArea">
+          
+          <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Products/2148">TimeTimer Zeitmesser Twist</a>
+          
+          <div class="ClearBoth"></div>
+          <div class="Price FloatLeft">
+            
+
+  
+  
+    
+    
+      
+    
+    
+    
+    <span class="price-value"><span itemprop="priceCurrency" content="CHF">CHF</span> <span itemprop="price" content="26.00">26.00</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+            
+        
+        
+          </div>
+       
+        
+          
+        
+       
+      
+        </div>
+        <div class="TextAlignRight ClearBoth">
+       
+        </div>
+      </td>
+    
+  
+    
+      
+        
+          
+        
+      
+      
+      
+      <td class="MediumColumn" itemscope="" itemprop="isRelatedTo" itemtype="http://schema.org/Offer">
+        
+          <div class="CrossellingImageArea">
+        
+            <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Products/2107">
+        
+            <img class="ProductSmallImage LinkImage" src="./timetimermod_files/Woerterblitz_Logo_s.png" alt="Wörterblitz" title="Wörterblitz" style="position: relative;"><br>
+            </a>
+          </div>
+        
+        <div class="CrossellingInfoArea">
+          
+          <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Products/2107">Wörterblitz</a>
+          
+          <div class="ClearBoth"></div>
+          <div class="Price FloatLeft">
+            
+
+  
+  
+    
+    
+      
+    
+    
+      
+        <span class="VariationPriceFromText">ab</span>
+      
+    
+    
+    <span class="price-value"><span itemprop="priceCurrency" content="CHF">CHF</span> <span itemprop="price" content="46.00">46.00</span>
+    
+      
+    
+    
+      
+        *
+      
+    
+    
+    </span>
+      
+      
+  
+  
+
+
+            
+        
+        
+          </div>
+       
+        
+          
+        
+       
+      
+        <div class="ClearBoth"><a href="https://shop.muelicom.ch/WebRoot/Store/Shops/175411/5739/6313/392A/63F6/121F/0A00/0E1A/6DF0/Handbuch_WoerterBlitz.pdf" target="_blank" id="Link_ProductDataSheet_1" class="FontSmaller product-data-sheet-link">Produktdatenblatt</a>
+</div>
+      
+        </div>
+        <div class="TextAlignRight ClearBoth">
+       
+        </div>
+      </td>
+    
+  
+    </tr>
+  </tbody></table>
+  
+    <div class="TaxAndShippingInfo">
+      
+  
+  
+    
+      
+        * <span class="FontSmaller">Preise inkl. MwSt., zzgl. <a class="FontSmaller" href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=Categories/Shipping" target="MyPopup" rel="nofollow">Versand</a> </span>
+        
+      
+    
+    
+  
+  
+
+    </div>
+  
+  
+  <hr class="Separator">
+
+
+
+  
+  <span class="AlsoBrowseThisCat">
+    
+      Auch diese Kategorien durchsuchen:
+      <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Categories/TimeTimer">TimeTimer</a>, <a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Categories">Home</a>
+    
+  </span>
+  <hr class="Separator">
+  
+</div>
+  
+
+
+
+
+        </div><!-- close .ContentAreaWrapper -->
+      </div><!-- close .ContentAreaInner -->
+    </div><!-- close .ContentArea -->
+  </div><!-- close .Middle -->
+  <div class="FooterContainer">
+  
+    <div class="NavBarBottom HorizontalNavBar">
+      <div class="PropertyContainer">
+        
+
+ 
+  
+  
+  <div class="SizeContainer">
+<div class="ContextBox NavBarElement0" id="NavElement_37219209">
+  
+  <div class="NavigationText ">
+  <p style="text-align: center;">Bezahlen Sie bequem gegen Rechnung oder mit</p>
+  </div>
+  
+</div>
+
+<div class=" NavBarElement1" id="NavElement_40645644">
+  
+  <div class="NavigationText ">
+  <p><img alt="Zahlungsmethoden Muelicom" src="./timetimermod_files/Zahlungsmethoden_logo_shop.png" style="width: 128px; height: 50px;"></p>
+  </div>
+  
+</div>
+</div>
+  
+  
+
+
+      </div>
+    </div>
+  
+  
+    <div class="Footer HorizontalNavBar">
+      <div class="PropertyContainer">
+        
+
+ 
+  
+  
+  <div class="SizeContainer">
+<div class="NavigationElement  NavBarElement0"><a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Categories/ContactForm">Kontakt</a></div>
+
+<div class="NavigationElement NavBarElement1 ">
+  <a rel="nofollow" href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Categories/TermsAndConditions">AGB</a>
+</div>
+
+<div class="NavigationElement NavBarElement2 "><a href="https://shop.muelicom.ch/epages/175411.sf/de_CH/?ObjectPath=/Shops/175411/Categories/Imprint">Impressum</a></div>
+</div>
+  
+  
+
+
+      </div>
+    </div>
+  
+  </div>
+
+</div>
+
+  
+
+<script type="text/javascript">
+require(["jquery", "util/storage", "$ready!"], function ($, storage) {
+  // remove all selected products on logout
+  var $LogoutNodes = $('a[href*="ChangeAction=Logout"]');
+  
+  $LogoutNodes.each(function (event){
+    $(this).on('click', function (event){
+      storage.sessionStorage('Product::ProductComparison', null);
+    });
+  });
+});
+</script><script type="text/javascript">
+require(['jquery', '$ready!'], function ($) {
+
+	var createGadgets = function(){
+
+		// Constants.
+		var gNodeType = 'div',
+			gClassName = 'ep-gadget',
+			gDataName = gClassName,
+			gFolder = 'ui',
+			secondClickBtn = ['facebook', 'twitter', 'otherbuttons'],
+			$gNodes,
+			googleMapsAPIKey = false;
+
+		// Transform gadget imgs to divs
+		$('img.' + gClassName).each(function (i, elem) {
+			var $elem = $(elem),
+				tmplElement = $('<div/>'),
+				replaceElement = $elem.parent('p');
+
+			// set/remove gadget-, class- and style-values/options
+			tmplElement
+				.data(gDataName, $elem.data(gDataName))
+				.attr({
+					'class': ($elem.attr('class') ? $elem.attr('class') : ''),
+					'style': ($elem.attr('style') ? $elem.attr('style').replace(/\s*?height:.*?;|\s*?background.*?:.*?;|\s*?display:.*?;|\s*?margin-bottom:.*?;|\s*?max-width:.*?;|\s*?width:.*?px;/g, '') : '')
+				});
+
+			// if parent paragraph element only contains the gadget-element => replace paragraph and gadget-element by gadget-div
+			if (replaceElement.length && replaceElement.children().length === 1 && replaceElement.text().replace(/\s|\n|\r/g, '') === '') {
+				replaceElement.replaceWith(tmplElement);
+			// if parent paragraph element contains more content => replace only gadget-element by gadget-div
+			} else {
+				$elem.replaceWith(tmplElement);
+			}
+		});
+
+		// Build gadgets in the gadget div
+		$gNodes = $(gNodeType + '.' + gClassName);
+
+		if ($gNodes.length) {
+			// Go go gadgets.
+			$gNodes.each(function () {
+				var $this = $(this),
+					data = $this.data(gDataName),
+					elem,
+					classButton = 'ep-2-click-button SocialWeb',
+					classButtonType;
+
+				data.options.googleMapsAPIKey = false;
+				if (data.options.type && data.options.type === "google") {
+				 	data.options.googleMapsAPIKey = googleMapsAPIKey;
+				}
+
+				// if no second click button is needed
+				if (secondClickBtn.indexOf(data.alias) === -1) {
+					require([['de_epages', data.cartridge, gFolder, data.alias].join('/')], function ($) {
+						$this[data.cartridge + gFolder.charAt(0).toUpperCase() + gFolder.slice(1) + data.alias.charAt(0).toUpperCase() + data.alias.slice(1)](data.options);
+						
+					});
+				} else {
+					// type of button (facebook, twitter ..)
+					classButtonType = 'ep-2-click-button-' + data.alias;
+					// add classes
+					$this.addClass(classButtonType + ' ' + classButton);
+					// add tooltip
+		 			$this.attr("title", "Aktivieren\u0020Sie\u0020mit\u0020einem\u0020Klick\u0020den\u0020Button\u002E\u0020Erst\u0020danach\u0020können\u0020Sie\u0020die\u0020Seite\u0020in\u0020den\u0020sozialen\u0020Netzwerken\u0020teilen\u002E\u0020Nach\u0020der\u0020Aktivierung\u0020werden\u0020Daten\u0020an\u0020Dritte\u0020übertragen\u002E");
+
+					// add span (contains the switch)
+					$this.html('<span></span>');
+
+					// add click-handler for 2-click-button
+					$this.one('click', function (evt) {
+						evt.preventDefault();
+						evt.stopPropagation();
+
+						var _this = $(this),
+							data = $this.data(gDataName),
+							elem = $('<div />');
+
+						elem[0].className = this.className;
+						elem.removeClass(classButtonType + ' ' + classButton);
+
+						require([['de_epages', data.cartridge, gFolder, data.alias].join('/')], function ($) {
+							// instantiate needed widget (facebook, twitter ...)
+							elem[data.cartridge + gFolder.charAt(0).toUpperCase() + gFolder.slice(1) + data.alias.charAt(0).toUpperCase() + data.alias.slice(1)](data.options);
+
+							
+
+							// replace 2-click-button with widget-element
+							_this.replaceWith(elem);
+						});
+					});
+				}
+
+			});
+		}
+	};
+
+	createGadgets();
+	$('body').on('updatepreview', createGadgets);
+
+});
+</script>
+<script>
+require([
+	'jquery',
+	'de_epages/product/inc/energylabel',
+
+	'$ready!'
+], function ($, energylabel) {
+	var energylabels = $('.energylabel-arrow');
+
+	energylabel.init({items: energylabels});
+});
+</script>
+
+
+  <!-- BEGIN etracker Tracklet 3.0 async -->
+<script type="text/javascript">
+(function () {
+  var et_init = function () {
+		var et = document.createElement('script');
+		et.src = '//code.etracker.com/a.js?et=NU3uuV';
+		var head = document.getElementsByTagName('head')[0];
+		head.insertBefore(et, head.firstChild);
+	};
+	window.addEventListener
+  	? window.addEventListener('load', et_init, false)
+    : window.attachEvent('onload', et_init);
+})();
+</script>
+<!-- etracker Tracklet END -->
+
+<!-- BEGIN etracker Tracklet 3.0 async Parameter -->
+<script type="text/javascript">
+function et_params() {
+    // etracker PARAMETER 3.0
+    et_pagename     = "\u005BTimeTimer\u005D2104-0004";
+    et_areas        = "Categories\u002FTimeTimer";
+    et_ilevel       = 1;
+    et_url          = "http%3A//shop.muelicom.ch/epages/175411.sf/%3FObjectPath%3D/Shops/175411/Products/2104/SubProducts/2104-0004";
+    et_tag          = "";
+    // etracker PARAMETER END
+    // etracker TARGET PARAMETER 3.0
+    
+    // etracker TARGET PARAMETER END
+    // etracker CAMPAIGN PARAMETER 3.0
+    
+    // etracker CAMPAIGN PARAMETER END
+}
+</script>
+<!-- etracker Tracklet END Parameter -->
+
+  <!-- etracker CODE NOSCRIPT 3.0 -->
+<noscript>
+
+<p><a href='https://www.etracker.de/app?et=NU3uuV'>
+<img style='border:0px;' alt='' src='https://www.etracker.de/cnt.php?et=NU3uuV&amp;v=3.0&amp;java=n&amp;et_easy=0&amp;et_pagename=[TimeTimer]2104-0004&amp;et_areas=Categories%2FTimeTimer&amp;et_ilevel=1&amp;et_target=,,,0&amp;et_lpage=&amp;et_trig=&amp;et_se=0&amp;et_cust=0&amp;et_basket=&amp;et_url=&amp;et_tag=&amp;et_organisation=&amp;et_demographic=' /></a></p>
+
+</noscript>
+<!-- etracker CODE NOSCRIPT END-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul style="display:none;" id="energylabel-imagelist"></ul></body></html>
