@@ -83,7 +83,7 @@
         Betreuungswechsel einzustellen. Das Kind hat so eine Orientierung und
         wird nicht plötzlich von einem Wechsel überrascht. Auch wenn das Kind
         eine Bezugsperson vermisst und diese in absehbarer Zeit nach Hause
-        kommt, kann ein TimeTimer helfen, das Warten auf die Bezugsperson
+        kommt, kann die Visualisierung helfen, das Warten auf die Bezugsperson
         einfacher zu machen.
       </p>
       <p>
@@ -97,7 +97,7 @@
       </p>
       <g-image alt="TimeTimer" class="img" src="~/assets/imgs/timetimer2.jpg" />
       <p>
-        Wir haben zuahsue das Modell
+        Wir haben zuhause das Modell
         <a href="https://shop.muelicom.ch/Time-Timer-MOD" target="_blank">
           TimeTimer MOD >></a
         >. Ein sehr nützliches Feature davon ist, dass man durch einen Schieber
@@ -178,7 +178,7 @@
       <p>
         Es spielt keine Rolle, ob das Kind schon lesen kann oder noch nicht.
         Allenfalls können wir die Liste durch kleine Zeichnungen ergänzen, um
-        sie für das Kind zu visualisieren. rsagensängste zu entwickeln.
+        sie für das Kind zu visualisieren.
       </p>
       <p>
         Das gemeinsame Erstellen einer solchen Liste hat verschiedene Vorteile:
@@ -210,7 +210,7 @@
         Lust haben.
       </p>
       <br />
-      <h2>Idee Nummer drei: Eine visualisierte Wochenübersicht erstellen</h2>
+      <h2>Idee Nummer 3: Eine visualisierte Wochenübersicht erstellen</h2>
       <p>
         Eine Wochenübersicht der verschiedenen Betreuungssituationen kann einem
         Kind Orientierung und Struktur geben und ihm dadurch Übergänge
