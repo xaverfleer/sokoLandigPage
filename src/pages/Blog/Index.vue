@@ -6,6 +6,26 @@
         <li>
           <g-link
             class="post-list__post"
+            to="/blog/drei-ideen-fuer-betreuungswechsel-und-trennungen/"
+          >
+            <g-image class="post-list__img" src="~/assets/imgs/timetimer.jpg" />
+            <div class="post-list__content">
+              <h2 class="post-list__title">
+                Drei Ideen, um einem Kind Betreuungswechsel und Trennungen zu
+                erleichtern
+                <div class="post-list__date-and-author">
+                  21. April 2021 – Eva Fleer
+                </div>
+              </h2>
+              Betreuungswechsel (z.B. von Eltern- zu Kitazeit oder von Mama- zu
+              Papazeit) sind für viele Kinder schwierig. Vorhersehbarkeit kann
+              den Übergang erleichtern. Drei Ideen, wie das gelingen kann!
+            </div>
+          </g-link>
+        </li>
+        <li>
+          <g-link
+            class="post-list__post"
             to="/blog/warum-erziehung-nicht-funktionieren-muss/"
           >
             <g-image
